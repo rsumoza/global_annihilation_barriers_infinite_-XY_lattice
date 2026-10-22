@@ -1,0 +1,70 @@
+{
+  "scope": "conditional on exact cap geometry; coordinates relative to same reference",
+  "radius": "6599/10000",
+  "minimum_radius": ".017422",
+  "caps": [
+    {
+      "strict_chart_witnesses": [
+        101
+      ],
+      "saddle_strictly_inside_atlas": true,
+      "inside_other_cuts": [
+        {
+          "name": "minus",
+          "margin": {
+            "lower": "0.609136906870753076",
+            "upper": "0.636182668734058757"
+          },
+          "strict": true
+        }
+      ],
+      "name": "plus",
+      "tangent_coordinate": {
+        "lower": "-0.021158929212970074",
+        "upper": "0.004491070787070032"
+      },
+      "saddle_radius_bound": {
+        "lower": "0.653050585024204962",
+        "upper": "0.654788302613722135"
+      },
+      "saddle_in_disk": true,
+      "minimum_cut_margin": {
+        "lower": "0.635628585024213725",
+        "upper": "0.637024346887434646"
+      },
+      "minimum_strictly_inside_cut": true
+    },
+    {
+      "strict_chart_witnesses": [
+        93
+      ],
+      "saddle_strictly_inside_atlas": true,
+      "inside_other_cuts": [
+        {
+          "name": "plus",
+          "margin": {
+            "lower": "0.609136906870775242",
+            "upper": "0.636182668734035982"
+          },
+          "strict": true
+        }
+      ],
+      "name": "minus",
+      "tangent_coordinate": {
+        "lower": "-0.004491070787071412",
+        "upper": "0.021158929212969471"
+      },
+      "saddle_radius_bound": {
+        "lower": "0.653050585024183630",
+        "upper": "0.654788302613745916"
+      },
+      "saddle_in_disk": true,
+      "minimum_cut_margin": {
+        "lower": "0.635628585024192686",
+        "upper": "0.637024346887458215"
+      },
+      "minimum_strictly_inside_cut": true
+    }
+  ],
+  "status": "CONDITIONAL_SADDLES_IN_DISK_AND_MINIMUM_INSIDE_CUTS_PASS"
+}

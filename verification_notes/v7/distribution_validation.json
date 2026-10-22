@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "date": "2026-10-22",
+  "scope": "Repository/documentation adaptation only; fixed mathematical claims and inputs unchanged.",
+  "repository_url": "https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice",
+  "planned_tag": "siads-v7-2026-10-22",
+  "release_publication_verified": false,
+  "journal_submitted": false,
+  "preserved_files_verified_against_v6": {
+    "proof_record": 566,
+    "sections": 9,
+    "checks": 10
+  },
+  "original_archives_identity_verified": true,
+  "full_numerical_chain_rerun_in_v7": false,
+  "small_checks": "robustness, Green tail, infinite-class examples/negative controls, supported environment: PASS",
+  "main_pages": 35,
+  "supplement_pages": 8,
+  "cover_letter_pages": 1,
+  "pdf_links_verified": true,
+  "final_tex_warnings": [],
+  "visual_review": "All main/supplement pages rendered and inspected in contact sheets; changed availability pages and cover letter inspected at full resolution.",
+  "independent_distribution_review": "Archive roots and supervisor arguments checked; archived logs preserved in Git; lowercase HTML link and immutable-tag instructions corrected.",
+  "download_helper_network_route_tested": false,
+  "download_helper_existing_valid_asset_route": "PASS for all 3 originals",
+  "download_helper_list_urls": "PASS; exact configured destinations"
+}

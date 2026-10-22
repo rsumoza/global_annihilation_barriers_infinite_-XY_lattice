@@ -1,0 +1,15 @@
+{
+  "status": "repository-configured-release-publication-unverified",
+  "repository_url": "https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice",
+  "clone_url": "https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice.git",
+  "planned_release_url": "https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice/releases/tag/siads-v7-2026-10-22",
+  "planned_tag": "siads-v7-2026-10-22",
+  "release_url": null,
+  "tag": null,
+  "commit": null,
+  "doi": null,
+  "remote_access_verified": false,
+  "release_assets_remotely_verified": false,
+  "original_archives_unchanged": true,
+  "note": "The repository URL is supplied by the author. The release URL and tag are planned destinations, not verified published objects. Record the resolved tag commit in the Release description and journal submission receipt after publication; a commit cannot contain its own hash."
+}

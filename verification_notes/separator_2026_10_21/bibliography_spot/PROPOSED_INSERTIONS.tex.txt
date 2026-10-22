@@ -1,0 +1,34 @@
+% Proposed additions only. Manuscript sources have not been edited.
+% Verified primary PDF: https://arxiv.org/pdf/2609.39642
+% arXiv footer:2609.39642v1[math.NA],30Sep2026;PDF titlepage1Oct2026.
+
+% 1. Introduction: append after the paragraph beginning 'Far-field estimates...'.
+For general dislocation predictors, force-balance conditions also require
+verification: Braun and Hudson \cite{BraunHudson2026} clarify the vanishing
+of the linearised force sum and the consequences of its failure. The
+finite-energy tail argument below instead starts from an exact gradient
+projection identity with an absolutely summable bond source.
+
+% 2. Green section: insert directly after the paragraph containing
+% eq:green-representation, before 'For an even integer...'.
+Since $q\in\ell^1(\mathcal E)$, its vertex divergence has an absolutely
+convergent sum equal to zero: the two endpoint contributions of each bond
+cancel. Likewise, the compact Poisson loads used by the certificate are
+exact divergences of compact bond fields. These cancellations are algebraic;
+they are not inferred from decay of a general dislocation predictor
+\cite{BraunHudson2026}.
+
+% 3. references.tex: insert alphabetically after Braun2025 and beforeBreden2019.
+\bibitem{BraunHudson2026}
+\textsc{J. Braun and T. Hudson},
+\emph{On the linearised force balance condition in the analysis of atomistic dislocation models},
+preprint, arXiv:2609.39642, 2026,
+\url{https://arxiv.org/abs/2609.39642}.
+
+% Scientific scope note for the editor of this proposal:
+% The cited preprint deals with dislocation predictors and a missing
+% zero-force-sum verification in earlier far-field theory. It explicitly
+% says the pure screw case is already covered byBraun--Hudson--Ortner2022
+% and focuses on a nonzero edge component. It does not provide our global
+% XY barrier, validate our interval arithmetic, or refute the present
+% projection argument. No mathematical result or numericalconstant changes.

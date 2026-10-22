@@ -1,0 +1,9 @@
+I q_gram 0x8.09a35580684c1ap-3 0x8.09a35580684d613p-3
+I points/0/distance_to_saddle_candidate 0xa.4466f3a9e4d48ap-7 0xa.4466f3a9f146203p-7
+I points/0/signed_projection_on_normalized_q -0xa.3c9d9324c0b6a99p-7 -0xa.3c9d9324c0b4877p-7
+U points/0/transverse_norm_upper 0xc.a2b2b1876c5cf69p-11
+I points/0/relative_energy_to_reference 0xb.1fafa289926060cp-11 0xb.1fafa28ac27d142p-11
+I points/1/distance_to_saddle_candidate 0xa.39bd4c69142d484p-7 0xa.39bd4c6920abd8dp-7
+I points/1/signed_projection_on_normalized_q 0xa.31f8a009910bc9dp-7 0xa.31f8a009910deaep-7
+U points/1/transverse_norm_upper 0xc.9850b34f8026054p-11
+I points/1/relative_energy_to_reference 0xb.315edff148901c8p-11 0xb.315edff277fbceep-11

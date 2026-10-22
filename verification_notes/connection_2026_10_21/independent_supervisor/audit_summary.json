@@ -1,0 +1,83 @@
+{
+  "status": "INDEPENDENT_CONNECTION_BINDINGS_AND_CONDITIONAL_SCALARS_PASS",
+  "scope": "Source/raw bindings and replay of scalar consequences on archived local enclosures; not a fresh C++ CAP.",
+  "manifest_sha256": "ba100e9b7b8763bcd9ce1bcb7ee1a50a1f76669d2be92966ecbe6f6208feb27c",
+  "supervisor_sha256": "7a2f72741a64846029d6ebd79dd338ce15a587f48fb7fe71e6081af336040d7c",
+  "inner_manifest_sha256": "6a8b3f625b57032b76ca30f58c37bdd71115ea4a4bc682d0d7ac7c76b4ceb5a5",
+  "scientific_members": 44,
+  "fixed_raw_bindings": {
+    "stage2/common/base_h.raw": "2a969db50023b0697c5f228d4b10325df7ea899bcdfe965fef6d02616f82adf3",
+    "stage2/saddle/inputs/h.raw": "473f3ad414bdb6e59597b3b278628758d18e1563036075176df338d47c617cbb",
+    "stage2/saddle/inputs/q.raw": "18152163150666b8108a35bf62da6f3b875875579fb4982a187d371abbcf45bd"
+  },
+  "actual_leg_endpoint_bindings": {
+    "leg_return": {
+      "nodes": 8,
+      "extracted_join_node_sha256": "7340f05709ec171ff32de9a7f433d3b630672cbf7e9b9cc8c3d6845c29a4de83",
+      "join_node": "last"
+    },
+    "leg_annihilation": {
+      "nodes": 19,
+      "extracted_join_node_sha256": "5f347c3009709acb18a4851ae44cbcdc56e735759d38fe4cbbbd0e5828273b7f",
+      "join_node": "first"
+    }
+  },
+  "local_rational_replay_matches": true,
+  "global_rational_replay_matches": true,
+  "padded_threshold_slacks": {
+    "minimum_rho": "2020717978748827/2500000000000000000000",
+    "minimum_delta": "542000672032347/1000000000000000000000000",
+    "cap_rho": "154085987461878667/2500000000000000000000000",
+    "cap_candidate_coercivity": "999999697452829/10000000000000000000000000"
+  },
+  "outer_level_minus_padded_exact_saddle_upper": "228615308065869131598985688622515842857112989505366963/187500000000000000000000000000000000000000000000000000000000000000000000000",
+  "Hermite_margins": {
+    "minus": "677564688704173399943184443165348550259637603631291547879331467301412979/6000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "plus": "3022510777948188057683031634974680586349300493913777275651683079189671/37500000000000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "face_attachment_margins": {
+    "minus": "66219526634512006160580167/1000000000000000000000000000000",
+    "plus": "514827666601380279139763/7812500000000000000000000000"
+  },
+  "leg_margins": {
+    "leg_return": "7935254347096796157913433065869131598985688622515842857112989505366963/187500000000000000000000000000000000000000000000000000000000000000000000000",
+    "leg_annihilation": "9051403798481255749678433065869131598985688622515842857112989505366963/187500000000000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "negative_controls": [
+    {
+      "case": "not_index_one",
+      "returncode": 2,
+      "message": "REJECT: saddle not validated"
+    },
+    {
+      "case": "missing_time_coverage",
+      "returncode": 2,
+      "message": "REJECT: uncertified time intervals"
+    },
+    {
+      "case": "nonzero_lift",
+      "returncode": 2,
+      "message": "REJECT: this theorem requires continuation to the zero real lift"
+    },
+    {
+      "case": "charged_endpoint",
+      "returncode": 2,
+      "message": "REJECT: no annihilation endpoint"
+    },
+    {
+      "case": "leg_above_saddle",
+      "returncode": 2,
+      "message": "REJECT: global leg crosses certified saddle level: leg_return"
+    },
+    {
+      "case": "bad_join_direction",
+      "returncode": 2,
+      "message": "REJECT: endpoint direction has no certified sign or does not reach local face"
+    },
+    {
+      "case": "bad_Hermite_energy",
+      "returncode": 2,
+      "message": "REJECT: Hermite bridge does not descend strictly from exact saddle"
+    }
+  ]
+}

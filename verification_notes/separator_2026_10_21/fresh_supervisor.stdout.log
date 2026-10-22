@@ -1,0 +1,19 @@
+Compiling baseline
+Compiling chart
+Compiling geometry
+Validating infinite minimum and reference residual
+Local charts validated: 10/109
+Local charts validated: 20/109
+Local charts validated: 30/109
+Local charts validated: 40/109
+Local charts validated: 50/109
+Local charts validated: 60/109
+Local charts validated: 70/109
+Local charts validated: 80/109
+Local charts validated: 90/109
+Local charts validated: 100/109
+Local charts validated: 109/109
+Validating all exact projections and 8-neighbor transverse distances
+Verifying all radial, circular and coordinate boundary pieces
+Verifying minimum membership and exclusion of all uniform states
+FRESH_GLOBAL_SEPARATOR_PASS

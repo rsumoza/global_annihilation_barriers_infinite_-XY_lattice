@@ -1,0 +1,17 @@
+{
+  "main_pages_reviewed": 30,
+  "supplement_pages_reviewed": 7,
+  "all_page_contact_sheets_reviewed": true,
+  "changed_main_pages_reviewed_at_full_size": [
+    16,
+    18,
+    29
+  ],
+  "final_supplement_changes_reviewed_at_full_size": [
+    6,
+    7
+  ],
+  "unresolved_visual_defects": 0,
+  "main_pdf_sha256": "128ce2d71bd23b06a75f0e6adad100c6269f7f7221ab013f4d770512e0a5204b",
+  "supplement_pdf_sha256": "fce6e796b24d1402da9a35938b179c03b2aa4ed37b17134e1ea0356ad886d47f"
+}

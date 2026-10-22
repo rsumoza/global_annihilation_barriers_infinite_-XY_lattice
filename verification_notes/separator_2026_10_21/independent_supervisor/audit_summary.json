@@ -1,0 +1,43 @@
+{
+  "status": "INDEPENDENT_SUPERVISOR_AND_CONDITIONAL_REPLAY_PASS",
+  "scope": "Pinned-input identities and conditional replay only; no fresh C++ local proof here.",
+  "scientific_manifest_sha256": "991c744eab7e812d629662a0c0bc5cbc177e9dd2e9daa67caeefab7a814f941b",
+  "supervisor_sha256": "d4646d988e538075b51d0c0bdd2d970976d1ccb53156ad52d414ec87f5c0095c",
+  "scientific_manifest_members": 564,
+  "bound_case_center_records": 109,
+  "baseline_consumed_fields": {
+    "delta": "1166547457999326967653/1000000000000000000000000",
+    "rho": "43552979282021248673/2500000000000000000000",
+    "c": "7567200000000004108389/100000000000000000000000",
+    "energy_candidate.lower": "2364140631720823634669/100000000000000000000"
+  },
+  "baseline_decimal_roundoff_bound": "1/20000000000000000000",
+  "postprocess_pad": "1/1000000000000000000",
+  "baseline_residual_threshold_slack": "542000672032347/1000000000000000000000000",
+  "conditional_charts": 109,
+  "coordinate_face_evaluations": 2150,
+  "unresolved_radial_circle_cells": 0,
+  "unresolved_coordinate_face_cells": 0,
+  "negative_controls": [
+    {
+      "case": "nan_delta",
+      "returncode": 2,
+      "message": "REJECT: baseline residual dependency fails"
+    },
+    {
+      "case": "too_large_delta",
+      "returncode": 2,
+      "message": "REJECT: baseline residual dependency fails"
+    },
+    {
+      "case": "too_large_rho",
+      "returncode": 2,
+      "message": "REJECT: minimum enclosure dependency fails"
+    },
+    {
+      "case": "nonpositive_c",
+      "returncode": 2,
+      "message": "REJECT: convex bridge from minimum to reference missing"
+    }
+  ]
+}

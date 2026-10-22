@@ -1,0 +1,16 @@
+{
+  "version": 4,
+  "date": "2026-10-21",
+  "main_pages": 30,
+  "supplement_pages": 7,
+  "references": 18,
+  "separator_fresh_reexecuted": true,
+  "separator_status": "FRESH_GLOBAL_SEPARATOR_PASS",
+  "all_fixed_geometric_enclosures_independently_checked": 715,
+  "fixed_export_records_checked": 9442,
+  "connection_reexecuted_this_revision": false,
+  "optimality_reexecuted_this_revision": false,
+  "original_frozen_sources_changed": false,
+  "missing_attachment": "XY_Conexion_Global_Reproducible_2026-10-19(1).zip",
+  "global_optimality_record": "historical execution preserved, not represented as rerun on 21 October"
+}

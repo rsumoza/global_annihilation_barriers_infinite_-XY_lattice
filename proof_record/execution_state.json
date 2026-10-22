@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETED",
+  "date_utc": "2026-10-21",
+  "command": [
+    "python3",
+    "-u",
+    "recovered/unpacked/xy_optimality_extension/verify_optimality.py",
+    "--separator-package",
+    "audit_separator_2026_10_21/xy_global_separator",
+    "--connection-package",
+    "audit_connection_2026_10_21/xy_global_connection",
+    "--output",
+    "audit_connection_2026_10_21/full_fresh",
+    "--workers",
+    "2"
+  ],
+  "cwd": "/workspace/scratch/67c0f31502e4",
+  "returncode": 0,
+  "validated_cached_options": false,
+  "certificate_status": "FRESH_OPTIMAL_ANNIHILATION_BARRIER_PASS",
+  "supervisor_duration_seconds": 737.332688331604,
+  "certificate_path": "certificate.json",
+  "certificate_sha256": "b1cbb7206a0c7492ad6990213a48480c9d25e04a5a21fe1805f0195a871f5999"
+}

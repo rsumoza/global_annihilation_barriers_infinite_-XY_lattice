@@ -1,0 +1,12 @@
+U delta 0x9.8e6d65cd87895ap-13
+U rho 0x8.eb6e3153e54a99p-9
+L c 0x9.af9ebe9c8862ddep-7
+L energy_candidate/0 0xb.d2199a29edb7fafp+1
+RAW probe_c 0x9.af9ebe9c8862ddep-7
+RAW probe_rho 0x8.eb6e3153e54a99p-9
+L mu 0xe.e986648f1e206f3p-8
+L branch_margin 0x8.f5c28f5c28f5c29p-3
+RAW compiled_rho 0x8.eb8950763a19008p-9
+RAW compiled_delta 0x9.8e6db04b7b98409p-13
+RAW compiled_mustar 0xe.e978d4fdf3b645ap-8
+RAW barrier_branch_limit 0x8.f5c28f5c28f5c29p-3

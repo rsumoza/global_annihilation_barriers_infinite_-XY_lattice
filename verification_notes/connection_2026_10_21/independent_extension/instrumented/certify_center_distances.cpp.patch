@@ -1,0 +1,18 @@
+--- original/certify_center_distances.cpp
++++ instrumented/certify_center_distances.cpp
+@@ -1,7 +1,7 @@
+ #define main ignored_old_main
+ #include "engine.cpp"
+ #undef main
+-static void jout(I a){std::cout<<"[\""<<dn(a.l)<<"\",\""<<up(a.h)<<"\"]";}
++static void jout(I a){exact_interval(a);std::cout<<"[\""<<dn(a.l)<<"\",\""<<up(a.h)<<"\"]";}
+ int main(int argc,char**argv){try{
+  need(argc==6,"usage Qold Hsaddle Hbase centersdirectory REFLECT_0_OR_1");int ref=std::stoi(argv[5]);need(ref==0||ref==1,"reflection");need(LDBL_MANT_DIG>=64&&sizeof(double)==8&&std::numeric_limits<double>::is_iec559&&std::fegetround()==FE_TONEAREST,"platform");uint16_t en=1;need(*(unsigned char*)&en==1,"endian");
+  constexpr int n=128,off=32,ho=1984,bo=960;
+@@ -25,5 +25,5 @@
+   }
+   I y2=dnorm+zn-I(2)*cross-projectnorm({dsproj[0]-zp[0],dsproj[1]-zp[1]});need(y2.h>=0,"negative Y squared upper");I yn=root(I(std::max((R)0,y2.l),y2.h));if(k)std::cout<<",";std::cout<<"{\"id\":"<<k<<",\"Y_distance_squared\":";jout(y2);std::cout<<",\"Y_distance\":";jout(yn);std::cout<<"}";
+  }
+- std::cout<<"]}\n";return 0;
++ std::cout<<"]}\n";finish_exact();return 0;
+ }catch(const std::exception&e){std::cerr<<"REJECT: "<<e.what()<<"\n";return 2;}}

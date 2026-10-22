@@ -1,0 +1,104 @@
+Backend audit of XY_Separacion_Global_Reproducible_2026-10-19
+21 October 2026
+
+1. Actual dependency paths
+
+verify_separator.py builds three programs. baseline/engine.cpp invokes run()
+and prints 22 significant digits without output-specific dn/up. The chart and
+geometry programs rename that main and call their own main instead. Chart
+exports its consumed coefficient bounds with 30 digits and one extra dn/up;
+geometry does the same for its consumed interval endpoints. Chart JSON contains
+some unpadded 24 digit diagnostics, but its consumed interior prerequisite is an
+internally computed boolean and mu>0 is already proved before serialization.
+The exact rational atlas checker consumes coefficients.txt, not these JSON
+approximate diagnostics.
+
+The four baseline quantities actually consumed by postprocess_separator.py are
+delta, rho, c and energy_candidate[0]. That exact-Fraction postprocessor adds
+PAD=1e-18 to the upper bounds and subtracts it from the lower bounds (lines 25–27,
+52). It does not treat the bare decimal print as an exact interval bound. This
+is an important distinction from the generic serialization counterexample.
+
+2. Original generic counterexamples
+
+probe_original.cpp reproduces two defects in the generic backend contract:
+positive_by_congruence({I(NaN)},{1.0},1) returns 1e10; the pivot reduction can hide
+NaN through std::min(finite,NaN). A bare upper bound x=1+2^-63 is printed as
+1.000000000000000000108, which is strictly below x. These are real, reproducible
+counterexamples to generic reject/outward-print contracts. They alone do not
+refute the fixed-data theorem. readraw() rejects nonfinite proposal numbers.
+
+3. Fixed-data instrumentation
+
+Separate copies add explicit finite checks to I constructors, dn/up inputs and
+outputs, and the congruence input arrays; interval endpoint order is checked.
+Original interval formulas and original fixed input bytes are retained. All
+109cases are reconstructed independently from frozen Green column records,
+with their expected reconstructed Green SHA256 checked. The frozen originals
+are untouched. Source patches and compiler flags are retained.
+
+The guarded baseline completed with 1,242,704,177 checked interval constructions
+and 1,761,491,636 checked dn/up calls. Its scientific stdout is byte-identical to
+the freshly rebuilt original baseline. Every consumed baseline scalar is dumped
+as exact hexadecimal long double and parsed as a dyadic Fraction, not via float.
+All four actual decimal errors are strictly less than PAD. The exact report is
+results/baseline_exact_report.json.
+
+The compiled chart constant .001166548L is
+11017734351717237769/9444732965739290427392, slightly below the exact decimal
+.001166548. Consequently merely comparing the baseline to the exact decimal
+would not by itself close that exact binary dependency. The actual baseline
+upper bound is strictly below the compiled constant; their positive difference
+is 5119051624041/9444732965739290427392. The exported up(delta) is above both.
+Thus this dependency is checked for the actual constants, not dismissed because
+the numerical margin appears large.
+
+4. Exact serialization audit
+
+Each consumed chart and geometry bound is additionally exported as the exact
+internal unpadded binary hexadecimal value, separately from the scientific
+output. check_exact_exports.py parses it as a Fraction and checks the direction
+of the printed decimal bound against that exact value. It also checks that all
+scientific chart JSON, coefficient files, geometry JSON and baseline JSON are
+byte-identical to the clean original run. The complete coverage and result are
+recorded in results/exact_export_report.json after all runs have completed.
+
+For context, 30 significant decimal digits plus one outward ulp is sufficient
+for extended precision with a 64-bit significand: decimal rounding is much smaller than its relative spacing.
+The exact actual-endpoint comparisons avoid needing this qualitative argument
+for the inspected run. No claim of portability to arbitrary long-double formats
+is made: the original LDBL_MANT_DIG>=64 guard is broader than the supported
+64-bit-significand environment (e.g. a 113-bit significand would require a new
+serialization analysis or more output precision).
+
+5. Interpretation
+
+A successful complete guarded replay closes the particular question whether
+nonfinite or malformed interval endpoints occurred unnoticed in this execution.
+It is a diagnostic on the fixed scientific inputs and stated environment. It
+is not an independent interval arithmetic implementation, a proof for every
+possible input, or a formal verification of the compiler and standard library.
+Generic NaN reject behavior should be hardened in a separately versioned engine;
+that would require new pins and rerunning every affected global workflow.
+
+The separator supervisor proves its own stated lower-barrier result, not matching
+saddle optimality by itself. No claim about the missing connection attachment,
+its implementation, or a fresh complete global optimality run follows from this
+backend audit.
+
+Completed diagnostic outcome
+----------------------------
+FIXED_EXPORTS_EXACT_COMPARISON_PASS: all 109 charts, 8,284 chart interval
+records, 436 one-sided chart header bounds, 715 geometry interval records,
+3 one-sided geometry summaries and the 4 consumed baseline scalars passed.
+All scientific stdout and coefficient exports are byte-identical to the fresh
+untouched outputs. No finite/order guard rejected any of these fixed runs.
+Across the unique baseline+109 charts+geometry, 9,322,823,485 interval
+constructions and 11,647,860,412 dn/up calls were checked. Extra sidecar
+replays are not double counted.
+
+results/exact_export_report.json binds every consumed exact sidecar to its
+scientific decimal export by SHA256, includes compiler flags and audit source
+hashes, and binds the frozen scientific manifest and fresh separator certificate.
+These are diagnostic assertions for this fixed execution and supported platform.
+The connection package has not been audited here.

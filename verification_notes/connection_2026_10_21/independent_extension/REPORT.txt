@@ -1,0 +1,129 @@
+INSTRUMENTED AUDIT OF THE EXACT-CAP EXTENSION
+21 October 2026
+
+Current status
+--------------
+The eleven guarded executions completed successfully. Comparison against
+both archived outputs and the new untouched fresh full supervisor passed.
+The fresh comparison is bound to the global certificate SHA-256
+b1cbb7206a0c7492ad6990213a48480c9d25e04a5a21fe1805f0195a871f5999.
+Its status is GUARDED_EXTENSION_EXACT_EXPORTS_FRESH_COMPARISON_PASS.
+
+This record concerns only the extension component. It is not itself the
+full global variational proof, a second interval arithmetic engine, or a
+proof-assistant formalization. Frozen source packages were only read.
+
+Reconstruction and instrumentation
+---------------------------------
+prepare_guarded.py verifies the exact pinned manifests and their members
+for all three source packages. It copies the extension scientific payload,
+the common h/Q inputs, the negative mode and saddle correction, and all
+109 centers using the same file bindings as verify_optimality.py. The
+extension manifest pin is
+248f0614524832610b07fd21b5d6b9eaf670d1846d6032aa22a51755a5c95972.
+The shared original engine pin is
+3ec7aa8f4b66d16af21587c0d3754bf10c072953031cdc293e321a522bf45111.
+
+Diagnostic copies add finite/order invariants in interval constructors,
+finite checks before and after dn/up, and finite/dimension checks for
+congruence inputs. The interval arithmetic formulas are otherwise retained.
+Every added source change is given by a diff; original and guarded source
+hashes and exact compiler flags are recorded in instrumentation.json.
+
+All executions retain the original fixed input data and argument order:
+ - projection, center_distances and adjoint for both reflections;
+ - the five enlarged charts c042,c043,c044,c053,c055.
+
+There were no runtime guard failures. The eleven jobs completed in 173.07
+seconds in this concurrent audit session. They exercised 1,900,491,608
+interval constructions and 2,143,950,276 dn/up calls. These are counts for
+this execution, not complexity bounds or an arbitrary-input guarantee.
+
+Actual exported bounds
+----------------------
+The jout/ji wrappers additionally record each internal interval, before
+decimal-specific expansion, to an exact hexadecimal sidecar. The records
+are bound in output order to every exported JSON interval. The chart
+polynomials have labeled exact sidecars for every coefficient and for the
+four one-sided header quantities. A separate Python Fraction checker uses
+no floating-point parser to compare the exported decimal directions.
+
+The complete export audit checked:
+ - 488 module interval records (both reflections combined);
+ - 380 chart coefficient/geometry interval records;
+ - 20 one-sided chart header bounds.
+
+All 888 records satisfy their required directions. All eleven scientific
+JSON files and all five coefficient files were byte-identical to both their
+untouched archived outputs and the new untouched fresh supervisor outputs.
+The final comparison is in results/exact_exports_report.json; the preliminary
+archived comparison remains explicitly labeled in its separate record.
+
+Scalar JSON diagnostics that the final supervisor does not use as proof
+bounds are not silently presented as individually directed intervals.
+The scientifically consumed normal, offset, distance and chart bounds are
+covered. Runtime pass conditions are evaluated inside the guarded source.
+
+Compiled constants
+------------------
+The projection and adjoint copies record the actual compiled dyadic values
+of rho=.012825L, m=.062886L and the candidate complementary floor
+.0719549999L. Chart sidecars record their compiled residual threshold.
+These are not equated with their decimal spellings.
+
+Against the existing PAD=1e-18 corrected antecedent bounds, the checker
+verifies that compiled rho exceeds the certified saddle radius, that the
+compiled complementary floor is below the certified candidate floor, and
+that compiled m is below the resulting Lipschitz-corrected complement.
+A rational lower square-root enclosure is used in the last comparison.
+The actual compiled chart delta exceeds the padded baseline residual.
+The exact margins are stored in the export report, not rounded displays.
+
+Tight outer energy threshold
+---------------------------
+The positive comparison between LEVEL=.00568947710965782931 and the
+exact rational upper saddle-relative-reference energy has margin
+approximately 1.2192816430179687e-21. check_exports.py preserves its full
+Fraction value and performs the strict comparison before making an
+explicitly informational float display. The antecedent energy interval
+has already passed through its own protected consumer. This margin must
+not be assessed by rounding both quantities to the same display decimal.
+
+Independent common-normal check
+------------------------------
+check_normal_exact.py is independently coded using exact binary64 dyadics,
+Python integers and the degree-four Laplacian of zero extensions. The raw
+Q and q hashes and all boundary zeros are checked. With
+
+ G=Q*Q, g=Q*q, alpha=G^{-1}g, d=g^T alpha,
+ n=-g/sqrt(d), c=-alpha/sqrt(d),
+
+the identities Gc=n and c^T Gc=1 are checked by rational numerators. It is
+not inferred from overlapping normal and adjoint interval outputs. Both
+normal coordinate enclosures and both adjoint coefficient enclosures are
+verified for both reflections (eight inclusions). Sign-aware rational
+square comparisons avoid any approximate square root. All passed, also
+under Python -O. This independent result is restricted to these fixed
+coordinates; it does not prove the Poisson residual or cap coercivity.
+
+Negative controls and limits
+----------------------------
+Three invalid decimal/binary interval exports are rejected, also under
+Python -O. An intentionally zero interval excluding a nonzero exact normal
+coordinate is rejected. A compiled guard probe rejects an injected NaN
+matrix and reversed interval endpoints.
+
+The generic frozen-engine NaN-congruence acceptance deficiency remains
+documented elsewhere. Its official source is not silently patched here.
+No nonfinite or reversed interval was encountered in these fixed guarded
+extension executions. This does not establish correctness for every
+possible input, compiler, architecture or extended-precision format.
+The analytic reductions, core/exterior estimates and topology of the
+complete lower/upper certificate remain separate mathematical obligations.
+
+Compact reproducibility
+-----------------------
+Distribute scripts, instrumented sources/diffs, input_bindings.json,
+instrumentation.json, build logs and results/. Omit work/ raw proposal
+copies and compiled binaries; prepare_guarded.py regenerates them from
+the three untouched original source packages. See README_REPRODUCTION.txt.

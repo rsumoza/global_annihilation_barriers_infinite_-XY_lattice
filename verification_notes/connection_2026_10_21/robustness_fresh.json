@@ -1,0 +1,60 @@
+{
+  "status": "COUPLING_ROBUSTNESS_RATIONAL_CHECKS_PASS",
+  "scope": "Analytic corollary from the freshly reproduced exact XY certificate; no perturbed nonlinear solve",
+  "coupling_class": "b in ell^1(edges), norm at most1/500; J_e=1+b_e",
+  "parameters": {
+    "sigma": "57/1000",
+    "tau": "71/100",
+    "delta": "1/500",
+    "critical_radius": "1/32",
+    "dynamical_radius": "1/100",
+    "exponential_rate": "13/500"
+  },
+  "derived": {
+    "self_map_lhs": "45227/25600000",
+    "self_map_rhs": "57/32000",
+    "self_map_margin": "373/25600000",
+    "contraction_factor": "371/912",
+    "uniform_critical_gap": "541/16000",
+    "inverse_upper": "16000/541",
+    "minimum_charge_margin": "3449/3200",
+    "continued_saddle_separation": "27/80",
+    "bridge_excess": "1/2048",
+    "barrier_lower_exact": "314752297008059242012882808065869131598985688622515842857112989505366963/187500000000000000000000000000000000000000000000000000000000000000000000000",
+    "barrier_upper_exact": "1818967143685842995396384691934130868401014311377484157142887010494633037/187500000000000000000000000000000000000000000000000000000000000000000000000",
+    "dynamical_convexity": "10681/400000",
+    "uniform_exterior_angle": "643/16000",
+    "Green_source_absorption": "13681/6000000"
+  },
+  "displayed_strict_barrier_bracket": [
+    "0.00167867",
+    "0.00970116"
+  ],
+  "does_not_claim": [
+    "perturbed minimax equals a continued saddle height",
+    "dominant mechanism change",
+    "new perturbed numerical equilibria",
+    "local ell^2 XY flow stability",
+    "thermal escape rate",
+    "proof of the Green kernel estimate by this script"
+  ],
+  "fresh_evidence": [
+    {
+      "relative_path": "certificate.json",
+      "sha256": "b1cbb7206a0c7492ad6990213a48480c9d25e04a5a21fe1805f0195a871f5999"
+    },
+    {
+      "relative_path": "fresh_connection/prerequisites/baseline.json",
+      "sha256": "afb9a9b577a2833ebbc9de1f24e5ef587e84e59285bdc4820eac7040127ad881"
+    },
+    {
+      "relative_path": "fresh_connection/prerequisites/saddle.json",
+      "sha256": "91622d70e1ff7077b621639d2781a8406d2fb0c1b6c718a92972b2bec40d6e60"
+    },
+    {
+      "relative_path": "caps.json",
+      "sha256": "e5fba3ef08c145d157471fbef6cf75d28f7e501022c5937be641cc7d1f34f2b6"
+    }
+  ],
+  "old_certificate_chain_reexecuted_by_this_script": false
+}

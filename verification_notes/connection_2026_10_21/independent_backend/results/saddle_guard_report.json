@@ -1,0 +1,13 @@
+{
+  "status": "CONNECTION_SADDLE_GUARD_PASS",
+  "duration_seconds": 804.2363030910492,
+  "aggregate_anon_kernel_shmem_initial_bytes": 2381279232,
+  "aggregate_anon_kernel_shmem_peak_sampled_bytes": 4522594304,
+  "aggregate_memory_limit_bytes": 8589934592,
+  "peak_sampling_interval_seconds": 2,
+  "guarded_process_returncode": 0,
+  "original_overlap_authorized_after_headroom_check": true,
+  "memory_current_not_used_as_resident_budget": "disk page cache is reclaimable",
+  "oom_events_initial": 0,
+  "oom_events_final": 0
+}

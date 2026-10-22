@@ -1,0 +1,41 @@
+[
+  {
+    "program": "baseline",
+    "source_original_sha256": "3ec7aa8f4b66d16af21587c0d3754bf10c072953031cdc293e321a522bf45111",
+    "source_instrumented_sha256": "5261b741731fa8ac6016bb6aaa5bdb82df5c0bb41712d1dcf82171c2e31455cb",
+    "flags": [
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-frounding-math"
+    ]
+  },
+  {
+    "program": "chart",
+    "source_original_sha256": "3ec7aa8f4b66d16af21587c0d3754bf10c072953031cdc293e321a522bf45111",
+    "source_instrumented_sha256": "3bfc4c7dc3b56def936fc9fe7ca48abf0599d86ec67e9b8a0b542c27455f2060",
+    "flags": [
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-frounding-math"
+    ]
+  },
+  {
+    "program": "geometry",
+    "source_original_sha256": "d7dceb146606a4faefdf63448c508f10f6820a4afa945b3894a70d12507a24e7",
+    "source_instrumented_sha256": "d620899fc992bc1666ff7637669b82df4443519f0eeb64961a111780cf76b43f",
+    "flags": [
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-frounding-math"
+    ]
+  }
+]

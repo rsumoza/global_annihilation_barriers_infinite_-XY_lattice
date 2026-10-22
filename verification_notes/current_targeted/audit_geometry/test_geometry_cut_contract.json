@@ -1,0 +1,26 @@
+{
+  "status": "FOCUSED_GEOMETRY_CONTRACT_TESTS_PASS",
+  "checks": {
+    "outside_cut_exact_tangency_retained": true,
+    "outside_cut_touching_positive_interval_retained": true,
+    "outside_cut_touching_negative_interval_retained": true,
+    "outside_cut_straddling_interval_retained": true,
+    "outside_cut_strict_positive_excluded": true,
+    "plane_exact_zero_retained": true,
+    "plane_positive_touch_retained": true,
+    "plane_negative_touch_retained": true,
+    "plane_strict_positive_excluded": true,
+    "plane_strict_negative_excluded": true,
+    "fullfiber_interior_root_and_cap_accepted": true,
+    "cap_radius_equality_rejected": true,
+    "fiber_interior_root_equality_rejected": true,
+    "displayed_cap_radius_passes_sharp_contract": true,
+    "displayed_cap_radius_not_justified_by_coarse_Lambda_one": true,
+    "rational_tau_above_Lambda": true,
+    "rational_cap_margin_exact": true,
+    "TightPoly_selected_fixed_coefficients_contained": true
+  },
+  "checked_source": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/extension/check_capped_separator.py",
+  "scope": "Original nested predicates and selected interval examples only; not a fresh CAP.",
+  "source_sha256": "3ad0f2bc7233c87bfa2e7a934a510b94493999d5fb4c815761e3fee0e46fa1d2"
+}

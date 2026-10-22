@@ -1,0 +1,169 @@
+INDEPENDENT ADVERSARIAL REVIEW OF THE GREEN TAIL
+20 October 2026. Reviewer task /root/siads_green_review.
+
+Decision: PASS for Theorems A and B in green_tail_analysis.txt, with the
+explicit anchor conventions and dyadic-radius scope stated there. The
+original final paragraph restricting coupling perturbations to common
+compact support was unnecessarily restrictive; the corrected argument
+below proves the small l1 coupling-ball extension as well.
+
+This is an independent mathematical derivation within this collaboration,
+not external peer review, a formal proof assistant verification, or a
+claim that the underlying Green decay is new.
+
+1. Multiplier and normalization.
+
+For forward bonds D_i theta(x)=theta(x+e_i)-theta(x), the gradient projector
+on l2(Z2;R2) has multiplier m_ij=d_i conjugate(d_j)/lambda, with
+d_i=exp(ik_i)-1 and lambda=sum_i|d_i|2. There is no missing factor2:
+each positive bond is counted once and m_11+m_22=1 almost everywhere.
+The normalization dk/(2pi)^2 is correct. Orthogonal projection gives
+||P||=1 and stationarity yields P sin(Dtheta)=0 in the closed gradient
+space. Thus Dtheta=P(Dtheta-sin Dtheta), without an l2 inverse for the
+vertex Laplacian.
+
+The bare Green multiplier1/lambda is not integrable at zero in2D.
+The proof never integrates it over both variables alone: it first fixes
+the other variable !=0 and then multiplies the partially integrated
+coefficients by the edge symbols. Fubini applies directly to bounded
+m_ij. The exceptional fixed-variable value zero has measure zero.
+
+2. Independent derivation of the kernel bound.
+
+Choose the Fourier variable corresponding to a largest component n of z,
+r=|n|=||z||infty. Let t denote the other variable and
+s=|sin(t/2)|, alpha=2asinh(s). Then cosh(alpha)=2-cos(t) and
+
+  g_n(t)=(1/2pi) integral exp(iny)/lambda(t,y) dy
+        =exp(-alpha|n|)/(2sinh(alpha)), t!=0.
+
+For diagonal entries at r>=1, partial integration has magnitude
+s exp(-alpha r)/sqrt(1+s2). The other diagonal entry is its negative
+because the relevant Kronecker delta is zero when n!=0.
+
+For mixed entries, the coefficients are d_other(g_{n+1}-g_n) or its
+conjugate with the opposite shift. Exactly, their magnitude is at most
+
+  s exp[-alpha(r-1/2)]/sqrt(1+s2).
+
+This independent formula explicitly tracks the potentially adverse
+one-step anchor shift, including n=+/-1. It already suffices for the
+claimed constant8, using |P_ij(z)|<=1/2 for r=0,1 and direct integration
+for r>=2.
+
+The author's alternate bound is also valid and simpler for uniform r>=1:
+
+  |g_{n+/-1}-g_n|
+  <=exp(-alpha r)(exp(alpha)-1)/(2sinh alpha)
+  =exp(-alpha r) exp(alpha)/(exp(alpha)+1)
+  <=exp(-alpha r).
+
+Multiplication by |d_other|=2s bounds both mixed coefficients by
+2s exp(-alpha r). The equality involving the exponential quotient is
+correct; there is no lost exp(alpha) at r=1.
+
+For |t|<=pi, alpha>=sqrt2 |t|/pi and s<=|t|/2. Hence
+
+  (1/2pi) integral s exp(-alpha r) dt <=pi/(4r2),
+  |P_ij(z)|<=pi/(2r2)<2/r2<=8/(1+r)2, r>=1.
+
+At z=0 the bounded multiplier gives |P_ij(0)|<=1, sufficient for8.
+Coordinate exchange preserves the orientation indexing and covers the
+case where the other component realizes ||z||infty. Therefore
+
+  |P_ij(z)|<=8/(1+||z||infty)2
+
+is established with no hidden endpoint translation.
+
+3. Column tail and recurrence.
+
+There are8r anchor vertices on shell r>=1 and2 output orientations.
+For integer rho>=1:
+
+  sum_{||z||>=rho,i}|P_ij(z)|2
+  <=1024 sum_{r>=rho} r/(1+r)4
+  <=1024 integral_rho^infty t^(-3)dt=512/rho2.
+
+Thus the column-tail l2 norm is <=16sqrt2/rho, already summed over
+both output orientations. Minkowski over scalar source entries requires
+no additional sqrt2. Splitting q by source anchors |y|<R/2 and >=R/2,
+for even R>=2R*, gives separation >=R/2 and hence
+
+  T(R)<=32sqrt2 ||q||1/R+a T(R/2), a=delta2/6.
+
+The coefficient a multiplies the *source* tail; applying the full l2
+projection contraction before target restriction is valid. The source
+core is finite, while q in l1 ensures the required sums converge. The
+global Taylor inequality |t-sin t|<=|t|3/6 and l3<=l2 yield
+||q||1<=||theta||X3/6. No small-angle assumption is imposed in the core.
+
+For R_n=2^n R*, the invariant bound
+
+  A>=R*T(R*), A>=32sqrt2 Q/(1-2a)
+  implies T(R_n)<=A/R_n
+
+by induction. For arbitrary R between dyadic radii the safe bound is
+2A/R, not A/R. The stated safe rational replacements32sqrt2<46 and
+sqrt227<16 are valid.
+
+4. Cutoff/projection comparison.
+
+I checked the preceding localization note at its cutoff proof. It gives
+unweighted ||(I-Pi_2R)theta||X2<=227 T_min(R)2 from the product rule and
+annular Poincare constant225/4. No ellipticity factor1/a0 is needed at
+this purely approximation step. The older sqrt454 factor arose only
+when passing from weighted hole-filling energy to an unweighted tail.
+
+With forward bonds, min-endpoint radius>=R implies anchor radius>=R;
+therefore T_min(R)<=T_anchor(R), and the Green estimate joins precisely
+the same energy projection. Integer indices are essential. The original
+angle assumption on minimum-endpoint radius>=R0 implies the anchor
+assumption at R*=R0+1. The use of4097 for the known path is consistent.
+
+5. Corrected coupling extension.
+
+For J_e=1+b_e, ||b||1<=beta and an exact critical theta of E_J, define
+
+  q_b=Dtheta-(1+b)sin(Dtheta).
+
+Then q_b is in l1 and
+Q_b<=||theta||X3/6+beta, while stationarity gives Dtheta=Pq_b.
+Where |Dtheta|<=eta, the exact pointwise inequality is
+
+  |q_b,e|<= (eta2/6+||b||infty)|Dtheta_e|
+           <=(eta2/6+beta)|Dtheta_e|.
+
+Thus a_b=eta2/6+beta<1/2 suffices for the same recurrence and1/R tail.
+No common support, spatial moment, or tail modulus on b is necessary
+for this small multiplicative-coupling setting. Treating b as a generic
+additive force would lose this key cancellation.
+
+For beta=1/500 and displacement ||theta-theta0||X<=1/32 from an
+unperturbed critical with exterior angle<=.018, edge evaluation norm
+1/sqrt2<.71 gives exterior angle<.018+.71/32=.0401875<.041.
+Hence eta=.041 and a_b=.0412/6+.002 have2a_b<1. A common norm bound
+M=6008 is also valid when the original norm bound is6007.
+
+One application detail remains important: the old path audit directly
+controls m* and the one saddle s+ used in that path. If claiming the same
+fixed-center angle radius for the reflected saddle s-, check its radius
+convention explicitly. With physical reflection x->12-x and index
+physical(i,j)=(6.5+i,.5+j), vertices map i->-i-1. Their radii change by
+at most1. Thus R*=4098 is a conservative common anchor choice for
+m*,s+,s- without a new direct angle calculation. This does not affect
+the R*=4097 budgets for the known upper path.
+
+6. Numerical scope and recommendation.
+
+The coefficients in the stated budgets are conservative consequences of
+M=6007, not measurements of the actual q norm. They are tail-error
+budgets, not newly computed minimax barriers. Replacing thousands of
+radius digits by20-25 digits is a genuine proved asymptotic improvement
+but does not make the full-grid minimax algorithm practical. Preserve
+that distinction in abstract, theorem applications and conclusion.
+
+The manuscript may assert the explicit projector estimate, the1/R
+critical-tail theorem and the corrected small-coupling extension.
+It should attribute general lattice Green/defect decay to the existing
+literature rather than claim first decay theory. Its additional value
+is the explicit constants and integration with the global certificate.

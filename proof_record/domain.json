@@ -1,0 +1,9 @@
+{
+  "status": "ALL_UNIFORM_LIFTS_EXCLUDED_AND_MINIMUM_INSIDE_PASS",
+  "domain_norm_about_reference_upper": "0.997741053167646555113009971685426322",
+  "reference_energy_lower_exact": "2364140631720823634569/100000000000000000000",
+  "minimum_atlas_membership_transferred_from_fresh_separator": true,
+  "minimum_strictly_inside_both_cuts": true,
+  "both_exact_saddles_in_boundary": true,
+  "reflected_exact_saddles_distinct": true
+}

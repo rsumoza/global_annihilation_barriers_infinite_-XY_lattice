@@ -1,0 +1,228 @@
+\section{A terminating certificate on an explicit infinite input class}
+\label{sec:local-class}
+
+The global theorem can be reused without searching for a new separator
+when an input is connected to $m_0$ below its certified communication
+height. This section specifies an infinite class with a quantitative
+tail and a terminating enclosure procedure. It concerns the homogeneous
+interaction $b=0$. It neither identifies the continued saddles in a
+perturbed interaction as minimax realizers nor supplies a complete search
+for arbitrary configurations.
+
+Define the absolute communication height
+\[
+ c(u)=\inf_{\gamma(0)=u,\ \gamma(1)\in\K}
+                  \max_{0\le t\le1}\E(\gamma(t))
+      =\E(u)+B_0(u),
+\]
+with the path class of \cref{eq:barrier}. All norms below are in $\X$.
+
+\begin{lemma}[Subcritical connection]\label{lem:subcritical}
+Suppose $c(m)=h$, $\E(m)<h$, and a continuous path from $m$ to $u$
+has maximum energy $a<h$. Then $c(u)=h$.
+\end{lemma}
+\begin{proof}
+Concatenation with an arbitrarily near-optimal path from $m$ gives
+$c(u)\le\max(a,h)=h$. If $c(u)<h$, a path from $u$ to $\K$ with
+maximum strictly below $h$ exists by the definition of the infimum.
+Prepending the given connection would contradict $c(m)=h$.
+No compactness or attainment assertion for a new minimax is used.
+\end{proof}
+
+\begin{theorem}[Reuse on a full energy ball]\label{thm:local-class}
+Let $m_0,s_+,h$ be the exact states and height in
+\cref{thm:instance}, and put $r=1/20$. For every
+$u\in\overline B_\X(m_0,r)$,
+\begin{equation}\label{eq:class-height}
+ c(u)=h,\qquad B_0(u)=h-\E(u),\qquad
+ 0.00442867<B_0(u)<0.00570116.
+\end{equation}
+These inputs have the same two plaquette charges as $m_0$ and no
+additional charges. They need not themselves be stationary.
+For the specified flow \eqref{eq:flow} with $b=0$, the ball is invariant
+and
+\begin{equation}\label{eq:class-flow}
+ \nrm{u(t)-m_0}\le
+ e^{-43t/2000}\nrm{u(0)-m_0}.
+\end{equation}
+\end{theorem}
+\begin{proof}
+Stationarity and $H\preceq I$ give, for $v=u-m_0$ and $0\le t\le1$,
+\[
+ \E(m_0+tv)\le\E(m_0)+\tfrac12t^2\nrm v^2
+ \le\E(m_0)+\frac1{800}<h.
+\]
+The last strict inequality uses $h-\E(m_0)>0.00567867$.
+\Cref{lem:subcritical} proves the height identity. The exact minimum
+has coercivity greater than $57/1000$. With $\tau=71/100>\Lambda$,
+throughout the ball
+\begin{equation}\label{eq:class-mu}
+ H(u)\succeq\left(\frac{57}{1000}-\tau r\right)I
+            =\frac{43}{2000}I.
+\end{equation}
+Thus $\E(u)\ge\E(m_0)$, proving both barrier bounds since
+$0.00567867-1/800=0.00442867$. The global principal-branch margin
+at $m_0$ exceeds $1.1$, while every bond changes by at most
+$r/\sqrt2<1.1$. Charges are therefore preserved along the segment.
+The gradient is globally Lipschitz. Pairing the evolution with $u-m_0$
+and integrating \eqref{eq:class-mu} along a segment proves invariance
+of the ball and \eqref{eq:class-flow}.
+\end{proof}
+
+\subsection{Inputs with a tail imposed by their construction}
+
+Use the integer vertex boxes $\Lambda_R$ and projections $\Pi_R$ of
+\cref{sec:green}. Set $R_0=4098$, $R_n=2^nR_0$, and
+$w_n=r2^{-(n+1)}$. An input program supplies a compact rational field
+$q_n$ supported in $\Lambda_{R_n}$ for every requested integer $n\ge0$.
+Define
+\begin{equation}\label{eq:class-blocks}
+ v_n=\frac{w_n}{\max\{1,\nrm{q_n}^2\}}q_n,\qquad
+ v=\sum_{n=0}^{\infty}v_n,\qquad u=m_0+v.
+\end{equation}
+The norm squared is an exact rational full-lattice bond sum, including
+all bonds crossing the support boundary. The program is required to
+return a finite array for every requested $n$; no decision of totality
+for arbitrary programs is asserted. Call the resulting class
+$\mathcal C_{\rm loc}$. It permits arbitrary rational block shapes
+and signs, without symmetry assumptions.
+
+\begin{proposition}[Certified localization]\label{prop:class-tail}
+Every input \eqref{eq:class-blocks} belongs to the ball in
+\cref{thm:local-class}. Its partial sums $p_N=\sum_{n=0}^Nv_n$ satisfy
+\begin{equation}\label{eq:class-tail}
+ \supp p_N\subset\Lambda_{R_N},\qquad
+ \nrm{v-p_N}\le r2^{-(N+1)}=\frac{rR_0}{2R_N}.
+\end{equation}
+In particular, with $C_*=2.72\times10^{13}$,
+\begin{equation}\label{eq:class-projection}
+ \nrm{(I-\Pi_{2R_N})u}\le
+ \frac{C_*+rR_0/2}{R_N}.
+\end{equation}
+\end{proposition}
+\begin{proof}
+For $t\ge0$, $t/\max(1,t^2)\le1$. Hence $\nrm{v_n}\le w_n$;
+the geometric series gives $\nrm v\le r$ and
+\eqref{eq:class-tail}. Since $p_N\in\X_{2R_N}$, best approximation
+gives the same bound for $(I-\Pi_{2R_N})v$. The critical-state bound
+\eqref{eq:green-robust-tail}, applied with $b=0$ on its sequence
+$R_N=4098\,2^N$, gives the remaining term in
+\eqref{eq:class-projection}.
+\end{proof}
+
+The class has infinitely many independently variable spatial components.
+For example, choose $q_n=a_n\delta_{(R_n,0)}$ with rational
+$|a_n|\le1/2$. Then $\nrm{q_n}^2=4a_n^2\le1$, the normalization denominator
+is one, and nonzero infinitely many $a_n$ give a
+noncompact perturbation. The tail bounds are consequences of the input
+format, rather than conclusions guessed from finite exterior samples.
+Only the energy ball is proved invariant under the flow; preservation
+of this particular block representation or its spatial tail rate is
+not needed here and is not asserted.
+
+\subsection{Effective critical states and finite energy enclosures}
+
+A name for $x\in\X$ returns compact rational $x_\delta$ with
+$\nrm{x-x_\delta}\le\delta$ for every positive rational $\delta$.
+The analytic reference and its exterior estimates in the frozen data
+provide such names for the candidate states. Finite energy-orthogonal
+projections are finite Dirichlet systems; their coefficients and the
+reference's arctangent values can be enclosed to any rational precision.
+Their projection tails tend to zero. Compact dyadic corrections preserve
+this property.
+
+For completeness, the nonlinear correction does not require an infinite
+inverse as an algorithmic primitive. Write $a_e^\sharp$ for the Riesz
+representative of bond evaluation. For every compact rational field $p$,
+\begin{equation}\label{eq:class-riesz}
+ \nrm{a_e^\sharp-p}^2
+       =\frac12-2D_ep+\nrm{Dp}_2^2.
+\end{equation}
+Dirichlet projections of $a_e^\sharp$ on increasing boxes are rational
+and converge in $\X$, by density. Formula \eqref{eq:class-riesz}
+is an exact stopping test for their error. If
+$\nrm{x-x_\delta}\le\delta$, then
+$\nrm{F(x)-F(x_\delta)}\le\delta$. The force at the compact field
+$x_\delta$ is a finite sum of these Riesz vectors with computable sine
+coefficients. For compact $z$, $H(x)z$ similarly uses only the finitely
+many bonds on which $D_ez\ne0$, with computable cosine coefficients.
+General effective vectors follow by $\nrm{H(x)}\le1$ and density.
+Thus $F$ and the Hessian action are effective in the same norm.
+
+Let $A=H(\widehat\theta)$ for either frozen minimum or saddle candidate.
+The audited bounds imply $\nrm A\le1$ and
+$\nrm{A^{-1}}\le1/\gamma$ with $\gamma=69/1000$. Spectral calculus gives
+\begin{equation}\label{eq:class-inverse}
+ A^{-1}f=\sum_{k=0}^{M}A(I-A^2)^kf+\mathcal R_Mf,\qquad
+ \nrm{\mathcal R_Mf}\le
+ \frac{(1-\gamma^2)^{M+1}}{\gamma}\nrm f.
+\end{equation}
+Indeed, $A$ is self-adjoint and its spectrum has modulus between
+$\gamma$ and one; summing the scalar geometric identity proves the
+formula also at an index-one candidate. Its finite polynomials can be
+computed with the preceding oracles, and the remainder tends to zero.
+
+The frozen Newton map $T(z)=z-A^{-1}F(\widehat\theta+z)$ is a
+contraction on its original certified correction ball. Its self-map
+property uses the original constants in
+\cref{lem:cert-newton}; substituting a weaker common constant into that
+self-map test is unnecessary. Since both correction radii are less than
+$1/50$, \eqref{eq:basic-bounds} and the displayed common inverse bound
+give contraction factor less than $1/4$. Exact iterates from zero
+therefore have distance at most $4^{-j}/50$ from the correction.
+Computing a finite composition to any prescribed additional error is
+effective by \eqref{eq:class-inverse}. Thus the exact states $m_0,s_+$
+have effective names. This is a constructive proof of computability,
+not an assertion that the original finite-precision supervisor already
+implements arbitrary-precision refinement.
+
+\begin{theorem}[Termination on $\mathcal C_{\rm loc}$]
+\label{thm:class-termination}
+Given an input program of \eqref{eq:class-blocks} and a positive rational
+$\varepsilon$, there is a procedure using finitely many input blocks,
+finite linear systems, rational operations, and rigorously enclosed
+trigonometric evaluations which returns rational $L,U$ such that
+\begin{equation}\label{eq:class-enclosure}
+ L\le B_0(u)\le U,\qquad U-L<\varepsilon.
+\end{equation}
+It uses the fixed global certificate once and does not search for a new
+minimax saddle. No uniform practical complexity bound is asserted.
+\end{theorem}
+\begin{proof}
+The preceding construction gives compact rational names for $s_+$
+and, using \eqref{eq:class-tail}, for $u=m_0+v$.
+Both critical states have norm at most $M_*=6008$ by the existing
+common Green data. Thus $\nrm u\le M_*+r$.
+For an approximation $x_\delta$ to an exact field $x$, Taylor expansion
+at $x$ and $\nrm{F(x)}\le\nrm x$ give
+\[
+ |\E(x_\delta)-\E(x)|\le\nrm x\,\delta+\tfrac12\delta^2.
+\]
+Choose
+\[
+ \delta=\min\left\{1,
+ \frac{\varepsilon}{8(2M_*+r+1)}\right\}.
+\]
+Compute the two names to this accuracy and enclose each finite bond
+energy sum with radius at most $\varepsilon/16$, using rational Taylor
+remainders for cosine. The error in the difference of the exact and
+compact energies is at most
+$(2M_*+r)\delta+\delta^2\le\varepsilon/8$.
+Adding the two finite-sum errors gives a rational interval of radius
+at most $\varepsilon/4$. Its width is at most
+$\varepsilon/2<\varepsilon$. By \cref{thm:local-class} it encloses
+$\E(s_+)-\E(u)=B_0(u)$. Each requested accuracy entails finitely many
+blocks and oracle operations, and each refinement loop has a proven
+vanishing error. This proves termination.
+\end{proof}
+
+The compact-name tolerance can be divided between the name of $m_0$
+and the block tail; there is no need to materialize the very large
+projection radius in \eqref{eq:class-projection}. The latter is a
+separate spatial localization guarantee. The supplementary rational
+checker verifies the constants, representative finite block prefixes,
+and error budgets. The general critical-name and arbitrary-input
+enclosure procedure above is proved, but is not advertised as an
+executed general software interface. The substantive global certificate
+remains \cref{thm:instance}; subcritical concatenation is its elementary
+reuse principle, not an independent claim of a new universal method.

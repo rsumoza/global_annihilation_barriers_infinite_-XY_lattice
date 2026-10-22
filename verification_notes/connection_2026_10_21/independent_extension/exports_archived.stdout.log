@@ -1,0 +1,61 @@
+{
+  "status": "GUARDED_EXTENSION_EXACT_EXPORTS_ARCHIVED_COMPARISON_PASS",
+  "scope": "Fixed extension execution, original arithmetic with finite/order guards; interval exports checked against exact binary values; not an independent interval backend",
+  "comparison_target": "archived",
+  "modules": [
+    {
+      "label": "projection_plus",
+      "interval_records_checked": 19,
+      "scientific_bytes_identical": true
+    },
+    {
+      "label": "center_distances_plus",
+      "interval_records_checked": 220,
+      "scientific_bytes_identical": true
+    },
+    {
+      "label": "adjoint_plus",
+      "interval_records_checked": 5,
+      "scientific_bytes_identical": true
+    },
+    {
+      "label": "projection_minus",
+      "interval_records_checked": 19,
+      "scientific_bytes_identical": true
+    },
+    {
+      "label": "center_distances_minus",
+      "interval_records_checked": 220,
+      "scientific_bytes_identical": true
+    },
+    {
+      "label": "adjoint_minus",
+      "interval_records_checked": 5,
+      "scientific_bytes_identical": true
+    }
+  ],
+  "charts": 5,
+  "module_interval_records": 488,
+  "chart_interval_records": 380,
+  "chart_one_sided_scalars": 20,
+  "all_scientific_outputs_byte_identical": true,
+  "tight_energy_threshold": {
+    "LEVEL": "568947710965782931/100000000000000000000",
+    "saddle_upper_exact": "1066776958060842995396384691934130868401014311377484157142887010494633037/187500000000000000000000000000000000000000000000000000000000000000000000000",
+    "positive_exact_slack": "228615308065869131598985688622515842857112989505366963/187500000000000000000000000000000000000000000000000000000000000000000000000",
+    "display_as_float_for_orientation_only": 1.2192816430179687e-21
+  },
+  "compiler_flags": [
+    "-std=c++17",
+    "-O2",
+    "-DNDEBUG",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-frounding-math"
+  ],
+  "input_bindings_sha256": "8a29c52174c548aa2be518e69c0c7b544b9318fcaa1512639631394ee1fb8a71",
+  "guarded_replay_sha256": "f32db34e3882325ed9373e5ed78e386fe982f0780bfb2ee0da1fc06b763ad5d8",
+  "clean_full_certificate_sha256": "16524ecaa1ce46a69dc065c3f59250ab659162bbc254d3688a93f30f87ff3de1",
+  "separator_certificate_sha256": "c273edd5796656d57ea7d7daa0535257766643f38af15ff20297442324bd3139",
+  "connection_certificate_sha256": "09b61516c204b7da379b41917584d7c8d563d909c78d4c2b217751aea6473b9d"
+}

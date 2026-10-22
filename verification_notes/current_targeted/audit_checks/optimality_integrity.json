@@ -1,0 +1,3566 @@
+{
+  "status": "OPTIMALITY_INNER_MANIFEST_PASS",
+  "files_checked": 593,
+  "errors": [],
+  "manifest_sha256": "be1ea66be206f53241e22531d581ca8898407689083f6c7b23cac798ed5ca15c",
+  "files": [
+    {
+      "path": "README.txt",
+      "expected_sha256": "99ca2859e1363a56e707c7eb048f1f180a40e67600de623618496e89a158c51e",
+      "actual_sha256": "99ca2859e1363a56e707c7eb048f1f180a40e67600de623618496e89a158c51e",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/certificate.json",
+      "expected_sha256": "09b61516c204b7da379b41917584d7c8d563d909c78d4c2b217751aea6473b9d",
+      "actual_sha256": "09b61516c204b7da379b41917584d7c8d563d909c78d4c2b217751aea6473b9d",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/connections/full_annihilation.json",
+      "expected_sha256": "23f34b1d09683493eb4f1b9513136252f5c60acaf62e8e4ed1fb462b537bd38a",
+      "actual_sha256": "23f34b1d09683493eb4f1b9513136252f5c60acaf62e8e4ed1fb462b537bd38a",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/connections/full_annihilation.log",
+      "expected_sha256": "db007d6904ffb04083608d0209b7104a4156688b20c6c4f3ad888b64a7446a70",
+      "actual_sha256": "db007d6904ffb04083608d0209b7104a4156688b20c6c4f3ad888b64a7446a70",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/connections/full_annihilation.nodes.jsonl",
+      "expected_sha256": "4e402216c779d43c59216da0e31f1633843a9b9be6311aaf3ebaacc2143fed21",
+      "actual_sha256": "4e402216c779d43c59216da0e31f1633843a9b9be6311aaf3ebaacc2143fed21",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/connections/full_annihilation.segments.jsonl",
+      "expected_sha256": "307b777fbeaf6460f735a063ec28cf19005fcaa740ec24c4ad89dc5804bc4685",
+      "actual_sha256": "307b777fbeaf6460f735a063ec28cf19005fcaa740ec24c4ad89dc5804bc4685",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/connections/join_points.json",
+      "expected_sha256": "024d5130734b9525b9a59ecb73f43fc37048c132d4fd3117ce410fb40d745d24",
+      "actual_sha256": "024d5130734b9525b9a59ecb73f43fc37048c132d4fd3117ce410fb40d745d24",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/connections/join_points.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/connections/leg_annihilation.json",
+      "expected_sha256": "70bfbaef6a509b50a9b9816bdcfc5e0071d1472f349dcdb236b9f0a234622242",
+      "actual_sha256": "70bfbaef6a509b50a9b9816bdcfc5e0071d1472f349dcdb236b9f0a234622242",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/connections/leg_annihilation.log",
+      "expected_sha256": "5a371fe9ff23ddbf673f98cd9fc3f9311ff1027851a42552134ac4ded5bddfec",
+      "actual_sha256": "5a371fe9ff23ddbf673f98cd9fc3f9311ff1027851a42552134ac4ded5bddfec",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/connections/leg_annihilation.nodes.jsonl",
+      "expected_sha256": "f8946db539ba0a6355b9009a80b5f1b4aa1d1c2bcc54139d0374c0ac783758cb",
+      "actual_sha256": "f8946db539ba0a6355b9009a80b5f1b4aa1d1c2bcc54139d0374c0ac783758cb",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/connections/leg_annihilation.segments.jsonl",
+      "expected_sha256": "0f4bb8bfef17572942ebe8572a8424c65050cc2512631d5e6b0f2a5efb9df1d4",
+      "actual_sha256": "0f4bb8bfef17572942ebe8572a8424c65050cc2512631d5e6b0f2a5efb9df1d4",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/connections/leg_return.json",
+      "expected_sha256": "599aefbfab224c1441ff00e6c60e8ce873d6beb320dd2eaf56fe2b1b839eff2a",
+      "actual_sha256": "599aefbfab224c1441ff00e6c60e8ce873d6beb320dd2eaf56fe2b1b839eff2a",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/connections/leg_return.log",
+      "expected_sha256": "4c018ade3dbda0d673cf5434827fe6e4da1fc2378e79278433f0439c26f6f80e",
+      "actual_sha256": "4c018ade3dbda0d673cf5434827fe6e4da1fc2378e79278433f0439c26f6f80e",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/connections/leg_return.nodes.jsonl",
+      "expected_sha256": "7d31ee43bfdd9b807b2f5c7e5d8bee7816d51107f47fc041d2df13e68adcaf0f",
+      "actual_sha256": "7d31ee43bfdd9b807b2f5c7e5d8bee7816d51107f47fc041d2df13e68adcaf0f",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/connections/leg_return.segments.jsonl",
+      "expected_sha256": "b121610e3b8dba3f56b10a29ae822959a0819b9026eca8abe8facd117f28daf6",
+      "actual_sha256": "b121610e3b8dba3f56b10a29ae822959a0819b9026eca8abe8facd117f28daf6",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/global_rational.json",
+      "expected_sha256": "db8e13ab6f13d7c9b702e121c39a9dfd63ecee4e20630c1c533368802326b2c6",
+      "actual_sha256": "db8e13ab6f13d7c9b702e121c39a9dfd63ecee4e20630c1c533368802326b2c6",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/global_rational.stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/global_rational.stdout.log",
+      "expected_sha256": "db8e13ab6f13d7c9b702e121c39a9dfd63ecee4e20630c1c533368802326b2c6",
+      "actual_sha256": "db8e13ab6f13d7c9b702e121c39a9dfd63ecee4e20630c1c533368802326b2c6",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/join_verify_build.stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/join_verify_build.stdout.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/path_verify_build.stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/path_verify_build.stdout.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/prerequisites/barrier.json",
+      "expected_sha256": "b3a699038d933416817455fd1cf4f992e89622a416d2eebcb11ef37e5b44f0ab",
+      "actual_sha256": "b3a699038d933416817455fd1cf4f992e89622a416d2eebcb11ef37e5b44f0ab",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/prerequisites/barrier.log",
+      "expected_sha256": "6477b87854fa711caeb860d494a06c0ca4e8be18325526a2890894039427cde7",
+      "actual_sha256": "6477b87854fa711caeb860d494a06c0ca4e8be18325526a2890894039427cde7",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/prerequisites/barrier_build.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/prerequisites/baseline.json",
+      "expected_sha256": "afb9a9b577a2833ebbc9de1f24e5ef587e84e59285bdc4820eac7040127ad881",
+      "actual_sha256": "afb9a9b577a2833ebbc9de1f24e5ef587e84e59285bdc4820eac7040127ad881",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/prerequisites/baseline.log",
+      "expected_sha256": "d9229a511e5f178868ffa26652ce943bb8e85280a1f673305f8f0576f06cc31b",
+      "actual_sha256": "d9229a511e5f178868ffa26652ce943bb8e85280a1f673305f8f0576f06cc31b",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/prerequisites/baseline_build.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/prerequisites/certificate.json",
+      "expected_sha256": "684ec4cfd8407d0f3baebf430619f24b8a1fdd525ee7b7fbb03babfcf1977eb7",
+      "actual_sha256": "684ec4cfd8407d0f3baebf430619f24b8a1fdd525ee7b7fbb03babfcf1977eb7",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/prerequisites/rational.json",
+      "expected_sha256": "88ba000c91bc4914e798d25b39e6f765e2c2c05f9f125a3a90da5382c941a14a",
+      "actual_sha256": "88ba000c91bc4914e798d25b39e6f765e2c2c05f9f125a3a90da5382c941a14a",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/prerequisites/rational.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/prerequisites/saddle.json",
+      "expected_sha256": "91622d70e1ff7077b621639d2781a8406d2fb0c1b6c718a92972b2bec40d6e60",
+      "actual_sha256": "91622d70e1ff7077b621639d2781a8406d2fb0c1b6c718a92972b2bec40d6e60",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/prerequisites/saddle.log",
+      "expected_sha256": "1094b43553c5049931bca794083eaf192919b9c12dba32d24c11a60ee8cd41ec",
+      "actual_sha256": "1094b43553c5049931bca794083eaf192919b9c12dba32d24c11a60ee8cd41ec",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/prerequisites/saddle_build.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/prerequisites.stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/connection/prerequisites.stdout.log",
+      "expected_sha256": "ff8d074601ac7e78d8479155b9284c6a821e7dc45150732d092102bbd009405d",
+      "actual_sha256": "ff8d074601ac7e78d8479155b9284c6a821e7dc45150732d092102bbd009405d",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/atlas_manifest.json",
+      "expected_sha256": "92c002f5a5b9e4aafd34073dbccfa1a15551c51d17e45ef83c501883b6fdf0d6",
+      "actual_sha256": "92c002f5a5b9e4aafd34073dbccfa1a15551c51d17e45ef83c501883b6fdf0d6",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/baseline.json",
+      "expected_sha256": "afb9a9b577a2833ebbc9de1f24e5ef587e84e59285bdc4820eac7040127ad881",
+      "actual_sha256": "afb9a9b577a2833ebbc9de1f24e5ef587e84e59285bdc4820eac7040127ad881",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/baseline.log",
+      "expected_sha256": "d9229a511e5f178868ffa26652ce943bb8e85280a1f673305f8f0576f06cc31b",
+      "actual_sha256": "d9229a511e5f178868ffa26652ce943bb8e85280a1f673305f8f0576f06cc31b",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/baseline_build.stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/baseline_build.stdout.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/boundary.json",
+      "expected_sha256": "901d3e5401068c2ed20abcf82628d93220e045e04c121d4eece9b215372cfba8",
+      "actual_sha256": "901d3e5401068c2ed20abcf82628d93220e045e04c121d4eece9b215372cfba8",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/boundary.stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/boundary.stdout.log",
+      "expected_sha256": "28876b33922c236e26914d9254c4386a783cd6f58cf9da8946693bd1630795ab",
+      "actual_sha256": "28876b33922c236e26914d9254c4386a783cd6f58cf9da8946693bd1630795ab",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/certificate.json",
+      "expected_sha256": "c273edd5796656d57ea7d7daa0535257766643f38af15ff20297442324bd3139",
+      "actual_sha256": "c273edd5796656d57ea7d7daa0535257766643f38af15ff20297442324bd3139",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/chart_build.stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/chart_build.stdout.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c000/chart.json",
+      "expected_sha256": "4be47206af97cc00252ef41fbc7a98f6b3ca28ec64e44fd15ddd4753288e06cf",
+      "actual_sha256": "4be47206af97cc00252ef41fbc7a98f6b3ca28ec64e44fd15ddd4753288e06cf",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c000/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c000/coefficients.txt",
+      "expected_sha256": "7aab5d63be3198780bdc458319ec1c52a6f1455a02488825f72fc86e950bbc48",
+      "actual_sha256": "7aab5d63be3198780bdc458319ec1c52a6f1455a02488825f72fc86e950bbc48",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c000/polynomials.json",
+      "expected_sha256": "e8ea7e5a20d6330fbb50ccc9c163376f36d038416fbd20b5b1cc3a8433985457",
+      "actual_sha256": "e8ea7e5a20d6330fbb50ccc9c163376f36d038416fbd20b5b1cc3a8433985457",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c001/chart.json",
+      "expected_sha256": "6e6388f4d181431fcd25b98099ba39b58b4217a31db3bab720377bf48d20bd21",
+      "actual_sha256": "6e6388f4d181431fcd25b98099ba39b58b4217a31db3bab720377bf48d20bd21",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c001/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c001/coefficients.txt",
+      "expected_sha256": "11f9aff2bdb35f229ed04f1c708c7ea569c8362b7cbf41b9c47adec484af0ab0",
+      "actual_sha256": "11f9aff2bdb35f229ed04f1c708c7ea569c8362b7cbf41b9c47adec484af0ab0",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c001/polynomials.json",
+      "expected_sha256": "efc1adf070eb8c940f9f47e5f04436608454550f8108d7e04a3c6793044ae892",
+      "actual_sha256": "efc1adf070eb8c940f9f47e5f04436608454550f8108d7e04a3c6793044ae892",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c002/chart.json",
+      "expected_sha256": "fd80fcea65dc5a1831dfb46132965e42709fc8982e9641cdb97c8899321b89f0",
+      "actual_sha256": "fd80fcea65dc5a1831dfb46132965e42709fc8982e9641cdb97c8899321b89f0",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c002/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c002/coefficients.txt",
+      "expected_sha256": "dab5a3fc571fbf5e4d081212555313e433a503604e981723a20a637d02ee2ce2",
+      "actual_sha256": "dab5a3fc571fbf5e4d081212555313e433a503604e981723a20a637d02ee2ce2",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c002/polynomials.json",
+      "expected_sha256": "8a332f3843432e2a554f503676442a96dcf73e3f105311be454e691313ade563",
+      "actual_sha256": "8a332f3843432e2a554f503676442a96dcf73e3f105311be454e691313ade563",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c003/chart.json",
+      "expected_sha256": "a48b91b9bc57233f8d2cbb919386ae487eb9fe3ce1122f63934ac7c26452ec5b",
+      "actual_sha256": "a48b91b9bc57233f8d2cbb919386ae487eb9fe3ce1122f63934ac7c26452ec5b",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c003/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c003/coefficients.txt",
+      "expected_sha256": "eb06d1cb3be9bc459a9c603eba0f6e93db7cc16bd11571e8c120bcae1d21b92f",
+      "actual_sha256": "eb06d1cb3be9bc459a9c603eba0f6e93db7cc16bd11571e8c120bcae1d21b92f",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c003/polynomials.json",
+      "expected_sha256": "d93d4984d867d19dda7f2bc39620620f7d5ed18ac0829a2a4bf5f02129636313",
+      "actual_sha256": "d93d4984d867d19dda7f2bc39620620f7d5ed18ac0829a2a4bf5f02129636313",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c004/chart.json",
+      "expected_sha256": "c32f3e157b2f6bb61f9ab6be06cf6ba3534dbd843faeff9a1d2068ec691e4046",
+      "actual_sha256": "c32f3e157b2f6bb61f9ab6be06cf6ba3534dbd843faeff9a1d2068ec691e4046",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c004/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c004/coefficients.txt",
+      "expected_sha256": "3d1f061cd19d43ff886592a244880414f1ff534c0108fd55ca31bd423b712a06",
+      "actual_sha256": "3d1f061cd19d43ff886592a244880414f1ff534c0108fd55ca31bd423b712a06",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c004/polynomials.json",
+      "expected_sha256": "ab75ed768506d72964b6e4ab5513e4cb7715a28547e0b55f73d0233ce5d999a4",
+      "actual_sha256": "ab75ed768506d72964b6e4ab5513e4cb7715a28547e0b55f73d0233ce5d999a4",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c005/chart.json",
+      "expected_sha256": "78c6c65096305c2125d473953d67099565d7ba5dc6cf09aef2dbfd9647d7bd26",
+      "actual_sha256": "78c6c65096305c2125d473953d67099565d7ba5dc6cf09aef2dbfd9647d7bd26",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c005/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c005/coefficients.txt",
+      "expected_sha256": "5ca57b898de4a306c8b78d3da60215022daef124d23b6e87f7e749aaeef8064c",
+      "actual_sha256": "5ca57b898de4a306c8b78d3da60215022daef124d23b6e87f7e749aaeef8064c",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c005/polynomials.json",
+      "expected_sha256": "19c619600393ebe94047174972b3badbbac90f6d48472654b07fe1cf3358c0ad",
+      "actual_sha256": "19c619600393ebe94047174972b3badbbac90f6d48472654b07fe1cf3358c0ad",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c006/chart.json",
+      "expected_sha256": "46ec475d66181eb0588a59ea6a95f9040c0144202a5d65e05c64674433d17a02",
+      "actual_sha256": "46ec475d66181eb0588a59ea6a95f9040c0144202a5d65e05c64674433d17a02",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c006/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c006/coefficients.txt",
+      "expected_sha256": "032bec7312722e3fa5d746fa399fa18b4340e448322f767be0b2d019989dbb2e",
+      "actual_sha256": "032bec7312722e3fa5d746fa399fa18b4340e448322f767be0b2d019989dbb2e",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c006/polynomials.json",
+      "expected_sha256": "a69c910e5eae254239f850590a8fe5c4edb9d6a913269c492a0d66c5bfccc27b",
+      "actual_sha256": "a69c910e5eae254239f850590a8fe5c4edb9d6a913269c492a0d66c5bfccc27b",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c007/chart.json",
+      "expected_sha256": "d2ee30c620743df5d80983069a4d51691a26a1f558bea01d26b0d1fe4c06f1dc",
+      "actual_sha256": "d2ee30c620743df5d80983069a4d51691a26a1f558bea01d26b0d1fe4c06f1dc",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c007/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c007/coefficients.txt",
+      "expected_sha256": "c3ab16ebe76c7d1a166064cbcb6a5a236fc1db53f7d6d1fa347510d5d166dae8",
+      "actual_sha256": "c3ab16ebe76c7d1a166064cbcb6a5a236fc1db53f7d6d1fa347510d5d166dae8",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c007/polynomials.json",
+      "expected_sha256": "947f21f259dc5f4bcda730f45b6426b5724c2abc0250d8573c1ece0039672009",
+      "actual_sha256": "947f21f259dc5f4bcda730f45b6426b5724c2abc0250d8573c1ece0039672009",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c008/chart.json",
+      "expected_sha256": "3c09131dda5d938feaea1beb79a852353cd9a55c746f8beb908cb16bcd8aba25",
+      "actual_sha256": "3c09131dda5d938feaea1beb79a852353cd9a55c746f8beb908cb16bcd8aba25",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c008/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c008/coefficients.txt",
+      "expected_sha256": "f580ef5020d355f85be84d00b23b97a8181bbe79f860585a53ac1ce874f235a2",
+      "actual_sha256": "f580ef5020d355f85be84d00b23b97a8181bbe79f860585a53ac1ce874f235a2",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c008/polynomials.json",
+      "expected_sha256": "76bb2b8c452ffffb07abe300c2b2c60b464b851554b74aa251737f00047454c1",
+      "actual_sha256": "76bb2b8c452ffffb07abe300c2b2c60b464b851554b74aa251737f00047454c1",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c009/chart.json",
+      "expected_sha256": "df8a2d6e77b347b69405eccb89362170615d769daefd1c4d2e53151a2af534fa",
+      "actual_sha256": "df8a2d6e77b347b69405eccb89362170615d769daefd1c4d2e53151a2af534fa",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c009/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c009/coefficients.txt",
+      "expected_sha256": "7e9a77e33a6a729f4d3e670ca82ec698e1ff914c38b9ef152d63bd82eb6a5afb",
+      "actual_sha256": "7e9a77e33a6a729f4d3e670ca82ec698e1ff914c38b9ef152d63bd82eb6a5afb",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c009/polynomials.json",
+      "expected_sha256": "2e3b4800ce460dd4d49fc457c1690df399fa0a1dbf8edfeee29db6be67de3a3e",
+      "actual_sha256": "2e3b4800ce460dd4d49fc457c1690df399fa0a1dbf8edfeee29db6be67de3a3e",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c010/chart.json",
+      "expected_sha256": "a623360aa54818c33d7ebb48a58146d44e2b4609c03bee691ba22cb74e227452",
+      "actual_sha256": "a623360aa54818c33d7ebb48a58146d44e2b4609c03bee691ba22cb74e227452",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c010/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c010/coefficients.txt",
+      "expected_sha256": "22e115a6d3c742205b3c949f45cf573b1bfd425b0c2153931fa2cfedfa4c15a5",
+      "actual_sha256": "22e115a6d3c742205b3c949f45cf573b1bfd425b0c2153931fa2cfedfa4c15a5",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c010/polynomials.json",
+      "expected_sha256": "f82728e79fffa908dbef6212c38b204b09e9a3b9eb50b3852b5dabf3bb3fc414",
+      "actual_sha256": "f82728e79fffa908dbef6212c38b204b09e9a3b9eb50b3852b5dabf3bb3fc414",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c011/chart.json",
+      "expected_sha256": "eadcf397f0abf6b0e6eabbe1aca8ab41632b7c63b23e005a1da592b8ecada84a",
+      "actual_sha256": "eadcf397f0abf6b0e6eabbe1aca8ab41632b7c63b23e005a1da592b8ecada84a",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c011/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c011/coefficients.txt",
+      "expected_sha256": "0bd668cb124c3997dcfbc350ab859d79890ec6bee483368d3247761adcc83a01",
+      "actual_sha256": "0bd668cb124c3997dcfbc350ab859d79890ec6bee483368d3247761adcc83a01",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c011/polynomials.json",
+      "expected_sha256": "cba0eda71ad3b4a5b5e1c277ccb6870b244e11aa581583a5d11f8a1048cbec3a",
+      "actual_sha256": "cba0eda71ad3b4a5b5e1c277ccb6870b244e11aa581583a5d11f8a1048cbec3a",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c012/chart.json",
+      "expected_sha256": "d796246f5f1ce20ef1595b7dd95f94a2226d777a76d6a3aec48f9fbf44bbae9e",
+      "actual_sha256": "d796246f5f1ce20ef1595b7dd95f94a2226d777a76d6a3aec48f9fbf44bbae9e",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c012/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c012/coefficients.txt",
+      "expected_sha256": "00c4052de8a139a9535d9c8ae412f0889051654eb79821ab6b898ca79f2b91a2",
+      "actual_sha256": "00c4052de8a139a9535d9c8ae412f0889051654eb79821ab6b898ca79f2b91a2",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c012/polynomials.json",
+      "expected_sha256": "a640dff37498547108c02228896909d39d5021ae1fc9f03c7a4df16cad13c222",
+      "actual_sha256": "a640dff37498547108c02228896909d39d5021ae1fc9f03c7a4df16cad13c222",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c013/chart.json",
+      "expected_sha256": "e1aafdabc9c82aa53ff0e4fd73a53a1da04f2310778a246f72b7f78c86e357ae",
+      "actual_sha256": "e1aafdabc9c82aa53ff0e4fd73a53a1da04f2310778a246f72b7f78c86e357ae",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c013/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c013/coefficients.txt",
+      "expected_sha256": "da7aa9e9bdedc6332dfa5a2d6199e79b06dd429594df864cb118c0f481b1ebee",
+      "actual_sha256": "da7aa9e9bdedc6332dfa5a2d6199e79b06dd429594df864cb118c0f481b1ebee",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c013/polynomials.json",
+      "expected_sha256": "60a5a92398611c9c7be1a11f4a28f498618a0913c072e7b9bfa5376bd67a54d4",
+      "actual_sha256": "60a5a92398611c9c7be1a11f4a28f498618a0913c072e7b9bfa5376bd67a54d4",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c014/chart.json",
+      "expected_sha256": "e83e8b27c2dd5adc374a0304fd3bf2d8969da0dfd46836fd004d9647ebb218c6",
+      "actual_sha256": "e83e8b27c2dd5adc374a0304fd3bf2d8969da0dfd46836fd004d9647ebb218c6",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c014/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c014/coefficients.txt",
+      "expected_sha256": "83bb8c34a7b5a9f06c2e4e751014199bc7c684f67c51b34747e72be9675c16de",
+      "actual_sha256": "83bb8c34a7b5a9f06c2e4e751014199bc7c684f67c51b34747e72be9675c16de",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c014/polynomials.json",
+      "expected_sha256": "a2235fe7b96cd3e9a81a8d10fbcc16f035ecd341b7ddfbe126054265afb68651",
+      "actual_sha256": "a2235fe7b96cd3e9a81a8d10fbcc16f035ecd341b7ddfbe126054265afb68651",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c015/chart.json",
+      "expected_sha256": "bd46a496d5d178a2b1a9388d20d3dff69f43a58cf85a809432c42dceea1c4d46",
+      "actual_sha256": "bd46a496d5d178a2b1a9388d20d3dff69f43a58cf85a809432c42dceea1c4d46",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c015/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c015/coefficients.txt",
+      "expected_sha256": "d49ba3a0a91e3249881d48f1e60814ee13ea13fb02e4192990f1dce0f24b4cc6",
+      "actual_sha256": "d49ba3a0a91e3249881d48f1e60814ee13ea13fb02e4192990f1dce0f24b4cc6",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c015/polynomials.json",
+      "expected_sha256": "609824335e811edc2e5dfaa1b96d9c3b11cf750ac93699220f0f33dfdfcee9d0",
+      "actual_sha256": "609824335e811edc2e5dfaa1b96d9c3b11cf750ac93699220f0f33dfdfcee9d0",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c016/chart.json",
+      "expected_sha256": "a4b9be2a76ef4a56a20239c1372e4f4b3b0c0e81fbe6ab0f2a6c5e6d1955e91d",
+      "actual_sha256": "a4b9be2a76ef4a56a20239c1372e4f4b3b0c0e81fbe6ab0f2a6c5e6d1955e91d",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c016/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c016/coefficients.txt",
+      "expected_sha256": "8abe4a0e13b0c136f8efaa1c8987614f37283e55698672988e7e06e97242e58d",
+      "actual_sha256": "8abe4a0e13b0c136f8efaa1c8987614f37283e55698672988e7e06e97242e58d",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c016/polynomials.json",
+      "expected_sha256": "65c252817da38cc2c7a3d70986254a725959f82e7338a35c1be2044b2de6cf7c",
+      "actual_sha256": "65c252817da38cc2c7a3d70986254a725959f82e7338a35c1be2044b2de6cf7c",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c017/chart.json",
+      "expected_sha256": "f9fb439c1c2ec5894718823c6c288262bdc936187388c10dd53ac4d949ae0832",
+      "actual_sha256": "f9fb439c1c2ec5894718823c6c288262bdc936187388c10dd53ac4d949ae0832",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c017/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c017/coefficients.txt",
+      "expected_sha256": "48498fe8024cff99036bdf93d45ae9da8c873331d3a928bc8edcd1fe844680dd",
+      "actual_sha256": "48498fe8024cff99036bdf93d45ae9da8c873331d3a928bc8edcd1fe844680dd",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c017/polynomials.json",
+      "expected_sha256": "2ce7650ec6a1becce826636738bd0b46e280faeda55dbf57976fc70908ecfd41",
+      "actual_sha256": "2ce7650ec6a1becce826636738bd0b46e280faeda55dbf57976fc70908ecfd41",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c018/chart.json",
+      "expected_sha256": "8b59204d6cebc4654b0959ef46e32302ba601a21bdb578b8d36f920e06f28757",
+      "actual_sha256": "8b59204d6cebc4654b0959ef46e32302ba601a21bdb578b8d36f920e06f28757",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c018/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c018/coefficients.txt",
+      "expected_sha256": "a1f0cfb249577ac6051ed5ba8e40fbfc5ef984822159113bdeac48feedc64569",
+      "actual_sha256": "a1f0cfb249577ac6051ed5ba8e40fbfc5ef984822159113bdeac48feedc64569",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c018/polynomials.json",
+      "expected_sha256": "87b4eacbd97c05554fe73e65fb18f28feb403673f5586a515ad2df8f37f15d97",
+      "actual_sha256": "87b4eacbd97c05554fe73e65fb18f28feb403673f5586a515ad2df8f37f15d97",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c019/chart.json",
+      "expected_sha256": "f017294361493d2988c176a8e056bb674c2a24ed2076d5c3978255be488319c4",
+      "actual_sha256": "f017294361493d2988c176a8e056bb674c2a24ed2076d5c3978255be488319c4",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c019/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c019/coefficients.txt",
+      "expected_sha256": "05f974a452486527c9354caa6bc37e54d1ac41f815cfb64b3387c07aef4f6dd7",
+      "actual_sha256": "05f974a452486527c9354caa6bc37e54d1ac41f815cfb64b3387c07aef4f6dd7",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c019/polynomials.json",
+      "expected_sha256": "10bf30ba4618dc1141995a89fc0007ed9913184c52b7a01eed618d45429ac883",
+      "actual_sha256": "10bf30ba4618dc1141995a89fc0007ed9913184c52b7a01eed618d45429ac883",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c020/chart.json",
+      "expected_sha256": "3abc927d0f1783196f1861b2f2afa348a89d30239db7cda0ab24ae61e4c9cf84",
+      "actual_sha256": "3abc927d0f1783196f1861b2f2afa348a89d30239db7cda0ab24ae61e4c9cf84",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c020/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c020/coefficients.txt",
+      "expected_sha256": "8a1c8f1e534073a73523f1dbf2b4a8c9a6779ac0bec3cc77a056fce801b5ede9",
+      "actual_sha256": "8a1c8f1e534073a73523f1dbf2b4a8c9a6779ac0bec3cc77a056fce801b5ede9",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c020/polynomials.json",
+      "expected_sha256": "10c8d890a43c9e532ccfeda72d9d48b0093a3c7922dbdda7238fd2338296352e",
+      "actual_sha256": "10c8d890a43c9e532ccfeda72d9d48b0093a3c7922dbdda7238fd2338296352e",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c021/chart.json",
+      "expected_sha256": "f60674ef1e533f4b9a645131b09aaf5c5715ec10bb880711c3f2b276f22dbb3b",
+      "actual_sha256": "f60674ef1e533f4b9a645131b09aaf5c5715ec10bb880711c3f2b276f22dbb3b",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c021/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c021/coefficients.txt",
+      "expected_sha256": "a9365d1eea4243683911e6dec1b26bed7589e09307fe62b05951c321ff1c0e15",
+      "actual_sha256": "a9365d1eea4243683911e6dec1b26bed7589e09307fe62b05951c321ff1c0e15",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c021/polynomials.json",
+      "expected_sha256": "1b5c91ee61f846c32b206799903f49e1b5c4541262bf8aa224e2011ea2c02149",
+      "actual_sha256": "1b5c91ee61f846c32b206799903f49e1b5c4541262bf8aa224e2011ea2c02149",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c022/chart.json",
+      "expected_sha256": "d70a8e914553c48ca9b637ed5345bc940e9d6318033c0b92b9a24ebbf1b94e91",
+      "actual_sha256": "d70a8e914553c48ca9b637ed5345bc940e9d6318033c0b92b9a24ebbf1b94e91",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c022/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c022/coefficients.txt",
+      "expected_sha256": "9ca793ec7c1e182c9769dbbb0c89211bdf4a7b979ccffc01d757245816897c1e",
+      "actual_sha256": "9ca793ec7c1e182c9769dbbb0c89211bdf4a7b979ccffc01d757245816897c1e",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c022/polynomials.json",
+      "expected_sha256": "5b859f5b7f04a660ff6ff78ce3f03c52310bb29587b7c22d498393de3b618708",
+      "actual_sha256": "5b859f5b7f04a660ff6ff78ce3f03c52310bb29587b7c22d498393de3b618708",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c023/chart.json",
+      "expected_sha256": "479dfa563762a454c499f6d26f5bb52b7d3b153c4e054b45995cae6c961dbdd8",
+      "actual_sha256": "479dfa563762a454c499f6d26f5bb52b7d3b153c4e054b45995cae6c961dbdd8",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c023/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c023/coefficients.txt",
+      "expected_sha256": "31346185091ef4c4968bbb4ddb4659d747834007f867c4a5f1c44eef10cf5a2f",
+      "actual_sha256": "31346185091ef4c4968bbb4ddb4659d747834007f867c4a5f1c44eef10cf5a2f",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c023/polynomials.json",
+      "expected_sha256": "3fb1ddbf9ebd1543465bc17d34925c699983ccc2576ea5afe22eb7f6116365a5",
+      "actual_sha256": "3fb1ddbf9ebd1543465bc17d34925c699983ccc2576ea5afe22eb7f6116365a5",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c024/chart.json",
+      "expected_sha256": "6d2747ef600fa0c4b209f7a4437eeb0455100a6f5eca7b8aec58cb5c0a358135",
+      "actual_sha256": "6d2747ef600fa0c4b209f7a4437eeb0455100a6f5eca7b8aec58cb5c0a358135",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c024/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c024/coefficients.txt",
+      "expected_sha256": "79f934e2d78b71e868359aae080c2f3e9d5de6148f023cb7aece72ffac450efd",
+      "actual_sha256": "79f934e2d78b71e868359aae080c2f3e9d5de6148f023cb7aece72ffac450efd",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c024/polynomials.json",
+      "expected_sha256": "6521c5653295416aea075c8afd52d6109f25bf22ddbf23eeeeba4ec115175624",
+      "actual_sha256": "6521c5653295416aea075c8afd52d6109f25bf22ddbf23eeeeba4ec115175624",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c025/chart.json",
+      "expected_sha256": "ee7e7ad58439d53ca3ce1a4508466c9a9f2c8800e4b76ddea877b33df979359a",
+      "actual_sha256": "ee7e7ad58439d53ca3ce1a4508466c9a9f2c8800e4b76ddea877b33df979359a",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c025/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c025/coefficients.txt",
+      "expected_sha256": "64da43e665ad053cd8c018a4b69f8644b7a1ec100be0909d0c7dd25d4a149cd4",
+      "actual_sha256": "64da43e665ad053cd8c018a4b69f8644b7a1ec100be0909d0c7dd25d4a149cd4",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c025/polynomials.json",
+      "expected_sha256": "1dcbf03f523a4a362cf863ad94f78452e6fa5ca4bb2c0c40a586a6f518bd112d",
+      "actual_sha256": "1dcbf03f523a4a362cf863ad94f78452e6fa5ca4bb2c0c40a586a6f518bd112d",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c026/chart.json",
+      "expected_sha256": "d70fe357fb585732206034192e007670c950b9b1179d9d9c8640cf1e4bef1f92",
+      "actual_sha256": "d70fe357fb585732206034192e007670c950b9b1179d9d9c8640cf1e4bef1f92",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c026/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c026/coefficients.txt",
+      "expected_sha256": "fa8adcb6403ab9d3cbaec1316534b95a71f46539b98ab4df62ee5ac3905a75cb",
+      "actual_sha256": "fa8adcb6403ab9d3cbaec1316534b95a71f46539b98ab4df62ee5ac3905a75cb",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c026/polynomials.json",
+      "expected_sha256": "b08330ee10beb7532a574a054e5008ea6094b424b5d79ac53ed155702ac9ddf6",
+      "actual_sha256": "b08330ee10beb7532a574a054e5008ea6094b424b5d79ac53ed155702ac9ddf6",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c027/chart.json",
+      "expected_sha256": "bfd0724f5ee6f395d62014b930a67c0d9ff3342a1a1d724f93aedad846b5dd93",
+      "actual_sha256": "bfd0724f5ee6f395d62014b930a67c0d9ff3342a1a1d724f93aedad846b5dd93",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c027/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c027/coefficients.txt",
+      "expected_sha256": "7cb842a30c25e249d4b41779ea19e140fd94a1afe3498f3838168fdd2593a492",
+      "actual_sha256": "7cb842a30c25e249d4b41779ea19e140fd94a1afe3498f3838168fdd2593a492",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c027/polynomials.json",
+      "expected_sha256": "ce3fbe42e8e7f29a90e8d4a39c13892cdef88b2d99940af11b637055da56a9c6",
+      "actual_sha256": "ce3fbe42e8e7f29a90e8d4a39c13892cdef88b2d99940af11b637055da56a9c6",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c028/chart.json",
+      "expected_sha256": "3696bb7efb6f267c49332cdb079afe10e4a39a5575ec95ca2319d5f0862936ab",
+      "actual_sha256": "3696bb7efb6f267c49332cdb079afe10e4a39a5575ec95ca2319d5f0862936ab",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c028/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c028/coefficients.txt",
+      "expected_sha256": "f4b7fff0a0801646810cd83588bcb85df7ecd3e1bec779af5ccd8016ff2d52a8",
+      "actual_sha256": "f4b7fff0a0801646810cd83588bcb85df7ecd3e1bec779af5ccd8016ff2d52a8",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c028/polynomials.json",
+      "expected_sha256": "0e3a2828bacd4318694de5fbb15266939dc8a9a0e49600f9417e69eeee375f20",
+      "actual_sha256": "0e3a2828bacd4318694de5fbb15266939dc8a9a0e49600f9417e69eeee375f20",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c029/chart.json",
+      "expected_sha256": "9e67f30c3eb10384f6ec590e30c4108edf34ad40765c1a7b95d4038631dd5370",
+      "actual_sha256": "9e67f30c3eb10384f6ec590e30c4108edf34ad40765c1a7b95d4038631dd5370",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c029/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c029/coefficients.txt",
+      "expected_sha256": "b2caf7a4eb8d82a44754c8eaaf5c3337c4957370d8fa28def73d41306e7327ab",
+      "actual_sha256": "b2caf7a4eb8d82a44754c8eaaf5c3337c4957370d8fa28def73d41306e7327ab",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c029/polynomials.json",
+      "expected_sha256": "490ab7e0c15c884ae7e623abf1ddcc6c0e7c89d3704120ea3be09e5c448cebaa",
+      "actual_sha256": "490ab7e0c15c884ae7e623abf1ddcc6c0e7c89d3704120ea3be09e5c448cebaa",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c030/chart.json",
+      "expected_sha256": "d924a19ee7e7b8cb231c0ce943d74215caa2d85d76b5c263ffb6ed148b11f297",
+      "actual_sha256": "d924a19ee7e7b8cb231c0ce943d74215caa2d85d76b5c263ffb6ed148b11f297",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c030/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c030/coefficients.txt",
+      "expected_sha256": "acf83b37642f0c938b15a48dc7a216e521a6630c4965c7ac43963eab565a643d",
+      "actual_sha256": "acf83b37642f0c938b15a48dc7a216e521a6630c4965c7ac43963eab565a643d",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c030/polynomials.json",
+      "expected_sha256": "a29954b136aa4c4a03b6cb8f11256bf9888344c3e412e785cf6e688a20709ef9",
+      "actual_sha256": "a29954b136aa4c4a03b6cb8f11256bf9888344c3e412e785cf6e688a20709ef9",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c031/chart.json",
+      "expected_sha256": "a7a2a4f250ee44828e8004192c292e09941a479a9b51a941d0a4dda923800ee0",
+      "actual_sha256": "a7a2a4f250ee44828e8004192c292e09941a479a9b51a941d0a4dda923800ee0",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c031/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c031/coefficients.txt",
+      "expected_sha256": "44c143785a285d2dec8a40b3c885a95a67dfce6ad438bec13b0cb4e560c459c0",
+      "actual_sha256": "44c143785a285d2dec8a40b3c885a95a67dfce6ad438bec13b0cb4e560c459c0",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c031/polynomials.json",
+      "expected_sha256": "c1d624f2d57eff385a331c0db81f0f53fbe82bc8006b01597f98e204c4358c48",
+      "actual_sha256": "c1d624f2d57eff385a331c0db81f0f53fbe82bc8006b01597f98e204c4358c48",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c032/chart.json",
+      "expected_sha256": "7275932080258add84f960912be7b2b4e4d3f1815712b69936e29e23554e98fb",
+      "actual_sha256": "7275932080258add84f960912be7b2b4e4d3f1815712b69936e29e23554e98fb",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c032/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c032/coefficients.txt",
+      "expected_sha256": "64a14258ebc4bd30fb57a85c333a9f0683f5b3c33268dffac43c699e7f1e7dc2",
+      "actual_sha256": "64a14258ebc4bd30fb57a85c333a9f0683f5b3c33268dffac43c699e7f1e7dc2",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c032/polynomials.json",
+      "expected_sha256": "a7e3630584809d9e33f65ed5ff06bb38c0df140cabc1c4f5910472f72d215855",
+      "actual_sha256": "a7e3630584809d9e33f65ed5ff06bb38c0df140cabc1c4f5910472f72d215855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c033/chart.json",
+      "expected_sha256": "5da778f8449be7d74d828011786fe39b6eac7cf9eeb20991a504517d8066ea0b",
+      "actual_sha256": "5da778f8449be7d74d828011786fe39b6eac7cf9eeb20991a504517d8066ea0b",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c033/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c033/coefficients.txt",
+      "expected_sha256": "566edf8729d4f0122d9158dcfbf709468105d1cae494f2f9f5a43b50a060bfdd",
+      "actual_sha256": "566edf8729d4f0122d9158dcfbf709468105d1cae494f2f9f5a43b50a060bfdd",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c033/polynomials.json",
+      "expected_sha256": "f12c9e5b3657298116f45244d04c7f7a705a0b2859a1d946241b5ae407604ea6",
+      "actual_sha256": "f12c9e5b3657298116f45244d04c7f7a705a0b2859a1d946241b5ae407604ea6",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c034/chart.json",
+      "expected_sha256": "a1183a687571c73f04b0876e006db5b9effea522e2c7e51abb897d0ae68f2f05",
+      "actual_sha256": "a1183a687571c73f04b0876e006db5b9effea522e2c7e51abb897d0ae68f2f05",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c034/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c034/coefficients.txt",
+      "expected_sha256": "373369ba6301a68f404a57e229121578f9d131e973caf6c7313226fee9c872aa",
+      "actual_sha256": "373369ba6301a68f404a57e229121578f9d131e973caf6c7313226fee9c872aa",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c034/polynomials.json",
+      "expected_sha256": "4536ee2dbff2d292994f0064c52bb428413361f293d0da11b103f3fc981b93ab",
+      "actual_sha256": "4536ee2dbff2d292994f0064c52bb428413361f293d0da11b103f3fc981b93ab",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c035/chart.json",
+      "expected_sha256": "2618bb697ee8cb3c9c8b8fcdba95e4c24d04c883438b2fb0aafe3963abdd1267",
+      "actual_sha256": "2618bb697ee8cb3c9c8b8fcdba95e4c24d04c883438b2fb0aafe3963abdd1267",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c035/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c035/coefficients.txt",
+      "expected_sha256": "05cd51da6a95328038e2cd2c9b20ea2b2c3a7b189d67829cff0ce90df510ed03",
+      "actual_sha256": "05cd51da6a95328038e2cd2c9b20ea2b2c3a7b189d67829cff0ce90df510ed03",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c035/polynomials.json",
+      "expected_sha256": "59052154714a408ae414de1e106bb38f6b10b996fa064ba8901a097bc7b4fdcc",
+      "actual_sha256": "59052154714a408ae414de1e106bb38f6b10b996fa064ba8901a097bc7b4fdcc",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c036/chart.json",
+      "expected_sha256": "f9296d81c3c3cab7c25e2a561a7f63fabc701271c49f84e5ceaa66a678c54bb9",
+      "actual_sha256": "f9296d81c3c3cab7c25e2a561a7f63fabc701271c49f84e5ceaa66a678c54bb9",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c036/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c036/coefficients.txt",
+      "expected_sha256": "5ec587469cf90ed5d78c6d9da6f5c93fb52b164b84180584cf5642d78670d159",
+      "actual_sha256": "5ec587469cf90ed5d78c6d9da6f5c93fb52b164b84180584cf5642d78670d159",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c036/polynomials.json",
+      "expected_sha256": "c6130b21d3586af6a6269fb9a9278c26962ffd8619f8cb94dce31755e78f9e24",
+      "actual_sha256": "c6130b21d3586af6a6269fb9a9278c26962ffd8619f8cb94dce31755e78f9e24",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c037/chart.json",
+      "expected_sha256": "47b5d391af2ee203f50b70157cd1bd305ae30bf32eb2d6fe2d2aa8ca8df91333",
+      "actual_sha256": "47b5d391af2ee203f50b70157cd1bd305ae30bf32eb2d6fe2d2aa8ca8df91333",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c037/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c037/coefficients.txt",
+      "expected_sha256": "25dae3cb829a9d0a9b6d5a6f1cd28858a4fea43784a9dd87bf8639bac7ddc25a",
+      "actual_sha256": "25dae3cb829a9d0a9b6d5a6f1cd28858a4fea43784a9dd87bf8639bac7ddc25a",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c037/polynomials.json",
+      "expected_sha256": "dc088db5666c849db147c0069532ee7b62e2b755a8cdb851198a1563a54d45dc",
+      "actual_sha256": "dc088db5666c849db147c0069532ee7b62e2b755a8cdb851198a1563a54d45dc",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c038/chart.json",
+      "expected_sha256": "d56699b49e8dfd7ce47b66149719a193ab2865a2f1951b6df37035fd896532ac",
+      "actual_sha256": "d56699b49e8dfd7ce47b66149719a193ab2865a2f1951b6df37035fd896532ac",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c038/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c038/coefficients.txt",
+      "expected_sha256": "14a69c2875da087ad0a0b0a3766f8ffc3c1f86c199c6248e72e4c0e5d4d006c3",
+      "actual_sha256": "14a69c2875da087ad0a0b0a3766f8ffc3c1f86c199c6248e72e4c0e5d4d006c3",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c038/polynomials.json",
+      "expected_sha256": "0bbdf4eb52ed5dd6bd852f9f7476407def79c246035b9075fad5c85438663411",
+      "actual_sha256": "0bbdf4eb52ed5dd6bd852f9f7476407def79c246035b9075fad5c85438663411",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c039/chart.json",
+      "expected_sha256": "01d8a0a31909fc5c054a354df2d820524410d28c12c0bcf7257919cea11fdf9f",
+      "actual_sha256": "01d8a0a31909fc5c054a354df2d820524410d28c12c0bcf7257919cea11fdf9f",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c039/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c039/coefficients.txt",
+      "expected_sha256": "24017f84d038458b3ecef41527f1d9fa127a872305b68122f4ef41e21527f3e1",
+      "actual_sha256": "24017f84d038458b3ecef41527f1d9fa127a872305b68122f4ef41e21527f3e1",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c039/polynomials.json",
+      "expected_sha256": "31ef89d2b81a9e943a4c8c3a29e7b48bcb069c4cb5088a34347621b12c205120",
+      "actual_sha256": "31ef89d2b81a9e943a4c8c3a29e7b48bcb069c4cb5088a34347621b12c205120",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c040/chart.json",
+      "expected_sha256": "29b990b8c1cd537a70fbbf43a8f2ea2b43fe133117273080b4871d59f7584400",
+      "actual_sha256": "29b990b8c1cd537a70fbbf43a8f2ea2b43fe133117273080b4871d59f7584400",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c040/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c040/coefficients.txt",
+      "expected_sha256": "2799d2f125b2c06f4a24da71d91d378adcc9c71ff1988239a51037f2201c90ad",
+      "actual_sha256": "2799d2f125b2c06f4a24da71d91d378adcc9c71ff1988239a51037f2201c90ad",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c040/polynomials.json",
+      "expected_sha256": "51340e14fd966fe79d0b593f1ad6008603b481463c354c5e54e342d50a02dd99",
+      "actual_sha256": "51340e14fd966fe79d0b593f1ad6008603b481463c354c5e54e342d50a02dd99",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c041/chart.json",
+      "expected_sha256": "00f827f4d8a84fc8a70b2b0d5cda09a0a820d0ab19189f6edaecc5860a946a97",
+      "actual_sha256": "00f827f4d8a84fc8a70b2b0d5cda09a0a820d0ab19189f6edaecc5860a946a97",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c041/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c041/coefficients.txt",
+      "expected_sha256": "9fa4775cadc0113189a07e4c6e6fa003d4caa328194737559a7e0951b70b0d2f",
+      "actual_sha256": "9fa4775cadc0113189a07e4c6e6fa003d4caa328194737559a7e0951b70b0d2f",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c041/polynomials.json",
+      "expected_sha256": "b956406e2363b56dc82e24664ffa1deb4ebe14730ccf416c6e49a12bfb88240d",
+      "actual_sha256": "b956406e2363b56dc82e24664ffa1deb4ebe14730ccf416c6e49a12bfb88240d",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c042/chart.json",
+      "expected_sha256": "d728c2899131520c656ab901d9682b4d9dbff0bd7f3d3e84530c4be32ef44501",
+      "actual_sha256": "d728c2899131520c656ab901d9682b4d9dbff0bd7f3d3e84530c4be32ef44501",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c042/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c042/coefficients.txt",
+      "expected_sha256": "f1f5eacf14553960901b49c471cac7bdeeddccd45348be81948035fdb7941805",
+      "actual_sha256": "f1f5eacf14553960901b49c471cac7bdeeddccd45348be81948035fdb7941805",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c042/polynomials.json",
+      "expected_sha256": "3c25405de6d025837d1180f7dc2f1ab3859090a13b78e4dbef175ce1b71d5a2d",
+      "actual_sha256": "3c25405de6d025837d1180f7dc2f1ab3859090a13b78e4dbef175ce1b71d5a2d",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c043/chart.json",
+      "expected_sha256": "011207b2d721e0af901d7692d88c6038b5d829ca8a5d25da76c3cd026f11b0cb",
+      "actual_sha256": "011207b2d721e0af901d7692d88c6038b5d829ca8a5d25da76c3cd026f11b0cb",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c043/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c043/coefficients.txt",
+      "expected_sha256": "644d0f7365a2435d767bdc4f9e598f843174fcb30a3e6a0edfffc9b26f7cdee9",
+      "actual_sha256": "644d0f7365a2435d767bdc4f9e598f843174fcb30a3e6a0edfffc9b26f7cdee9",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c043/polynomials.json",
+      "expected_sha256": "f96a83c329fb02652413276775715b76ce2ad40b4deceacad502acf0da991710",
+      "actual_sha256": "f96a83c329fb02652413276775715b76ce2ad40b4deceacad502acf0da991710",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c044/chart.json",
+      "expected_sha256": "c2278b6e12f11cffa900eeb5ec94f9c9f5c513e3d61e07aeb5d91f829bc76e90",
+      "actual_sha256": "c2278b6e12f11cffa900eeb5ec94f9c9f5c513e3d61e07aeb5d91f829bc76e90",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c044/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c044/coefficients.txt",
+      "expected_sha256": "7fba63ce66ea789c9be6325b4af773dd39a15a0ade519dbf4ee0f4b699937385",
+      "actual_sha256": "7fba63ce66ea789c9be6325b4af773dd39a15a0ade519dbf4ee0f4b699937385",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c044/polynomials.json",
+      "expected_sha256": "5e60ff40d40451e521c716b84ed27db4e1959ef8cfc96e4816b1d23d06c38771",
+      "actual_sha256": "5e60ff40d40451e521c716b84ed27db4e1959ef8cfc96e4816b1d23d06c38771",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c045/chart.json",
+      "expected_sha256": "e5fb5c46a0c0038ce6547731563c11e4ac4fa47403b555797527a20103bcdb24",
+      "actual_sha256": "e5fb5c46a0c0038ce6547731563c11e4ac4fa47403b555797527a20103bcdb24",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c045/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c045/coefficients.txt",
+      "expected_sha256": "c38376fb3e13c498bf33f9edf6747da85527276fd9caaafb9897960f474673c3",
+      "actual_sha256": "c38376fb3e13c498bf33f9edf6747da85527276fd9caaafb9897960f474673c3",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c045/polynomials.json",
+      "expected_sha256": "4660c2748ea4e18959a8815fcc851b55c07686681a06a47004a1467719a6dd79",
+      "actual_sha256": "4660c2748ea4e18959a8815fcc851b55c07686681a06a47004a1467719a6dd79",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c046/chart.json",
+      "expected_sha256": "cc2eaf881f4e5c8b4070244fbd8311b44ec7e1abf0286270a86a95cba089119d",
+      "actual_sha256": "cc2eaf881f4e5c8b4070244fbd8311b44ec7e1abf0286270a86a95cba089119d",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c046/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c046/coefficients.txt",
+      "expected_sha256": "47de05d0b2d8b7f6a01dc1e417f8ade50a4d37045bef3bc4163da90a88ee9f17",
+      "actual_sha256": "47de05d0b2d8b7f6a01dc1e417f8ade50a4d37045bef3bc4163da90a88ee9f17",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c046/polynomials.json",
+      "expected_sha256": "80a5038c2531506043c6b4bffe414b20831452c972fba475cabbe6af0c446a17",
+      "actual_sha256": "80a5038c2531506043c6b4bffe414b20831452c972fba475cabbe6af0c446a17",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c047/chart.json",
+      "expected_sha256": "39fe3eaa32b63853b7d1d416a78e7d9cb8318a3bc44069e75f4ce40bb4732e6b",
+      "actual_sha256": "39fe3eaa32b63853b7d1d416a78e7d9cb8318a3bc44069e75f4ce40bb4732e6b",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c047/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c047/coefficients.txt",
+      "expected_sha256": "719baa5956e6cf860f11323d5debca2603e9d540df07e9240e39e9b618db4193",
+      "actual_sha256": "719baa5956e6cf860f11323d5debca2603e9d540df07e9240e39e9b618db4193",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c047/polynomials.json",
+      "expected_sha256": "474b8f90c150c6f2318e46832f5f66b0abead6a7f42e53ea4ff0f33cd6f4baa9",
+      "actual_sha256": "474b8f90c150c6f2318e46832f5f66b0abead6a7f42e53ea4ff0f33cd6f4baa9",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c048/chart.json",
+      "expected_sha256": "c1025746459b1aa07344e200fa1df5218b16c1c686a0cc787a3147646bc4d0b5",
+      "actual_sha256": "c1025746459b1aa07344e200fa1df5218b16c1c686a0cc787a3147646bc4d0b5",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c048/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c048/coefficients.txt",
+      "expected_sha256": "797e08df8141746648a816655068b1cfd4aa114a0c587970287f2cae28b4aa21",
+      "actual_sha256": "797e08df8141746648a816655068b1cfd4aa114a0c587970287f2cae28b4aa21",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c048/polynomials.json",
+      "expected_sha256": "e01153d556f5aed9d3aade7671d14cb251576fa4df08613ab3044c74351ee582",
+      "actual_sha256": "e01153d556f5aed9d3aade7671d14cb251576fa4df08613ab3044c74351ee582",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c049/chart.json",
+      "expected_sha256": "d5803f85386d7487c6a563475a8c7d0ea9e370c1c087a93a9629204697761589",
+      "actual_sha256": "d5803f85386d7487c6a563475a8c7d0ea9e370c1c087a93a9629204697761589",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c049/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c049/coefficients.txt",
+      "expected_sha256": "3ac4360342cd5392c1360a0e3806d3c0cbee583b5782c3f43e074c3b42043c19",
+      "actual_sha256": "3ac4360342cd5392c1360a0e3806d3c0cbee583b5782c3f43e074c3b42043c19",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c049/polynomials.json",
+      "expected_sha256": "8cf2fc428349f58f706ea589a4c39eed6866755245e87398ff29921659f10cd0",
+      "actual_sha256": "8cf2fc428349f58f706ea589a4c39eed6866755245e87398ff29921659f10cd0",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c050/chart.json",
+      "expected_sha256": "a6c3aac7f7fb5c87bfe0bdc2e3252329f19b0b3b63eb76327dcc9352112c46d1",
+      "actual_sha256": "a6c3aac7f7fb5c87bfe0bdc2e3252329f19b0b3b63eb76327dcc9352112c46d1",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c050/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c050/coefficients.txt",
+      "expected_sha256": "0ad7dfa37455b0d0716308b5b7b72ebef5972d5f504c06886c60017dba5ceeec",
+      "actual_sha256": "0ad7dfa37455b0d0716308b5b7b72ebef5972d5f504c06886c60017dba5ceeec",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c050/polynomials.json",
+      "expected_sha256": "dfd61231df21862386443e3a0017085a3527e4fb979014a0748d23a349845f6b",
+      "actual_sha256": "dfd61231df21862386443e3a0017085a3527e4fb979014a0748d23a349845f6b",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c051/chart.json",
+      "expected_sha256": "811a7e01d987ba4f56a6a4936144a85882c669b198a32765400ad37917ec7ce1",
+      "actual_sha256": "811a7e01d987ba4f56a6a4936144a85882c669b198a32765400ad37917ec7ce1",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c051/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c051/coefficients.txt",
+      "expected_sha256": "a296cfce80802417902845c985ac0dbe4d283e08ceef7aacf1fe1fdbdbf4d0c7",
+      "actual_sha256": "a296cfce80802417902845c985ac0dbe4d283e08ceef7aacf1fe1fdbdbf4d0c7",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c051/polynomials.json",
+      "expected_sha256": "be36ebf345d1a35ec7550f9a1f704156253e5ec4e11f1e57c2d3928a0496d7bd",
+      "actual_sha256": "be36ebf345d1a35ec7550f9a1f704156253e5ec4e11f1e57c2d3928a0496d7bd",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c052/chart.json",
+      "expected_sha256": "29951de1eb855c000486235e03f3f5561bcffb18f482d93b61bfe7515ee6d4d1",
+      "actual_sha256": "29951de1eb855c000486235e03f3f5561bcffb18f482d93b61bfe7515ee6d4d1",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c052/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c052/coefficients.txt",
+      "expected_sha256": "a82a605dd38b2f169c011acd8c7450250a831b73060e6740ff12cd02cef84703",
+      "actual_sha256": "a82a605dd38b2f169c011acd8c7450250a831b73060e6740ff12cd02cef84703",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c052/polynomials.json",
+      "expected_sha256": "b4e95d98c438484e5c880a6f15b8c17fea74f07148cbefbd6ec3ddd0b582bd93",
+      "actual_sha256": "b4e95d98c438484e5c880a6f15b8c17fea74f07148cbefbd6ec3ddd0b582bd93",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c053/chart.json",
+      "expected_sha256": "07c6a251927d9916e9b490c37bccc98bc76fad3bc9670e181278b1d3788c8219",
+      "actual_sha256": "07c6a251927d9916e9b490c37bccc98bc76fad3bc9670e181278b1d3788c8219",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c053/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c053/coefficients.txt",
+      "expected_sha256": "9cea3856625a469304011fb2603ae4e9568d3a19b6561c4359c117b62fde87b2",
+      "actual_sha256": "9cea3856625a469304011fb2603ae4e9568d3a19b6561c4359c117b62fde87b2",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c053/polynomials.json",
+      "expected_sha256": "d561dfbe96f03802ebbbee49dd8f82f7a2db4fb72dd442103a5b7433802e25d0",
+      "actual_sha256": "d561dfbe96f03802ebbbee49dd8f82f7a2db4fb72dd442103a5b7433802e25d0",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c054/chart.json",
+      "expected_sha256": "3768cdafdd8fe4f088904dc8dbfca57ea6a6c6cbef92cbabf91ba680ed6d3a3f",
+      "actual_sha256": "3768cdafdd8fe4f088904dc8dbfca57ea6a6c6cbef92cbabf91ba680ed6d3a3f",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c054/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c054/coefficients.txt",
+      "expected_sha256": "b34b0c0eae22d1a48d8a117f8ca47cc1a1774b916e67507e2332365efb55d2f3",
+      "actual_sha256": "b34b0c0eae22d1a48d8a117f8ca47cc1a1774b916e67507e2332365efb55d2f3",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c054/polynomials.json",
+      "expected_sha256": "a8583345729bc853b7161620d567fb2098ff2247b0f42ce9b92fb127c0464198",
+      "actual_sha256": "a8583345729bc853b7161620d567fb2098ff2247b0f42ce9b92fb127c0464198",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c055/chart.json",
+      "expected_sha256": "38e67af7aeaf99e54dcfebaa7033c937938ceb48e14cec91a6825fc7dbbf840c",
+      "actual_sha256": "38e67af7aeaf99e54dcfebaa7033c937938ceb48e14cec91a6825fc7dbbf840c",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c055/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c055/coefficients.txt",
+      "expected_sha256": "45a9ea11fe6d631a16c720bcdffc972cde3c50e60a263d0d2b74f111dfc6ef8e",
+      "actual_sha256": "45a9ea11fe6d631a16c720bcdffc972cde3c50e60a263d0d2b74f111dfc6ef8e",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c055/polynomials.json",
+      "expected_sha256": "f16188bf12162b5c3f9ad73b6c2aef98709d00ea2e76ae0402ed1a634e0864d6",
+      "actual_sha256": "f16188bf12162b5c3f9ad73b6c2aef98709d00ea2e76ae0402ed1a634e0864d6",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c056/chart.json",
+      "expected_sha256": "f1423666152b2e92ac64837557f3069bf11e8c77975ec32af4ae46a9cec3f578",
+      "actual_sha256": "f1423666152b2e92ac64837557f3069bf11e8c77975ec32af4ae46a9cec3f578",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c056/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c056/coefficients.txt",
+      "expected_sha256": "e2ac8d9807927c315dd279829ff3485a07bca193142968632b8ab01543e687f4",
+      "actual_sha256": "e2ac8d9807927c315dd279829ff3485a07bca193142968632b8ab01543e687f4",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c056/polynomials.json",
+      "expected_sha256": "563858fed7cce824c851723fdd22b9a9b286398a2e207e5e93b63678b398f830",
+      "actual_sha256": "563858fed7cce824c851723fdd22b9a9b286398a2e207e5e93b63678b398f830",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c057/chart.json",
+      "expected_sha256": "e9afd4c2ccb61c67ccbe1469f111c5eeea5e100a139d6ac489c06e3e6eba463f",
+      "actual_sha256": "e9afd4c2ccb61c67ccbe1469f111c5eeea5e100a139d6ac489c06e3e6eba463f",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c057/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c057/coefficients.txt",
+      "expected_sha256": "0b82898a076faa93574baada3a4c47fa31816e3ba9c4fdf0d6e92378130dfca0",
+      "actual_sha256": "0b82898a076faa93574baada3a4c47fa31816e3ba9c4fdf0d6e92378130dfca0",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c057/polynomials.json",
+      "expected_sha256": "e6c5de3ec5ffcb2278b573668e4af5562d3d35dfc0ead4ac62b42a4482b81a76",
+      "actual_sha256": "e6c5de3ec5ffcb2278b573668e4af5562d3d35dfc0ead4ac62b42a4482b81a76",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c058/chart.json",
+      "expected_sha256": "a114fd6f23c7d4b6f1846b28db333fbd8bc4044c82c1b73eb40b7de907982900",
+      "actual_sha256": "a114fd6f23c7d4b6f1846b28db333fbd8bc4044c82c1b73eb40b7de907982900",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c058/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c058/coefficients.txt",
+      "expected_sha256": "b3587b1ba924d1d11c72714774fd08096baf981a3b8d1ddfa7c2928390ec9efe",
+      "actual_sha256": "b3587b1ba924d1d11c72714774fd08096baf981a3b8d1ddfa7c2928390ec9efe",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c058/polynomials.json",
+      "expected_sha256": "393ab70cbaaf0b504cf3fba6ed06ebb7036a2ecf64453d26da47cb26e9ae683d",
+      "actual_sha256": "393ab70cbaaf0b504cf3fba6ed06ebb7036a2ecf64453d26da47cb26e9ae683d",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c059/chart.json",
+      "expected_sha256": "567d0c0fdc8d382dc27b921eafc177b0f08df23b59e55698dfd075c36d72dfe1",
+      "actual_sha256": "567d0c0fdc8d382dc27b921eafc177b0f08df23b59e55698dfd075c36d72dfe1",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c059/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c059/coefficients.txt",
+      "expected_sha256": "a4df231f1f99c7963ecd739081b30bfb3334c75d7f101cc86ac4cbfddce006ca",
+      "actual_sha256": "a4df231f1f99c7963ecd739081b30bfb3334c75d7f101cc86ac4cbfddce006ca",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c059/polynomials.json",
+      "expected_sha256": "0d805b7982d95b24e3cf59eeed260e00b1c7213801f59030f61d1fcc9cd96288",
+      "actual_sha256": "0d805b7982d95b24e3cf59eeed260e00b1c7213801f59030f61d1fcc9cd96288",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c060/chart.json",
+      "expected_sha256": "a48f8aa71d11e46678e88c4982983c38b9f8223c7f7fef8819c0c1955acc900b",
+      "actual_sha256": "a48f8aa71d11e46678e88c4982983c38b9f8223c7f7fef8819c0c1955acc900b",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c060/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c060/coefficients.txt",
+      "expected_sha256": "70fdf96e279c488e34d8a3749e9472f8ae95e49dbd9d5e999667b71ad4f543f7",
+      "actual_sha256": "70fdf96e279c488e34d8a3749e9472f8ae95e49dbd9d5e999667b71ad4f543f7",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c060/polynomials.json",
+      "expected_sha256": "6d1546cf61918c65685cc44265008a8ae1cfb57f13895e886da064417ec2b1ca",
+      "actual_sha256": "6d1546cf61918c65685cc44265008a8ae1cfb57f13895e886da064417ec2b1ca",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c061/chart.json",
+      "expected_sha256": "b789751d9bd977f5e4de7bb0a8be7c2a874a26500d78268bf05843dc4864c4a5",
+      "actual_sha256": "b789751d9bd977f5e4de7bb0a8be7c2a874a26500d78268bf05843dc4864c4a5",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c061/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c061/coefficients.txt",
+      "expected_sha256": "cce4772432f78fbc3f3cdfec6748d99c3ed1388dc7fc5732309cc893168b679f",
+      "actual_sha256": "cce4772432f78fbc3f3cdfec6748d99c3ed1388dc7fc5732309cc893168b679f",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c061/polynomials.json",
+      "expected_sha256": "c66b7e746326c7f1dfb0276b1b030275aee9ec2b37b33aa89a8fd1f9139b1818",
+      "actual_sha256": "c66b7e746326c7f1dfb0276b1b030275aee9ec2b37b33aa89a8fd1f9139b1818",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c062/chart.json",
+      "expected_sha256": "cf2552c3b51e9779659de84be29a66ac309b45a9442ec1646098f68495921f2c",
+      "actual_sha256": "cf2552c3b51e9779659de84be29a66ac309b45a9442ec1646098f68495921f2c",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c062/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c062/coefficients.txt",
+      "expected_sha256": "2d4223e5faff7b74dcc51bd3db55e3d0242d0ca696f67f2e378be1f84e0ef6f4",
+      "actual_sha256": "2d4223e5faff7b74dcc51bd3db55e3d0242d0ca696f67f2e378be1f84e0ef6f4",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c062/polynomials.json",
+      "expected_sha256": "1d43713ca25e3eafdc819c17e93faee732f937a0f0f272a922e2d6f866ff260e",
+      "actual_sha256": "1d43713ca25e3eafdc819c17e93faee732f937a0f0f272a922e2d6f866ff260e",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c063/chart.json",
+      "expected_sha256": "5cec8d0396b027381585118fe400116e8e0c090014a96d7e3c39f3310e0c587c",
+      "actual_sha256": "5cec8d0396b027381585118fe400116e8e0c090014a96d7e3c39f3310e0c587c",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c063/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c063/coefficients.txt",
+      "expected_sha256": "e45027f531665b082ad6bb67fc4547a4ac427c3a6d3b8cb8078282fbe2188dd6",
+      "actual_sha256": "e45027f531665b082ad6bb67fc4547a4ac427c3a6d3b8cb8078282fbe2188dd6",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c063/polynomials.json",
+      "expected_sha256": "a9f3c52aa86019bb24d398f690518a2e31233fe0d1d81d8d9c5770080d8ce94c",
+      "actual_sha256": "a9f3c52aa86019bb24d398f690518a2e31233fe0d1d81d8d9c5770080d8ce94c",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c064/chart.json",
+      "expected_sha256": "3270f74197d4b5efe5873db7834b2dc5ce5cdf84fce6e14d912fdca7d2e1202e",
+      "actual_sha256": "3270f74197d4b5efe5873db7834b2dc5ce5cdf84fce6e14d912fdca7d2e1202e",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c064/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c064/coefficients.txt",
+      "expected_sha256": "5b8c7b25bcf0aa59fc38a5ded4b1edd318f1b20aa05fe062a03764b17e583136",
+      "actual_sha256": "5b8c7b25bcf0aa59fc38a5ded4b1edd318f1b20aa05fe062a03764b17e583136",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c064/polynomials.json",
+      "expected_sha256": "232b0048507a812cd0964ba59900f4915a8b719a50346a2ecea052d80cbe7c91",
+      "actual_sha256": "232b0048507a812cd0964ba59900f4915a8b719a50346a2ecea052d80cbe7c91",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c065/chart.json",
+      "expected_sha256": "c6f6873944e1023bc93cc1594b61f1f261154f02dab9495208bf4c3ad2bd5396",
+      "actual_sha256": "c6f6873944e1023bc93cc1594b61f1f261154f02dab9495208bf4c3ad2bd5396",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c065/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c065/coefficients.txt",
+      "expected_sha256": "e6ed0882af99a3997ea93314ea299d2a03cf9292952bd84eda15b7c9c277308e",
+      "actual_sha256": "e6ed0882af99a3997ea93314ea299d2a03cf9292952bd84eda15b7c9c277308e",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c065/polynomials.json",
+      "expected_sha256": "e1b0dd2e4584765f1729fa5d4b98d5944fe3e9429e5954ef66389a6fcc4dd8b5",
+      "actual_sha256": "e1b0dd2e4584765f1729fa5d4b98d5944fe3e9429e5954ef66389a6fcc4dd8b5",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c066/chart.json",
+      "expected_sha256": "bf3ab946e8c6933b0d39d6fe68ca066b68fca5807ef37e751484fa740478373e",
+      "actual_sha256": "bf3ab946e8c6933b0d39d6fe68ca066b68fca5807ef37e751484fa740478373e",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c066/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c066/coefficients.txt",
+      "expected_sha256": "0593d2e53af5100d9fa2fb21dcdb275666a8e578439c490a6d5365b1682e5f63",
+      "actual_sha256": "0593d2e53af5100d9fa2fb21dcdb275666a8e578439c490a6d5365b1682e5f63",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c066/polynomials.json",
+      "expected_sha256": "f582e12679754ebf8ed8daa039090c69603a800acc64c0f2e39bdb051b9577fb",
+      "actual_sha256": "f582e12679754ebf8ed8daa039090c69603a800acc64c0f2e39bdb051b9577fb",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c067/chart.json",
+      "expected_sha256": "09c3a3700158fcb10828fdfe802ea4ee99457a0e77f8bd83e14a2a2e8d57afbc",
+      "actual_sha256": "09c3a3700158fcb10828fdfe802ea4ee99457a0e77f8bd83e14a2a2e8d57afbc",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c067/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c067/coefficients.txt",
+      "expected_sha256": "df5ac63fdb8a97645283c1b61ceca4a1db2dc5c8e4bfe308128e006bf89003b5",
+      "actual_sha256": "df5ac63fdb8a97645283c1b61ceca4a1db2dc5c8e4bfe308128e006bf89003b5",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c067/polynomials.json",
+      "expected_sha256": "92255ea23aaf184728175ca0ce711984729abbf57bcc83bdbb3a5f9fd9554134",
+      "actual_sha256": "92255ea23aaf184728175ca0ce711984729abbf57bcc83bdbb3a5f9fd9554134",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c068/chart.json",
+      "expected_sha256": "d7aaa5aea7e75b52537fd9ab1509bfe198aecdc080e00df12203f6bb3eec2432",
+      "actual_sha256": "d7aaa5aea7e75b52537fd9ab1509bfe198aecdc080e00df12203f6bb3eec2432",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c068/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c068/coefficients.txt",
+      "expected_sha256": "2c40b96972d158d00efb2186778adc5a6a3db595636fd7672cf57e0eabea2cc6",
+      "actual_sha256": "2c40b96972d158d00efb2186778adc5a6a3db595636fd7672cf57e0eabea2cc6",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c068/polynomials.json",
+      "expected_sha256": "f4c47c981bc0d978121acc65ee5157f8318d9d773b0a14c468fd064e343b1e5d",
+      "actual_sha256": "f4c47c981bc0d978121acc65ee5157f8318d9d773b0a14c468fd064e343b1e5d",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c069/chart.json",
+      "expected_sha256": "c715469f000f3f1a5c83af8346ee547621141cb8c1f60c91f311a4a5bc125f98",
+      "actual_sha256": "c715469f000f3f1a5c83af8346ee547621141cb8c1f60c91f311a4a5bc125f98",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c069/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c069/coefficients.txt",
+      "expected_sha256": "0b2c86319bd011a324ae3436f02c1b27b58e9fe393e4474bee5f171e6f689648",
+      "actual_sha256": "0b2c86319bd011a324ae3436f02c1b27b58e9fe393e4474bee5f171e6f689648",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c069/polynomials.json",
+      "expected_sha256": "284a87bfddea5d17a6faa1e30cba5b2a7a13f4d42bfda6c1edc7e40227f7ab13",
+      "actual_sha256": "284a87bfddea5d17a6faa1e30cba5b2a7a13f4d42bfda6c1edc7e40227f7ab13",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c070/chart.json",
+      "expected_sha256": "bda47eefe7a81e68a222598e0f9fb97cd797b03f9770d2b388e44dfab15b19a0",
+      "actual_sha256": "bda47eefe7a81e68a222598e0f9fb97cd797b03f9770d2b388e44dfab15b19a0",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c070/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c070/coefficients.txt",
+      "expected_sha256": "6207f054d2ca6baa212eb024f7fee4bab1799446584c13570c532ef2c1a82883",
+      "actual_sha256": "6207f054d2ca6baa212eb024f7fee4bab1799446584c13570c532ef2c1a82883",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c070/polynomials.json",
+      "expected_sha256": "376918cd9dac2eefcf70b8d97cc0ebf80621d4c0a6b274d8bd6ff826e9a14327",
+      "actual_sha256": "376918cd9dac2eefcf70b8d97cc0ebf80621d4c0a6b274d8bd6ff826e9a14327",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c071/chart.json",
+      "expected_sha256": "511075715c88737472c51870ec1024ea6f0e2b15eda52eca4b05aacdd731cc76",
+      "actual_sha256": "511075715c88737472c51870ec1024ea6f0e2b15eda52eca4b05aacdd731cc76",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c071/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c071/coefficients.txt",
+      "expected_sha256": "4e12dc567e72123db3bb07497ff3e1cb5ecfb18a907752cddec1a4e6d3097691",
+      "actual_sha256": "4e12dc567e72123db3bb07497ff3e1cb5ecfb18a907752cddec1a4e6d3097691",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c071/polynomials.json",
+      "expected_sha256": "408fd14dd560ab15ffd798662cc53c70a0338e023e013e6fbef8a05e2db5d51a",
+      "actual_sha256": "408fd14dd560ab15ffd798662cc53c70a0338e023e013e6fbef8a05e2db5d51a",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c072/chart.json",
+      "expected_sha256": "56a81248ed3dfc9bf06c4ab4f985338ef894337e1113d77a251bdf1937606022",
+      "actual_sha256": "56a81248ed3dfc9bf06c4ab4f985338ef894337e1113d77a251bdf1937606022",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c072/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c072/coefficients.txt",
+      "expected_sha256": "779add27dbc7f7d6c11c5c1876d93361a747b40b06b02c305569f4c3d2564373",
+      "actual_sha256": "779add27dbc7f7d6c11c5c1876d93361a747b40b06b02c305569f4c3d2564373",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c072/polynomials.json",
+      "expected_sha256": "b1d73fbf2888180474490552dda664477c3550c20bc68c389c171904b07b7f61",
+      "actual_sha256": "b1d73fbf2888180474490552dda664477c3550c20bc68c389c171904b07b7f61",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c073/chart.json",
+      "expected_sha256": "295e75c89f10b2fb09f88233db2edf12ed65c63fba08ac651c6f95002286620c",
+      "actual_sha256": "295e75c89f10b2fb09f88233db2edf12ed65c63fba08ac651c6f95002286620c",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c073/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c073/coefficients.txt",
+      "expected_sha256": "6deb299e6aec8eb7a2007f3efc733c72a44b489cf9429639d2d6019b2dba1837",
+      "actual_sha256": "6deb299e6aec8eb7a2007f3efc733c72a44b489cf9429639d2d6019b2dba1837",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c073/polynomials.json",
+      "expected_sha256": "e8d2c785fc6a7b74730748f5bff91ecf295d924131dd29baca7e50f4f64d9329",
+      "actual_sha256": "e8d2c785fc6a7b74730748f5bff91ecf295d924131dd29baca7e50f4f64d9329",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c074/chart.json",
+      "expected_sha256": "af9b92cd3aefa594f711cedaef3f1ecb2b3e85a0a10029e1dc1b67885812f1c7",
+      "actual_sha256": "af9b92cd3aefa594f711cedaef3f1ecb2b3e85a0a10029e1dc1b67885812f1c7",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c074/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c074/coefficients.txt",
+      "expected_sha256": "ee222178cf0ac9383877e446bab78975bd54fac87df0821eff9e294c0d20f948",
+      "actual_sha256": "ee222178cf0ac9383877e446bab78975bd54fac87df0821eff9e294c0d20f948",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c074/polynomials.json",
+      "expected_sha256": "65a1356e5333ffacf2c99bbe49567d7c223c5bcdf35a455b0876e503acc9e3a7",
+      "actual_sha256": "65a1356e5333ffacf2c99bbe49567d7c223c5bcdf35a455b0876e503acc9e3a7",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c075/chart.json",
+      "expected_sha256": "706ef6b391e39397bb28321064ab5ab44b7fbc4bb0ca13c3ef7f03dab80b6ca1",
+      "actual_sha256": "706ef6b391e39397bb28321064ab5ab44b7fbc4bb0ca13c3ef7f03dab80b6ca1",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c075/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c075/coefficients.txt",
+      "expected_sha256": "142c0e824671d56ab4b0d28dc2efb3ee32dd9a84e30840248c35232e2ab6e34e",
+      "actual_sha256": "142c0e824671d56ab4b0d28dc2efb3ee32dd9a84e30840248c35232e2ab6e34e",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c075/polynomials.json",
+      "expected_sha256": "16d66892bbc8cf08c1b0e1339606bda466a1646945e5c8069160d090cca97dd4",
+      "actual_sha256": "16d66892bbc8cf08c1b0e1339606bda466a1646945e5c8069160d090cca97dd4",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c076/chart.json",
+      "expected_sha256": "e21372170444825ced8d460108d49cdccd51905609883d31b4877a952cf83bc3",
+      "actual_sha256": "e21372170444825ced8d460108d49cdccd51905609883d31b4877a952cf83bc3",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c076/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c076/coefficients.txt",
+      "expected_sha256": "7046154d0a78b8fe84f79e04fb30ab459b394f1de07bf599dba57df4e03ebb98",
+      "actual_sha256": "7046154d0a78b8fe84f79e04fb30ab459b394f1de07bf599dba57df4e03ebb98",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c076/polynomials.json",
+      "expected_sha256": "c0db6ed549bb393d92c7963399ae3be27ebf9d5c472756003e4992fb14e323aa",
+      "actual_sha256": "c0db6ed549bb393d92c7963399ae3be27ebf9d5c472756003e4992fb14e323aa",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c077/chart.json",
+      "expected_sha256": "e5e8ece8c1b29bdd41603dbdb49be0591ee34565c1349861da1b2b22f3a11108",
+      "actual_sha256": "e5e8ece8c1b29bdd41603dbdb49be0591ee34565c1349861da1b2b22f3a11108",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c077/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c077/coefficients.txt",
+      "expected_sha256": "e6cb8066f0fc1ab39a6c7902479cd74c9d95f1f207172ecdaec744c359337180",
+      "actual_sha256": "e6cb8066f0fc1ab39a6c7902479cd74c9d95f1f207172ecdaec744c359337180",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c077/polynomials.json",
+      "expected_sha256": "3747cc2a2c6688b1d52ac391f5e8310a405d766883ca59e25f1c864f16a6d9c2",
+      "actual_sha256": "3747cc2a2c6688b1d52ac391f5e8310a405d766883ca59e25f1c864f16a6d9c2",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c078/chart.json",
+      "expected_sha256": "2b917f8325075cf0f39987454e897087ed22e95e9b3e1a11479beda99f52b9bf",
+      "actual_sha256": "2b917f8325075cf0f39987454e897087ed22e95e9b3e1a11479beda99f52b9bf",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c078/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c078/coefficients.txt",
+      "expected_sha256": "f6ede0d55f4dcf6fe5dc859ca9966c581e517429fd5cfbad089fa6dbca7d762e",
+      "actual_sha256": "f6ede0d55f4dcf6fe5dc859ca9966c581e517429fd5cfbad089fa6dbca7d762e",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c078/polynomials.json",
+      "expected_sha256": "0e220b16cb506f501eca17584350ec95905331f4b0659b4d807cc52fedb2eeef",
+      "actual_sha256": "0e220b16cb506f501eca17584350ec95905331f4b0659b4d807cc52fedb2eeef",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c079/chart.json",
+      "expected_sha256": "445e2f8c784194252d14cb5c98370b3acb28b2d67105b09785cfd9eae1c3324c",
+      "actual_sha256": "445e2f8c784194252d14cb5c98370b3acb28b2d67105b09785cfd9eae1c3324c",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c079/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c079/coefficients.txt",
+      "expected_sha256": "1d0a36fee5806dbe437a2d1529f29ffbbe0957c70dc118214b0eee7c6f0d6d08",
+      "actual_sha256": "1d0a36fee5806dbe437a2d1529f29ffbbe0957c70dc118214b0eee7c6f0d6d08",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c079/polynomials.json",
+      "expected_sha256": "f9af3ddd31b0dde7861643e578f6039b94aca88c9ab575d7d970ca5a02de3b49",
+      "actual_sha256": "f9af3ddd31b0dde7861643e578f6039b94aca88c9ab575d7d970ca5a02de3b49",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c080/chart.json",
+      "expected_sha256": "14ef6db5330e22e886708ba9d3974778c15fd00c596834a10826010395dd32d9",
+      "actual_sha256": "14ef6db5330e22e886708ba9d3974778c15fd00c596834a10826010395dd32d9",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c080/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c080/coefficients.txt",
+      "expected_sha256": "45fff5d6847ecbbe81e5a2cd5f954969880fe77c9ecac128af71fe5ebdfc87be",
+      "actual_sha256": "45fff5d6847ecbbe81e5a2cd5f954969880fe77c9ecac128af71fe5ebdfc87be",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c080/polynomials.json",
+      "expected_sha256": "692a66a97abde5e38dbfff2aa91cee4bccc45dfd224163a298fb5290b00bb1d0",
+      "actual_sha256": "692a66a97abde5e38dbfff2aa91cee4bccc45dfd224163a298fb5290b00bb1d0",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c081/chart.json",
+      "expected_sha256": "2fa70b9270fc8cf95ca49ed7596986691a2bff9b1e9cf5542e8fa0a5f77cead6",
+      "actual_sha256": "2fa70b9270fc8cf95ca49ed7596986691a2bff9b1e9cf5542e8fa0a5f77cead6",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c081/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c081/coefficients.txt",
+      "expected_sha256": "bf776d49ba1388c4c4400a6ed913d5acde1ceb74b391e3fd5db632dff356a0b9",
+      "actual_sha256": "bf776d49ba1388c4c4400a6ed913d5acde1ceb74b391e3fd5db632dff356a0b9",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c081/polynomials.json",
+      "expected_sha256": "edbac7e7ce6cec955b7a2768f3c7fb48c531c7e29063ef541c65a6595ab841fd",
+      "actual_sha256": "edbac7e7ce6cec955b7a2768f3c7fb48c531c7e29063ef541c65a6595ab841fd",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c082/chart.json",
+      "expected_sha256": "48d25055a604594813c1e9848b83b1829e3f2184aa457e57e42e7688b6814542",
+      "actual_sha256": "48d25055a604594813c1e9848b83b1829e3f2184aa457e57e42e7688b6814542",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c082/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c082/coefficients.txt",
+      "expected_sha256": "43b1c528ded39a2cb6f442cae236262c4b6bc356d41929c66cb666caa7be66f7",
+      "actual_sha256": "43b1c528ded39a2cb6f442cae236262c4b6bc356d41929c66cb666caa7be66f7",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c082/polynomials.json",
+      "expected_sha256": "fd6a1c8eb0bd0653198f0bbe71ca8c30dafe1dde2cf50f0727445eaa22850ce6",
+      "actual_sha256": "fd6a1c8eb0bd0653198f0bbe71ca8c30dafe1dde2cf50f0727445eaa22850ce6",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c083/chart.json",
+      "expected_sha256": "b8a0527a31b5a507ebc415310f624952d7e2606d98b816945aa03a993123002a",
+      "actual_sha256": "b8a0527a31b5a507ebc415310f624952d7e2606d98b816945aa03a993123002a",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c083/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c083/coefficients.txt",
+      "expected_sha256": "e4c3f18e88a0c97755e62335a0fbb0b007e648704023df46352ac33da79d778a",
+      "actual_sha256": "e4c3f18e88a0c97755e62335a0fbb0b007e648704023df46352ac33da79d778a",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c083/polynomials.json",
+      "expected_sha256": "9a2c0d13a844b281628c9369542a1f82fe0b6b2e3ec45051bd77ad5fd56bfea8",
+      "actual_sha256": "9a2c0d13a844b281628c9369542a1f82fe0b6b2e3ec45051bd77ad5fd56bfea8",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c084/chart.json",
+      "expected_sha256": "274f85ec48aeb9e0a8a08bfc29ea1e5edb5383f3bbb72cc8117f6d83f27d5065",
+      "actual_sha256": "274f85ec48aeb9e0a8a08bfc29ea1e5edb5383f3bbb72cc8117f6d83f27d5065",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c084/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c084/coefficients.txt",
+      "expected_sha256": "bc84bf73189cfcd74b5bda445fe9ac7d8fc3b48563b4deb106fa3bf56989d583",
+      "actual_sha256": "bc84bf73189cfcd74b5bda445fe9ac7d8fc3b48563b4deb106fa3bf56989d583",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c084/polynomials.json",
+      "expected_sha256": "5638419e61a44d50d411ecf76d52c54b5791da45bd76bddf6bb1edb957f03fa8",
+      "actual_sha256": "5638419e61a44d50d411ecf76d52c54b5791da45bd76bddf6bb1edb957f03fa8",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c085/chart.json",
+      "expected_sha256": "bba83cfa4a3e58568c0fc86e894d28542c6e0fa604740ecbd1594338d0117559",
+      "actual_sha256": "bba83cfa4a3e58568c0fc86e894d28542c6e0fa604740ecbd1594338d0117559",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c085/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c085/coefficients.txt",
+      "expected_sha256": "107802dab7018c8d25205d0589c851543ee8ac1127fed653ca45804b7577f8d4",
+      "actual_sha256": "107802dab7018c8d25205d0589c851543ee8ac1127fed653ca45804b7577f8d4",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c085/polynomials.json",
+      "expected_sha256": "6a8c25d056c3a6d016264e5cf75fb2074e3ea33bb619456e29f69e057dbe8158",
+      "actual_sha256": "6a8c25d056c3a6d016264e5cf75fb2074e3ea33bb619456e29f69e057dbe8158",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c086/chart.json",
+      "expected_sha256": "1cccd79f14e4c27cad162f2c53961eb94235ed1e6c974bd0a632226d7847602d",
+      "actual_sha256": "1cccd79f14e4c27cad162f2c53961eb94235ed1e6c974bd0a632226d7847602d",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c086/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c086/coefficients.txt",
+      "expected_sha256": "c9475c48a7829c0bef6b0d58cdd37c78238342008fb8211d97094973fe163c74",
+      "actual_sha256": "c9475c48a7829c0bef6b0d58cdd37c78238342008fb8211d97094973fe163c74",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c086/polynomials.json",
+      "expected_sha256": "0434ddc3cd75dc69bccb858ed015ccd9ce06a0ef269e7c94d01b4d67c5641f0b",
+      "actual_sha256": "0434ddc3cd75dc69bccb858ed015ccd9ce06a0ef269e7c94d01b4d67c5641f0b",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c087/chart.json",
+      "expected_sha256": "aa7c0a42fc52ac041d3d69728d752e13956af7387cbf87f7b6a539f8ba973366",
+      "actual_sha256": "aa7c0a42fc52ac041d3d69728d752e13956af7387cbf87f7b6a539f8ba973366",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c087/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c087/coefficients.txt",
+      "expected_sha256": "58040d2f66af5ef8c88db45089c6083419e787e0c8ab6b87a01f074e7da45672",
+      "actual_sha256": "58040d2f66af5ef8c88db45089c6083419e787e0c8ab6b87a01f074e7da45672",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c087/polynomials.json",
+      "expected_sha256": "07714d8ec8eda3681399e024e9e33a87824b6e05fb32656d2c40e65f9c4f1b51",
+      "actual_sha256": "07714d8ec8eda3681399e024e9e33a87824b6e05fb32656d2c40e65f9c4f1b51",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c088/chart.json",
+      "expected_sha256": "b25377befae66e57698ffa81d152d36dc690049dd853943b83c5d4752ba5460c",
+      "actual_sha256": "b25377befae66e57698ffa81d152d36dc690049dd853943b83c5d4752ba5460c",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c088/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c088/coefficients.txt",
+      "expected_sha256": "f9502bf7c995b3fa210f8b0628c99d92aba477ea77d9275d8dea18aad0334e3e",
+      "actual_sha256": "f9502bf7c995b3fa210f8b0628c99d92aba477ea77d9275d8dea18aad0334e3e",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c088/polynomials.json",
+      "expected_sha256": "2111d7e92715716f9e228e4740cd2e028013a0180a3520d647cf1118b88d0542",
+      "actual_sha256": "2111d7e92715716f9e228e4740cd2e028013a0180a3520d647cf1118b88d0542",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c089/chart.json",
+      "expected_sha256": "cdaac130c99dff10a68081554160ef6bed156e08f9b022a37747d552a44e6c44",
+      "actual_sha256": "cdaac130c99dff10a68081554160ef6bed156e08f9b022a37747d552a44e6c44",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c089/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c089/coefficients.txt",
+      "expected_sha256": "fa0f716cd619991acb676d5525e349d762aa808cb437dd6219885115f6a9c9a9",
+      "actual_sha256": "fa0f716cd619991acb676d5525e349d762aa808cb437dd6219885115f6a9c9a9",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c089/polynomials.json",
+      "expected_sha256": "b737639d798a97b04597cb8a6ad4d7370df28c1cd14860e48eb8a3190caa21a3",
+      "actual_sha256": "b737639d798a97b04597cb8a6ad4d7370df28c1cd14860e48eb8a3190caa21a3",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c090/chart.json",
+      "expected_sha256": "bca8780a70fa19d3b37d827d7c80df48d29f1b4b5ef3327f6be1034a34b4be79",
+      "actual_sha256": "bca8780a70fa19d3b37d827d7c80df48d29f1b4b5ef3327f6be1034a34b4be79",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c090/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c090/coefficients.txt",
+      "expected_sha256": "2494078c648fbcc1af15bfedecf9f6657553d233dea80cea6319c93ed2ae61af",
+      "actual_sha256": "2494078c648fbcc1af15bfedecf9f6657553d233dea80cea6319c93ed2ae61af",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c090/polynomials.json",
+      "expected_sha256": "fd4038fafd9b9675d4e60197c2fd2469e806d81b2b14d3e8e9bc70a59ab402af",
+      "actual_sha256": "fd4038fafd9b9675d4e60197c2fd2469e806d81b2b14d3e8e9bc70a59ab402af",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c091/chart.json",
+      "expected_sha256": "7d2ca6eca8a992052711353d281fb159ffaad650b5b416c4d77db8683941fd88",
+      "actual_sha256": "7d2ca6eca8a992052711353d281fb159ffaad650b5b416c4d77db8683941fd88",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c091/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c091/coefficients.txt",
+      "expected_sha256": "a8a4bda3663ab70c347b99454522177559aa766ec29102191417a6ab1f8fc38b",
+      "actual_sha256": "a8a4bda3663ab70c347b99454522177559aa766ec29102191417a6ab1f8fc38b",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c091/polynomials.json",
+      "expected_sha256": "a73555142de03fba18615f80c8c6127013d89576079be0c91b78861cc31b149c",
+      "actual_sha256": "a73555142de03fba18615f80c8c6127013d89576079be0c91b78861cc31b149c",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c092/chart.json",
+      "expected_sha256": "1c58710abe0c04173b44e7a48a4e962ec37a1f51794f820e7937450460b3aaab",
+      "actual_sha256": "1c58710abe0c04173b44e7a48a4e962ec37a1f51794f820e7937450460b3aaab",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c092/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c092/coefficients.txt",
+      "expected_sha256": "5a8ade27aaba5924744d41a95b83d069eb1d9b86482cb81f9c9bc0542fb22217",
+      "actual_sha256": "5a8ade27aaba5924744d41a95b83d069eb1d9b86482cb81f9c9bc0542fb22217",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c092/polynomials.json",
+      "expected_sha256": "9e30a8d7849409ca8ca4826e6e1737fb1a45f93efd838a2a437fb58eb978c44f",
+      "actual_sha256": "9e30a8d7849409ca8ca4826e6e1737fb1a45f93efd838a2a437fb58eb978c44f",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c093/chart.json",
+      "expected_sha256": "ef7df95656e8eb3f81ef7d7615be488e900f7048aa239ecbc646350d276b53f7",
+      "actual_sha256": "ef7df95656e8eb3f81ef7d7615be488e900f7048aa239ecbc646350d276b53f7",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c093/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c093/coefficients.txt",
+      "expected_sha256": "0a0a8d6b77dbf74da521ccf53f7ec32e94dc645c2771ec84d6be0b6242cecfad",
+      "actual_sha256": "0a0a8d6b77dbf74da521ccf53f7ec32e94dc645c2771ec84d6be0b6242cecfad",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c093/polynomials.json",
+      "expected_sha256": "fcdd811e4f3f719a4edd2443757290dd3a3061cf74f08865fb030356fc854be0",
+      "actual_sha256": "fcdd811e4f3f719a4edd2443757290dd3a3061cf74f08865fb030356fc854be0",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c094/chart.json",
+      "expected_sha256": "b49729c98051aa34c82ce502e7e8516aa08206229f6df1884cae849d0c07cf30",
+      "actual_sha256": "b49729c98051aa34c82ce502e7e8516aa08206229f6df1884cae849d0c07cf30",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c094/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c094/coefficients.txt",
+      "expected_sha256": "7ab59324168998fe3b432e69b65e8c1f03a5ac6f09336976cf669e5127be85a7",
+      "actual_sha256": "7ab59324168998fe3b432e69b65e8c1f03a5ac6f09336976cf669e5127be85a7",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c094/polynomials.json",
+      "expected_sha256": "b069888ca68d1499d1b2e55c7c5740b56f8ead0390508818be3351a86f6da93c",
+      "actual_sha256": "b069888ca68d1499d1b2e55c7c5740b56f8ead0390508818be3351a86f6da93c",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c095/chart.json",
+      "expected_sha256": "1777a15a6273778600f9a297b39163f5a425f97e1f5c104b9966edfefdbf919f",
+      "actual_sha256": "1777a15a6273778600f9a297b39163f5a425f97e1f5c104b9966edfefdbf919f",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c095/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c095/coefficients.txt",
+      "expected_sha256": "5849808c0a59ad7b71dc1d422a4e3bf0ef4a4a23af9ebcdca13c59c1eed800c9",
+      "actual_sha256": "5849808c0a59ad7b71dc1d422a4e3bf0ef4a4a23af9ebcdca13c59c1eed800c9",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c095/polynomials.json",
+      "expected_sha256": "a366cf522f02ec1d54a85e56fd3160507076002f559490091bba8dda77fb320f",
+      "actual_sha256": "a366cf522f02ec1d54a85e56fd3160507076002f559490091bba8dda77fb320f",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c096/chart.json",
+      "expected_sha256": "f891bfb9e66f94f46854a7f61933ddcf16028f773547ba6b6263b99f8bf61a91",
+      "actual_sha256": "f891bfb9e66f94f46854a7f61933ddcf16028f773547ba6b6263b99f8bf61a91",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c096/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c096/coefficients.txt",
+      "expected_sha256": "c508948133bed6737675a427338a955a23ff7775c9a752ab3448652e7f3ef879",
+      "actual_sha256": "c508948133bed6737675a427338a955a23ff7775c9a752ab3448652e7f3ef879",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c096/polynomials.json",
+      "expected_sha256": "7470acccd02c94da103b5ebc02cb395f28dff986531865756f60c5624fe60284",
+      "actual_sha256": "7470acccd02c94da103b5ebc02cb395f28dff986531865756f60c5624fe60284",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c097/chart.json",
+      "expected_sha256": "13856b8077d798bf9a98625512b2373fba07a7f387f928414675e4d545e51b4b",
+      "actual_sha256": "13856b8077d798bf9a98625512b2373fba07a7f387f928414675e4d545e51b4b",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c097/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c097/coefficients.txt",
+      "expected_sha256": "1e7736179dbafcf7f48e5ec6eac7932c856d86dfeb7489f008ddffc74bcaecff",
+      "actual_sha256": "1e7736179dbafcf7f48e5ec6eac7932c856d86dfeb7489f008ddffc74bcaecff",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c097/polynomials.json",
+      "expected_sha256": "229b5225e1a471b919e10b81befbb7f8f795d44112ce40a7f8ac43aa848684d8",
+      "actual_sha256": "229b5225e1a471b919e10b81befbb7f8f795d44112ce40a7f8ac43aa848684d8",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c098/chart.json",
+      "expected_sha256": "89d88e622a86a0ee6529b82493dcf28658094e525266105100b02168ca0390f7",
+      "actual_sha256": "89d88e622a86a0ee6529b82493dcf28658094e525266105100b02168ca0390f7",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c098/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c098/coefficients.txt",
+      "expected_sha256": "7ea9db269463be17088350bfd3d89793e95b8f63f139b7f38ea217b07da04be8",
+      "actual_sha256": "7ea9db269463be17088350bfd3d89793e95b8f63f139b7f38ea217b07da04be8",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c098/polynomials.json",
+      "expected_sha256": "7be4f98077a3d2d1a178ec7835eb1dd9b558feaa8e689e11ddef5284fbec82d5",
+      "actual_sha256": "7be4f98077a3d2d1a178ec7835eb1dd9b558feaa8e689e11ddef5284fbec82d5",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c099/chart.json",
+      "expected_sha256": "f038c8f22a6e8fc5d8bd6051b506e50b6125aab88b9f85edd9fb62431d9701a7",
+      "actual_sha256": "f038c8f22a6e8fc5d8bd6051b506e50b6125aab88b9f85edd9fb62431d9701a7",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c099/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c099/coefficients.txt",
+      "expected_sha256": "8780bc94d32627c9f2395f40b81f0f9b1352c21c539c7f704857a37e824f2a01",
+      "actual_sha256": "8780bc94d32627c9f2395f40b81f0f9b1352c21c539c7f704857a37e824f2a01",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c099/polynomials.json",
+      "expected_sha256": "56f7ecf1741286735f48dbec6a3067202ed9097205456a5cd3f6d17e80ed82ec",
+      "actual_sha256": "56f7ecf1741286735f48dbec6a3067202ed9097205456a5cd3f6d17e80ed82ec",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c100/chart.json",
+      "expected_sha256": "b1dfe586e5609d3a0af722b800c754b9c4d936719740c76ca294099cb46c2782",
+      "actual_sha256": "b1dfe586e5609d3a0af722b800c754b9c4d936719740c76ca294099cb46c2782",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c100/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c100/coefficients.txt",
+      "expected_sha256": "c63ef628be1b0e230724b6d3ce5bb2f9453df33c2ae1abde25a54bdbcd8d4aeb",
+      "actual_sha256": "c63ef628be1b0e230724b6d3ce5bb2f9453df33c2ae1abde25a54bdbcd8d4aeb",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c100/polynomials.json",
+      "expected_sha256": "e10ffaec572610d6fa633e872f7eb0f9d5fe8765eb6cf181da8f3d4d0bc816d3",
+      "actual_sha256": "e10ffaec572610d6fa633e872f7eb0f9d5fe8765eb6cf181da8f3d4d0bc816d3",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c101/chart.json",
+      "expected_sha256": "41eb1aa68510a7dfe6e2a6200493ec579cb2a370e4d2ba6104bf7788afc80b55",
+      "actual_sha256": "41eb1aa68510a7dfe6e2a6200493ec579cb2a370e4d2ba6104bf7788afc80b55",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c101/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c101/coefficients.txt",
+      "expected_sha256": "ed27bb11ef065a10a994560874cc47480fd50fd61ae57ac037ec2212058453ce",
+      "actual_sha256": "ed27bb11ef065a10a994560874cc47480fd50fd61ae57ac037ec2212058453ce",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c101/polynomials.json",
+      "expected_sha256": "e06a56cc2459140962d0313d3733ac70b0cde337e36324a302f86dae25f77be6",
+      "actual_sha256": "e06a56cc2459140962d0313d3733ac70b0cde337e36324a302f86dae25f77be6",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c102/chart.json",
+      "expected_sha256": "f2f9bbdf355dcfdf23ac7760df51323955dc2c865d88ee0975d7a1a974676c53",
+      "actual_sha256": "f2f9bbdf355dcfdf23ac7760df51323955dc2c865d88ee0975d7a1a974676c53",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c102/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c102/coefficients.txt",
+      "expected_sha256": "fbe3e5c4ddc59284b91c68bbca2358fd2b4a97368437e7567ee5aac112bc9c21",
+      "actual_sha256": "fbe3e5c4ddc59284b91c68bbca2358fd2b4a97368437e7567ee5aac112bc9c21",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c102/polynomials.json",
+      "expected_sha256": "8d482a0736569d0183d966a918fc4aad2ab0a228465788f41fdb5b60f961f11d",
+      "actual_sha256": "8d482a0736569d0183d966a918fc4aad2ab0a228465788f41fdb5b60f961f11d",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c103/chart.json",
+      "expected_sha256": "d4a494fcec0f2052ac16f9d47476454417f009a1b467f54206edd6cefb368e5a",
+      "actual_sha256": "d4a494fcec0f2052ac16f9d47476454417f009a1b467f54206edd6cefb368e5a",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c103/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c103/coefficients.txt",
+      "expected_sha256": "2547c77e259e28e4acc6352b5ac4f9a8e3d1795b714ebad57a82e9403da8d3c6",
+      "actual_sha256": "2547c77e259e28e4acc6352b5ac4f9a8e3d1795b714ebad57a82e9403da8d3c6",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c103/polynomials.json",
+      "expected_sha256": "1846c701da173bfa7cc2594e30fddda12abf0890fd7eb1d415cf93e6c7830a19",
+      "actual_sha256": "1846c701da173bfa7cc2594e30fddda12abf0890fd7eb1d415cf93e6c7830a19",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c104/chart.json",
+      "expected_sha256": "e8df580fc5c6c64bfc4f27db5f3b1d3959caa980910d730696bfe1aa52cafa9c",
+      "actual_sha256": "e8df580fc5c6c64bfc4f27db5f3b1d3959caa980910d730696bfe1aa52cafa9c",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c104/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c104/coefficients.txt",
+      "expected_sha256": "32a92ba79122ae30964c7abc1f17f95aa255313d316db675487301cb19907e87",
+      "actual_sha256": "32a92ba79122ae30964c7abc1f17f95aa255313d316db675487301cb19907e87",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c104/polynomials.json",
+      "expected_sha256": "70cf657af71f82586eb7a700c158c6993a7a96e75a7d6dfc6cde53aaae4728ec",
+      "actual_sha256": "70cf657af71f82586eb7a700c158c6993a7a96e75a7d6dfc6cde53aaae4728ec",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c105/chart.json",
+      "expected_sha256": "ed6607635d73801a16852864db3e5cffa44eedf174545c054a84b7f64152e35f",
+      "actual_sha256": "ed6607635d73801a16852864db3e5cffa44eedf174545c054a84b7f64152e35f",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c105/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c105/coefficients.txt",
+      "expected_sha256": "43f08da447443e5562be652b5e7aa54462bda558257b0710250578fa11371d00",
+      "actual_sha256": "43f08da447443e5562be652b5e7aa54462bda558257b0710250578fa11371d00",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c105/polynomials.json",
+      "expected_sha256": "a2402656479d2593603bd8455a256713087de876a99cf8143b2c4c5f9f94c0e1",
+      "actual_sha256": "a2402656479d2593603bd8455a256713087de876a99cf8143b2c4c5f9f94c0e1",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c106/chart.json",
+      "expected_sha256": "4794fd08e2f4f79aa7eb13321a5d775790a26f0fd0e4eb890e212eda4c007a2b",
+      "actual_sha256": "4794fd08e2f4f79aa7eb13321a5d775790a26f0fd0e4eb890e212eda4c007a2b",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c106/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c106/coefficients.txt",
+      "expected_sha256": "2d39a2eaa6bb04c86f489265cec9ea0518323c77507f509ca4313c2da4582800",
+      "actual_sha256": "2d39a2eaa6bb04c86f489265cec9ea0518323c77507f509ca4313c2da4582800",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c106/polynomials.json",
+      "expected_sha256": "82ceee31d26a1c257572cf5ef57e610e02632f5efc5aa691351b3d9c153c9150",
+      "actual_sha256": "82ceee31d26a1c257572cf5ef57e610e02632f5efc5aa691351b3d9c153c9150",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c107/chart.json",
+      "expected_sha256": "e3704f2a5f37406e62a2230993c6fc921f17a65e012c2f2daa2af7f7ac2dd0e8",
+      "actual_sha256": "e3704f2a5f37406e62a2230993c6fc921f17a65e012c2f2daa2af7f7ac2dd0e8",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c107/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c107/coefficients.txt",
+      "expected_sha256": "ae4713a91edf5125c6d04e3444fd209793bfe8c6d2cb9d9ca6c2e4a2a786cb1c",
+      "actual_sha256": "ae4713a91edf5125c6d04e3444fd209793bfe8c6d2cb9d9ca6c2e4a2a786cb1c",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c107/polynomials.json",
+      "expected_sha256": "f6e195acd8a8047ce6a01265f08990b6194e9575536b355719cae3efb8c835f6",
+      "actual_sha256": "f6e195acd8a8047ce6a01265f08990b6194e9575536b355719cae3efb8c835f6",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c108/chart.json",
+      "expected_sha256": "040a3815827a4c22513038361938b5559226b6958e20012f45a08a85180ae450",
+      "actual_sha256": "040a3815827a4c22513038361938b5559226b6958e20012f45a08a85180ae450",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c108/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c108/coefficients.txt",
+      "expected_sha256": "e4e1a27491ac85e76d0dbd4c37783df870e3743a5efce10644cb3dc9ab22f252",
+      "actual_sha256": "e4e1a27491ac85e76d0dbd4c37783df870e3743a5efce10644cb3dc9ab22f252",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/charts/c108/polynomials.json",
+      "expected_sha256": "d7d96167a2cc46e1433ff72ad5c58a11781a6e6b8ad369a18998b6f4cf2ab0c8",
+      "actual_sha256": "d7d96167a2cc46e1433ff72ad5c58a11781a6e6b8ad369a18998b6f4cf2ab0c8",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/geometry.json",
+      "expected_sha256": "13076bc4aaeebcdda84c5e4aa795a47e0cfd5fc992e7acaa72414f8f85f9a186",
+      "actual_sha256": "13076bc4aaeebcdda84c5e4aa795a47e0cfd5fc992e7acaa72414f8f85f9a186",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/geometry.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/geometry_build.stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/geometry_build.stdout.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/grid.json",
+      "expected_sha256": "5027d36a43a49f620985b7157f504e64ecd12e5888891bd5af4cc289145cd22f",
+      "actual_sha256": "5027d36a43a49f620985b7157f504e64ecd12e5888891bd5af4cc289145cd22f",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/separation.json",
+      "expected_sha256": "f4364452e39df27c1e4d40ac1f0252c4b7e03033ed9e8d9339d21003e803835d",
+      "actual_sha256": "f4364452e39df27c1e4d40ac1f0252c4b7e03033ed9e8d9339d21003e803835d",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/separation.stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "antecedent_results/separator/separation.stdout.log",
+      "expected_sha256": "f4364452e39df27c1e4d40ac1f0252c4b7e03033ed9e8d9339d21003e803835d",
+      "actual_sha256": "f4364452e39df27c1e4d40ac1f0252c4b7e03033ed9e8d9339d21003e803835d",
+      "matches": true
+    },
+    {
+      "path": "extension/MANIFEST.sha256",
+      "expected_sha256": "248f0614524832610b07fd21b5d6b9eaf670d1846d6032aa22a51755a5c95972",
+      "actual_sha256": "248f0614524832610b07fd21b5d6b9eaf670d1846d6032aa22a51755a5c95972",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c042/basis.raw",
+      "expected_sha256": "5e7871f2cb7048a6e02545f0fe73e1499602f2846c8e507cdbf6b017b9dea200",
+      "actual_sha256": "5e7871f2cb7048a6e02545f0fe73e1499602f2846c8e507cdbf6b017b9dea200",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c042/cfg",
+      "expected_sha256": "699d613ff522245ef8857ede3cef4f1fa43038ab096d68015b778934ad386c9a",
+      "actual_sha256": "699d613ff522245ef8857ede3cef4f1fa43038ab096d68015b778934ad386c9a",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c042/edges",
+      "expected_sha256": "678979b1a2227d93ae58e46034fd0422a1d66cc661c1a2c13dba10e1cb57dafa",
+      "actual_sha256": "678979b1a2227d93ae58e46034fd0422a1d66cc661c1a2c13dba10e1cb57dafa",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c042/green.raw",
+      "expected_sha256": "e16bfeab22bd8a76bcbe97512ade22aa4dcb481120be264bdf389323e3a888fd",
+      "actual_sha256": "e16bfeab22bd8a76bcbe97512ade22aa4dcb481120be264bdf389323e3a888fd",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c042/poly_green.raw",
+      "expected_sha256": "f1b5c63ac76ce82054640b72c9ec7d8a82b8f13b1b29d3434e3b147d16a1f491",
+      "actual_sha256": "f1b5c63ac76ce82054640b72c9ec7d8a82b8f13b1b29d3434e3b147d16a1f491",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c043/basis.raw",
+      "expected_sha256": "8a393768a99417c4efb14e0926e7fc0c2bd73496747f5cc4b062930b554f87ea",
+      "actual_sha256": "8a393768a99417c4efb14e0926e7fc0c2bd73496747f5cc4b062930b554f87ea",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c043/cfg",
+      "expected_sha256": "79ed6e45cd76f7c48ac29f4a238d56ade423868d4fff45d10e29a4e352d51f37",
+      "actual_sha256": "79ed6e45cd76f7c48ac29f4a238d56ade423868d4fff45d10e29a4e352d51f37",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c043/edges",
+      "expected_sha256": "678979b1a2227d93ae58e46034fd0422a1d66cc661c1a2c13dba10e1cb57dafa",
+      "actual_sha256": "678979b1a2227d93ae58e46034fd0422a1d66cc661c1a2c13dba10e1cb57dafa",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c043/green.raw",
+      "expected_sha256": "e16bfeab22bd8a76bcbe97512ade22aa4dcb481120be264bdf389323e3a888fd",
+      "actual_sha256": "e16bfeab22bd8a76bcbe97512ade22aa4dcb481120be264bdf389323e3a888fd",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c043/poly_green.raw",
+      "expected_sha256": "41da4bae11576a97634b5656f6ad6921167500807b9901faabae392cd3dd84a0",
+      "actual_sha256": "41da4bae11576a97634b5656f6ad6921167500807b9901faabae392cd3dd84a0",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c044/basis.raw",
+      "expected_sha256": "8d61a569a8eedca1358a93e6ccd9a1a6df284bc252ceb31a3dd1d1f1935e52af",
+      "actual_sha256": "8d61a569a8eedca1358a93e6ccd9a1a6df284bc252ceb31a3dd1d1f1935e52af",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c044/cfg",
+      "expected_sha256": "9693b992db02ebe30155134980e1c099cd5693e3d32cf260d7b70b711e010673",
+      "actual_sha256": "9693b992db02ebe30155134980e1c099cd5693e3d32cf260d7b70b711e010673",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c044/edges",
+      "expected_sha256": "678979b1a2227d93ae58e46034fd0422a1d66cc661c1a2c13dba10e1cb57dafa",
+      "actual_sha256": "678979b1a2227d93ae58e46034fd0422a1d66cc661c1a2c13dba10e1cb57dafa",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c044/green.raw",
+      "expected_sha256": "e16bfeab22bd8a76bcbe97512ade22aa4dcb481120be264bdf389323e3a888fd",
+      "actual_sha256": "e16bfeab22bd8a76bcbe97512ade22aa4dcb481120be264bdf389323e3a888fd",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c044/poly_green.raw",
+      "expected_sha256": "999c7af17a199e8e798bc29a4c7fa1ba31eb695f1d939d68fc56432b3007ab17",
+      "actual_sha256": "999c7af17a199e8e798bc29a4c7fa1ba31eb695f1d939d68fc56432b3007ab17",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c053/basis.raw",
+      "expected_sha256": "25620d6425402899ddebdb4bb96ea36665092da301c0ee7b29a576cf4b81e295",
+      "actual_sha256": "25620d6425402899ddebdb4bb96ea36665092da301c0ee7b29a576cf4b81e295",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c053/cfg",
+      "expected_sha256": "0c6656ecfc72ad741a845ce199b1cde803f96862640c186c82dfa760ba422e34",
+      "actual_sha256": "0c6656ecfc72ad741a845ce199b1cde803f96862640c186c82dfa760ba422e34",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c053/edges",
+      "expected_sha256": "678979b1a2227d93ae58e46034fd0422a1d66cc661c1a2c13dba10e1cb57dafa",
+      "actual_sha256": "678979b1a2227d93ae58e46034fd0422a1d66cc661c1a2c13dba10e1cb57dafa",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c053/green.raw",
+      "expected_sha256": "e16bfeab22bd8a76bcbe97512ade22aa4dcb481120be264bdf389323e3a888fd",
+      "actual_sha256": "e16bfeab22bd8a76bcbe97512ade22aa4dcb481120be264bdf389323e3a888fd",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c053/poly_green.raw",
+      "expected_sha256": "d4574d605caab272dc49777eb4c460df77b69dedd8e23975c9c4f90d15e633f5",
+      "actual_sha256": "d4574d605caab272dc49777eb4c460df77b69dedd8e23975c9c4f90d15e633f5",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c055/basis.raw",
+      "expected_sha256": "c0ac942ebdc89ed27b3736cde213b315e97e54f994895fcee3b4be749eff5d46",
+      "actual_sha256": "c0ac942ebdc89ed27b3736cde213b315e97e54f994895fcee3b4be749eff5d46",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c055/cfg",
+      "expected_sha256": "7dd214b6afd4d439858f4087af6d414d13248af9434d68c1a3b0aefe8ee4fee3",
+      "actual_sha256": "7dd214b6afd4d439858f4087af6d414d13248af9434d68c1a3b0aefe8ee4fee3",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c055/edges",
+      "expected_sha256": "678979b1a2227d93ae58e46034fd0422a1d66cc661c1a2c13dba10e1cb57dafa",
+      "actual_sha256": "678979b1a2227d93ae58e46034fd0422a1d66cc661c1a2c13dba10e1cb57dafa",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c055/green.raw",
+      "expected_sha256": "e16bfeab22bd8a76bcbe97512ade22aa4dcb481120be264bdf389323e3a888fd",
+      "actual_sha256": "e16bfeab22bd8a76bcbe97512ade22aa4dcb481120be264bdf389323e3a888fd",
+      "matches": true
+    },
+    {
+      "path": "extension/cases/c055/poly_green.raw",
+      "expected_sha256": "4ba88a89b206613c5f8beb423027ef9b40ef842c033a18e3e65d964c93980e4b",
+      "actual_sha256": "4ba88a89b206613c5f8beb423027ef9b40ef842c033a18e3e65d964c93980e4b",
+      "matches": true
+    },
+    {
+      "path": "extension/certify_adjoint.cpp",
+      "expected_sha256": "2f4337dff93ce697150f44c69e4cd7fbde47124d6aa2fce5b3e27ad42fe7da69",
+      "actual_sha256": "2f4337dff93ce697150f44c69e4cd7fbde47124d6aa2fce5b3e27ad42fe7da69",
+      "matches": true
+    },
+    {
+      "path": "extension/certify_center_distances.cpp",
+      "expected_sha256": "d759176e3175eeec8629c380bb97b5e286908c0aeee7c0fd9851ddb996ba9b9d",
+      "actual_sha256": "d759176e3175eeec8629c380bb97b5e286908c0aeee7c0fd9851ddb996ba9b9d",
+      "matches": true
+    },
+    {
+      "path": "extension/certify_chart.cpp",
+      "expected_sha256": "b60eb00454df1f6afab0b88249e801e94953ef1ddfac8d839e01fbc5eeabab4c",
+      "actual_sha256": "b60eb00454df1f6afab0b88249e801e94953ef1ddfac8d839e01fbc5eeabab4c",
+      "matches": true
+    },
+    {
+      "path": "extension/certify_cut_membership.py",
+      "expected_sha256": "bc0f1183ea605969c4386918423ab0c302c69838287520411e6c73e7a0024cd3",
+      "actual_sha256": "bc0f1183ea605969c4386918423ab0c302c69838287520411e6c73e7a0024cd3",
+      "matches": true
+    },
+    {
+      "path": "extension/certify_projection.cpp",
+      "expected_sha256": "86c54db48723dfc92dc3d9ffd716db4bacfb6fe62dc89401390954d380cde361",
+      "actual_sha256": "86c54db48723dfc92dc3d9ffd716db4bacfb6fe62dc89401390954d380cde361",
+      "matches": true
+    },
+    {
+      "path": "extension/check_atlas.py",
+      "expected_sha256": "0c8601703c2fbac118bbcd9092923e825621e7b370d4f62a13e5c593a07f0713",
+      "actual_sha256": "0c8601703c2fbac118bbcd9092923e825621e7b370d4f62a13e5c593a07f0713",
+      "matches": true
+    },
+    {
+      "path": "extension/check_capped_separator.py",
+      "expected_sha256": "3ad0f2bc7233c87bfa2e7a934a510b94493999d5fb4c815761e3fee0e46fa1d2",
+      "actual_sha256": "3ad0f2bc7233c87bfa2e7a934a510b94493999d5fb4c815761e3fee0e46fa1d2",
+      "matches": true
+    },
+    {
+      "path": "extension/engine.cpp",
+      "expected_sha256": "3ec7aa8f4b66d16af21587c0d3754bf10c072953031cdc293e321a522bf45111",
+      "actual_sha256": "3ec7aa8f4b66d16af21587c0d3754bf10c072953031cdc293e321a522bf45111",
+      "matches": true
+    },
+    {
+      "path": "extension/eta_r_u256.raw",
+      "expected_sha256": "6dcdf53cdadeda9aeba702f6247262a56c06f7170a9476e4d575efac19563301",
+      "actual_sha256": "6dcdf53cdadeda9aeba702f6247262a56c06f7170a9476e4d575efac19563301",
+      "matches": true
+    },
+    {
+      "path": "extension/eta_u256.raw",
+      "expected_sha256": "49056766a970a39d8dfaa168cc4e8859ac84a4dad37bd1a4b6c8c36c26d548a7",
+      "actual_sha256": "49056766a970a39d8dfaa168cc4e8859ac84a4dad37bd1a4b6c8c36c26d548a7",
+      "matches": true
+    },
+    {
+      "path": "extension/u2048.raw",
+      "expected_sha256": "fc5a833aa22c4db1f9de863ea96b16d63df7d99bd282e715d13882f9b45fe16f",
+      "actual_sha256": "fc5a833aa22c4db1f9de863ea96b16d63df7d99bd282e715d13882f9b45fe16f",
+      "matches": true
+    },
+    {
+      "path": "extension/z1024.raw",
+      "expected_sha256": "ce3af871eca3ad600bcb5d2d53cf035b3200baba117b30e7c3a54fdaecf31e40",
+      "actual_sha256": "ce3af871eca3ad600bcb5d2d53cf035b3200baba117b30e7c3a54fdaecf31e40",
+      "matches": true
+    },
+    {
+      "path": "proof/adjoint_proof.txt",
+      "expected_sha256": "2507826d6ec159a76d506711607c775dad32130e7eb752d00a8771bcba798d88",
+      "actual_sha256": "2507826d6ec159a76d506711607c775dad32130e7eb752d00a8771bcba798d88",
+      "matches": true
+    },
+    {
+      "path": "proof/cap_surgery.tex",
+      "expected_sha256": "5b21dd57ef4226d24ed7a310a498cde3189790bac5c820a5027641342a656a08",
+      "actual_sha256": "5b21dd57ef4226d24ed7a310a498cde3189790bac5c820a5027641342a656a08",
+      "matches": true
+    },
+    {
+      "path": "proof/geometry_lemmas.tex",
+      "expected_sha256": "236c1451242d4740ee75778fcf67ba3e63092f7afc1f918b03260461ad60d568",
+      "actual_sha256": "236c1451242d4740ee75778fcf67ba3e63092f7afc1f918b03260461ad60d568",
+      "matches": true
+    },
+    {
+      "path": "proof/independent_audit.txt",
+      "expected_sha256": "ac48ba26c3850ffb6711976df141c3f6877c5d0b9ed265da62711257f219eff3",
+      "actual_sha256": "ac48ba26c3850ffb6711976df141c3f6877c5d0b9ed265da62711257f219eff3",
+      "matches": true
+    },
+    {
+      "path": "proof/independent_boundary_check.json",
+      "expected_sha256": "9202b5da6d8a07f1b0f6754cc5c05c4d78b2f6e148f8a275ae991a57ee2f5f57",
+      "actual_sha256": "9202b5da6d8a07f1b0f6754cc5c05c4d78b2f6e148f8a275ae991a57ee2f5f57",
+      "matches": true
+    },
+    {
+      "path": "provenance/make_release.py",
+      "expected_sha256": "958e574ec5d32fc7b8987aeec71fcf1d5d691f6dc7f4b4ac2ea8aaab10e256bc",
+      "actual_sha256": "958e574ec5d32fc7b8987aeec71fcf1d5d691f6dc7f4b4ac2ea8aaab10e256bc",
+      "matches": true
+    },
+    {
+      "path": "report/Optimalidad_Barrera_XY_2026-10-19.pdf",
+      "expected_sha256": "a35a62f451cd5b924ee724a193f79f79c95d20a9d1937d744f7c59878972a27d",
+      "actual_sha256": "a35a62f451cd5b924ee724a193f79f79c95d20a9d1937d744f7c59878972a27d",
+      "matches": true
+    },
+    {
+      "path": "report/Optimalidad_Barrera_XY_2026-10-19.tex",
+      "expected_sha256": "8ef04cc6c63897a78c51f2fdf81f0b0be1758a2a3a76aad3925ff3c64f087b04",
+      "actual_sha256": "8ef04cc6c63897a78c51f2fdf81f0b0be1758a2a3a76aad3925ff3c64f087b04",
+      "matches": true
+    },
+    {
+      "path": "results_provided/adjoint_build.stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/adjoint_build.stdout.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/adjoint_minus.json",
+      "expected_sha256": "2a6134eaa1f3b8da8484671c09042f1827a3eb17b38f67178b2f87b2b17bdda0",
+      "actual_sha256": "2a6134eaa1f3b8da8484671c09042f1827a3eb17b38f67178b2f87b2b17bdda0",
+      "matches": true
+    },
+    {
+      "path": "results_provided/adjoint_minus.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/adjoint_plus.json",
+      "expected_sha256": "9d37c781d901567bc7900f2364039b13b33e270df54aef391bbd3d281aa730b7",
+      "actual_sha256": "9d37c781d901567bc7900f2364039b13b33e270df54aef391bbd3d281aa730b7",
+      "matches": true
+    },
+    {
+      "path": "results_provided/adjoint_plus.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/antecedent_certificates.json",
+      "expected_sha256": "99e626461bca9a9217d05310204f6dcce178e88bb27538c5a1799d186077a107",
+      "actual_sha256": "99e626461bca9a9217d05310204f6dcce178e88bb27538c5a1799d186077a107",
+      "matches": true
+    },
+    {
+      "path": "results_provided/antecedent_input_bindings.json",
+      "expected_sha256": "f50414249f9e18b44802824e2d459d52b7ce7e6f58e86647ba206a3c1e8462df",
+      "actual_sha256": "f50414249f9e18b44802824e2d459d52b7ce7e6f58e86647ba206a3c1e8462df",
+      "matches": true
+    },
+    {
+      "path": "results_provided/atlas_manifest.json",
+      "expected_sha256": "88bf4173afd0c2d34d092765b30b59844c1f8b5b7d0c12e9ea44f8a263424147",
+      "actual_sha256": "88bf4173afd0c2d34d092765b30b59844c1f8b5b7d0c12e9ea44f8a263424147",
+      "matches": true
+    },
+    {
+      "path": "results_provided/boundary.json",
+      "expected_sha256": "2dc9e0adf65b75e10f839006bbed4469e3d507bb3bf3aec0d352baef0d2a16df",
+      "actual_sha256": "2dc9e0adf65b75e10f839006bbed4469e3d507bb3bf3aec0d352baef0d2a16df",
+      "matches": true
+    },
+    {
+      "path": "results_provided/boundary.stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/boundary.stdout.log",
+      "expected_sha256": "50a5db9a8be4106fb4cae1bd46c3e86885336891f6465ae6e8b6d33eafed595a",
+      "actual_sha256": "50a5db9a8be4106fb4cae1bd46c3e86885336891f6465ae6e8b6d33eafed595a",
+      "matches": true
+    },
+    {
+      "path": "results_provided/boundary_old_boundary.json",
+      "expected_sha256": "9a34cb238f49fdff724993fcde728a82433187af26efe12c375c4ce30eb6c306",
+      "actual_sha256": "9a34cb238f49fdff724993fcde728a82433187af26efe12c375c4ce30eb6c306",
+      "matches": true
+    },
+    {
+      "path": "results_provided/caps.json",
+      "expected_sha256": "e5fba3ef08c145d157471fbef6cf75d28f7e501022c5937be641cc7d1f34f2b6",
+      "actual_sha256": "e5fba3ef08c145d157471fbef6cf75d28f7e501022c5937be641cc7d1f34f2b6",
+      "matches": true
+    },
+    {
+      "path": "results_provided/center_distances_build.stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/center_distances_build.stdout.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/center_distances_minus.json",
+      "expected_sha256": "f3669b4120b3679eccdb33ab07e331304822847d28c7200ac0a6d096b72a211d",
+      "actual_sha256": "f3669b4120b3679eccdb33ab07e331304822847d28c7200ac0a6d096b72a211d",
+      "matches": true
+    },
+    {
+      "path": "results_provided/center_distances_minus.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/center_distances_plus.json",
+      "expected_sha256": "a63763ac8b057cb8f5ca9c46682fffc295d0dfbb1a439d6db343464e4700a197",
+      "actual_sha256": "a63763ac8b057cb8f5ca9c46682fffc295d0dfbb1a439d6db343464e4700a197",
+      "matches": true
+    },
+    {
+      "path": "results_provided/center_distances_plus.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/certificate.json",
+      "expected_sha256": "16524ecaa1ce46a69dc065c3f59250ab659162bbc254d3688a93f30f87ff3de1",
+      "actual_sha256": "16524ecaa1ce46a69dc065c3f59250ab659162bbc254d3688a93f30f87ff3de1",
+      "matches": true
+    },
+    {
+      "path": "results_provided/chart_build.stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/chart_build.stdout.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/domain.json",
+      "expected_sha256": "efeb797967b684e3a88b5528d208bd9c2fc536d07c38fad953b52d23ab1409ba",
+      "actual_sha256": "efeb797967b684e3a88b5528d208bd9c2fc536d07c38fad953b52d23ab1409ba",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c042/chart.json",
+      "expected_sha256": "61b8559043df76947deb170e9405b2ab1fdb5586dc00402baa5d37e760a1e1f7",
+      "actual_sha256": "61b8559043df76947deb170e9405b2ab1fdb5586dc00402baa5d37e760a1e1f7",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c042/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c042/coefficients.txt",
+      "expected_sha256": "add5ea8f6294fa90146a90c799a3aae022f3bcb4404dc65c3ef7ed0304dbdb8a",
+      "actual_sha256": "add5ea8f6294fa90146a90c799a3aae022f3bcb4404dc65c3ef7ed0304dbdb8a",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c042/polynomials.json",
+      "expected_sha256": "adb9392f2aba02a8911ed279ce84c6fda751bc3d13de5b13bf8aab56a0b752d6",
+      "actual_sha256": "adb9392f2aba02a8911ed279ce84c6fda751bc3d13de5b13bf8aab56a0b752d6",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c043/chart.json",
+      "expected_sha256": "c87e665dede8c6ed4ed5816834ee94c6d6699c7c9b4afb608518ec65d9b2bff7",
+      "actual_sha256": "c87e665dede8c6ed4ed5816834ee94c6d6699c7c9b4afb608518ec65d9b2bff7",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c043/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c043/coefficients.txt",
+      "expected_sha256": "7d4fc9f7741abde915273672186e5f9d492446c99200341545172baf787147bf",
+      "actual_sha256": "7d4fc9f7741abde915273672186e5f9d492446c99200341545172baf787147bf",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c043/polynomials.json",
+      "expected_sha256": "544d987a9c1272335adf911cdfd399063f97ebb5ada935c8688ca602773da62c",
+      "actual_sha256": "544d987a9c1272335adf911cdfd399063f97ebb5ada935c8688ca602773da62c",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c044/chart.json",
+      "expected_sha256": "1d8e00b5e0d8d28716915d5b3d765fd99d869831fc47686d12569e1285c63b0f",
+      "actual_sha256": "1d8e00b5e0d8d28716915d5b3d765fd99d869831fc47686d12569e1285c63b0f",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c044/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c044/coefficients.txt",
+      "expected_sha256": "57b8d2c407bd2f6506b474619cdc58fb01463a6f95560862ed3739b32c5e547c",
+      "actual_sha256": "57b8d2c407bd2f6506b474619cdc58fb01463a6f95560862ed3739b32c5e547c",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c044/polynomials.json",
+      "expected_sha256": "f6e2ea80c10a882f3add1529cbe4330e75069aae897db50210b6085f1856ac9a",
+      "actual_sha256": "f6e2ea80c10a882f3add1529cbe4330e75069aae897db50210b6085f1856ac9a",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c053/chart.json",
+      "expected_sha256": "9c236b49b3f5a1708a743c40e51a83a8b541f19759a0fd82f54eb5a7949704c5",
+      "actual_sha256": "9c236b49b3f5a1708a743c40e51a83a8b541f19759a0fd82f54eb5a7949704c5",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c053/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c053/coefficients.txt",
+      "expected_sha256": "829932e5f89ef98dd4bdae55c0e9a53aa2fdb8d1ccd453d69b36b2b5eed02e0b",
+      "actual_sha256": "829932e5f89ef98dd4bdae55c0e9a53aa2fdb8d1ccd453d69b36b2b5eed02e0b",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c053/polynomials.json",
+      "expected_sha256": "bb557c2a749419b6e2bca714590eb2c0e6938f6c99e5d4bde7eca7d209395e5e",
+      "actual_sha256": "bb557c2a749419b6e2bca714590eb2c0e6938f6c99e5d4bde7eca7d209395e5e",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c055/chart.json",
+      "expected_sha256": "feef244f644458cc6f0362f14f9105cd8041ece3371ca700c5aa7d9101b68daa",
+      "actual_sha256": "feef244f644458cc6f0362f14f9105cd8041ece3371ca700c5aa7d9101b68daa",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c055/chart.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c055/coefficients.txt",
+      "expected_sha256": "bdd3c2936a3cc42c6ddbc5c01ed9f91ec07b342d8464fc965a7a535d79967f6d",
+      "actual_sha256": "bdd3c2936a3cc42c6ddbc5c01ed9f91ec07b342d8464fc965a7a535d79967f6d",
+      "matches": true
+    },
+    {
+      "path": "results_provided/enlarged_charts/c055/polynomials.json",
+      "expected_sha256": "1c5c01d5f7be8fc502f724664e7fa2abe78ddba6371f23dde6709600cd3f9acc",
+      "actual_sha256": "1c5c01d5f7be8fc502f724664e7fa2abe78ddba6371f23dde6709600cd3f9acc",
+      "matches": true
+    },
+    {
+      "path": "results_provided/grid.json",
+      "expected_sha256": "9e95182ac237f811ba44b30bf2501119c9ea9d9de8efdf6edab275872e2fb6ee",
+      "actual_sha256": "9e95182ac237f811ba44b30bf2501119c9ea9d9de8efdf6edab275872e2fb6ee",
+      "matches": true
+    },
+    {
+      "path": "results_provided/membership.json",
+      "expected_sha256": "fefee87b6c81ccdb5bbcffb5ff37f46c82733c1b57f53815002d45d35c6b9d71",
+      "actual_sha256": "fefee87b6c81ccdb5bbcffb5ff37f46c82733c1b57f53815002d45d35c6b9d71",
+      "matches": true
+    },
+    {
+      "path": "results_provided/membership.stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/membership.stdout.log",
+      "expected_sha256": "fefee87b6c81ccdb5bbcffb5ff37f46c82733c1b57f53815002d45d35c6b9d71",
+      "actual_sha256": "fefee87b6c81ccdb5bbcffb5ff37f46c82733c1b57f53815002d45d35c6b9d71",
+      "matches": true
+    },
+    {
+      "path": "results_provided/projection_build.stderr.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/projection_build.stdout.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/projection_minus.json",
+      "expected_sha256": "2234578b325443d50f4dcd6722b44990764df1336f97a784ea6cadd254cb3228",
+      "actual_sha256": "2234578b325443d50f4dcd6722b44990764df1336f97a784ea6cadd254cb3228",
+      "matches": true
+    },
+    {
+      "path": "results_provided/projection_minus.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "results_provided/projection_plus.json",
+      "expected_sha256": "be2a4a41746780904d53db4a587c13458bab66e2dc7c6b4da4e841d0c6ce0511",
+      "actual_sha256": "be2a4a41746780904d53db4a587c13458bab66e2dc7c6b4da4e841d0c6ce0511",
+      "matches": true
+    },
+    {
+      "path": "results_provided/projection_plus.log",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "verify_optimality.py",
+      "expected_sha256": "564451be670e23dd08d382f0f71fc9bf238a39fb7003db916c3f953720e840c3",
+      "actual_sha256": "564451be670e23dd08d382f0f71fc9bf238a39fb7003db916c3f953720e840c3",
+      "matches": true
+    }
+  ]
+}

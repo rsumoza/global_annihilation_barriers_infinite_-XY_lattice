@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript and the exact source snapshot used."
+type: software
+title: "Certified global annihilation barriers in an infinite XY lattice: reproducibility snapshot"
+version: "siads-v7-2026-10-22"
+authors:
+  - family-names: "Sumoza Matos"
+    given-names: "Rodolfo Leonardo"
+    orcid: "https://orcid.org/0009-0003-3554-4876"
+    email: "rsumoza@dc.uba.ar"
+abstract: "Repository configured for the author-supplied URL. Tagged Release publication and publication identifiers are not yet verified. Global certification for one fixed infinite-lattice XY instance and effective reuse on a restricted infinite input class; no universal configuration algorithm is claimed."
+repository-code: "https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice"
+url: "https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice"

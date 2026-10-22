@@ -1,0 +1,5 @@
+mantissa=64
+exact_hex=0x8.000000000000001p-3
+bare_precision22=1.000000000000000000108
+padded_upper_precision30=1.0000000000000000002168404345
+padded_lower_precision30=1

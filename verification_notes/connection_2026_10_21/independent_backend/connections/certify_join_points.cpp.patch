@@ -1,0 +1,17 @@
+--- original/connections/certify_join_points.cpp
++++ instrumented/connections/certify_join_points.cpp
+@@ -27,10 +27,12 @@
+  for(int ax=0;ax<2;ax++)for(int i=0;i<N-(ax==0);i++)for(int j=0;j<N-(ax==1);j++){
+   size_t v=(size_t)i*N+j,t=(size_t)(i+(ax==0))*N+j+(ax==1);CS b=product(base[t],base[v]);for(int k=0;k<2;k++){I d=I(z[k][t])-I(z[k][v]);CS r=mag(d)<=.25L?small(d):trig(d);energy[k]=energy[k]+b.c*(I(1)-r.c)+b.s*r.s;}
+  }
++ std::ofstream ee("results/join_exact.hex");ee<<std::hexfloat<<"I q_gram "<<G.l<<" "<<G.h<<"\n";
+  std::cout<<std::setprecision(24)<<"{\"status\":\"SADDLE_JOIN_POINT_COMPARISONS_PASS\",\"side\":"<<N<<",\"q_gram\":["<<G.l<<","<<G.h<<"],\"points\":[";
+  for(int k=0;k<2;k++){
+   I distance=root(I(std::max((R)0,normsq[k].l),normsq[k].h)),p=projection[k]/root(G),transverse=normsq[k]-sq(p);need(transverse.h>=0,"negative transverse square upper");R transverseUpper=root(I(0,std::max((R)0,transverse.h))).h;
+-  if(k)std::cout<<",";std::cout<<"{\"label\":\""<<(k?"plus":"minus")<<"\",\"distance_to_saddle_candidate\":["<<distance.l<<","<<distance.h<<"],\"signed_projection_on_normalized_q\":["<<p.l<<","<<p.h<<"],\"transverse_norm_upper\":"<<transverseUpper<<",\"relative_energy_to_reference\":["<<energy[k].l<<","<<energy[k].h<<"]}";
++  ee<<"I points/"<<k<<"/distance_to_saddle_candidate "<<distance.l<<" "<<distance.h<<"\nI points/"<<k<<"/signed_projection_on_normalized_q "<<p.l<<" "<<p.h<<"\nU points/"<<k<<"/transverse_norm_upper "<<transverseUpper<<"\nI points/"<<k<<"/relative_energy_to_reference "<<energy[k].l<<" "<<energy[k].h<<"\n";
++ if(k)std::cout<<",";std::cout<<"{\"label\":\""<<(k?"plus":"minus")<<"\",\"distance_to_saddle_candidate\":["<<distance.l<<","<<distance.h<<"],\"signed_projection_on_normalized_q\":["<<p.l<<","<<p.h<<"],\"transverse_norm_upper\":"<<transverseUpper<<",\"relative_energy_to_reference\":["<<energy[k].l<<","<<energy[k].h<<"]}";
+  }
+- std::cout<<"],\"exact_saddle_error_not_applied_here\":true,\"hermite_join_verified_here\":false}\n";return 0;
++ std::cout<<"],\"exact_saddle_error_not_applied_here\":true,\"hermite_join_verified_here\":false}\n";ee.close();need((bool)ee,"join exact sidecar output");report_guards();return 0;
+ }catch(const std::exception&e){std::cerr<<"REJECT: "<<e.what()<<"\n";return 2;}}

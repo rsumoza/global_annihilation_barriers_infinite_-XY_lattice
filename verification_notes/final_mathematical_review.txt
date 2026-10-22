@@ -1,0 +1,89 @@
+FINAL ADVERSARIAL MATHEMATICAL REVIEW — 20 October 2026
+Reviewer: /root/siads_green_review
+Scope: assembled main.tex, all sections/*.tex, references.tex, and the supplementary reproducibility text. No author files edited. The Green and robustness derivations were independently checked in more detail in green_independent_review.txt and robustness_independent_review.txt.
+
+VERDICT
+No mathematical blocker or counterexample was found in the main a posteriori theorem, the explicit Green theorem, or the quantitative robustness theorem. The global numerical theorem remains conditional on the analytic reductions and arithmetic trust boundary of the frozen implementation; the manuscript correctly states that boundary. This review is not an independent interval engine or a proof-assistant verification.
+
+ITEMS REQUIRING CLARIFICATION BEFORE FINAL SNAPSHOT
+1. sections/green.tex, around lines 222–226: phi_12 is introduced without defining the reference. Give the explicit real lift
+   phi_12(i,j)=Arg(6+i+1/2+i_complex(j+1/2))-Arg(-6+i+1/2+i_complex(j+1/2)),
+   with the principal arguments and exterior cancellation convention. Give the elementary derivation or a precise supplied-proof pointer for 480/R. The derivation is in uniform_localization_2026_10_20/Localizacion_Homogenea_XY_2026-10-20.tex, lines 211–274. It uses |phi_12|<=2L/r, |D phi_12|<=4L/r^2 for r>=16, L=12; shell count<=20r; then cutoff error^2<=1344L^2/R^2<1600L^2/R^2.
+2. sections/green.tex, numerical constants paragraph around lines 263–264: the symbolic localization statement permits an arbitrary compact origin u, whose norm may exceed 6007. Qualify M_Gamma=6007 for compact origins satisfying ||u||_X<=6007. The old note restricted to a class U and explicitly enlarged M_Gamma when necessary. The path itself and its original critical vertices admit the stated majorant.
+3. Cross-section notation: instance/introduction use s_+,s_-; robustness uses s_0^+,s_0^-. Choose a common notation or define the alias. Scalar B_0 in robustness is also the value B_0(m_0), whereas model/Green use B_0 as a function; explicit wording can avoid ambiguity.
+4. sections/certificate.tex, around lines 121 and 189: m_0 denotes a scalar complementary coercivity floor, colliding with the certified state m_0 used elsewhere. Rename the scalar floor (e.g. c_perp). This is a notation defect, not an incorrect inequality.
+5. sections/certificate.tex, proposition Deflated signed-resistance test: explicitly require the containing Neumann square to contain both endpoints of every e in S, in addition to the compact columns of Q. This condition is already stated immediately after the preceding lemma and is necessary for R_N to be the indicated comparison Gramian.
+
+CHECKED PROOF CHAIN
+A. Energy space and target topology.
+- Constants are removed by the gradient norm; every finite vertex difference is continuous, giving representatives modulo constants.
+- K consists of physical uniform lifts. Integer gradients are finitely supported by ell^2; a nonconstant integer field has at least four nonzero bonds, giving separation 4*pi. The quotient path lifting argument is valid.
+- The energy is finite and <=||u||_X^2/2. The exact bond evaluation norm 1/sqrt(2), Hessian norm<=1, and Lipschitz constant 1/sqrt(2) have the stated normalization with each undirected edge once.
+- Strong energy continuity is specified. Defects escaping every finite box do not by themselves produce a strong path ending in K.
+
+B. A posteriori certificate.
+- Neumann comparison direction is correct; lambda_1=4sin^2(pi/(2N))>=4/N^2. No mean restriction on a finite proposal is needed.
+- Full mutual-resistance matrix and exact G=Q*Q are retained. The subtraction B G^{-1} B^T correctly computes the trace restricted to Y. Signed bonds are allowed.
+- The frozen Newton proof for an indefinite saddle is valid: testing H against J cancels the mixed terms, giving an inverse norm bound without assuming the supplied negative direction is an eigenvector. Positive complementary block plus negative scalar Schur complement gives index one.
+- Critical-energy quadrature constant Lambda*rho^3/12 is correct. The first rho^2/2 bound uses the stationary endpoint and global Hessian bound.
+- Projected cap coercivity retains the candidate mixed block, has the right square roots and signs, and subtracts the critical-point correction only once at operator level. Its monotonicity argument is valid on delta_Q<1/sqrt(2).
+- Exact plane equation uses Q*r, not G^{-1}Q*r; the manuscript's n=Q*r is correct with a=G^{-1}Q*(theta-theta_ref).
+- Adjoint offset signs and scalar sine remainder are correct.
+- Fiber minimization on the closed Hilbert ball is justified by strong convexity, weak compactness, and radial exclusion. Only the minimizing point must fit inside the exact cap; all other fiber points are controlled by convexity.
+- Coordinate overlap tests preserve full transverse balls/sublevel radii. The finite union boundary proof and inclusion of all outer coordinate and exact-plane pieces close the global separator.
+- Charged plaquette implies E(m)>=2, e.g. 1-cos t>=2t^2/pi^2 for |t|<=pi and Cauchy-Schwarz over the four principal increments. Hence dist(m,K)>=2, as used for exclusion.
+- Stationary-endpoint Hermite attachment constant and t^2(1-t) factor are correct. These are variational segments, not claimed heteroclinic orbits.
+- Zero terminal charges imply a curl-free integer slip; its finite support follows from Dtheta in ell^2. The real-lift contraction has nonincreasing cosine energy, and ends in K.
+- The main minimax proof needs neither compactness of the boundary nor separate minimax attainment. The supplied upper path already attains h.
+
+C. Numerical instance and trust boundary.
+- The fresh record provides the strict global bracket, 109 charts, 436 coordinate faces, disk radius 6599/10000, and exact reflection height identity.
+- The safe common spectral gap 57/1000 follows from the recorded candidate inverse gaps and correction radii. Gap is measured in the energy Hilbert space, not vertex ell^2.
+- Independently inspected fresh_connection/connections/full_annihilation.json: status COMPACT_ANNIHILATION_PATH_PASS_RELATIVE_REFERENCE and compact_integer_lift_max=0. This supports the special zero endpoint used in Green finite-box localization.
+- Reproduction is carefully distinguished from an independent arithmetic implementation and external peer review. No fresh heteroclinic calculation is implied.
+
+D. Green estimate.
+- Fourier multiplier signs and mixed anchor shifts are accounted for. Bare vertex Green integrability is not assumed; the bounded projector entries justify Fubini. The partial Green formula at t!=0 and its integrable bounds are valid.
+- All scalar kernel entries <=8/(1+||z||_infty)^2. Column ell^2 tail is <=16sqrt(2)/rho and already includes both output orientations.
+- q=Dtheta-(1+b)sin Dtheta, q in ell^1, and Dtheta=Pq follow from exact criticality in X. No inverse of the vertex Laplacian on ell^2 is used.
+- Recurrence T(R)<=32sqrt(2)Q/R+aT(R/2) preserves the contraction structure. A/R is at dyadic radii; arbitrary radii require 2A/R, as explicitly stated.
+- Noncompact ell^1 couplings remain multiplicative in the exterior gradient. No hidden common-support or moment hypothesis is needed.
+- Annular Poincare 225/4, cutoff square constant 227, and anchor/minimum-endpoint tail direction are correct. Projection norm factor <16 is valid.
+- Finite-box paths retain boundary crossing bonds, and the projection preserves the compact origin and the verified zero endpoint. The localization energy error is <=M_Gamma times the norm error.
+- Original path uses anchor R_*=4097; the reflected family uses 4098. The physical/index coordinate conversion and horizontal reorientation account for the extra unit.
+- Arithmetic constants, 20/25 digit radii, and conservative interpretation were verified in the earlier independent review. The manuscript correctly says these boxes were not materialized and gives no new numerical barrier enclosure from them.
+
+E. Robustness and dynamics.
+- Absolute ell^1 summability yields smooth W_b and norm bounds p/sqrt(2), p/2, and (1+p/2)/sqrt(2). Oscillation is at most 2p; independent bond-angle choices are not assumed.
+- The rational Newton map has self-mapping margin 373/25600000 and contraction factor 371/912. The remaining gap is 541/16000.
+- Smooth dependence in the infinite-dimensional ell^1 parameter follows from the implicit-function theorem and uniqueness. Distinctness of continued saddles follows from the recorded reaction-coordinate separation, not a broad energy comparison.
+- Branch charges persist. The low original-energy bridge places m_b in the original separator without requiring a whole ball to lie there.
+- The shifted-origin barrier argument correctly uses E_0(m_b)>=E_0(m_0), E_b(m_b)<=E_b(m_0), and bridge convexity. It achieves 2||b||_1 rather than charging two oscillations.
+- Global well posedness and the 13/500 exponential norm rate for the specified nonlocal X gradient flow follow from the global Hessian bound and coercivity on radius 1/100. No factor-two error occurs.
+- Perturbed saddle attainment/minimax identity, mechanism change, local ell^2-flow stability, and thermal rates are explicitly not claimed.
+
+F. Reference scope, claims and source hygiene.
+- The manuscript disclaims universal priority and acknowledges the prior finite XY, signed-Laplacian, Hilbert-path and atomistic-decay ingredients.
+- No unsupported claim that previous methods cannot adapt is made.
+- The references' bibliographic metadata and the detailed hypothesis-by-hypothesis literature comparison were not independently re-retrieved in this final audit; root's literature/source audit must remain the authority for them.
+- Abstract count: 220 whitespace words, within the stated 250-word limit.
+- No duplicate equation/theorem labels or unresolved textual references found by source scan.
+
+No author files were edited during this review.
+
+FOLLOW-UP FINAL PASS — NEW EXPLICIT DIPOLAR/PAYLOAD APPENDIX
+The author has implemented the five clarity fixes listed above. I reread the new section “Explicit dipolar and payload norm bounds” in sections/green_appendix.tex and its Green-section integration. Verdict: PASS, no mathematical issue found.
+
+Independently rechecked:
+- Physical/index displacement from a pole or an interpolated pole is at most 8, so r>=16 gives distance>=r/2, including the unit bond used for the derivative estimate.
+- Integrating Arg with respect to pole position gives 2L/r; integrating its spatial derivative gives 4L/r^2. For the real difference the far-field Arg jumps cancel outside the pole segment.
+- The shell count for minimum-endpoint radius r is 16r+4<=20r. Hence the tail square is <=320L^2 sum_{r>=R}r^{-3}<=480L^2/R^2.
+- The annular cardinality is exactly 12R(R+1)<=24R^2. The cutoff product estimate gives 960L^2/R^2+384L^2/R^2=1344L^2/R^2. Its square root is <40L/R=480/R.
+- The global reference-norm estimate overcounts all bonds touching the 33-by-33 core and the remaining tail. It is strictly less than 10^6, so ||phi_12||_X<1000.
+- ||h||_X<=sqrt(8)||h||_ell2<=3n max|h| is valid for a zero-extended n-by-n compact array.
+- The three displayed exact rational maxima are below .177, .4074 and 3, respectively. Substitution gives the saddle norm majorant 6006.144025<6007; the minimum and explicit polygonal vertices are also below 6007 by wider margins.
+- Reflection is an energy-space isometry. Convexity of the norm covers polygonal segments and exact-endpoint attachments; the final contraction is to the verified zero lift, so it also preserves the norm majorant.
+- Beyond minimum-endpoint radius 4096, the explicit dipole gradient is <10^{-6}; adding the old critical correction norms still gives <.018. This is compatible with anchor 4097 for the original path and 4098 for the reflected family.
+- The numerical Green paragraph now explicitly restricts compact origins to ||u||_X<=6007; the symbolic localization result retains its general norm bound.
+
+The appendix's numerical payload maxima are exact rational statements whose fresh payload inspection is reported by the parent. This follow-up independently checks their inequalities and all mathematical implications; it does not claim a separately implemented binary-array parser.

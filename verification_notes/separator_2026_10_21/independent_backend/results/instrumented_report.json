@@ -1,0 +1,662 @@
+{
+  "scope": "diagnostic fixed-data replay with finite interval invariants; original arithmetic algorithm retained",
+  "charts": [
+    {
+      "id": 0,
+      "stem": "c000",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775076 finite_scalar_calls=89666497"
+    },
+    {
+      "id": 1,
+      "stem": "c001",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775077 finite_scalar_calls=89666497"
+    },
+    {
+      "id": 2,
+      "stem": "c002",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775079 finite_scalar_calls=89667363"
+    },
+    {
+      "id": 3,
+      "stem": "c003",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899926 finite_scalar_calls=88654187"
+    },
+    {
+      "id": 4,
+      "stem": "c004",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775079 finite_scalar_calls=89665635"
+    },
+    {
+      "id": 5,
+      "stem": "c005",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775077 finite_scalar_calls=89666501"
+    },
+    {
+      "id": 6,
+      "stem": "c006",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775076 finite_scalar_calls=89667359"
+    },
+    {
+      "id": 7,
+      "stem": "c007",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775076 finite_scalar_calls=89668225"
+    },
+    {
+      "id": 8,
+      "stem": "c008",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775077 finite_scalar_calls=89668221"
+    },
+    {
+      "id": 9,
+      "stem": "c009",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775077 finite_scalar_calls=89664777"
+    },
+    {
+      "id": 10,
+      "stem": "c010",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88659275"
+    },
+    {
+      "id": 11,
+      "stem": "c011",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899926 finite_scalar_calls=88659264"
+    },
+    {
+      "id": 12,
+      "stem": "c012",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88657583"
+    },
+    {
+      "id": 13,
+      "stem": "c013",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775077 finite_scalar_calls=89664777"
+    },
+    {
+      "id": 14,
+      "stem": "c014",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775077 finite_scalar_calls=89669087"
+    },
+    {
+      "id": 15,
+      "stem": "c015",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775076 finite_scalar_calls=89669083"
+    },
+    {
+      "id": 16,
+      "stem": "c016",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775076 finite_scalar_calls=89668221"
+    },
+    {
+      "id": 17,
+      "stem": "c017",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775077 finite_scalar_calls=89668221"
+    },
+    {
+      "id": 18,
+      "stem": "c018",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775077 finite_scalar_calls=89666497"
+    },
+    {
+      "id": 19,
+      "stem": "c019",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88655045"
+    },
+    {
+      "id": 20,
+      "stem": "c020",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88655891"
+    },
+    {
+      "id": 21,
+      "stem": "c021",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88660107"
+    },
+    {
+      "id": 22,
+      "stem": "c022",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88656737"
+    },
+    {
+      "id": 23,
+      "stem": "c023",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88655891"
+    },
+    {
+      "id": 24,
+      "stem": "c024",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775077 finite_scalar_calls=89664777"
+    },
+    {
+      "id": 25,
+      "stem": "c025",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775077 finite_scalar_calls=89666497"
+    },
+    {
+      "id": 26,
+      "stem": "c026",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775076 finite_scalar_calls=89669083"
+    },
+    {
+      "id": 27,
+      "stem": "c027",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775077 finite_scalar_calls=89664773"
+    },
+    {
+      "id": 28,
+      "stem": "c028",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88655891"
+    },
+    {
+      "id": 29,
+      "stem": "c029",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88655895"
+    },
+    {
+      "id": 30,
+      "stem": "c030",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88655891"
+    },
+    {
+      "id": 31,
+      "stem": "c031",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88655891"
+    },
+    {
+      "id": 32,
+      "stem": "c032",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88656729"
+    },
+    {
+      "id": 33,
+      "stem": "c033",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88657583"
+    },
+    {
+      "id": 34,
+      "stem": "c034",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88653357"
+    },
+    {
+      "id": 35,
+      "stem": "c035",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88653361"
+    },
+    {
+      "id": 36,
+      "stem": "c036",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88660967"
+    },
+    {
+      "id": 37,
+      "stem": "c037",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775077 finite_scalar_calls=89667359"
+    },
+    {
+      "id": 38,
+      "stem": "c038",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88657587"
+    },
+    {
+      "id": 39,
+      "stem": "c039",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88659275"
+    },
+    {
+      "id": 40,
+      "stem": "c040",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88651669"
+    },
+    {
+      "id": 41,
+      "stem": "c041",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88655895"
+    },
+    {
+      "id": 42,
+      "stem": "c042",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88659275"
+    },
+    {
+      "id": 43,
+      "stem": "c043",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88659270"
+    },
+    {
+      "id": 44,
+      "stem": "c044",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88652507"
+    },
+    {
+      "id": 45,
+      "stem": "c045",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88656737"
+    },
+    {
+      "id": 46,
+      "stem": "c046",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88659275"
+    },
+    {
+      "id": 47,
+      "stem": "c047",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88649981"
+    },
+    {
+      "id": 48,
+      "stem": "c048",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88657583"
+    },
+    {
+      "id": 49,
+      "stem": "c049",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88659275"
+    },
+    {
+      "id": 50,
+      "stem": "c050",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88653353"
+    },
+    {
+      "id": 51,
+      "stem": "c051",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88655895"
+    },
+    {
+      "id": 52,
+      "stem": "c052",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88657583"
+    },
+    {
+      "id": 53,
+      "stem": "c053",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88650823"
+    },
+    {
+      "id": 54,
+      "stem": "c054",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=79663306 finite_scalar_calls=97645671"
+    },
+    {
+      "id": 55,
+      "stem": "c055",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88659275"
+    },
+    {
+      "id": 56,
+      "stem": "c056",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88655895"
+    },
+    {
+      "id": 57,
+      "stem": "c057",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88659275"
+    },
+    {
+      "id": 58,
+      "stem": "c058",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88653361"
+    },
+    {
+      "id": 59,
+      "stem": "c059",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88656737"
+    },
+    {
+      "id": 60,
+      "stem": "c060",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88656745"
+    },
+    {
+      "id": 61,
+      "stem": "c061",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88658429"
+    },
+    {
+      "id": 62,
+      "stem": "c062",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88657587"
+    },
+    {
+      "id": 63,
+      "stem": "c063",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88655891"
+    },
+    {
+      "id": 64,
+      "stem": "c064",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88655045"
+    },
+    {
+      "id": 65,
+      "stem": "c065",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88652514"
+    },
+    {
+      "id": 66,
+      "stem": "c066",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88656737"
+    },
+    {
+      "id": 67,
+      "stem": "c067",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88655049"
+    },
+    {
+      "id": 68,
+      "stem": "c068",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88654199"
+    },
+    {
+      "id": 69,
+      "stem": "c069",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88656737"
+    },
+    {
+      "id": 70,
+      "stem": "c070",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899924 finite_scalar_calls=88656741"
+    },
+    {
+      "id": 71,
+      "stem": "c071",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88660121"
+    },
+    {
+      "id": 72,
+      "stem": "c072",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88656741"
+    },
+    {
+      "id": 73,
+      "stem": "c073",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88654203"
+    },
+    {
+      "id": 74,
+      "stem": "c074",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88654203"
+    },
+    {
+      "id": 75,
+      "stem": "c075",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88657583"
+    },
+    {
+      "id": 76,
+      "stem": "c076",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88653350"
+    },
+    {
+      "id": 77,
+      "stem": "c077",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88659275"
+    },
+    {
+      "id": 78,
+      "stem": "c078",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88658429"
+    },
+    {
+      "id": 79,
+      "stem": "c079",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88654207"
+    },
+    {
+      "id": 80,
+      "stem": "c080",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88657583"
+    },
+    {
+      "id": 81,
+      "stem": "c081",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88654207"
+    },
+    {
+      "id": 82,
+      "stem": "c082",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775075 finite_scalar_calls=89669151"
+    },
+    {
+      "id": 83,
+      "stem": "c083",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88654203"
+    },
+    {
+      "id": 84,
+      "stem": "c084",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88651665"
+    },
+    {
+      "id": 85,
+      "stem": "c085",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88655891"
+    },
+    {
+      "id": 86,
+      "stem": "c086",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88658429"
+    },
+    {
+      "id": 87,
+      "stem": "c087",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88653347"
+    },
+    {
+      "id": 88,
+      "stem": "c088",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88655049"
+    },
+    {
+      "id": 89,
+      "stem": "c089",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88657583"
+    },
+    {
+      "id": 90,
+      "stem": "c090",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88651669"
+    },
+    {
+      "id": 91,
+      "stem": "c091",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88656737"
+    },
+    {
+      "id": 92,
+      "stem": "c092",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775075 finite_scalar_calls=89664841"
+    },
+    {
+      "id": 93,
+      "stem": "c093",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775075 finite_scalar_calls=89663117"
+    },
+    {
+      "id": 94,
+      "stem": "c094",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88654203"
+    },
+    {
+      "id": 95,
+      "stem": "c095",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88659275"
+    },
+    {
+      "id": 96,
+      "stem": "c096",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88659279"
+    },
+    {
+      "id": 97,
+      "stem": "c097",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88657573"
+    },
+    {
+      "id": 98,
+      "stem": "c098",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88656737"
+    },
+    {
+      "id": 99,
+      "stem": "c099",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88655895"
+    },
+    {
+      "id": 100,
+      "stem": "c100",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88658429"
+    },
+    {
+      "id": 101,
+      "stem": "c101",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775075 finite_scalar_calls=89666569"
+    },
+    {
+      "id": 102,
+      "stem": "c102",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775075 finite_scalar_calls=89669151"
+    },
+    {
+      "id": 103,
+      "stem": "c103",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88653357"
+    },
+    {
+      "id": 104,
+      "stem": "c104",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88657583"
+    },
+    {
+      "id": 105,
+      "stem": "c105",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88657588"
+    },
+    {
+      "id": 106,
+      "stem": "c106",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88659275"
+    },
+    {
+      "id": 107,
+      "stem": "c107",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=71899922 finite_scalar_calls=88653357"
+    },
+    {
+      "id": 108,
+      "stem": "c108",
+      "returncode": 0,
+      "guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=72775075 finite_scalar_calls=89665707"
+    }
+  ],
+  "geometry_returncode": 0,
+  "geometry_guard_counters": "GUARD_DIAGNOSTIC finite_interval_constructions=212510354 finite_scalar_calls=187572348",
+  "duration_seconds": 472.05133724212646
+}

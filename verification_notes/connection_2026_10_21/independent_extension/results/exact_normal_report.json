@@ -1,0 +1,48 @@
+{
+  "status": "INDEPENDENT_EXACT_NORMAL_ADJOINT_COORDINATES_PASS",
+  "scope": "Common fixed Gram/normal/adjoint coordinate identity and 8 interval inclusions only; excludes energy, coercivity, Poisson residual and global topology",
+  "method": "Exact binary64 dyadics, degree-four zero-extension Laplacian, rational Gram inverse and sign-aware squared radical comparisons",
+  "raw_Q_old_sha256": "7df80c3db341a9ece19c77939ad1c1ba857ac8dbb2b51d4a1435f26ee88bf7b0",
+  "raw_Q_new_sha256": "18152163150666b8108a35bf62da6f3b875875579fb4982a187d371abbcf45bd",
+  "checker_sha256": "cc5b2edfb157d9bb58423f7ea60c2566cd82dedccda47c7a1de940bde63766b0",
+  "common_denominator_log2": 69,
+  "enclosures_checked": 8,
+  "records": [
+    {
+      "reflection": 0,
+      "normal_coordinate_enclosures": 2,
+      "adjoint_coordinate_enclosures": 2,
+      "exact_Gc_equals_normal_proved_by_rational_numerators": true,
+      "exact_r_unit_energy_norm_proved": true,
+      "g": [
+        "-243399078696001868187338624965377722345/340282366920938463463374607431768211456",
+        "-30088679235806105747300833434461685209389/43556142965880123323311949751266331066368"
+      ],
+      "projected_norm_squared": "20427479957300284523463094962939908889834831010083599871258770837891613001666836207220287974466390284083145445432038101697/20657999024695246778318327868289133439104715954878923772360962804753481846156451491523373703370903603275731611385690324992"
+    },
+    {
+      "reflection": 1,
+      "normal_coordinate_enclosures": 2,
+      "adjoint_coordinate_enclosures": 2,
+      "exact_Gc_equals_normal_proved_by_rational_numerators": true,
+      "exact_r_unit_energy_norm_proved": true,
+      "g": [
+        "-7788770518271766257841871824288082018247/10889035741470030830827987437816582766592",
+        "30088679235807322150813677188875929499571/43556142965880123323311949751266331066368"
+      ],
+      "projected_norm_squared": "40854959914600566801650980055147179889680739578494907261726929812140082183491610173782988732445649569744600471045012950273/41315998049390493556636655736578266878209431909757847544721925609506963692312902983046747406741807206551463222771380649984"
+    }
+  ],
+  "output_bindings": [
+    {
+      "reflection": 0,
+      "projection_sha256": "be2a4a41746780904d53db4a587c13458bab66e2dc7c6b4da4e841d0c6ce0511",
+      "adjoint_sha256": "9d37c781d901567bc7900f2364039b13b33e270df54aef391bbd3d281aa730b7"
+    },
+    {
+      "reflection": 1,
+      "projection_sha256": "2234578b325443d50f4dcd6722b44990764df1336f97a784ea6cadd254cb3228",
+      "adjoint_sha256": "2a6134eaa1f3b8da8484671c09042f1827a3eb17b38f67178b2f87b2b17bdda0"
+    }
+  ]
+}

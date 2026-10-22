@@ -1,0 +1,136 @@
+{
+  "status": "GUARDED_EXTENSION_FIXED_INPUTS_PASS",
+  "scope": "Original arithmetic formulas plus finite/order instrumentation; not an independent interval backend or global certificate",
+  "duration_seconds": 173.06889970300017,
+  "runs": [
+    {
+      "label": "projection_plus",
+      "kind": "projection",
+      "reflection": 0,
+      "duration_seconds": 5.735473916000046,
+      "counters": {
+        "interval_constructions": 26831047,
+        "dn_up_calls": 35643894
+      },
+      "json_sha256": "be2a4a41746780904d53db4a587c13458bab66e2dc7c6b4da4e841d0c6ce0511",
+      "exact_sidecar_sha256": "1351470c4766a9dfac2a2e92766ef80d6c56dc564623ab513b4caf31989ad09e"
+    },
+    {
+      "label": "center_distances_plus",
+      "kind": "center_distances",
+      "reflection": 0,
+      "duration_seconds": 31.410643526000058,
+      "counters": {
+        "interval_constructions": 344572320,
+        "dn_up_calls": 334916786
+      },
+      "json_sha256": "a63763ac8b057cb8f5ca9c46682fffc295d0dfbb1a439d6db343464e4700a197",
+      "exact_sidecar_sha256": "fcdae3f591f137448e083a776b1c1f16999bab579e52e702a689134efb50889f"
+    },
+    {
+      "label": "adjoint_plus",
+      "kind": "adjoint",
+      "reflection": 0,
+      "duration_seconds": 38.851944506999644,
+      "counters": {
+        "interval_constructions": 379684172,
+        "dn_up_calls": 457289104
+      },
+      "json_sha256": "9d37c781d901567bc7900f2364039b13b33e270df54aef391bbd3d281aa730b7",
+      "exact_sidecar_sha256": "324bf1b8ccd1c188e35d6e63723f4f624aa166e16900f867e8384fbaa8f8fc01"
+    },
+    {
+      "label": "projection_minus",
+      "kind": "projection",
+      "reflection": 1,
+      "duration_seconds": 3.877180409000175,
+      "counters": {
+        "interval_constructions": 26831047,
+        "dn_up_calls": 35643894
+      },
+      "json_sha256": "2234578b325443d50f4dcd6722b44990764df1336f97a784ea6cadd254cb3228",
+      "exact_sidecar_sha256": "277041ebca3b441ad1f153717f9c4db1db422c6167936a6aa259c82fe552ab1b"
+    },
+    {
+      "label": "center_distances_minus",
+      "kind": "center_distances",
+      "reflection": 1,
+      "duration_seconds": 28.533557402000042,
+      "counters": {
+        "interval_constructions": 344572320,
+        "dn_up_calls": 334916786
+      },
+      "json_sha256": "f3669b4120b3679eccdb33ab07e331304822847d28c7200ac0a6d096b72a211d",
+      "exact_sidecar_sha256": "0db360d7efb181369f7462e389d2d9e21acfeae0df38a7377f4b19a583e63da9"
+    },
+    {
+      "label": "adjoint_minus",
+      "kind": "adjoint",
+      "reflection": 1,
+      "duration_seconds": 38.4790920839996,
+      "counters": {
+        "interval_constructions": 379684172,
+        "dn_up_calls": 457289104
+      },
+      "json_sha256": "2a6134eaa1f3b8da8484671c09042f1827a3eb17b38f67178b2f87b2b17bdda0",
+      "exact_sidecar_sha256": "952429a0a0595a037bd522ec7387dfb57a22b7f38fd58062012ec55e11800d65"
+    },
+    {
+      "label": "c042",
+      "kind": "chart",
+      "duration_seconds": 9.224861564000093,
+      "counters": {
+        "interval_constructions": 79663306,
+        "dn_up_calls": 97649559
+      },
+      "json_sha256": "61b8559043df76947deb170e9405b2ab1fdb5586dc00402baa5d37e760a1e1f7",
+      "exact_sidecar_sha256": "a4e405f51b9c06c80ca64b927e7a35120df0af9501c4a9c47ca8ca5b1d43ddb5"
+    },
+    {
+      "label": "c043",
+      "kind": "chart",
+      "duration_seconds": 9.149850886999957,
+      "counters": {
+        "interval_constructions": 79663306,
+        "dn_up_calls": 97645662
+      },
+      "json_sha256": "c87e665dede8c6ed4ed5816834ee94c6d6699c7c9b4afb608518ec65d9b2bff7",
+      "exact_sidecar_sha256": "2417435f6e3b7428c794c7ae7c449e603f6a80a42c361a2b83ed8977f3e9a6c8"
+    },
+    {
+      "label": "c044",
+      "kind": "chart",
+      "duration_seconds": 8.687546381000175,
+      "counters": {
+        "interval_constructions": 79663306,
+        "dn_up_calls": 97649559
+      },
+      "json_sha256": "1d8e00b5e0d8d28716915d5b3d765fd99d869831fc47686d12569e1285c63b0f",
+      "exact_sidecar_sha256": "d9ff0592ea0144bcafd6f53df65f4bd3cdc1b38db55900b17bfe2acc383fd9e7"
+    },
+    {
+      "label": "c053",
+      "kind": "chart",
+      "duration_seconds": 8.839653439999893,
+      "counters": {
+        "interval_constructions": 79663306,
+        "dn_up_calls": 97652477
+      },
+      "json_sha256": "9c236b49b3f5a1708a743c40e51a83a8b541f19759a0fd82f54eb5a7949704c5",
+      "exact_sidecar_sha256": "a4a22cf9817a066b3c9a78b9d7618f9d65db9f8860c14dd00022ca8ef201536f"
+    },
+    {
+      "label": "c055",
+      "kind": "chart",
+      "duration_seconds": 8.3396469850004,
+      "counters": {
+        "interval_constructions": 79663306,
+        "dn_up_calls": 97653451
+      },
+      "json_sha256": "feef244f644458cc6f0362f14f9105cd8041ece3371ca700c5aa7d9101b68daa",
+      "exact_sidecar_sha256": "a511a59f6306512e08ed49aaba505db6d516f6f969e94a2b9113faf552ba7474"
+    }
+  ],
+  "total_interval_constructions": 1900491608,
+  "total_dn_up_calls": 2143950276
+}

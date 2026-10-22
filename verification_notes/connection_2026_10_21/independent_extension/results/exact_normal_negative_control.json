@@ -1,0 +1,8 @@
+{
+  "status": "EXACT_NORMAL_NEGATIVE_CONTROL_PASS",
+  "deliberately_invalid_interval": [
+    "0",
+    "0"
+  ],
+  "reason": "radical upper zero interval excluding actual normal"
+}

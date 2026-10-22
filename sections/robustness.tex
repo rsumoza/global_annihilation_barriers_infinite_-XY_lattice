@@ -1,0 +1,325 @@
+\section{Robustness under spatially inhomogeneous couplings}
+\label{sec:robustness}
+
+We now extend the single homogeneous certificate to a class of perturbed
+energies. The extension preserves a positive \emph{global} annihilation
+barrier and gives a uniform dynamical stability statement. It does not
+identify the perturbed minimax with the height of a particular continued
+saddle.
+
+Write $m_0,s_+,s_-$ for the certified unperturbed minimum and saddles,
+and put
+\[
+ h=\E(s_+)=\E(s_-),\qquad B_0=h-\E(m_0).
+\]
+We use the certified domain $\mathcal D$, whose closure misses $\K$, and the
+certified upper path $\Gamma_0$ from $m_0$ to $\K$, so that
+\begin{equation}
+ \label{eq:robust-seed-global}
+ m_0\in\mathcal D,\qquad \E|_{\partial\mathcal D}\ge h,
+ \qquad \max_t\E(\Gamma_0(t))=h,
+ \qquad .00567867<B_0<.00570116.
+\end{equation}
+All operator norms and gradients in this section refer to the Riesz
+identification associated with the $\X$ inner product.
+
+For $b\in\ell^1(\mathcal E;\R)$ define
+\begin{equation}
+ \label{eq:coupling-energy}
+ E_b(u)=\sum_{e\in\mathcal E}(1+b_e)(1-\cos D_eu)
+       =\E(u)+W_b(u).
+\end{equation}
+The endpoint set remains $\K$ when $1+b_e>0$. Denote by $B_b(a)$ the
+annihilation barrier for $E_b$ starting from $a$: its paths are all strong
+$\X$-continuous paths from $a$ to $\K$, with no prescribed charge history,
+symmetry, or exterior configuration.
+
+\begin{lemma}[Uniform differential and oscillation bounds]
+\label{lem:coupling-bounds}
+Let $p=\nrm{b}_{\ell^1}$. Then $W_b$ is smooth on $\X$, and
+\begin{align}
+ \nrm{\nabla_{\X}W_b(u)}&\le\frac{p}{\sqrt2},&
+ \nrm{H_{W_b}(u)}&\le\frac p2,\label{eq:coupling-derivatives}\\
+ \nrm{H_b(u)}&\le1+\frac p2,&
+ \nrm{H_b(u)-H_b(v)}&\le
+       \frac{1+p/2}{\sqrt2}\nrm{u-v}_{\X}.
+ \label{eq:coupling-hessian}
+\end{align}
+Moreover, the absolutely convergent sums
+\begin{equation}
+ \label{eq:coupling-oscillation}
+ W_-=2\sum_{b_e<0}b_e,\qquad W_+=2\sum_{b_e>0}b_e
+\end{equation}
+satisfy $W_-\le W_b(u)\le W_+$ for every $u\in\X$ and
+$W_+-W_-=2p$.
+\end{lemma}
+
+\begin{proof}
+Let $g_e$ be the Riesz representative of $D_e$. The nearest-neighbour
+resistance identity gives $\nrm{g_e}_{\X}=1/\sqrt2$. Hence
+\[
+ \nabla_{\X}W_b(u)=\sum_e b_e\sin(D_eu)g_e,\qquad
+ H_{W_b}(u)=\sum_e b_e\cos(D_eu)g_e\otimes g_e.
+\]
+The series converge absolutely in $\X$ and in operator norm. Their
+derivatives converge locally uniformly; for derivatives of positive order
+this also follows directly by summing $|b_e|\nrm{g_e}_{\X}^{j}$.
+This proves smoothness and \eqref{eq:coupling-derivatives}. The unperturbed
+bounds are $\nrm{H_0(u)}\le1$ and
+$\nrm{H_0(u)-H_0(v)}\le\nrm{u-v}_{\X}/\sqrt2$. For the perturbation,
+the Lipschitz bound on the cosine gives
+\[
+ \nrm{H_{W_b}(u)-H_{W_b}(v)}
+ \le\sum_e|b_e|\nrm{g_e}_{\X}^3\nrm{u-v}_{\X}
+ =\frac{p}{2\sqrt2}\nrm{u-v}_{\X}.
+\]
+This yields \eqref{eq:coupling-hessian}. Finally
+for each bond the sign of $b_e$ gives
+\[
+ 2\min(b_e,0)\le b_e(1-\cos D_eu)\le2\max(b_e,0).
+\]
+Absolute summability permits adding these inequalities over all bonds.
+They hold for every compatible phase field, regardless of dependencies
+between its increments. Thus $W_-$ and $W_+$ are lower and upper
+enclosures; they need not be attainable extrema, and no independent
+variation of the bond angles is required.
+\end{proof}
+
+The stationary-state certificate provides the following safe rational
+information:
+\begin{equation}
+ \label{eq:robust-seed-gap}
+ H_0(m_0)\succeq\sigma I,\qquad
+ \nrm{H_0(s_\pm)^{-1}}\le\sigma^{-1},\qquad
+ \operatorname{ind}H_0(s_\pm)=1,
+ \qquad \sigma=\frac{57}{1000}.
+\end{equation}
+Indeed, the minimum's candidate coercivity exceeds $.07567$ and its
+correction radius is less than $.017422$, while the saddle's candidate
+inverse gap exceeds $.069925$ and its correction radius is less than
+$.012825$. Subtracting the correction radii using the conservative
+Hessian Lipschitz constant $1$ gives $.058248$ and $.057100$, respectively,
+both greater than $\sigma$. The minimum's global principal-increment
+branch margin is greater than $11/10$.
+
+\begin{theorem}[A quantitative class of robust global barriers]
+\label{thm:robustness}
+Let
+\[
+ \delta=\frac1{500},\qquad r=\frac1{32},\qquad
+ \tau=\frac{71}{100},\qquad g=\frac{541}{16000}.
+\]
+For every $b\in\ell^1(\mathcal E;\R)$ with $\nrm{b}_{\ell^1}\le\delta$,
+the following assertions hold.
+\begin{enumerate}
+\item The energy $E_b$ has unique critical points $m_b,s_b^+,s_b^-$ in
+the closed radius-$r$ balls about $m_0,s_+,s_-$, respectively.
+These branches depend smoothly on $b$. The minimum satisfies
+$H_b(m_b)\succeq gI$; each saddle has index one and inverse norm at most
+$g^{-1}$. The two saddle branches remain distinct.
+\item The minimum $m_b$ has precisely the original charges $+1$ and $-1$
+at $(0,0)$ and $(12,0)$ and belongs to $\mathcal D$.
+\item Its global annihilation barrier satisfies
+\begin{equation}
+ \label{eq:robust-barrier}
+ \big|B_b(m_b)-B_0\big|\le2\nrm{b}_{\ell^1}.
+\end{equation}
+In particular, throughout this coupling class,
+\begin{equation}
+ \label{eq:robust-barrier-numeric}
+ .00167867<B_b(m_b)<.00970116.
+\end{equation}
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Since $\tau^2>1/2$, it is a rational upper bound for $1/\sqrt2$.
+Fix an unperturbed critical point $z$ among the three certified states.
+Taylor expansion gives
+\[
+ \nabla_{\X}\E(z+v)=H_0(z)v+N_z(v),\qquad
+ \nrm{N_z(v)}\le\frac\tau2\nrm{v}_{\X}^2.
+\]
+On the radius-$r$ ball, $N_z$ has Lipschitz constant at most $\tau r$.
+The equation $\nabla_{\X}E_b(z+v)=0$ is equivalent to the fixed point
+equation
+\[
+ v=T_{b,z}(v):=-H_0(z)^{-1}
+             \big[N_z(v)+\nabla_{\X}W_b(z+v)\big].
+\]
+By \eqref{eq:robust-seed-gap} and
+Lemma~\ref{lem:coupling-bounds}, the exact self-mapping and contraction
+tests are
+\begin{align}
+ \tau\delta+\frac\tau2r^2
+ &=\frac{45227}{25600000}
+ <\frac{45600}{25600000}=\sigma r,
+ \label{eq:robust-newton-map}\\
+ \operatorname{Lip}(T_{b,z})
+ &\le\frac{\tau r+\delta/2}{\sigma}
+ =\frac{371}{912}<1.
+ \label{eq:robust-newton-contraction}
+\end{align}
+Banach's theorem produces the unique critical point $z_b$ in this ball.
+At that point,
+\begin{equation}
+ \label{eq:robust-operator-perturbation}
+ \nrm{H_b(z_b)-H_0(z)}\le\tau r+\frac\delta2
+ =\frac{371}{16000},\qquad
+ \sigma-\frac{371}{16000}=g.
+\end{equation}
+For the minimum this gives the asserted coercivity. For a saddle,
+\eqref{eq:robust-seed-gap} implies that the spectrum of its self-adjoint
+Hessian misses $(-\sigma,\sigma)$. Its negative spectral space is
+one-dimensional and its complementary spectral space is positive.
+The perturbation in \eqref{eq:robust-operator-perturbation} leaves the
+quadratic form negative on the former space and positive on the latter.
+Thus its index is at least one and at most one. The inverse exists by
+the Neumann-series test, with norm at most
+$1/(\sigma-371/16000)=g^{-1}$. This argument does not identify a
+numerical saddle direction with an exact eigenvector. Smooth dependence
+on the $\ell^1$ parameter follows from the smooth implicit-function
+theorem and uniqueness; the strict self-mapping test keeps each root
+in the interior of its ball.
+
+For completeness, distinctness uses the recorded reaction-coordinate
+enclosures. If $Q:\R^2\to\X$ is the reaction embedding and $G=Q^*Q$,
+the certificate gives $\lambda_{\min}(G)>1/4$. Therefore the linear
+functional consisting of the second coordinate of $G^{-1}Q^*u$ has
+norm less than $2$. The candidate saddle coordinates differ by more
+than $.89$ in this coordinate, and each original saddle correction has
+norm less than $.013$. The exact coordinate difference is consequently
+greater than $.89-4(.013)=.838$, and the original saddle distance is
+greater than $.419>.4$. The continued saddle distance is then greater
+than $.4-2r=27/80$.
+
+Every bond increment changes by at most $\tau r$ between $m_0$ and
+$m_b$. Its distance from the principal-branch cut remains greater than
+\[
+ \frac{11}{10}-\tau r=\frac{3449}{3200}>0.
+\]
+The straight segment crosses no branch cut, so all plaquette charges
+are preserved. To establish membership in $\mathcal D$, use stationarity
+of $m_0$ and the global bound $\nrm{H_0}\le1$:
+\begin{equation}
+ \label{eq:robust-low-bridge}
+ \E\big(m_0+t(m_b-m_0)\big)
+ \le\E(m_0)+\frac{r^2}{2}
+ =\E(m_0)+\frac1{2048}<h,
+ \qquad 0\le t\le1.
+\end{equation}
+Since the segment starts in $\mathcal D$, it cannot meet its boundary,
+where \eqref{eq:robust-seed-global} gives $\E\ge h$. In particular
+$m_b\in\mathcal D$. No inclusion of a full norm ball in $\mathcal D$
+has been assumed.
+
+It remains to prove the global estimate with the shifted origin. On
+the radius-$r$ ball about $m_0$, both energies are strictly convex:
+\[
+ H_0\succeq(\sigma-\tau r)I>0,\qquad H_b\succeq gI>0.
+\]
+Stationarity at the respective minima and convexity on this ball imply
+\begin{equation}
+ \label{eq:robust-endpoint-energies}
+ \E(m_b)\ge\E(m_0),\qquad E_b(m_b)\le E_b(m_0),\qquad
+ \max_{[m_b,m_0]}E_b\le E_b(m_0).
+\end{equation}
+Every admissible path from $m_b$ to $\K$ must cross
+$\partial\mathcal D$. Its maximal perturbed energy is at least
+$h+W_-$, whereas
+$E_b(m_b)\le E_b(m_0)\le\E(m_0)+W_+$. This proves
+\[
+ B_b(m_b)\ge B_0-(W_+-W_-).
+\]
+For the opposite inequality, prepend the bridge from $m_b$ to $m_0$
+to $\Gamma_0$. Its energy is at most $h+W_+$: this follows on
+$\Gamma_0$ from \eqref{eq:robust-seed-global}, and on the bridge
+from \eqref{eq:robust-endpoint-energies}. Finally
+$E_b(m_b)\ge\E(m_0)+W_-$, again by
+\eqref{eq:robust-endpoint-energies}. Hence
+$B_b(m_b)\le B_0+(W_+-W_-)$, which proves
+\eqref{eq:robust-barrier} and \eqref{eq:robust-barrier-numeric}.
+\end{proof}
+
+\begin{corollary}[Uniform local stability for the energy-space flow]
+\label{cor:flow}
+For every coupling field in Theorem~\ref{thm:robustness}, the flow
+\begin{equation}
+ \label{eq:robust-gradient-flow}
+ \dot u=-\nabla_{\X}E_b(u)
+\end{equation}
+is globally well posed in $\X$. If $\nrm{u(0)-m_b}_{\X}\le1/100$, then
+the solution stays in that ball and
+\begin{equation}
+ \label{eq:robust-exponential-stability}
+ \nrm{u(t)-m_b}_{\X}
+ \le e^{-13t/500}\nrm{u(0)-m_b}_{\X},\qquad t\ge0.
+\end{equation}
+Along every solution,
+$\frac{d}{dt}E_b(u)=-\nrm{\nabla_{\X}E_b(u)}_{\X}^2$.
+\end{corollary}
+
+\begin{proof}
+The gradient is globally Lipschitz, with constant at most
+$1+\delta/2=1001/1000$, by \eqref{eq:coupling-hessian}; the Hilbert-space
+ODE therefore has a unique global solution. Moreover
+\[
+ \frac{1+\delta/2}{\sqrt2}<\frac{711}{1000}.
+\]
+Within distance $1/100$ of $m_b$, its Hessian is bounded below by
+\[
+ \left(\frac{541}{16000}-\frac{711}{100000}\right)I
+ =\frac{10681}{400000}I\succ\frac{13}{500}I.
+\]
+For $w=u-m_b$, stationarity and integration along the segment from
+$m_b$ to $u$ give
+\[
+ \frac{d}{dt}\frac{\nrm{w}_{\X}^2}{2}
+ =-\inner{w}{\nabla_{\X}E_b(m_b+w)-\nabla_{\X}E_b(m_b)}
+ \le-\frac{13}{500}\nrm{w}_{\X}^2.
+\]
+A first-exit argument makes the closed ball invariant; Gronwall's
+inequality gives \eqref{eq:robust-exponential-stability}. The energy
+identity follows by the chain rule.
+\end{proof}
+
+\begin{remark}[Compatibility with the effective exterior estimate]
+The class above also fits the Green estimate of
+Section~\ref{sec:green}, Theorem~\ref{thm:green}. For a continued critical
+state $z_b$, stationarity gives
+\[
+ Dz_b=P_{\mathrm{grad}}q_b,\qquad
+ q_b=Dz_b-(1+b)\sin(Dz_b),\qquad
+ \nrm{q_b}_{\ell^1}\le\frac{\nrm{z_b}_{\X}^3}{6}
+                         +\nrm{b}_{\ell^1}.
+\]
+Beyond the certified unperturbed exterior radius, the original increments
+are bounded by $.018$. Continuation therefore gives
+$|D_ez_b|\le .018+\tau/32=643/16000<.041$. On those exterior bonds,
+\[
+ |q_{b,e}|\le\left(\frac{.041^2}{6}+\nrm{b}_{\ell^\infty}\right)
+                  |D_ez_b|
+ \le\frac{13681}{6000000}|D_ez_b|,
+ \qquad 2\frac{13681}{6000000}<1.
+\]
+Thus the required exterior source term remains absorbable uniformly
+throughout the $\ell^1$ ball. In particular, a translated coupling
+perturbation is not an independent additive far-field force: it retains
+the factor $\sin(D_ez_b)$. No compact-support condition on $b$ is needed
+for this implication.
+\end{remark}
+
+\begin{remark}[Scope of the robustness statement]
+The budget $\nrm{b}_{\ell^1}\le1/500$ is a \emph{total} coupling budget.
+For one modified bond it allows a relative change of $0.2\%$; it does
+not allow that change independently on every bond of a growing box.
+Nonzero constant rescalings of the whole lattice are outside this
+$\ell^1$ class. The theorem proves neither that one of $s_b^{\pm}$
+attains the perturbed minimax nor that reflection breaking selects a
+different escape mechanism. Those conclusions require additional
+separator and connection checks. Corollary~\ref{cor:flow} concerns the
+specified $\X$ mobility, not the local $\ell^2$ gradient flow or a thermal
+escape rate. The continuation and oscillation arguments are standard;
+their role here is to turn the reproduced global certificate into an
+explicit class of robust infinite-lattice conclusions.
+\end{remark}

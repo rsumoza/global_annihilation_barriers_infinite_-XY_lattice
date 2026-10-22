@@ -1,0 +1,22 @@
+{
+  "scope": "Exact rational consistency checks of archived endpoint data, not recomputation of the endpoint estimates",
+  "caps": [
+    {
+      "name": "plus",
+      "cap_offset_contains_exact_fraction_sum_of_candidate_and_signed_adjoint_endpoints": true,
+      "normal_and_candidate_coordinates_match_projection": true,
+      "archived_projection_floor_exceeds_used_mu": true
+    },
+    {
+      "name": "minus",
+      "cap_offset_contains_exact_fraction_sum_of_candidate_and_signed_adjoint_endpoints": true,
+      "normal_and_candidate_coordinates_match_projection": true,
+      "archived_projection_floor_exceeds_used_mu": true
+    }
+  ],
+  "rational_cap_bound_tau": "71/100",
+  "twice_tau_squared": "5041/5000",
+  "safe_cap_quadratic_coefficient": "19/40000",
+  "LEVEL_above_archived_exact_saddle_relative_upper": true,
+  "status": "PASS"
+}

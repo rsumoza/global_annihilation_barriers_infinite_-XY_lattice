@@ -1,0 +1,12 @@
+{
+  "robustness_constants.json": {
+    "same_parsed_json": true,
+    "original_sha256": "a53cab13c711d17b84e9f4fae1cfb61e3ea27c26f38d0faf6387a804436ed9b1",
+    "new_sha256": "a53cab13c711d17b84e9f4fae1cfb61e3ea27c26f38d0faf6387a804436ed9b1"
+  },
+  "green_tail_budget.json": {
+    "same_parsed_json": true,
+    "original_sha256": "ef49f34a8371e8e08cc0a8a51820eed4feb7cd8808ac1ae3f0e4a888721dd80b",
+    "new_sha256": "ef49f34a8371e8e08cc0a8a51820eed4feb7cd8808ac1ae3f0e4a888721dd80b"
+  }
+}

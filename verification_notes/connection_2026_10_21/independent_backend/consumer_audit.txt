@@ -1,0 +1,147 @@
+Connection scalar-consumer audit
+21 October 2026
+Read-only source audit; no historical JSON is accepted as a fresh proof.
+
+Scope
+-----
+Inspected verify_global.py, distribution/stage2_verify.py,
+distribution/stage2/math/postprocess_certificate.py,
+distribution/postprocess_global.py, the actual C++ output sites, and
+recovered/unpacked/xy_optimality_extension/verify_optimality.py.
+No frozen source was modified. Parent performs guarded/exact-hex numerical
+replays and compares scientific output bytes with the fresh original chain.
+
+Actual consumed fields and directions
+------------------------------------
+1. Baseline engine output (22 significant digits)
+
+stage2_verify.py lines 52-55 reads:
+  rho + PAD < .017422
+  delta + PAD < .001166548
+  mu - PAD > .05825
+  branch_margin - PAD > 1.11999999999999
+
+postprocess_certificate.py lines 85-87 reads:
+  delta + PAD, mu - PAD, and proves (delta+PAD)^2/[2*(mu-PAD)] <= min_gap.
+
+postprocess_global.py line 53 reads:
+  rho + PAD < c - PAD.
+
+Optimality verify_optimality.py lines 320-321 additionally compares bare printed
+rho < MINIMUM_RHO=.017422 and delta < .001166548, WITHOUT PAD.
+These are redundant with the stronger antecedent padded checks in the fresh
+chain, but exact raw-binary comparison against the thresholds should still be
+recorded to close the explicit fixed-data consumption contract.
+
+2. Saddle output (24 significant digits)
+
+postprocess_certificate.py lines 47-71 reads these one-sided quantities:
+  delta + PAD                         upper
+  negative_direction_bound - PAD      lower
+  transverse_coercivity - PAD         lower
+  rho + PAD                           upper
+  candidate_branch_margin - PAD       lower
+  candidate_relative_to_reference[0] - PAD   lower
+  candidate_relative_to_reference[1] + PAD   upper
+It then recomputes Newton invariance/contraction, corrected signed Hessian
+margins, the energy error, and local-passage inequalities with exact Fractions.
+The printed approximate inverse/error/Hessian diagnostics are not trusted in
+place of those recomputations.
+
+postprocess_global.py lines 49-50 rereads candidate_relative_to_reference with the
+same one-sided PAD, combining it with the exact rational recomputed error.
+
+Optimality verify_optimality.py lines 326-327 additionally reads bare saddle rho
+and transverse_coercivity, WITHOUT PAD, against .012825 and .0719549999.
+These two direct checks are important sidecar coverage: verify the original
+internal binary rho < .012825 and original binary positive > .0719549999.
+The archived values suggest ample margins, but that observation is not a
+substitute for the current fresh exact-binary comparisons.
+
+3. Marked sublevel / barrier output (24 significant digits)
+
+stage2_verify.py lines 58-60 reads:
+  marked_lower - PAD > .0031149
+  longitudinal_upper + PAD < .0036515
+  longitudinal_upper + PAD < lateral_lower - PAD.
+postprocess_global.py line 86 again uses marked_lower - PAD.
+
+4. Path output (24 significant digits)
+
+postprocess_global.py lines 80-83 reads only path_relative_reference_upper + PAD
+from leg_return and leg_annihilation for the strict height comparison.
+Node/segment counts and validated terminal topological flags are also checked.
+The full_annihilation path is explicitly supplementary: its status is checked
+in verify_global.py; its maximum is not used in the sharp saddle-height proof.
+
+5. Join output (24 significant digits)
+
+postprocess_global.py lines 59-72 reads for each labeled endpoint:
+  distance_to_saddle_candidate[1] + PAD                       upper
+  signed_projection_on_normalized_q[0] - PAD (plus)            lower
+  -signed_projection_on_normalized_q[1] - PAD (minus)          lower
+  relative_energy_to_reference[1] + PAD                       upper.
+Projection sign handling is correct: subtracting PAD after negating the
+negative endpoint's upper projection gives a lower magnitude bound.
+It combines these with exact rational saddle radius/error, then proves the
+face and Hermite gaps using Fractions.
+Printed q_gram and transverse_norm_upper are not consumed by this current
+supervisor. An archived auxiliary proof script uses transverse_norm_upper
+with PAD, but that script is not a premise of verify_global.py.
+
+Compiled-literal dependencies requiring explicit closure
+-------------------------------------------------------
+barrier/certify.cpp line 9 hardcodes rho=.017422L, delta=.001166548L.
+barrier/certify.cpp line 55 hardcodes mustar=.05825L.
+Padded comparisons to the corresponding exact decimal strings are almost,
+but not literally, comparisons to these compiled binary constants. Record
+raw baseline rho <= compiled rho, raw baseline delta <= compiled delta,
+and raw baseline mu >= compiled mustar. Their actual large margins can be
+verified exactly from the sidecars; do not infer them merely from closeness.
+
+There is a second, different branch dependency. The barrier uses
+maxWidth < 1.12L at line 24. The stage2 supervisor's much weaker check
+branch_margin-PAD > 1.11999999999999 does NOT by itself imply that 1.12L
+is within the baseline certified margin. For the frozen sources it closes
+by exact source identity: baseline engine.cpp chooses margin=1.12L for
+L=12, and barrier uses the identical 1.12L literal, same compiler and flags.
+Record this identity or the equality of their compiled binary sidecars.
+
+The saddle's own margin=.65L is exported and padded downward before the
+rational consequences; there is no separate conflicting compiled threshold
+needed for that particular scalar dependency.
+
+Decimal context and exactness
+-----------------------------
+stage2_verify.py parses JSON numbers directly as Decimal, then performs only
+addition/subtraction of PAD and comparisons. It performs no Decimal division
+or products in its acceptance tests. Its original baseline numbers have 22
+significant digits, barrier numbers 24; in the observed magnitude ranges
+(roughly .001 to 1.12), adding/subtracting 10^-18 requires at most 25 significant
+digits. Python's default 28-digit context therefore performs these particular
+operations exactly. All nonlinear consequences are recomputed with Fraction
+in postprocess_certificate.py and postprocess_global.py.
+The 36-/45-digit Decimal conversions in those modules are display fields;
+subsequent mathematical consumers use their exact rational string fields.
+
+Files not consumed as directed bounds
+------------------------------------
+connections/*.nodes.jsonl and *.segments.jsonl use unpadded 24-digit numeric
+printing. stage2/barrier/results/coefficients.txt and path_grid_640.txt use
+unpadded 28-digit printing. There is no mathematical read of those dumps in
+the inspected current supervisor chains. They must not be described as
+universally outward decimal interval endpoints solely because they print
+many digits. The proof uses the in-memory interval checks and the padded
+summary scalars listed above. Files can remain approximate diagnostic tables
+without compromising the actual checked chain.
+
+Conclusion and limits
+---------------------
+No sign reversal or missing PAD was found among the current connection
+postprocessors' actual consumed summary fields. The optimality overlay has
+the direct unpadded threshold comparisons listed above; they must be closed
+for the fixed inputs using exact sidecars. The compiled-literal comparisons
+and branch-margin identity are also explicit proof obligations, not generic
+consequences of invertibility or a successful printed PASS label.
+This source audit does not independently certify residuals, Hessians, tails,
+normalization, or the mathematical global separation argument.

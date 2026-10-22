@@ -1,0 +1,641 @@
+--- v4/main.tex
++++ v5/main.tex
+@@ -102,5 +102,6 @@
+ \input{sections/robustness}
+ \input{sections/discussion}
+ \appendix\input{sections/green_appendix}
++\input{sections/residual_appendix}
+ \input{references}
+ \end{document}
+--- v4/sections/certificate.tex
++++ v5/sections/certificate.tex
+@@ -64,6 +64,13 @@
+ finite solves and residual bounds. A separately proved residual
+ remainder $D^*r$, with $\|r\|_{\ell^2}\le\varepsilon$, contributes
+ at most $\varepsilon$ to the dual norm.
++
++For the fixed neutral dipole used below, Appendix~\ref{app:reflected-residual}
++proves the finite load's zero mean by compact-flux cancellation and reflection
++of the analytic reference, without assuming symmetry of the saddle correction.
++It also derives the explicit exterior dual remainder and includes the
++core--exterior interface. Thus the mean condition in
++\cref{lem:cert-neumann} is checked algebraically for these inputs.
+ 
+ \begin{proposition}[Deflated signed-resistance test]\label{prop:cert-gram}
+ Suppose, uniformly over a prescribed set of configurations,
+--- v4/sections/instance.tex
++++ v5/sections/instance.tex
+@@ -78,7 +78,7 @@
+ \end{verbatim}
+ \end{quote}
+ The final status was \texttt{FRESH\_OPTIMAL\_ANNIHILATION\_BARRIER\_PASS}.
+-The run took 763.36 seconds using Python 3.12.14 and g++ 13.3 on x86\_64 Linux. The compilation disabled fast arithmetic transformations and floating-point contraction, and enabled rounding-sensitive compilation. The record contains the precise flags, a hash of the final certificate, hashes of 548 fresh outputs, and the integrity check of all 1,808 original archive members. The sampled aggregate descendant memory was about 2.36 GiB; this sample is not a proved peak.
++The new run on 21 October 2026 took 737.33 seconds using Python 3.12.14 and g++ 13.3 on x86\_64 Linux. The compilation disabled fast arithmetic transformations and floating-point contraction, and enabled rounding-sensitive compilation. The record includes the precise flags, the final certificate hash, all 548 fresh outputs and their hashes, and the integrity check of all 1,808 original archive members. The preceding execution and its resource observations are retained as dated history.
+ 
+ The verifier combines exact rational bookkeeping with outward floating-point enclosures and analytic tail estimates. Candidate search, proposal optimization, and basis generation are outside the supervisor; the fixed proposals must pass its checks. The default supervisor does not execute every historical attack script, the separate secondary boundary implementation, or the separate heteroclinic extension. We therefore base \cref{thm:instance} on the global variational certificate, not on an unreported fresh heteroclinic calculation.
+ 
+@@ -87,8 +87,16 @@
+ checks passed. Its 330 directly comparable scientific outputs agreed
+ byte for byte with the archived record. A separately coded exact-dyadic
+ Laplacian calculation verified all 715 geometric interval inclusions
+-and three scalar maxima. This additional execution covers the separator;
+-it does not rerun the upper connection or the optimality assembly.
++and three scalar maxima. The later complete execution described above
++also rebuilt the connection and optimality assembly from unchanged sources.
++
++Separate instrumented copies check finite ordered interval endpoints and
++the actual decimal exports against exact binary values. These fixed-data
++diagnostics and independent rational geometry checks are documented in
++the supplement. They do not repair the original congruence helper's
++generic failure to reject an injected NaN; no such failure was found
++in the protected fixed-data runs. Appendix~\ref{app:reflected-residual}
++derives the residual's zero mean and explicit exterior constants.
+ 
+ The supported reproduction target is little-endian IEEE binary64 input
+ with round-to-nearest arithmetic and a \texttt{long double} significand
+--- v4/sections/residual_appendix.tex
++++ v5/sections/residual_appendix.tex
+@@ -0,0 +1,101 @@
++% New analytic audit, 21 October 2026. Insert after the existing Appendices A--C.
++% Uses the article's macros \X and \nrm. No new theorem counter is introduced.
++\section{The full dual residual of the neutral reference}
++\label{app:reflected-residual}
++
++This calculation justifies the exterior residual formula used in the
++fixed critical-state certificate. In centered coordinates
++$(\xi,y)=(x_1-6,x_2)$, set $a=L/2=6$ and
++\[
++ \varphi(\xi,y)=\arg(\xi+a+\mathrm i y)
++                  -\arg(\xi-a+\mathrm i y),\qquad L=12.
++\]
++Use the real branch tending to zero away from the finite cut
++$[-a,a]\times\{0\}$. Its gradient is square summable; compact cutoffs
++converge in the energy norm since $\varphi=O(L/r)$ and
++$D\varphi=O(L/r^2)$ outside that cut. Thus $\varphi\in\X$.
++Each unoriented bond is counted once, with
++$D_eu=u(e^+)-u(e^-)$, and $D^*$ denotes the vertex-distribution adjoint.
++Write $f_\theta=D^*\sin(D\theta)$.
++
++Let $S>a+2$ be an integer and define the symmetric vertex square
++\[
++ B_S=\{v\in(\mathbb Z+1/2)^2:\nrm{v}_\infty\le S-3/2\},
++ \qquad b=2S-2,\qquad \chi=\frac{S}{S-a-2}.
++\]
++Here the square is in the centered coordinates. Suppose $h$ is compact
++and every bond on which $D_eh\ne0$ has \emph{both} endpoints in $B_S$.
++Set $f_B=\mathbf1_{B_S}f_{\varphi+h}$, interpreted as a load on the
++full lattice. Then $f_B$ has algebraically zero mean. Indeed,
++$j_e=\sin D_e(\varphi+h)-\sin D_e\varphi$ is a compact flux whose
++nonzero bonds and both endpoints lie in $B_S$, so
++$\sum_{B_S}D^*j=0$ by endpoint cancellation. The pure-reference phase is
++complex-conjugated by $(\xi,y)\mapsto(\xi,-y)$; its vertex force is
++therefore odd under this reflection. Pairing the vertices of $B_S$
++gives $\sum_{B_S}f_\varphi=0$. No oddness assumption on $h$ is needed.
++An interval sum containing zero would not replace this argument.
++
++Let $L_N$ and $D_N$ count only bonds interior to $B_S$. For any finite
++proposal $u$, the Neumann comparison and
++$\lambda_1(L_N)=4\sin^2(\pi/(2b))\ge4/b^2$ give
++\begin{equation}
++ \nrm{f_B}_{\X^*}
++ \le \nrm{D_Nu}_2+\frac b2\nrm{f_B-L_Nu}_2.
++ \label{eq:finite-residual-energy}
++\end{equation}
++To see this, solve $L_Nu_*=f_B$ with the same mean as $u$, and use
++$\nrm{f_B}_{\X^*}\le\nrm{D_Nu_*}_2$ and
++$\nrm{D_N(u_*-u)}_2\le\lambda_1(L_N)^{-1/2}
++\nrm{f_B-L_Nu}_2$. No normalization of the mean of $u$ is required.
++
++The complementary load obeys the explicit bound
++\begin{equation}
++ \nrm{f_{\varphi+h}-f_B}_{\X^*}
++ \le \frac{64\sqrt3}{5}\frac{L\chi^5}{(S-1)^{5/2}}
++      +\frac{32\sqrt3}{9}\frac{L^3\chi^7}{(S-1)^{9/2}}.
++ \label{eq:reflected-residual-tail}
++\end{equation}
++Here is a derivation including the cancellation needed for the second
++term. In a differentiation region at distance at least $d$ from the cut,
++subtracting the complex derivatives of the two argument fields gives
++\[
++ |\partial_i^r\varphi|\le r!L/d^{r+1}\quad(r\ge1),
++ \qquad \Delta\varphi=0.
++\]
++For $p_i=\varphi(v+e_i)-\varphi(v)$ and
++$m_i=\varphi(v)-\varphi(v-e_i)$, the central Taylor remainder of order
++four and harmonicity yield $|L_\infty\varphi(v)|\le4L/d^5$.
++Also $|p_i|,|m_i|\le L/d^2$ and $|p_i-m_i|\le2L/d^3$.
++Since $g(t)=\sin t-t$ has $|g'(t)|\le t^2/2$,
++\[
++ |g(p_i)-g(m_i)|\le L^3/d^7,\qquad
++ |f_\varphi(v)|\le4L/d^5+2L^3/d^7.
++\]
++The two opposite bonds are combined before taking absolute values.
++
++Exterior shells have $\nrm{v}_\infty=k-1/2$, $k\ge S$, and at most
++$8k$ vertices. The unit segments used above lie at distance at least
++$k-a-3/2\ge k-a-2$ from the cut, while
++$(k-a-2)^{-r}\le\chi^r k^{-r}$. Pair each exterior vertex with $y>0$
++with its reflected vertex $Rv$. The load $\delta_v-\delta_{Rv}$ has
++$\X^*$ norm at most $\sqrt{2|y|}\le\sqrt{3k}$, by Cauchy--Schwarz
++along the vertical lattice path. This path may enter $B_S$; only its
++endpoints specify the exterior load. Since $h$ changes no exterior
++vertex force, the triangle inequality gives
++\begin{align*}
++ \nrm{f_{\varphi+h}-f_B}_{\X^*}
++ &\le32\sqrt3 L\chi^5\sum_{k\ge S}k^{-7/2}
++       +16\sqrt3 L^3\chi^7\sum_{k\ge S}k^{-11/2}.
++\end{align*}
++Integrating these positive decreasing terms from $S-1$ proves
++\eqref{eq:reflected-residual-tail}. The convergent majorant justifies
++the load series in $\X^*$; equality with the exterior vertex force is
++first checked on compact tests and then extended by density.
++
++In the checker the correction array has even side $n$, its boundary
++is zero, the phase box has side $n+4$, and the force box has side
++$b=n+2$. Its halo includes every changed flux bond and both endpoints,
++and all four neighbours of every force-box vertex are present.
++Thus $S=b/2+1$ and $\chi=S/(S-8)$ agree exactly with the implemented
++formula. Adding \eqref{eq:finite-residual-energy} and
++\eqref{eq:reflected-residual-tail} bounds the full dual residual.
+--- v4/supplement/Supplementary_Reproducibility.tex
++++ v5/supplement/Supplementary_Reproducibility.tex
+@@ -22,19 +22,12 @@
+ 
+ \section{Purpose and mathematical scope}
+ 
+-This revision retains the interpretation and conceptual figure of
+-manuscript revision 2 and the targeted checks of revision 3. Section 6
+-adds the separate separator audit of 21 October 2026. The frozen global certificate and its numerical
+-claims are the same as in the preceding version. The global execution
+-documented here is the original fresh run, not a new run performed for
+-editorial changes.
+-
+-This record identifies the frozen computational inputs, the fresh execution
+-of the global certificate, and the separate arithmetic checks accompanying
+-the manuscript. It is intended to make the evidential chain inspectable.
+-The main text supplies the analytic reductions; a successful program status
+-is interpreted together with those reductions and the stated arithmetic
+-assumptions.
++Revision 5 adds the new complete execution and connection audit in
++Section 7. Earlier records are explicitly dated. The frozen scientific
++sources and numerical barrier are unchanged.
++
++This record links the inputs, executions and arithmetic checks to the
++analytic reductions in the manuscript and the stated arithmetic assumptions.
+ 
+ The unperturbed result concerns one neutral dipole, with charges $+1$ and
+ $-1$ on plaquettes centered at $(0,0)$ and $(12,0)$, respectively, for the
+@@ -132,7 +125,7 @@
+ manifest, avoiding a self-referential hash inside that archive.
+ 
+ \clearpage
+-\section{Fresh execution record}
++\section{Historical fresh execution, 20 October 2026}
+ 
+ Run the following command from \code{xy_optimality_extension}, with an
+ initially empty or absent \code{results_fresh} directory. The line breaks
+@@ -161,10 +154,11 @@
+ -ffp-contract=off -frounding-math
+ \end{verbatim}
+ \end{quote}
+-The engines require IEEE binary64 and \code{long double} with at least
+-$64$ mantissa bits. Reproduction on another architecture must check these
+-requirements and the interval engine's arithmetic assumptions; successful
+-compilation alone is insufficient.
++The source guards accept IEEE binary64 and \code{long double} with at
++least $64$ mantissa bits. The audited reproduction target is narrower:
++exactly $64$ significand bits, little-endian input and round-to-nearest.
++The companion preflight enforces that target. Wider arithmetic requires
++a separate serialization analysis; successful compilation is insufficient.
+ 
+ \paragraph{Memory observations.}
+ The single-child peak \code{ru_maxrss} was $1\,874\,192$ KiB. The largest
+@@ -317,9 +311,10 @@
+ intermediate was shown for the frozen data. The historical standalone
+ \code{run()} decimal output also lacks a general outward-serialization
+ guarantee; the four inspected extension modules rename that main and do
+-not invoke it. These observations do not establish a counterexample to
+-the fixed certificate, and must not be used as evidence that its
+-antecedent implementations have been audited. The immutable originals
++not invoke it. At this inspection stage these observations neither
++established a counterexample to the fixed certificate nor audited its
++antecedent implementations; Sections 6 and 7 record the later work.
++The immutable originals
+ were not altered. Hardening a frozen engine would require updating its
+ pins and repeating every dependent verification.
+ 
+@@ -377,9 +372,8 @@
+ zero unresolved cells. All 330 directly comparable scientific files
+ were byte-identical to the archived outputs; boundary and separation
+ records agreed after explicitly removing path, timing and derived-hash
+-fields. All 454 fresh-output hashes were checked. This is an additional
+-separator execution; the complete three-package optimality execution
+-reported above remains the original one.
++fields. All 454 fresh-output hashes were checked. This standalone run
++preceded the new complete execution reported in Section 7.
+ 
+ An independent implementation using Python integers and exact rational
+ arithmetic verified all 715 geometric inclusions: eight Gram and inverse
+@@ -411,8 +405,76 @@
+ and the four consumed minimum scalars passed their directional tests.
+ This addresses the fixed separator execution and its actual exports;
+ it neither repairs the original helper's generic NaN contract nor
+-constitutes a second interval implementation. The connection and full
+-optimality audit remain pending recovery of the connection archive.
++constitutes a second interval implementation. At that stage the
++connection archive was unavailable; Section 7 resolves that input
++obligation and reports the complete execution.
++
++\clearpage
++\section{Complete reproduction and connection audit, 21 October 2026}
++
++The five supplied connection volumes were reconstructed into the original
++441,730,856-byte archive with the exact S3 hash above. Its 129 manifested
++members and 44 scientific-distribution members matched. The reconstruction
++script pins all five volume hashes and verifies the complete archive
++before atomic replacement. An initially verified local archive later
++failed its ZIP check; it was rejected and reconstructed again before the
++successful payload audit. The execution note records this operational
++incident without assigning an unverified cause.
++
++The unchanged three-package supervisor was rerun in a new output directory,
++without cached-result options or archived results as premises. It ended
++with \code{FRESH_OPTIMAL_ANNIHILATION_BARRIER_PASS} in
++737.332688331604 seconds. Its certificate SHA-256 is
++\begin{quote}\small\ttfamily
++b1cbb7206a0c7492ad6990213a48480c9d25e04a5a21fe1805f0195a871f5999
++\end{quote}
++All 548 global output hashes were checked, as well as the 454 separator
++and 35 connection hashes in the nested records. All mathematical fields
++agreed with the preceding fresh execution. The comparison also found
++129 byte-identical scientific outputs, including all 109 atlas polynomials;
++both boundary assemblies agreed after explicit metadata normalization.
++The environment and compiler flags are unchanged from Section 3. No new
++process-tree memory peak was measured in this run.
++
++The actual path-array audit passed, including manifest bindings, finiteness,
++zero boundaries, support and rational norm bounds giving $M=6007$.
++Independent rational postprocessors reproduced the connection implications;
++seven deliberate changes to coverage, endpoint, direction or energy were
++rejected. The robustness checker was rebound to the new global certificate
++and passed with unchanged mathematical constants.
++
++Appendix D of the article independently derives the finite load's exact
++zero mean and both exterior residual terms. It uses endpoint cancellation
++of the compact changed flux and oddness of the pure reference force,
++without imposing symmetry on the correction. The opposed nonlinear bond
++terms are combined before taking absolute values. This explains the
++implemented Neumann comparison and exterior formula, including the halo.
++
++Separate instrumented copies of the connection and extension sources check
++finite ordered interval endpoints and export exact binary sidecars.
++The extension's 11 jobs passed and reproduced all 11 scientific JSON
++outputs and five coefficient files byte for byte; 888 export records
++passed exact rational directional checks. The exact positive margin
++between \code{LEVEL} and the padded saddle upper bound is approximately
++$1.2192816430\,10^{-21}$; rounded display values are not used to decide
++that comparison. An independently coded integer/rational calculation
++also verifies eight normal/adjoint coordinate inclusions and the identities
++$Gc=n$ and $c^TGc=1$.
++
++The connection backend report supplies the corresponding execution and
++consumer-by-consumer scalar checks, including the binary constants actually
++compiled into dependent modules. Diagnostic copies are separate from the
++unchanged original sources. Their protection of this fixed execution does
++not repair the original congruence helper's generic NaN contract and is
++not a second interval engine. Historical node/segment dumps are approximate
++records, not numerical premises consumed by the current chain.
++
++All compact sources, logs, exact sidecars, rational checks and binding
++records are in \code{verification_notes/connection_2026_10_21}; large raw
++arrays and compiled binaries remain in the separately indexed originals.
++This closes the previously missing-input obligation. The limits on
++heteroclinic, stochastic, universal and perturbed-mechanism claims in
++Section 5 are unchanged.
+ 
+ 
+ \end{document}
+--- v4/README.txt
++++ v5/README.txt
+@@ -1,11 +1,11 @@
+ CERTIFIED GLOBAL ANNIHILATION BARRIERS IN AN INFINITE XY LATTICE
+-English manuscript and verification snapshot, revision 4, 21 October 2026
++English manuscript and verification snapshot, revision 5, 21 October 2026
+ Prepared for author review before a possible SIADS submission.
+ No submission, repository deposit, or contact with an editor was performed.
+ 
+ READ FIRST
+ main.tex and sections/*.tex contain the complete article and its proofs.
+-SIADS_XY_Manuscript_v4_2026-10-21.pdf is the compiled review copy.
++SIADS_XY_Manuscript_v5_2026-10-21.pdf is the compiled review copy.
+ supplement/Supplementary_Reproducibility.tex and .pdf identify the frozen
+ sources, fresh execution, scope, and arithmetic assumptions.
+ supplement/INDEX.txt and INDEX.html list every proposed supplement item.
+@@ -101,9 +101,10 @@
+       --output results_fresh --workers 2
+ 
+ Do not choose options that reuse validated outputs for this reproduction.
+-The original run took about 12m43s. Its summary, environment, stdout/stderr,
+-full final certificate (including 548 output hashes), and selected input
+-records are under proof_record. The complete original source/proposal
++The new run on 21 October took about 12m17s. Its summary, environment,
++stdout/stderr, full final certificate and all 548 fresh output files
++are under proof_record. The preceding 20 October record remains in its
++history directory. The complete original source/proposal
+ archives remain separate indexed supplement items, rather than being
+ silently omitted or replaced by result JSON files. Their names/hashes are
+ also recorded in proof_record/reproduction_summary.json.
+@@ -179,7 +180,8 @@
+ geometric inclusions and three maxima. The new records and diagnostic
+ guarded replay are under verification_notes/separator_2026_10_21. This
+ additional execution covers the separator, not a new complete optimality
+-chain. The connection attachment failed to copy and must be supplied again.
++chain. The connection attachment was unavailable at that stage; revision 5
++below resolves this historical input obligation.
+ 
+ All 17 prior bibliography entries were checked against primary metadata;
+ Braun--Hudson arXiv:2609.39642v1 is added as reference 18. Section 5 makes
+@@ -188,3 +190,28 @@
+ authoritative current assessment; older notes remain dated historical
+ records. The updated main PDF and supplementary PDF were rebuilt and
+ visually reviewed. No original scientific archive or pin was changed.
++
++REVISION 5: COMPLETE REPRODUCTION AND CONNECTION AUDIT
++All five connection volumes were reconstructed and matched the pinned
++441730856-byte S3 original. checks/reconstruct_connection.py validates
++each volume, ZIP CRC and final archive identity before atomic replacement.
++The complete unchanged three-package chain was rebuilt in a new directory
++and passed with FRESH_OPTIMAL_ANNIHILATION_BARRIER_PASS in 737.332688 seconds.
++All 548 global output hashes and nested output hashes were checked.
++The barrier and scientific scope are unchanged.
++
++Appendix D proves exact finite-load mean zero, the Neumann comparison,
++and both explicit exterior residual terms without a symmetry assumption
++on the correction. The actual path payload audit reproduces M=6007.
++Independent exact normal/adjoint geometry supplements the earlier exact
++atlas geometry. Instrumented fixed-data executions, exact scalar export
++checks, negative controls and source bindings are documented under
++verification_notes/connection_2026_10_21. They are diagnostic copies, not
++silent patches to the frozen originals or a second interval engine.
++The generic congruence helper's injected-NaN limitation remains disclosed.
++
++Use CURRENT_AUDIT_ES.txt for the final current balance. Earlier audit
++notes describe the evidence available at their dates, including temporary
++missing-input states that no longer apply. The bibliography retains the
++18 primary-source-checked entries from revision 4; no universal novelty
++or exhaustive-literature claim is added by this computational audit.
+--- v4/CURRENT_AUDIT_ES.txt
++++ v5/CURRENT_AUDIT_ES.txt
+@@ -1,72 +1,136 @@
+-ESTADO DE LA AUDITORÍA PREVIA AL ENVÍO — 21 DE OCTUBRE DE 2026
++AUDITORÍA FOCALIZADA DEL CERTIFICADO — REVISIÓN 5, 21 OCTUBRE 2026
+ 
+-La versión 4 actualiza la bibliografía y añade una reproducción nueva del
+-separador. No debe interpretarse como una nueva ejecución completa de la
+-cadena de separación, conexión y optimalidad.
++ESTADO: revisión focalizada completada. La cadena original y las
++repeticiones protegidas previstas terminaron satisfactoriamente. No se
++encontró una discrepancia material en las comprobaciones descritas.
+ 
+-1. QUÉ SE HA REPETIDO AHORA
++1. IDENTIDAD E INTEGRIDAD
+ 
+-El original de separación coincide con su SHA-256 registrado y contiene
+-1.083 miembros cubiertos por FILES.sha256. Los 564 miembros del manifiesto
+-científico coinciden. Desde una extracción limpia, con nuevas compilaciones
+-y sin usar salidas archivadas como premisas, el supervisor terminó con
+-FRESH_GLOBAL_SEPARATOR_PASS en 180,92 segundos. Se validaron 109 cartas,
+-436 caras coordenadas y las restantes piezas de frontera, con cero celdas
+-pendientes. Hay 330 archivos científicos idénticos byte por byte al registro
+-original; se comprobaron 454 hashes de salidas frescas.
++Se reconstruyó S3 a partir de los cinco volúmenes aportados. El original
++mide 441730856 bytes y su SHA-256 coincide con el registrado. Se volvieron
++a comprobar los tres originales: 1808 miembros, de los cuales 1805 están
++cubiertos por sus manifiestos y los otros tres son los propios manifiestos.
++No hubo diferencias y no se modificaron las fuentes científicas congeladas.
+ 
+-2. QUÉ SE HA CONTRASTADO INDEPENDIENTEMENTE
++Una copia local del ZIP, previamente verificada, apareció después truncada.
++La auditoría la rechazó y se reconstruyó mediante temporal, fsync,
++verificación y reemplazo atómico. Se documenta el incidente sin atribuirle
++una causa no demostrada. La comprobación posterior y el consumo de sus
++arrays fueron satisfactorios. No es necesario aportar de nuevo S3.
+ 
+-Un código nuevo que usa enteros y racionales exactos de Python, mediante
+-el laplaciano de grado cuatro y extensiones por cero, verificó las 715
+-inclusiones geométricas y tres máximos escalares. No reutiliza el motor
+-intervalar C++. También se revisaron el libro de casos, las identidades
+-de centros y la repetición racional condicional de la frontera.
++2. REPRODUCCIÓN COMPLETA NUEVA
+ 
+-El backend original mantiene una deficiencia genérica: el test por
+-congruencia puede aceptar un NaN inyectado. Esto no es un contraejemplo al
+-teorema para datos fijos. Se completó una ejecución instrumentada separada
+-del mínimo, las 109 cartas y la geometría sin fallos de finitud u orden,
+-y con salidas científicas idénticas. Se contrastaron 9442 registros de
+-exportación con sus valores binarios exactos. El alcance y los resultados
+-quedan registrados en verification_notes/separator_2026_10_21.
++El supervisor original, desde una salida nueva y sin reutilizar resultados
++archivados como premisas, terminó con:
+ 
+-La objeción a la impresión de escalares del mínimo queda resuelta para
+-el consumidor del separador: usa PAD=10^-18 en todos los campos consumidos.
+-El contraste con los valores binarios exactos confirma esas cuatro cotas
+-y el umbral residual binario realmente usado por las cartas. Esto no
+-resuelve por extensión la interfaz del paquete de conexión.
++  FRESH_OPTIMAL_ANNIHILATION_BARRIER_PASS
++  duración: 737.332688331604 segundos
++  SHA-256 del certificado:
++  b1cbb7206a0c7492ad6990213a48480c9d25e04a5a21fe1805f0195a871f5999
+ 
+-3. PRECISIONES ANALÍTICAS Y BIBLIOGRÁFICAS
++Se comprobaron los 548 hashes globales y los registros anidados de 454
++salidas del separador y 35 de conexión. Todos los campos matemáticos
++coinciden con la reproducción previa; 129 salidas científicas comparadas
++son idénticas byte por byte y ambas fronteras coinciden después de una
++normalización explícita de metadatos. proof_record incluye todas las
++salidas nuevas, además de conservar el registro anterior como historia.
+ 
+-Se mantienen las correcciones de la versión 3: espacio de energía definido
+-por el subespacio cerrado de gradientes, retención de celdas cerradas y
+-tangencias, margen racional positivo de las tapas y entorno de significando
+-exactamente de 64 bits. La bola cerrada de Newton ya estaba presente; no
+-se presenta como reparación de una hipótesis ausente.
++Se mantiene estrictamente:
+ 
+-Se contrastaron los metadatos de las 17 referencias previas con fuentes
+-primarias y se añadió el preprint de Braun y Hudson, arXiv:2609.39642v1
+-(2026). Ahora hay 18 referencias. El texto distingue expresamente la
+-cancelación algebraica de la fuente D*q, cuya sumabilidad es probada,
+-de una inferencia de fuerza neta nula basada sólo en decaimiento exterior.
+-No se afirma prioridad universal ni una revisión exhaustiva nueva.
++  0.00567867 < B_ann < 0.00570116.
+ 
+-4. LO QUE FALTA PARA CERRAR LA REVISIÓN FOCALIZADA
++El resultado se refiere al dipolo neutro de separación 12 en la red
++cuadrada infinita, coseno exacto y caminos continuos en la norma fuerte
++del espacio de energía, sin imponer simetría a sus perturbaciones. No
++se amplía por esta reproducción a configuraciones o separaciones arbitrarias.
+ 
+-El archivo XY_Conexion_Global_Reproducible_2026-10-19(1).zip no pudo copiarse
+-desde el adjunto de esta etapa. No se lo ha leído ni utilizado en esta
+-revisión. Se necesita volver a adjuntarlo para inspeccionar sus motores y
+-sus consumidores decimales, justificar algebraicamente la media nula de
+-las cargas de Poisson, auditar los arrays del camino y repetir la
+-conexión y el supervisor completo de optimalidad desde directorios nuevos.
++3. COMPROBACIONES INDEPENDIENTES Y PRECISIONES ANALÍTICAS
+ 
+-El registro global de 763,36 segundos que conserva el artículo corresponde
+-a la ejecución histórica ya documentada. El resultado nuevo del separador
+-sólo respalda su cota inferior >0.0055; no sustituye la conexión superior
+-ni la identificación exacta del minimax con las sillas.
++El nuevo Apéndice D prueba algebraicamente la media nula de la carga
++finita: cancelación de extremos del flujo cambiado compacto e imparidad
++de la fuerza de la referencia pura. No requiere simetría de la corrección.
++Deriva la comparación de Neumann y ambos términos exteriores implementados,
++con sus constantes exactas, conservando la cancelación de enlaces opuestos.
++El halo incluye las interfaces; una suma intervalar que contenga cero no
++sustituye la identidad algebraica.
+ 
+-Si se endurecen fuentes congeladas, habrá que actualizar manifests/pins
+-y repetir sus dependientes. No se cambió ningún original a escondidas.
+-Esta auditoría asistida por IA no equivale a arbitraje editorial ni a una
+-formalización en un asistente de pruebas. No se realizó ningún envío.
++Se reprodujeron las consecuencias racionales de conexión y los siete
++controles negativos del supervisor rechazaron cambios deliberados. El
++análisis de los arrays reales del camino verificó soporte, finitud,
++fronteras nulas y las cotas que dan M=6007. La robustez racional también
++pasó vinculada al certificado global nuevo, con constantes sin cambios.
++
++Se conservan los 715 encierros geométricos y tres máximos del separador
++verificados con enteros/racionales independientes. Se añaden ocho
++encierros de coordenadas normales/adjuntas y las identidades Gc=n y
++c^T G c=1. Esto es independencia de cálculos geométricos concretos, no
++una implementación independiente de todo el certificado.
++
++4. BACKEND E INTERFACES NUMÉRICAS
++
++El motor original tiene una deficiencia genérica conocida: su ayudante
++por congruencia puede aceptar un NaN inyectado. No se presenta como
++reparada ni se oculta detrás de un PASS. Las copias instrumentadas añaden
++comprobaciones de finitud/orden y exportaciones binarias exactas, separadas
++de los originales; permiten examinar la ejecución fija y sus consumidores.
++Los informes distinguen trabajo completado, reutilización justificada por
++identidad de bytes y cualquier diagnóstico adicional incompleto.
++
++El separador ya completó sus ejecuciones protegidas y sus 9442 registros
++de exportación. Las 11 tareas protegidas de la extensión completaron sus
++comprobaciones y coinciden byte por byte con la ejecución original nueva;
++888 exportaciones pasaron las comprobaciones racionales direccionales.
++Su margen LEVEL menos la cota superior acolchada de la silla es positivo,
++aproximadamente 1.2192816430e-21, decidido con racionales exactos.
++La conexión completó la silla 4096, barrera, tres tramos del camino y
++la unión. Sus siete JSON científicos y seis tablas coinciden byte por byte
++con la ejecución original fresca. Se validaron 35 cotas escalares y 299
++cotas de tablas con aritmética exacta, incluidas las cuatro comparaciones
++sin PAD y los literales binarios de los módulos dependientes. Los controles
++cubrieron 9700086087 construcciones de intervalos y 12356053363 llamadas
++dn/up; el mínimo protegido anterior sólo se reutiliza tras comprobar la
++identidad del código y de sus seis entradas. La alternativa de diagnóstico
++rápida quedó incompleta, se detuvo y está excluida de la evidencia numérica.
++El comprobador racional produce el mismo informe con python -O.
++
++El informe específico de conexión documenta los escalares consumidos,
++sus PAD y los literales binarios compilados, sin tomar los antiguos
++listados aproximados de nodos como premisas numéricas del certificado.
++
++La plataforma auditada exige significando long double de exactamente
++64 bits, binary64 little-endian y round-to-nearest. La guarda original
++que acepta al menos 64 bits no valida formatos más anchos. Las fuentes
++originales y sus pins permanecen intactos. Para cambiarlas habría que
++actualizar la identidad de la distribución y repetir los dependientes.
++
++5. ARTÍCULO, BIBLIOGRAFÍA Y ALCANCE CIENTÍFICO
++
++Se mantienen las precisiones del espacio de energía, las celdas cerradas,
++las tangencias y el margen racional de tapas. Se actualizan el registro
++de ejecución y el suplemento, y se añade el Apéndice D. La revisión 4 ya
++contrastó los metadatos con fuentes primarias y dejó 18 referencias,
++incluido Braun--Hudson arXiv:2609.39642v1. Esta etapa no introduce una
++nueva declaración de prioridad universal ni una bibliografía exhaustiva.
++
++La contribución defendible sigue siendo la identificación global de la
++barrera para la instancia certificada, sus condiciones a posteriori y la
++robustez cuantitativa que realmente demuestra el artículo. El certificado
++no garantiza un algoritmo para toda configuración. El presupuesto de
++localización sigue siendo impracticable para una búsqueda cúbica completa.
++La continuación bajo perturbaciones de acoplamiento no identifica por sí
++sola el minimax perturbado con una silla concreta ni prueba un cambio de
++mecanismo. No se afirma aquí una heteroclínica, una tasa térmica ni la
++estabilidad para otro flujo distinto del especificado en el artículo.
++
++6. VALOR Y LÍMITES DE ESTA AUDITORÍA
++
++La reproducción completa nueva y los contrastes independientes reducen
++incertidumbres concretas de integridad, residual, geometría e interfaces.
++La reproducción usa el mismo motor intervalar; no es un segundo motor,
++una formalización en un asistente de pruebas ni arbitraje de revista.
++Las reducciones analíticas y las hipótesis aritméticas siguen siendo
++parte de la prueba y deben ser examinadas por autor y revisores.
++
++No se realizó un envío ni un depósito público. Para la entrega siguen
++siendo necesarios S1-S5, sus índices y una vía admitida por la revista
++para los suplementos grandes. El paquete pequeño S1 no sustituye S2-S4.
+--- v4/AUTHOR_NEXT_STEPS_ES.txt
++++ v5/AUTHOR_NEXT_STEPS_ES.txt
+@@ -1,30 +1,30 @@
+-ACTUALIZACIÓN DEL 21 DE OCTUBRE DE 2026
++REVISIÓN 5 — 21 DE OCTUBRE DE 2026
+ 
+-El original de separación ya fue revisado y repetido en esta etapa.
+-Falta volver a adjuntar XY_Conexion_Global_Reproducible_2026-10-19(1).zip:
+-ese adjunto no pudo copiarse. Es necesario para completar la auditoría
+-del camino y repetir toda la cadena de optimalidad.
++La conexión fue recuperada de los cinco volúmenes y su identidad coincide
++con el original registrado. Ya se reprodujo la cadena completa desde un
++directorio nuevo: FRESH_OPTIMAL_ANNIHILATION_BARRIER_PASS, 737,33 segundos,
++548 hashes de salidas globales comprobados. No hace falta volver a
++adjuntar ese original. CURRENT_AUDIT_ES.txt es el balance técnico actual.
+ 
+-El archivo CURRENT_AUDIT_ES.txt sustituye los balances técnicos anteriores
+-en cuanto al estado actual. Lo que sigue conserva indicaciones editoriales
+-históricas; no acredita nuevos pasos del certificado.
++El artículo incorpora la demostración del residual completo, las
++precisiones de alcance y la bibliografía revisada de 18 entradas. Las
++afiliaciones, email y ORCID suministrados están insertados. No se amplían
++las conclusiones a otras separaciones, configuraciones o mecanismos.
+ 
+-ESTADO DE LA REVISIÓN 3 — 20 DE OCTUBRE DE 2026
++Antes del envío corresponde al autor:
+ 
+-Las afiliaciones, email y ORCID suministrados están insertados. El
+-manuscrito y el suplemento están actualizados; el resumen identifica el
+-resultado concreto y la bibliografía contiene17referencias.
++1. Leer y asumir personalmente las pruebas, fuentes, resultados y
++   declaraciones; revisar financiación, direcciones postales y metadatos.
++2. Asegurar que S1-S5 y su índice sean accesibles a los revisores por una
++   vía admitida por SIADS. El ZIP pequeño S1 no sustituye los originales
++   S2-S4. Si S3 se entrega en cinco volúmenes, incluirlos todos y las
++   instrucciones de reconstrucción.
++3. Confirmar las declaraciones de originalidad, ausencia de envío
++   simultáneo y uso de IA según la política de la revista. La auditoría
++   asistida no sustituye esa responsabilidad ni el arbitraje editorial.
++4. Verificar cualquier identificador de un depósito público antes de
++   insertarlo. Aquí no se afirma que ya exista uno.
+ 
+-La auditoría de toda la CAP sigue pendiente. El siguiente paso es
+-proporcionar los originales de separación y conexión identificados en
+-el índice, revisar sus motores y repetir la cadena completa. Consultar
+-CURRENT_AUDIT_ES.txt: allí se distinguen comprobaciones realizadas y
+-limitaciones del motor que no se corrigieron en archivos congelados.
+-
+-Confirmar personalmente el contenido, las referencias, financiación si
+-corresponde, direcciones postales del formulario y declaraciones.
+-Garantizar que los revisores reciban fuentes, datos e índice de S1-S5
+-mediante una vía admitida por SIADS. Esta revisión no resuelve los límites
+-de carga de archivos del portal y no afirma que exista un depósito público.
+-
+-No se envió ningún manuscrito, mensaje ni depósito en esta revisión.
++Esta revisión no realizó un envío, un depósito público ni contactos
++con editores o revisores. Los límites del portal y la entrega final de
++los suplementos siguen siendo parte del trámite del autor.

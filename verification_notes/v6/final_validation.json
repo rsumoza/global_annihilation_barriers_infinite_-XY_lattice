@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "date": "2026-10-21",
+  "main_pages": 35,
+  "supplement_pages": 8,
+  "abstract_words": 213,
+  "original_global_chain_reexecuted_in_v6": false,
+  "preserved_full_replay_date": "2026-10-21",
+  "preserved_global_certificate_sha256": "b1cbb7206a0c7492ad6990213a48480c9d25e04a5a21fe1805f0195a871f5999",
+  "new_infinite_class": {
+    "radius": "1/20",
+    "coercivity": "43/2000",
+    "barrier_lower_strict": "0.00442867",
+    "base_radius": 4098,
+    "universal_completeness_proved": false,
+    "arbitrary_precision_general_interface_implemented": false
+  },
+  "arithmetic_report_normal_equals_optimized": true,
+  "new_demonstrations": 4,
+  "negative_controls_rejected": 8,
+  "new_math_source_sha256": "5291f626792b67f2d960f76189ff634f5c15feb12fa0ef1368adb2674bdae82f",
+  "independent_math_review_sha256": "c57d186260014e6e15c3c133b44825bf7c6f6a3d9dddf5b387c6c07145f1f653",
+  "main_pdf_sha256": "4a3e4be3d304355c47afe5d2ba23dc005d4d749e824d07e54bfd5ffdfeae6621",
+  "supplement_pdf_sha256": "feaea001c654946d575e2321e54342619fede6b633ed9ed28d31bd4690f7fb55",
+  "tex_final_warnings": [],
+  "visual_review": "All pages rendered; contact sheets inspected, new proof pages inspected at full resolution.",
+  "repository_published": false,
+  "journal_submitted": false,
+  "original_release_asset_identities_verified": true,
+  "limitations": [
+    "Same original interval backend; no independent interval engine or proof assistant.",
+    "Generic original NaN congruence flaw remains documented; protected fixed-input diagnostics retained.",
+    "Termination reuses fixed communication height, rather than finding new mechanisms.",
+    "Public Release URL/tag/commit and editorially accepted large-file delivery remain author actions."
+  ]
+}

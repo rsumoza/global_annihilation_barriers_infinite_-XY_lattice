@@ -1,0 +1,5824 @@
+{
+  "scope": "conditional arithmetic and topology; local interval chart proofs and geometry distance certificate are prerequisites",
+  "precision_bits": 160,
+  "level": {
+    "lower": "0.005500000000999999",
+    "upper": "0.005500000001000001"
+  },
+  "radius": {
+    "lower": "0.654999999999999999",
+    "upper": "0.655000000000000001"
+  },
+  "neighbor_distance": {
+    "lower": "0.030691052162572416",
+    "upper": "0.030691052162572417"
+  },
+  "geometry": {
+    "status": "DISK_AND_FACE_NEAREST_GRID_PASS",
+    "required_count": 109,
+    "supplied_count": 109,
+    "max_coordinate_error": {
+      "lower": "0.000000000000000000",
+      "upper": "0.000000000000005128"
+    },
+    "coverage_margin": {
+      "lower": "0.019999999999994873",
+      "upper": "0.019999999999994874"
+    },
+    "required_grid_indices": [
+      [
+        -5,
+        -3
+      ],
+      [
+        -5,
+        -2
+      ],
+      [
+        -5,
+        -1
+      ],
+      [
+        -5,
+        0
+      ],
+      [
+        -5,
+        1
+      ],
+      [
+        -5,
+        2
+      ],
+      [
+        -5,
+        3
+      ],
+      [
+        -4,
+        -4
+      ],
+      [
+        -4,
+        -3
+      ],
+      [
+        -4,
+        -2
+      ],
+      [
+        -4,
+        -1
+      ],
+      [
+        -4,
+        0
+      ],
+      [
+        -4,
+        1
+      ],
+      [
+        -4,
+        2
+      ],
+      [
+        -4,
+        3
+      ],
+      [
+        -4,
+        4
+      ],
+      [
+        -3,
+        -5
+      ],
+      [
+        -3,
+        -4
+      ],
+      [
+        -3,
+        -3
+      ],
+      [
+        -3,
+        -2
+      ],
+      [
+        -3,
+        -1
+      ],
+      [
+        -3,
+        0
+      ],
+      [
+        -3,
+        1
+      ],
+      [
+        -3,
+        2
+      ],
+      [
+        -3,
+        3
+      ],
+      [
+        -3,
+        4
+      ],
+      [
+        -3,
+        5
+      ],
+      [
+        -2,
+        -5
+      ],
+      [
+        -2,
+        -4
+      ],
+      [
+        -2,
+        -3
+      ],
+      [
+        -2,
+        -2
+      ],
+      [
+        -2,
+        -1
+      ],
+      [
+        -2,
+        0
+      ],
+      [
+        -2,
+        1
+      ],
+      [
+        -2,
+        2
+      ],
+      [
+        -2,
+        3
+      ],
+      [
+        -2,
+        4
+      ],
+      [
+        -2,
+        5
+      ],
+      [
+        -1,
+        -5
+      ],
+      [
+        -1,
+        -4
+      ],
+      [
+        -1,
+        -3
+      ],
+      [
+        -1,
+        -2
+      ],
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        0
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        2
+      ],
+      [
+        -1,
+        3
+      ],
+      [
+        -1,
+        4
+      ],
+      [
+        -1,
+        5
+      ],
+      [
+        0,
+        -5
+      ],
+      [
+        0,
+        -4
+      ],
+      [
+        0,
+        -3
+      ],
+      [
+        0,
+        -2
+      ],
+      [
+        0,
+        -1
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        -5
+      ],
+      [
+        1,
+        -4
+      ],
+      [
+        1,
+        -3
+      ],
+      [
+        1,
+        -2
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        -5
+      ],
+      [
+        2,
+        -4
+      ],
+      [
+        2,
+        -3
+      ],
+      [
+        2,
+        -2
+      ],
+      [
+        2,
+        -1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        -5
+      ],
+      [
+        3,
+        -4
+      ],
+      [
+        3,
+        -3
+      ],
+      [
+        3,
+        -2
+      ],
+      [
+        3,
+        -1
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        -4
+      ],
+      [
+        4,
+        -3
+      ],
+      [
+        4,
+        -2
+      ],
+      [
+        4,
+        -1
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        -3
+      ],
+      [
+        5,
+        -2
+      ],
+      [
+        5,
+        -1
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        3
+      ]
+    ]
+  },
+  "charts": [
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c000/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.007703401753972501",
+          "upper": "0.007703401753972502"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.014033037839235552",
+          "upper": "0.014033037839235553"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.013684365674282171",
+          "upper": "0.013684365674282172"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 0,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 2,
+          "outside": 2,
+          "accepted": 2,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 2
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c001/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.013644110758847276",
+          "upper": "0.013644110758847277"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.010411100813680837",
+          "upper": "0.010411100813680838"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.009529432676951143",
+          "upper": "0.009529432676951144"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 1,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c002/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.019453673345647117",
+          "upper": "0.019453673345647118"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.009354742305660000",
+          "upper": "0.009354742305660001"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.007848790424125908",
+          "upper": "0.007848790424125909"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 2,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c003/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.024596464401130501",
+          "upper": "0.024596464401130502"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.010803596974548388",
+          "upper": "0.010803596974548389"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.008690828922586088",
+          "upper": "0.008690828922586089"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 3,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c004/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.019453673355031843",
+          "upper": "0.019453673355031844"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.009354742308006194",
+          "upper": "0.009354742308006195"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.007848790425019117",
+          "upper": "0.007848790425019118"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 4,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c005/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.013644110759539778",
+          "upper": "0.013644110759539779"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.010411100813854013",
+          "upper": "0.010411100813854014"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.009529432677034822",
+          "upper": "0.009529432677034823"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 5,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c006/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.007703401758869747",
+          "upper": "0.007703401758869748"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.014033037840453407",
+          "upper": "0.014033037840453408"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.013684365675056707",
+          "upper": "0.013684365675056708"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 6,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 2,
+          "outside": 2,
+          "accepted": 2,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 2
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c007/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.008490006050829799",
+          "upper": "0.008490006050829800"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.012850175183889135",
+          "upper": "0.012850175183889136"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.012426046253628218",
+          "upper": "0.012426046253628219"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 7,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 2,
+          "outside": 2,
+          "accepted": 2,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 2
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c008/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.014471885648764039",
+          "upper": "0.014471885648764040"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.007535373708524739",
+          "upper": "0.007535373708524740"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.006542439348522774",
+          "upper": "0.006542439348522775"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 8,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 4,
+          "outside": 0,
+          "accepted": 4,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c009/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.020318199577713376",
+          "upper": "0.020318199577713377"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.004467107676995703",
+          "upper": "0.004467107676995704"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 9,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 4,
+          "outside": 0,
+          "accepted": 4,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c010/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.026017369289173366",
+          "upper": "0.026017369289173367"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.003655550219904988",
+          "upper": "0.003655550219904989"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 10,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 4,
+          "outside": 0,
+          "accepted": 4,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c011/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.031049895886626209",
+          "upper": "0.031049895886626210"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.005040191008067162",
+          "upper": "0.005040191008067163"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 11,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 4,
+          "outside": 0,
+          "accepted": 4,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c012/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.026017369291806572",
+          "upper": "0.026017369291806573"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.003655550220563370",
+          "upper": "0.003655550220563371"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 12,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 4,
+          "outside": 0,
+          "accepted": 4,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c013/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.020318199576288479",
+          "upper": "0.020318199576288480"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.004467107676639463",
+          "upper": "0.004467107676639464"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 13,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 4,
+          "outside": 0,
+          "accepted": 4,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c014/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.014471885646262337",
+          "upper": "0.014471885646262338"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.007535373707899151",
+          "upper": "0.007535373707899152"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.006542439348240475",
+          "upper": "0.006542439348240476"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 14,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 4,
+          "outside": 0,
+          "accepted": 4,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c015/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.008490006039483451",
+          "upper": "0.008490006039483452"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.012850175181052514",
+          "upper": "0.012850175181052515"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.012426046251925239",
+          "upper": "0.012426046251925240"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 15,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 2,
+          "outside": 2,
+          "accepted": 2,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 2
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c016/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.009211999989090121",
+          "upper": "0.009211999989090122"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.014054138685811334",
+          "upper": "0.014054138685811335"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.013554043548578431",
+          "upper": "0.013554043548578432"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 16,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 2,
+          "outside": 2,
+          "accepted": 2,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 2
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c017/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.015268301392942328",
+          "upper": "0.015268301392942329"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.007694499203608809",
+          "upper": "0.007694499203608810"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.006587958971015548",
+          "upper": "0.006587958971015549"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 17,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 4,
+          "outside": 0,
+          "accepted": 4,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c018/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.021178850622322072",
+          "upper": "0.021178850622322073"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.003258610700205610",
+          "upper": "0.003258610700205611"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 18,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 4,
+          "outside": 0,
+          "accepted": 4,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c019/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.026936924735016563",
+          "upper": "0.026936924735016564"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000757430961579501",
+          "upper": "0.000757430961579502"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 19,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 16,
+          "outside": 0,
+          "accepted": 10,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 8,
+          "33": 2
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c020/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.032529329433369630",
+          "upper": "0.032529329433369631"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000196273215364543",
+          "upper": "0.000196273215364544"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 20,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 20,
+          "outside": 0,
+          "accepted": 12,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4,
+          "32": 2,
+          "21": 2,
+          "33": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c021/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.037377201291949252",
+          "upper": "0.037377201291949253"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.001504685725883467",
+          "upper": "0.001504685725883468"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 21,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 22,
+          "outside": 0,
+          "accepted": 13,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "32": 4,
+          "20": 2,
+          "NO_LOW_POINT": 3,
+          "31": 2,
+          "22": 2
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c022/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.032529329434170665",
+          "upper": "0.032529329434170666"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000196273215564834",
+          "upper": "0.000196273215564835"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 22,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 20,
+          "outside": 0,
+          "accepted": 12,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "32": 2,
+          "21": 2,
+          "NO_LOW_POINT": 4,
+          "31": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c023/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.026936924743121002",
+          "upper": "0.026936924743121003"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000757430963605672",
+          "upper": "0.000757430963605673"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 23,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 16,
+          "outside": 0,
+          "accepted": 10,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "31": 2,
+          "NO_LOW_POINT": 8
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c024/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.021178850626227826",
+          "upper": "0.021178850626227827"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.003258610701182128",
+          "upper": "0.003258610701182129"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 24,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 4,
+          "outside": 0,
+          "accepted": 4,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c025/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.015268301405776963",
+          "upper": "0.015268301405776964"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.007694499206817374",
+          "upper": "0.007694499206817375"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.006587958972363784",
+          "upper": "0.006587958972363785"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 25,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 4,
+          "outside": 0,
+          "accepted": 4,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c026/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.009211999982365158",
+          "upper": "0.009211999982365159"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.014054138684129934",
+          "upper": "0.014054138684129935"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.013554043547627192",
+          "upper": "0.013554043547627193"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 26,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 2,
+          "outside": 2,
+          "accepted": 2,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 2
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c027/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.015935202256044800",
+          "upper": "0.015935202256044801"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.009581402921836541",
+          "upper": "0.009581402921836542"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.008374591840566252",
+          "upper": "0.008374591840566253"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 27,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c028/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.021947981380168311",
+          "upper": "0.021947981380168312"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.004425465344370632",
+          "upper": "0.004425465344370633"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 28,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 4,
+          "outside": 0,
+          "accepted": 4,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c029/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.027800680162110133",
+          "upper": "0.027800680162110134"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000884119144483918",
+          "upper": "0.000884119144483919"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 29,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 16,
+          "outside": 0,
+          "accepted": 10,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 10
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c030/polynomials.json",
+      "counts": {
+        "evaluated": 9,
+        "outside": 0,
+        "accepted": 7,
+        "unresolved": 0,
+        "deepest": 2,
+        "circle_cells": 0,
+        "collar_cells": 7
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.033516730930817889",
+          "upper": "0.033516730930817890"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000589317466876240",
+          "upper": "0.000589317466876241"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 30,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 22,
+          "outside": 0,
+          "accepted": 13,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "44": 2,
+          "31": 4,
+          "NO_LOW_POINT": 4,
+          "45": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c031/polynomials.json",
+      "counts": {
+        "evaluated": 9,
+        "outside": 0,
+        "accepted": 7,
+        "unresolved": 0,
+        "deepest": 2,
+        "circle_cells": 0,
+        "collar_cells": 7
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.038926097196021227",
+          "upper": "0.038926097196021228"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000042668943061467",
+          "upper": "0.000042668943061468"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 31,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 46,
+          "outside": 0,
+          "accepted": 25,
+          "unresolved": 0,
+          "deepest": 5
+        },
+        "assignments": {
+          "43": 4,
+          "32": 6,
+          "21": 2,
+          "45": 2,
+          "30": 3,
+          "NO_LOW_POINT": 2,
+          "44": 4,
+          "22": 2
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c032/polynomials.json",
+      "counts": {
+        "evaluated": 5,
+        "outside": 0,
+        "accepted": 4,
+        "unresolved": 0,
+        "deepest": 1,
+        "circle_cells": 0,
+        "collar_cells": 4
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.043633895628352129",
+          "upper": "0.043633895628352130"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000161515730714094",
+          "upper": "0.000161515730714095"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 32,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 40,
+          "outside": 0,
+          "accepted": 22,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "42": 2,
+          "33": 4,
+          "20": 2,
+          "44": 2,
+          "31": 4,
+          "21": 4,
+          "43": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c033/polynomials.json",
+      "counts": {
+        "evaluated": 9,
+        "outside": 0,
+        "accepted": 7,
+        "unresolved": 0,
+        "deepest": 2,
+        "circle_cells": 0,
+        "collar_cells": 7
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.038926097194119652",
+          "upper": "0.038926097194119653"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000042668942192801",
+          "upper": "0.000042668942192802"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 33,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 46,
+          "outside": 0,
+          "accepted": 25,
+          "unresolved": 0,
+          "deepest": 5
+        },
+        "assignments": {
+          "41": 2,
+          "34": 3,
+          "NO_LOW_POINT": 2,
+          "43": 2,
+          "32": 6,
+          "21": 2,
+          "42": 6,
+          "20": 2
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c034/polynomials.json",
+      "counts": {
+        "evaluated": 9,
+        "outside": 0,
+        "accepted": 7,
+        "unresolved": 0,
+        "deepest": 2,
+        "circle_cells": 0,
+        "collar_cells": 7
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.033516730930446046",
+          "upper": "0.033516730930446047"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000589317466637156",
+          "upper": "0.000589317466637157"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 34,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 22,
+          "outside": 0,
+          "accepted": 13,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4,
+          "42": 2,
+          "33": 4,
+          "41": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c035/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.027800680149733340",
+          "upper": "0.027800680149733341"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000884119141389655",
+          "upper": "0.000884119141389656"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 35,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 16,
+          "outside": 0,
+          "accepted": 10,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 10
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c036/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.021947981377514236",
+          "upper": "0.021947981377514237"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.004425465343707218",
+          "upper": "0.004425465343707219"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 36,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 4,
+          "outside": 0,
+          "accepted": 4,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c037/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.015935202262835227",
+          "upper": "0.015935202262835228"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.009581402923534205",
+          "upper": "0.009581402923534206"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.008374591841235406",
+          "upper": "0.008374591841235407"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 37,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c038/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.022486062243151144",
+          "upper": "0.022486062243151145"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.006658561096144374",
+          "upper": "0.006658561096144375"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.004639646631763787",
+          "upper": "0.004639646631763788"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 38,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c039/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.028471727498544788",
+          "upper": "0.028471727498544789"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002718342568147845",
+          "upper": "0.002718342568147846"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 39,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 4,
+          "outside": 0,
+          "accepted": 4,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c040/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.034288981472194685",
+          "upper": "0.034288981472194686"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000082495751428662",
+          "upper": "0.000082495751428663"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 40,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 18,
+          "outside": 0,
+          "accepted": 11,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4,
+          "56": 2,
+          "41": 3,
+          "57": 2
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c041/polynomials.json",
+      "counts": {
+        "evaluated": 9,
+        "outside": 0,
+        "accepted": 7,
+        "unresolved": 0,
+        "deepest": 2,
+        "circle_cells": 0,
+        "collar_cells": 7
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.039866892355764398",
+          "upper": "0.039866892355764399"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000172053831443940",
+          "upper": "0.000172053831443941"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 41,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 38,
+          "outside": 0,
+          "accepted": 21,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "57": 2,
+          "40": 2,
+          "NO_LOW_POINT": 2,
+          "55": 2,
+          "42": 4,
+          "33": 2,
+          "56": 4,
+          "34": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c042/polynomials.json",
+      "counts": {
+        "evaluated": 21,
+        "outside": 0,
+        "accepted": 16,
+        "unresolved": 0,
+        "deepest": 3,
+        "circle_cells": 0,
+        "collar_cells": 16
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.045196526842781487",
+          "upper": "0.045196526842781488"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000077094351460671",
+          "upper": "0.000077094351460672"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 42,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 44,
+          "outside": 0,
+          "accepted": 24,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "56": 2,
+          "41": 4,
+          "34": 2,
+          "54": 2,
+          "43": 4,
+          "32": 2,
+          "55": 4,
+          "33": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c043/polynomials.json",
+      "counts": {
+        "evaluated": 5,
+        "outside": 0,
+        "accepted": 4,
+        "unresolved": 0,
+        "deepest": 1,
+        "circle_cells": 0,
+        "collar_cells": 4
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.049797645084076777",
+          "upper": "0.049797645084076778"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000110489304143708",
+          "upper": "0.000110489304143709"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 43,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 40,
+          "outside": 0,
+          "accepted": 22,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "54": 4,
+          "42": 4,
+          "33": 2,
+          "53": 2,
+          "44": 4,
+          "31": 2,
+          "32": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c044/polynomials.json",
+      "counts": {
+        "evaluated": 21,
+        "outside": 0,
+        "accepted": 16,
+        "unresolved": 0,
+        "deepest": 3,
+        "circle_cells": 0,
+        "collar_cells": 16
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.045196526841238800",
+          "upper": "0.045196526841238801"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000077094350480402",
+          "upper": "0.000077094350480403"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 44,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 44,
+          "outside": 0,
+          "accepted": 24,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "54": 2,
+          "43": 4,
+          "32": 2,
+          "52": 2,
+          "45": 4,
+          "30": 2,
+          "53": 4,
+          "31": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c045/polynomials.json",
+      "counts": {
+        "evaluated": 9,
+        "outside": 0,
+        "accepted": 7,
+        "unresolved": 0,
+        "deepest": 2,
+        "circle_cells": 0,
+        "collar_cells": 7
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.039866892359311796",
+          "upper": "0.039866892359311797"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000172053833009442",
+          "upper": "0.000172053833009443"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 45,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 38,
+          "outside": 0,
+          "accepted": 21,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "53": 2,
+          "44": 4,
+          "31": 2,
+          "51": 2,
+          "46": 2,
+          "NO_LOW_POINT": 2,
+          "52": 4,
+          "30": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c046/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.034288981477057512",
+          "upper": "0.034288981477057513"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000082495752644859",
+          "upper": "0.000082495752644860"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 46,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 18,
+          "outside": 0,
+          "accepted": 11,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "52": 2,
+          "45": 3,
+          "NO_LOW_POINT": 4,
+          "51": 2
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c047/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.028471727504742998",
+          "upper": "0.028471727504742999"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002718342569697776",
+          "upper": "0.002718342569697777"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 47,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 4,
+          "outside": 0,
+          "accepted": 4,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c048/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.022486062230655816",
+          "upper": "0.022486062230655817"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.006658561093020562",
+          "upper": "0.006658561093020563"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.004639646630883765",
+          "upper": "0.004639646630883766"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 48,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c049/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.028316139071634307",
+          "upper": "0.028316139071634308"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.004845009326520356",
+          "upper": "0.004845009326520357"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.002077676363437280",
+          "upper": "0.002077676363437281"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 49,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c050/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.034382413446399437",
+          "upper": "0.034382413446399438"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002146144454647651",
+          "upper": "0.002146144454647652"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 50,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 8,
+          "outside": 0,
+          "accepted": 6,
+          "unresolved": 0,
+          "deepest": 1
+        },
+        "assignments": {
+          "NO_LOW_POINT": 6
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c051/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.040210093961184278",
+          "upper": "0.040210093961184279"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000434745898056045",
+          "upper": "0.000434745898056046"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 51,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 24,
+          "outside": 0,
+          "accepted": 14,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "52": 4,
+          "45": 2,
+          "NO_LOW_POINT": 3,
+          "68": 3,
+          "46": 2
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c052/polynomials.json",
+      "counts": {
+        "evaluated": 5,
+        "outside": 0,
+        "accepted": 4,
+        "unresolved": 0,
+        "deepest": 1,
+        "circle_cells": 0,
+        "collar_cells": 4
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.045786844016510819",
+          "upper": "0.045786844016510820"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000261421947398969",
+          "upper": "0.000261421947398970"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 52,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 36,
+          "outside": 0,
+          "accepted": 20,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "66": 2,
+          "53": 3,
+          "68": 2,
+          "51": 3,
+          "67": 4,
+          "44": 1,
+          "45": 4,
+          "46": 1
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c053/polynomials.json",
+      "counts": {
+        "evaluated": 5,
+        "outside": 0,
+        "accepted": 4,
+        "unresolved": 0,
+        "deepest": 1,
+        "circle_cells": 0,
+        "collar_cells": 4
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.051088869736016815",
+          "upper": "0.051088869736016816"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000133994073727753",
+          "upper": "0.000133994073727754"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 53,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 36,
+          "outside": 0,
+          "accepted": 20,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "54": 4,
+          "43": 2,
+          "52": 4,
+          "45": 2,
+          "66": 4,
+          "44": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c054/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.270000000000000017",
+        "upper": "0.270000000000000018"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.057430607020771458",
+          "upper": "0.057430607020771459"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.001774941605117690",
+          "upper": "0.001774941605117691"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 54,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 28,
+          "outside": 0,
+          "accepted": 16,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "64": 1,
+          "55": 3,
+          "66": 2,
+          "53": 3,
+          "65": 3,
+          "42": 1,
+          "43": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c055/polynomials.json",
+      "counts": {
+        "evaluated": 5,
+        "outside": 0,
+        "accepted": 4,
+        "unresolved": 0,
+        "deepest": 1,
+        "circle_cells": 0,
+        "collar_cells": 4
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.051088869726663840",
+          "upper": "0.051088869726663841"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000133994071904411",
+          "upper": "0.000133994071904412"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 55,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 36,
+          "outside": 0,
+          "accepted": 20,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "56": 4,
+          "41": 2,
+          "54": 4,
+          "43": 2,
+          "64": 4,
+          "42": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c056/polynomials.json",
+      "counts": {
+        "evaluated": 5,
+        "outside": 0,
+        "accepted": 4,
+        "unresolved": 0,
+        "deepest": 1,
+        "circle_cells": 0,
+        "collar_cells": 4
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.045786844021615152",
+          "upper": "0.045786844021615153"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000261421948521123",
+          "upper": "0.000261421948521124"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 56,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 36,
+          "outside": 0,
+          "accepted": 20,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "62": 2,
+          "57": 3,
+          "64": 2,
+          "55": 3,
+          "63": 4,
+          "40": 1,
+          "41": 4,
+          "42": 1
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c057/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.040210093978386641",
+          "upper": "0.040210093978386642"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000434745902356102",
+          "upper": "0.000434745902356103"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 57,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 24,
+          "outside": 0,
+          "accepted": 14,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3,
+          "56": 4,
+          "41": 2,
+          "62": 3,
+          "40": 2
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c058/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.034382413444157603",
+          "upper": "0.034382413444157604"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002146144454086791",
+          "upper": "0.002146144454086792"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 58,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 8,
+          "outside": 0,
+          "accepted": 6,
+          "unresolved": 0,
+          "deepest": 1
+        },
+        "assignments": {
+          "NO_LOW_POINT": 6
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c059/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.028316139069140504",
+          "upper": "0.028316139069140505"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.004845009325896806",
+          "upper": "0.004845009325896807"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.002077676363301168",
+          "upper": "0.002077676363301169"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 59,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c060/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.032282510074735056",
+          "upper": "0.032282510074735057"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.003551428560649380",
+          "upper": "0.003551428560649381"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000376841401414519",
+          "upper": "0.000376841401414520"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 60,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c061/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.037866217156892751",
+          "upper": "0.037866217156892752"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.001951672229699702",
+          "upper": "0.001951672229699703"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 61,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 18,
+          "outside": 0,
+          "accepted": 11,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 6,
+          "79": 2,
+          "62": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c062/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.043319905650779746",
+          "upper": "0.043319905650779747"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.001052586309912952",
+          "upper": "0.001052586309912953"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 62,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 32,
+          "outside": 0,
+          "accepted": 18,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 2,
+          "78": 2,
+          "63": 4,
+          "56": 2,
+          "80": 1,
+          "79": 4,
+          "57": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c063/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.048638273102441753",
+          "upper": "0.048638273102441754"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000354814196395703",
+          "upper": "0.000354814196395704"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 63,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 44,
+          "outside": 0,
+          "accepted": 24,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "79": 2,
+          "62": 4,
+          "57": 2,
+          "77": 2,
+          "64": 4,
+          "55": 2,
+          "78": 4,
+          "56": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c064/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.053780080562988250",
+          "upper": "0.053780080562988251"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000166241748043199",
+          "upper": "0.000166241748043200"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 64,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 44,
+          "outside": 0,
+          "accepted": 24,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "78": 2,
+          "63": 4,
+          "56": 2,
+          "76": 2,
+          "65": 4,
+          "54": 2,
+          "77": 4,
+          "55": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c065/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.058243925668104348",
+          "upper": "0.058243925668104349"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000988070094814187",
+          "upper": "0.000988070094814188"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 65,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 36,
+          "outside": 0,
+          "accepted": 20,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "76": 4,
+          "64": 4,
+          "55": 2,
+          "75": 2,
+          "66": 4,
+          "53": 1,
+          "54": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c066/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.053780080561082248",
+          "upper": "0.053780080561082249"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000166241747566712",
+          "upper": "0.000166241747566713"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 66,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 44,
+          "outside": 0,
+          "accepted": 24,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "76": 2,
+          "65": 4,
+          "54": 2,
+          "74": 2,
+          "67": 4,
+          "52": 2,
+          "75": 4,
+          "53": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c067/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.048638273099897501",
+          "upper": "0.048638273099897502"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.000354814195759723",
+          "upper": "0.000354814195759724"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 67,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 44,
+          "outside": 0,
+          "accepted": 24,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "75": 2,
+          "66": 4,
+          "53": 2,
+          "73": 2,
+          "68": 4,
+          "51": 2,
+          "74": 4,
+          "52": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c068/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.043319905651273086",
+          "upper": "0.043319905651273087"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.001052586310036357",
+          "upper": "0.001052586310036358"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 68,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 32,
+          "outside": 0,
+          "accepted": 18,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "74": 2,
+          "67": 4,
+          "52": 2,
+          "NO_LOW_POINT": 2,
+          "73": 4,
+          "72": 1,
+          "51": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c069/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.037866217166848064",
+          "upper": "0.037866217166848065"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.001951672232188494",
+          "upper": "0.001951672232188495"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 69,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 18,
+          "outside": 0,
+          "accepted": 11,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "73": 2,
+          "68": 3,
+          "NO_LOW_POINT": 6
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c070/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.032282510078342565",
+          "upper": "0.032282510078342566"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.003551428561550972",
+          "upper": "0.003551428561550973"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000376841401606602",
+          "upper": "0.000376841401606603"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 70,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c071/polynomials.json",
+      "counts": {
+        "evaluated": 5,
+        "outside": 0,
+        "accepted": 4,
+        "unresolved": 0,
+        "deepest": 1,
+        "circle_cells": 3,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.035319784261112490",
+          "upper": "0.035319784261112491"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002718890514523156",
+          "upper": "0.002718890514523157"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000242211017934747",
+          "upper": "0.000242211017934748"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 71,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c072/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.040742549744349530",
+          "upper": "0.040742549744349531"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002271844014676539",
+          "upper": "0.002271844014676540"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 72,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 26,
+          "outside": 0,
+          "accepted": 15,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "90": 2,
+          "73": 4,
+          "68": 2,
+          "NO_LOW_POINT": 6,
+          "91": 1
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c073/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.046039336566386898",
+          "upper": "0.046039336566386899"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.001869929242683294",
+          "upper": "0.001869929242683295"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 73,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 38,
+          "outside": 0,
+          "accepted": 21,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "89": 2,
+          "74": 4,
+          "67": 2,
+          "NO_LOW_POINT": 4,
+          "90": 4,
+          "91": 1,
+          "68": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c074/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.051193344475099838",
+          "upper": "0.051193344475099839"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.001153022896933202",
+          "upper": "0.001153022896933203"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 74,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 44,
+          "outside": 0,
+          "accepted": 24,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "88": 2,
+          "75": 4,
+          "66": 2,
+          "90": 2,
+          "73": 4,
+          "68": 2,
+          "89": 4,
+          "67": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c075/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.056173100338395487",
+          "upper": "0.056173100338395488"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.001200626457481970",
+          "upper": "0.001200626457481971"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 75,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 44,
+          "outside": 0,
+          "accepted": 24,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "87": 2,
+          "76": 4,
+          "65": 2,
+          "89": 2,
+          "74": 4,
+          "67": 2,
+          "88": 4,
+          "66": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c076/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.060519548053663138",
+          "upper": "0.060519548053663139"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.001947330797451327",
+          "upper": "0.001947330797451328"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 76,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 40,
+          "outside": 0,
+          "accepted": 22,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "86": 2,
+          "77": 4,
+          "64": 2,
+          "88": 2,
+          "75": 4,
+          "65": 4,
+          "87": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c077/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.056173100339225983",
+          "upper": "0.056173100339225984"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.001200626457689571",
+          "upper": "0.001200626457689572"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 77,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 44,
+          "outside": 0,
+          "accepted": 24,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "85": 2,
+          "78": 4,
+          "63": 2,
+          "87": 2,
+          "76": 4,
+          "65": 2,
+          "86": 4,
+          "64": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c078/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.051193344474643207",
+          "upper": "0.051193344474643208"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.001153022896819039",
+          "upper": "0.001153022896819040"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 78,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 44,
+          "outside": 0,
+          "accepted": 24,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "84": 2,
+          "79": 4,
+          "62": 2,
+          "86": 2,
+          "77": 4,
+          "64": 2,
+          "85": 4,
+          "63": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c079/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.046039336568915726",
+          "upper": "0.046039336568915727"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.001869929243315480",
+          "upper": "0.001869929243315481"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 79,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 38,
+          "outside": 0,
+          "accepted": 21,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4,
+          "85": 2,
+          "78": 4,
+          "63": 2,
+          "83": 1,
+          "84": 4,
+          "62": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c080/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.040742549744700453",
+          "upper": "0.040742549744700454"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002271844014764309",
+          "upper": "0.002271844014764310"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 80,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 26,
+          "outside": 0,
+          "accepted": 15,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 6,
+          "84": 2,
+          "79": 4,
+          "62": 2,
+          "83": 1
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c081/polynomials.json",
+      "counts": {
+        "evaluated": 5,
+        "outside": 0,
+        "accepted": 4,
+        "unresolved": 0,
+        "deepest": 1,
+        "circle_cells": 3,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.035319784265816229",
+          "upper": "0.035319784265816230"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002718890515699319",
+          "upper": "0.002718890515699320"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000242211018161945",
+          "upper": "0.000242211018161946"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 81,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c082/polynomials.json",
+      "counts": {
+        "evaluated": 4,
+        "outside": 5,
+        "accepted": 2,
+        "unresolved": 0,
+        "deepest": 2,
+        "circle_cells": 2,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.038137999705491869",
+          "upper": "0.038137999705491870"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002220313103427093",
+          "upper": "0.002220313103427094"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000000618332592352",
+          "upper": "0.000000618332592353"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 82,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 4,
+          "outside": 2,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 1
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c083/polynomials.json",
+      "counts": {
+        "evaluated": 12,
+        "outside": 1,
+        "accepted": 9,
+        "unresolved": 0,
+        "deepest": 3,
+        "circle_cells": 6,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.043408539769828558",
+          "upper": "0.043408539769828559"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002898594017362923",
+          "upper": "0.002898594017362924"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000061632750288888",
+          "upper": "0.000061632750288889"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 83,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 27,
+          "outside": 1,
+          "accepted": 15,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4,
+          "100": 2,
+          "84": 4,
+          "79": 2,
+          "101": 2,
+          "80": 1
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c084/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.048549127364995810",
+          "upper": "0.048549127364995811"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002810105660906931",
+          "upper": "0.002810105660906932"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 84,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 42,
+          "outside": 0,
+          "accepted": 23,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "101": 2,
+          "83": 2,
+          "NO_LOW_POINT": 2,
+          "99": 2,
+          "85": 4,
+          "78": 2,
+          "100": 4,
+          "80": 1,
+          "79": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c085/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.053546100333808619",
+          "upper": "0.053546100333808620"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002641865596713547",
+          "upper": "0.002641865596713548"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 85,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 44,
+          "outside": 0,
+          "accepted": 24,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "100": 2,
+          "84": 4,
+          "79": 2,
+          "98": 2,
+          "86": 4,
+          "77": 2,
+          "99": 4,
+          "78": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c086/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.058375055988104328",
+          "upper": "0.058375055988104329"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002925209423820427",
+          "upper": "0.002925209423820428"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 86,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 44,
+          "outside": 0,
+          "accepted": 24,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "99": 2,
+          "85": 4,
+          "78": 2,
+          "97": 2,
+          "87": 4,
+          "76": 2,
+          "98": 4,
+          "77": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c087/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.062607007879439311",
+          "upper": "0.062607007879439312"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.003598256887926199",
+          "upper": "0.003598256887926200"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 87,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 40,
+          "outside": 0,
+          "accepted": 22,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "98": 2,
+          "86": 4,
+          "77": 2,
+          "96": 1,
+          "88": 4,
+          "75": 2,
+          "97": 3,
+          "76": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c088/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.058375055989138576",
+          "upper": "0.058375055989138577"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002925209424078953",
+          "upper": "0.002925209424078954"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 88,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 44,
+          "outside": 0,
+          "accepted": 24,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "97": 2,
+          "87": 4,
+          "76": 2,
+          "95": 2,
+          "89": 4,
+          "74": 2,
+          "96": 4,
+          "75": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c089/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.053546100331713354",
+          "upper": "0.053546100331713355"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002641865596189747",
+          "upper": "0.002641865596189748"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 89,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 44,
+          "outside": 0,
+          "accepted": 24,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "96": 2,
+          "88": 4,
+          "75": 2,
+          "94": 2,
+          "90": 4,
+          "73": 2,
+          "95": 4,
+          "74": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c090/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.048549127363303117",
+          "upper": "0.048549127363303118"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002810105660483709",
+          "upper": "0.002810105660483710"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 90,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 42,
+          "outside": 0,
+          "accepted": 23,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "95": 2,
+          "89": 4,
+          "74": 2,
+          "93": 2,
+          "91": 2,
+          "NO_LOW_POINT": 2,
+          "94": 4,
+          "73": 4,
+          "72": 1
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c091/polynomials.json",
+      "counts": {
+        "evaluated": 12,
+        "outside": 1,
+        "accepted": 9,
+        "unresolved": 0,
+        "deepest": 3,
+        "circle_cells": 6,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.043408539767427572",
+          "upper": "0.043408539767427573"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002898594016762741",
+          "upper": "0.002898594016762742"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000061632750196992",
+          "upper": "0.000061632750196993"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 91,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 27,
+          "outside": 1,
+          "accepted": 15,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "94": 2,
+          "90": 4,
+          "73": 2,
+          "NO_LOW_POINT": 4,
+          "93": 2,
+          "72": 1
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c092/polynomials.json",
+      "counts": {
+        "evaluated": 4,
+        "outside": 5,
+        "accepted": 2,
+        "unresolved": 0,
+        "deepest": 2,
+        "circle_cells": 2,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.038137999706169834",
+          "upper": "0.038137999706169835"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.002220313103596476",
+          "upper": "0.002220313103596477"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000000618332634939",
+          "upper": "0.000000618332634940"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 92,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 4,
+          "outside": 2,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 1
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c093/polynomials.json",
+      "counts": {
+        "evaluated": 28,
+        "outside": 17,
+        "accepted": 17,
+        "unresolved": 0,
+        "deepest": 4,
+        "circle_cells": 11,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.045894467614806999",
+          "upper": "0.045894467614807000"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.003507663758890001",
+          "upper": "0.003507663758890002"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000000446556014145",
+          "upper": "0.000000446556014146"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 93,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 15,
+          "outside": 3,
+          "accepted": 8,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 2,
+          "94": 2,
+          "90": 2,
+          "91": 2
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c094/polynomials.json",
+      "counts": {
+        "evaluated": 25,
+        "outside": 4,
+        "accepted": 18,
+        "unresolved": 0,
+        "deepest": 4,
+        "circle_cells": 8,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.050883556592880558",
+          "upper": "0.050883556592880559"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.004068746138988205",
+          "upper": "0.004068746138988206"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000015529385035865",
+          "upper": "0.000015529385035866"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 94,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 26,
+          "outside": 2,
+          "accepted": 14,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3,
+          "95": 2,
+          "89": 2,
+          "93": 2,
+          "90": 4,
+          "91": 1
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c095/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.055731588106694740",
+          "upper": "0.055731588106694741"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.004434395994764094",
+          "upper": "0.004434395994764095"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 95,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 28,
+          "outside": 0,
+          "accepted": 16,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4,
+          "96": 2,
+          "88": 2,
+          "94": 2,
+          "90": 2,
+          "89": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c096/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.060419401477748002",
+          "upper": "0.060419401477748003"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.004974052157079845",
+          "upper": "0.004974052157079846"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 96,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 26,
+          "outside": 0,
+          "accepted": 15,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3,
+          "97": 2,
+          "87": 2,
+          "95": 2,
+          "89": 2,
+          "88": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c097/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.064248094751481886",
+          "upper": "0.064248094751481887"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.005578326115804181",
+          "upper": "0.005578326115804182"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 97,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 22,
+          "outside": 0,
+          "accepted": 13,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3,
+          "98": 2,
+          "86": 1,
+          "96": 2,
+          "88": 2,
+          "87": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c098/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.060419401478424504",
+          "upper": "0.060419401478424505"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.004974052157248880",
+          "upper": "0.004974052157248881"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 98,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 26,
+          "outside": 0,
+          "accepted": 15,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3,
+          "99": 2,
+          "85": 2,
+          "97": 2,
+          "87": 2,
+          "86": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c099/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 0,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.055731588106723627",
+          "upper": "0.055731588106723628"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.004434395994771243",
+          "upper": "0.004434395994771244"
+        },
+        "circle_energy_minus_level": null
+      },
+      "unresolved_examples": [],
+      "id": 99,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 28,
+          "outside": 0,
+          "accepted": 16,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 4,
+          "100": 2,
+          "84": 2,
+          "98": 2,
+          "86": 2,
+          "85": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c100/polynomials.json",
+      "counts": {
+        "evaluated": 25,
+        "outside": 4,
+        "accepted": 18,
+        "unresolved": 0,
+        "deepest": 4,
+        "circle_cells": 8,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.050883556592703188",
+          "upper": "0.050883556592703189"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.004068746138943887",
+          "upper": "0.004068746138943888"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000015529385030146",
+          "upper": "0.000015529385030147"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 100,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 26,
+          "outside": 2,
+          "accepted": 14,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "101": 2,
+          "NO_LOW_POINT": 3,
+          "99": 2,
+          "85": 2,
+          "83": 1,
+          "84": 4
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c101/polynomials.json",
+      "counts": {
+        "evaluated": 28,
+        "outside": 17,
+        "accepted": 17,
+        "unresolved": 0,
+        "deepest": 4,
+        "circle_cells": 11,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.045894467615043942",
+          "upper": "0.045894467615043943"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.003507663758949271",
+          "upper": "0.003507663758949272"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000000446556018151",
+          "upper": "0.000000446556018152"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 101,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 15,
+          "outside": 3,
+          "accepted": 8,
+          "unresolved": 0,
+          "deepest": 3
+        },
+        "assignments": {
+          "NO_LOW_POINT": 2,
+          "100": 2,
+          "84": 2,
+          "83": 2
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c102/polynomials.json",
+      "counts": {
+        "evaluated": 8,
+        "outside": 5,
+        "accepted": 5,
+        "unresolved": 0,
+        "deepest": 2,
+        "circle_cells": 4,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.053060869732372881",
+          "upper": "0.053060869732372882"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.004216597287304432",
+          "upper": "0.004216597287304433"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000061970789546319",
+          "upper": "0.000061970789546320"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 102,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 5,
+          "outside": 3,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 2
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c103/polynomials.json",
+      "counts": {
+        "evaluated": 5,
+        "outside": 0,
+        "accepted": 4,
+        "unresolved": 0,
+        "deepest": 1,
+        "circle_cells": 3,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.057767038297328551",
+          "upper": "0.057767038297328552"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.005482384660124214",
+          "upper": "0.005482384660124215"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000081391063330328",
+          "upper": "0.000081391063330329"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 103,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c104/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.061958637408006668",
+          "upper": "0.061958637408006669"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.006587886615058375",
+          "upper": "0.006587886615058376"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000216214178248834",
+          "upper": "0.000216214178248835"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 104,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c105/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.064605204750869925",
+          "upper": "0.064605204750869926"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.007378429731072786",
+          "upper": "0.007378429731072787"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000646120445174901",
+          "upper": "0.000646120445174902"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 105,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c106/polynomials.json",
+      "counts": {
+        "evaluated": 1,
+        "outside": 0,
+        "accepted": 1,
+        "unresolved": 0,
+        "deepest": 0,
+        "circle_cells": 1,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.061958637408600448",
+          "upper": "0.061958637408600449"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.006587886615207028",
+          "upper": "0.006587886615207029"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000216214178275360",
+          "upper": "0.000216214178275361"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 106,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c107/polynomials.json",
+      "counts": {
+        "evaluated": 5,
+        "outside": 0,
+        "accepted": 4,
+        "unresolved": 0,
+        "deepest": 1,
+        "circle_cells": 3,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.057767038296036351",
+          "upper": "0.057767038296036352"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.005482384659801374",
+          "upper": "0.005482384659801375"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000081391063268369",
+          "upper": "0.000081391063268370"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 107,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 3,
+          "outside": 1,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 0
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    },
+    {
+      "status": "CHART_RADIAL_AND_CIRCLE_PASS",
+      "path": "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c108/polynomials.json",
+      "counts": {
+        "evaluated": 8,
+        "outside": 5,
+        "accepted": 5,
+        "unresolved": 0,
+        "deepest": 2,
+        "circle_cells": 4,
+        "collar_cells": 1
+      },
+      "R_in": {
+        "lower": "0.250000000000000000",
+        "upper": "0.250000000000000000"
+      },
+      "minima": {
+        "collar_derivative": {
+          "lower": "0.053060869732823498",
+          "upper": "0.053060869732823499"
+        },
+        "collar_energy_minus_level": {
+          "lower": "0.004216597287417214",
+          "upper": "0.004216597287417215"
+        },
+        "circle_energy_minus_level": {
+          "lower": "0.000061970789563868",
+          "upper": "0.000061970789563869"
+        }
+      },
+      "unresolved_examples": [],
+      "id": 108,
+      "coordinate_faces": {
+        "status": "ALL_COORDINATE_FACES_COVERED_BELOW_LEVEL",
+        "counts": {
+          "evaluated": 5,
+          "outside": 3,
+          "accepted": 3,
+          "unresolved": 0,
+          "deepest": 2
+        },
+        "assignments": {
+          "NO_LOW_POINT": 3
+        },
+        "unresolved_examples": []
+      }
+    }
+  ],
+  "boundary_mode": "faces",
+  "status": "CONDITIONAL_ATLAS_BOUNDARY_PASS",
+  "input_hashes": {
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/atlas_manifest.json": "92c002f5a5b9e4aafd34073dbccfa1a15551c51d17e45ef83c501883b6fdf0d6",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/grid.json": "5027d36a43a49f620985b7157f504e64ecd12e5888891bd5af4cc289145cd22f",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/geometry.json": "13076bc4aaeebcdda84c5e4aa795a47e0cfd5fc992e7acaa72414f8f85f9a186",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c000/polynomials.json": "e8ea7e5a20d6330fbb50ccc9c163376f36d038416fbd20b5b1cc3a8433985457",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c001/polynomials.json": "efc1adf070eb8c940f9f47e5f04436608454550f8108d7e04a3c6793044ae892",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c002/polynomials.json": "8a332f3843432e2a554f503676442a96dcf73e3f105311be454e691313ade563",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c003/polynomials.json": "d93d4984d867d19dda7f2bc39620620f7d5ed18ac0829a2a4bf5f02129636313",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c004/polynomials.json": "ab75ed768506d72964b6e4ab5513e4cb7715a28547e0b55f73d0233ce5d999a4",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c005/polynomials.json": "19c619600393ebe94047174972b3badbbac90f6d48472654b07fe1cf3358c0ad",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c006/polynomials.json": "a69c910e5eae254239f850590a8fe5c4edb9d6a913269c492a0d66c5bfccc27b",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c007/polynomials.json": "947f21f259dc5f4bcda730f45b6426b5724c2abc0250d8573c1ece0039672009",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c008/polynomials.json": "76bb2b8c452ffffb07abe300c2b2c60b464b851554b74aa251737f00047454c1",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c009/polynomials.json": "2e3b4800ce460dd4d49fc457c1690df399fa0a1dbf8edfeee29db6be67de3a3e",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c010/polynomials.json": "f82728e79fffa908dbef6212c38b204b09e9a3b9eb50b3852b5dabf3bb3fc414",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c011/polynomials.json": "cba0eda71ad3b4a5b5e1c277ccb6870b244e11aa581583a5d11f8a1048cbec3a",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c012/polynomials.json": "a640dff37498547108c02228896909d39d5021ae1fc9f03c7a4df16cad13c222",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c013/polynomials.json": "60a5a92398611c9c7be1a11f4a28f498618a0913c072e7b9bfa5376bd67a54d4",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c014/polynomials.json": "a2235fe7b96cd3e9a81a8d10fbcc16f035ecd341b7ddfbe126054265afb68651",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c015/polynomials.json": "609824335e811edc2e5dfaa1b96d9c3b11cf750ac93699220f0f33dfdfcee9d0",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c016/polynomials.json": "65c252817da38cc2c7a3d70986254a725959f82e7338a35c1be2044b2de6cf7c",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c017/polynomials.json": "2ce7650ec6a1becce826636738bd0b46e280faeda55dbf57976fc70908ecfd41",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c018/polynomials.json": "87b4eacbd97c05554fe73e65fb18f28feb403673f5586a515ad2df8f37f15d97",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c019/polynomials.json": "10bf30ba4618dc1141995a89fc0007ed9913184c52b7a01eed618d45429ac883",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c020/polynomials.json": "10c8d890a43c9e532ccfeda72d9d48b0093a3c7922dbdda7238fd2338296352e",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c021/polynomials.json": "1b5c91ee61f846c32b206799903f49e1b5c4541262bf8aa224e2011ea2c02149",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c022/polynomials.json": "5b859f5b7f04a660ff6ff78ce3f03c52310bb29587b7c22d498393de3b618708",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c023/polynomials.json": "3fb1ddbf9ebd1543465bc17d34925c699983ccc2576ea5afe22eb7f6116365a5",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c024/polynomials.json": "6521c5653295416aea075c8afd52d6109f25bf22ddbf23eeeeba4ec115175624",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c025/polynomials.json": "1dcbf03f523a4a362cf863ad94f78452e6fa5ca4bb2c0c40a586a6f518bd112d",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c026/polynomials.json": "b08330ee10beb7532a574a054e5008ea6094b424b5d79ac53ed155702ac9ddf6",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c027/polynomials.json": "ce3fbe42e8e7f29a90e8d4a39c13892cdef88b2d99940af11b637055da56a9c6",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c028/polynomials.json": "0e3a2828bacd4318694de5fbb15266939dc8a9a0e49600f9417e69eeee375f20",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c029/polynomials.json": "490ab7e0c15c884ae7e623abf1ddcc6c0e7c89d3704120ea3be09e5c448cebaa",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c030/polynomials.json": "a29954b136aa4c4a03b6cb8f11256bf9888344c3e412e785cf6e688a20709ef9",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c031/polynomials.json": "c1d624f2d57eff385a331c0db81f0f53fbe82bc8006b01597f98e204c4358c48",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c032/polynomials.json": "a7e3630584809d9e33f65ed5ff06bb38c0df140cabc1c4f5910472f72d215855",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c033/polynomials.json": "f12c9e5b3657298116f45244d04c7f7a705a0b2859a1d946241b5ae407604ea6",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c034/polynomials.json": "4536ee2dbff2d292994f0064c52bb428413361f293d0da11b103f3fc981b93ab",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c035/polynomials.json": "59052154714a408ae414de1e106bb38f6b10b996fa064ba8901a097bc7b4fdcc",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c036/polynomials.json": "c6130b21d3586af6a6269fb9a9278c26962ffd8619f8cb94dce31755e78f9e24",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c037/polynomials.json": "dc088db5666c849db147c0069532ee7b62e2b755a8cdb851198a1563a54d45dc",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c038/polynomials.json": "0bbdf4eb52ed5dd6bd852f9f7476407def79c246035b9075fad5c85438663411",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c039/polynomials.json": "31ef89d2b81a9e943a4c8c3a29e7b48bcb069c4cb5088a34347621b12c205120",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c040/polynomials.json": "51340e14fd966fe79d0b593f1ad6008603b481463c354c5e54e342d50a02dd99",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c041/polynomials.json": "b956406e2363b56dc82e24664ffa1deb4ebe14730ccf416c6e49a12bfb88240d",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c042/polynomials.json": "3c25405de6d025837d1180f7dc2f1ab3859090a13b78e4dbef175ce1b71d5a2d",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c043/polynomials.json": "f96a83c329fb02652413276775715b76ce2ad40b4deceacad502acf0da991710",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c044/polynomials.json": "5e60ff40d40451e521c716b84ed27db4e1959ef8cfc96e4816b1d23d06c38771",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c045/polynomials.json": "4660c2748ea4e18959a8815fcc851b55c07686681a06a47004a1467719a6dd79",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c046/polynomials.json": "80a5038c2531506043c6b4bffe414b20831452c972fba475cabbe6af0c446a17",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c047/polynomials.json": "474b8f90c150c6f2318e46832f5f66b0abead6a7f42e53ea4ff0f33cd6f4baa9",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c048/polynomials.json": "e01153d556f5aed9d3aade7671d14cb251576fa4df08613ab3044c74351ee582",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c049/polynomials.json": "8cf2fc428349f58f706ea589a4c39eed6866755245e87398ff29921659f10cd0",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c050/polynomials.json": "dfd61231df21862386443e3a0017085a3527e4fb979014a0748d23a349845f6b",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c051/polynomials.json": "be36ebf345d1a35ec7550f9a1f704156253e5ec4e11f1e57c2d3928a0496d7bd",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c052/polynomials.json": "b4e95d98c438484e5c880a6f15b8c17fea74f07148cbefbd6ec3ddd0b582bd93",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c053/polynomials.json": "d561dfbe96f03802ebbbee49dd8f82f7a2db4fb72dd442103a5b7433802e25d0",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c054/polynomials.json": "a8583345729bc853b7161620d567fb2098ff2247b0f42ce9b92fb127c0464198",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c055/polynomials.json": "f16188bf12162b5c3f9ad73b6c2aef98709d00ea2e76ae0402ed1a634e0864d6",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c056/polynomials.json": "563858fed7cce824c851723fdd22b9a9b286398a2e207e5e93b63678b398f830",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c057/polynomials.json": "e6c5de3ec5ffcb2278b573668e4af5562d3d35dfc0ead4ac62b42a4482b81a76",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c058/polynomials.json": "393ab70cbaaf0b504cf3fba6ed06ebb7036a2ecf64453d26da47cb26e9ae683d",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c059/polynomials.json": "0d805b7982d95b24e3cf59eeed260e00b1c7213801f59030f61d1fcc9cd96288",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c060/polynomials.json": "6d1546cf61918c65685cc44265008a8ae1cfb57f13895e886da064417ec2b1ca",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c061/polynomials.json": "c66b7e746326c7f1dfb0276b1b030275aee9ec2b37b33aa89a8fd1f9139b1818",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c062/polynomials.json": "1d43713ca25e3eafdc819c17e93faee732f937a0f0f272a922e2d6f866ff260e",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c063/polynomials.json": "a9f3c52aa86019bb24d398f690518a2e31233fe0d1d81d8d9c5770080d8ce94c",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c064/polynomials.json": "232b0048507a812cd0964ba59900f4915a8b719a50346a2ecea052d80cbe7c91",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c065/polynomials.json": "e1b0dd2e4584765f1729fa5d4b98d5944fe3e9429e5954ef66389a6fcc4dd8b5",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c066/polynomials.json": "f582e12679754ebf8ed8daa039090c69603a800acc64c0f2e39bdb051b9577fb",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c067/polynomials.json": "92255ea23aaf184728175ca0ce711984729abbf57bcc83bdbb3a5f9fd9554134",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c068/polynomials.json": "f4c47c981bc0d978121acc65ee5157f8318d9d773b0a14c468fd064e343b1e5d",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c069/polynomials.json": "284a87bfddea5d17a6faa1e30cba5b2a7a13f4d42bfda6c1edc7e40227f7ab13",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c070/polynomials.json": "376918cd9dac2eefcf70b8d97cc0ebf80621d4c0a6b274d8bd6ff826e9a14327",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c071/polynomials.json": "408fd14dd560ab15ffd798662cc53c70a0338e023e013e6fbef8a05e2db5d51a",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c072/polynomials.json": "b1d73fbf2888180474490552dda664477c3550c20bc68c389c171904b07b7f61",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c073/polynomials.json": "e8d2c785fc6a7b74730748f5bff91ecf295d924131dd29baca7e50f4f64d9329",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c074/polynomials.json": "65a1356e5333ffacf2c99bbe49567d7c223c5bcdf35a455b0876e503acc9e3a7",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c075/polynomials.json": "16d66892bbc8cf08c1b0e1339606bda466a1646945e5c8069160d090cca97dd4",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c076/polynomials.json": "c0db6ed549bb393d92c7963399ae3be27ebf9d5c472756003e4992fb14e323aa",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c077/polynomials.json": "3747cc2a2c6688b1d52ac391f5e8310a405d766883ca59e25f1c864f16a6d9c2",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c078/polynomials.json": "0e220b16cb506f501eca17584350ec95905331f4b0659b4d807cc52fedb2eeef",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c079/polynomials.json": "f9af3ddd31b0dde7861643e578f6039b94aca88c9ab575d7d970ca5a02de3b49",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c080/polynomials.json": "692a66a97abde5e38dbfff2aa91cee4bccc45dfd224163a298fb5290b00bb1d0",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c081/polynomials.json": "edbac7e7ce6cec955b7a2768f3c7fb48c531c7e29063ef541c65a6595ab841fd",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c082/polynomials.json": "fd6a1c8eb0bd0653198f0bbe71ca8c30dafe1dde2cf50f0727445eaa22850ce6",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c083/polynomials.json": "9a2c0d13a844b281628c9369542a1f82fe0b6b2e3ec45051bd77ad5fd56bfea8",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c084/polynomials.json": "5638419e61a44d50d411ecf76d52c54b5791da45bd76bddf6bb1edb957f03fa8",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c085/polynomials.json": "6a8c25d056c3a6d016264e5cf75fb2074e3ea33bb619456e29f69e057dbe8158",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c086/polynomials.json": "0434ddc3cd75dc69bccb858ed015ccd9ce06a0ef269e7c94d01b4d67c5641f0b",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c087/polynomials.json": "07714d8ec8eda3681399e024e9e33a87824b6e05fb32656d2c40e65f9c4f1b51",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c088/polynomials.json": "2111d7e92715716f9e228e4740cd2e028013a0180a3520d647cf1118b88d0542",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c089/polynomials.json": "b737639d798a97b04597cb8a6ad4d7370df28c1cd14860e48eb8a3190caa21a3",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c090/polynomials.json": "fd4038fafd9b9675d4e60197c2fd2469e806d81b2b14d3e8e9bc70a59ab402af",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c091/polynomials.json": "a73555142de03fba18615f80c8c6127013d89576079be0c91b78861cc31b149c",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c092/polynomials.json": "9e30a8d7849409ca8ca4826e6e1737fb1a45f93efd838a2a437fb58eb978c44f",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c093/polynomials.json": "fcdd811e4f3f719a4edd2443757290dd3a3061cf74f08865fb030356fc854be0",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c094/polynomials.json": "b069888ca68d1499d1b2e55c7c5740b56f8ead0390508818be3351a86f6da93c",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c095/polynomials.json": "a366cf522f02ec1d54a85e56fd3160507076002f559490091bba8dda77fb320f",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c096/polynomials.json": "7470acccd02c94da103b5ebc02cb395f28dff986531865756f60c5624fe60284",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c097/polynomials.json": "229b5225e1a471b919e10b81befbb7f8f795d44112ce40a7f8ac43aa848684d8",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c098/polynomials.json": "7be4f98077a3d2d1a178ec7835eb1dd9b558feaa8e689e11ddef5284fbec82d5",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c099/polynomials.json": "56f7ecf1741286735f48dbec6a3067202ed9097205456a5cd3f6d17e80ed82ec",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c100/polynomials.json": "e10ffaec572610d6fa633e872f7eb0f9d5fe8765eb6cf181da8f3d4d0bc816d3",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c101/polynomials.json": "e06a56cc2459140962d0313d3733ac70b0cde337e36324a302f86dae25f77be6",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c102/polynomials.json": "8d482a0736569d0183d966a918fc4aad2ab0a228465788f41fdb5b60f961f11d",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c103/polynomials.json": "1846c701da173bfa7cc2594e30fddda12abf0890fd7eb1d415cf93e6c7830a19",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c104/polynomials.json": "70cf657af71f82586eb7a700c158c6993a7a96e75a7d6dfc6cde53aaae4728ec",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c105/polynomials.json": "a2402656479d2593603bd8455a256713087de876a99cf8143b2c4c5f9f94c0e1",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c106/polynomials.json": "82ceee31d26a1c257572cf5ef57e610e02632f5efc5aa691351b3d9c153c9150",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c107/polynomials.json": "f6e195acd8a8047ce6a01265f08990b6194e9575536b355719cae3efb8c835f6",
+    "/workspace/scratch/67c0f31502e4/audit_connection_2026_10_21/full_fresh/fresh_separator/charts/c108/polynomials.json": "d7d96167a2cc46e1433ff72ad5c58a11781a6e6b8ad369a18998b6f4cf2ab0c8"
+  },
+  "elapsed_seconds": 2.672240972518921
+}

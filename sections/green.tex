@@ -1,0 +1,345 @@
+\section{An explicit Green estimate on the certificate's energy scale}
+\label{sec:green}
+
+The exterior estimate needed by the certificate concerns the energy norm,
+including at an index-one saddle.  Decay of finite-energy critical fields
+under stability of the homogeneous lattice is already established in
+\cite[Theorem~2.3]{Ehrlacher2016}; that regularity theorem does not require
+strong stability of the critical point.  Higher-order far-field conditions
+and their approximation properties have also been developed for crystalline
+defects \cite{Braun2025,Wei2026}.  Our purpose here is quantitative: we give
+an elementary bound with explicit constants, connect it to the same
+projections used by the certificate, and retain uniformity under the
+distributed coupling perturbations considered in this article.
+
+Identify integer coordinates with physical vertices by
+$x\mapsto(6+x_1+\tfrac12,x_2+\tfrac12)$, and use canonical bonds
+$(x,i)=(x,x+e_i)$, where $x\in\Z^2$ and $i\in\{1,2\}$.
+The point $x$ is the \emph{anchor} of the bond.  Write
+$D_i\theta(x)=\theta(x+e_i)-\theta(x)$ and
+$\mathcal H=\ell^2(\Z^2\times\{1,2\})$.  Each unoriented bond is counted
+once.  Let $\mathsf P:\mathcal H\to D(\X)$ be the orthogonal gradient
+projection.  The range is closed because $D:\X\to\mathcal H$ is an
+isometry onto its image.
+
+\begin{lemma}[A numerical kernel bound]
+\label{lem:green-kernel}
+The convolution kernel of $\mathsf P$ satisfies
+\begin{equation}
+ |\mathsf P_{ij}(z)|\le\frac{8}{(1+\nrm{z}_\infty)^2},
+ \qquad z\in\Z^2,\quad i,j\in\{1,2\}.
+ \label{eq:green-kernel}
+\end{equation}
+For each source orientation $j$ and each integer $\rho\ge1$,
+\begin{equation}
+ \left(\sum_{\nrm{z}_\infty\ge\rho}\sum_{i=1}^2
+       |\mathsf P_{ij}(z)|^2\right)^{1/2}
+ \le\frac{16\sqrt2}{\rho}.
+ \label{eq:green-column}
+\end{equation}
+Moreover, the norm of evaluation on any bond is exactly
+\begin{equation}
+ |D_e v|\le 2^{-1/2}\nrm{v}_\X,
+ \qquad \nrm{D_e}_{\X^*}=2^{-1/2}.
+ \label{eq:edge-evaluation}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+For $d_i(k)=\exp(\mathrm i k_i)-1$, the Fourier symbol is
+$d_i\overline{d_j}/(|d_1|^2+|d_2|^2)$ away from the origin.
+Integrating one coordinate exactly gives
+$|\mathsf P_{ij}(z)|\le\pi/(2r^2)<2/r^2$ for
+$r=\nrm{z}_\infty\ge1$, with the shifts of the mixed coefficients
+included.  Appendix~\ref{app:green-kernel} supplies that calculation.
+Since $r+1\le2r$, it proves \eqref{eq:green-kernel}; at $z=0$ the bounded
+Fourier multiplier gives $|\mathsf P_{ij}(0)|\le1$.
+There are $8r$ anchors on the shell of radius $r\ge1$.  Therefore
+\[
+ \sum_{\nrm{z}_\infty\ge\rho,i}|\mathsf P_{ij}(z)|^2
+ \le1024\sum_{r\ge\rho}\frac{r}{(1+r)^4}
+ \le1024\int_\rho^\infty t^{-3}\,dt
+ =\frac{512}{\rho^2}.
+\]
+This proves \eqref{eq:green-column}, including both target orientations.
+Finally $\mathsf P_{11}(0)=\mathsf P_{22}(0)=1/2$: the two diagonal
+symbols sum to one almost everywhere and are exchanged by coordinate
+symmetry.  The squared norm of a coordinate functional restricted to
+$D(\X)$ is $\mathsf P_{ii}(0)$.  This proves
+\eqref{eq:edge-evaluation} by translation invariance.
+\end{proof}
+
+\subsection{A stationary source and a dyadic tail inequality}
+
+The following statement also permits noncompact perturbations of the
+couplings.  Set
+\[
+ E_b(\theta)=\sum_e(1+b_e)(1-\cos D_e\theta),
+ \qquad b\in\ell^1(\mathcal E),
+\]
+so that $E_0=\E$.  For an integer anchor radius $R\ge1$, define
+\begin{equation}
+ T_\theta(R)=
+ \left(\sum_{\nrm{x}_\infty\ge R}\sum_{i=1}^2
+          |D_i\theta(x)|^2\right)^{1/2}.
+ \label{eq:anchor-tail}
+\end{equation}
+
+\begin{theorem}[An effective $R^{-1}$ tail]
+\label{thm:green}
+Let $DE_b(\theta)=0$ in $\X^*$, $\nrm{\theta}_\X\le M$, and suppose
+that an integer $R_*\ge1$ and a number $\eta\ge0$ satisfy
+\[
+ |D_i\theta(x)|\le\eta
+ \quad\text{whenever }\nrm{x}_\infty\ge R_*.
+\]
+Put
+\begin{align}
+ q_e&=D_e\theta-(1+b_e)\sin(D_e\theta),
+ &Q&=\nrm{q}_{\ell^1},\notag\\
+ a&=\frac{\eta^2}{6}+\nrm{b}_{\ell^\infty},
+ &R_n&=2^nR_*.
+ \label{eq:green-source}
+\end{align}
+If $2a<1$, then
+\begin{equation}
+ Q\le\frac{M^3}{6}+\nrm{b}_{\ell^1},\qquad
+ T_\theta(R_n)\le\frac{A}{R_n}\quad(n\ge0),
+ \label{eq:green-tail}
+\end{equation}
+where
+\begin{equation}
+ A=\max\left\{R_*T_\theta(R_*),
+       \frac{32\sqrt2 Q}{1-2a}\right\}.
+ \label{eq:green-A}
+\end{equation}
+For an arbitrary real radius $R\ge R_*$, the bound
+$T_\theta(R)\le2A/R$ holds.
+\end{theorem}
+
+\begin{proof}
+The global inequality $|t-\sin t|\le|t|^3/6$ and
+$\ell^2\subset\ell^3$ give
+$\nrm{D\theta-\sin(D\theta)}_{\ell^1}\le M^3/6$.
+Also $\nrm{b\sin(D\theta)}_{\ell^1}\le\nrm{b}_{\ell^1}$.
+Thus $q\in\ell^1\cap\mathcal H$ and the asserted bound for $Q$ holds.
+Criticality states that $(1+b)\sin(D\theta)$ is orthogonal to every
+gradient.  Since $D\theta\in D(\X)$,
+\begin{equation}
+ D\theta=\mathsf Pq.
+ \label{eq:green-representation}
+\end{equation}
+This uses the Riesz formulation in $\X$; it assumes no bounded inverse
+of the vertex Laplacian on $\ell^2(\Z^2)$.
+
+The role of force balance in dislocation far-field estimates is examined
+in the recent preprint \cite{BraunHudson2026}. Here
+\eqref{eq:green-representation} follows directly from stationarity and
+the closed gradient projection. If it is rewritten as the vertex equation
+$D^*D\theta=D^*q$, then $q\in\ell^1$ implies $D^*q\in\ell^1$ and
+$\sum_x(D^*q)(x)=0$: absolute convergence permits pairing the two
+opposite endpoint contributions of every bond. Thus this cancellation
+is proved from the source representation, rather than inferred from
+far-field decay.
+
+For an even integer $R\ge2R_*$, split $q=q_{\rm in}+q_{\rm out}$ at
+the anchor radius $R/2$, assigning anchors of radius $R/2$ to the exterior.
+For a target anchor of radius at least $R$ and a source anchor of radius
+less than $R/2$, their separation is at least $R/2$.
+Minkowski's inequality and \eqref{eq:green-column} yield
+\[
+ \nrm{\mathbf1_{\{\nrm{x}_\infty\ge R\}}
+              \mathsf Pq_{\rm in}}_{\mathcal H}
+ \le\frac{32\sqrt2}{R}\nrm{q_{\rm in}}_{\ell^1}
+ \le\frac{32\sqrt2 Q}{R}.
+\]
+On the exterior source set,
+\[
+ |q_e|\le\frac{|D_e\theta|^3}{6}
+          +|b_e|\,|\sin D_e\theta|
+ \le a|D_e\theta|.
+\]
+The contraction property of $\mathsf P$ therefore gives
+\begin{equation}
+ T_\theta(R)\le\frac{32\sqrt2 Q}{R}+aT_\theta(R/2).
+ \label{eq:green-recurrence}
+\end{equation}
+For $A_n=R_nT_\theta(R_n)$ this is
+$A_n\le32\sqrt2 Q+2aA_{n-1}$.  The interval $[0,A]$, with $A$ as
+in \eqref{eq:green-A}, is invariant under this scalar inequality.
+Induction proves \eqref{eq:green-tail}.  More explicitly,
+\[
+ A_n\le(2a)^nA_0+
+       \frac{32\sqrt2 Q\,[1-(2a)^n]}{1-2a}.
+\]
+If $R_n\le R<R_{n+1}$, monotonicity gives
+$T_\theta(R)\le A/R_n\le2A/R$.
+\end{proof}
+
+\begin{remark}
+No support or moment condition on $b$ is used.  The exterior perturbation
+is $b_e\sin(D_e\theta)$, which is controlled \emph{multiplicatively} by
+$D_e\theta$.  Replacing it by an independent additive source would lose
+this property and would require additional tail information.
+\end{remark}
+
+\subsection{The same compact projections and the upper path}
+
+Let $\X_S$ contain the configurations with a representative zero outside
+the integer vertex box $\Lambda_S=[-S,S]^2$, and let
+$\Pi_S:\X\to\X_S$ be the energy-orthogonal projection.
+The distinction between anchor and endpoint radii is needed when these
+projections are compared with stored exterior bounds.
+
+\begin{lemma}[A cutoff on the common energy scale]
+\label{lem:green-projection}
+For every $\theta\in\X$ and integer $R\ge1$,
+\begin{equation}
+ \nrm{(I-\Pi_{2R})\theta}_\X
+ \le\sqrt{227}
+ \left(\sum_{\min(\nrm{x}_\infty,\nrm{y}_\infty)\ge R}
+                   |D_{\{x,y\}}\theta|^2\right)^{1/2}
+ \le\sqrt{227}\,T_\theta(R).
+ \label{eq:green-projection}
+\end{equation}
+In particular, under Theorem~\ref{thm:green}, the left side at $R=R_n$
+is at most $\sqrt{227}A/R_n<16A/R_n$.
+\end{lemma}
+
+\begin{proof}
+On $\mathcal A_R=\{x:R\le\nrm{x}_\infty\le2R\}$, the discrete
+Poincar\'e inequality has constant $(225/4)R^2$
+(Appendix~\ref{app:green-annulus}).  Let $c$ be the annular mean and let
+$\zeta_R$ equal one up to radius $R$, zero from radius $2R$ onwards,
+and interpolate linearly between them.  The compact representative
+$\zeta_R(\theta-c)$ gives an admissible approximation in $\X_{2R}$.
+Using the exact product identity
+$D(fg)=\overline f\,Dg+\overline g\,Df$, where bars denote endpoint
+averages, and
+$2|\overline f|^2\le|f_x|^2+|f_y|^2$, its squared error is bounded by
+\[
+ 2\sum_{\min(\nrm{x}_\infty,\nrm{y}_\infty)\ge R}|D_e\theta|^2
+ +\frac4{R^2}\sum_{\mathcal A_R}|\theta-c|^2
+ \le227\sum_{\min(\nrm{x}_\infty,\nrm{y}_\infty)\ge R}|D_e\theta|^2.
+\]
+An edge below this minimum-endpoint radius has zero error gradient:
+integer neighboring radii differ by at most one and the cutoff is still
+one at radius $R$.  Best approximation proves the first inequality.
+Every edge in that tail has its canonical anchor of radius at least $R$,
+which proves the second.
+\end{proof}
+
+For the homogeneous certificate, the known upper path is polygonal.
+Its only implicit vertices are the exact minimum and the selected exact
+saddle.  Each remaining vertex, except the zero endpoint, is $\phi_{12}$ plus a
+stored compact correction. Here
+\[
+ \phi_{12}(x)=\arg(6+x_1+\tfrac12+\mathrm i(x_2+\tfrac12))
+ -\arg(-6+x_1+\tfrac12+\mathrm i(x_2+\tfrac12)).
+\]
+The argument branches cancel their far-field jumps outside the segment
+between the two poles.  Once $R\ge16$ and the projection box contains those supports, their
+projection errors obey the direct dipolar bound $480/R$, proved in
+Appendix~\ref{app:green-inputs}.
+Consequently, if $A$ bounds both critical vertices in
+Theorem~\ref{thm:green}, linearity and convexity of the norm give
+\begin{equation}
+ \sup_t\nrm{(I-\Pi_{2R_n})\Gamma_0(t)}_\X
+ \le\frac{C_\Gamma}{R_n},\qquad
+ C_\Gamma=\max\{16A,480\}.
+ \label{eq:green-path}
+\end{equation}
+No stationary equation is assigned to a segment between vertices.
+
+For finite-box barriers, restrict the paths in \eqref{eq:barrier} to
+$\X_S$ and the endpoints to $\K\cap\X_S$, retaining all bonds crossing
+the vertex-box boundary. Denote the resulting barrier by $B_S(u)$ and
+write $B_\infty=B_0$, $C_\infty(u)=\E(u)+B_0(u)$.
+For a compact origin $u\in\X_{2R_n}$, suppose that its segment to $m_0$
+lies below the certified level $h$, and that the separator gives
+$C_\infty(u)=h$.  If $M_\Gamma$ bounds the norm on that segment and on
+$\Gamma_0$, then
+\begin{equation}
+ 0\le B_{2R_n}(u)-B_\infty(u)
+ \le\frac{M_\Gamma C_\Gamma}{R_n}.
+ \label{eq:green-barrier-localization}
+\end{equation}
+Indeed, concatenate the segment and $\Gamma_0$ and apply $\Pi_{2R_n}$.
+The original upper path ends at zero: its terminal check gives
+\texttt{compact\_integer\_lift\_max}=0.
+Thus the origin and that endpoint are unchanged. Since
+$\nrm{\nabla_\X\E(z)}_\X\le\nrm{z}_\X$ and $\Pi_{2R_n}$ is a
+contraction, the energy change of each projected point is at most
+$M_\Gamma$ times its projection error.  This yields the upper bound;
+the inclusion of finite-box paths in the infinite path class gives the
+lower bound.  Thus the comparison uses the same strong energy topology
+and keeps all boundary bonds of the finite box.
+
+\subsection{Numerical consequences and uniform perturbed tails}
+
+The payload inequalities in Appendix~\ref{app:green-inputs} permit
+$M=M_\Gamma=6007$ for the certified path and for compact origins satisfying
+$\nrm u_\X\le6007$, with exterior minimum-endpoint radius $4096$, and
+$\eta=9/500$.  The original upper path uses $m_0$ and $s_+$, so anchor
+radius $R_*=4097$ is sufficient.  Replacing $32\sqrt2$ by $46$ and
+$\sqrt{227}$ by $16$ gives the rational constants
+\begin{equation}
+ A\le\frac{1246352073472250000}{749919},\qquad
+ M_\Gamma C_\Gamma
+ \le\frac{119789390485564892000000}{749919}.
+ \label{eq:green-data-constants}
+\end{equation}
+Exact rational arithmetic gives the following budgets for the allocation
+$M_\Gamma C_\Gamma/R_n\le\varepsilon/4$:
+\begin{center}
+\begin{tabular}{cclc}
+\hline
+$\varepsilon$ & $n$ & $R_n=4097\,2^n$ & error upper bound\\
+\hline
+$10^{-2}$ & $54$ & $73804990693347688448$ & $<2.165\,10^{-3}$\\
+$10^{-6}$ & $68$ & $1209220967519808527532032$ & $<1.321\,10^{-7}$\\
+\hline
+\end{tabular}
+\end{center}
+The actual projection box has radius $2R_n$.
+These are arithmetic bounds, not newly computed barrier intervals.
+They replace the thousands-of-digits radii from the weak hole-filling
+estimate by $20$- and $25$-digit values of $R_n$, but still cannot be
+materialized.  A full cubical covering would also retain its exponential
+dependence on the finite dimension.  Useful radii require sharper
+data-dependent bounds for $Q$ and $T_\theta(R_*)$ and the retained
+low-dimensional reaction reduction.
+
+The same estimate is uniform over the nearby critical families of the
+robustness theorem.  For all three critical states, including the reflected
+saddle, use the common values
+\begin{equation}
+ \nrm{b}_{\ell^1}\le\frac1{500},\quad M=6008,\quad
+ \eta=\frac{41}{1000},\quad R_*=4098.
+ \label{eq:green-robust-data}
+\end{equation}
+Here a displacement of at most $1/32$ in $\X$ changes every bond
+increment by at most $1/(32\sqrt2)$, so
+$0.018+1/(32\sqrt2)<0.041$.  The extra radial unit is deliberate:
+the physical reflection $x_1\mapsto12-x_1$ sends integer indices
+$i\mapsto-i-1$, and a reoriented horizontal bond anchor to $-i-2$.
+An anchor radius of $4098$ therefore guarantees reflected minimum
+endpoint radius $4096$.
+With \eqref{eq:green-robust-data},
+\[
+ a\le\frac{13681}{6000000},\qquad
+ Q\le\frac{54216288128003}{1500},\qquad
+ A\le\frac{4987898507776276000}{2986319}<1.7\,10^{12}.
+\]
+In particular, all these exact critical states satisfy, on the common
+dyadic sequence,
+\begin{equation}
+ T_\theta(R_n)\le\frac{1.7\,10^{12}}{R_n},\qquad
+ \nrm{(I-\Pi_{2R_n})\theta}_\X
+ \le\frac{2.72\,10^{13}}{R_n}.
+ \label{eq:green-robust-tail}
+\end{equation}
+This last conclusion allows noncompact $\ell^1$ coupling perturbations.
+It is a uniform mathematical tail statement; an implementation accepting
+arbitrary infinite inputs still requires an effective representation of
+their coefficients and the relevant membership bounds.

@@ -1,0 +1,10 @@
+{
+  "extension_manifest_sha256": "248f0614524832610b07fd21b5d6b9eaf670d1846d6032aa22a51755a5c95972",
+  "matches_supervisor_pin": true,
+  "extension_scientific_members": 37,
+  "all_extension_member_hashes_match": true,
+  "bad": [],
+  "supervisor_source_sha256": "564451be670e23dd08d382f0f71fc9bf238a39fb7003db916c3f953720e840c3",
+  "archived_supervisor_sha256": "564451be670e23dd08d382f0f71fc9bf238a39fb7003db916c3f953720e840c3",
+  "same_supervisor_as_archived": true
+}

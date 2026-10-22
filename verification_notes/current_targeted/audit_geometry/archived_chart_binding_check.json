@@ -1,0 +1,768 @@
+{
+  "scope": "archived output byte identity only, not local-oracle revalidation",
+  "charts": [
+    {
+      "id": 0,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c000/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c000/polynomials.json",
+      "sha256": "e8ea7e5a20d6330fbb50ccc9c163376f36d038416fbd20b5b1cc3a8433985457",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 1,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c001/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c001/polynomials.json",
+      "sha256": "efc1adf070eb8c940f9f47e5f04436608454550f8108d7e04a3c6793044ae892",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 2,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c002/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c002/polynomials.json",
+      "sha256": "8a332f3843432e2a554f503676442a96dcf73e3f105311be454e691313ade563",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 3,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c003/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c003/polynomials.json",
+      "sha256": "d93d4984d867d19dda7f2bc39620620f7d5ed18ac0829a2a4bf5f02129636313",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 4,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c004/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c004/polynomials.json",
+      "sha256": "ab75ed768506d72964b6e4ab5513e4cb7715a28547e0b55f73d0233ce5d999a4",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 5,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c005/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c005/polynomials.json",
+      "sha256": "19c619600393ebe94047174972b3badbbac90f6d48472654b07fe1cf3358c0ad",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 6,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c006/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c006/polynomials.json",
+      "sha256": "a69c910e5eae254239f850590a8fe5c4edb9d6a913269c492a0d66c5bfccc27b",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 7,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c007/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c007/polynomials.json",
+      "sha256": "947f21f259dc5f4bcda730f45b6426b5724c2abc0250d8573c1ece0039672009",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 8,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c008/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c008/polynomials.json",
+      "sha256": "76bb2b8c452ffffb07abe300c2b2c60b464b851554b74aa251737f00047454c1",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 9,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c009/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c009/polynomials.json",
+      "sha256": "2e3b4800ce460dd4d49fc457c1690df399fa0a1dbf8edfeee29db6be67de3a3e",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 10,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c010/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c010/polynomials.json",
+      "sha256": "f82728e79fffa908dbef6212c38b204b09e9a3b9eb50b3852b5dabf3bb3fc414",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 11,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c011/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c011/polynomials.json",
+      "sha256": "cba0eda71ad3b4a5b5e1c277ccb6870b244e11aa581583a5d11f8a1048cbec3a",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 12,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c012/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c012/polynomials.json",
+      "sha256": "a640dff37498547108c02228896909d39d5021ae1fc9f03c7a4df16cad13c222",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 13,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c013/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c013/polynomials.json",
+      "sha256": "60a5a92398611c9c7be1a11f4a28f498618a0913c072e7b9bfa5376bd67a54d4",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 14,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c014/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c014/polynomials.json",
+      "sha256": "a2235fe7b96cd3e9a81a8d10fbcc16f035ecd341b7ddfbe126054265afb68651",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 15,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c015/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c015/polynomials.json",
+      "sha256": "609824335e811edc2e5dfaa1b96d9c3b11cf750ac93699220f0f33dfdfcee9d0",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 16,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c016/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c016/polynomials.json",
+      "sha256": "65c252817da38cc2c7a3d70986254a725959f82e7338a35c1be2044b2de6cf7c",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 17,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c017/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c017/polynomials.json",
+      "sha256": "2ce7650ec6a1becce826636738bd0b46e280faeda55dbf57976fc70908ecfd41",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 18,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c018/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c018/polynomials.json",
+      "sha256": "87b4eacbd97c05554fe73e65fb18f28feb403673f5586a515ad2df8f37f15d97",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 19,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c019/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c019/polynomials.json",
+      "sha256": "10bf30ba4618dc1141995a89fc0007ed9913184c52b7a01eed618d45429ac883",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 20,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c020/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c020/polynomials.json",
+      "sha256": "10c8d890a43c9e532ccfeda72d9d48b0093a3c7922dbdda7238fd2338296352e",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 21,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c021/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c021/polynomials.json",
+      "sha256": "1b5c91ee61f846c32b206799903f49e1b5c4541262bf8aa224e2011ea2c02149",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 22,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c022/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c022/polynomials.json",
+      "sha256": "5b859f5b7f04a660ff6ff78ce3f03c52310bb29587b7c22d498393de3b618708",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 23,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c023/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c023/polynomials.json",
+      "sha256": "3fb1ddbf9ebd1543465bc17d34925c699983ccc2576ea5afe22eb7f6116365a5",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 24,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c024/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c024/polynomials.json",
+      "sha256": "6521c5653295416aea075c8afd52d6109f25bf22ddbf23eeeeba4ec115175624",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 25,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c025/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c025/polynomials.json",
+      "sha256": "1dcbf03f523a4a362cf863ad94f78452e6fa5ca4bb2c0c40a586a6f518bd112d",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 26,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c026/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c026/polynomials.json",
+      "sha256": "b08330ee10beb7532a574a054e5008ea6094b424b5d79ac53ed155702ac9ddf6",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 27,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c027/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c027/polynomials.json",
+      "sha256": "ce3fbe42e8e7f29a90e8d4a39c13892cdef88b2d99940af11b637055da56a9c6",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 28,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c028/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c028/polynomials.json",
+      "sha256": "0e3a2828bacd4318694de5fbb15266939dc8a9a0e49600f9417e69eeee375f20",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 29,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c029/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c029/polynomials.json",
+      "sha256": "490ab7e0c15c884ae7e623abf1ddcc6c0e7c89d3704120ea3be09e5c448cebaa",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 30,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c030/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c030/polynomials.json",
+      "sha256": "a29954b136aa4c4a03b6cb8f11256bf9888344c3e412e785cf6e688a20709ef9",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 31,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c031/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c031/polynomials.json",
+      "sha256": "c1d624f2d57eff385a331c0db81f0f53fbe82bc8006b01597f98e204c4358c48",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 32,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c032/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c032/polynomials.json",
+      "sha256": "a7e3630584809d9e33f65ed5ff06bb38c0df140cabc1c4f5910472f72d215855",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 33,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c033/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c033/polynomials.json",
+      "sha256": "f12c9e5b3657298116f45244d04c7f7a705a0b2859a1d946241b5ae407604ea6",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 34,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c034/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c034/polynomials.json",
+      "sha256": "4536ee2dbff2d292994f0064c52bb428413361f293d0da11b103f3fc981b93ab",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 35,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c035/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c035/polynomials.json",
+      "sha256": "59052154714a408ae414de1e106bb38f6b10b996fa064ba8901a097bc7b4fdcc",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 36,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c036/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c036/polynomials.json",
+      "sha256": "c6130b21d3586af6a6269fb9a9278c26962ffd8619f8cb94dce31755e78f9e24",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 37,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c037/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c037/polynomials.json",
+      "sha256": "dc088db5666c849db147c0069532ee7b62e2b755a8cdb851198a1563a54d45dc",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 38,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c038/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c038/polynomials.json",
+      "sha256": "0bbdf4eb52ed5dd6bd852f9f7476407def79c246035b9075fad5c85438663411",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 39,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c039/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c039/polynomials.json",
+      "sha256": "31ef89d2b81a9e943a4c8c3a29e7b48bcb069c4cb5088a34347621b12c205120",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 40,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c040/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c040/polynomials.json",
+      "sha256": "51340e14fd966fe79d0b593f1ad6008603b481463c354c5e54e342d50a02dd99",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 41,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c041/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c041/polynomials.json",
+      "sha256": "b956406e2363b56dc82e24664ffa1deb4ebe14730ccf416c6e49a12bfb88240d",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 42,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_release/results_final/enlarged_charts/c042/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/results_provided/enlarged_charts/c042/polynomials.json",
+      "sha256": "adb9392f2aba02a8911ed279ce84c6fda751bc3d13de5b13bf8aab56a0b752d6",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 43,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_release/results_final/enlarged_charts/c043/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/results_provided/enlarged_charts/c043/polynomials.json",
+      "sha256": "544d987a9c1272335adf911cdfd399063f97ebb5ada935c8688ca602773da62c",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 44,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_release/results_final/enlarged_charts/c044/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/results_provided/enlarged_charts/c044/polynomials.json",
+      "sha256": "f6e2ea80c10a882f3add1529cbe4330e75069aae897db50210b6085f1856ac9a",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 45,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c045/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c045/polynomials.json",
+      "sha256": "4660c2748ea4e18959a8815fcc851b55c07686681a06a47004a1467719a6dd79",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 46,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c046/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c046/polynomials.json",
+      "sha256": "80a5038c2531506043c6b4bffe414b20831452c972fba475cabbe6af0c446a17",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 47,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c047/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c047/polynomials.json",
+      "sha256": "474b8f90c150c6f2318e46832f5f66b0abead6a7f42e53ea4ff0f33cd6f4baa9",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 48,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c048/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c048/polynomials.json",
+      "sha256": "e01153d556f5aed9d3aade7671d14cb251576fa4df08613ab3044c74351ee582",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 49,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c049/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c049/polynomials.json",
+      "sha256": "8cf2fc428349f58f706ea589a4c39eed6866755245e87398ff29921659f10cd0",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 50,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c050/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c050/polynomials.json",
+      "sha256": "dfd61231df21862386443e3a0017085a3527e4fb979014a0748d23a349845f6b",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 51,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c051/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c051/polynomials.json",
+      "sha256": "be36ebf345d1a35ec7550f9a1f704156253e5ec4e11f1e57c2d3928a0496d7bd",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 52,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c052/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c052/polynomials.json",
+      "sha256": "b4e95d98c438484e5c880a6f15b8c17fea74f07148cbefbd6ec3ddd0b582bd93",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 53,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_release/results_final/enlarged_charts/c053/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/results_provided/enlarged_charts/c053/polynomials.json",
+      "sha256": "bb557c2a749419b6e2bca714590eb2c0e6938f6c99e5d4bde7eca7d209395e5e",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 54,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c054/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c054/polynomials.json",
+      "sha256": "a8583345729bc853b7161620d567fb2098ff2247b0f42ce9b92fb127c0464198",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 55,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_release/results_final/enlarged_charts/c055/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/results_provided/enlarged_charts/c055/polynomials.json",
+      "sha256": "1c5c01d5f7be8fc502f724664e7fa2abe78ddba6371f23dde6709600cd3f9acc",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 56,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c056/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c056/polynomials.json",
+      "sha256": "563858fed7cce824c851723fdd22b9a9b286398a2e207e5e93b63678b398f830",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 57,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c057/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c057/polynomials.json",
+      "sha256": "e6c5de3ec5ffcb2278b573668e4af5562d3d35dfc0ead4ac62b42a4482b81a76",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 58,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c058/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c058/polynomials.json",
+      "sha256": "393ab70cbaaf0b504cf3fba6ed06ebb7036a2ecf64453d26da47cb26e9ae683d",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 59,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c059/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c059/polynomials.json",
+      "sha256": "0d805b7982d95b24e3cf59eeed260e00b1c7213801f59030f61d1fcc9cd96288",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 60,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c060/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c060/polynomials.json",
+      "sha256": "6d1546cf61918c65685cc44265008a8ae1cfb57f13895e886da064417ec2b1ca",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 61,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c061/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c061/polynomials.json",
+      "sha256": "c66b7e746326c7f1dfb0276b1b030275aee9ec2b37b33aa89a8fd1f9139b1818",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 62,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c062/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c062/polynomials.json",
+      "sha256": "1d43713ca25e3eafdc819c17e93faee732f937a0f0f272a922e2d6f866ff260e",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 63,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c063/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c063/polynomials.json",
+      "sha256": "a9f3c52aa86019bb24d398f690518a2e31233fe0d1d81d8d9c5770080d8ce94c",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 64,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c064/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c064/polynomials.json",
+      "sha256": "232b0048507a812cd0964ba59900f4915a8b719a50346a2ecea052d80cbe7c91",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 65,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c065/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c065/polynomials.json",
+      "sha256": "e1b0dd2e4584765f1729fa5d4b98d5944fe3e9429e5954ef66389a6fcc4dd8b5",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 66,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c066/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c066/polynomials.json",
+      "sha256": "f582e12679754ebf8ed8daa039090c69603a800acc64c0f2e39bdb051b9577fb",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 67,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c067/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c067/polynomials.json",
+      "sha256": "92255ea23aaf184728175ca0ce711984729abbf57bcc83bdbb3a5f9fd9554134",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 68,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c068/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c068/polynomials.json",
+      "sha256": "f4c47c981bc0d978121acc65ee5157f8318d9d773b0a14c468fd064e343b1e5d",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 69,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c069/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c069/polynomials.json",
+      "sha256": "284a87bfddea5d17a6faa1e30cba5b2a7a13f4d42bfda6c1edc7e40227f7ab13",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 70,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c070/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c070/polynomials.json",
+      "sha256": "376918cd9dac2eefcf70b8d97cc0ebf80621d4c0a6b274d8bd6ff826e9a14327",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 71,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c071/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c071/polynomials.json",
+      "sha256": "408fd14dd560ab15ffd798662cc53c70a0338e023e013e6fbef8a05e2db5d51a",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 72,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c072/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c072/polynomials.json",
+      "sha256": "b1d73fbf2888180474490552dda664477c3550c20bc68c389c171904b07b7f61",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 73,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c073/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c073/polynomials.json",
+      "sha256": "e8d2c785fc6a7b74730748f5bff91ecf295d924131dd29baca7e50f4f64d9329",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 74,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c074/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c074/polynomials.json",
+      "sha256": "65a1356e5333ffacf2c99bbe49567d7c223c5bcdf35a455b0876e503acc9e3a7",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 75,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c075/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c075/polynomials.json",
+      "sha256": "16d66892bbc8cf08c1b0e1339606bda466a1646945e5c8069160d090cca97dd4",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 76,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c076/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c076/polynomials.json",
+      "sha256": "c0db6ed549bb393d92c7963399ae3be27ebf9d5c472756003e4992fb14e323aa",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 77,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c077/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c077/polynomials.json",
+      "sha256": "3747cc2a2c6688b1d52ac391f5e8310a405d766883ca59e25f1c864f16a6d9c2",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 78,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c078/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c078/polynomials.json",
+      "sha256": "0e220b16cb506f501eca17584350ec95905331f4b0659b4d807cc52fedb2eeef",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 79,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c079/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c079/polynomials.json",
+      "sha256": "f9af3ddd31b0dde7861643e578f6039b94aca88c9ab575d7d970ca5a02de3b49",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 80,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c080/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c080/polynomials.json",
+      "sha256": "692a66a97abde5e38dbfff2aa91cee4bccc45dfd224163a298fb5290b00bb1d0",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 81,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c081/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c081/polynomials.json",
+      "sha256": "edbac7e7ce6cec955b7a2768f3c7fb48c531c7e29063ef541c65a6595ab841fd",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 82,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c082/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c082/polynomials.json",
+      "sha256": "fd6a1c8eb0bd0653198f0bbe71ca8c30dafe1dde2cf50f0727445eaa22850ce6",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 83,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c083/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c083/polynomials.json",
+      "sha256": "9a2c0d13a844b281628c9369542a1f82fe0b6b2e3ec45051bd77ad5fd56bfea8",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 84,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c084/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c084/polynomials.json",
+      "sha256": "5638419e61a44d50d411ecf76d52c54b5791da45bd76bddf6bb1edb957f03fa8",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 85,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c085/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c085/polynomials.json",
+      "sha256": "6a8c25d056c3a6d016264e5cf75fb2074e3ea33bb619456e29f69e057dbe8158",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 86,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c086/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c086/polynomials.json",
+      "sha256": "0434ddc3cd75dc69bccb858ed015ccd9ce06a0ef269e7c94d01b4d67c5641f0b",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 87,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c087/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c087/polynomials.json",
+      "sha256": "07714d8ec8eda3681399e024e9e33a87824b6e05fb32656d2c40e65f9c4f1b51",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 88,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c088/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c088/polynomials.json",
+      "sha256": "2111d7e92715716f9e228e4740cd2e028013a0180a3520d647cf1118b88d0542",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 89,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c089/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c089/polynomials.json",
+      "sha256": "b737639d798a97b04597cb8a6ad4d7370df28c1cd14860e48eb8a3190caa21a3",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 90,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c090/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c090/polynomials.json",
+      "sha256": "fd4038fafd9b9675d4e60197c2fd2469e806d81b2b14d3e8e9bc70a59ab402af",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 91,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c091/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c091/polynomials.json",
+      "sha256": "a73555142de03fba18615f80c8c6127013d89576079be0c91b78861cc31b149c",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 92,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c092/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c092/polynomials.json",
+      "sha256": "9e30a8d7849409ca8ca4826e6e1737fb1a45f93efd838a2a437fb58eb978c44f",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 93,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c093/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c093/polynomials.json",
+      "sha256": "fcdd811e4f3f719a4edd2443757290dd3a3061cf74f08865fb030356fc854be0",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 94,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c094/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c094/polynomials.json",
+      "sha256": "b069888ca68d1499d1b2e55c7c5740b56f8ead0390508818be3351a86f6da93c",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 95,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c095/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c095/polynomials.json",
+      "sha256": "a366cf522f02ec1d54a85e56fd3160507076002f559490091bba8dda77fb320f",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 96,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c096/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c096/polynomials.json",
+      "sha256": "7470acccd02c94da103b5ebc02cb395f28dff986531865756f60c5624fe60284",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 97,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c097/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c097/polynomials.json",
+      "sha256": "229b5225e1a471b919e10b81befbb7f8f795d44112ce40a7f8ac43aa848684d8",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 98,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c098/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c098/polynomials.json",
+      "sha256": "7be4f98077a3d2d1a178ec7835eb1dd9b558feaa8e689e11ddef5284fbec82d5",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 99,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c099/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c099/polynomials.json",
+      "sha256": "56f7ecf1741286735f48dbec6a3067202ed9097205456a5cd3f6d17e80ed82ec",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 100,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c100/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c100/polynomials.json",
+      "sha256": "e10ffaec572610d6fa633e872f7eb0f9d5fe8765eb6cf181da8f3d4d0bc816d3",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 101,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c101/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c101/polynomials.json",
+      "sha256": "e06a56cc2459140962d0313d3733ac70b0cde337e36324a302f86dae25f77be6",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 102,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c102/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c102/polynomials.json",
+      "sha256": "8d482a0736569d0183d966a918fc4aad2ab0a228465788f41fdb5b60f961f11d",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 103,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c103/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c103/polynomials.json",
+      "sha256": "1846c701da173bfa7cc2594e30fddda12abf0890fd7eb1d415cf93e6c7830a19",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 104,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c104/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c104/polynomials.json",
+      "sha256": "70cf657af71f82586eb7a700c158c6993a7a96e75a7d6dfc6cde53aaae4728ec",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 105,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c105/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c105/polynomials.json",
+      "sha256": "a2402656479d2593603bd8455a256713087de876a99cf8143b2c4c5f9f94c0e1",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 106,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c106/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c106/polynomials.json",
+      "sha256": "82ceee31d26a1c257572cf5ef57e610e02632f5efc5aa691351b3d9c153c9150",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 107,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c107/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c107/polynomials.json",
+      "sha256": "f6e195acd8a8047ce6a01265f08990b6194e9575536b355719cae3efb8c835f6",
+      "matches_recorded_output_hash": true
+    },
+    {
+      "id": 108,
+      "original_path": "/workspace/scratch/67c0f31502e4/caps_project/xy_global_separator/fresh_lower/charts/c108/polynomials.json",
+      "local_path": "/workspace/scratch/67c0f31502e4/revision_integrada_2026_10_20/xy_optimality_extension/antecedent_results/separator/charts/c108/polynomials.json",
+      "sha256": "d7d96167a2cc46e1433ff72ad5c58a11781a6e6b8ad369a18998b6f4cf2ab0c8",
+      "matches_recorded_output_hash": true
+    }
+  ]
+}

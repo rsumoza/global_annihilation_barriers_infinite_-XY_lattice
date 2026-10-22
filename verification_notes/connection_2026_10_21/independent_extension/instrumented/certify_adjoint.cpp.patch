@@ -1,0 +1,22 @@
+--- original/certify_adjoint.cpp
++++ instrumented/certify_adjoint.cpp
+@@ -7,7 +7,7 @@
+  CS p{(X*Z+sq(Y))/den,I(-12)*Y/den},r=trig(I(hh));
+  return {p.c*r.c-p.s*r.s,p.s*r.c+p.c*r.s};
+ }
+-static void ji(I a){std::cout<<"[\""<<dn(a.l)<<"\",\""<<up(a.h)<<"\"]";}
++static void ji(I a){exact_interval(a);std::cout<<"[\""<<dn(a.l)<<"\",\""<<up(a.h)<<"\"]";}
+ int main(int argc,char**argv){try{
+  need(argc==6,"usage: certify_adjoint side Qold Qnew Hsaddle REFLECT_0_OR_1");
+  need(LDBL_MANT_DIG>=64&&sizeof(double)==8&&std::numeric_limits<double>::is_iec559,"platform");
+@@ -62,8 +62,9 @@
+  I rho(.012825L),nonlinear=(I(sindzmax)+rho/root(I(2))*I(dzmax))*sq(rho)/I(2);
+  I radius=eta*rho+nonlinear,total=I(mag(pairing))+radius,correction=-pairing+I(-radius.h,radius.h);
+  need(total.h<.001L,"offset threshold");
++ exact_constant("rho_safe",.012825L);
+  std::cout<<std::setprecision(30)<<"{\"status\":\"ADJOINT_NORMAL_OFFSET_PASS\",\"side\":"<<n<<",\"neumann_side\":"<<M<<",\"reflected_x\":"<<ref<<",\"rho_safe\":\".012825\",\"r_coefficients\":[";ji(c[0]);std::cout<<",";ji(c[1]);
+  std::cout<<"],\"force_pairing\":";ji(pairing);std::cout<<",\"z_Xnorm\":";ji(root(zn2));
+  std::cout<<",\"max_Dz_upper\":\""<<up(dzmax)<<"\",\"max_sin_Dshat_Dz_upper\":\""<<up(sindzmax)<<"\",\"neumann_poisson_residual_l2_upper\":\""<<normup(res)<<"\",\"adjoint_residual_Xdual_upper\":\""<<eta.h<<"\",\"nonlinear_remainder_upper\":\""<<nonlinear.h<<"\",\"normal_offset_error_upper\":\""<<total.h<<"\",\"signed_normal_correction\":";ji(correction);std::cout<<"}\n";
+- return 0;
++ finish_exact();return 0;
+ }catch(const std::exception&e){std::cerr<<"REJECT: "<<e.what()<<"\n";return 2;}}

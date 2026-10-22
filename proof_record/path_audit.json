@@ -1,0 +1,154 @@
+{
+  "status": "UPPER_PATH_INPUT_AND_LOCAL_CLASS_AUDIT_PASS",
+  "full_interval_chain_reexecuted": false,
+  "antecedent_dependency": "Authenticated minimum, saddle, path, and capped-separator certificates remain prerequisites; this audit checks payloads and rational consequences.",
+  "conditional_on_antecedent_geometry_enclosures": true,
+  "model": "Homogeneous unit-coupling exact cosine on the square lattice",
+  "physical_coordinates": "x=i-(n-1)/2+6, y=j-(n-1)/2",
+  "reference": "phi12(x,y)=Arg(x+i*y)-Arg(x-12+i*y)",
+  "minimum_corrector_max_exact": "99633080638867/562949953421312",
+  "saddle_corrector_max_exact": "1834512834580789/4503599627370496",
+  "compact_paths": [
+    {
+      "name": "leg_return",
+      "nodes": 8,
+      "segments": 7,
+      "side": 256,
+      "max_abs_exact": "56916744819335/281474976710656"
+    },
+    {
+      "name": "leg_annihilation",
+      "nodes": 19,
+      "segments": 18,
+      "side": 256,
+      "max_abs_exact": "6674417597839975/2251799813685248"
+    }
+  ],
+  "upper_path_sections": [
+    "m_star to m_hat: convex straight segment",
+    "leg_return: 7 straight segments",
+    "c_plus to s_star: Hermite straight segment",
+    "s_star to c_minus: Hermite straight segment",
+    "leg_annihilation: 18 straight segments",
+    "endpoint to zero real lift: straight monotone contraction"
+  ],
+  "implicit_vertices": [
+    "m_star",
+    "s_star"
+  ],
+  "reference_norm_square_upper": "30485979136/47089",
+  "reference_norm_upper": "1000",
+  "compact_norm_bound": "||Dh||_2 <= sqrt(8)||h||_2 <= 3*n*max_abs(h)",
+  "minimum_exact_norm_upper": "8965342777867121537/4294967296000000",
+  "saddle_exact_norm_upper": "4126915145471870767/687194767360000",
+  "explicit_path_vertex_norm_upper": "38384121557059157/8796093022208",
+  "input_class_norm_upper": "14344566160468497/6871947673600",
+  "uniform_path_and_critical_norm_upper_integer": 6007,
+  "candidate_core_safe_radius": 4096,
+  "candidate_exterior_increment_upper": "3/4165681",
+  "exact_stationary_exterior_increment_upper": "9/500",
+  "stationary_exterior_ellipticity_lower": "9999/10000",
+  "ellipticity_justification": "sin(t)/t >= 1-t^2/6 for |t|<=0.018",
+  "input_class": {
+    "description": "Open X-ball B_X(m_hat,1/50)",
+    "radius": "1/50",
+    "contains_exact_minimum": true,
+    "central_chart_id": 54,
+    "coordinate_functional_norm_upper": 2,
+    "coordinate_absolute_bound": "1/25",
+    "central_coordinate_error_upper": "1/1000000000000",
+    "central_transverse_error_upper": "1/1000000000000",
+    "inside_chart_disk_and_both_cuts": true,
+    "cut_margins_lower": [
+      {
+        "name": "plus",
+        "margin_lower": "596490616166929988133151301250669999/1000000000000000000000000000000000000"
+      },
+      {
+        "name": "minus",
+        "margin_lower": "596490616166908892108109326555328999/1000000000000000000000000000000000000"
+      }
+    ],
+    "energy_above_exact_minimum_upper_on_segment": "350101521/500000000000",
+    "certified_saddle_gap_lower_used": "567867/100000000",
+    "strict_energy_margin": "2489233479/500000000000"
+  },
+  "reaction_gram_exact": [
+    [
+      "10889035741470023414791831359867903287817/10889035741470030830827987437816582766592",
+      "-6732442039515948722547573/174224571863520493293247799005065324265472"
+    ],
+    [
+      "-6732442039515948722547573/174224571863520493293247799005065324265472",
+      "43556142965880106730550084185435673428465/43556142965880123323311949751266331066368"
+    ]
+  ],
+  "reaction_gram_inverse_exact": [
+    [
+      "30354201441027005169649264047891763570654673080307026763296979657937380576245841920/30354201441026984496757676574797977299121236611478238955916183259413330392304507591",
+      "390985610643544294958286755096802814408690130534431500643600433152/10118067147008994832252558858265992433040412203826079651972061086471110130768169197"
+    ],
+    [
+      "390985610643544294958286755096802814408690130534431500643600433152/10118067147008994832252558858265992433040412203826079651972061086471110130768169197",
+      "10118067147008998686741668273671955536375611755640178016218172516817655356433891328/10118067147008994832252558858265992433040412203826079651972061086471110130768169197"
+    ]
+  ],
+  "input_sha256": {
+    "connection": {
+      "distribution/stage2/common/base_h.raw": {
+        "sha256": "2a969db50023b0697c5f228d4b10325df7ea899bcdfe965fef6d02616f82adf3",
+        "bytes": 33554432
+      },
+      "distribution/stage2/saddle/inputs/h.raw": {
+        "sha256": "473f3ad414bdb6e59597b3b278628758d18e1563036075176df338d47c617cbb",
+        "bytes": 134217728
+      },
+      "distribution/connections/leg_return.cfg": {
+        "sha256": "d1cdcf1c98ea5785864fd9244d4de213ad0956193310313936f04611a6ce12a4",
+        "bytes": 9
+      },
+      "distribution/connections/leg_return.z.raw": {
+        "sha256": "d0f54d0462a6ee7a7f7b12e68574b8b939028f320ad716a496ada648eb4f72f4",
+        "bytes": 4194304
+      },
+      "distribution/connections/leg_annihilation.cfg": {
+        "sha256": "39ed913854a50b2ed5147d83ff71c32022bc435ccdb5e3379eb33da4d361a90a",
+        "bytes": 10
+      },
+      "distribution/connections/leg_annihilation.z.raw": {
+        "sha256": "898bc1ecda54bf63f7d22fb9984e08188c1104e137836cee86ffa5937945e448",
+        "bytes": 9961472
+      },
+      "results_provided/connections/leg_annihilation.json": {
+        "sha256": "70bfbaef6a509b50a9b9816bdcfc5e0071d1472f349dcdb236b9f0a234622242",
+        "bytes": 642
+      },
+      "results_provided/prerequisites/baseline.json": {
+        "sha256": "afb9a9b577a2833ebbc9de1f24e5ef587e84e59285bdc4820eac7040127ad881",
+        "bytes": 660
+      },
+      "results_provided/prerequisites/saddle.json": {
+        "sha256": "91622d70e1ff7077b621639d2781a8406d2fb0c1b6c718a92972b2bec40d6e60",
+        "bytes": 1581
+      },
+      "distribution/stage2/barrier/inputs/q.raw": {
+        "sha256": "7df80c3db341a9ece19c77939ad1c1ba857ac8dbb2b51d4a1435f26ee88bf7b0",
+        "bytes": 65536
+      }
+    },
+    "optimality": {
+      "results_provided/caps.json": {
+        "sha256": "e5fba3ef08c145d157471fbef6cf75d28f7e501022c5937be641cc7d1f34f2b6",
+        "bytes": 28743
+      },
+      "antecedent_results/separator/geometry.json": {
+        "sha256": "13076bc4aaeebcdda84c5e4aa795a47e0cfd5fc992e7acaa72414f8f85f9a186",
+        "bytes": 71734
+      },
+      "antecedent_results/separator/charts/c054/chart.json": {
+        "sha256": "3768cdafdd8fe4f088904dc8dbfca57ea6a6c6cbef92cbabf91ba680ed6d3a3f",
+        "bytes": 649
+      }
+    }
+  }
+}

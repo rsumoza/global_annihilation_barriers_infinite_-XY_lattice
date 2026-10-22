@@ -1,0 +1,38 @@
+AUDITORÍA Y ALCANCE ACTUAL - REVISIÓN 7, 22 OCTUBRE 2026
+
+Se conserva íntegro el resultado global de separación12 y sus fuentes
+congeladas. El informe completo anterior queda en
+verification_notes/history/CURRENT_AUDIT_v5_ES.txt. Esta revisión no
+vuelve a ejecutar la cadena original: conserva el replay completo nuevo
+de 737.33 segundos, sus hashes y diagnósticos de 21 octubre.
+
+NUEVO RESULTADO ANALÍTICO
+La bola ||u-m0||X<=1/20 tiene la misma altura absoluta h que m0.
+B0(u)=h-E0(u) y 0.00442867<B0(u)<0.00570116.
+El argumento añade un segmento subcrítico al certificado ya probado.
+La clase por bloques normalizados admite perturbaciones no compactas
+y cola explícita R^-1. Se prueba terminación de encierros para cualquier
+precisión racional mediante nombres efectivos de m0 y s+.
+La bola es invariante para el flujo especificado; no se afirma que el
+flujo conserve la representación por bloques ni su tasa espacial.
+
+ALCANCE EJECUTADO
+verify_infinite_class.py verifica aritmética exacta, prefijos finitos,
+enlaces de interfaz, normalización y presupuestos de error. La
+construcción general de nombres críticos y encierros es una prueba
+constructiva, no una interfaz general ya ejecutada. Los informes actuales
+y revisión matemática adversarial quedan en verification_notes/v6.
+
+LÍMITES ABIERTOS
+No se prueba completitud de certificados inferiores, terminación para
+todas las configuraciones XY, identificación del minimax perturbado ni
+un cambio de mecanismo. La novedad principal sigue siendo el certificado
+global completo de la instancia. La reutilización por conexión subcrítica
+es una consecuencia elemental explícita, no prioridad universal.
+
+DISTRIBUCIÓN
+Repositorio configurado con la URL aportada por el autor:
+https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice
+Etiqueta propuesta: siads-v7-2026-10-22. Publicación y commit no verificados. S2-S4 se conservan como originales y se adjuntarán a
+una Release. La ruta de revisión de archivos grandes debe ser admitida
+por SIAM; el enlace externo no se declara una exención automática.

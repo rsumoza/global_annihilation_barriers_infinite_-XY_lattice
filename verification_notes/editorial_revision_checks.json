@@ -1,0 +1,28 @@
+{
+  "status": "EDITORIAL_REVISION_CHECKS_PASS",
+  "previous_main_pages": 26,
+  "revised_main_pages": 28,
+  "abstract_words": 219,
+  "response_pages": 3,
+  "supplement_pages": 5,
+  "references": 14,
+  "conceptual_figure_count": 1,
+  "unchanged_sources": [
+    "sections/instance.tex",
+    "sections/green.tex",
+    "sections/green_appendix.tex",
+    "sections/introduction.tex",
+    "references.tex",
+    "checks/verify_path_inputs.py",
+    "checks/verify_green_tail_budget.py",
+    "checks/verify_robustness_constants.py"
+  ],
+  "original_global_certificate_sha256": "2bcb4121d588ecef7a2f8e8ad9036321d1286bf90d39d4aaa7d9713d45a5d763",
+  "old_global_chain_reexecuted_for_editorial_changes": false,
+  "new_rational_consequence_checkers": "PASS",
+  "source_array_changes": false,
+  "public_deposit_performed": false,
+  "journal_submission_performed": false,
+  "pdf_cross_references_and_overfull_checks": "PASS",
+  "figure_semantics": "conceptual schematic, no calibrated geometry or computed orbit"
+}

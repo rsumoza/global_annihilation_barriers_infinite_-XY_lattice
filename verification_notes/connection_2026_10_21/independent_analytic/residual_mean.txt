@@ -1,0 +1,164 @@
+AUDITORÍA INDEPENDIENTE DEL RESIDUAL Y SU MEDIA NULA
+21 de octubre de 2026
+
+ALCANCE Y RESULTADO
+
+Se revisaron distribution/stage2/saddle/certify.cpp, el engine.cpp común,
+las pruebas distribuidas y la interfaz con el Lema de comparación Neumann
+actual del manuscrito. Esta es una auditoría matemática de la reducción,
+no una segunda evaluación intervalar del array 4096 ni la reproducción del
+supervisor. Los originales sólo se leyeron.
+
+La media nula utilizada por el residual finito se justifica algebraicamente,
+aunque el candidato de silla no sea impar. Se reproduce, además, la fórmula
+EXACTA de la cota exterior utilizada por el código mediante un argumento
+independiente de emparejamiento reflejado de fuerzas. No se encontró una
+brecha en esta parte de la cadena bajo las guardas y convenciones indicadas.
+
+1. CONVENCIONES Y CAJAS
+
+Se centra la coordenada x entre los dos vórtices. Sea a=L/2=6 y
+phi(x,y)=arg(x+a+iy)-arg(x-a+iy), con la rama real que tiende a cero en
+el exterior del corte finito [-a,a]x{0}. Los vértices son semienteros.
+El campo propuesto es theta=phi+h, donde el array h de lado n se extiende
+por cero. El programa comprueba explícitamente que h sea cero en todo el
+borde del array. La imparidad de h sólo se imprime como diagnóstico para
+la silla: no se usa como premisa necesaria.
+
+El programa construye p en un cuadrado de m=n+4 vértices, con la corrección
+h embebida desde el índice2, y acumula fuerzas en B={1,...,m-2}^2, de lado
+b=n+2. Por tanto la fuerza F_B computada en cada vértice de B incluye sus
+cuatro vecinos. Los vecinos exteriores inmediatos de B están todavía en p.
+Todos los enlaces de interfaz pertinentes se recorren en los dos bucles de
+ejes. No se usa una fuerza de caja con enlaces de borde suprimidos.
+
+2. POR QUÉ SUMA F_B=0 EXACTAMENTE
+
+Para un enlace orientado e=(v,w), la fuerza de vértices es D*sin(Dtheta):
+el aporte en v es -sin(D_e theta), y en w es +sin(D_e theta). Esta
+convención coincide con force_add(tail,-z.s), force_add(head,z.s).
+
+Sea j_e=sin(D_e(phi+h))-sin(D_e phi). Si h es cero en ambos extremos,
+entonces j_e=0 exactamente. Como h es cero en el borde y fuera del array,
+TODO enlace con j_e distinto de cero y AMBOS sus extremos están dentro de B.
+En particular, la divergencia D*j es compacta y no se corta por la frontera
+de B. Al sumar sobre B cada flujo aparece una vez con signo menos y otra
+con signo más, y su suma es exactamente cero.
+
+La fuerza f_phi del dipolo puro es impar bajo R(x,y)=(x,-y). En efecto,
+su fase compleja se conjuga bajo R; las diferencias de fase y sus senos
+cambian de signo después de reflejar los vecinos. Así f_phi(Rv)=-f_phi(v).
+B es simétrico bajo R y no tiene vértices y=0. Por pares,
+sum_{v in B} f_phi(v)=0. Como F_B=f_phi|_B + D*j, se deduce
+sum_{v in B} F_B(v)=0 para CUALQUIER h con el soporte comprobado.
+
+Esta prueba no depende de que un intervalo de sumas contenga cero ni de
+que el residual numérico sea pequeño. También L_Nu tiene suma cero por
+cancelación de sus enlaces internos, para cualquier propuesta u y sin
+imponer su media. Por tanto F_B-L_Nu tiene media exactamente cero.
+
+3. COTA DE LA PARTE FINITA
+
+Sea u_* una solución de L_Nu_*=F_B con la misma media que la propuesta u.
+La existencia se sigue de la media nula. La comparación de energías da
+||F_B^sharp||_X <= ||D_N u_*||_2. Usando la brecha Neumann
+lambda_1=4sin^2(pi/(2b)) >= 4/b^2,
+
+ ||F_B^sharp||_X
+ <= ||D_Nu||_2 + ||D_N(u_*-u)||_2
+ <= ||D_Nu||_2 + (b/2)||F_B-L_Nu||_2.
+
+Ésta es precisamente la expresión finite del código. El hecho de que u
+pueda tener una media no nula no afecta a la desigualdad. El programa suma
+todos los enlaces internos de B en ||D_Nu|| y usa la fuerza COMPLETA F_B,
+no una fuerza Neumann artificial, en el segundo término.
+
+4. DERIVADAS Y FUERZA EXTERIOR DEL DIPOLO PURO
+
+En una región que no cruza el corte, la representación de phi como integral
+de un derivado de arg a lo largo del segmento de longitud L implica
+
+ |partial_i^r phi(z)| <= r! L / d^(r+1),  r>=1,
+
+si toda la región dista al menos d del segmento [-a,a]x{0}. Se obtiene
+restando las potencias complejas (z+a)^(-r) y (z-a)^(-r), o integrándolas
+respecto de la posición del vórtice. Vale para i=x o y. Además phi es
+armónica allí: partial_x^2 phi + partial_y^2 phi=0.
+
+Para un vértice exterior v, p_i=phi(v+e_i)-phi(v) y
+m_i=phi(v)-phi(v-e_i). La fórmula central de Taylor de orden4 da
+|p_i-m_i-partial_i^2 phi(v)| <= sup|partial_i^4 phi|/12.
+Sumando ejes y usando armonicidad,
+|L_infty phi(v)| <= 4L/d^5.
+
+Sea g(t)=sin(t)-t. Entonces |g'(t)|=1-cos(t)<=t^2/2.
+Los límites anteriores dan |p_i|,|m_i|<=L/d^2 y
+|p_i-m_i|<=2L/d^3. Por el teorema del valor medio,
+|g(p_i)-g(m_i)|<=L^3/d^7. Sumando los dos ejes se obtiene la cota
+
+ |f_phi(v)| <= 4L/d^5 + 2L^3/d^7.
+
+No se estima cada seno cúbico por separado: es esencial conservar la
+cancelación entre los enlaces opuestos para obtener el exponente7.
+
+5. REPRESENTACIÓN DEL RESIDUAL EXTERIOR EN X*
+
+Las capas de vértices semienteros se numeran por k entero mediante
+||v||_infty=k-1/2. Fuera de B, k>=S=b/2+1. El número total de vértices
+de una capa es 8k-4, acotado por 8k. Los segmentos usados en las diferencias
+v±e_i distan al menos k-a-3/2 del corte; se usa la cota más débil
+k-a-2>0. Como S>a+2 y k>=S,
+
+ d^(-r) <= [S/(S-a-2)]^r k^(-r).
+
+Sea q=S/(S-a-2). La fuerza exterior coincide con la del dipolo puro, porque
+la corrección compacta y toda la divergencia de su cambio de flujo quedan
+dentro de B. Se empareja cada vértice exterior con y>0 con su reflejo Rv.
+La carga f_phi(v)(delta_v-delta_Rv) se representa por un camino vertical
+entre esos dos vértices. Su norma en X* es como máximo
+|f_phi(v)| sqrt(2|y|) <= |f_phi(v)| sqrt(3k), por Cauchy-Schwarz a lo largo
+del camino. Se permite que ese camino entre en B; se está representando
+la CARGA exterior, no exigiendo que su flujo quede exterior.
+
+La desigualdad triangular de X* y la convergencia absoluta de esta serie
+implican
+
+ ||f_ext||_X*
+ <= 32sqrt(3)L q^5 sum_{k>=S} k^(-7/2)
+   +16sqrt(3)L^3 q^7 sum_{k>=S} k^(-11/2)
+ <= (64/5)sqrt(3)L q^5/(S-1)^(5/2)
+   +(32/9)sqrt(3)L^3 q^7/(S-1)^(9/2).
+
+En el conteo se ha usado la cota8k incluso para el subconjunto y>0, lo
+cual sólo sobreestima. Las sumas se acotan integrando desde S-1. Esta
+expresión coincide término a término, incluidos coeficientes y potencias,
+con tail en saddle/certify.cpp y en el engine.cpp de mínimos.
+
+6. COINCIDENCIA CON LOS PARÁMETROS DEL CÓDIGO
+
+Para L12, a=(L+1)/2 en aritmética entera vale6. El programa pone
+S=b/2+1 y ratio=S/(S-8), sm=S-1. Por tanto a+2=8 y coinciden exactamente
+q, S y las potencias anteriores. Para n=4096 se tiene b4098, S2050;
+para n2048, b2050, S1026. En ambos casos S>a+2. La norma dual total se
+acota sumando finite+tail, como requiere la desigualdad triangular.
+
+7. ENERGÍA FINITA Y PERTENENCIA AL ESPACIO
+
+El dipolo neutro admite la rama real anterior fuera de un corte finito y
+su gradiente es O(L/r^2). La suma cuadrática exterior converge; el número
+de enlaces que cruza el corte es finito. Un corte espacial de phi converge
+en norma de Dirichlet porque phi=O(L/r), y su término de producto en el
+anillo de corte es O(L/R). Así phi pertenece al cierre de gradientes
+compactos usado por el manuscrito. Añadir h compacto preserva ese espacio
+y la energía finita. La corrección de Newton en X también las preserva.
+
+8. QUÉ SIGUE SIENDO PREMISA DE ESTA AUDITORÍA
+
+Esta derivación prueba las fórmulas y su alcance. Las cotas intervalares
+sobre los arrays, los parámetros de configuración, los ceros de borde,
+la lista de enlaces deficientes, el residual finito y la aceptación
+aritmética deben comprobarse en la ejecución fresca del supervisor. El
+backend y su serialización son objetos de otras partes de la revisión.
+No se deduce aquí la barrera global, la exactitud de las tapas, ni una
+conexión dinámica heteroclínica. Tampoco se certifican otros tamaños,
+otros fondos no neutros o una clase arbitraria de potenciales.

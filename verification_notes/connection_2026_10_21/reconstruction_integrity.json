@@ -1,0 +1,56 @@
+{
+  "archive": "audit_connection_2026_10_21/XY_Conexion_Global_Reproducible_2026-10-19.zip",
+  "bytes": 441730856,
+  "sha256": "3a4163d8b24c21f95acbdf502ceaed46e967180c21abb363d3436ae5e2afb042",
+  "members": 130,
+  "expanded_bytes": 626785622,
+  "volumes": [
+    {
+      "volume": "S3_Conexion_01_de_05.zip",
+      "volume_sha256": "db52c9b733276c6e2ed4b2f1c4af3e125196239337b06734dda0c05f2b322c9b",
+      "part": "payload/S3_001.part",
+      "part_bytes": 90000000,
+      "part_sha256": "2ac46de02103eba679d8b130867f90f62983bf170e6f6f39238bc90c3e4a74fd"
+    },
+    {
+      "volume": "S3_Conexion_02_de_05.zip",
+      "volume_sha256": "3c28659c4d13cc664e3b0e4f2970eaa84231450f5b4e8134b895c9717876a8f9",
+      "part": "payload/S3_002.part",
+      "part_bytes": 90000000,
+      "part_sha256": "fbeb9adda293b08e98a09dd7af8fd5b348c0e29e0326000f787ac4a557e33fa5"
+    },
+    {
+      "volume": "S3_Conexion_03_de_05.zip",
+      "volume_sha256": "201ce9a0c73d4ccafda83ea551f60bfdc9fefdd716803926b0072491a831660c",
+      "part": "payload/S3_003.part",
+      "part_bytes": 90000000,
+      "part_sha256": "3f60edfe4ff21f59d735ca7e83756a5501bc836c0bc4c904fe72203b965fab41"
+    },
+    {
+      "volume": "S3_Conexion_04_de_05.zip",
+      "volume_sha256": "9842cfca8694db2d762c21edb4ddd3fc3b051eaf8c6fe64a945a18c6eb4b8b06",
+      "part": "payload/S3_004.part",
+      "part_bytes": 90000000,
+      "part_sha256": "a145d49903456438a59e4fbde6679a31048433a7cdfcdece23be499fa8d6a428"
+    },
+    {
+      "volume": "S3_Conexion_05_de_05.zip",
+      "volume_sha256": "0e03784aab5da0aa63268121225c3ad5713fdcb954fe508fd23df64bc0bddf60",
+      "part": "payload/S3_005.part",
+      "part_bytes": 81730856,
+      "part_sha256": "f00ed92a373a61ebac50cee9f1ac0bb4e8ea1ac9d2220864dde2bea0a1c6a0a5"
+    }
+  ],
+  "integrity": {
+    "FILES.sha256": {
+      "count": 129,
+      "mismatch": [],
+      "sha256": "f967ee66557801cce82aa7bb3445883f706f29e7fb78141ca511d41d234bb3c7"
+    },
+    "distribution/MANIFEST.sha256": {
+      "count": 44,
+      "mismatch": [],
+      "sha256": "ba100e9b7b8763bcd9ce1bcb7ee1a50a1f76669d2be92966ecbe6f6208feb27c"
+    }
+  }
+}

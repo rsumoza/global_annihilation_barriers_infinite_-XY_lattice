@@ -1,0 +1,195 @@
+{
+  "status": "INTEGRAL_MINIMUM_SADDLE_SUBLEVEL_PASS",
+  "manifest_sha256": "6a8b3f625b57032b76ca30f58c37bdd71115ea4a4bc682d0d7ac7c76b4ceb5a5",
+  "base_h_sha256": "2a969db50023b0697c5f228d4b10325df7ea899bcdfe965fef6d02616f82adf3",
+  "supervisor_sha256": "5e870ebb8d359062a1454ee3436e752a491643d66b55a8e4a551e3416bae06e7",
+  "n": 4096,
+  "morse_index": 1,
+  "perturbations": "Unrestricted homogeneous energy space X, modulo constants",
+  "scope": "Infinite saddle, local free-face mountain pass, and marked first exit; no global saddle connections or optimal annihilation barrier",
+  "fresh_stages": [
+    "baseline",
+    "saddle",
+    "barrier",
+    "rational"
+  ],
+  "flags": [
+    "-std=c++17",
+    "-O2",
+    "-DNDEBUG",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-frounding-math"
+  ],
+  "duration_seconds": 383.0815734863281,
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "files": [
+    {
+      "path": "barrier/certify.cpp",
+      "sha256": "0e795f0ab3632adc34b62e5d7f660629795582d1d4542d874b2368db3fde13e6",
+      "bytes": 12813
+    },
+    {
+      "path": "barrier/engine.cpp",
+      "sha256": "3ec7aa8f4b66d16af21587c0d3754bf10c072953031cdc293e321a522bf45111",
+      "bytes": 19372
+    },
+    {
+      "path": "barrier/inputs/basis.raw",
+      "sha256": "fff79c400d7a36ed331637268ac8eaff55ccac92c8e5a678205f8bfe3cc58ea8",
+      "bytes": 89888
+    },
+    {
+      "path": "barrier/inputs/cfg",
+      "sha256": "21c0fd65d570720c22ce017fb011d4c6f584a1561983e9b425f5406dd5c84463",
+      "bytes": 84
+    },
+    {
+      "path": "barrier/inputs/edges",
+      "sha256": "b19a0d0a442e8799313f123d1597f5164e9b9d936f617b89eb53b6b8f17d4595",
+      "bytes": 852
+    },
+    {
+      "path": "barrier/inputs/green.raw",
+      "sha256": "23574cbe42dd8cf3ed90c69e2984e1b913e8ebe0ce93d0f86c96ab38bc1e648a",
+      "bytes": 3473408
+    },
+    {
+      "path": "barrier/inputs/poly_green.raw",
+      "sha256": "46754e774a48beffc43e9be52ea1b04a7634a9a4c52f3fd85a178c13e31fad84",
+      "bytes": 458752
+    },
+    {
+      "path": "barrier/inputs/q.raw",
+      "sha256": "7df80c3db341a9ece19c77939ad1c1ba857ac8dbb2b51d4a1435f26ee88bf7b0",
+      "bytes": 65536
+    },
+    {
+      "path": "baseline/engine.cpp",
+      "sha256": "3ec7aa8f4b66d16af21587c0d3754bf10c072953031cdc293e321a522bf45111",
+      "bytes": 19372
+    },
+    {
+      "path": "baseline/min.basis",
+      "sha256": "89113d9d9f0a5bb870435b448a1b10897206b835ea2f2020131719c192526a7c",
+      "bytes": 7200
+    },
+    {
+      "path": "baseline/min.cfg",
+      "sha256": "98213eaceac66286871ec71e065e14fd6bc8b75189d4ff7d6096a81ba8a22b5a",
+      "bytes": 50
+    },
+    {
+      "path": "baseline/min.edges",
+      "sha256": "13b7748e9e96fdc063c60d20f7a95b979984e93a4e49d2ce78b9f666186ba9c0",
+      "bytes": 243
+    },
+    {
+      "path": "baseline/min.green",
+      "sha256": "34acf9f80343bca074897c19de82760482dd47bc368a04fd3ea0fa101015feb9",
+      "bytes": 983040
+    },
+    {
+      "path": "baseline/min.u",
+      "sha256": "a3405043070ec59f1f09c549fe8aca24ca4b602858c28c93ec6b8c11ffa7f23b",
+      "bytes": 33620000
+    },
+    {
+      "path": "common/base_h.raw",
+      "sha256": "2a969db50023b0697c5f228d4b10325df7ea899bcdfe965fef6d02616f82adf3",
+      "bytes": 33554432
+    },
+    {
+      "path": "math/check_conditions.py",
+      "sha256": "5d0d58f36279232f0d52a9359f6d6d1ddd0d7e43e5978479e43d222d4699688c",
+      "bytes": 3594
+    },
+    {
+      "path": "math/postprocess_certificate.py",
+      "sha256": "390ef8f758e8188c4a805c9b1b692d49d9f282293bd631f49a1244ee9e5dec57",
+      "bytes": 6318
+    },
+    {
+      "path": "math/test_conditions.py",
+      "sha256": "b9c2ebd5d0886483c36e0444f26b182cb900056f415d4fcdce9de81c87db9346",
+      "bytes": 2676
+    },
+    {
+      "path": "proof/reduction.tex",
+      "sha256": "5b40793b1203575aac14cb325a26eebf6ae5e3a2f7bb129c0bc40768a8f160a0",
+      "bytes": 4511
+    },
+    {
+      "path": "proof/saddle_validation.tex",
+      "sha256": "753d6d639a545e3ce7f8f5476196a3b8cf774f6a0b0096b53d72364687af8fa0",
+      "bytes": 10766
+    },
+    {
+      "path": "saddle/certify.cpp",
+      "sha256": "b66a18ba4c8677a229eeaeb4792fe37604ea87f67392411b25501987a970ae15",
+      "bytes": 9141
+    },
+    {
+      "path": "saddle/engine.cpp",
+      "sha256": "3ec7aa8f4b66d16af21587c0d3754bf10c072953031cdc293e321a522bf45111",
+      "bytes": 19372
+    },
+    {
+      "path": "saddle/inputs/basis.raw",
+      "sha256": "3f048d20fee0aecf5a1ffaf2c0a86bd2823328822bedbea0bbe4fb7d96e78b23",
+      "bytes": 8712
+    },
+    {
+      "path": "saddle/inputs/cfg",
+      "sha256": "c05513820f0b6350a272fc8a86b20a2e66ba69806fdd75e26fad496d473515fc",
+      "bytes": 47
+    },
+    {
+      "path": "saddle/inputs/edges",
+      "sha256": "e41d20eab0ad7dc844cdfb159f5bd9dfad7f91d87f529a8a946aea9a5448a4fe",
+      "bytes": 267
+    },
+    {
+      "path": "saddle/inputs/green.raw",
+      "sha256": "e07ab3ae719596f1ccb0f9ee2c48cffc053085041181f69a19a9f2dba6eb64dd",
+      "bytes": 1081344
+    },
+    {
+      "path": "saddle/inputs/h.raw",
+      "sha256": "473f3ad414bdb6e59597b3b278628758d18e1563036075176df338d47c617cbb",
+      "bytes": 134217728
+    },
+    {
+      "path": "saddle/inputs/q.raw",
+      "sha256": "18152163150666b8108a35bf62da6f3b875875579fb4982a187d371abbcf45bd",
+      "bytes": 32768
+    },
+    {
+      "path": "saddle/inputs/u.raw",
+      "sha256": "201f0c794aec894249abce2b545909c4b3573c33de1819b9255ff0ca002f8356",
+      "bytes": 134348832
+    }
+  ],
+  "result_sha256": {
+    "baseline": "afb9a9b577a2833ebbc9de1f24e5ef587e84e59285bdc4820eac7040127ad881",
+    "saddle": "91622d70e1ff7077b621639d2781a8406d2fb0c1b6c718a92972b2bec40d6e60",
+    "barrier": "b3a699038d933416817455fd1cf4f992e89622a416d2eebcb11ef37e5b44f0ab",
+    "rational": "88ba000c91bc4914e798d25b39e6f765e2c2c05f9f125a3a90da5382c941a14a"
+  },
+  "barrier_interval": [
+    "0.00311492820407908873543372",
+    "0.00365142068082763999164935"
+  ],
+  "saddle_minus_minimum": [
+    {
+      "exact": "1064752297008059242012882808065869131598985688622515842857112989505366963/187500000000000000000000000000000000000000000000000000000000000000000000000",
+      "decimal": "0.00567867891737631595740204164301796870",
+      "direction": "lower"
+    },
+    {
+      "exact": "1068967143685842995396384691934130868401014311377484157142887010494633037/187500000000000000000000000000000000000000000000000000000000000000000000000",
+      "decimal": "0.00570115809965782930878071835698203130",
+      "direction": "upper"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+finite_input=1 indefinite_finite_input_test=REJECT congruence diagonal dominance not certified
+explicit_nan_test=ACCEPT margin=10000000000
+wide_trig_finite=1 cos=-34.0881096607929368232092759428,1.00000000000000000010842021725 sin=-59.8953625309394237299920327189,59.8953625309394237299920327189

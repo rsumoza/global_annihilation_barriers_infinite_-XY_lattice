@@ -1,0 +1,54 @@
+Independent adversarial mathematical review of v6 extension
+Date: 21 October 2026
+
+Reviewed mathematical source: sections/local_class.tex
+SHA-256: 5291f626792b67f2d960f76189ff634f5c15feb12fa0ef1368adb2674bdae82f
+Reviewed arithmetic checker: checks/verify_infinite_class.py
+SHA-256: 1cbc84a35c8df4037671a6937c3b0d117775d2eb10eedce90d91d84feebc5d8a
+
+Scope: independent mathematical reading of the new section and consistency
+with the model, frozen critical-state margins, and existing Green bounds.
+The reviewer recomputed the new rational deductions and independently ran
+the checker with --self-test: four demonstrations passed and eight corrupted
+inputs were rejected. This is not a new execution of the original global
+supervisor, a separate interval implementation, or proof-assistant verification.
+
+No unresolved material discrepancy was found within the declared scope.
+Checks included:
+- Subcritical concatenation in both directions gives c(u)=h without requiring
+  that the perturbed initial point lie inside the original separating domain.
+- r=1/20 gives segment energy overhead 1/800, coercivity 43/2000, and
+  the strict barrier lower bound 442867/100000000.
+- Full-lattice normalization of rational blocks gives norm budgets and
+  an explicit geometric tail, including support-interface bonds.
+- The critical-tail projection uses the correct base radius 4098.
+- The polynomial inverse formula is valid for self-adjoint indefinite
+  Hessians with the certified gap; its remainder tends to zero.
+- The common candidate gap 69/1000 gives inverse-series ratio
+  995239/1000000 and Newton contraction upper bound 71/345 < 1/4
+  using correction radius less than 1/50. The original certificate's
+  self-map constants remain in force.
+- Critical-state names can be computed from effective candidate names,
+  finite Riesz proposals and the polynomial inverse. Finite compositions
+  can be evaluated with controlled errors; numerical iterates need not
+  be assumed to remain inside the original Newton ball.
+- The finite-energy error allocation yields enclosure width at most
+  epsilon/2, strictly smaller than epsilon for every positive rational input.
+- Only the energy ball is asserted invariant under the gradient flow.
+  Preservation of the block representation or its tail rate is not claimed.
+
+Two editorial precisions were requested and verified in the final source:
+  (1) the example states that the normalization denominator is one;
+  (2) the critical-state norm is stated as at most 6008.
+Reversing exactly these two changes reproduces the previously audited
+source hash 7e6b2612c4bdbc85dce7f6f85b19027ebccf96bec64722f3ceeaad8a57fa2497.
+
+Limitations: termination is proved for the explicit effective input class
+using an already certified global barrier. It is not a new search method
+for transition mechanisms or a completeness result for all configurations.
+The executed checker verifies constants and finite prefixes; general
+critical-name and arbitrary-precision barrier oracles are proved rather
+than presented as an executed general software interface. The contribution
+of the new section is effective reuse of the fixed certificate. The
+subcritical-concatenation principle is elementary and is not claimed as
+independent universal novelty.

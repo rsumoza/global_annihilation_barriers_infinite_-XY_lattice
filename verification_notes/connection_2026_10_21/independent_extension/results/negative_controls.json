@@ -1,0 +1,25 @@
+{
+  "status": "EXACT_EXPORT_NEGATIVE_CONTROLS_PASS",
+  "scope": "Three deliberately invalid interval-interface cases; not a full arbitrary-input validation",
+  "actual_sidecar_raw_interval": [
+    "0x8.09a35580684130ap-3",
+    "0x8.09a3558068584a9p-3"
+  ],
+  "controls": [
+    {
+      "name": "lower_decimal_excludes_actual_binary_lower",
+      "rejected": true,
+      "reason": "decimal export direction: lower_decimal_excludes_actual_binary_lower"
+    },
+    {
+      "name": "upper_decimal_excludes_actual_binary_upper",
+      "rejected": true,
+      "reason": "decimal export direction: upper_decimal_excludes_actual_binary_upper"
+    },
+    {
+      "name": "reversed_binary_interval",
+      "rejected": true,
+      "reason": "binary interval order: reversed_binary_interval"
+    }
+  ]
+}

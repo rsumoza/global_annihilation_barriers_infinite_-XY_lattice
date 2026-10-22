@@ -1,0 +1,74 @@
+REVISIÓN FINAL INDEPENDIENTE DE CONSISTENCIA — 21 OCTUBRE 2026
+
+Objeto: revisión 5 del manuscrito SIADS, su nuevo Apéndice D, los pasajes
+actualizados de ejecución y alcance, y la cadena global nueva. Esta revisión
+no modifica el manuscrito y no constituye arbitraje externo ni una nueva
+implementación del motor intervalar.
+
+RESULTADO
+
+No se encontró una discrepancia científica material en los cambios revisados.
+El teorema sigue limitado al dipolo neutro de separación 12, coseno exacto,
+red cuadrada infinita y caminos continuos en la norma fuerte del espacio de
+energía hasta cualquier levantamiento físicamente uniforme. La cifra de la
+barrera y la distinción entre conexión variacional y heteroclínica coinciden
+con el certificado reproducido. Las declaraciones de novedad son específicas;
+no se afirma prioridad universal ni incapacidad de adaptar métodos anteriores.
+
+COMPROBACIONES REALIZADAS
+
+1. Se volvió a calcular el SHA-256 del certificado global nuevo:
+   b1cbb7206a0c7492ad6990213a48480c9d25e04a5a21fe1805f0195a871f5999.
+   Estado FRESH_OPTIMAL_ANNIHILATION_BARRIER_PASS, sin opciones de reutilización,
+   duración 737.332688331604 segundos, intervalo estricto publicado
+   0.00567867 < B_ann < 0.00570116.
+
+2. Se verificaron independientemente los 548 hashes de las salidas globales
+   contra los archivos de full_fresh y contra sus copias dentro de proof_record
+   del manuscrito. También se comprobaron los 454 hashes anidados del separador
+   y los 35 de conexión. No se detectó discrepancia.
+
+3. El Apéndice D justifica una media nula exactamente algebraica mediante
+   cancelación del flujo modificado compacto y reflexión de la referencia
+   pura; no necesita que la corrección sea impar. La comparación de Neumann
+   y el factor b/2 son correctos. El halo incluye ambos extremos de todos los
+   enlaces cuyo flujo cambia y todos los vecinos de la caja de fuerzas.
+
+4. En el exterior, el resto central de orden cuatro da 4L/d^5. La resta de
+   las contribuciones de los enlaces opuestos antes del valor absoluto da
+   2L^3/d^7. Las capas de a lo sumo 8k vértices y el transporte vertical
+   reflejado de norma dual a lo sumo sqrt(3k) producen los coeficientes de
+   serie 32sqrt(3) y 16sqrt(3). Su integración da exactamente 64sqrt(3)/5 y
+   32sqrt(3)/9 con las potencias implementadas. El signo de D* no cambia estas
+   cotas absolutas. La serie convergente en X* y la extensión desde pruebas
+   compactas explicitan el paso al residual completo.
+
+5. Los márgenes de las tapas, las desigualdades de Hermite y las uniones
+   comprobadas en las revisiones previas mantienen su alcance. La cota de
+   interpolación interior usa H >= -I, que se sigue de ||H|| <= 1. El cálculo
+   de las tapas conserva la constante más aguda 1/sqrt(2); sustituirla por 1
+   con los mismos parámetros no sería válido, y el texto lo advierte.
+
+6. Los pasajes actuales de instancia, introducción y suplemento distinguen
+   reproducción con las fuentes originales, cálculos geométricos racionales
+   independientes, copias instrumentadas y un motor intervalar independiente.
+   El defecto genérico de rechazo de NaN por congruencia sigue expresamente
+   reconocido. La protección de una ejecución fija no se presenta como una
+   reparación de ese contrato genérico. La plataforma justificada se limita
+   al significando long double de 64 bits, no a todo formato más ancho.
+
+7. Las condiciones a posteriori se presentan como hipótesis verificables,
+   sin prometer terminación para toda configuración. La robustez no identifica
+   el minimax perturbado con una silla continuada y no establece un cambio de
+   mecanismo. Las limitaciones de localización práctica y de dinámica siguen
+   visibles. La nueva auditoría no amplía el alcance de la revisión bibliográfica.
+
+CIERRE EDITORIAL DEL REGISTRO
+
+Durante esta lectura CURRENT_AUDIT_ES.txt todavía tenía una cabecera provisional
+que el responsable estaba sustituyendo por el estado completado. Los informes
+compactos del backend completado estaban pendientes de copia final. Estas
+operaciones de consolidación deben quedar terminadas antes de empaquetar la
+versión de entrega. No son una brecha detectada en las desigualdades científicas.
+La publicación requiere igualmente evaluación de los métodos y pruebas por
+la revista; un PASS reproducido no la sustituye.

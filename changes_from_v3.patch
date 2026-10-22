@@ -1,0 +1,422 @@
+--- siads_xy_v3/main.tex
++++ siads_xy_v4/main.tex
+@@ -80,7 +80,7 @@
+     Departamento de Computaci\'on, Universidad de Buenos Aires, CABA, Argentina.
+     Email: \href{mailto:rsumoza@dc.uba.ar}{\nolinkurl{rsumoza@dc.uba.ar}}.
+     ORCID: \url{https://orcid.org/0009-0003-3554-4876}.}}
+-\date{20 October 2026}
++\date{21 October 2026}
+ \hypersetup{pdftitle={Certified global annihilation barriers in an infinite XY lattice},pdfauthor={Rodolfo Leonardo Sumoza Matos},pdfsubject={Global barrier certification and coupling robustness}}
+ \begin{document}
+ \maketitle
+--- siads_xy_v3/references.tex
++++ siads_xy_v4/references.tex
+@@ -19,6 +19,11 @@
+ \textsc{J. Braun, T. Hudson, and C. Ortner},
+ \emph{Asymptotic expansion of the elastic far-field of a crystalline defect}, Arch. Ration. Mech. Anal., 245 (2022), pp.~1437--1490,
+ \href{https://doi.org/10.1007/s00205-022-01810-3}{doi:10.1007/s00205-022-01810-3}.
++
++\bibitem{BraunHudson2026}
++\textsc{J. Braun and T. Hudson},
++\emph{On the linearised force balance condition in the analysis of atomistic dislocation models}, preprint, arXiv:2609.39642v1 (2026),
++\url{https://arxiv.org/abs/2609.39642}.
+ 
+ \bibitem{Braun2025}
+ \textsc{J. Braun, C. Ortner, Y. Wang, and L. Zhang},
+--- siads_xy_v3/README.txt
++++ siads_xy_v4/README.txt
+@@ -1,11 +1,11 @@
+ CERTIFIED GLOBAL ANNIHILATION BARRIERS IN AN INFINITE XY LATTICE
+-English manuscript and verification snapshot, revision 3, 20 October 2026
++English manuscript and verification snapshot, revision 4, 21 October 2026
+ Prepared for author review before a possible SIADS submission.
+ No submission, repository deposit, or contact with an editor was performed.
+ 
+ READ FIRST
+ main.tex and sections/*.tex contain the complete article and its proofs.
+-SIADS_XY_Manuscript_v3_2026-10-20.pdf is the compiled review copy.
++SIADS_XY_Manuscript_v4_2026-10-21.pdf is the compiled review copy.
+ supplement/Supplementary_Reproducibility.tex and .pdf identify the frozen
+ sources, fresh execution, scope, and arithmetic assumptions.
+ supplement/INDEX.txt and INDEX.html list every proposed supplement item.
+@@ -172,3 +172,19 @@
+ rejects nonpositive tolerances. The new environment preflight restricts
+ usage to the reviewed long-double64 target; it is not a CAP verifier.
+ The gate tests, reports and limitations are in CURRENT_AUDIT_ES.txt.
++
++REVISION 4: SEPARATOR AUDIT AND FORCE-BALANCE CONTEXT
++The unchanged standalone separator was rebuilt from scratch on 21 October
++2026 and passed. Independent integer/rational code verifies all 715
++geometric inclusions and three maxima. The new records and diagnostic
++guarded replay are under verification_notes/separator_2026_10_21. This
++additional execution covers the separator, not a new complete optimality
++chain. The connection attachment failed to copy and must be supplied again.
++
++All 17 prior bibliography entries were checked against primary metadata;
++Braun--Hudson arXiv:2609.39642v1 is added as reference 18. Section 5 makes
++the exact source cancellation explicit. The barrier, coupling budget and
++critical-point statements have not changed. CURRENT_AUDIT_ES.txt is the
++authoritative current assessment; older notes remain dated historical
++records. The updated main PDF and supplementary PDF were rebuilt and
++visually reviewed. No original scientific archive or pin was changed.
+--- siads_xy_v3/CURRENT_AUDIT_ES.txt
++++ siads_xy_v4/CURRENT_AUDIT_ES.txt
+@@ -1,126 +1,72 @@
+-REVISIÓN FOCALIZADA E INTEGRACIÓN REAL — 20 DE OCTUBRE DE 2026
+-Rodolfo Leonardo Sumoza Matos — manuscrito para SIADS
++ESTADO DE LA AUDITORÍA PREVIA AL ENVÍO — 21 DE OCTUBRE DE 2026
+ 
+-DICTAMEN
+-Las precisiones matemáticas y la actualización bibliográfica están
+-integradas en las fuentes reales. Se revisaron el motor y la geometría
+-de la extensión y se ejecutaron las comprobaciones disponibles. La
+-auditoría de toda la CAP NO queda cerrada: faltan las fuentes y datos
+-originales de separación y conexión para reconstruir los antecedentes.
+-No se atribuye a los JSON históricos el valor de una ejecución nueva.
++La versión 4 actualiza la bibliografía y añade una reproducción nueva del
++separador. No debe interpretarse como una nueva ejecución completa de la
++cadena de separación, conexión y optimalidad.
+ 
+-1. IDENTIDAD DE LOS ADJUNTOS
+-Optimalidad: 59 642 630 bytes, SHA-256
+-42034c997678fa511ff261667ccb18edceee6d6bb05e543ddb6604f82958615d.
+-Coincide con el original congelado. FILES.sha256: 593/593 coincidencias.
++1. QUÉ SE HA REPETIDO AHORA
+ 
+-Manuscrito v2: 1 463 735 bytes, SHA-256
+-170ecef7876f69f8b31ff96273da743ef1b7c3ed39cc26622d641f73e0f6df5c.
+-Su manifiesto de 48 miembros se comprobó sobre el ZIP inmutable, antes
+-de interpretar las modificaciones del árbol de trabajo como una revisión.
+-La versión 3 tiene un manifiesto nuevo. El original de optimalidad y sus
+-pins no se modificaron ni se redistribuyen en este pequeño S1.
++El original de separación coincide con su SHA-256 registrado y contiene
++1.083 miembros cubiertos por FILES.sha256. Los 564 miembros del manifiesto
++científico coinciden. Desde una extracción limpia, con nuevas compilaciones
++y sin usar salidas archivadas como premisas, el supervisor terminó con
++FRESH_GLOBAL_SEPARATOR_PASS en 180,92 segundos. Se validaron 109 cartas,
++436 caras coordenadas y las restantes piezas de frontera, con cero celdas
++pendientes. Hay 330 archivos científicos idénticos byte por byte al registro
++original; se comprobaron 454 hashes de salidas frescas.
+ 
+-2. CORRECCIONES INTEGRADAS
+-Modelo: el subespacio cerrado de gradientes define primero el espacio X;
+-se justifican reconstrucción por caminos y representantes módulo constantes.
++2. QUÉ SE HA CONTRASTADO INDEPENDIENTEMENTE
+ 
+-Newton: el original YA contenía una barra sobre la bola. La observación
+-previa que lo trataba como una bola abierta se retira al ver la fuente y
+-la imagen originales. Se conserva la bola cerrada y se explicitan su
+-completitud y la condición estricta para pertenencia a la bola abierta.
++Un código nuevo que usa enteros y racionales exactos de Python, mediante
++el laplaciano de grado cuatro y extensiones por cero, verificó las 715
++inclusiones geométricas y tres máximos escalares. No reutiliza el motor
++intervalar C++. También se revisaron el libro de casos, las identidades
++de centros y la repetición racional condicional de la frontera.
+ 
+-Frontera: se definen los semiespacios cerrados retenidos; un descarte por
+-cortes debe excluir la intersección cerrada, o existir un test válido de
+-energía/interior. Se mantienen tangencias y encuentros; se explicita la
+-restricción A0 en las coberturas internas. La prueba de la frontera incluye
+-la descomposición de conjuntos necesaria para la primera salida.
+-La inspección del código confirmó que sus cortes ya usan pruebas estrictas
+-correctas. No se presenta esa aclaración como la reparación de un descarte
+-numérico erróneo que no fue observado.
++El backend original mantiene una deficiencia genérica: el test por
++congruencia puede aceptar un NaN inyectado. Esto no es un contraejemplo al
++teorema para datos fijos. Se completó una ejecución instrumentada separada
++del mínimo, las 109 cartas y la geometría sin fallos de finitud u orden,
++y con salidas científicas idénticas. Se contrastaron 9442 registros de
++exportación con sus valores binarios exactos. El alcance y los resultados
++quedan registrados en verification_notes/separator_2026_10_21.
+ 
+-Tapa: se documenta que el comprobador usa Rc<3*sqrt(2)*mu. Con mu>=1/25,
+-Rc=33/200 y tau=71/100>1/sqrt(2), la constante es al menos 19/40000.
+-Se distingue esa elección del uso conservador de Lambda=1 para Newton.
++La objeción a la impresión de escalares del mínimo queda resuelta para
++el consumidor del separador: usa PAD=10^-18 en todos los campos consumidos.
++El contraste con los valores binarios exactos confirma esas cuatro cotas
++y el umbral residual binario realmente usado por las cartas. Esto no
++resuelve por extensión la interfaz del paquete de conexión.
+ 
+-Bibliografía: añadidas Alicandro-De Luca-Garroni-Ponsiglione (2014),
+-Braun-Hudson-Ortner (2022) y Ortner (2009). Corregidos el año final de
+-Chen (2021) y el rango de páginas de Garroni-Petrache-Spadaro (2025).
+-Hay 17 entradas, sin DOI duplicados ni claves de cita sin definir.
+-Se conservó la clave interna Chen2020 por compatibilidad; el año visible
+-es 2021. Las atribuciones distinguen ingredientes conocidos y conclusión
+-global específica, sin reclamar prioridad universal.
++3. PRECISIONES ANALÍTICAS Y BIBLIOGRÁFICAS
+ 
+-Edición: filiaciones, email y ORCID del autor insertados; resumen con
+-separación doce y altura relativa silla-mínimo; tipos de referencias
+-automáticas corregidos; metadata sin «Draft». Se comprobó la rama article
+-fallback. La clase opcional SIAM no estaba instalada y no se declara probada.
++Se mantienen las correcciones de la versión 3: espacio de energía definido
++por el subespacio cerrado de gradientes, retención de celdas cerradas y
++tangencias, margen racional positivo de las tapas y entorno de significando
++exactamente de 64 bits. La bola cerrada de Newton ya estaba presente; no
++se presenta como reparación de una hipótesis ausente.
+ 
+-3. EJECUCIONES Y RESULTADOS NUEVOS
+-Los checkers subsidiarios originales de robustez y Green se ejecutaron y
+-sus JSON coincidieron byte a byte con los archivados. Son comprobaciones
+-de aritmética que consumen registros previos, no una nueva CAP global.
+-El checker de robustez rechazó cambios de hash y un saddle.json ausente.
++Se contrastaron los metadatos de las 17 referencias previas con fuentes
++primarias y se añadió el preprint de Braun y Hudson, arXiv:2609.39642v1
++(2026). Ahora hay 18 referencias. El texto distingue expresamente la
++cancelación algebraica de la fuente D*q, cuya sumabilidad es probada,
++de una inferencia de fuerza neta nula basada sólo en decaimiento exterior.
++No se afirma prioridad universal ni una revisión exhaustiva nueva.
+ 
+-La geometría y membership se reevaluaron con los oráculos locales
+-archivados: CONDITIONAL_EXACT_SADDLE_SEPARATOR_PASS, 109 cartas,
+-2208 evaluaciones de caras coordenadas, cero piezas sin resolver.
+-Márgenes mínimos observados sobre LEVEL:
+-  pared radial: 3398053353357/500000000000000000;
+-  círculo:      480813352021/500000000000000000.
+-Distancia máxima de minimizador a la silla aceptada:
+-  81872840727422051/500000000000000000 < 0.165.
+-Estas cifras verifican el ensamblaje condicional: no recomputan las
+-matrices C++, residuos, colas ni oráculos de carta a partir de sus raw.
++4. LO QUE FALTA PARA CERRAR LA REVISIÓN FOCALIZADA
+ 
+-El motor C++ usa series propias, no llamadas std::sin/std::cos. Se revisaron
+-sus dominios y restos. Los 1166 ensayos contra fórmulas Decimal de alta
+-precisión no encontraron discrepancias. Son ensayos diagnósticos finitos,
+-no una prueba formal del contrato intervalar completo. La identidad entre
+-la normal geométrica y el campo del adjunto se comprobó algebraicamente;
+-el supervisor vincula los mismos bytes y embeddings.
++El archivo XY_Conexion_Global_Reproducible_2026-10-19(1).zip no pudo copiarse
++desde el adjunto de esta etapa. No se lo ha leído ni utilizado en esta
++revisión. Se necesita volver a adjuntarlo para inspeccionar sus motores y
++sus consumidores decimales, justificar algebraicamente la media nula de
++las cargas de Poisson, auditar los arrays del camino y repetir la
++conexión y el supervisor completo de optimalidad desde directorios nuevos.
+ 
+-4. HALLAZGOS INFORMÁTICOS Y ACCIONES
+-Se sustituyeron los assert del checker auxiliar de Green por comprobaciones
+-explícitas, activas también bajo python -O; ambas ejecuciones coinciden y
+-rechazan tolerancias no positivas. No se cambió la aritmética del teorema.
++El registro global de 763,36 segundos que conserva el artículo corresponde
++a la ejecución histórica ya documentada. El resultado nuevo del separador
++sólo respalda su cota inferior >0.0055; no sustituye la conexión superior
++ni la identificación exacta del minimax con las sillas.
+ 
+-Se añadió verify_supported_environment.py. Aceptó el entorno observado:
+-g++13.3, significando long double de64 bits, double IEEE binary64,
+-little-endian y redondeo al más cercano. Rechazó configuraciones de prueba
+-con significando113 y otro modo de redondeo. Es un preflight de entorno,
+-no un verificador de la barrera.
+-
+-Limitaciones que SIGUEN ABIERTAS en el original congelado:
+-(a) El helper de congruencia acepta un NaN inyectado porque sus reducciones
+-    std::min pueden conservar el acumulador finito. readraw rechaza datos
+-    no finitos; no se demostró que ese NaN ocurra con los inputs congelados.
+-    Esto refuta un contrato general de rechazo; por sí solo no constituye
+-    un contraejemplo al teorema fijo. Comprobar su inocuidad para toda la
+-    cadena congelada sigue pendiente.
+-(b) La serialización del main histórico run() no tiene una garantía general
+-    de cota decimal exterior. Se mostró un valor cuyo decimal precision22
+-    es menor que el binario exacto. Los cuatro ejecutables de la extensión
+-    NO llaman esa ruta: sus endpoints consumidos llevan padding antes de
+-    imprimir30 dígitos. Los motores/consumidores de los antecedentes deben
+-    inspeccionarse cuando se recuperen.
+-(c) Los guards antiguos admiten mantisas>=64; esa condición es demasiado
+-    amplia para justificar su impresión30 en todos los formatos. La nueva
+-    documentación y el preflight restringen el entorno revisado a64.
+-
+-Corregir las fuentes congeladas exigiría actualizar manifests/pins y
+-repetir todos sus dependientes. No se cambió el motor a escondidas ni se
+-emitió una nueva marca global de éxito. Los informes de detalle exponen
+-los hallazgos, los tests y sus límites.
+-
+-5. PASO NECESARIO PARA CERRAR LA AUDITORÍA
+-Recuperar XY_Separacion_Global_Reproducible_2026-10-19.zip y
+-XY_Conexion_Global_Reproducible_2026-10-19.zip con sus identidades del índice.
+-Revisar sus motores y serialización, comprobar la finitud de los caminos
+-de cálculo esenciales, ejecutar verify_path_inputs sobre los raw y repetir
+-el supervisor completo en un directorio nuevo con el preflight requerido.
+-Si se endurece el motor, actualizar pins de manera explícita y repetir
+-toda la cadena antes de afirmar que la nueva versión está certificada.
+-
+-Esta revisión asistida por IA no es arbitraje externo ni verificación en
+-un asistente de pruebas. No se realizó envío ni depósito público.
++Si se endurecen fuentes congeladas, habrá que actualizar manifests/pins
++y repetir sus dependientes. No se cambió ningún original a escondidas.
++Esta auditoría asistida por IA no equivale a arbitraje editorial ni a una
++formalización en un asistente de pruebas. No se realizó ningún envío.
+--- siads_xy_v3/AUTHOR_NEXT_STEPS_ES.txt
++++ siads_xy_v4/AUTHOR_NEXT_STEPS_ES.txt
+@@ -1,3 +1,14 @@
++ACTUALIZACIÓN DEL 21 DE OCTUBRE DE 2026
++
++El original de separación ya fue revisado y repetido en esta etapa.
++Falta volver a adjuntar XY_Conexion_Global_Reproducible_2026-10-19(1).zip:
++ese adjunto no pudo copiarse. Es necesario para completar la auditoría
++del camino y repetir toda la cadena de optimalidad.
++
++El archivo CURRENT_AUDIT_ES.txt sustituye los balances técnicos anteriores
++en cuanto al estado actual. Lo que sigue conserva indicaciones editoriales
++históricas; no acredita nuevos pasos del certificado.
++
+ ESTADO DE LA REVISIÓN 3 — 20 DE OCTUBRE DE 2026
+ 
+ Las afiliaciones, email y ORCID suministrados están insertados. El
+--- siads_xy_v3/sections/green.tex
++++ siads_xy_v4/sections/green.tex
+@@ -131,6 +131,16 @@
+ \end{equation}
+ This uses the Riesz formulation in $\X$; it assumes no bounded inverse
+ of the vertex Laplacian on $\ell^2(\Z^2)$.
++
++The role of force balance in dislocation far-field estimates is examined
++in the recent preprint \cite{BraunHudson2026}. Here
++\eqref{eq:green-representation} follows directly from stationarity and
++the closed gradient projection. If it is rewritten as the vertex equation
++$D^*D\theta=D^*q$, then $q\in\ell^1$ implies $D^*q\in\ell^1$ and
++$\sum_x(D^*q)(x)=0$: absolute convergence permits pairing the two
++opposite endpoint contributions of every bond. Thus this cancellation
++is proved from the source representation, rather than inferred from
++far-field decay.
+ 
+ For an even integer $R\ge2R_*$, split $q=q_{\rm in}+q_{\rm out}$ at
+ the anchor radius $R/2$, assigning anchors of radius $R/2$ to the exterior.
+--- siads_xy_v3/sections/instance.tex
++++ siads_xy_v4/sections/instance.tex
+@@ -82,6 +82,14 @@
+ 
+ The verifier combines exact rational bookkeeping with outward floating-point enclosures and analytic tail estimates. Candidate search, proposal optimization, and basis generation are outside the supervisor; the fixed proposals must pass its checks. The default supervisor does not execute every historical attack script, the separate secondary boundary implementation, or the separate heteroclinic extension. We therefore base \cref{thm:instance} on the global variational certificate, not on an unreported fresh heteroclinic calculation.
+ 
++A further audit on 21 October 2026 rebuilt the standalone separator
++from its unchanged pinned sources: all 109 local charts and all boundary
++checks passed. Its 330 directly comparable scientific outputs agreed
++byte for byte with the archived record. A separately coded exact-dyadic
++Laplacian calculation verified all 715 geometric interval inclusions
++and three scalar maxima. This additional execution covers the separator;
++it does not rerun the upper connection or the optimality assembly.
++
+ The supported reproduction target is little-endian IEEE binary64 input
+ with round-to-nearest arithmetic and a \texttt{long double} significand
+ of exactly 64 bits. The companion environment preflight checks this
+--- siads_xy_v3/supplement/Supplementary_Reproducibility.tex
++++ siads_xy_v4/supplement/Supplementary_Reproducibility.tex
+@@ -14,7 +14,7 @@
+ \setlength{\parskip}{0.25em}
+ \title{Supplementary reproducibility and verification record}
+ \author{}
+-\date{20 October 2026}
++\date{21 October 2026}
+ \hypersetup{pdftitle={Supplementary reproducibility and verification record},pdfsubject={Frozen sources, fresh execution, arithmetic checks and verification boundaries}}
+ \begin{document}
+ \maketitle
+@@ -22,8 +22,9 @@
+ 
+ \section{Purpose and mathematical scope}
+ 
+-This revision includes the clarified interpretation and conceptual figure
+-of manuscript revision 2. The frozen global certificate and its numerical
++This revision retains the interpretation and conceptual figure of
++manuscript revision 2 and the targeted checks of revision 3. Section 6
++adds the separate separator audit of 21 October 2026. The frozen global certificate and its numerical
+ claims are the same as in the preceding version. The global execution
+ documented here is the original fresh run, not a new run performed for
+ editorial changes.
+@@ -274,7 +275,7 @@
+ deductions are not an independent implementation of the original global
+ certificate and are not external peer review.
+ 
+-\subsection*{Targeted source checks in the revised snapshot}
++\subsection*{Targeted source checks, 20 October 2026}
+ The additional inspection recorded under
+ \code{verification_notes/current_targeted} has a narrower scope than the
+ historical fresh global run. The optimality archive matched all $593$
+@@ -365,4 +366,53 @@
+ manuscript source bundle does not redistribute an isolated SIAM class
+ file. Publisher-template installation guidance is in its README.
+ 
++
++\clearpage
++\section{Additional separator audit, 21 October 2026}
++
++A new clean execution of the standalone separator, using its unchanged
++pinned scientific sources, ended with
++\code{FRESH_GLOBAL_SEPARATOR_PASS} in 180.92 seconds. The 109 local
++charts, 436 coordinate faces and all other boundary pieces passed, with
++zero unresolved cells. All 330 directly comparable scientific files
++were byte-identical to the archived outputs; boundary and separation
++records agreed after explicitly removing path, timing and derived-hash
++fields. All 454 fresh-output hashes were checked. This is an additional
++separator execution; the complete three-package optimality execution
++reported above remains the original one.
++
++An independent implementation using Python integers and exact rational
++arithmetic verified all 715 geometric inclusions: eight Gram and inverse
++entries, 218 center coordinates, 109 squared transverse norms and 380
++neighbor distances, as well as three scalar maxima. It computes inner
++products through the full-lattice degree-four Laplacian of zero
++extensions and checks boundary zeros. It does not import the supplied
++C++ interval engine. These checks validate the fixed geometry; they do
++not constitute an independent interval evaluation of the critical-state
++residuals or chart energies. Code, negative controls and complete records
++are included in \code{verification_notes/separator_2026_10_21}.
++
++The separator's historical minimum checker prints bare decimal scalars.
++Its downstream consumer already adds or subtracts an exact $10^{-18}$
++padding to every numerical baseline field it uses. For the fixed
++magnitudes, this dominates the decimal formatting error. This resolves
++the previously identified serialization concern for this interface,
++subject to the explicitly supported 64-bit significand environment.
++The separate generic nonfinite-input issue in the congruence helper
++must be distinguished from its reachability with these fixed inputs.
++No original frozen source or scientific pin was modified.
++
++A diagnostic replay with finite/order checks completed the minimum, all
++109 charts and the geometry without a guard failure. Its scientific
++outputs and coefficient files were byte-identical to the untouched fresh
++run. Exact hexadecimal sidecars were compared with the exported decimals
++using rational arithmetic: 8,284 chart interval records, 436 one-sided
++chart scalars, 715 geometry interval records, three geometry summaries
++and the four consumed minimum scalars passed their directional tests.
++This addresses the fixed separator execution and its actual exports;
++it neither repairs the original helper's generic NaN contract nor
++constitutes a second interval implementation. The connection and full
++optimality audit remain pending recovery of the connection archive.
++
++
+ \end{document}
+--- siads_xy_v3/supplement/INDEX.txt
++++ siads_xy_v4/supplement/INDEX.txt
+@@ -1,12 +1,12 @@
+ INDEX OF SUPPLEMENTARY MATERIALS
+-Prepared 20 October 2026 for SIAM Journal on Applied Dynamical Systems.
++Prepared 21 October 2026 for SIAM Journal on Applied Dynamical Systems.
+ 
+ Article: global certification of an annihilation mechanism on the infinite
+ square XY lattice, reusable a posteriori conditions, and quantitative
+ coupling robustness. Author: Rodolfo Leonardo Sumoza Matos.
+ Title: Certified global annihilation barriers in an infinite XY lattice.
+ 
+-S1. SIADS_XY_Manuscript_and_Checkers_v3_2026-10-20.zip
++S1. SIADS_XY_Manuscript_and_Checkers_v4_2026-10-21.zip
+ Description: frozen manuscript sources, supplementary sources, reproducible conceptual-figure code and vector assets, analytic
+ arithmetic checkers for coupling robustness and Green-tail budgets, their
+ JSON outputs, and the fresh reproduction summaries/logs and instructions.
+--- siads_xy_v3/supplement/INDEX.html
++++ siads_xy_v4/supplement/INDEX.html
+@@ -3,13 +3,13 @@
+ <head><meta charset="utf-8"><title>Index of Supplementary Materials</title></head>
+ <body>
+ <h1>Index of Supplementary Materials</h1>
+-<p>Prepared 20 October 2026 for <em>SIAM Journal on Applied Dynamical
++<p>Prepared 21 October 2026 for <em>SIAM Journal on Applied Dynamical
+ Systems</em>. Article: global certification of an annihilation mechanism
+ on the infinite square XY lattice, reusable a posteriori conditions, and
+ quantitative coupling robustness. Author: Rodolfo Leonardo Sumoza Matos.
+ Title: Certified global annihilation barriers in an infinite XY lattice.</p>
+ <ol>
+-<li><p><a href="SIADS_XY_Manuscript_and_Checkers_v3_2026-10-20.zip">SIADS_XY_Manuscript_and_Checkers_v3_2026-10-20.zip</a></p>
++<li><p><a href="SIADS_XY_Manuscript_and_Checkers_v4_2026-10-21.zip">SIADS_XY_Manuscript_and_Checkers_v4_2026-10-21.zip</a></p>
+ <p><strong>Description:</strong> Frozen manuscript and supplementary
+ sources and reproducible conceptual-figure code/vector assets; exact-rational coupling-robustness and Green-tail budget
+ checkers and their JSON outputs; fresh reproduction summaries, logs,

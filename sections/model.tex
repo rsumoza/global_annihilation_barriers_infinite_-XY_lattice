@@ -1,0 +1,128 @@
+\section{Energy space, lifts, and normalization}\label{sec:model}
+
+Let $V=(\Z+\tfrac12)^2$ and orient each nearest-neighbor bond in a positive coordinate direction; $\mathcal E$ contains each undirected bond exactly once. Write $D_eu=u(y)-u(x)$ for $e=(x,y)$. Define the closed gradient subspace first:
+\[
+ \mathcal G=\overline{\{D\varphi:\varphi\in C_c(V;\R)\}}^{\,\ell^2(\mathcal E)}.
+\]
+The homogeneous energy space and its energy are
+\begin{equation}\label{eq:energy-space}
+ \inner uv_\X=\sum_e D_euD_ev,\qquad
+ \X=\{u:V\to\R:Du\in\mathcal G\}/\R,
+ \qquad\E(u)=\sum_e(1-\cos D_eu).
+\end{equation}
+The quotient identifies vertex representatives differing by a constant.
+The map $D:\X\to\mathcal G$ is an isometric isomorphism: each
+$g\in\mathcal G$ has zero oriented sum around every finite cycle, since
+finite-cycle sums are continuous on $\ell^2(\mathcal E)$ and vanish on
+compact gradients. Integrating $g$ along finite lattice paths therefore
+reconstructs a vertex representative, unique modulo a constant.
+Thus $\X$ is a Hilbert space, equivalently the homogeneous completion of
+compactly supported vertex fields represented modulo constants. Finite-path
+vertex differences are continuous in its norm. The energy is finite,
+nonnegative, and at most $\nrm u_\X^2/2$.
+
+The physically uniform configurations and admissible barriers are
+\begin{align}
+ \K&=\{u\in\X:D_eu\in2\pi\Z\text{ for every }e\},\label{eq:vacua}\\
+ B_b(u)&=\inf_{\substack{\gamma\in C([0,1];\X)\\
+                 \gamma(0)=u,\ \gamma(1)\in\K}}
+     \max_{t\in[0,1]}\{E_b(\gamma(t))-E_b(u)\}.\label{eq:barrier}
+\end{align}
+Write $B_0$ when $b=0$. Replacing the endpoint set by the single representative zero can change the stated problem. Each energy is invariant under addition of an element of $\K$.
+
+Every nonzero $k\in\K$ satisfies $\nrm k_\X\ge4\pi$. Indeed, its integer gradient has finite support, and a nonconstant integer field has at least four bonds with nonzero difference on the square lattice. Thus the quotient map $\X\to\X/\K$ is a local isometry and continuous paths lift uniquely after an initial lift is fixed, by subdividing the compact time interval into neighborhoods smaller than half this separation. Consequently \cref{eq:barrier} also describes paths to the physical vacuum in the phase quotient. Convergence on every fixed finite box is a weaker topology: translating a defect to infinity does not supply a strong energy-space path ending at the vacuum.
+
+We use the Riesz gradient $F(u)=\nabla_\X\E(u)$ and its self-adjoint derivative $H(u)$. The basic differential facts will also specify the constants used in the verification.
+
+\begin{lemma}\label{lem:basic}
+The energy is smooth on $\X$, and
+\begin{align}
+ \inner{F(u)}v_\X&=\sum_e\sin(D_eu)D_ev,\label{eq:firstvar}\\
+ \inner{H(u)v}w_\X&=\sum_e\cos(D_eu)D_evD_ew.\label{eq:hessian}
+\end{align}
+The bond evaluation functional has norm $1/\sqrt2$. In particular,
+\begin{equation}\label{eq:basic-bounds}
+ \nrm{H(u)}\le1,\qquad
+ \nrm{H(u)-H(v)}\le\Lambda\nrm{u-v}_\X,
+ \qquad \Lambda=1/\sqrt2.
+\end{equation}
+For $h\in\X$, the gradient and energy Taylor remainders are bounded by
+\begin{gather}\label{eq:remainders}
+ \nrm{F(u+h)-F(u)-H(u)h}\le\tfrac\Lambda2\nrm h_\X^2,\qquad\qquad
+ \nonumber\\
+ |\E(u+h)-\E(u)-\inner{F(u)}h_\X
+          -\tfrac12\inner{H(u)h}h_\X|
+       \le\tfrac\Lambda6\nrm h_\X^3.
+\end{gather}
+\end{lemma}
+\begin{proof}
+The Fourier isometry sends a lattice gradient to $d(k)\widehat u(k)$, with $d_j=e^{ik_j}-1$ and $|d|^2=4-2\cos k_1-2\cos k_2$. The squared norm of one bond evaluation is the normalized torus integral of $|d_j|^2/|d|^2$. The two integrals agree by coordinate exchange, and their sum is one, so each is $1/2$. The value at $k=0$ does not affect the integral. This also follows from the projection construction in \cref{sec:green}.
+
+Since $|\sin t|\le|t|$, the first variation defines a bounded functional. Cauchy--Schwarz gives $\nrm{H(u)}\le1$, and
+\[
+ |\inner{(H(u)-H(v))a}c_\X|
+ \le\nrm{D(u-v)}_\infty\nrm a_\X\nrm c_\X
+ \le\Lambda\nrm{u-v}_\X\nrm a_\X\nrm c_\X.
+\]
+The same estimate bounds the trilinear third derivative by $\Lambda$. For every $j\ge2$, placing two gradient factors in $\ell^2$ and the other $j-2$ factors in $\ell^\infty$ bounds the $j$th derivative by $\Lambda^{j-2}\prod_{i=1}^j\nrm{v_i}_\X$; the same coefficient-continuity argument proves smoothness. Differentiation follows by dominated remainder estimates on the bond sums; continuity follows from uniform convergence of the coefficient increments in $\ell^\infty$. Integration along a line gives \cref{eq:remainders}.
+\end{proof}
+
+At the vacuum, $H(0)=I_\X$. A coercivity estimate here is measured against $\nrm{Dv}_2^2$, not against the vertex $\ell^2$ norm. The local vertex Laplacian has spectrum touching zero on the infinite lattice, so this energy-space gap is not an $\ell^2$ spectral gap.
+
+For a plaquette $p$, choose principal bond increments in $(-\pi,\pi)$ and take their oriented sum divided by $2\pi$. If no increment is at a branch endpoint, this defines an integer charge $q_p$. A uniform margin from those endpoints and the bond evaluation bound certify charge preservation under energy-norm corrections. The dipolar state in \cref{sec:instance} has finite total energy and exactly two nonzero charges. We use this charge statement only after its global branch and exterior checks, not as an assumed constraint on escape paths.
+
+\subsection{Dissipation metric and dynamical interpretation}
+
+The choice of metric specifies how the phase field dissipates energy. In
+this paper the dissipation potential for an instantaneous velocity $v$ is
+\[
+ \mathcal R(v)=\frac12\sum_e|D_ev|^2
+             =\frac12\nrm v_\X^2.
+\]
+Thus the velocity is the unique minimizer of
+$\mathcal R(v)+DE_b(u)[v]$ over $\X$. Its Euler equation is
+\begin{equation}\label{eq:flow}
+ \dot u=-\nabla_\X E_b(u).
+\end{equation}
+Its weak form is
+\begin{equation}\label{eq:flow-weak}
+ \sum_eD_e\dot u\,D_ev
+       =-\sum_e(1+b_e)\sin(D_eu)D_ev
+       \quad(v\in\X).
+\end{equation}
+Writing $D^*$ for the adjoint from bond fields to vertex distributions,
+this is $D^*D\dot u=-D^*((1+b)\sin Du)$, understood weakly. Along a
+solution,
+\[
+ \frac{\mathrm d}{\mathrm dt}E_b(u(t))
+   =-\nrm{\dot u(t)}_\X^2=-\sum_e|D_e\dot u(t)|^2.
+\]
+The metric therefore measures dissipation through differences of phase
+velocities across bonds, rather than through independent vertex velocities.
+
+This interpretation has a circuit realization. In a finite array of
+overdamped resistively shunted Josephson junctions with equal shunt
+conductances, a bond voltage is proportional to its phase difference
+velocity. After nondimensionalizing, the sum of the resistive and
+Josephson bond currents has the form
+$i_e=D_e\dot u+J_e\sin(D_eu)$, where $J_e=1+b_e$.
+Kirchhoff conservation at every free vertex gives $D^*i=0$ in the absence
+of injected current and noise, which is the weak equation above when
+the boundary phases are held fixed. The homogeneous current-conservation
+equation is given in \cite[Eq.~(13)]{Yoon2000}; fluctuating twists require
+the additional equations specified there and are not included here.
+The corresponding Joule dissipation is proportional to
+$\sum_e|D_e\dot u|^2$. On the infinite lattice we use the finite-energy
+weak formulation itself, rather than assuming a thermodynamic limit of
+the driven or noisy finite-array model. In particular, no bounded
+inverse of the vertex Laplacian on $\ell^2$ is asserted.
+
+The barrier theorem and the dynamical corollary answer distinct questions.
+The barrier is determined by the energy and the admissible strong-$\X$
+path class in \eqref{eq:barrier}; changing the mobility while keeping
+those two objects fixed does not change this variational quantity.
+The flow above provides a specified dissipative relaxation model and
+the local stability assertion in \cref{cor:flow}. An energy barrier alone
+does not validate a connecting orbit, a thermal escape rate, or the
+thermodynamic Berezinskii--Kosterlitz--Thouless transition. A different
+mobility, noise law, or path topology requires its own dynamical analysis.

@@ -1,0 +1,16 @@
+PASOS DEL AUTOR - SIADS, REVISIÓN DOCUMENTAL 7
+
+1. Subir el contenido de GitHub_Repository/ a https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice.
+2. Publicar la Release siads-v7-2026-10-22 con S1-S4 y SOURCE_SNAPSHOT.sha256.
+   Seguir REPOSITORY_RELEASE_ES.txt; los tres originales no van en Git.
+3. Descargar desde la Release y comprobar los hashes. Anotar la URL y el
+   SHA completo del commit de la etiqueta. La existencia remota está pendiente.
+4. Revisar Journal_Submission/: manuscrito, carta, suplemento e índices.
+5. Resolver cualquier límite práctico del portal para la entrega de S1-S4
+   por una vía que la revista admita. Adjuntar los suplementos desde el inicio.
+6. Revisar responsabilidad de autor, filiaciones, financiación, conflictos,
+   ausencia de envío simultáneo y declaración de uso de IA según los hechos.
+7. Completar el portal SIADS. Todavía no se ha iniciado ni enviado el artículo.
+
+El resultado global y la extensión a la clase infinita localizada se conservan.
+La ampliación a todas las configuraciones sigue siendo un problema abierto.

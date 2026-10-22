@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "description": "Frozen originals. Canonical destinations below are planned until the tagged Release is published and verified.",
+  "assets": [
+    {
+      "item": "S2",
+      "name": "XY_Separacion_Global_Reproducible_2026-10-19.zip",
+      "bytes": 228006035,
+      "sha256": "47eaf4886bc10b7bbb7ef259c44bfef9134bf3402920594ca6e20cd87235cedc",
+      "planned_download_url": "https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice/releases/download/siads-v7-2026-10-22/XY_Separacion_Global_Reproducible_2026-10-19.zip"
+    },
+    {
+      "item": "S3",
+      "name": "XY_Conexion_Global_Reproducible_2026-10-19.zip",
+      "bytes": 441730856,
+      "sha256": "3a4163d8b24c21f95acbdf502ceaed46e967180c21abb363d3436ae5e2afb042",
+      "planned_download_url": "https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice/releases/download/siads-v7-2026-10-22/XY_Conexion_Global_Reproducible_2026-10-19.zip"
+    },
+    {
+      "item": "S4",
+      "name": "XY_Optimalidad_Extension_Reproducible_2026-10-19.zip",
+      "bytes": 59642630,
+      "sha256": "42034c997678fa511ff261667ccb18edceee6d6bb05e543ddb6604f82958615d",
+      "planned_download_url": "https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice/releases/download/siads-v7-2026-10-22/XY_Optimalidad_Extension_Reproducible_2026-10-19.zip"
+    }
+  ],
+  "repository_url": "https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice",
+  "planned_tag": "siads-v7-2026-10-22",
+  "planned_release_url": "https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice/releases/tag/siads-v7-2026-10-22"
+}

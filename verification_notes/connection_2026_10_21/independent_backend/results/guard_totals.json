@@ -1,0 +1,43 @@
+{
+  "status": "COMPLETE_FIXED_CONNECTION_GUARD_REPLAY_PASS",
+  "fresh_connection_programs": [
+    {
+      "program": "saddle",
+      "finite_interval_constructions": 7174536378,
+      "finite_dn_up_calls": 9273827873
+    },
+    {
+      "program": "barrier",
+      "finite_interval_constructions": 510501791,
+      "finite_dn_up_calls": 812072214
+    },
+    {
+      "program": "leg_return",
+      "finite_interval_constructions": 130326305,
+      "finite_dn_up_calls": 166787460
+    },
+    {
+      "program": "leg_annihilation",
+      "finite_interval_constructions": 373100660,
+      "finite_dn_up_calls": 480140252
+    },
+    {
+      "program": "full_annihilation",
+      "finite_interval_constructions": 599066078,
+      "finite_dn_up_calls": 765373904
+    },
+    {
+      "program": "join_points",
+      "finite_interval_constructions": 912554875,
+      "finite_dn_up_calls": 857851660
+    }
+  ],
+  "fresh_connection_interval_constructions": 9700086087,
+  "fresh_connection_dn_up_calls": 12356053363,
+  "reused_identical_baseline": {
+    "finite_interval_constructions": 1242704177,
+    "finite_dn_up_calls": 1761491636,
+    "source_and_all_six_inputs_identical": true
+  },
+  "incomplete_lazy_variant_excluded": true
+}

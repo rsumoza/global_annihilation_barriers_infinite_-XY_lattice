@@ -1,0 +1,22 @@
+{
+  "changed_original_text_files": [
+    "AUTHOR_NEXT_STEPS_ES.txt",
+    "README.txt",
+    "checks/verify_green_tail_budget.py",
+    "main.tex",
+    "references.tex",
+    "sections/certificate.tex",
+    "sections/discussion.tex",
+    "sections/instance.tex",
+    "sections/introduction.tex",
+    "sections/model.tex",
+    "supplement/INDEX.html",
+    "supplement/INDEX.txt",
+    "supplement/Supplementary_Reproducibility.tex"
+  ],
+  "unchanged_frozen_optimality_archive": true,
+  "main_pdf_pages": 30,
+  "supplement_pdf_pages": 6,
+  "full_CAP_rerun": false,
+  "same_library_manuscript_item_revised": true
+}

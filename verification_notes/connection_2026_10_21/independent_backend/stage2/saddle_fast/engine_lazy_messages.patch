@@ -1,0 +1,30 @@
+--- guarded/engine.cpp
++++ guarded_lazy_messages/engine.cpp
+@@ -18,10 +18,11 @@
+ #include <vector>
+ using R=long double;
+ static void need(bool c,const std::string&m){if(!c)throw std::runtime_error(m);}
++static void guard_need(bool condition,const char* message){if(!condition)throw std::runtime_error(message);}
+ static unsigned long long guarded_scalar_calls=0,guarded_interval_constructions=0;
+-static R dn(R x){guarded_scalar_calls++;need(std::isfinite(x),"nonfinite dn input");R y=std::nextafter(x,-std::numeric_limits<R>::infinity());need(std::isfinite(y),"nonfinite dn output");return y;}
+-static R up(R x){guarded_scalar_calls++;need(std::isfinite(x),"nonfinite up input");R y=std::nextafter(x,std::numeric_limits<R>::infinity());need(std::isfinite(y),"nonfinite up output");return y;}
+-struct I{R l,h;I(R a=0):l(a),h(a){guarded_interval_constructions++;need(std::isfinite(a),"nonfinite scalar interval");} I(R a,R b):l(a),h(b){guarded_interval_constructions++;need(std::isfinite(a)&&std::isfinite(b)&&a<=b,"invalid interval endpoints");}};
++static R dn(R x){guarded_scalar_calls++;guard_need(std::isfinite(x),"nonfinite dn input");R y=std::nextafter(x,-std::numeric_limits<R>::infinity());guard_need(std::isfinite(y),"nonfinite dn output");return y;}
++static R up(R x){guarded_scalar_calls++;guard_need(std::isfinite(x),"nonfinite up input");R y=std::nextafter(x,std::numeric_limits<R>::infinity());guard_need(std::isfinite(y),"nonfinite up output");return y;}
++struct I{R l,h;I(R a=0):l(a),h(a){guarded_interval_constructions++;guard_need(std::isfinite(a),"nonfinite scalar interval");} I(R a,R b):l(a),h(b){guarded_interval_constructions++;guard_need(std::isfinite(a)&&std::isfinite(b)&&a<=b,"invalid interval endpoints");}};
+ static void report_guards(){std::cerr<<"GUARD_DIAGNOSTIC finite_interval_constructions="<<guarded_interval_constructions<<" finite_scalar_calls="<<guarded_scalar_calls<<"\n";}
+ static I operator+(I a,I b){return {dn(a.l+b.l),up(a.h+b.h)};}
+ static I operator-(I a){return {-a.h,-a.l};}
+@@ -92,9 +93,9 @@
+  return {p.c*rot.c-p.s*rot.s,p.s*rot.c+p.c*rot.s};
+ }
+ static R positive_by_congruence(const std::vector<I>&A,const std::vector<double>&V,int m){
+- need(A.size()==(size_t)m*m&&V.size()==(size_t)m*m,"congruence dimensions");
+- for(const I& x:A)need(std::isfinite(x.l)&&std::isfinite(x.h)&&x.l<=x.h,"nonfinite congruence A");
+- for(double x:V)need(std::isfinite(x),"nonfinite congruence V");
++ guard_need(A.size()==(size_t)m*m&&V.size()==(size_t)m*m,"congruence dimensions");
++ for(const I& x:A)guard_need(std::isfinite(x.l)&&std::isfinite(x.h)&&x.l<=x.h,"nonfinite congruence A");
++ for(double x:V)guard_need(std::isfinite(x),"nonfinite congruence V");
+  std::vector<I> av(m*m),t(m*m);R invert=1e10L,pivot=1e10L;
+  // Invertibility of V is proved by V^T V being strictly positive diagonally dominant.
+  for(int i=0;i<m;i++){

@@ -1,0 +1,22 @@
+{
+  "main": {
+    "pages": 32,
+    "bytes": 705859,
+    "sha256": "23cbf97b570927db55d2a0e1297aee0ec8ed1767e03d6732c5d7a16ac2b0a4eb",
+    "latex_warnings": [],
+    "pdfinfo_passed": true,
+    "pdftotext_passed": true,
+    "visual_review": "All pages rendered; contact sheets and changed pages inspected."
+  },
+  "supplement": {
+    "pages": 8,
+    "bytes": 317933,
+    "sha256": "12f36da6670d4bcb79d2373ed78a5165ffcbd0e40034347accf973a19c526f33",
+    "latex_warnings": [],
+    "pdfinfo_passed": true,
+    "pdftotext_passed": true,
+    "visual_review": "All pages rendered; contact sheets and changed pages inspected."
+  },
+  "bibliography_entries": 18,
+  "status": "COMPILED_DOCUMENTS_VALIDATION_PASS"
+}

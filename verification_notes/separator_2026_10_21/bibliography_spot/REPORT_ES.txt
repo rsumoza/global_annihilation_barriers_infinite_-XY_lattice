@@ -1,0 +1,83 @@
+AUDITORÍA BIBLIOGRÁFICA FOCALIZADA —21OCTUBRE2026
+
+Se revisaron las17entradas de references.tex de la versión3. No se encontró una corrección sustantiva de autores,título,DOI,año,volumen o páginas. Las publicaciones recientes de SIAM indicadas en el manuscrito existen y sus metadatos coinciden con las páginas editoriales. La clave internaChen2020 conserva correctamente2021como año final impreso.
+
+ALCANCE
+Se contrastaron metadatos con fuentes primarias(editoriales,registrosinstitucionales de autores y arXiv). No es una búsqueda exhaustiva de prioridad ni una nueva lectura completa de las17demostraciones. Algunos editores bloquearon la apertura directa; en esos casos se conserva explícitamente la ruta institucional o de autor y el límite de recuperación. No se usaron ResearchGate,Scispace,Mendeley u otros agregadores como fundamento de las conclusiones.
+
+ENTRADAS
+Alicandro2014: 10.1007/s00205-014-0757-6
+https://iris.uniroma1.it/handle/11573/540522
+Institutional primary record; authors, title,2014,214(1),269–330 agree.
+
+Ayala2026: 10.1137/25M1772824
+https://epubs.siam.org/doi/10.1137/25M1772824
+Publisher full metadata: Miguel Ayala,Rustum Choksi,Benedikt Wirth;24(3),1399–1425; online10September2026. Agrees.
+
+Berglund2025: 10.1088/1361-6544/ae05aa
+https://www.idpoisson.fr/berglund/abs_kuramoto.html
+Author primary record confirms authors,Nonlinearity38:095031(2025),DOI. Publisher blocked; author/arXiv title uses nearest-neighbor, some journal records nearest-neighbour. No scientific discrepancy.
+
+Braun2022: 10.1007/s00205-022-01810-3
+https://link.springer.com/article/10.1007/s00205-022-01810-3
+Publisher metadata confirms Braun,Hudson,Ortner,245,1437–1490(2022); title and DOI agree.
+
+Braun2025: 10.1137/24M165836X
+https://epubs.siam.org/doi/10.1137/24M165836X
+Publisher full metadata confirms Braun,Ortner,Wang,Zhang;63(2),520–541; online6March2025. Agrees.
+
+Breden2019: 10.1016/j.matpur.2019.04.012
+https://portal.fis.tum.de/en/publications/rigorous-validation-of-stochastic-transition-paths-2/
+Institutional author record confirms Maxime Breden,Christian Kuehn,131,88–129,November2019,DOI. Publisher page blocked403.
+
+Chen2020: 10.1109/TAC.2020.3008300
+https://experts.illinois.edu/en/publications/on-spectral-properties-of-signed-laplacians-with-connections-to-e-2/
+Institutional full metadata confirms all8authors,IEEE TAC66(5),2177–2190,May2021; early-online2020. Printed2021 is correct despite internalkeyChen2020.
+
+Dlotko2018: 10.1016/j.camwa.2017.11.027
+https://cronfa-dev.swansea.ac.uk/Record/cronfa39931/Details
+Institutional author metadata confirms Pawel Dlotko,Thomas Wanner,75(5),1648–1666,1March2018. Publisher search content confirms title,year,pages,DOI.
+
+Ehrlacher2016: 10.1007/s00205-016-1019-6
+https://link.springer.com/article/10.1007/s00205-016-1019-6
+Publisher metadata confirms Ehrlacher,Ortner,Shapeev,222,1217–1268(2016); title and DOI agree.
+
+Garroni2025: 10.1142/S0218202525500204
+https://iris.uniroma1.it/handle/11573/1749030
+Institutional primary record confirms Garroni,Petrache,Spadaro,35(6),1385–1419(2025),final title minimizers. Publisher/direct institutional open blocked403; primary search cache and arXiv2408.02136 corroborate.
+
+Hudson2017: 10.1007/s00205-017-1076-5
+https://link.springer.com/article/10.1007/s00205-017-1076-5
+Publisher metadata confirms T.Hudson,224,291–352(2017); title and DOI agree.
+
+Hudson2015: 10.1137/140964436
+https://epubs.siam.org/doi/10.1137/140964436
+Publisher metadata confirms T.Hudson,C.Ortner,47(1),291–320,online8January2015. Agrees.
+
+Liu2024: 10.1007/s00211-023-01391-7
+https://link.springer.com/article/10.1007/s00211-023-01391-7
+Publisher full metadata confirms Xuanyu Liu,Huajie Chen,Christoph Ortner,156,39–70,published9January2024. Agrees.
+
+Mehta2014: 10.1063/1.4881638
+https://arxiv.org/abs/1407.4762
+Author-deposited arXiv record confirms Dhagash Mehta,JonathanD.Hauenstein,DavidJ.Wales,JCP140(22),224114(2014),DOI. Agrees.
+
+Ortner2009: 10.1137/060668183
+https://epubs.siam.org/doi/10.1137/060668183
+Publisher metadata confirms C.Ortner,47(4),2550–2577(2009),online15July2009. Agrees.
+
+Wei2026: 10.1137/25M1809215
+https://epubs.siam.org/doi/10.1137/25M1809215
+Publisher full metadata confirms Xinyi Wei,Julian Braun,Yangshuai Wang,Lei Zhang;48(5),A2934–A2958; online13October2026. Agrees.
+
+Yoon2000: 10.1103/PhysRevB.61.3263
+https://journals.aps.org/prb/abstract/10.1103/PhysRevB.61.3263
+Publisher full record confirms Mina Yoon,M.Y.Choi,BeomJunKim,PRB61,3263,published1February2000. Agrees.
+
+NUEVA REFERENCIA RELACIONADA ENCONTRADA
+Julian Braun y Thomas Hudson,On the linearised force balance condition in the analysis of atomistic dislocation models,arXiv:2609.39642v1(30septiembre2026;PDF1octubre2026).
+https://arxiv.org/pdf/2609.39642
+El trabajo justifica una condición de suma nula de fuerzas que faltaba verificar en un argumento anterior de decaimiento exterior. Muestra por qué ciertos predictores más generales pueden no cumplirla. Aclara que el caso puramente helicoidal ya está cubierto porBraun–Hudson–Ortner2022; su análisis se concentra en componente de borde no nula.
+Conviene considerarlo en la discusión de Green/colas,con una comparación limitada por hipótesis. No demuestra la barrera globalXYde este manuscrito ni refuta por sí mismo los cálculos del dipolo neutro. Aquí no se modificó la bibliografía ni se asumió automáticamente la cancelación de una fuente infinita.
+
+Los enlaces y el registro estructurado acompañan este informe para que el coordinador pueda revisar las fuentes antes de modificar el manuscrito.

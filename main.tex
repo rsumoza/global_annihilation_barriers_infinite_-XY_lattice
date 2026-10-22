@@ -1,0 +1,109 @@
+\newif\ifsiamonline
+\IfFileExists{siamonline250211.cls}{\siamonlinetrue}{\siamonlinefalse}
+\ifsiamonline
+  \documentclass[review,onefignum,onetabnum]{siamonline250211}
+  \newsiamremark{remark}{Remark}
+\else
+  \documentclass[10pt]{article}
+  \usepackage[textwidth=6in,textheight=8in]{geometry}
+  \usepackage{amsmath,amssymb,amsthm}
+  \usepackage{lmodern}
+  \usepackage[mathlines]{lineno}
+  \usepackage[colorlinks=true,allcolors=blue!50!black]{hyperref}
+  \usepackage{cleveref}
+  \linenumbers
+  \newtheorem{theorem}{Theorem}[section]
+  \newtheorem{lemma}[theorem]{Lemma}
+  \newtheorem{proposition}[theorem]{Proposition}
+  \newtheorem{corollary}[theorem]{Corollary}
+  \theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+  \theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+  \newenvironment{keywords}{\par\smallskip\noindent\textbf{Key words.}}{\par}
+  \newenvironment{MSCcodes}{\par\smallskip\noindent\textbf{MSC codes.}}{\par}
+  \newcommand{\headers}[2]{}
+\fi
+\usepackage[T1]{fontenc}
+\usepackage{xurl}
+\usepackage{graphicx,booktabs,array,xcolor}
+\usepackage{etoolbox}
+% SIAM and fallback statement environments can share a counter.  Supply the
+% actual local statement type before that counter is stepped; an alias inside
+% an environment is local to its group and does not change the numbering.
+\makeatletter
+\@ifpackageloaded{cleveref}{}{\usepackage{cleveref}}
+\makeatother
+\newcommand{\XYstatementtype}[1]{%
+  \crefalias{theorem}{#1}%
+  \crefalias{lemma}{#1}%
+  \crefalias{proposition}{#1}%
+  \crefalias{corollary}{#1}%
+  \crefalias{definition}{#1}%
+  \crefalias{remark}{#1}%
+}
+\AtBeginEnvironment{theorem}{\XYstatementtype{theorem}}
+\AtBeginEnvironment{lemma}{\XYstatementtype{lemma}}
+\AtBeginEnvironment{proposition}{\XYstatementtype{proposition}}
+\AtBeginEnvironment{corollary}{\XYstatementtype{corollary}}
+\AtBeginEnvironment{definition}{\XYstatementtype{definition}}
+\AtBeginEnvironment{remark}{\XYstatementtype{remark}}
+\crefname{theorem}{theorem}{theorems}
+\Crefname{theorem}{Theorem}{Theorems}
+\crefname{lemma}{lemma}{lemmas}
+\Crefname{lemma}{Lemma}{Lemmas}
+\crefname{proposition}{proposition}{propositions}
+\Crefname{proposition}{Proposition}{Propositions}
+\crefname{corollary}{corollary}{corollaries}
+\Crefname{corollary}{Corollary}{Corollaries}
+\crefname{definition}{definition}{definitions}
+\Crefname{definition}{Definition}{Definitions}
+\crefname{remark}{remark}{remarks}
+\Crefname{remark}{Remark}{Remarks}
+\newcommand{\X}{\mathcal X}
+\newcommand{\K}{\mathcal K}
+\newcommand{\E}{E_0}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\nrm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\inner}[2]{\left\langle#1,#2\right\rangle}
+\newcommand{\dd}{\mathrm d}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\dist}{\operatorname{dist}}
+\newcommand{\osc}{\operatorname{osc}}
+\newcommand{\ind}{\operatorname{ind}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\spanof}{\operatorname{span}}
+\newcommand{\Pass}{\texttt{PASS}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\headers{Global annihilation barriers in an infinite lattice}{R. L. Sumoza Matos}
+\title{Certified global annihilation barriers in an infinite XY lattice}
+\author{Rodolfo Leonardo Sumoza Matos%
+  \thanks{Facultad de Ingenier\'ia, Universidad Austral, Pilar, Argentina.
+    Departamento de Computaci\'on, Universidad de Buenos Aires, CABA, Argentina.
+    Email: \href{mailto:rsumoza@dc.uba.ar}{\nolinkurl{rsumoza@dc.uba.ar}}.
+    ORCID: \url{https://orcid.org/0009-0003-3554-4876}.}}
+\date{22 October 2026}
+\hypersetup{pdftitle={Certified global annihilation barriers in an infinite XY lattice},pdfauthor={Rodolfo Leonardo Sumoza Matos},pdfsubject={Global barrier certification, effective local input class, and coupling robustness}}
+\begin{document}
+\maketitle
+\begin{abstract}
+A numerical saddle does not establish a globally optimal escape route. We certify the annihilation barrier of a neutral dipole at separation twelve in the exact-cosine XY model on the infinite square lattice. Admissible paths are strongly continuous in the homogeneous energy space and end at any physical uniform phase lift. A finite atlas with rigorous control of infinite-dimensional transverse fibers separates a local minimum from every endpoint. Exact-saddle caps and a validated upper path identify the barrier with an asymmetric index-one saddle height relative to the minimum. In unit-coupling normalization, the barrier lies strictly between 0.00567867 and 0.00570116. Reusable a posteriori tests cover signed-bond coercivity, full dual residuals, and complete boundary coverage. An explicit lattice Green estimate controls critical-state and path tails. Subcritical connections then reuse the global certificate on an infinite class of noncompact initial perturbations with prescribed block tails. We prove termination of barrier enclosures at any requested precision on this class, without claiming a general search implementation. Under summable coupling perturbations of total norm at most 0.002, the minimum and two index-one saddles persist and the global barrier remains positive; the continued saddles are not identified as perturbed minimax realizers. Frozen sources and a fresh execution record document the fixed global certificate. Completeness for arbitrary XY configurations remains open.
+\end{abstract}
+\begin{keywords}
+XY lattice, annihilation barrier, computer-assisted proof, index-one saddle, a posteriori verification, lattice Green function
+\end{keywords}
+\begin{MSCcodes}
+82B20, 49J35, 65G20
+\end{MSCcodes}
+
+\input{sections/introduction}
+\input{sections/model}
+\input{sections/certificate}
+\input{sections/instance}
+\input{sections/green}
+\input{sections/local_class}
+\input{sections/robustness}
+\input{sections/discussion}
+\appendix\input{sections/green_appendix}
+\input{sections/residual_appendix}
+\input{references}
+\end{document}

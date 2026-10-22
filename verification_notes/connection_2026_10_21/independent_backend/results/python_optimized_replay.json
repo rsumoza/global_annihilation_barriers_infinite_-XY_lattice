@@ -1,0 +1,7 @@
+{
+  "status": "OPTIMIZED_PYTHON_EXACT_CHECK_PASS",
+  "returncode": 0,
+  "stdout": "CONNECTION_FIXED_EXPORTS_EXACT_COMPARISON_PASS 35 299",
+  "report_bytes_identical": true,
+  "report_sha256": "d7ec89ff1d13e22e5abd25e8a44c152d465ede313f80c18a39a7514d2e7d59f0"
+}

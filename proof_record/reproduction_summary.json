@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "certificate_status": "FRESH_OPTIMAL_ANNIHILATION_BARRIER_PASS",
+  "archives": [
+    {
+      "archive": "XY_Separacion_Global_Reproducible_2026-10-19.zip",
+      "bytes": 228006035,
+      "sha256": "47eaf4886bc10b7bbb7ef259c44bfef9134bf3402920594ca6e20cd87235cedc"
+    },
+    {
+      "archive": "XY_Conexion_Global_Reproducible_2026-10-19.zip",
+      "bytes": 441730856,
+      "sha256": "3a4163d8b24c21f95acbdf502ceaed46e967180c21abb363d3436ae5e2afb042"
+    },
+    {
+      "archive": "XY_Optimalidad_Extension_Reproducible_2026-10-19.zip",
+      "bytes": 59642630,
+      "sha256": "42034c997678fa511ff261667ccb18edceee6d6bb05e543ddb6604f82958615d"
+    }
+  ],
+  "environment": {
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "compiler_version": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "byteorder": "little",
+    "flags": [
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-frounding-math"
+    ]
+  },
+  "fresh_extension_stages": [
+    "both reflected projected normals and exterior tails",
+    "distances from both saddles to all 109 chart centers",
+    "both adjoint equations at size 1024 against Neumann size 2048",
+    "five additional enlarged charts: 42,43,44,53,55",
+    "exact-saddle caps",
+    "all retained boundary walls and both entire exact cutting planes",
+    "minimum membership and exclusion of every physical uniform lift",
+    "rational identity and strict barrier bracket"
+  ],
+  "checks_skipped_within_default_supervisor": [],
+  "not_in_default_supervisor_scope": [
+    "candidate-search and numerical proposal generation",
+    "historical adversarial/attack scripts outside the supervisor",
+    "separate secondary boundary-check implementation",
+    "separate heteroclinic extension"
+  ],
+  "cached_results_options_used": false,
+  "archived_results_used_as_mathematical_premises": false,
+  "fixed_proposals_reused": true,
+  "fresh_output_hashes_checked": 548,
+  "original_members_unmodified_verified": true,
+  "independent_implementation": false,
+  "analytic_reductions_formalized_in_proof_assistant": false,
+  "external_peer_review": false,
+  "scope": "One neutral dipole of separation 12 on the infinite square lattice; full homogeneous energy space modulo constants; every physical uniform lift",
+  "identity": "B_ann = E(exact asymmetric index-one saddle)-E(exact dipolar minimum)",
+  "reported_strict_bracket": [
+    ".00567867",
+    ".00570116"
+  ],
+  "heteroclinic_orbit_proved": false,
+  "universal_XY_metastability_proved": false,
+  "certificate_sha256": "b1cbb7206a0c7492ad6990213a48480c9d25e04a5a21fe1805f0195a871f5999",
+  "date_utc": "2026-10-21",
+  "command": [
+    "python3",
+    "-u",
+    "recovered/unpacked/xy_optimality_extension/verify_optimality.py",
+    "--separator-package",
+    "audit_separator_2026_10_21/xy_global_separator",
+    "--connection-package",
+    "audit_connection_2026_10_21/xy_global_connection",
+    "--output",
+    "audit_connection_2026_10_21/full_fresh",
+    "--workers",
+    "2"
+  ],
+  "exact_command": "python3 -u recovered/unpacked/xy_optimality_extension/verify_optimality.py --separator-package audit_separator_2026_10_21/xy_global_separator --connection-package audit_connection_2026_10_21/xy_global_connection --output audit_connection_2026_10_21/full_fresh --workers 2",
+  "cwd": "/workspace/scratch/67c0f31502e4",
+  "supervisor_duration_seconds": 737.332688331604,
+  "fresh_results_only": true,
+  "antecedent_execution_mode": "fresh_subprocesses",
+  "certificate_path": "certificate.json",
+  "stdout_log": "full_fresh.stdout.log",
+  "stderr_log": "full_fresh.stderr.log",
+  "nested_fresh_output_hashes_checked": {
+    "separator": 454,
+    "connection": 35
+  },
+  "memory_note": "No new process-tree peak measurement was recorded for this run. Dated 20 October observations remain in history.",
+  "all_fresh_output_files_included": true,
+  "comparison_record": "../verification_notes/connection_2026_10_21/full_comparison.json",
+  "fresh_phase_certificates": [
+    {
+      "certificate": "fresh_separator/certificate.json",
+      "status": "FRESH_GLOBAL_SEPARATOR_PASS",
+      "duration_seconds": 180.68056988716125
+    },
+    {
+      "certificate": "fresh_connection/prerequisites/certificate.json",
+      "status": "INTEGRAL_MINIMUM_SADDLE_SUBLEVEL_PASS",
+      "duration_seconds": 383.0815734863281
+    },
+    {
+      "certificate": "fresh_connection/certificate.json",
+      "status": "FRESH_GLOBAL_VARIATIONAL_SADDLE_CONNECTION_PASS",
+      "duration_seconds": 467.2525968551636
+    }
+  ],
+  "integrity_verification": {
+    "status": "ORIGINAL_ARCHIVES_ALL_MEMBERS_PASS",
+    "archives": [
+      {
+        "archive": "XY_Separacion_Global_Reproducible_2026-10-19.zip",
+        "bytes": 228006035,
+        "sha256": "47eaf4886bc10b7bbb7ef259c44bfef9134bf3402920594ca6e20cd87235cedc",
+        "members": 1084,
+        "manifest_members": 1083,
+        "mismatches": []
+      },
+      {
+        "archive": "XY_Conexion_Global_Reproducible_2026-10-19.zip",
+        "bytes": 441730856,
+        "sha256": "3a4163d8b24c21f95acbdf502ceaed46e967180c21abb363d3436ae5e2afb042",
+        "members": 130,
+        "manifest_members": 129,
+        "mismatches": []
+      },
+      {
+        "archive": "XY_Optimalidad_Extension_Reproducible_2026-10-19.zip",
+        "bytes": 59642630,
+        "sha256": "42034c997678fa511ff261667ccb18edceee6d6bb05e543ddb6604f82958615d",
+        "members": 594,
+        "manifest_members": 593,
+        "mismatches": []
+      }
+    ],
+    "members_checked": 1808,
+    "manifest_members_checked": 1805,
+    "original_members_modified": false
+  }
+}

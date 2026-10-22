@@ -1,0 +1,83 @@
+PUBLICAR LA REPRODUCIBILIDAD EN EL REPOSITORIO DEL AUTOR
+Preparado: 22 de octubre de 2026. Revisión documental 7.
+
+REPOSITORIO
+https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice
+Clonado: https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice.git
+Etiqueta propuesta: siads-v7-2026-10-22
+Página prevista: https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice/releases/tag/siads-v7-2026-10-22
+La URL fue aportada por el autor. No se verificó acceso remoto ni una Release
+ya publicada. La etiqueta es una propuesta concreta, no un depósito existente.
+
+1. CONTENIDO QUE VA EN GIT
+Descomprimir SIADS_XY_Repository_v7_2026-10-22.zip. Copiar el CONTENIDO de
+GitHub_Repository/ a la raíz del repositorio; no subir el ZIP como único
+contenido ni crear una carpeta envolvente GitHub_Repository dentro del repo.
+Conservar todos los archivos y estas carpetas:
+  checks/              verificadores y descarga de originales con SHA-256
+  figures/             figura y fuente para regenerarla
+  sections/            texto LaTeX del artículo
+  supplement/          suplemento PDF/LaTeX e índices
+  proof_record/        registro íntegro de la reproducción auditada
+  verification_notes/ auditorías y registros históricos
+Los archivos de raíz incluyen main.tex/main.pdf, referencias, README,
+index.txt, CITATION.cff, repository_state.json y los manifiestos.
+La regla .gitignore conserva los logs científicos archivados.
+
+Si usas Git en Linux, desde la carpeta donde descomprimiste el paquete:
+  git clone https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice.git xy-siads
+  cp -a GitHub_Repository/. xy-siads/
+  cd xy-siads
+  git add .
+  git status
+  git commit -m "Prepare SIADS reproducibility snapshot v7"
+  git tag -a siads-v7-2026-10-22 -m "SIADS frozen reproducibility snapshot v7"
+  git push origin HEAD
+  git push origin siads-v7-2026-10-22
+Si el repositorio ya tiene contenido propio, revisar la copia y los cambios
+antes del commit. No usar force-push ni mover una etiqueta ya publicada.
+
+2. ARCHIVOS QUE VAN COMO ASSETS DE LA RELEASE
+En GitHub abrir Releases > Draft a new release, elegir la etiqueta anterior
+y adjuntar, sin extraer ni recomprimir:
+  S1: SIADS_XY_Repository_v7_2026-10-22.zip (este snapshot pequeño)
+  S2: XY_Separacion_Global_Reproducible_2026-10-19.zip (228006035 bytes)
+  S3: XY_Conexion_Global_Reproducible_2026-10-19.zip (441730856 bytes)
+  S4: XY_Optimalidad_Extension_Reproducible_2026-10-19.zip (59642630 bytes)
+  SOURCE_SNAPSHOT.sha256 (acompaña al paquete de entrega)
+Usar RELEASE_NOTES.md como descripción. S2-S4 NO van al historial Git;
+se conservan los nombres y hashes de release-assets.json.
+Los nombres descargados que terminan en (1).zip son copias de los mismos
+originales únicamente si sus tamaños y hashes coinciden. Renombrar el archivo
+sin recomprimirlo; verify_release_assets.py valida la identidad final.
+Los cinco volúmenes históricos S3_Conexion son una alternativa de transporte,
+no sustituyen individualmente al S3 completo.
+
+3. VERIFICAR TRAS PUBLICAR
+Desde un clon nuevo o el snapshot extraído, descargar y comprobar:
+  python3 checks/download_release_assets.py --assets-dir ../release_assets
+  python3 checks/verify_release_assets.py --assets-dir ../release_assets
+  git rev-parse "siads-v7-2026-10-22^{commit}"
+Anotar el SHA completo resultante en la descripción de la Release y en el
+expediente de envío. GitHub también enlaza el commit asociado a la etiqueta.
+Un commit no puede contener su propio SHA: no modificar y mover la etiqueta
+para intentar incrustarlo. repository_state.json conserva con honestidad el
+estado previo a publicación; una actualización de disponibilidad posterior
+puede registrarse en la rama de documentación sin mover el snapshot.
+La etiqueta publicada es la referencia estable de las fuentes y sus PDFs.
+Si necesitas cambiar contenido científico o PDF, preparar una nueva etiqueta.
+
+4. ENVÍO A SIADS
+Journal_Submission/ contiene manuscrito, carta PDF, suplemento, index.txt,
+SMindex.html y una lista de pasos. La carta es un borrador para revisión del
+autor. El envío no se ha iniciado. Completar los hechos personales y las
+declaraciones del portal según correspondan antes de enviar.
+La guía oficial vigente indica 40 páginas/10 MB para el manuscrito y no fija
+un límite general para suplementos, salvo archivos enormes como VMs.
+Un límite práctico del portal puede requerir una transferencia acordada con
+la oficina editorial. El repositorio externo no concede una exención.
+
+Fuentes oficiales consultadas el 22 de octubre de 2026:
+https://epubs.siam.org/journal/siads/instructions-for-authors
+https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases
+https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github

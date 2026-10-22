@@ -1,0 +1,20 @@
+--- original/certify_projection.cpp
++++ instrumented/certify_projection.cpp
+@@ -2,7 +2,7 @@
+ #include "engine.cpp"
+ #undef main
+ static CS spin_general(R x,R y,R hh){I X(x),Y(y),Z(x-12),den=root(sq(X)+sq(Y))*root(sq(Z)+sq(Y));CS p={(X*Z+sq(Y))/den,I(-12)*Y/den},r=trig(I(hh));return {p.c*r.c-p.s*r.s,p.s*r.c+p.c*r.s};}
+-static void jout(I a){std::cout<<"[\""<<dn(a.l)<<"\",\""<<up(a.h)<<"\"]";}
++static void jout(I a){exact_interval(a);std::cout<<"[\""<<dn(a.l)<<"\",\""<<up(a.h)<<"\"]";}
+ int main(int argc,char**argv){try{
+  need(argc==6,"usage certify_projection Qold Qnew Hsaddle Hbase REFLECT_0_OR_1");int ref=std::stoi(argv[5]);need(ref==0||ref==1,"reflection");
+  need(LDBL_MANT_DIG>=64&&sizeof(double)==8&&std::numeric_limits<double>::is_iec559,"platform");need(std::fegetround()==FE_TONEAREST,"rounding");
+@@ -41,6 +41,7 @@
+  I rho(.012825L),m(.062886L),pert=rho/root(I(2));I A=-nu+pert,et=eta+pert;
+  I mu=m*(I(1)-d2)-I(2)*et*root(d2*(I(1)-d2))-A*d2;need(mu.l>0,"projected-normal compression");I mucandidate=I(.0719549999L)*(I(1)-d2)-I(2)*eta*root(d2*(I(1)-d2))+nu*d2;I mustrong=mucandidate-pert;need(mustrong.l>mu.l,"improved single-charge compression");
+  std::array<I,2>normal{-g[0]/prnorm,-g[1]/prnorm},as{Gi[0]*hproj[0]+Gi[1]*hproj[1],Gi[2]*hproj[0]+Gi[3]*hproj[1]};I offset=normal[0]*as[0]+normal[1]*as[1];std::array<I,2>tv{-normal[1],normal[0]};I tn=root(G[0]*sq(tv[0])+I(2)*G[1]*tv[0]*tv[1]+G[3]*sq(tv[1]));std::array<I,2>tangent{(G[0]*tv[0]+G[1]*tv[1])/tn,(G[2]*tv[0]+G[3]*tv[1])/tn};I tangentoffset=tangent[0]*as[0]+tangent[1]*as[1];
++ exact_constant("rho_safe",.012825L);exact_constant("m_safe",.062886L);exact_constant("candidate_complement",.0719549999L);
+  std::cout<<std::setprecision(30)<<"{\"status\":\"PROJECTED_NORMAL_POSITIVE_CAP_PASS\",\"reflected_x\":"<<ref<<",\"rho_safe\":\".012825\",\"positive_q_complement_safe\":\".062886\",\"q_raw_norm_squared\":";jout(nq);std::cout<<",\"delta_squared\":";jout(d2);std::cout<<",\"delta\":";jout(root(d2));std::cout<<",\"nu\":";jout(nu);std::cout<<",\"eta_candidate_upper\":\""<<up(eta.h)<<"\",\"poisson_l2_error_upper\":\""<<up(l2err)<<"\",\"mu_projected_normal\":";jout(mu);std::cout<<",\"candidate_plane_coercivity\":";jout(mucandidate);std::cout<<",\"mu_single_perturbation\":";jout(mustrong);std::cout<<",\"strong_cap_radius_threshold\":";jout(I(3)*root(I(2))*mustrong);std::cout<<",\"r_nu_candidate\":";jout(nur);std::cout<<",\"r_eta_candidate_upper\":\""<<up(etar.h)<<"\",\"r_mixed_true_upper\":\""<<up((etar+pert).h)<<"\",\"r_negative_true_upper\":\""<<up((-nur+pert).h)<<"\",\"r_poisson_l2_error_upper\":\""<<up(l2errr)<<"\",\"normal_coordinates\":[";jout(normal[0]);std::cout<<",";jout(normal[1]);std::cout<<"],\"tangent_coordinates\":[";jout(tangent[0]);std::cout<<",";jout(tangent[1]);std::cout<<"],\"candidate_tangent_offset\":";jout(tangentoffset);std::cout<<",\"candidate_saddle_coordinates\":[";jout(as[0]);std::cout<<",";jout(as[1]);std::cout<<"],\"candidate_plane_offset\":";jout(offset);std::cout<<",\"exact_plane_offset\":";jout(offset+I(-rho.h,rho.h));std::cout<<",\"positive_cap_radius_upper_threshold\":";jout(I(3)*root(I(2))*mu);std::cout<<",\"R_01_rim_gap_lower\":\""<<dn((mu*sq(I(.1L))/I(2)-pwr(I(.1L),3)/(I(6)*root(I(2)))).l)<<"\"}\n";
+- return 0;
++ finish_exact();return 0;
+ }catch(const std::exception&e){std::cerr<<"REJECT: "<<e.what()<<"\n";return 2;}}

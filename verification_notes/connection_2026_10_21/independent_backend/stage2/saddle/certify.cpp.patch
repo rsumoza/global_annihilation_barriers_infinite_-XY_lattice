@@ -1,0 +1,19 @@
+--- original/stage2/saddle/certify.cpp
++++ instrumented/stage2/saddle/certify.cpp
+@@ -90,6 +90,15 @@
+  R exactPositive=(I(positive)-I(rho)).l,exactNegative=(I(negative)-I(rho)).l;need(exactPositive>0&&exactNegative>0,"index does not survive correction");
+  S=n/2+1;I rat=I(S)/I(S-8),energyTail=I(4*12*12)*pwr(rat,4)/sq(I(S-1));
+  I candidateEnergy(E.l,(E+energyTail).h);R energyError=std::min((sq(I(rho))/I(2)).h,(I(delta)*I(rho)/I(2)+pwr(I(rho),3)/I(12)).h);
++ std::ofstream ee("results/exact.hex");ee<<std::hexfloat;
++ ee<<"U delta "<<delta<<"\n";
++ ee<<"L negative_direction_bound "<<negative<<"\n";
++ ee<<"L transverse_coercivity "<<positive<<"\n";
++ ee<<"U rho "<<rho<<"\n";
++ ee<<"L candidate_branch_margin "<<margin<<"\n";
++ ee<<"L candidate_relative_to_reference/0 "<<relativeEnergy.l<<"\n";
++ ee<<"U candidate_relative_to_reference/1 "<<relativeEnergy.h<<"\n";
++ ee.close();need((bool)ee,"exact sidecar output");
+  std::cout<<std::setprecision(24)<<"{\"status\":\"INFINITE_SADDLE_INDEX_ONE_PASS\",\"n\":"<<n<<",\"q_support_side\":64,\"long_double_mantissa\":"<<LDBL_MANT_DIG<<",\"h_max\":"<<H<<",\"h_exact_y_odd_diagnostic\":"<<(odd?"true":"false")<<",\"mean_zero_proof\":\"compact_flux_plus_reflected_dipole\",\"deficient_edges\":"<<count<<",\"kappa\":"<<kap<<",\"congruence_margin\":"<<dominance<<",\"q_gram\":["<<G.l<<","<<G.h<<"],\"negative_rayleigh\":["<<alpha.l<<","<<alpha.h<<"],\"transverse_coercivity\":"<<positive<<",\"negative_direction_bound\":"<<negative<<",\"sigma\":"<<sigma<<",\"inverse_norm_upper\":"<<inverse<<",\"residual_finite\":"<<finite<<",\"residual_tail\":"<<tail.h<<",\"delta\":"<<delta<<",\"rho\":"<<rho<<",\"newton_contraction_upper\":"<<(I(rho)/I(sigma)).h<<",\"exact_transverse_coercivity\":"<<exactPositive<<",\"exact_negative_direction_bound\":"<<exactNegative<<",\"candidate_branch_margin\":"<<margin<<",\"exact_branch_margin\":"<<(I(margin)-I(rho)).l<<",\"charges\":[[0,0,1],[12,0,-1]],\"candidate_energy\":["<<candidateEnergy.l<<","<<candidateEnergy.h<<"],\"saddle_energy\":["<<(candidateEnergy-I(energyError)).l<<","<<(candidateEnergy+I(energyError)).h<<"],\"energy_correction_abs_upper\":"<<energyError<<",\"candidate_relative_to_reference\":["<<relativeEnergy.l<<","<<relativeEnergy.h<<"],\"saddle_relative_to_reference\":["<<(relativeEnergy-I(energyError)).l<<","<<(relativeEnergy+I(energyError)).h<<"],\"morse_index\":1,\"symmetry_restriction_on_perturbations\":false}\n";
+- return 0;
++ report_guards();return 0;
+ }catch(const std::exception&e){std::cerr<<"REJECT: "<<e.what()<<"\n";return 2;}}

@@ -1,0 +1,38 @@
+[
+  {
+    "pdf": "main.pdf",
+    "pages": 30,
+    "issues": [],
+    "metadata": {
+      "format": "PDF 1.5",
+      "title": "Certified global annihilation barriers in an infinite XY lattice",
+      "author": "Rodolfo Leonardo Sumoza Matos",
+      "subject": "Global barrier certification and coupling robustness",
+      "keywords": "",
+      "creator": "LaTeX with hyperref",
+      "producer": "pdfTeX-1.40.25",
+      "creationDate": "D:20261021062017+09'00'",
+      "modDate": "D:20261021062017+09'00'",
+      "trapped": "",
+      "encryption": null
+    }
+  },
+  {
+    "pdf": "supplement/Supplementary_Reproducibility.pdf",
+    "pages": 6,
+    "issues": [],
+    "metadata": {
+      "format": "PDF 1.5",
+      "title": "Supplementary reproducibility and verification record",
+      "author": "",
+      "subject": "Frozen sources, fresh execution, arithmetic checks and verification boundaries",
+      "keywords": "",
+      "creator": "LaTeX with hyperref",
+      "producer": "pdfTeX-1.40.25",
+      "creationDate": "D:20261021061929+09'00'",
+      "modDate": "D:20261021061929+09'00'",
+      "trapped": "",
+      "encryption": null
+    }
+  }
+]

@@ -1,0 +1,440 @@
+{
+  "charts": [
+    {
+      "id": 0,
+      "path": "charts/c000/polynomials.json"
+    },
+    {
+      "id": 1,
+      "path": "charts/c001/polynomials.json"
+    },
+    {
+      "id": 2,
+      "path": "charts/c002/polynomials.json"
+    },
+    {
+      "id": 3,
+      "path": "charts/c003/polynomials.json"
+    },
+    {
+      "id": 4,
+      "path": "charts/c004/polynomials.json"
+    },
+    {
+      "id": 5,
+      "path": "charts/c005/polynomials.json"
+    },
+    {
+      "id": 6,
+      "path": "charts/c006/polynomials.json"
+    },
+    {
+      "id": 7,
+      "path": "charts/c007/polynomials.json"
+    },
+    {
+      "id": 8,
+      "path": "charts/c008/polynomials.json"
+    },
+    {
+      "id": 9,
+      "path": "charts/c009/polynomials.json"
+    },
+    {
+      "id": 10,
+      "path": "charts/c010/polynomials.json"
+    },
+    {
+      "id": 11,
+      "path": "charts/c011/polynomials.json"
+    },
+    {
+      "id": 12,
+      "path": "charts/c012/polynomials.json"
+    },
+    {
+      "id": 13,
+      "path": "charts/c013/polynomials.json"
+    },
+    {
+      "id": 14,
+      "path": "charts/c014/polynomials.json"
+    },
+    {
+      "id": 15,
+      "path": "charts/c015/polynomials.json"
+    },
+    {
+      "id": 16,
+      "path": "charts/c016/polynomials.json"
+    },
+    {
+      "id": 17,
+      "path": "charts/c017/polynomials.json"
+    },
+    {
+      "id": 18,
+      "path": "charts/c018/polynomials.json"
+    },
+    {
+      "id": 19,
+      "path": "charts/c019/polynomials.json"
+    },
+    {
+      "id": 20,
+      "path": "charts/c020/polynomials.json"
+    },
+    {
+      "id": 21,
+      "path": "charts/c021/polynomials.json"
+    },
+    {
+      "id": 22,
+      "path": "charts/c022/polynomials.json"
+    },
+    {
+      "id": 23,
+      "path": "charts/c023/polynomials.json"
+    },
+    {
+      "id": 24,
+      "path": "charts/c024/polynomials.json"
+    },
+    {
+      "id": 25,
+      "path": "charts/c025/polynomials.json"
+    },
+    {
+      "id": 26,
+      "path": "charts/c026/polynomials.json"
+    },
+    {
+      "id": 27,
+      "path": "charts/c027/polynomials.json"
+    },
+    {
+      "id": 28,
+      "path": "charts/c028/polynomials.json"
+    },
+    {
+      "id": 29,
+      "path": "charts/c029/polynomials.json"
+    },
+    {
+      "id": 30,
+      "path": "charts/c030/polynomials.json"
+    },
+    {
+      "id": 31,
+      "path": "charts/c031/polynomials.json"
+    },
+    {
+      "id": 32,
+      "path": "charts/c032/polynomials.json"
+    },
+    {
+      "id": 33,
+      "path": "charts/c033/polynomials.json"
+    },
+    {
+      "id": 34,
+      "path": "charts/c034/polynomials.json"
+    },
+    {
+      "id": 35,
+      "path": "charts/c035/polynomials.json"
+    },
+    {
+      "id": 36,
+      "path": "charts/c036/polynomials.json"
+    },
+    {
+      "id": 37,
+      "path": "charts/c037/polynomials.json"
+    },
+    {
+      "id": 38,
+      "path": "charts/c038/polynomials.json"
+    },
+    {
+      "id": 39,
+      "path": "charts/c039/polynomials.json"
+    },
+    {
+      "id": 40,
+      "path": "charts/c040/polynomials.json"
+    },
+    {
+      "id": 41,
+      "path": "charts/c041/polynomials.json"
+    },
+    {
+      "id": 42,
+      "path": "charts/c042/polynomials.json"
+    },
+    {
+      "id": 43,
+      "path": "charts/c043/polynomials.json"
+    },
+    {
+      "id": 44,
+      "path": "charts/c044/polynomials.json"
+    },
+    {
+      "id": 45,
+      "path": "charts/c045/polynomials.json"
+    },
+    {
+      "id": 46,
+      "path": "charts/c046/polynomials.json"
+    },
+    {
+      "id": 47,
+      "path": "charts/c047/polynomials.json"
+    },
+    {
+      "id": 48,
+      "path": "charts/c048/polynomials.json"
+    },
+    {
+      "id": 49,
+      "path": "charts/c049/polynomials.json"
+    },
+    {
+      "id": 50,
+      "path": "charts/c050/polynomials.json"
+    },
+    {
+      "id": 51,
+      "path": "charts/c051/polynomials.json"
+    },
+    {
+      "id": 52,
+      "path": "charts/c052/polynomials.json"
+    },
+    {
+      "id": 53,
+      "path": "charts/c053/polynomials.json"
+    },
+    {
+      "id": 54,
+      "path": "charts/c054/polynomials.json"
+    },
+    {
+      "id": 55,
+      "path": "charts/c055/polynomials.json"
+    },
+    {
+      "id": 56,
+      "path": "charts/c056/polynomials.json"
+    },
+    {
+      "id": 57,
+      "path": "charts/c057/polynomials.json"
+    },
+    {
+      "id": 58,
+      "path": "charts/c058/polynomials.json"
+    },
+    {
+      "id": 59,
+      "path": "charts/c059/polynomials.json"
+    },
+    {
+      "id": 60,
+      "path": "charts/c060/polynomials.json"
+    },
+    {
+      "id": 61,
+      "path": "charts/c061/polynomials.json"
+    },
+    {
+      "id": 62,
+      "path": "charts/c062/polynomials.json"
+    },
+    {
+      "id": 63,
+      "path": "charts/c063/polynomials.json"
+    },
+    {
+      "id": 64,
+      "path": "charts/c064/polynomials.json"
+    },
+    {
+      "id": 65,
+      "path": "charts/c065/polynomials.json"
+    },
+    {
+      "id": 66,
+      "path": "charts/c066/polynomials.json"
+    },
+    {
+      "id": 67,
+      "path": "charts/c067/polynomials.json"
+    },
+    {
+      "id": 68,
+      "path": "charts/c068/polynomials.json"
+    },
+    {
+      "id": 69,
+      "path": "charts/c069/polynomials.json"
+    },
+    {
+      "id": 70,
+      "path": "charts/c070/polynomials.json"
+    },
+    {
+      "id": 71,
+      "path": "charts/c071/polynomials.json"
+    },
+    {
+      "id": 72,
+      "path": "charts/c072/polynomials.json"
+    },
+    {
+      "id": 73,
+      "path": "charts/c073/polynomials.json"
+    },
+    {
+      "id": 74,
+      "path": "charts/c074/polynomials.json"
+    },
+    {
+      "id": 75,
+      "path": "charts/c075/polynomials.json"
+    },
+    {
+      "id": 76,
+      "path": "charts/c076/polynomials.json"
+    },
+    {
+      "id": 77,
+      "path": "charts/c077/polynomials.json"
+    },
+    {
+      "id": 78,
+      "path": "charts/c078/polynomials.json"
+    },
+    {
+      "id": 79,
+      "path": "charts/c079/polynomials.json"
+    },
+    {
+      "id": 80,
+      "path": "charts/c080/polynomials.json"
+    },
+    {
+      "id": 81,
+      "path": "charts/c081/polynomials.json"
+    },
+    {
+      "id": 82,
+      "path": "charts/c082/polynomials.json"
+    },
+    {
+      "id": 83,
+      "path": "charts/c083/polynomials.json"
+    },
+    {
+      "id": 84,
+      "path": "charts/c084/polynomials.json"
+    },
+    {
+      "id": 85,
+      "path": "charts/c085/polynomials.json"
+    },
+    {
+      "id": 86,
+      "path": "charts/c086/polynomials.json"
+    },
+    {
+      "id": 87,
+      "path": "charts/c087/polynomials.json"
+    },
+    {
+      "id": 88,
+      "path": "charts/c088/polynomials.json"
+    },
+    {
+      "id": 89,
+      "path": "charts/c089/polynomials.json"
+    },
+    {
+      "id": 90,
+      "path": "charts/c090/polynomials.json"
+    },
+    {
+      "id": 91,
+      "path": "charts/c091/polynomials.json"
+    },
+    {
+      "id": 92,
+      "path": "charts/c092/polynomials.json"
+    },
+    {
+      "id": 93,
+      "path": "charts/c093/polynomials.json"
+    },
+    {
+      "id": 94,
+      "path": "charts/c094/polynomials.json"
+    },
+    {
+      "id": 95,
+      "path": "charts/c095/polynomials.json"
+    },
+    {
+      "id": 96,
+      "path": "charts/c096/polynomials.json"
+    },
+    {
+      "id": 97,
+      "path": "charts/c097/polynomials.json"
+    },
+    {
+      "id": 98,
+      "path": "charts/c098/polynomials.json"
+    },
+    {
+      "id": 99,
+      "path": "charts/c099/polynomials.json"
+    },
+    {
+      "id": 100,
+      "path": "charts/c100/polynomials.json"
+    },
+    {
+      "id": 101,
+      "path": "charts/c101/polynomials.json"
+    },
+    {
+      "id": 102,
+      "path": "charts/c102/polynomials.json"
+    },
+    {
+      "id": 103,
+      "path": "charts/c103/polynomials.json"
+    },
+    {
+      "id": 104,
+      "path": "charts/c104/polynomials.json"
+    },
+    {
+      "id": 105,
+      "path": "charts/c105/polynomials.json"
+    },
+    {
+      "id": 106,
+      "path": "charts/c106/polynomials.json"
+    },
+    {
+      "id": 107,
+      "path": "charts/c107/polynomials.json"
+    },
+    {
+      "id": 108,
+      "path": "charts/c108/polynomials.json"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+GRADIENT-METRIC REVIEW — 20 October 2026
+
+No blocking defect in the existing X-gradient flow proof was found.
+The requested motivation can be supplied by an explicit dissipation
+potential and a restricted RSJ/current-conservation interpretation.
+
+Primary source checked independently:
+Mina Yoon, M. Y. Choi, Beom Jun Kim, Lattice effects on the current-voltage
+characteristics of superconducting arrays, Phys. Rev. B 61, 3263 (2000),
+doi:10.1103/PhysRevB.61.3263.
+https://arxiv.org/pdf/cond-mat/9911236 (v1, 16 Nov 1999), Eq. (13), PDFp3.
+Tool reference turn334view0, especially source lines194–250.
+The source states the current conservation law as a sum of shunt normal,
+Josephson supercurrent, and noise terms. Equation13 contains the factor
+hbar/(2eR) times d(phi_i-phi_j)/dt and Ic sin(phi_i-phi_j). Its equations
+14–15 add fluctuating twists; the manuscript must not claim equivalence
+to that full driven system merely by citing Eq13.
+
+Mathematical derivation (independent of the citation):
+R(v)=1/2||Dv||_2^2 on X. Minimizing R(v)+DE_b(u)[v] gives the X-Riesz
+gradient flow and the exact energy law. In a finite graph with grounded
+boundary (or constants quotiented), KCL for homogeneous shunt conductance
+gives the same stiffness operator D*D multiplying dotu. Different Josephson
+couplings J_e can coexist with fixed equal shunt conductance; the theorem
+does not assert any microscopic relationship between the two parameters.
+
+Scope to emphasize:
+- The metric controls a specified zero-drive deterministic relaxation law.
+- The paper certifies defect annihilation, not a thermodynamic phase transition.
+- Static minimax depends on energy AND admissible topology. Do not claim
+  independence from arbitrary changes of infinite-dimensional path topology.
+- Same path class/energy and a different mobility yield the same variational
+  barrier by definition, but not automatically the same orbit or rate.
+- Infinite weak formulation is the model; no finite-to-infinite circuit limit
+  or bounded inverse of the l2 vertex Laplacian is used.
+
+Suggested text is in flow_recommendation.tex (~390 words plus formulas).
+It uses the existing macros and bibliography key Yoon2000, preserves the
+eq:flow label, and refers to the existing cor:flow. If page count matters,
+the last paragraph can be shortened but its topology/rate scope should remain.

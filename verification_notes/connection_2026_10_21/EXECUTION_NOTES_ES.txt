@@ -1,0 +1,23 @@
+NOTAS OPERATIVAS DE LA REPRODUCCIÓN — 21/10/2026
+
+Los cinco volúmenes suministrados se conservan intactos. La identidad
+del ZIP lógico original se comprobó mediante SHA-256 y tamaño exacto.
+
+Un primer intento de verify_path_inputs.py rechazó una copia local del
+ZIP que en ese momento estaba incompleta (238720256 bytes), con el
+mensaje File is not a zip file. No generó resultado de éxito. Se repitió
+la concatenación a un archivo temporal, con flush/fsync y sustitución
+atómica sólo después de comprobar 441730856 bytes y el SHA-256 original.
+El comprobador de arrays pasó entonces con M=6007.
+
+La ejecución global usa las fuentes y propuestas extraídas, verificadas
+contra sus manifiestos congelados y copiadas de nuevo por cada supervisor;
+no usa aquella copia incompleta como premisa. No se ha atribuido al modelo
+un fallo debido a ese rechazo operativo. reconstruct_connection.py
+contiene la ruta de reconstrucción atómica y los hashes de los cinco
+volúmenes, para repetirla sin depender de otros scripts de entrega.
+
+La ejecución instrumentada del mínimo se reutiliza sólo después de probar
+que el motor y sus seis entradas son idénticos a los de la ejecución
+protegida del separador. La silla4096 y los demás programas distintos se
+ejecutan por separado. Ningún original congelado se modifica.

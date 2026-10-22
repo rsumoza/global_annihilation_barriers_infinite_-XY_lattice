@@ -1,0 +1,42 @@
+--- original/baseline/engine.cpp
++++ instrumented/baseline/engine.cpp
+@@ -18,9 +18,11 @@
+ #include <vector>
+ using R=long double;
+ static void need(bool c,const std::string&m){if(!c)throw std::runtime_error(m);}
+-static R dn(R x){return std::nextafter(x,-std::numeric_limits<R>::infinity());}
+-static R up(R x){return std::nextafter(x,std::numeric_limits<R>::infinity());}
+-struct I{R l,h;I(R a=0):l(a),h(a){} I(R a,R b):l(a),h(b){}};
++static unsigned long long guarded_scalar_calls=0,guarded_interval_constructions=0;
++static R dn(R x){guarded_scalar_calls++;need(std::isfinite(x),"nonfinite dn input");R y=std::nextafter(x,-std::numeric_limits<R>::infinity());need(std::isfinite(y),"nonfinite dn output");return y;}
++static R up(R x){guarded_scalar_calls++;need(std::isfinite(x),"nonfinite up input");R y=std::nextafter(x,std::numeric_limits<R>::infinity());need(std::isfinite(y),"nonfinite up output");return y;}
++struct I{R l,h;I(R a=0):l(a),h(a){guarded_interval_constructions++;need(std::isfinite(a),"nonfinite scalar interval");} I(R a,R b):l(a),h(b){guarded_interval_constructions++;need(std::isfinite(a)&&std::isfinite(b)&&a<=b,"invalid interval endpoints");}};
++static void report_guards(){std::cerr<<"GUARD_DIAGNOSTIC finite_interval_constructions="<<guarded_interval_constructions<<" finite_scalar_calls="<<guarded_scalar_calls<<"\n";}
+ static I operator+(I a,I b){return {dn(a.l+b.l),up(a.h+b.h)};}
+ static I operator-(I a){return {-a.h,-a.l};}
+ static I operator-(I a,I b){return a+(-b);}
+@@ -90,6 +92,9 @@
+  return {p.c*rot.c-p.s*rot.s,p.s*rot.c+p.c*rot.s};
+ }
+ static R positive_by_congruence(const std::vector<I>&A,const std::vector<double>&V,int m){
++ need(A.size()==(size_t)m*m&&V.size()==(size_t)m*m,"congruence dimensions");
++ for(const I& x:A)need(std::isfinite(x.l)&&std::isfinite(x.h)&&x.l<=x.h,"nonfinite congruence input A");
++ for(double x:V)need(std::isfinite(x),"nonfinite congruence input V");
+  std::vector<I> av(m*m),t(m*m);R invert=1e10L,pivot=1e10L;
+  // Invertibility of V is proved by V^T V being strictly positive diagonally dominant.
+  for(int i=0;i<m;i++){
+@@ -177,6 +182,7 @@
+  }
+  R oldpath=(I(maxE)-I(initialE.l)+tailE+I(G2)/I(8*64*64)+I(rho)*I(G)+I(delta)*I(rho)+sq(I(rho))).h;
+  R disp=(sq(I(V)+I(2)*I(rho))/I(2)).h;
++ std::cerr<<std::hexfloat<<"EXACT_BASELINE delta="<<delta<<" rho="<<rho<<" c="<<c<<" E_lower="<<initialE.l<<"\n"<<std::defaultfloat;
+  out<<std::setprecision(22)<<"{\"L\":"<<L<<",\"n\":"<<n<<",\"long_double_mantissa\":"<<LDBL_MANT_DIG<<",\"bad_edges\":"<<count<<",\"congruence_margin\":"<<dominance<<",\"c\":"<<c<<",\"residual_finite\":"<<finite<<",\"residual_tail\":"<<tail.h<<",\"delta\":"<<delta<<",\"rho\":"<<rho<<",\"mu\":"<<mu<<",\"negative_edges_survive\":"<<negatives<<",\"charges\":[[0,0,1],["<<L<<",0,-1]],\"branch_margin\":"<<margin<<",\"energy_candidate\":["<<initialE.l<<","<<(initialE+tailE).h<<"],\"barrier_lower\":"<<lower<<",\"global_contraction_upper\":"<<oldpath<<",\"displacement_upper\":"<<disp;
+  // Optional explicit local path, checked independently with all time intervals covered.
+  if(!pathfile.empty()){
+@@ -235,5 +241,5 @@
+ int main(int argc,char**argv){try{
+  need(LDBL_MANT_DIG>=64&&std::numeric_limits<double>::is_iec559&&sizeof(double)==8,"platform arithmetic");need(std::fegetround()==FE_TONEAREST,"round-to-nearest required");uint16_t endian=1;need(*(unsigned char*)&endian==1,"little endian required");
+  if(argc==2&&std::string(argv[1])=="--oracle"){oracle();return 0;}
+- if(argc==2&&std::string(argv[1])=="--selftest"){selftest();return 0;}need(argc==2||argc==3,"usage: check_chain PREFIX [PATH_PREFIX]");run(argv[1],argc==3?argv[2]:"");return 0;
++ if(argc==2&&std::string(argv[1])=="--selftest"){selftest();return 0;}need(argc==2||argc==3,"usage: check_chain PREFIX [PATH_PREFIX]");run(argv[1],argc==3?argv[2]:"");report_guards();return 0;
+  }catch(const std::exception&e){std::cerr<<"REJECT: "<<e.what()<<"\n";return 2;}}

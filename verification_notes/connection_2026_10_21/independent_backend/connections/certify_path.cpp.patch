@@ -1,0 +1,39 @@
+--- original/connections/certify_path.cpp
++++ instrumented/connections/certify_path.cpp
+@@ -18,6 +18,7 @@
+  std::array<std::vector<CS>,2>bond;bond[0].resize((size_t)(N-1)*N);bond[1].resize((size_t)N*(N-1));
+  for(int ax=0;ax<2;ax++)for(int i=0;i<N-(ax==0);i++)for(int j=0;j<N-(ax==1);j++)bond[ax][(size_t)i*(N-(ax==1))+j]=product(base[(size_t)(i+(ax==0))*N+j+(ax==1)],base[(size_t)i*N+j]);
+  std::ifstream file(pre+".z.raw",std::ios::binary|std::ios::ate);need((bool)file,"path payload open");uint64_t bytes=(uint64_t)nodes*N*N*sizeof(double);need(file.tellg()==(std::streamoff)bytes,"path payload length");file.seekg(0);
++ std::ofstream ee(table+".exact.hex");ee<<std::hexfloat;
+  std::ofstream nodeTable(table+".nodes.jsonl"),segmentTable(table+".segments.jsonl");need((bool)nodeTable&&(bool)segmentTable,"table output");nodeTable<<std::setprecision(24);segmentTable<<std::setprecision(24);
+  std::vector<double>z((size_t)N*N),prev((size_t)N*N);R prevEnergy=0,maximum=0,maxCurve=0;int worst=-1;I endpointEnergy,firstEnergy;R maximumGradientNorm=0;
+  for(int k=0;k<nodes;k++){
+@@ -29,14 +30,16 @@
+    energy=energy+b.c*(I(1)-tr.c)+b.s*tr.s;norm=normsq_up_add(norm,d);
+    if(k){I jump=(I(z[t])-I(prev[t]))-(I(z[v])-I(prev[v]));curve=normsq_up_add(curve,jump);}
+   }
+-  maximumGradientNorm=std::max(maximumGradientNorm,normup(norm));nodeTable<<"{\"node\":"<<k<<",\"relative_energy\":["<<energy.l<<","<<energy.h<<"],\"gradient_norm_upper\":"<<normup(norm)<<"}\n";
+-  if(k){R curv=(I(curve)/I(8)).h,upper=(I(std::max(energy.h,prevEnergy))+I(curv)).h;maxCurve=std::max(maxCurve,curv);if(upper>maximum){maximum=upper;worst=k-1;}segmentTable<<"{\"segment\":"<<k-1<<",\"curvature_error_upper\":"<<curv<<",\"relative_energy_upper\":"<<upper<<"}\n";}
++  ee<<"NODE "<<k<<" "<<energy.l<<" "<<energy.h<<" "<<normup(norm)<<"\n";
++ maximumGradientNorm=std::max(maximumGradientNorm,normup(norm));nodeTable<<"{\"node\":"<<k<<",\"relative_energy\":["<<energy.l<<","<<energy.h<<"],\"gradient_norm_upper\":"<<normup(norm)<<"}\n";
++  if(k){R curv=(I(curve)/I(8)).h,upper=(I(std::max(energy.h,prevEnergy))+I(curv)).h;maxCurve=std::max(maxCurve,curv);if(upper>maximum){maximum=upper;worst=k-1;}ee<<"SEG "<<k-1<<" "<<curv<<" "<<upper<<"\n";segmentTable<<"{\"segment\":"<<k-1<<",\"curvature_error_upper\":"<<curv<<",\"relative_energy_upper\":"<<upper<<"}\n";}
+   if(k==0)firstEnergy=energy;prevEnergy=energy.h;endpointEnergy=energy;prev.swap(z);
+   if(k%200==0)std::cerr<<"Validated path node "<<k<<"/"<<nodes<<"\n";
+  }
+  if(leg){
+   nodeTable.close();segmentTable.close();need((bool)nodeTable&&(bool)segmentTable,"table close");
+-  std::cout<<std::setprecision(24)<<"{\"status\":\"COMPACT_PATH_LEG_PASS_RELATIVE_REFERENCE\",\"nodes\":"<<nodes<<",\"side\":"<<N<<",\"segments\":"<<nodes-1<<",\"path_relative_reference_upper\":"<<maximum<<",\"maximizing_segment\":"<<worst<<",\"maximum_curvature_error\":"<<maxCurve<<",\"initial_relative_energy\":["<<firstEnergy.l<<","<<firstEnergy.h<<"],\"endpoint_relative_energy\":["<<endpointEnergy.l<<","<<endpointEnergy.h<<"],\"all_time_intervals_covered\":true,\"minimum_bridge_dependency_verified_here\":false,\"endpoint_annihilation_verified_here\":false,\"passes_through_exact_saddle_verified_here\":false}\n";return 0;
++  ee<<"U path_relative_reference_upper "<<maximum<<"\n";
++ std::cout<<std::setprecision(24)<<"{\"status\":\"COMPACT_PATH_LEG_PASS_RELATIVE_REFERENCE\",\"nodes\":"<<nodes<<",\"side\":"<<N<<",\"segments\":"<<nodes-1<<",\"path_relative_reference_upper\":"<<maximum<<",\"maximizing_segment\":"<<worst<<",\"maximum_curvature_error\":"<<maxCurve<<",\"initial_relative_energy\":["<<firstEnergy.l<<","<<firstEnergy.h<<"],\"endpoint_relative_energy\":["<<endpointEnergy.l<<","<<endpointEnergy.h<<"],\"all_time_intervals_covered\":true,\"minimum_bridge_dependency_verified_here\":false,\"endpoint_annihilation_verified_here\":false,\"passes_through_exact_saddle_verified_here\":false}\n";ee.close();need((bool)ee,"path exact sidecar output");report_guards();return 0;
+  }
+  // prev is the last validated node. Its exact unit phases determine charges.
+  std::vector<CS>end((size_t)N*N);std::vector<I>theta((size_t)N*N);
+@@ -59,6 +62,7 @@
+   if(i+1<N)need(lift[(size_t)(i+1)*N+j]-n==slip[0][(size_t)i*N+j],"horizontal integer lift mismatch");if(j+1<N)need(lift[(size_t)i*N+j+1]-n==slip[1][(size_t)i*(N-1)+j],"vertical integer lift mismatch");
+  }
+  nodeTable.close();segmentTable.close();need((bool)nodeTable&&(bool)segmentTable,"table close");
++ ee<<"U path_relative_reference_upper "<<maximum<<"\n";
+  std::cout<<std::setprecision(24)<<"{\"status\":\""<<(terminal?"COMPACT_TERMINAL_PATH_PASS_RELATIVE_REFERENCE":"COMPACT_ANNIHILATION_PATH_PASS_RELATIVE_REFERENCE")<<"\",\"nodes\":"<<nodes<<",\"side\":"<<N<<",\"segments\":"<<nodes-1<<",\"path_relative_reference_upper\":"<<maximum<<",\"maximizing_segment\":"<<worst<<",\"maximum_curvature_error\":"<<maxCurve<<",\"maximum_gradient_norm\":"<<maximumGradientNorm<<",\"endpoint_relative_energy\":["<<endpointEnergy.l<<","<<endpointEnergy.h<<"],\"endpoint_charge_count\":0,\"endpoint_branch_margin\":"<<margin<<",\"compact_integer_lift_max\":"<<maxTurn<<",\"monotone_continuation_to_constant\":true,\"all_time_intervals_covered\":true,\"minimum_bridge_dependency_verified_here\":false,\"passes_through_exact_saddle_verified_here\":false}\n";
+- return 0;
++ ee.close();need((bool)ee,"path exact sidecar output");report_guards();return 0;
+ }catch(const std::exception&e){std::cerr<<"REJECT: "<<e.what()<<"\n";return 2;}}

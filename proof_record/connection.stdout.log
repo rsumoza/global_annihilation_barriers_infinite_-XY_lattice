@@ -1,0 +1,7 @@
+Rebuilding and validating minimum, infinite saddle and first-exit lower bound
+Validating leg_return
+Validating leg_annihilation
+Validating full_annihilation
+Comparing exact stored endpoints with full 4096 saddle candidate
+Checking rational Hermite, face, sublevel and barrier inequalities
+FRESH_GLOBAL_VARIATIONAL_SADDLE_CONNECTION_PASS

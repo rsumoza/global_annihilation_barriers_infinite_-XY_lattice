@@ -1,0 +1,13 @@
+ÍNDICE DE EVIDENCIA POR ETAPA
+
+current_targeted/: auditoría y correcciones de la versión 3, 20/10/2026.
+Sus limitaciones de acceso describen esa fecha, no el estado actual.
+
+separator_2026_10_21/: nueva ejecución del separador, geometría racional
+independiente completa y contraste instrumentado del backend para sus
+datos fijos. Incluye bibliografía contrastada y sus límites.
+
+CURRENT_AUDIT_ES.txt, en el directorio principal, es el balance actual.
+El registro de optimalidad de proof_record/ corresponde a la ejecución
+global histórica; no se lo presenta como ejecutado nuevamente hoy.
+La conexión adjuntada falló y aún debe recuperarse para cerrar esta etapa.

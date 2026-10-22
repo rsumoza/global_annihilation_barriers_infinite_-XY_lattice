@@ -1,0 +1,85 @@
+OFFICIAL POLICY CHECK AND PRACTICAL-TAIL COMMENT
+20 October 2026. Internal drafting note; no submission or public deposit made.
+
+POLICY CONCLUSION
+The reviewer's suggested permanent, versioned public deposit is good
+archival practice. The stronger claim that SIADS universally requires a
+repository DOI before final acceptance is not supported by the official
+instructions consulted. A particular editor, funder, or institution could
+impose an additional requirement; no such instruction has been supplied.
+
+PRIMARY SOURCES RETRIEVED
+1. https://epubs.siam.org/journal/siads/instructions-for-authors
+   Retrieval turn335view0; repository-focused find turn336view0.
+   Relevant source locations: lines 173–175 and 198–220.
+   Exact excerpt (17 words):
+   "Supplementary Materials must be submitted at the same time the article is first submitted"
+   The page requires an index describing and justifying the supplied
+   items. Submitted code should be a snapshot used for the reported
+   results; an external maintained-code link is suggested for later
+   improvements. Refereed supplements are linked from the article and
+   can be cited with its DOI. No separate repository DOI deadline appears.
+
+2. https://epubs.siam.org/journal-authors
+   Retrieval turn335view1; focused finds turn336view1/turn336view2.
+   No general code/data repository-DOI prerequisite was located. Its
+   repository provisions concern permitted accepted-manuscript deposits
+   for open-access routes; these should not be confused with a code DOI.
+
+3. https://epubs.siam.org/artificial-intelligence
+   Retrieval turn335view2; focused find turn336view3.
+   Exact excerpt (15 words):
+   "Preferably, all AI-assisted codes are made accessible (e.g., via a public repository) to enable reproducibility."
+   The policy requires disclosure and author responsibility. Its code
+   availability clause uses a preference, not a DOI-before-acceptance rule.
+
+EDITORIAL RESPONSE SUGGESTION
+Accept the goal of durable, verifiable availability and describe the
+actual frozen supplement precisely. Recommend a versioned archival
+deposit as a subsequent author action; do not invent a repository link,
+DOI, public accessibility, completed upload, or universal SIADS mandate.
+Replace draft-process prose in the article with an accurate statement
+that the named frozen source and verification archives are included in
+the proposed supplementary material, identified by hashes and an index.
+Only add a public identifier once a deposit actually exists and resolves.
+The author has not authorized public posting in this task.
+
+PRACTICAL LOCALIZATION DISCUSSION
+The established truncation estimate is C_E/R. Thus a target error epsilon
+requires R on the order of C_E/epsilon. The dyadic parametrization
+R=4097*2^n does not make the radius exponential in inverse accuracy.
+The severe exponential growth is the cost of a complete cubical search
+in the number of retained degrees of freedom (of order R^2 vertices).
+
+Specific plausible improvements, to label as future obligations rather
+than achieved results:
+- Enclose the nonlinear source q=Dtheta-sin(Dtheta) directly in a finite
+  certified core and estimate its exterior separately, replacing the
+  crude global M^3/6 majorant by data-dependent sums.
+- Use signed kernel differences and subtract verified leading moments
+  before taking absolute values, with a rigorous remainder for the
+  lattice Green expansion. Neutral total vortex charge alone is not a
+  proof that the nonlinear source has a vanishing vector moment.
+- Retain analytic exterior control and the finite reaction atlas rather
+  than materialize a full state-space grid.
+- Recheck any stronger moment or symmetry assumption uniformly in the
+  admitted coupling class. The present ell1 family allows noncompact,
+  spatially translated heterogeneities; a moment hypothesis cannot be
+  silently added to that class.
+
+No theorem in the manuscript establishes a multiphase averaging method.
+Averaging phase configurations is not automatically compatible with real
+lifts, charges, the endpoint set, or a fixed energy ceiling. Presenting
+such averaging as a proved shortcut would overstate the current result.
+
+SAFE ENGLISH RESPONSE TO THE REVIEW
+"We agree that a durable, versioned deposit would improve accessibility.
+The revised statement identifies the frozen supplementary sources and
+their hashes without asserting an identifier that has not been created.
+The current SIADS instructions require submission of the supplementary
+files and index and describe a maintained-code repository as a suggested
+additional route; we did not find a general requirement for a separate
+repository DOI before acceptance."
+
+The parent must open the primary pages before using these retrieval IDs
+as citations. This is a policy verification note, not an editorial ruling.

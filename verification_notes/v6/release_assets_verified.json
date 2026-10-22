@@ -1,0 +1,24 @@
+{
+  "assets": [
+    {
+      "bytes": 228006035,
+      "item": "S2",
+      "name": "XY_Separacion_Global_Reproducible_2026-10-19.zip",
+      "sha256": "47eaf4886bc10b7bbb7ef259c44bfef9134bf3402920594ca6e20cd87235cedc"
+    },
+    {
+      "bytes": 441730856,
+      "item": "S3",
+      "name": "XY_Conexion_Global_Reproducible_2026-10-19.zip",
+      "sha256": "3a4163d8b24c21f95acbdf502ceaed46e967180c21abb363d3436ae5e2afb042"
+    },
+    {
+      "bytes": 59642630,
+      "item": "S4",
+      "name": "XY_Optimalidad_Extension_Reproducible_2026-10-19.zip",
+      "sha256": "42034c997678fa511ff261667ccb18edceee6d6bb05e543ddb6604f82958615d"
+    }
+  ],
+  "scope": "Original archive identity only; no extraction or mathematical replay.",
+  "status": "PASS"
+}

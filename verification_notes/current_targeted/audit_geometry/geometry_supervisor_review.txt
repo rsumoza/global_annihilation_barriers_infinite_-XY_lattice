@@ -1,0 +1,218 @@
+GEOMETRY / SUPERVISOR AUDIT OF THE ACTUAL OPTIMALITY EXTENSION
+2026-10-20 — internal report for consolidation
+
+Scope and verdict
+-----------------
+Read the actual extension/check_atlas.py, check_capped_separator.py,
+certify_cut_membership.py and verify_optimality.py, with a second review of
+cap_surgery.tex / geometry_lemmas.tex by a child auditor. No original source
+or numerical input was edited. All new files are in audit_geometry/.
+
+No demonstrated geometric false PASS was found in the frozen instance.
+The actual code retains cut tangencies, checks closed coordinate faces and
+uses the full-fiber cap argument. The earlier manuscript-only concern about
+“cells removed by another cut” is now resolved at the source-code level:
+the implemented exclusion is strict and conservative. The proposed theorem
+clarification remains useful exposition rather than a detected repair of
+an actual faulty discard.
+
+A new execution of the complete Python arithmetic/topology boundary stage
+and membership helper PASSED, conditionally on the archived local-oracle
+outputs. This is stronger evidence than reading the archived PASS report,
+but does NOT freshly revalidate C++ chart/orientation/adjoint bounds or the
+separator/connection antecedents. Those require the missing original raw
+packages. The full supervisor correctly refuses to run without them.
+
+Sources and input identity checked
+----------------------------------
+* Extension MANIFEST.sha256 matches supervisor pin
+  248f0614524832610b07fd21b5d6b9eaf670d1846d6032aa22a51755a5c95972.
+* All 37 extension scientific members match this manifest.
+* Actual verify_optimality.py hash is
+  564451be670e23dd08d382f0f71fc9bf238a39fb7003db916c3f953720e840c3,
+  equal to the archived extension certificate's supervisor hash.
+* All 109 archived polynomial inputs used in the replay match their archived
+  output-ledger hashes: 104 unchanged charts from antecedent_results/separator,
+  and five enlarged charts 42,43,44,53,55 from results_provided/enlarged_charts.
+* An audit-only manifest rebases absolute historical paths to the existing
+  local files. It changes no polynomial content. The original stored manifest
+  still has historical absolute paths and cannot be used verbatim after moving
+  the distribution. The full supervisor builds a new manifest, so this is a
+  replay-portability detail, not a mathematical error.
+
+New computations completed
+--------------------------
+1. check_capped_separator.py with depth10, radius6599/10000,
+   LEVEL .00568947710965782931, both exact cap inputs and all 109 charts:
+   CONDITIONAL_EXACT_SADDLE_SEPARATOR_PASS in 3.4233 seconds.
+   The result agrees with results_provided/boundary.json after removing
+   only historical/local paths, input-hash path keys and elapsed time.
+   There were 2208 coordinate-face interval evaluations, zero unresolved
+   coordinate faces, zero unresolved radial/circular cells and zero unresolved
+   cap cells. There were 222 coordinate boxes discarded as strictly outside
+   an exact cut.
+2. certify_cut_membership.py with the same 109-chart manifest:
+   CONDITIONAL_SADDLES_IN_DISK_AND_MINIMUM_INSIDE_CUTS_PASS.
+   Its JSON agrees exactly with the archived membership JSON.
+3. Pure Fraction consistency checks show each final cap offset encloses the
+   EXACT sum of the archived candidate-plane-offset endpoints and signed
+   adjoint-correction endpoints. Final normals and candidate coordinates
+   agree with the projection outputs. This checks assembly, not the validity
+   of the input projection/adjoint estimates.
+4. Rational cap arithmetic: tau=71/100, 2tau^2=5041/5000>1;
+   mu/2-tau*Rc/6=19/40000>0 for mu1/25,Rc33/200. The source itself uses
+   the equivalent sharp 3sqrt(2)mu>Rc test.
+5. 4000 deterministic random interval trials plus 500 interval-polynomial
+   trials checked 32968 exact Fraction enclosures / square-root relations:
+   PASS. This is adversarial finite testing of Python arithmetic, not a formal
+   interval proof, nor an audit of C++ arithmetic.
+6. A separate AST-based test of the original cut, subdivision and cap
+   predicates made 18 focal assertions: PASS; see geometry_cuts_review.txt.
+7. Calling the full supervisor with absent antecedent package directories
+   returned exit2 and REJECT for the missing separator distribution manifest.
+   No missing antecedent was replaced by its archived status or a guessed file.
+
+Recomputed margins
+------------------
+* Minimum retained radial-wall slack above LEVEL:
+  0.000006796106706714.
+* Minimum retained outer-circle slack above LEVEL:
+  0.000000961626704042.
+* Maximum accepted full-fiber-minimizer distance from the exact saddle cap:
+  0.163745681454844102 <0.165.
+  Remaining cap-radius margin: 0.001254318545155898.
+* Saddle plus: strict atlas witness chart101; reaction radius upper
+  0.654788302613722135 <0.6599; other-cut margin lower
+  0.609136906870753076; minimum-cut margin lower0.635628585024213725.
+* Saddle minus: strict atlas witness chart93; reaction radius upper
+  0.654788302613745916 <0.6599; other-cut margin lower
+  0.609136906870775242; minimum-cut margin lower0.635628585024192686.
+
+Geometry review by source location
+----------------------------------
+A. Closed cuts and tangencies, check_capped_separator.py
+   Lines44–45 discard a box only if the lower endpoint of an exact cut
+   expression is STRICTLY positive on the entire box. A box with ell=0,
+   ell.lo=0 or a sign-straddling interval is retained. Lines66–68 discard a
+   disk box only when its squared-radius lower bound is strictly greater
+   than the disk upper bound; circle equality stays. Line111 excludes the
+   plane only for ell.lo>0 or ell.hi<0, so exact and possible zeros remain.
+   This is a sufficient one-cut discard test, not a claimed necessary rule:
+   it can keep extra boxes, which affects efficiency, not soundness.
+   Lines83–85 and121–123 use [lo,mid] and [mid,hi], so no midpoint or edge
+   is omitted. The helper tests confirmed these predicates directly from AST.
+
+B. Full fibers, check_capped_separator.py lines46–53,112–116
+   root=beta/mu and R-root>0 establish a unique interior minimizer in the
+   complete Hilbert fiber. The orthogonal G-quadratic+Y-distance expression
+   encloses ||c_i(a)-s_hat||^2. Adding rho and root gives the sufficient cap
+   condition for that minimizer. The cap result then extends to the whole
+   closed fiber by strong convexity, even if most of that fiber is farther
+   than Rcap from the saddle. This correctly does not freeze transverse
+   perturbations and does not need chart minimizers to coincide globally.
+   On-plane equality is mathematical (the separator plane passes through s);
+   interval strips overcover its possible location. No arbitrary midpoint
+   of the offset interval is chosen as the actual plane.
+
+C. Radial walls versus annuli
+   check_capped_separator.py lines70–77 evaluates the lower quadratic at
+   the EXACT radial wall radius R, so accepting the wall's energy bound
+   does not require radial monotonicity. In contrast check_atlas.py
+   lines327–331 uses a radius rin to exclude a whole possible low-energy
+   annulus; it correctly also requires nonnegative derivative. Thus absence
+   of that derivative guard on exact radial walls is not a bug.
+   The capped checker explicitly rejects unsupported outer_path charts at
+   line104. It cannot silently claim a capped PASS with that unimplemented
+   generalized option. The actual 109-chart manifest uses no outer_path.
+
+D. Complete coordinate faces and disk coverage, check_atlas.py
+   Lines289–292 initialize all four closed face intervals, including corners.
+   Lines306–307 discard only strict disk exterior. Lines317–325 require
+   the complete coordinate interval strictly inside a neighbor and strict
+   full-ball containment; otherwise lines327–331 verify the energy annulus
+   exclusion before using that neighbor. Both cases imply every possible
+   below-LEVEL point of the full original fiber lies inside the neighbor.
+   At points on the outer coordinate circle, overlap alone is not used to
+   eliminate the global boundary: the independent circle test remains.
+   Lines348–350 split closed intervals without endpoint loss. Lines384–389
+   enumerate every closed nearest-grid Voronoi square meeting the disk with
+   <=, and394–400 require strict coordinate coverage / neighbor margins.
+
+E. Interval polynomials
+   Poly and TightPoly in check_atlas.py use degree-limited directed rational
+   coefficients, interval squares for even powers and an intersection of a
+   natural enclosure with a centered mean-value enclosure. For each actual
+   polynomial whose coefficient values lie in those intervals, both contain
+   its values; coefficient dependency only widens them. Their intersection
+   is legitimate. I.rational/endpoints/mul/div/square/sqrt are integer-directed
+   operations on a fixed 2^160 grid. No finite sampling substitutes for a
+   coordinate-cell inequality in the checker.
+
+F. Membership, certify_cut_membership.py lines6–28
+   detG>0 and the archived Gram data provide the inverse matrix enclosure.
+   p=(-n1,n0) and n^T a_s=d give
+   ||a_s||_2^2=(d^2+(p^T a_s)^2)/(n^T n); the coordinate perturbation bounds
+   use Gi dual norms. This avoids replacing the exact saddle by its proposal.
+   Lines16–20 check strict coordinate and Y-fiber inclusion in a real chart,
+   and23–25 check strict membership in the other saddle halfspace.
+   The minimum-cut test centers the minimum at reaction coordinate zero,
+   as justified by the shared reference being the original minimum proposal.
+   The global supervisor binds that shared reference by exact file hashes.
+   Standalone helper acceptance is conditional; its optional --manifest mode
+   is not the mode invoked by the global supervisor, which supplies all109
+   charts. Empty/duplicate cap defense could be strengthened in this tiny
+   helper, but the global frozen supervisor explicitly creates two differently
+   named cap entries and the boundary checker requires exactly two. No actual
+   frozen-certificate false PASS follows from that generic input hardening.
+
+G. Supervisor binding, verify_optimality.py
+   Frozen source manifests and raw input pins are checked before building a
+   temporary snapshot. Default execution rebuilds both antecedents. Resume
+   mode explicitly checks source pins, scientific input ledger equality and
+   every recorded output hash, then marks the final status VALIDATED rather
+   than FRESH. The baseline outputs from lower and upper chains must be byte
+   identical. Candidate residual/radius, saddle full index and complement,
+   upper path identity and LEVEL guard are checked before assembling cuts.
+   Both normal covector and adjoint coefficients derive from identical raw
+   reaction fields; their interval intersection is a consistency diagnostic,
+   not by itself a proof that unrelated unknown vectors are equal. The C++
+   identity is being separately audited by the reproduction agent.
+   The actual offset adds the signed adjoint correction. The cap uses the
+   sharp Taylor constant, not Lambda1 with mu.04. The final manifest uses all
+   109 IDs and exactly five freshly enlarged charts. Both cap planes, strict
+   membership, all uniform-lift exclusion and saddle distinctness are checked
+   before the final optimality certificate. No heteroclinic is inferred.
+
+Unresolved trust obligations / what cannot be recomputed now
+---------------------------------------------------------
+The current extension archive includes archived antecedent results and all
+extension scientific sources/proposals, but does not duplicate the original
+separator/connection input distributions. Their manifests, raw references,
+reaction fields, saddle proposal, all 109 raw centers and original verifier
+source pins are mandatory to run verify_optimality.py completely. We cannot
+freshly certify original residuals, Neumann matrices, exterior/interface
+estimates, chart polynomials, original upper-path nodes, or terminal exterior
+charge checks from the extension alone. Hash agreement of archived outputs
+is evidence of byte identity, not proof that those estimates are correct.
+
+The available data DOES allow the new full Python ledger and membership
+replay, rational assembly checks, geometry coverage and source/predicate
+review documented above. These are useful and reproducible intermediate
+results with an explicitly conditional status. The manuscript should not
+label this new replay as an independently implemented or fully fresh global
+CAP verification. Conversely, no observed failure of the geometric mechanism
+was found here.
+
+Principal saved evidence
+------------------------
+geometry_replay_summary.json
+boundary_recomputed_conditionally.json (+ old_boundary companion)
+membership_recomputed_conditionally.json
+atlas_manifest_rebased.json
+archived_chart_binding_check.json
+source_binding_summary.json
+archived_cap_assembly_exact_checks.json
+python_interval_checks.json and check_python_intervals.py
+geometry_cuts_review.txt
+test_geometry_cut_contract.py and test_geometry_cut_contract.json (child auditor)
+full_supervisor_expected_rejection.stderr.log

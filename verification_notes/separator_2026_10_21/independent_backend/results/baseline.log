@@ -1,0 +1,4 @@
+input/Green proposals checked; assembling 12 2048
+signed coercivity independently checked; residual next
+EXACT_BASELINE delta=0x9.8e6d65cd87895ap-13 rho=0x8.eb6e3153e54a99p-9 c=0x9.af9ebe9c8862ddep-7 E_lower=0xb.d2199a29edb7fafp+1
+GUARD_DIAGNOSTIC finite_interval_constructions=1242704177 finite_scalar_calls=1761491636

@@ -1,0 +1,52 @@
+{
+  "status": "EXACT_GREEN_TAIL_BUDGET_ARITHMETIC_PASS",
+  "analytic_kernel_theorem_proved_by_this_program": false,
+  "old_global_certificate_reexecuted_by_this_program": false,
+  "scope": "Exact arithmetic only, conditional on the separately proved analytic theorem and certified path inputs.",
+  "cases": [
+    {
+      "epsilon": "1/100",
+      "a": "27/500000",
+      "q_upper": "216756882343/6",
+      "a_tail_constant_upper": "1246352073472250000/749919",
+      "projection_constant_upper": "19941633175556000000/749919",
+      "energy_constant_upper": "119789390485564892000000/749919",
+      "dyadic_exponent": 54,
+      "radius": "73804990693347688448",
+      "radius_decimal_digits": 20,
+      "localization_error_upper": "467927306584237859375/216202206311580488957952",
+      "allocated_localization_error": "1/400",
+      "finite_box_materialized": false,
+      "new_barrier_interval_claimed": false
+    },
+    {
+      "epsilon": "1/1000000",
+      "a": "27/500000",
+      "q_upper": "216756882343/6",
+      "a_tail_constant_upper": "1246352073472250000/749919",
+      "projection_constant_upper": "19941633175556000000/749919",
+      "energy_constant_upper": "119789390485564892000000/749919",
+      "dyadic_exponent": 68,
+      "radius": "1209220967519808527532032",
+      "radius_decimal_digits": 25,
+      "localization_error_upper": "467927306584237859375/3542256948208934731087085568",
+      "allocated_localization_error": "1/4000000",
+      "finite_box_materialized": false,
+      "new_barrier_interval_claimed": false
+    }
+  ],
+  "uniform_perturbed_class": {
+    "coupling_budget": "1/500",
+    "critical_norm_upper": "6008",
+    "exterior_angle": "41/1000",
+    "common_anchor_radius": 4098,
+    "source_absorption": "13681/6000000",
+    "source_l1_upper": "54216288128003/1500",
+    "tail_constant_upper": "4987898507776276000/2986319",
+    "displayed_tail_constant_upper": "1700000000000",
+    "displayed_projection_constant_upper": "27200000000000",
+    "no_coupling_support_or_moment_requirement": true,
+    "new_perturbed_critical_solve": false,
+    "conditional_on_analytic_kernel_and_critical_continuation": true
+  }
+}

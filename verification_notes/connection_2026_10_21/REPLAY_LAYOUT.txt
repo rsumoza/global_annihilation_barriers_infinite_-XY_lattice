@@ -1,0 +1,43 @@
+Layout for replaying the supplementary diagnostics
+================================================
+
+The authoritative global reproduction needs the three unchanged originals
+S2-S4 and the command in the top-level README. That reproduction is separate
+from these additional audit scripts and does not require instrumentation.
+
+To replay the audit scripts with their recorded relative-path defaults,
+prepare a working directory with this layout:
+
+  audit_separator_2026_10_21/
+    xy_global_separator/       extracted S2
+    independent_backend/      copy from verification_notes/separator_2026_10_21
+    independent_supervisor/   same dated source snapshot
+    fresh_results/            fresh separator output
+  audit_connection_2026_10_21/
+    xy_global_connection/      extracted S3
+    independent_backend/      copy of this audit subdirectory
+    independent_extension/    copy of this audit subdirectory
+    independent_supervisor/   copy of this audit subdirectory
+    independent_analytic/     copy of this audit subdirectory
+    full_fresh/               new three-package output
+  recovered/unpacked/
+    xy_optimality_extension/   extracted S4
+
+First run the environment preflight and original supervisors as documented.
+Then use each diagnostic README. The retained separator guarded baseline
+may be reused only with its recorded code and six-input identities checked.
+Large arrays, min.h data headers and executables are deliberately omitted
+from the compact snapshot; preparation scripts recover their data from the
+indexed unchanged originals and regenerate instrumented sources/binaries.
+Do not overwrite an original source or call a historical JSON a fresh run.
+
+The copy under S1 proof_record is the complete observed 21 October output
+record; dated historical outputs are under proof_record/history/2026-10-20.
+It is an inspectable execution record, not a substitute for rerunning the
+scientific sources when making a fresh-reproduction claim. Paths in JSON
+preserve the actual observed execution locations.
+
+The incomplete optional lazy-message saddle run was stopped and excluded;
+only the completed original guarded saddle is selected by its binding file.
+The optional source/benchmark explain that operational decision. Neither
+this diagnostic nor its instrumentation is a second interval engine.

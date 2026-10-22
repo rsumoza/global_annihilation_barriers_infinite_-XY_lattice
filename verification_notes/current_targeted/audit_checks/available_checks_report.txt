@@ -1,0 +1,110 @@
+AUDITORÍA DE COMPROBACIONES DISPONIBLES — 20 OCTUBRE 2026
+
+ALCANCE
+Se comprobaron los dos ZIP adjuntos y los dos checkers aritméticos
+autocontenidos. No se reejecutó la CAP global, no se reinterpretaron
+salidas históricas como cálculos nuevos de puntos críticos, y no se
+sustituyeron los inputs ausentes por archivos reconstruidos o aproximados.
+No se modificó el código ni los resultados de los paquetes originales.
+
+1. INTEGRIDAD
+
+Óptimalidad, ZIP adjunto de 59 642 630 bytes:
+42034c997678fa511ff261667ccb18edceee6d6bb05e543ddb6604f82958615d
+Coincide con la identidad consignada en el registro de reproducción.
+FILES.sha256 se verificó sobre los 593 miembros enumerados: 593 coincidencias,
+0 ausencias o diferencias. Su hash es:
+be1ea66be206f53241e22531d581ca8898407689083f6c7b23cac798ed5ca15c
+El manifiesto científico de extension/ tiene el hash previsto por el
+supervisor: 248f0614524832610b07fd21b5d6b9eaf670d1846d6032aa22a51755a5c95972.
+
+Manuscrito y checkers v2, ZIP adjunto de 1 463 735 bytes:
+170ecef7876f69f8b31ff96273da743ef1b7c3ed39cc26622d641f73e0f6df5c
+Su MANIFEST.sha256 se comprobó sobre los bytes originales dentro del ZIP,
+y no sobre el árbol extraído que otros agentes están editando. Los 48
+miembros enumerados coinciden. La integridad sólo prueba identidad de
+archivos respecto del manifiesto; no corrección matemática del contenido.
+
+Evidencia: optimality_integrity.json y manuscript_original_integrity.json.
+
+2. EJECUCIONES REALES DE LOS CHECKERS
+
+Se copiaron los scripts bajo audit_checks/ para preservar originales. Desde
+/workspace/scratch/67c0f31502e4, se ejecutó:
+
+python3 revision_integrada_2026_10_20/audit_checks/verify_robustness_constants.py \
+ --certificate-root revision_integrada_2026_10_20/siads_xy_v2/proof_record \
+ --output revision_integrada_2026_10_20/audit_checks/robustness_constants_fresh.json
+
+Resultado: exit 0, COUPLING_ROBUSTNESS_RATIONAL_CHECKS_PASS.
+Se comprobaron consistencia de hashes de tres registros subsidiarios,
+identidad del certificado respecto de reproduction_summary.json, estados
+y campos de procedencia, y consecuencias aritméticas racionales del
+teorema de robustez. Factor de contracción 371/912; gap 541/16000;
+intervalo mostrado (0.00167867, 0.00970116).
+
+python3 revision_integrada_2026_10_20/audit_checks/verify_green_tail_budget.py
+
+Resultado: exit 0, EXACT_GREEN_TAIL_BUDGET_ARITHMETIC_PASS.
+Se recalcularon exactamente los presupuestos diádicos y las constantes
+para la clase perturbada. No se verificó por ejecución el lema analítico
+del núcleo de Green, ni se materializó una caja, ni se resolvió un estado.
+
+Los dos JSON nuevos coinciden byte a byte y como objetos JSON con los
+incluidos en el paquete v2. Véase arithmetic_output_comparison.json.
+Las órdenes, códigos de salida y logs están en commands.json y command_*.log.
+
+IMPORTANTE: los cálculos nuevos consumen registros del certificado histórico.
+El estado FRESH que encuentran describe la corrida histórica contenida en
+ellos. No significa que dichos programas hayan ejecutado otra vez los
+supervisores de separación, conexión u optimalidad.
+
+3. CONTROLES NEGATIVOS DEL CHECKER SUBSIDIARIO DE ROBUSTEZ
+
+Se usaron copias de los registros en directorios de prueba:
+- tampered_caps: se agregó un byte de fin de línea a caps.json. Rechazo exit1
+  por mismatch de hash; no se creó resultado de éxito.
+- missing_saddle: se retiró saddle.json. Rechazo exit1 por archivo ausente;
+  no se creó resultado de éxito.
+Estos son ensayos focalizados del checker subsidiario, no del supervisor
+principal. No prueban que toda entrada inválida posible sea rechazada.
+Evidencia: subsidiary_negative_controls.json y subdirectorios asociados.
+
+4. DEPENDENCIAS AUSENTES
+
+verify_path_inputs.py requiere el ZIP de conexión además del de optimalidad.
+Los archivos consumidos de conexión incluyen:
+ distribution/stage2/common/base_h.raw
+ distribution/stage2/saddle/inputs/h.raw
+ distribution/stage2/barrier/inputs/q.raw
+ distribution/connections/leg_return.{cfg,z.raw}
+ distribution/connections/leg_annihilation.{cfg,z.raw}
+y los certificados de trayectoria y puntos críticos. No están en estos
+adjuntos, por lo que ese input audit no se ejecutó ni se certificaron ahora
+los valores máximos y soportes que sustentan M=6007.
+
+Los ejecutables C++ de la extensión también requieren Q_old, q_negative,
+h_saddle, h_base y 109 centros procedentes de separación/conexión. Los
+arrays de propuestas que sí trae optimalidad no los reemplazan. El modo
+completo de verify_optimality.py exige ambos paquetes antecedentes, verifica
+sus manifiestos y sus supervisores, y reconstruye sus cadenas por defecto.
+Ni siquiera el modo de reanudación elimina esas dependencias de identidad.
+No se intentó presentar los antecedentes JSON archivados como paquetes
+fuente equivalentes. El informe geométrico y del backend se realiza aparte.
+
+5. MEJORA PROPUESTA, NO REFUTACIÓN
+
+verify_green_tail_budget.py utiliza assert para los controles. Python -O o
+PYTHONOPTIMIZE los omite. Con las constantes internas fijas, la ejecución
+normal pasó y no se halló un resultado falso; la aritmética fue también
+revisada independientemente. Para endurecer el nuevo checker, reemplazar
+assert por comprobaciones explícitas no anulables o rechazar el modo de
+optimización, documentando la modificación y su nueva identidad. El
+checker de robustez ya emplea una función check() con raise explícito.
+
+DICTAMEN
+Pasan integridad y reproducción de aritmética de los checkers disponibles,
+con los límites anteriores. No queda establecida por estas ejecuciones una
+nueva verificación de residuos, coercividad, atlas, offsets o techo del
+camino global. Para cerrar esas partes son necesarios los originales de
+separación y conexión y la inspección del backend y supervisor.

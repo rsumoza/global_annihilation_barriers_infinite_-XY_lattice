@@ -1,0 +1,501 @@
+\documentclass[10pt]{article}
+\usepackage[textwidth=6in,textheight=8in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,booktabs,array}
+\usepackage[mathlines]{lineno}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\usepackage{microtype}
+\linenumbers
+\newcommand{\X}{\mathcal X}
+\newcommand{\code}[1]{\nolinkurl{#1}}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0.25em}
+\title{Supplementary reproducibility and verification record}
+\author{}
+\date{22 October 2026}
+\hypersetup{pdftitle={Supplementary reproducibility and verification record},pdfsubject={Frozen sources, fresh execution, arithmetic checks and verification boundaries}}
+\begin{document}
+\maketitle
+\vspace{-2em}
+
+\section{Purpose and mathematical scope}
+
+Revision 7 configures the author-supplied repository address and planned
+release links without changing the scientific result. It retains the complete execution and connection audit in
+Section 7 and documents the restricted infinite input class in Section 5.
+Earlier records are explicitly dated. The frozen scientific sources and
+fixed-instance numerical barrier are unchanged.
+
+This record links the inputs, executions and arithmetic checks to the
+analytic reductions in the manuscript and the stated arithmetic assumptions.
+
+The unperturbed result concerns one neutral dipole, with charges $+1$ and
+$-1$ on plaquettes centered at $(0,0)$ and $(12,0)$, respectively, for the
+exact cosine interaction on the infinite square lattice. Each unoriented
+nearest-neighbor bond is counted once:
+\[
+ E(\theta)=\sum_e\bigl(1-\cos D_e\theta\bigr),\qquad
+ \|\theta\|_\X=\|D\theta\|_{\ell^2}.
+\]
+Here $\X$ is the homogeneous energy completion modulo constants, with the
+conventions specified in the manuscript. The target set is the set of all
+physical uniform lifts,
+\[
+ \mathcal K=\{u\in\X:D_eu\in2\pi\mathbb Z\text{ for every }e\}.
+\]
+The minimax ranges over all strong-$\X$ continuous paths from the certified
+minimum to $\mathcal K$. No reflection constraint is imposed on the paths
+or their transverse perturbations, and the infinite exterior is included.
+
+The certificate establishes, for this configuration,
+\[
+ B_{\rm ann}=E(s_*)-E(m_*),\qquad
+ 0.00567867<B_{\rm ann}<0.00570116,
+\]
+where $s_*$ is either member of the reflected asymmetric index-one saddle
+pair. The separating construction uses $109$ charts and $436$ coordinate
+faces, with exact-saddle caps and full cutting-plane checks. These are
+finite verification objects controlling the full-space problem; they do
+not replace it by a finite-box variational problem.
+
+\paragraph{Meaning of reproduction.}
+The run documented here used a new extraction and new output directory,
+recompiled the original checking sources, and reran the default supervisor.
+It reused fixed candidate arrays and proposals. It did not use archived
+result files as mathematical premises or resume cached certificates.
+This is a fresh reproduction with the same checking software, not a
+second, independently implemented interval engine. It is also not a
+proof-assistant formalization or external journal peer review.
+
+\clearpage
+\section{Frozen archives and integrity}
+
+All three original source archives are required. The optimality extension
+deliberately depends on the separator and connection packages rather than
+duplicating their large proposal arrays. Extract them into one parent
+directory, retaining their original directory names:
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+Package & Extracted directory\\
+\midrule
+Separator & \code{xy_global_separator}\\
+Connection & \code{xy_global_connection}\\
+Optimality extension & \code{xy_optimality_extension}\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The following sizes are exact byte counts, not rounded display sizes.
+The SHA-256 values identify the archives used in the reported run.
+
+\subsection*{S2: separator source archive}
+\noindent\code{XY_Separacion_Global_Reproducible_2026-10-19.zip}\\
+Size: $228\,006\,035$ bytes. SHA-256:
+\begin{quote}\small\ttfamily
+47eaf4886bc10b7bbb7ef259c44bfef9134bf3402920594ca6e20cd87235cedc
+\end{quote}
+This supplies the original finite atlas, boundary ledger, proposals,
+checking sources, and associated analytic records for global separation.
+
+\subsection*{S3: connection source archive}
+\noindent\code{XY_Conexion_Global_Reproducible_2026-10-19.zip}\\
+Size: $441\,730\,856$ bytes. SHA-256:
+\begin{quote}\small\ttfamily
+3a4163d8b24c21f95acbdf502ceaed46e967180c21abb363d3436ae5e2afb042
+\end{quote}
+This supplies the stationary-state prerequisites, infinite-tail input,
+upper-path construction, and the original connection checking sources.
+
+\subsection*{S4: optimality-extension source archive}
+\noindent\code{XY_Optimalidad_Extension_Reproducible_2026-10-19.zip}\\
+Size: $59\,642\,630$ bytes. SHA-256:
+\begin{quote}\small\ttfamily
+42034c997678fa511ff261667ccb18edceee6d6bb05e543ddb6604f82958615d
+\end{quote}
+This supplies \code{verify_optimality.py}, exact-saddle cap and adjoint
+checks, cutting-plane membership checks, and the optimality assembly.
+
+\paragraph{Integrity results.}
+The reproduction checked $1\,808$ original archive members and $548$
+fresh-output hashes. The integrity status was \code{PASS}, with no
+mismatches. Original members remained unmodified. The manuscript/checker
+archive S1 contains the present source, reproducible conceptual-figure
+code and vector assets, audit summaries and arithmetic checkers; its own final archive hash belongs in the accompanying package
+manifest, avoiding a self-referential hash inside that archive.
+
+\clearpage
+\section{Historical fresh execution, 20 October 2026}
+
+Run the following command from \code{xy_optimality_extension}, with an
+initially empty or absent \code{results_fresh} directory. The line breaks
+below are shell continuations of the exact recorded command:
+\begin{quote}\small
+\begin{verbatim}
+python3 verify_optimality.py \
+  --separator-package ../xy_global_separator \
+  --connection-package ../xy_global_connection \
+  --output results_fresh --workers 2
+\end{verbatim}
+\end{quote}
+Do not supply the supervisor's validated-results or cached-results
+options when reproducing this fresh mode. Python's standard library and
+a suitable C++17 compiler suffice for the certificate; numerical candidate
+search software is not needed to rerun the checking chain.
+
+The observed run started at \code{2026-10-20T11:16:33.720428+00:00} and
+ended at \code{2026-10-20T11:29:17.084643+00:00}. Its wall time was
+$763.3642072677612$ seconds. The recorded environment was Python 3.12.14,
+g++ 13.3.0, Linux x86-64 with glibc 2.39, and little-endian storage.
+The compiler flags were
+\begin{quote}\small
+\begin{verbatim}
+-std=c++17 -O2 -DNDEBUG -fno-fast-math
+-ffp-contract=off -frounding-math
+\end{verbatim}
+\end{quote}
+The source guards accept IEEE binary64 and \code{long double} with at
+least $64$ mantissa bits. The audited reproduction target is narrower:
+exactly $64$ significand bits, little-endian input and round-to-nearest.
+The companion preflight enforces that target. Wider arithmetic requires
+a separate serialization analysis; successful compilation is insufficient.
+
+\paragraph{Memory observations.}
+The single-child peak \code{ru_maxrss} was $1\,874\,192$ KiB. The largest
+periodically sampled aggregate descendant resident set was
+$2\,476\,680$ KiB. Sampling can miss a larger transient aggregate peak.
+These are observations from this execution, not portable resource bounds.
+
+\paragraph{Expected terminal record.}
+The new \code{results_fresh/certificate.json} had status
+\code{FRESH_OPTIMAL_ANNIHILATION_BARRIER_PASS} and SHA-256
+\begin{quote}\small\ttfamily
+2bcb4121d588ecef7a2f8e8ad9036321d1286bf90d39d4aaa7d9713d45a5d763
+\end{quote}
+The nested phases reported \code{FRESH_GLOBAL_SEPARATOR_PASS},
+\code{INTEGRAL_MINIMUM_SADDLE_SUBLEVEL_PASS}, and
+\code{FRESH_GLOBAL_VARIATIONAL_SADDLE_CONNECTION_PASS}. Their reported
+durations were $182.741558$, $406.065284$, and $490.923117$ seconds,
+respectively; these phases are nested and must not be added as disjoint
+tasks. The default supervisor recorded no skipped checks. Its summaries
+and captured standard-output/error logs accompany S1.
+
+\clearpage
+\section{New arithmetic checks and analytic obligations}
+
+The two new Python checkers use exact rational arithmetic through
+\code{fractions.Fraction}. They check consequences of analytic arguments;
+they are not replacements for those arguments or for the original interval
+engines. Their source headers and JSON records make this distinction
+explicit.
+
+An additional payload checker, \code{verify_path_inputs.py}, inspects the
+original binary arrays, zero boundary values, manifests, and elementary
+norm estimates used to obtain $M=6007$. It reproduces a previously
+developed input audit, rather than adding another interval engine. Its
+source and new output record accompany S1. The correction and geometry
+enclosures it consumes remain dependencies of the separately reproduced
+global chain.
+
+\subsection*{Coupling robustness}
+\code{verify_robustness_constants.py} reads four fresh records: the global
+certificate, the minimum and saddle prerequisite certificates, and
+\code{caps.json}. It checks their statuses, relevant exact input bounds,
+and records their hashes. For $J_e=1+b_e$, $\|b\|_{\ell^1}\le1/500$, its rational tests
+verify the continuation and barrier constants used in the manuscript.
+In particular, with $\sigma=57/1000$, $\tau=71/100$ and $r=1/32$,
+\[
+ \sigma r-\tau/500-\tau r^2/2
+ =\frac{373}{25600000}>0,\quad
+ \kappa=\frac{371}{912}<1,\quad
+ \gamma_b=\frac{541}{16000}>0.
+\]
+The resulting record has status
+\code{COUPLING_ROBUSTNESS_RATIONAL_CHECKS_PASS}. It also checks the positive
+charge margin, separation of the continued saddle branches, the low-energy
+bridge, and constants for the specified $\X$-Riesz gradient flow. The
+analytic bounded-oscillation comparison gives
+\[
+ |B_b-B_0|\le2\|b\|_{\ell^1},\qquad
+ 0.00167867<B_b<0.00970116.
+\]
+The checker neither solves new perturbed equilibria numerically nor
+reexecutes the old global chain. It does not show that a perturbed minimax
+is attained at a continued saddle, or that the dominant mechanism changes.
+
+\subsection*{Green-tail localization budget}
+\code{verify_green_tail_budget.py} checks explicit rational consequences
+of the separately proved gradient-projector kernel and tail estimates.
+For the original certified path inputs it uses $M=6007$, $R_*=4097$,
+$a=27/500000$, and safe rational majorants for $32\sqrt2$ and
+$\sqrt{227}$. The critical-point recurrence is
+\[
+ T(R)\le\frac{32\sqrt2 Q}{R}+aT(R/2),\qquad 2a<1.
+\]
+The stated $A/R$ estimate is at the specified dyadic radii; an arbitrary
+intermediate radius uses the additional factor $2$. The checker reports
+\code{EXACT_GREEN_TAIL_BUDGET_ARITHMETIC_PASS}. For allocated localization
+error $\varepsilon/4$, it obtains
+\[
+\begin{array}{c|c|r}
+\varepsilon&n& R_*2^n\\ \hline
+10^{-2}&54&73804990693347688448\\
+10^{-6}&68&1209220967519808527532032
+\end{array}
+\]
+No box of either size was materialized. These conservative bounds make
+the localization effective mathematically; they do not make a full-grid
+computation at those radii practical and do not give a new numerical
+barrier enclosure. The analytic kernel proof remains in the main text.
+
+\clearpage
+\section{Verification boundaries and reuse}
+
+The fresh supervisor includes both reflected projected normals and their
+exterior tails; distances to all $109$ chart centers; two adjoint equations
+at size $1024$ compared with Neumann size $2048$; the five additionally
+enlarged charts $42,43,44,53,55$; exact-saddle caps; retained boundary
+walls and both entire exact cutting planes; minimum membership; exclusion
+of every physical uniform lift; and the final rational identity and strict
+barrier bracket. This list explains the global status; an interior
+stationary residual or a finite-box Hessian alone would not suffice.
+
+The fresh default run does not include candidate search, historical attack
+scripts outside the supervisor, a separately implemented secondary boundary
+checker, or the separate heteroclinic extension. The present reproducibility
+claim therefore does not establish a heteroclinic orbit, a thermal escape
+rate, universal XY metastability, or optimality for arbitrary configurations
+and separations. Internal mathematical cross-checks of the new analytic
+deductions are not an independent implementation of the original global
+certificate and are not external peer review.
+
+\subsection*{Targeted source checks, 20 October 2026}
+The additional inspection recorded under
+\code{verification_notes/current_targeted} has a narrower scope than the
+historical fresh global run. The optimality archive matched all $593$
+members in its file manifest, and the original manuscript archive matched
+all $48$ entries in its manifest. The subsidiary robustness and Green
+arithmetic outputs were regenerated and matched their archived values.
+Hash tampering and a missing saddle record were rejected by the subsidiary
+robustness checker; these are not tests of every failure mode of the global
+supervisor.
+
+The exact-arithmetic boundary and membership programs were also rerun
+using the archived local-oracle outputs: $109$ charts and $2208$
+coordinate-face evaluations left no unresolved pieces. The resulting
+status is explicitly conditional. The minimum radial and circle energy
+margins above the supplied comparison level were respectively greater
+than $6.79\,10^{-6}$ and $9.61\,10^{-7}$; the largest accepted
+fiber-minimizer distance was less than $0.163746<0.165$.
+This replay checks the geometric assembly, not the construction of its
+local-oracle, residual, or exterior inputs from the antecedent raw arrays
+unavailable during this additional inspection. The two antecedent archives are still required for a new
+full-chain execution.
+
+The inspected C++ backend uses its own trigonometric and inverse-tangent
+series with explicit remainder bounds. A finite set of $1166$ diagnostic
+comparisons against separately evaluated high-precision formulas found
+no discrepancies; such tests do not prove an interval contract for all
+inputs. The consumed endpoints of the four extension modules use an
+additional outward step before 30-digit decimal serialization. The
+supported target is therefore restricted here to a 64-bit
+\code{long double} significand, binary64 little-endian input, and
+round-to-nearest. The new \code{verify_supported_environment.py} checks
+that target; it does not execute or validate the global certificate.
+Wider arithmetic formats are not justified by a guard that merely accepts
+at least 64 significand bits.
+
+Two general implementation limitations remain documented in the source
+inspection report. An injected NaN is not rejected by the internal
+congruence helper, although nonfinite raw input is rejected and no such
+intermediate was shown for the frozen data. The historical standalone
+\code{run()} decimal output also lacks a general outward-serialization
+guarantee; the four inspected extension modules rename that main and do
+not invoke it. At this inspection stage these observations neither
+established a counterexample to the fixed certificate nor audited its
+antecedent implementations; Sections 6 and 7 record the later work.
+The immutable originals
+were not altered. Hardening a frozen engine would require updating its
+pins and repeating every dependent verification.
+
+The revised Green-budget checker replaces Python assertions by explicit
+checks that remain active under \mbox{\texttt{python -O}}; normal and optimized
+runs agree, and nonpositive tolerances are rejected. The cap arithmetic
+also has the transparent rational lower margin $k_c\ge19/40000$, given
+the certified transverse floor $1/25$ and radius $33/200$.
+
+\paragraph{Reusable a posteriori conditions.}
+To apply the method to another configuration, supply finite-energy candidate
+representations with certified full-space residuals, branch and exterior
+remainders; the finite comparison matrices and their interval inequalities;
+the complete boundary ledger; an upper path with analytic exterior control;
+and every endpoint/membership check needed by the minimax argument. The
+abstract sufficient conditions in the manuscript describe these obligations.
+The supplied program is not an unconditional algorithm guaranteed to
+certify every configuration. Failure of a sufficient test proves neither
+instability nor a cheaper escape.
+
+\paragraph{What a subsequent verification should compare.}
+First identify the three input archives by byte count and SHA-256. Then
+run the fresh command in a separate output directory, inspect every phase
+status and skipped-check field, and retain the produced logs and manifest.
+Compare mathematical bounds and final statuses as well as hashes: build
+metadata or other harmless output formatting can differ on a new system.
+A genuinely independent implementation would additionally reconstruct the
+analytic-to-computational reductions and interval operations with a separate
+checking codebase. That stronger claim is not made here.
+
+\paragraph{Supplement inventory and availability.}
+The accompanying \code{INDEX.txt} and \code{INDEX.html} describe five items:
+S1, the small source and checker snapshot; S2--S4, the three frozen source
+archives; and S5, this readable record. The repository is
+\url{https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice}.
+The planned frozen release is \texttt{siads-v7-2026-10-22}, at
+\url{https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice/releases/tag/siads-v7-2026-10-22}.
+Publication and remote downloads have not yet been verified. The index
+contains the intended asset URLs, byte counts, hashes and exact replay
+commands. S1 alone cannot reproduce the global chain. The source commit
+is resolved from the published tag and recorded externally in the release
+description and journal submission record. No DOI is asserted. The index
+and this PDF accompany the initial submission; any rejected archive size
+must be addressed through an accepted editorial transfer route.
+
+\paragraph{New infinite input class.}
+The manuscript's section on a terminating local input class proves
+reuse of the audited communication height for block-generated fields
+within energy distance $1/20$ of the certified minimum. The inputs can
+have infinitely many nonzero spatial blocks. The norm normalization,
+geometric tail, subcritical connection and energy-enclosure budgets are
+explicit. The script \code{checks/verify_infinite_class.py} checks these
+rational implications and representative finite prefixes, including
+bonds crossing their supports. It does not decide totality of an
+arbitrary input program, execute arbitrary-precision critical-state
+oracles, or discover a new global separator. Its report and negative
+controls accompany S1. Universal termination for arbitrary XY
+configurations remains open.
+
+\paragraph{Source format.}
+This companion uses the SIADS-permitted fallback: $10$-point type,
+$6$-inch by $8$-inch text area, and mathematical line numbering. The
+manuscript source bundle does not redistribute an isolated SIAM class
+file. Publisher-template installation guidance is in its README.
+
+
+\clearpage
+\section{Additional separator audit, 21 October 2026}
+
+A new clean execution of the standalone separator, using its unchanged
+pinned scientific sources, ended with
+\code{FRESH_GLOBAL_SEPARATOR_PASS} in 180.92 seconds. The 109 local
+charts, 436 coordinate faces and all other boundary pieces passed, with
+zero unresolved cells. All 330 directly comparable scientific files
+were byte-identical to the archived outputs; boundary and separation
+records agreed after explicitly removing path, timing and derived-hash
+fields. All 454 fresh-output hashes were checked. This standalone run
+preceded the new complete execution reported in Section 7.
+
+An independent implementation using Python integers and exact rational
+arithmetic verified all 715 geometric inclusions: eight Gram and inverse
+entries, 218 center coordinates, 109 squared transverse norms and 380
+neighbor distances, as well as three scalar maxima. It computes inner
+products through the full-lattice degree-four Laplacian of zero
+extensions and checks boundary zeros. It does not import the supplied
+C++ interval engine. These checks validate the fixed geometry; they do
+not constitute an independent interval evaluation of the critical-state
+residuals or chart energies. Code, negative controls and complete records
+are included in \code{verification_notes/separator_2026_10_21}.
+
+The separator's historical minimum checker prints bare decimal scalars.
+Its downstream consumer already adds or subtracts an exact $10^{-18}$
+padding to every numerical baseline field it uses. For the fixed
+magnitudes, this dominates the decimal formatting error. This resolves
+the previously identified serialization concern for this interface,
+subject to the explicitly supported 64-bit significand environment.
+The separate generic nonfinite-input issue in the congruence helper
+must be distinguished from its reachability with these fixed inputs.
+No original frozen source or scientific pin was modified.
+
+A diagnostic replay with finite/order checks completed the minimum, all
+109 charts and the geometry without a guard failure. Its scientific
+outputs and coefficient files were byte-identical to the untouched fresh
+run. Exact hexadecimal sidecars were compared with the exported decimals
+using rational arithmetic: 8,284 chart interval records, 436 one-sided
+chart scalars, 715 geometry interval records, three geometry summaries
+and the four consumed minimum scalars passed their directional tests.
+This addresses the fixed separator execution and its actual exports;
+it neither repairs the original helper's generic NaN contract nor
+constitutes a second interval implementation. At that stage the
+connection archive was unavailable; Section 7 resolves that input
+obligation and reports the complete execution.
+
+\clearpage
+\section{Complete reproduction and connection audit, 21 October 2026}
+
+The five supplied connection volumes were reconstructed into the original
+441,730,856-byte archive with the exact S3 hash above. Its 129 manifested
+members and 44 scientific-distribution members matched. The reconstruction
+script pins all five volume hashes and verifies the complete archive
+before atomic replacement. An initially verified local archive later
+failed its ZIP check; it was rejected and reconstructed again before the
+successful payload audit. The execution note records this operational
+incident without assigning an unverified cause.
+
+The unchanged three-package supervisor was rerun in a new output directory,
+without cached-result options or archived results as premises. It ended
+with \code{FRESH_OPTIMAL_ANNIHILATION_BARRIER_PASS} in
+737.332688331604 seconds. Its certificate SHA-256 is
+\begin{quote}\small\ttfamily
+b1cbb7206a0c7492ad6990213a48480c9d25e04a5a21fe1805f0195a871f5999
+\end{quote}
+All 548 global output hashes were checked, as well as the 454 separator
+and 35 connection hashes in the nested records. All mathematical fields
+agreed with the preceding fresh execution. The comparison also found
+129 byte-identical scientific outputs, including all 109 atlas polynomials;
+both boundary assemblies agreed after explicit metadata normalization.
+The environment and compiler flags are unchanged from Section 3. No new
+process-tree memory peak was measured in this run.
+
+The actual path-array audit passed, including manifest bindings, finiteness,
+zero boundaries, support and rational norm bounds giving $M=6007$.
+Independent rational postprocessors reproduced the connection implications;
+seven deliberate changes to coverage, endpoint, direction or energy were
+rejected. The robustness checker was rebound to the new global certificate
+and passed with unchanged mathematical constants.
+
+Appendix D of the article independently derives the finite load's exact
+zero mean and both exterior residual terms. It uses endpoint cancellation
+of the compact changed flux and oddness of the pure reference force,
+without imposing symmetry on the correction. The opposed nonlinear bond
+terms are combined before taking absolute values. This explains the
+implemented Neumann comparison and exterior formula, including the halo.
+
+Separate instrumented copies of the connection and extension sources check
+finite ordered interval endpoints and export exact binary sidecars.
+The extension's 11 jobs passed and reproduced all 11 scientific JSON
+outputs and five coefficient files byte for byte; 888 export records
+passed exact rational directional checks. The exact positive margin
+between \code{LEVEL} and the padded saddle upper bound is approximately
+$1.2192816430\,10^{-21}$; rounded display values are not used to decide
+that comparison. An independently coded integer/rational calculation
+also verifies eight normal/adjoint coordinate inclusions and the identities
+$Gc=n$ and $c^TGc=1$.
+
+The connection backend report supplies the corresponding execution and
+consumer-by-consumer scalar checks, including the binary constants actually
+compiled into dependent modules. Diagnostic copies are separate from the
+unchanged original sources. Their protection of this fixed execution does
+not repair the original congruence helper's generic NaN contract and is
+not a second interval engine. Historical node/segment dumps are approximate
+records, not numerical premises consumed by the current chain.
+
+All compact sources, logs, exact sidecars, rational checks and binding
+records are in \code{verification_notes/connection_2026_10_21}; large raw
+arrays and compiled binaries remain in the separately indexed originals.
+This closes the previously missing-input obligation. The limits on
+heteroclinic, stochastic, universal and perturbed-mechanism claims in
+Section 5 are unchanged.
+
+
+\end{document}

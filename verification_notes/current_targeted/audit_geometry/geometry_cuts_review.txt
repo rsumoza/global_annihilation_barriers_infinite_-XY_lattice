@@ -1,0 +1,47 @@
+GEOMETRIC CUT/CAP SOURCE AUDIT — 20 October 2026
+Scope: extension/check_capped_separator.py, proof/geometry_lemmas.tex and proof/cap_surgery.tex; selected related routines in extension/check_atlas.py. Original sources were not edited.
+
+VERDICT
+No demonstrated logical false-positive was found in the closed-cut/tangency or full-fiber cap predicates inspected. The checker is explicitly conditional on externally validated cap geometry and local chart inequalities. That trust boundary is real: its first status check is not a proof of those numerical premises. The parent auditor is rerunning the complete conditional ledger from archived enclosures, not revalidating missing antecedent source packages.
+
+1. CLOSED CUTS AND TANGENCIES — SOURCE LOGIC IS CONSERVATIVE
+check_capped_separator.py lines43–45: outside_cut drops a coordinate cell only if one cut's interval has lower endpoint STRICTLY positive. Thus equality ell=0 and intervals touching zero are retained. This is a sufficient single-cut exclusion rule, not a requirement that the mathematical theorem permit only single-cut witnesses.
+Lines65–68: the disk rejects only rsq.lo>radius^2.hi, and a cell still touching the circle is checked when rsq.hi>=radius^2.lo. Tangencies are included.
+Lines110–111: the exact-plane loop rejects a cell only when its plane interval is strictly positive or strictly negative, or rigorously outside the disk/another cut. Zero and endpoint touches therefore remain candidates. Interval normals/offsets overcover the exact plane rather than replacing it by a midpoint plane.
+Lines83–85 and121–123: each subdivision uses closed child intervals [lo,mid] and [mid,hi]. This duplicates shared endpoints and loses none.
+The original coordinate-face checker, check_atlas.py lines289–292,348–350, similarly starts with all four closed faces and divides closed intervals. Inclusion in another chart is STRICT (lines318–319). Equality on a neighboring box is not silently treated as interior.
+
+2. FULL-FIBER CAP CONTRACT IS THE RIGHT ONE
+check_capped_separator.py lines46–53 and114–116 computes root=beta/mu and requires chart.R-root>0, so the fiber minimizer is strictly interior. It encloses the orthogonal squared distance from the chart center to the saddle candidate using G and Ydist2, then adds the exact-root uncertainty rho and beta/mu. The strict bound below Rcap is the cap-lifting criterion. The checker does not require the entire fiber ball to fit into the local cap, which would be needlessly restrictive; strong convexity lifts the bound from its minimizer to every point of the fiber. This is exactly the analytic argument in geometry_lemmas.tex lines79–99 and cap_surgery.tex lines249–303.
+The truncation d2.lo=max(0,d2.lo) at line51 is safe because the represented squared distance is nonnegative. If d2.hi<0 the interval constructor fails rather than silently accepting the cell.
+
+3. RADIUS POSITIVITY USES THE SHARP DIFFERENTIAL CONSTANT
+check_capped_separator.py lines39–40 requires rho>=0, mu_cap>0, Rcap>0, and 3*sqrt(2)*mu_cap-Rcap>0. This is the correct condition for Lambda=1/sqrt(2), not for Lambda=1. The safe displayed mu=1/25 and Rcap=33/200 satisfy it. They do not satisfy Rcap<3mu for the coarser Lambda=1. The exact rational tau=71/100 gives 2tau^2=5041/5000>1 and mu/2-tau*Rcap/6=19/40000>0. The manuscript can state this explicitly, conditional on the already certified mu_cap premise.
+
+4. NATURAL/MEAN-VALUE POLYNOMIAL INTERSECTION IS VALID
+check_atlas.py lines156–165 intersects a natural interval polynomial enclosure with a first-order mean-value enclosure centered at the rectangle midpoint. For ANY one fixed real coefficient vector in the stored coefficient intervals, both are enclosures of the same real polynomial on that rectangle: the gradient interval covers its gradient along the entire segment to the midpoint. Re-evaluating coefficient intervals in the derivative does not require choosing different actual coefficients; it merely enlarges an enclosure. Their intersection therefore retains every actual polynomial value. This is not an unjustified cancellation of independent polynomial representations. The even-power evaluation at lines144–153 is also conservative.
+A focused exact-rational sample test of 729 fixed coefficient choices/point combinations passed. It is a regression test, not a proof of all possible inputs or an independent verification of all interval arithmetic.
+
+5. RADIAL DERIVATIVE CAN BE OMITTED ONLY FOR AN EXACT WALL RADIUS
+check_atlas.py lines201–210 gives the lower quadratic evaluated at the requested radius. On the exact radial wall ||w||=R, no sign of its radial derivative is required: the lower bound is evaluated at R itself. Accordingly radial_only with no outer chart skips that derivative check at lines248–249. check_capped_separator.py lines57–86 likewise always calls radial_energy at c['R'] and checks the exact radial wall, so discarding the derivative there is valid.
+For the face-overlap argument, the excluded annulus starts at rin and extends outward; the derivative is necessary. check_atlas.py lines327–331 retains it. The full-ball alternative c.R<rin at lines324–326 is separately sufficient.
+
+6. OPTIONAL OUTER CHARTS ARE NOT SILENTLY ACCEPTED BY THE CAP CHECKER
+check_capped_separator.py line104 explicitly rejects a manifest entry with outer_path. Although the monkey-patched radial routine itself does not support the original checker's outer-chart refinement, the final checker raises before it can issue a complete pass for such an input. This is a documented/implemented limitation, not a presently demonstrated false-positive. Supporting outer_path would require implementing and reviewing the corresponding full-fiber geometry; current data must use the five enlarged ordinary charts instead.
+
+7. ANALYTIC PROOF FILES
+geometry_lemmas.tex lines18–41 correctly projects a candidate negative direction onto the reaction span, subtracts the saddle correction once in operator norm, and uses the cubic cap radius 3sqrt(2)mu_r. The sign of the old-coordinate plane in lines63–77 is consistent with an outward sign choice; the plane is transverse-fiber independent.
+The cone sufficient conditions in geometry_lemmas.tex lines101–119 are valid: the derivative f'_T is concave on v>=0, so when nonnegative at the left endpoint it can change sign at most once from positive to negative; minima are at interval endpoints. The alternative quadratic minimum is valid without that derivative condition.
+cap_surgery.tex lines366–420 states the topological closure as a CONDITIONAL theorem. Its old-wall condition explicitly uses ell_+<=0 and ell_-<=0 (lines376–384); its new faces include closure(D0) and all closed intersections (lines385–393). Thus these proof files already express the intended retained-CLOSED-wall logic more explicitly than the main manuscript's phrase “removed by another cut.” The source predicates above are consistent with this interpretation.
+The a-posteriori cap and full-fiber lemmas do not verify their own numerical premises. Stored json status labels and archived output text remain external inputs unless freshly bound and recomputed by the full supervisor.
+
+FOCUSED TEST ARTIFACTS
+revision_integrada_2026_10_20/audit_geometry/test_geometry_cut_contract.py
+revision_integrada_2026_10_20/audit_geometry/test_geometry_cut_contract.json
+Status: FOCUSED_GEOMETRY_CONTRACT_TESTS_PASS; 18 assertions passed.
+The tests extract the ORIGINAL AST predicates linear/outside_cut/root_cap_test and the ORIGINAL exact-plane exclusion expression, without changing source files. They check zero/endpoint tangencies, strict exclusion, cap/fiber equality rejection, the sharp-vs-coarse cap threshold, exact rational margin, and selected fixed-coefficient polynomial enclosure cases.
+Checked check_capped_separator.py SHA256:
+3ad0f2bc7233c87bfa2e7a934a510b94493999d5fb4c815761e3fee0e46fa1d2
+
+LIMITS
+These tests do not certify the original 109 local chart inequalities, adjoint errors, saddle-root identity/reflection, analytic exterior, upper path, or the barrier bracket. Original separator/connection sources are absent. A successful conditional ledger rerun from available archived polynomial/geometry enclosures checks the arithmetic/topological combination of those inputs, not their missing provenance proofs.

@@ -1,0 +1,133 @@
+{
+  "status": "RATIONAL_SADDLE_AND_LOCAL_PASSAGE_PASS",
+  "scope": "Exact scalar consequences of an authenticated C++ certificate; not another residual/Hessian verification",
+  "input_sha256": "91622d70e1ff7077b621639d2781a8406d2fb0c1b6c718a92972b2bec40d6e60",
+  "source_grid_side": 4096,
+  "serialization_pad": "1/1000000000000000000",
+  "lipschitz_bound": "1",
+  "delta_upper": {
+    "exact": "814552470016199154397319/1000000000000000000000000000",
+    "decimal": "0.000814552470016199154397319",
+    "direction": "upper"
+  },
+  "candidate_negative_margin": {
+    "exact": "349628188133867660126329/5000000000000000000000000",
+    "decimal": "0.0699256376267735320252658",
+    "direction": "lower"
+  },
+  "candidate_positive_margin": {
+    "exact": "719549999999999697452829/10000000000000000000000000",
+    "decimal": "0.0719549999999999697452829",
+    "direction": "lower"
+  },
+  "radius": {
+    "exact": "32062345914012538121333/2500000000000000000000000",
+    "decimal": "0.0128249383656050152485332",
+    "direction": "upper"
+  },
+  "invariant_ball_slack": {
+    "exact": "2131308202445834091441931039520044917/3125000000000000000000000000000000000000000000000",
+    "decimal": "6.82018624782666909261417932646414373E-13",
+    "direction": "lower"
+  },
+  "contraction_factor_upper": {
+    "exact": "2068538446065325040086/11278328649479601939559",
+    "decimal": "0.183408243397905445344435927317932591",
+    "direction": "upper"
+  },
+  "exact_negative_margin": {
+    "exact": "285503496305842583883663/5000000000000000000000000",
+    "decimal": "0.0571006992611685167767326",
+    "direction": "lower"
+  },
+  "exact_positive_margin": {
+    "exact": "591300616343949544967497/10000000000000000000000000",
+    "decimal": "0.0591300616343949544967497",
+    "direction": "lower"
+  },
+  "exact_inverse_upper": {
+    "exact": "5000000000000000000000000/285503496305842583883663",
+    "decimal": "17.5129203834470845799298844433651807",
+    "direction": "upper"
+  },
+  "saddle_energy_error_upper": {
+    "exact": "1012327264747409703252816934130868401014311377484157142887010494633037/187500000000000000000000000000000000000000000000000000000000000000000000000",
+    "decimal": "0.00000539907874531951841734835698203129814",
+    "direction": "upper"
+  },
+  "minimum_reference_gap_upper": {
+    "exact": "1168099/100000000000",
+    "decimal": "0.00001168099",
+    "direction": "upper"
+  },
+  "minimum_reference_dependency": {
+    "status": "SCALAR_MINIMUM_ENERGY_GAP_RECHECKED",
+    "candidate_raw_sha256": "2a969db50023b0697c5f228d4b10325df7ea899bcdfe965fef6d02616f82adf3",
+    "explanation": "The minimum reference and its energy gap must be authenticated by the complete chain",
+    "certificate_sha256": "afb9a9b577a2833ebbc9de1f24e5ef587e84e59285bdc4820eac7040127ad881",
+    "delta_upper": {
+      "exact": "1166547457999327967653/1000000000000000000000000",
+      "decimal": "0.001166547457999327967653",
+      "direction": "upper"
+    },
+    "segment_coercivity_lower": {
+      "exact": "582508082871915406113/10000000000000000000000",
+      "decimal": "0.0582508082871915406113",
+      "direction": "lower"
+    },
+    "derived_energy_gap_upper": {
+      "exact": "1360832971764693848747827203775475414328409/116501616574383081222600000000000000000000000000",
+      "decimal": "0.0000116808076297880329074724740904987250",
+      "direction": "upper"
+    }
+  },
+  "saddle_minus_exact_minimum": [
+    {
+      "exact": "1064752297008059242012882808065869131598985688622515842857112989505366963/187500000000000000000000000000000000000000000000000000000000000000000000000",
+      "decimal": "0.00567867891737631595740204164301796870",
+      "direction": "lower"
+    },
+    {
+      "exact": "1068967143685842995396384691934130868401014311377484157142887010494633037/187500000000000000000000000000000000000000000000000000000000000000000000000",
+      "decimal": "0.00570115809965782930878071835698203130",
+      "direction": "upper"
+    }
+  ],
+  "charges_preserved": true,
+  "local_passage": {
+    "S": "1/100000",
+    "R": "1/1000",
+    "radius_bound": "101/100000",
+    "negative_margin": {
+      "exact": "280453496305842583883663/5000000000000000000000000",
+      "decimal": "0.0560906992611685167767326",
+      "direction": "lower"
+    },
+    "positive_margin": {
+      "exact": "581200616343949544967497/10000000000000000000000000",
+      "decimal": "0.0581200616343949544967497",
+      "direction": "lower"
+    },
+    "transverse_force_upper": {
+      "exact": "200001/20000000000",
+      "decimal": "0.00001000005",
+      "direction": "upper"
+    },
+    "transverse_offset_upper": {
+      "exact": "100000500000000000000/581200616343949544967497",
+      "decimal": "0.000172058489251189232934774607498552037",
+      "direction": "upper"
+    },
+    "face_energy_drop_lower": {
+      "exact": "280453496305842583883663/100000000000000000000000000000000000",
+      "decimal": "2.80453496305842583883663E-12",
+      "direction": "lower"
+    },
+    "lateral_excess_over_saddle_lower": {
+      "exact": "380199616343949544967497/20000000000000000000000000000000",
+      "decimal": "1.900998081719747724837485E-8",
+      "direction": "lower"
+    },
+    "conclusion": "Free-face local passage minimax equals exact saddle energy; no global annihilation optimality claimed"
+  }
+}

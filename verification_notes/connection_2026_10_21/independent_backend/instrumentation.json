@@ -1,0 +1,62 @@
+[
+  {
+    "program": "stage2/baseline/verify_guarded",
+    "source": "engine.cpp",
+    "flags": [
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-frounding-math"
+    ]
+  },
+  {
+    "program": "stage2/saddle/verify_guarded",
+    "source": "certify.cpp",
+    "flags": [
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-frounding-math"
+    ]
+  },
+  {
+    "program": "stage2/barrier/verify_guarded",
+    "source": "certify.cpp",
+    "flags": [
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-frounding-math"
+    ]
+  },
+  {
+    "program": "connections/path_guarded",
+    "source": "certify_path.cpp",
+    "flags": [
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-frounding-math"
+    ]
+  },
+  {
+    "program": "connections/join_guarded",
+    "source": "certify_join_points.cpp",
+    "flags": [
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-frounding-math"
+    ]
+  }
+]

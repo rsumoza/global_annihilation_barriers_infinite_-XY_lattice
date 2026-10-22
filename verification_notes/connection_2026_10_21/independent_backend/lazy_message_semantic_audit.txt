@@ -1,0 +1,47 @@
+Lazy-message guard optimization: read-only semantic audit
+21 October 2026
+
+Compared stage2/saddle/engine.cpp with stage2/saddle_fast/engine.cpp,
+including the supplied engine_lazy_messages.patch. Also compared both
+certify.cpp copies byte for byte. No heavy numerical job was executed.
+
+Result
+------
+The only changes are one added helper and nine dispatch substitutions:
+  static void guard_need(bool condition,const char* message) {
+      if(!condition) throw std::runtime_error(message);
+  }
+
+The nine substituted calls are precisely the injected diagnostic guards:
+  dn: finite argument and finite nextafter result (2);
+  up: finite argument and finite nextafter result (2);
+  scalar and endpoint interval constructors (2);
+  congruence dimensions, finite/ordered A and finite V inputs (3).
+
+Removing that one helper definition and changing guard_need( back to need(
+produces exact byte equality with the previous guarded engine text. Thus the
+predicates, their evaluation sites, error-message bytes, counters, increments,
+return expressions and every numerical expression are unchanged. All 70
+original frozen engine need() call sites remain untouched. The two certify.cpp
+files are byte-identical. No guard was disabled or made conditional on NDEBUG.
+
+The change eliminates construction/destruction of a temporary std::string
+on successful diagnostic checks. On failure both routes throw std::runtime_error
+with the same message bytes and are caught by the existing rejection handler.
+This is equivalence of the numeric/rejection contract, not an assertion that
+allocation-failure behavior or every resource-level C++ observation is identical.
+The old code could allocate before even entering need(); the new code postpones
+message allocation until failure.
+
+Bindings
+--------
+old guarded engine SHA256:
+2c7dc6a0dbf81a84387ce5918182d29b054d6009d4f70a859779ed91bed32365
+lazy guarded engine SHA256:
+802714607f4271a07c7a62f0de9034387114b5d8acc05403cb58a73773fcb4be
+identical certify.cpp SHA256:
+84abf8d43586e455c81ca3c1c8b1b6ac6af7bc058d430135f71bb31fa3dac501
+
+The parent's benchmark was not independently rerun here. Complete numerical
+replay, fixed-data finite guards, exact exported-bound comparisons, compiler
+flags, and scientific-output byte equality remain separate verification tasks.

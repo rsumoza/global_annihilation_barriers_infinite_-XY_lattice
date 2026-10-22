@@ -1,0 +1,174 @@
+\documentclass[10pt]{article}
+\usepackage[textwidth=6in,textheight=8in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,booktabs,array,microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\newcommand{\X}{\mathcal X}
+\newcommand{\nrm}[1]{\lVert#1\rVert}
+\setlength{\parskip}{.35em}
+\title{Response to the supplied external review}
+\author{Certified global annihilation barriers in an infinite XY lattice}
+\date{Pre-submission revision, 20 October 2026}
+\hypersetup{pdftitle={Response to the supplied external review},pdfsubject={Pre-submission editorial revision; no journal decision or public deposit asserted}}
+\begin{document}
+\maketitle
+
+The supplied comments identify useful improvements in motivation and
+geometric accessibility. The revision addresses all six substantive and
+editorial points below. It preserves the theorem statements, the
+admissible strong-energy-space path class, the certified barrier
+enclosure, and the coupling budget. The favorable assessment in the
+report is not used as evidence of mathematical correctness or
+bibliographic priority. This response concerns the review supplied by
+the author before submission; it is not a response to an identified
+SIADS editorial decision.
+
+\section{Motivation for the energy-space gradient}
+
+\textbf{Comment.} Explain why the chosen Hilbert metric and flow have a
+physical or mathematical role beyond functional-analytic convenience.
+
+\textbf{Change.} Section 2 now contains a subsection entitled
+``Dissipation metric and dynamical interpretation.'' It starts from the
+Rayleigh dissipation potential
+\[
+ \mathcal R(v)=\tfrac12\sum_e|D_ev|^2=\tfrac12\nrm v_\X^2.
+\]
+Minimizing $\mathcal R(v)+DE_b(u)[v]$ gives the weak gradient equation
+and the identity $\dot E_b=-\sum_e|D_e\dot u|^2$. The metric therefore
+corresponds to bond dissipation of phase-difference velocities. The
+subsection derives the finite-array current-conservation interpretation
+for overdamped resistively shunted Josephson junctions, with equal shunt
+conductances, fixed boundary phases, no injected current and no noise.
+Equation (13) of Yoon--Choi--Kim (2000), already cited in the article,
+supports this interpretation. Its additional fluctuating-twist
+equations are explicitly excluded.
+
+The infinite lattice is formulated directly in the energy space; the
+revision does not assume a thermodynamic limit of a driven stochastic
+circuit model. It also distinguishes the static variational barrier
+from its choice of dissipative relaxation law. The same energy and path
+class define the same barrier if mobility is changed, while orbit and
+rate questions require additional analysis. The phenomenon certified
+here is pinned-dipole annihilation and its positive escape barrier,
+not a proof of the thermodynamic BKT phase transition.
+
+\clearpage
+\section{A geometric schematic}
+
+\textbf{Comment.} Illustrate exact saddle caps, cutting planes and
+coordinate-face coverage.
+
+\textbf{Change.} Figure 1, placed in Section 3, supplies two complementary
+views. The reaction-coordinate panel displays the minimum, both saddles,
+exact cutting lines and the selected upper-path mechanism. The second
+panel displays a slice of transverse fibers at a coordinate face and the
+strict inclusion that makes a low-energy part of that face internal to
+another chart. The text connects the diagram to exact-plane lifting and
+to the complete boundary ledger.
+
+The figure is labeled as conceptual: its positions, chart count and
+proportions are not certified numerical geometry. In particular, the
+infinite-dimensional fiber is not replaced by the drawn slice. The
+adjacent text explains that the fiber minimizer must fit in the local cap;
+strong convexity then controls the entire fiber. The image does not
+substitute overlap of pictures for the complete-face inclusion test.
+The Python source, vector PDF/SVG, preview PNG, caption and alt text
+are supplied with the editable sources.
+
+\section{Effective localization and practical computation}
+
+\textbf{Comment.} Identify specific cancellations or averaging methods
+that could reduce the very large truncation budgets.
+
+\textbf{Change.} Section 7 now separates the two cost mechanisms.
+The proved error is $C_E/R$, so a target $\varepsilon/4$ requires
+$R\ge4C_E/\varepsilon$. The present $C_E\simeq1.60\times10^{17}$
+is large, but the dependence on inverse accuracy is linear.
+The exponential obstruction is a complete cubical search in the
+number of variables, itself of order $R^2$.
+
+The concrete next steps are data-dependent core sums of the nonlinear
+source and separate exterior bounds, followed by leading-multipole
+subtraction before absolute values. An exact kernel-difference identity
+shows where this cancellation would enter. An improved rate or useful
+constant still requires quantitative kernel differences, source moments,
+and uniform control along the path and admitted coupling class.
+Neutral vortex charge alone does not establish the required moments or
+their cancellations. No unproved multiphase averaging is presented as
+a solution: it need not preserve real lifts, charges, or the energy
+ceiling. The revision retains the low-rank atlas plus analytic exterior
+as the practical architecture, without claiming a new feasible global
+solver or a new barrier computation.
+
+\section{Abstract readability}
+
+\textbf{Comment.} Shorten long sentences and separate the saddle-height
+identity from its numerical value.
+
+\textbf{Change.} The abstract has been rewritten with shorter sentences.
+The barrier identity and the strict numerical enclosure are now separate
+sentences. The path class, reusable conditions, effective tail and
+robustness are still stated, including the unresolved perturbed
+minimax-realization question. The revised abstract contains 219 words,
+below the 250-word limit.
+
+\clearpage
+\section{Code availability and archival deposit}
+
+\textbf{Comment.} Deposit the code and verification archives permanently
+and replace the draft availability statement by the verified identifier.
+
+\textbf{Change and policy clarification.} We agree with the goal of a
+durable, versioned deposit. The revised availability statement identifies
+the actual frozen supplementary archives, index and hashes, and states
+precisely that the separate public deposit has not yet occurred.
+No URL or DOI has been invented.
+
+The current SIADS instructions call for indexed supplements and a frozen
+version of submitted code;
+we found no general separate-repository DOI deadline before acceptance.
+The proposed archival deposit is therefore retained as an author action,
+not represented as a verified universal prerequisite. A specific editor
+or funder may impose additional conditions. Once an actual public
+deposit exists, its resolving version-specific identifier should be
+inserted and checked.
+
+\noindent Official sources checked on 20 October 2026:
+\begin{itemize}
+\item \url{https://epubs.siam.org/journal/siads/instructions-for-authors}
+\item \url{https://epubs.siam.org/journal-authors}
+\item \url{https://epubs.siam.org/artificial-intelligence}
+\end{itemize}
+No public posting or journal submission was performed in this revision.
+
+\section{Dependent bond angles in the perturbation bound}
+
+\textbf{Comment.} Explain why compatibility constraints among bond angles
+do not invalidate the lower and upper enclosures for $W_b$.
+
+\textbf{Change.} The proof of Lemma 6.1 now writes the bondwise inequality
+\[
+ 2\min(b_e,0)\le b_e(1-\cos D_eu)\le2\max(b_e,0).
+\]
+It holds for every phase field before summing. Absolute summability of
+$b$ permits summing it on the infinite lattice. Hence the constraints
+between increments cannot invalidate the enclosures. Their endpoints
+need not be attainable minima or maxima; the exact width $2\nrm b_1$
+of this enclosing interval is an upper bound on the actual oscillation.
+No strict inequality or independent choice of bond angles is assumed.
+
+\section*{Verification scope of this revision}
+
+The changes clarify interpretation and exposition and add a schematic;
+they do not alter the archived global engine or its frozen input arrays.
+The compiled files, cross-references, figure generation, supplementary
+index and exact-rational consequence checkers were rechecked for this
+revision. The earlier fresh global execution record remains identified
+by its original hashes. The large global chain was not rerun merely for
+these editorial changes, and the new schematic is not presented as its
+output. Author metadata, personal review and any public archival deposit
+remain separate pre-submission actions.
+
+\end{document}

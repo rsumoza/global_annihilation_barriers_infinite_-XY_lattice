@@ -1,0 +1,90 @@
+Connection backend audit
+21 October 2026
+
+Actual numerical contract
+-------------------------
+The minimum uses 22 significant decimal digits; saddle, sublevel, paths and join
+summaries use 24 digits. Their actual connection postprocessors add/subtract
+PAD=1e-18 before nonlinear rational consequences. The marked sublevel is checked
+internally on mesh 640; its bare 28 digit polynomial dump is not read as a numerical
+premise by the current supervisors. Nor are the bare 24 digit node/segment table
+endpoints used as directed bounds. They remain approximate diagnostic records.
+
+The optimality overlay has four additional unpadded threshold comparisons.
+They compare against exact rational string constants, not Python float values.
+The exact internal rho/delta of the minimum, rho of the saddle, and positive
+saddle margin must satisfy those exact thresholds. This is checked separately;
+merely observing a printed PASS does not close this dependency.
+
+Compiled binary constants
+-------------------------
+The sublevel program hardcodes rho=.017422L, delta=.001166548L and mustar=.05825L.
+The exact internal minimum bounds are compared directly against those compiled
+binary constants. This matters because .001166548L is slightly below its exact
+decimal value. Likewise, the source identity of the 1.12L branch literal is
+recorded: the weaker scalar check against 1.11999999999999 is not by itself a
+proof that the full barrier angular domain lies in the minimum's branch margin.
+The fixed sources use the same 1.12L literal and same compiler/flags.
+
+Guarded numerical replay
+------------------------
+Separate copies retain the original formulas and immutable input bytes, while
+checking every I construction for finite ordered endpoints, every dn/up input
+and output for finiteness, and congruence input arrays explicitly. Exact binary
+sidecars record all consumed bounds before decimal printing. The generic original
+positive_by_congruence NaN reject defect remains real; only fixed executions
+successfully checked here can be declared free of that event.
+
+The connection minimum is the identical program on all six identical fixed
+inputs already exercised by the complete guarded separator baseline. Explicit
+SHA256 bindings close that reuse. A bounded scalar probe, with its own arguments
+bound to the prior exact hexadecimal c/rho record, reconstructs mu and records
+branch/literal constants. This is a reuse of an identical computation, not a
+claim that the large minimum was rerun twice in this diagnostic branch.
+
+The guarded connection workloads are the full 4096 saddle, marked sublevel at 640,
+the 8-node return leg, 19-node terminal leg, 34-node supplementary path, and the
+complete stored-endpoint comparison against the 4096 candidate. The latter reads
+the actual leg endpoints, not unbound endpoint proposals. Fresh original JSON
+and table bytes are compared against all guarded scientific outputs.
+
+Scope and evidence
+------------------
+The complete result, if successful, is recorded by exact_export_report.json,
+which authenticates fresh original results, immutable proposal identities,
+source and sidecar hashes, all one-sided PAD comparisons, exact constant and
+unpadded overlay dependencies, and diagnostic path-table checks. A failed or
+incomplete prerequisite raises an error; it must not be relabeled PASS.
+
+This retains the same arithmetic engine. It is not an independent interval
+implementation, a formal proof of the compiler/library, or a theorem about
+arbitrary inputs and machines. The supported environment has a 64-bit
+long-double significand, binary64 proposal arrays, strict recorded compiler
+flags and round-to-nearest. General portability requires another analysis.
+
+Completed outcome
+-----------------
+CONNECTION_FIXED_EXPORTS_EXACT_COMPARISON_PASS: 35 summary scalar endpoint
+checks and 299 supplementary path-table endpoint checks passed. All seven
+scientific summary JSON files and all six node/segment tables match the fresh
+originals byte for byte. Compiled binary dependencies and all four unpadded
+optimality-overlay thresholds have strictly positive exact margins.
+
+The complete eager-message guarded saddle finished in 804.2363030910492 s.
+It checked 7,174,536,378 interval constructions and 9,273,827,873 dn/up calls.
+Aggregate anon+kernel+shmem peaked at 4,522,594,304 bytes (2-second samples),
+with no OOM event. It was selected after success. A simultaneously running
+lazy-message alternative, independently reviewed as numerically identical, was
+still incomplete and was stopped with SIGINT; none of its partial numerical
+data is evidence. The benchmark and semantic review are diagnostic only.
+
+Across the six newly guarded connection programs, 9,700,086,087 interval
+constructions and 12,356,053,363 dn/up calls passed. The separately bound reused
+minimum contributes another 1,242,704,177 constructions and 1,761,491,636 calls;
+it is not double counted as a newly repeated minimum. Complete per-program
+counts, source/proposal/output bindings and exact scalar margins are in results/.
+
+One final diagnostic reporter initially hit Python's 4300-digit integer-string
+limit for a legitimate subnormal Fraction denominator. An explicit 30000-digit
+reporting budget covers finite extended64 values. No bound or numerical source
+was changed; the completed exact report passed after this representation fix.

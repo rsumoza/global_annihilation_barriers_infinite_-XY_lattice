@@ -1,0 +1,42 @@
+AUDITORÍA DE LA EXTENSIÓN — RESULTADO FINAL, 21/10/2026
+
+Las once ejecuciones protegidas pasaron: proyección, distancias al centro
+y adjunto para ambas reflexiones, más cinco cartas ampliadas. No hubo
+fallos de finitud u orden. Las once salidas JSON y los cinco archivos
+de coeficientes son idénticos byte por byte a los del supervisor nuevo.
+
+Se comprobaron con Fraction exacta 888 registros de exportación: 488
+intervalos de los módulos, 380 intervalos de cartas y 20 cotas unilaterales
+de cabecera. Las dependencias de constantes compiladas se verificaron
+contra los antecedentes frescos con su PAD. El margen entre LEVEL y
+la cota superior exacta de energía de la silla es positivo y se conserva
+como racional; su valor aproximado es 1.2192816430179687e-21.
+
+El replay controló 1.900.491.608 construcciones de intervalos y
+2.143.950.276 llamadas dn/up, sin modificar originales congelados.
+Los cambios, flags y hashes se conservan para reproducir el diagnóstico.
+
+Un código independiente adicional, basado en enteros/racionales y el
+laplaciano de grado cuatro de extensiones por cero, verificó las ocho
+inclusiones de coordenadas normales y coeficientes del adjunto, así como
+Gc=n y c^T Gc=1 mediante numeradores racionales. No usa el motor C++.
+Ese resultado se limita a la geometría de esas coordenadas; no demuestra
+independientemente los residuales de Poisson ni la coercividad de la tapa.
+
+Los controles negativos rechazan exportaciones inválidas, una inclusión
+normal falsa, una matriz NaN y extremos invertidos. Los Python checks
+permanecen activos bajo -O. El defecto genérico del motor original no
+se ha reparado a escondidas; se verificó que no aparece en estos datos.
+
+Registro final: results/exact_exports_report.json. Está vinculado al
+certificado global nuevo SHA-256:
+b1cbb7206a0c7492ad6990213a48480c9d25e04a5a21fe1805f0195a871f5999.
+
+Esto es un diagnóstico exhaustivo de la ejecución fija con el mismo
+algoritmo intervalar y una comprobación independiente geométrica acotada;
+no es otro motor intervalar ni una formalización en asistente de pruebas.
+
+Para el suplemento compacto incluir fuentes/patches instrumented/,
+results/, los scripts de este directorio, README_REPRODUCTION.txt,
+input_bindings.json, instrumentation.json, informes y logs. Excluir
+work/ (arrays y binarios), probe_guarded (binario) y __pycache__/.

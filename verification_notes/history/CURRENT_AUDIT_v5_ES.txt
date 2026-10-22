@@ -1,0 +1,136 @@
+AUDITORÍA FOCALIZADA DEL CERTIFICADO — REVISIÓN 5, 21 OCTUBRE 2026
+
+ESTADO: revisión focalizada completada. La cadena original y las
+repeticiones protegidas previstas terminaron satisfactoriamente. No se
+encontró una discrepancia material en las comprobaciones descritas.
+
+1. IDENTIDAD E INTEGRIDAD
+
+Se reconstruyó S3 a partir de los cinco volúmenes aportados. El original
+mide 441730856 bytes y su SHA-256 coincide con el registrado. Se volvieron
+a comprobar los tres originales: 1808 miembros, de los cuales 1805 están
+cubiertos por sus manifiestos y los otros tres son los propios manifiestos.
+No hubo diferencias y no se modificaron las fuentes científicas congeladas.
+
+Una copia local del ZIP, previamente verificada, apareció después truncada.
+La auditoría la rechazó y se reconstruyó mediante temporal, fsync,
+verificación y reemplazo atómico. Se documenta el incidente sin atribuirle
+una causa no demostrada. La comprobación posterior y el consumo de sus
+arrays fueron satisfactorios. No es necesario aportar de nuevo S3.
+
+2. REPRODUCCIÓN COMPLETA NUEVA
+
+El supervisor original, desde una salida nueva y sin reutilizar resultados
+archivados como premisas, terminó con:
+
+  FRESH_OPTIMAL_ANNIHILATION_BARRIER_PASS
+  duración: 737.332688331604 segundos
+  SHA-256 del certificado:
+  b1cbb7206a0c7492ad6990213a48480c9d25e04a5a21fe1805f0195a871f5999
+
+Se comprobaron los 548 hashes globales y los registros anidados de 454
+salidas del separador y 35 de conexión. Todos los campos matemáticos
+coinciden con la reproducción previa; 129 salidas científicas comparadas
+son idénticas byte por byte y ambas fronteras coinciden después de una
+normalización explícita de metadatos. proof_record incluye todas las
+salidas nuevas, además de conservar el registro anterior como historia.
+
+Se mantiene estrictamente:
+
+  0.00567867 < B_ann < 0.00570116.
+
+El resultado se refiere al dipolo neutro de separación 12 en la red
+cuadrada infinita, coseno exacto y caminos continuos en la norma fuerte
+del espacio de energía, sin imponer simetría a sus perturbaciones. No
+se amplía por esta reproducción a configuraciones o separaciones arbitrarias.
+
+3. COMPROBACIONES INDEPENDIENTES Y PRECISIONES ANALÍTICAS
+
+El nuevo Apéndice D prueba algebraicamente la media nula de la carga
+finita: cancelación de extremos del flujo cambiado compacto e imparidad
+de la fuerza de la referencia pura. No requiere simetría de la corrección.
+Deriva la comparación de Neumann y ambos términos exteriores implementados,
+con sus constantes exactas, conservando la cancelación de enlaces opuestos.
+El halo incluye las interfaces; una suma intervalar que contenga cero no
+sustituye la identidad algebraica.
+
+Se reprodujeron las consecuencias racionales de conexión y los siete
+controles negativos del supervisor rechazaron cambios deliberados. El
+análisis de los arrays reales del camino verificó soporte, finitud,
+fronteras nulas y las cotas que dan M=6007. La robustez racional también
+pasó vinculada al certificado global nuevo, con constantes sin cambios.
+
+Se conservan los 715 encierros geométricos y tres máximos del separador
+verificados con enteros/racionales independientes. Se añaden ocho
+encierros de coordenadas normales/adjuntas y las identidades Gc=n y
+c^T G c=1. Esto es independencia de cálculos geométricos concretos, no
+una implementación independiente de todo el certificado.
+
+4. BACKEND E INTERFACES NUMÉRICAS
+
+El motor original tiene una deficiencia genérica conocida: su ayudante
+por congruencia puede aceptar un NaN inyectado. No se presenta como
+reparada ni se oculta detrás de un PASS. Las copias instrumentadas añaden
+comprobaciones de finitud/orden y exportaciones binarias exactas, separadas
+de los originales; permiten examinar la ejecución fija y sus consumidores.
+Los informes distinguen trabajo completado, reutilización justificada por
+identidad de bytes y cualquier diagnóstico adicional incompleto.
+
+El separador ya completó sus ejecuciones protegidas y sus 9442 registros
+de exportación. Las 11 tareas protegidas de la extensión completaron sus
+comprobaciones y coinciden byte por byte con la ejecución original nueva;
+888 exportaciones pasaron las comprobaciones racionales direccionales.
+Su margen LEVEL menos la cota superior acolchada de la silla es positivo,
+aproximadamente 1.2192816430e-21, decidido con racionales exactos.
+La conexión completó la silla 4096, barrera, tres tramos del camino y
+la unión. Sus siete JSON científicos y seis tablas coinciden byte por byte
+con la ejecución original fresca. Se validaron 35 cotas escalares y 299
+cotas de tablas con aritmética exacta, incluidas las cuatro comparaciones
+sin PAD y los literales binarios de los módulos dependientes. Los controles
+cubrieron 9700086087 construcciones de intervalos y 12356053363 llamadas
+dn/up; el mínimo protegido anterior sólo se reutiliza tras comprobar la
+identidad del código y de sus seis entradas. La alternativa de diagnóstico
+rápida quedó incompleta, se detuvo y está excluida de la evidencia numérica.
+El comprobador racional produce el mismo informe con python -O.
+
+El informe específico de conexión documenta los escalares consumidos,
+sus PAD y los literales binarios compilados, sin tomar los antiguos
+listados aproximados de nodos como premisas numéricas del certificado.
+
+La plataforma auditada exige significando long double de exactamente
+64 bits, binary64 little-endian y round-to-nearest. La guarda original
+que acepta al menos 64 bits no valida formatos más anchos. Las fuentes
+originales y sus pins permanecen intactos. Para cambiarlas habría que
+actualizar la identidad de la distribución y repetir los dependientes.
+
+5. ARTÍCULO, BIBLIOGRAFÍA Y ALCANCE CIENTÍFICO
+
+Se mantienen las precisiones del espacio de energía, las celdas cerradas,
+las tangencias y el margen racional de tapas. Se actualizan el registro
+de ejecución y el suplemento, y se añade el Apéndice D. La revisión 4 ya
+contrastó los metadatos con fuentes primarias y dejó 18 referencias,
+incluido Braun--Hudson arXiv:2609.39642v1. Esta etapa no introduce una
+nueva declaración de prioridad universal ni una bibliografía exhaustiva.
+
+La contribución defendible sigue siendo la identificación global de la
+barrera para la instancia certificada, sus condiciones a posteriori y la
+robustez cuantitativa que realmente demuestra el artículo. El certificado
+no garantiza un algoritmo para toda configuración. El presupuesto de
+localización sigue siendo impracticable para una búsqueda cúbica completa.
+La continuación bajo perturbaciones de acoplamiento no identifica por sí
+sola el minimax perturbado con una silla concreta ni prueba un cambio de
+mecanismo. No se afirma aquí una heteroclínica, una tasa térmica ni la
+estabilidad para otro flujo distinto del especificado en el artículo.
+
+6. VALOR Y LÍMITES DE ESTA AUDITORÍA
+
+La reproducción completa nueva y los contrastes independientes reducen
+incertidumbres concretas de integridad, residual, geometría e interfaces.
+La reproducción usa el mismo motor intervalar; no es un segundo motor,
+una formalización en un asistente de pruebas ni arbitraje de revista.
+Las reducciones analíticas y las hipótesis aritméticas siguen siendo
+parte de la prueba y deben ser examinadas por autor y revisores.
+
+No se realizó un envío ni un depósito público. Para la entrega siguen
+siendo necesarios S1-S5, sus índices y una vía admitida por la revista
+para los suplementos grandes. El paquete pequeño S1 no sustituye S2-S4.

@@ -1,0 +1,18 @@
+--- original/stage2/barrier/certify.cpp
++++ instrumented/stage2/barrier/certify.cpp
+@@ -82,6 +82,14 @@
+  // Both the outer and inner graph are required to reach boundary.
+  need(lk>=0&&uk>=0&&lower<=upperV+gap.h,"graph consistency");I upper=I(upperV)+gap;need(lower>0,"positive barrier not resolved");need(upper.h<lateral,"lateral escape not excluded below route");
+  std::vector<int>path;for(int k=uk;k!=-1;k=prev[k])path.push_back(k);std::reverse(path.begin(),path.end());std::ofstream pf("results/path_grid_"+std::to_string(n)+".txt");pf<<std::setprecision(28);for(int k:path)pf<<k/n<<" "<<k%n<<" "<<hi[k]<<"\n";
++ std::ofstream ee("results/exact.hex");ee<<std::hexfloat;
++ ee<<"L marked_lower "<<lower<<"\n";
++ ee<<"U longitudinal_upper "<<upper.h<<"\n";
++ ee<<"L lateral_lower "<<lateral<<"\n";
++ ee<<"RAW compiled_rho "<<rho<<"\n";
++ ee<<"RAW compiled_delta "<<delta<<"\n";
++ ee<<"RAW compiled_mustar "<<mustar<<"\n";
++ ee.close();need((bool)ee,"exact sidecar output");
+  std::cout<<std::setprecision(24)<<"{\"status\":\"MARKED_SUBLEVEL_PASS\",\"mesh\":"<<n<<",\"cells\":"<<count<<",\"start_cells\":"<<starts<<",\"start_radius_x\":"<<xstart<<",\"start_radius_y\":"<<ystart<<",\"energy_offset_upper\":"<<gap.h<<",\"transverse_coercivity\":"<<mu<<",\"lateral_lower\":"<<lateral<<",\"transverse_force_upper\":"<<betamax<<",\"simple_boundary_lower\":"<<section<<",\"marked_lower\":"<<lower<<",\"longitudinal_upper\":"<<upper.h<<",\"route_cells\":"<<path.size()<<",\"lower_exit_cell\":["<<lk/n<<","<<lk%n<<"],\"upper_exit_cell\":["<<uk/n<<","<<uk%n<<"],\"scope\":\"first exit from certified reaction tube only\"}\n";
+- return 0;
++ report_guards();return 0;
+  }catch(const std::exception&e){std::cerr<<"REJECT: "<<e.what()<<"\n";return 2;}}

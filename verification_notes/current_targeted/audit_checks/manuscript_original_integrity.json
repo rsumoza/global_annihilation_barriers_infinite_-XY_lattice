@@ -1,0 +1,248 @@
+{
+  "status": "MANUSCRIPT_ORIGINAL_INNER_MANIFEST_PASS",
+  "files_checked": 48,
+  "errors": [],
+  "source": "Original attached ZIP bytes, not edited tree",
+  "files": [
+    {
+      "path": "AUTHOR_NEXT_STEPS_ES.txt",
+      "matches": true,
+      "sha256": "b7abd1ab988c2c70ac2d2bd6cdf91938ddfd5ffb0c223f2a8cd05cf758ea8a2b"
+    },
+    {
+      "path": "README.txt",
+      "matches": true,
+      "sha256": "dd160aabacde774bca746522f7cd767b23334ce014e5b4091e54cb55fae8a460"
+    },
+    {
+      "path": "Response_to_Review.tex",
+      "matches": true,
+      "sha256": "62ab40353497d26bedaf61c6988f87f64d00c3e1babc7c5980384af1922bd53e"
+    },
+    {
+      "path": "SIADS_XY_Manuscript_v2_2026-10-20.pdf",
+      "matches": true,
+      "sha256": "464533d5fd563e140df202564185fed0d3eaf92b30dc91660fef6e5bad711f4a"
+    },
+    {
+      "path": "SIADS_XY_Response_to_Review_2026-10-20.pdf",
+      "matches": true,
+      "sha256": "5f268eaa5e1c0b77828d030249eb769d463ef348dcb5fb5bcd4197c3f73dee0a"
+    },
+    {
+      "path": "checks/green_tail_budget.json",
+      "matches": true,
+      "sha256": "ef49f34a8371e8e08cc0a8a51820eed4feb7cd8808ac1ae3f0e4a888721dd80b"
+    },
+    {
+      "path": "checks/robustness_constants.json",
+      "matches": true,
+      "sha256": "a53cab13c711d17b84e9f4fae1cfb61e3ea27c26f38d0faf6387a804436ed9b1"
+    },
+    {
+      "path": "checks/verify_green_tail_budget.py",
+      "matches": true,
+      "sha256": "0562266f7efccdf6a0b83e487d86875daa75cd0abd3d7481e17c42ffe84dff40"
+    },
+    {
+      "path": "checks/verify_path_inputs.py",
+      "matches": true,
+      "sha256": "672e025ab6b5823316da05ca041a77c3c9250a78ee2c63cb026c61645073d875"
+    },
+    {
+      "path": "checks/verify_robustness_constants.py",
+      "matches": true,
+      "sha256": "48b3de81927964543145dbb946b5fdd40d52da65c43fb61a1496d9f1720f3a92"
+    },
+    {
+      "path": "figures/certificate_geometry.pdf",
+      "matches": true,
+      "sha256": "7e51f75e048100b014f93c431bd919003f5d362bf5141c01e64f7d58bc85efe9"
+    },
+    {
+      "path": "figures/certificate_geometry.png",
+      "matches": true,
+      "sha256": "a5d6e39ff051b950288b1ef4486fce0712702e00cbf429e33281c845339b17db"
+    },
+    {
+      "path": "figures/certificate_geometry.svg",
+      "matches": true,
+      "sha256": "381923d4461017054d8ef603f57d99980fa36895884e8efe4cc7d09cabeaee66"
+    },
+    {
+      "path": "figures/certificate_geometry_caption.txt",
+      "matches": true,
+      "sha256": "d46c49145784b732b3a4faa25da391edc0cbbdefac2a4dfc30c5783d14ccb69a"
+    },
+    {
+      "path": "figures/make_certificate_geometry.py",
+      "matches": true,
+      "sha256": "b78e58a7be5644ecbb4f6c34860d74dcf19e979b9d4d34de39a0cff73dcbafda"
+    },
+    {
+      "path": "main.tex",
+      "matches": true,
+      "sha256": "61e4de0029d11ae14769fbfbe1d34219a9ccfc27149f0e90ff310916b42d9192"
+    },
+    {
+      "path": "proof_record/caps.json",
+      "matches": true,
+      "sha256": "e5fba3ef08c145d157471fbef6cf75d28f7e501022c5937be641cc7d1f34f2b6"
+    },
+    {
+      "path": "proof_record/certificate.json",
+      "matches": true,
+      "sha256": "2bcb4121d588ecef7a2f8e8ad9036321d1286bf90d39d4aaa7d9713d45a5d763"
+    },
+    {
+      "path": "proof_record/environment_and_scope.json",
+      "matches": true,
+      "sha256": "ab2e133a69a4b547a70f8b19fe844dda70db247076a6b7e39aa67230f7f9aaba"
+    },
+    {
+      "path": "proof_record/execution_state.json",
+      "matches": true,
+      "sha256": "69112dd551ef570911c573cdea0a95a3e3b3889cd1ca50b96ec050219149dfac"
+    },
+    {
+      "path": "proof_record/fresh_connection/connections/full_annihilation.json",
+      "matches": true,
+      "sha256": "23f34b1d09683493eb4f1b9513136252f5c60acaf62e8e4ed1fb462b537bd38a"
+    },
+    {
+      "path": "proof_record/fresh_connection/prerequisites/baseline.json",
+      "matches": true,
+      "sha256": "afb9a9b577a2833ebbc9de1f24e5ef587e84e59285bdc4820eac7040127ad881"
+    },
+    {
+      "path": "proof_record/fresh_connection/prerequisites/saddle.json",
+      "matches": true,
+      "sha256": "91622d70e1ff7077b621639d2781a8406d2fb0c1b6c718a92972b2bec40d6e60"
+    },
+    {
+      "path": "proof_record/path_audit.json",
+      "matches": true,
+      "sha256": "6bf2727e2f8866842d0ca7ca434e5acdd54bcaadc7b3e64546475d12c8fa88bb"
+    },
+    {
+      "path": "proof_record/path_audit_prior.json",
+      "matches": true,
+      "sha256": "6bf2727e2f8866842d0ca7ca434e5acdd54bcaadc7b3e64546475d12c8fa88bb"
+    },
+    {
+      "path": "proof_record/reproduction_summary.json",
+      "matches": true,
+      "sha256": "a373c519be86e8e0ba5c1238ec67796f60c67229c7137cb5109322ed9321db16"
+    },
+    {
+      "path": "proof_record/supervisor.stderr.log",
+      "matches": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "proof_record/supervisor.stdout.log",
+      "matches": true,
+      "sha256": "929fcc17fde21a43ebf64d1891925d25d16ae5a434e6ba99391f19fd103193b2"
+    },
+    {
+      "path": "references.tex",
+      "matches": true,
+      "sha256": "92921e0f60b16287349c39937cea08aab5531b854dc92354ddd984145bf82627"
+    },
+    {
+      "path": "sections/certificate.tex",
+      "matches": true,
+      "sha256": "1cbd3aa5984ca8cea6aa3022cebb6a61e404562e4248991a03baa4f2a042426c"
+    },
+    {
+      "path": "sections/discussion.tex",
+      "matches": true,
+      "sha256": "d7476e95f9b7980cebd96439a0d497882be4c7eaf466c7565d66894aee11fd18"
+    },
+    {
+      "path": "sections/green.tex",
+      "matches": true,
+      "sha256": "51a04f18d1472896c651b7145adae680ee9820905e3e44e4fc2b931247a8ea91"
+    },
+    {
+      "path": "sections/green_appendix.tex",
+      "matches": true,
+      "sha256": "88ad993c79c8fed2ce0916114ddf3bb16335e44530739aa461b8aa0029570f69"
+    },
+    {
+      "path": "sections/instance.tex",
+      "matches": true,
+      "sha256": "019e0b6a0142d17cb44dba52c6d1bcd29265ce116a9fae62a18ea802f7cf0deb"
+    },
+    {
+      "path": "sections/introduction.tex",
+      "matches": true,
+      "sha256": "99db1e5d28a631c39a2b695a7f661b7ae39e9426d323a382d4e3cb51493987ee"
+    },
+    {
+      "path": "sections/model.tex",
+      "matches": true,
+      "sha256": "b4310249cd12cee1f1fd0bfb12b54043d66171059176368e50bc032c8f590bb9"
+    },
+    {
+      "path": "sections/robustness.tex",
+      "matches": true,
+      "sha256": "fe0fedd8e8cafff1fe4083f9e33a396791ecc2c0f30ab5190cf0adba112b0cc8"
+    },
+    {
+      "path": "supplement/INDEX.html",
+      "matches": true,
+      "sha256": "693684b4ba6f56f6d737b5250091d5c089a8b53837e94ed59164272255002cb7"
+    },
+    {
+      "path": "supplement/INDEX.txt",
+      "matches": true,
+      "sha256": "6d41deabc8e2371592a53ef70cf36e9bc52d656041ab572e99ac78bd1f826adb"
+    },
+    {
+      "path": "supplement/Supplementary_Reproducibility.pdf",
+      "matches": true,
+      "sha256": "74bb1c8295457d43842ef0bc7ce77ffd732e02c40b1bc76fc8199e2bfb6e06bc"
+    },
+    {
+      "path": "supplement/Supplementary_Reproducibility.tex",
+      "matches": true,
+      "sha256": "6287a1cffcdc5b15573a136f4f3c1a7ffb82b243e0c60961239cda82d4f4a00b"
+    },
+    {
+      "path": "verification_notes/editorial_math_check.txt",
+      "matches": true,
+      "sha256": "e2f8eb48c959d2bf2a526fd9553f550d6a688f98640f404df5cad95b48154c00"
+    },
+    {
+      "path": "verification_notes/editorial_revision_checks.json",
+      "matches": true,
+      "sha256": "0b8a262d3418e6fd092dacde0dbe62fb0a39450c71438e17d758d5dade4da4af"
+    },
+    {
+      "path": "verification_notes/final_mathematical_review.txt",
+      "matches": true,
+      "sha256": "b656265221e57670139e0043a4b6ddc00b1c89095eba90de4bff43b5b2db5eaa"
+    },
+    {
+      "path": "verification_notes/flow_review_notes.txt",
+      "matches": true,
+      "sha256": "027aadc1f7c17dd722aa70b1ff788268b85f7524d8221b0e393a97eea6b6b2eb"
+    },
+    {
+      "path": "verification_notes/green_independent_review.txt",
+      "matches": true,
+      "sha256": "3220db35b18b9b74b93f725a5f8d3ca3af436cb84f20602d9541f6119c1c0c14"
+    },
+    {
+      "path": "verification_notes/policy_findings.txt",
+      "matches": true,
+      "sha256": "c9eeebf19f84233636ee562329a79719c6b70a8a5ba1a88ebea7b191437a5fa7"
+    },
+    {
+      "path": "verification_notes/robustness_independent_review.txt",
+      "matches": true,
+      "sha256": "804ee9b01038af81a12d40fabe9eee158169f16b7a522989168159b1b385cd78"
+    }
+  ]
+}

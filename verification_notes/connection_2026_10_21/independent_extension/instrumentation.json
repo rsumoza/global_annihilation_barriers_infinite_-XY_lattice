@@ -1,0 +1,33 @@
+{
+  "flags": [
+    "-std=c++17",
+    "-O2",
+    "-DNDEBUG",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-frounding-math"
+  ],
+  "source_hashes": {
+    "engine.cpp": {
+      "original": "3ec7aa8f4b66d16af21587c0d3754bf10c072953031cdc293e321a522bf45111",
+      "guarded": "31edcf672b6c86ef15e6a02c153807260f0337cd20f1ac2ebed086519636f44d"
+    },
+    "certify_projection.cpp": {
+      "original": "86c54db48723dfc92dc3d9ffd716db4bacfb6fe62dc89401390954d380cde361",
+      "guarded": "d25a00469b760fc8690a495a30a061c3bb5974458ed62a707e3f25ff66fa1b76"
+    },
+    "certify_center_distances.cpp": {
+      "original": "d759176e3175eeec8629c380bb97b5e286908c0aeee7c0fd9851ddb996ba9b9d",
+      "guarded": "a65643fc68e388bfa2b1d5617342c40a5134e6387b17614c1b255dc7ed1e9271"
+    },
+    "certify_adjoint.cpp": {
+      "original": "2f4337dff93ce697150f44c69e4cd7fbde47124d6aa2fce5b3e27ad42fe7da69",
+      "guarded": "e255479db0c427d65f13ba69227c02f2c69984dc68b9cb02acbebd28d92bfc4a"
+    },
+    "certify_chart.cpp": {
+      "original": "b60eb00454df1f6afab0b88249e801e94953ef1ddfac8d839e01fbc5eeabab4c",
+      "guarded": "0a92fe89a2e9f53b6a4edcb6b0a9b0a8db921a199d2b55ad0f2d4ea054b75108"
+    }
+  },
+  "scope": "Fixed extension inputs, guarded original arithmetic formulas plus exact export sidecars; originals unchanged"
+}

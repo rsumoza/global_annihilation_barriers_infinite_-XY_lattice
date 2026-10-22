@@ -1,0 +1,31 @@
+{
+  "status": "IDENTICAL_BASELINE_SOURCE_AND_FIXED_INPUTS",
+  "files": [
+    {
+      "file": "min.basis",
+      "sha256": "89113d9d9f0a5bb870435b448a1b10897206b835ea2f2020131719c192526a7c"
+    },
+    {
+      "file": "min.cfg",
+      "sha256": "98213eaceac66286871ec71e065e14fd6bc8b75189d4ff7d6096a81ba8a22b5a"
+    },
+    {
+      "file": "min.edges",
+      "sha256": "13b7748e9e96fdc063c60d20f7a95b979984e93a4e49d2ce78b9f666186ba9c0"
+    },
+    {
+      "file": "min.green",
+      "sha256": "34acf9f80343bca074897c19de82760482dd47bc368a04fd3ea0fa101015feb9"
+    },
+    {
+      "file": "min.h",
+      "sha256": "2a969db50023b0697c5f228d4b10325df7ea899bcdfe965fef6d02616f82adf3"
+    },
+    {
+      "file": "min.u",
+      "sha256": "a3405043070ec59f1f09c549fe8aca24ca4b602858c28c93ec6b8c11ffa7f23b"
+    }
+  ],
+  "engine_sha256": "3ec7aa8f4b66d16af21587c0d3754bf10c072953031cdc293e321a522bf45111",
+  "prior_guarded_log_sha256": "68f3fe55f62e779bd2f67dabf23c5a1a1fc382c33d1850c98d79f07771b064f2"
+}

@@ -1,0 +1,14 @@
+{
+  "scope": "only eager construction of diagnostic messages changed; predicates,numeric formulas,counters unchanged",
+  "original_guarded_engine_sha256": "2c7dc6a0dbf81a84387ce5918182d29b054d6009d4f70a859779ed91bed32365",
+  "lazy_message_guarded_engine_sha256": "802714607f4271a07c7a62f0de9034387114b5d8acc05403cb58a73773fcb4be",
+  "certify_source_identical": true,
+  "flags": [
+    "-std=c++17",
+    "-O2",
+    "-DNDEBUG",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-frounding-math"
+  ]
+}

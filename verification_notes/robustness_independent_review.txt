@@ -1,0 +1,131 @@
+INDEPENDENT REVIEW OF THE QUANTITATIVE ROBUSTNESS EXTENSION
+20 October 2026. Reviewer task /root/siads_green_review.
+
+Decision: PASS for the stated l1-coupling continuation, index persistence,
+global barrier bracket and local X-gradient stability, using the safe
+rational common gap sigma=57/1000. This reviews the mathematical deduction
+from the freshly reproduced certificate; it does not independently replace
+the old engine or certify new perturbed numerical roots.
+
+1. Input audit.
+
+I read the actual fresh prerequisite JSONs. The minimum has candidate
+c=.075672..., rho_m=.0174211917..., mu=.0582508082.... The saddle JSON
+has candidate positive compression .071955..., negative-direction bound
+.0699256376..., and rho_s=.0128249383.... Thus a common safe rational
+gap .057 is below both exact-state bounds. The use of the coarser
+Hessian Lipschitz constant1 in transferring these old data is valid.
+
+The candidate saddle negative-direction bound and positive compression
+yield an inverse gap even when the direction is not an exact eigenvector:
+for H=[a,B*;B,C] with a<=-sigma and C>=sigma I, every lambda in
+(-sigma,sigma) has C-lambda invertible and negative scalar Schur
+complement a-lambda-B*(C-lambda)^(-1)B. Hence it is outside the spectrum.
+This justifies the old input used in continuation and avoids an erroneous
+diagonal-eigenvector assumption.
+
+The Gram matrix in fresh_separator/geometry.json has diagonal intervals
+within a few e-15 of1 and off-diagonals within e-16 of0. Therefore its
+smallest eigenvalue is certainly >1/4, so the reaction coordinate
+functional norm<=2 used in the saddle-separation estimate is safe.
+The plus candidate a_2>.44815 and reflected minus coordinate supply
+the claimed candidate difference>.89. The stated continued-saddle
+distinctness estimate is conservative and valid.
+
+2. Norm bounds and continuation.
+
+The edge functional has norm1/sqrt2. Consequently the l1 perturbation
+series give ||grad W||<=||b||1/sqrt2 and ||H_W||<=||b||1/2.
+Using tau=.71 and beta=.002 is safe. The nonlinear Taylor remainder
+is <=tau||v||2/2; its Lipschitz constant on radius r is <=tau r.
+
+For r=1/32 and sigma=.057 I checked exactly:
+
+  tau beta +tau r2/2 =45227/25600000,
+  sigma r             =45600/25600000,
+  margin              =373/25600000>0,
+  kappa=(tau r+beta/2)/sigma=371/912<1,
+  tau r+beta/2=371/16000,
+  sigma-(tau r+beta/2)=541/16000=.0338125.
+
+Freezing the unperturbed inverse and applying contraction is therefore
+legitimate on each ball. The exact perturbed minimum and both saddle
+branches exist and are unique in those specified balls. Gap-preserving
+self-adjoint homotopy preserves the finite negative index. No perturbed
+root computation is being silently used.
+
+The minimum's original principal-increment margin exceeds11/10.
+Every increment changes by at most tau r=71/3200, leaving3449/3200>0.
+Thus all plaquette charges remain those of the original dipole. This
+does not need a claim about charge assignments at the transition saddles.
+
+3. Global barrier with the shifted origin.
+
+The bounded perturbation W_b satisfies
+W_-<=W_b<=W_+, W_+-W_-=2||b||1 globally, regardless of dependence among
+the bond angles. Crucially the proof does not replace this oscillation
+by2sup|W_b| or forget that the starting minimum moves.
+
+The whole original-energy bridge m_0+t(m_b-m_0) has energy at most
+E_0(m_0)+r2/2=E_0(m_0)+1/2048<h. Therefore m_b is in the old domain D:
+the continuous bridge starting inside cannot meet its height>=h boundary.
+There is no unsupported assertion that the whole X ball lies in D.
+
+Both E_0 and E_b are strongly convex on the radius-r ball centered m_0.
+Consequently E_0(m_b)>=E_0(m_0), E_b(m_b)<=E_b(m_0), and the weighted
+energy bridge in the direction m_b->m_0 stays below E_b(m_0).
+
+Every path m_b->K crosses the old boundary, giving max E_b>=h+W_-.
+Subtract E_b(m_b)<=E_0(m_0)+W_+ for the lower barrier bound. For the
+upper bound, prepend the convex bridge to the old path, giving maximum
+<=h+W_+, and subtract E_b(m_b)>=E_0(m_0)+W_-. Thus
+
+  |B_b(m_b)-B_0|<=2||b||1
+
+is correct. In particular .00167867<B_b(m_b)<.00970116 throughout the
+closed beta=.002 ball follows from the original strict interval. The
+quantifiers remain over ALL strong-X paths to K; paths are not forced
+to preserve charges or reflection symmetry.
+
+This argument does NOT identify the new minimax with either continued
+saddle energy, or with their minimum. Such a statement would need a
+deformed separator and upper-path verification. The draft correctly
+withholds that conclusion.
+
+4. Dynamics.
+
+The Hessian has global norm<=1+beta/2=1001/1000, giving a globally
+Lipschitz vector field and global X-valued solutions. The Hessian
+Lipschitz constant is bounded by(1+beta/2)/sqrt2<711/1000: the additional
+W term uses sum|b_e|||g_e||3, not an unweighted infinite sum.
+
+In radius1/100 about m_b, the Hessian lower bound is
+
+  541/16000-(711/1000)(1/100)=10681/400000>.026=13/500.
+
+The monotonicity integral along the segment to m_b yields
+d(||u-m_b||2/2)/dt<=-(13/500)||u-m_b||2. The ball is invariant and
+the norm decays at rate13/500, with no factor2 error when passing from
+squared norm to norm. This is the chosen X-Riesz gradient mobility;
+no local l2 gap, thermal lifetime or heteroclinic robustness follows.
+
+5. Compatibility with Green tails.
+
+The corrected q_b=Dtheta_b-(1+b)sin Dtheta_b satisfies the same projector
+identity, ||q_b||1<=M_b3/6+beta, and the exterior estimate
+|q_b,e|<=(eta_ext2/6+beta)|Dtheta_b,e|. With eta_ext=.041,
+a=13681/6000000 has2a<1. Thus the entire small l1 coupling class, not
+only common-support perturbations, is compatible with the new recurrence.
+
+Use4098 as a conservative common anchor radius for the reflected
+critical family, while4097 remains valid for the original known path's
+two critical vertices. The fixed-center reflection convention is
+explained in green_independent_review.txt.
+
+6. Editorial scope.
+
+This is a quantitatively checkable robustness consequence of the main
+global certificate. Its generic ingredients are standard perturbation,+convexity and bounded-energy oscillation principles; do not claim their
+abstract novelty. The substantive verified extension is the nonuniform
+infinite-dimensional coupling class with a positive global barrier,
+preserved index, explicit charge control and uniform X-flow stability.

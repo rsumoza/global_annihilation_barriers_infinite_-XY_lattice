@@ -1,0 +1,670 @@
+--- v2/AUTHOR_NEXT_STEPS_ES.txt
++++ v3/AUTHOR_NEXT_STEPS_ES.txt
+@@ -1,90 +1,19 @@
+-PASOS QUE CORRESPONDEN AL AUTOR ANTES DE ENVIAR A SIADS
+-20 de octubre de 2026
++ESTADO DE LA REVISIÓN 3 — 20 DE OCTUBRE DE 2026
+ 
+-El paquete prepara un manuscrito para revisión personal y una eventual
+-presentación. No se ha enviado nada a la revista ni se ha contactado a
+-editores o revisores.
++Las afiliaciones, email y ORCID suministrados están insertados. El
++manuscrito y el suplemento están actualizados; el resumen identifica el
++resultado concreto y la bibliografía contiene17referencias.
+ 
+-1. DATOS REALES DEL AUTOR
+-Completar o confirmar el nombre publicable, la afiliación y dirección
+-institucional o profesional que corresponda, el correo de contacto y la
+-autoría efectiva de todos los participantes humanos. Añadir ORCID si se
+-quiere; SIAM lo recomienda, pero no es obligatorio. No inventar afiliación,
+-títulos, coautores ni identificadores. Sustituir cualquier marcador antes
+-de presentar el trabajo.
++La auditoría de toda la CAP sigue pendiente. El siguiente paso es
++proporcionar los originales de separación y conexión identificados en
++el índice, revisar sus motores y repetir la cadena completa. Consultar
++CURRENT_AUDIT_ES.txt: allí se distinguen comprobaciones realizadas y
++limitaciones del motor que no se corrigieron en archivos congelados.
+ 
+-2. FINANCIACIÓN Y DECLARACIONES
+-Indicar únicamente la financiación y las ayudas reales. Si no existieron,
+-confirmar la declaración que corresponda. Revisar posibles conflictos,
+-permisos y licencias de los archivos que se pretenda distribuir. No afirmar
+-una revisión externa ya realizada, un repositorio público ni un DOI del
+-proyecto que todavía no existan.
++Confirmar personalmente el contenido, las referencias, financiación si
++corresponde, direcciones postales del formulario y declaraciones.
++Garantizar que los revisores reciban fuentes, datos e índice de S1-S5
++mediante una vía admitida por SIADS. Esta revisión no resuelve los límites
++de carga de archivos del portal y no afirma que exista un depósito público.
+ 
+-3. REVISIÓN PERSONAL Y POLÍTICA DE IA DE SIAM
+-Leer y verificar personalmente el manuscrito, sus pruebas, los programas y
+-las referencias originales citadas. Confirmar qué se ha comprobado y poder
+-defender las afirmaciones presentadas. La evaluación editorial y de los
+-revisores es una evaluación adicional; no sustituye esta responsabilidad
+-del autor.
+-
+-La política de SIAM vigente desde mayo de 2026 requiere declarar el uso de
+-IA en Acknowledgements o Declarations e incluir literalmente:
+-
+-    "The authors assume responsibility for all content."
+-
+-Fuente oficial: https://epubs.siam.org/artificial-intelligence
+-
+-La declaración debe reflejar el uso real en investigación bibliográfica,
+-formulación y revisión matemática, redacción, programación y comprobaciones.
+-Confirmar y editar la declaración preparada. Un sistema de IA no puede ser
+-coautor. Si alguna parte aún no puede defenderse, debe revisarse o retirarse
+-antes del envío; la revista no asume esa obligación por el autor.
+-
+-4. ALCANCE CIENTÍFICO QUE SE PRESENTA
+-Comprobar que el texto distingue la reproducción reciente con el mismo
+-software de una implementación intervalar independiente. Los dos nuevos
+-programas de aritmética racional verifican constantes de argumentos
+-analíticos; no reemplazan las demostraciones ni vuelven a ejecutar toda la
+-cadena original. La robustez no identifica el minimax perturbado con una
+-silla continuada. No se afirma un cambio de mecanismo, una órbita
+-heteroclínica ni metastabilidad universal. Las enormes cotas de radio
+-efectivo no son cajas materializadas ni un nuevo intervalo de barrera.
+-
+-5. ARCHIVOS QUE DEBEN ACOMPAÑAR LA PRESENTACIÓN
+-Además del PDF principal, la futura carta de presentación y el índice,
+-adjuntar el paquete de manuscrito/comprobadores y estos TRES originales:
+-
+-    XY_Separacion_Global_Reproducible_2026-10-19.zip
+-    XY_Conexion_Global_Reproducible_2026-10-19.zip
+-    XY_Optimalidad_Extension_Reproducible_2026-10-19.zip
+-
+-Los tres son necesarios: la extensión no duplica los arrays de los dos
+-antecedentes. El paquete nuevo por sí solo no permite reproducir el
+-certificado global. Comparar sus tamaños y SHA-256 con el suplemento.
+-Incluir Supplementary_Reproducibility.pdf e INDEX.txt/INDEX.html.
+-
+-6. FORMATO Y PASO EDITORIAL FINAL
+-La fuente utiliza la alternativa admitida por SIADS: letra de 10 puntos,
+-área de texto de 6 por 8 pulgadas y numeración de líneas matemáticas. No se
+-redistribuye una clase SIAM aislada cuya licencia exige la distribución
+-completa. El README da las instrucciones para instalar el paquete oficial
+-completo si se desea convertir a esa plantilla. Revisar el PDF final tras
+-cualquier conversión.
+-
+-Instrucciones oficiales:
+-https://epubs.siam.org/journal/siads/instructions-for-authors
+-
+-Después de la revisión del autor, preparar la carta de presentación y
+-verificar que el trabajo no esté sometido simultáneamente a otra revista.
+-La presentación en el sistema de SIADS sigue de lado del autor, salvo que
+-se autorice expresamente otra acción. Este paquete no constituye un envío.
+-
+-ACTUALIZACIÓN TRAS LA REVISIÓN APORTADA
+-La versión 2 incorpora los comentarios de motivación, geometría, resumen,
+-complejidad y cotas de perturbación. La respuesta punto por punto está
+-preparada en un PDF separado. El depósito público permanente se recomienda,
+-pero no se identificó una exigencia general de SIADS de obtener un DOI
+-externo antes de la aceptación. Si se decide realizar el depósito, publicar
+-la versión exacta con los tres archivos originales, verificar el enlace
+-y actualizar la declaración de disponibilidad. No se ha publicado nada
+-ni se debe inventar un DOI.
++No se envió ningún manuscrito, mensaje ni depósito en esta revisión.
+--- v2/README.txt
++++ v3/README.txt
+@@ -1,11 +1,11 @@
+ CERTIFIED GLOBAL ANNIHILATION BARRIERS IN AN INFINITE XY LATTICE
+-English manuscript and verification snapshot, revision 2, 20 October 2026
++English manuscript and verification snapshot, revision 3, 20 October 2026
+ Prepared for author review before a possible SIADS submission.
+ No submission, repository deposit, or contact with an editor was performed.
+ 
+ READ FIRST
+ main.tex and sections/*.tex contain the complete article and its proofs.
+-SIADS_XY_Manuscript_v2_2026-10-20.pdf is the compiled review copy.
++SIADS_XY_Manuscript_v3_2026-10-20.pdf is the compiled review copy.
+ supplement/Supplementary_Reproducibility.tex and .pdf identify the frozen
+ sources, fresh execution, scope, and arithmetic assumptions.
+ supplement/INDEX.txt and INDEX.html list every proposed supplement item.
+@@ -52,8 +52,10 @@
+ font sizes or margins. Recheck pagination/references after switching.
+ 
+ REPRODUCE THE NEW ARITHMETIC
+-Only Python's standard library is required. From this directory, run:
++Only Python's standard library is required for the rational checks. The
++environment preflight additionally invokes g++. From this directory, run:
+ 
++    python3 checks/verify_supported_environment.py --output checks/supported_environment.json
+     python3 checks/verify_robustness_constants.py
+     python3 checks/verify_green_tail_budget.py
+ 
+@@ -87,6 +89,10 @@
+ S1 (this small source bundle) is NOT the complete global input package.
+ The three original archives S2-S4 in supplement/INDEX.txt are required.
+ Verify their exact sizes and SHA-256, then extract alongside each other.
++Run checks/verify_supported_environment.py from S1 first. This reviewed
++reproduction target requires a 64-bit long-double significand, binary64
++little-endian input and round-to-nearest; wider formats are not validated
++by the frozen source guards that merely accept at least 64 bits.
+ From xy_optimality_extension, with absent/empty results_fresh, run:
+ 
+     python3 verify_optimality.py \
+@@ -115,10 +121,11 @@
+ historical model is included. Original package licenses and author rights
+ are not changed by this snapshot.
+ 
+-The supplement index and author note are editable. Actual affiliation,
+-contact information, funding, author responsibility and final review must
++The supplement index and author note are editable. The supplied affiliation and
++contact information have been inserted. Funding, author responsibility and
++final review must
+ be confirmed by the human author before submission. SIAM's disclosure
+-policy is reflected in the draft Declarations; it is not a statement that
++policy is reflected in the Declarations; it is not a statement that
+ the author's personal review has already occurred.
+ 
+ REVISION 2: RESPONSE TO SUPPLIED EXTERNAL COMMENTS
+@@ -144,3 +151,24 @@
+ separate DOI-before-acceptance mandate was not found in the official
+ SIADS/SIAM instructions checked. Verify and insert the actual deposit
+ identifier only when one exists.
++
++REVISION 3: TARGETED INSPECTION AND MATHEMATICAL PRECISIONS
++The source now defines the energy space by the closed gradient subspace,
++formalizes closed-cut boundary retention and tangencies, and displays a
++rational cap coefficient of at least 19/40000. The closed Newton ball was
++already present and is retained explicitly. The abstract identifies the
++fixed separation and saddle-minus-minimum energy; the bibliography has
++three additions and two corrected records. Actual author metadata and
++typed cross-references are included.
++
++A targeted source audit and a conditional geometry replay are recorded in
++verification_notes/current_targeted. These DO NOT constitute a new full
++global execution: separation and connection raw inputs were unavailable
++for this inspection. Original optimality files and scientific pins were
++not modified. General NaN/serialization limitations of helper/historical
++paths are documented rather than silently characterized as resolved.
++
++The Green rational checker now uses explicit checks under python -O and
++rejects nonpositive tolerances. The new environment preflight restricts
++usage to the reviewed long-double64 target; it is not a CAP verifier.
++The gate tests, reports and limitations are in CURRENT_AUDIT_ES.txt.
+--- v2/checks/verify_green_tail_budget.py
++++ v3/checks/verify_green_tail_budget.py
+@@ -14,6 +14,12 @@
+     return str(x.numerator) if x.denominator == 1 else f"{x.numerator}/{x.denominator}"
+ 
+ 
++def check(condition, message):
++    """Keep certificate obligations active even under python -O."""
++    if not condition:
++        raise ValueError(message)
++
++
+ def calculate(epsilon):
+     m_critical = F(6007)
+     m_path = F(6007)
+@@ -22,9 +28,10 @@
+     a = delta * delta / 6
+     q_upper = m_critical**3 / 6
+     # 32 sqrt(2) < 46 and sqrt(227) < 16, checked without floating point.
+-    assert 32**2 * 2 < 46**2
+-    assert 227 < 16**2
+-    assert 0 <= 2 * a < 1
++    check(32**2 * 2 < 46**2, "invalid rational kernel majorant")
++    check(227 < 16**2, "invalid rational cutoff majorant")
++    check(0 <= 2 * a < 1, "tail recurrence is not contractive")
++    check(epsilon > 0, "localization tolerance must be positive")
+     a_upper = max(r_star * m_critical, 46 * q_upper / (1 - 2 * a))
+     projection_constant = max(16 * a_upper, F(480))
+     energy_constant = m_path * projection_constant
+@@ -33,9 +40,10 @@
+         n += 1
+         radius *= 2
+     chi = energy_constant / radius
+-    assert chi <= epsilon / 4
+-    assert n == 0 or energy_constant / (radius // 2) > epsilon / 4
+-    assert radius == r_star * 2**n
++    check(chi <= epsilon / 4, "localization allocation not met")
++    check(n == 0 or energy_constant / (radius // 2) > epsilon / 4,
++          "dyadic exponent is not minimal")
++    check(radius == r_star * 2**n, "inconsistent dyadic radius")
+     return {
+         "epsilon": fraction(epsilon),
+         "a": fraction(a),
+@@ -58,11 +66,11 @@
+     m, beta, eta, r_star = F(6008), F(1,500), F(41,1000), 4098
+     a = eta**2 / 6 + beta
+     q = m**3 / 6 + beta
+-    assert a == F(13681,6000000) and 2*a < 1
+-    assert F(18,1000) + F(71,100)/32 < eta
++    check(a == F(13681,6000000) and 2*a < 1, "perturbed absorption mismatch")
++    check(F(18,1000) + F(71,100)/32 < eta, "continued angle exceeds bound")
+     a_upper = max(r_star*m, 46*q/(1-2*a))
+-    assert a_upper < F(17,10)*10**12
+-    assert 16*a_upper < F(272,100)*10**13
++    check(a_upper < F(17,10)*10**12, "displayed tail majorant too small")
++    check(16*a_upper < F(272,100)*10**13, "displayed projection majorant too small")
+     return {
+         "coupling_budget": fraction(beta), "critical_norm_upper": fraction(m),
+         "exterior_angle": fraction(eta), "common_anchor_radius": r_star,
+--- v2/main.tex
++++ v3/main.tex
+@@ -24,6 +24,39 @@
+ \fi
+ \usepackage[T1]{fontenc}
+ \usepackage{graphicx,booktabs,array,xcolor}
++\usepackage{etoolbox}
++% SIAM and fallback statement environments can share a counter.  Supply the
++% actual local statement type before that counter is stepped; an alias inside
++% an environment is local to its group and does not change the numbering.
++\makeatletter
++\@ifpackageloaded{cleveref}{}{\usepackage{cleveref}}
++\makeatother
++\newcommand{\XYstatementtype}[1]{%
++  \crefalias{theorem}{#1}%
++  \crefalias{lemma}{#1}%
++  \crefalias{proposition}{#1}%
++  \crefalias{corollary}{#1}%
++  \crefalias{definition}{#1}%
++  \crefalias{remark}{#1}%
++}
++\AtBeginEnvironment{theorem}{\XYstatementtype{theorem}}
++\AtBeginEnvironment{lemma}{\XYstatementtype{lemma}}
++\AtBeginEnvironment{proposition}{\XYstatementtype{proposition}}
++\AtBeginEnvironment{corollary}{\XYstatementtype{corollary}}
++\AtBeginEnvironment{definition}{\XYstatementtype{definition}}
++\AtBeginEnvironment{remark}{\XYstatementtype{remark}}
++\crefname{theorem}{theorem}{theorems}
++\Crefname{theorem}{Theorem}{Theorems}
++\crefname{lemma}{lemma}{lemmas}
++\Crefname{lemma}{Lemma}{Lemmas}
++\crefname{proposition}{proposition}{propositions}
++\Crefname{proposition}{Proposition}{Propositions}
++\crefname{corollary}{corollary}{corollaries}
++\Crefname{corollary}{Corollary}{Corollaries}
++\crefname{definition}{definition}{definitions}
++\Crefname{definition}{Definition}{Definitions}
++\crefname{remark}{remark}{remarks}
++\Crefname{remark}{Remark}{Remarks}
+ \newcommand{\X}{\mathcal X}
+ \newcommand{\K}{\mathcal K}
+ \newcommand{\E}{E_0}
+@@ -42,13 +75,17 @@
+ \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+ \headers{Global annihilation barriers in an infinite lattice}{R. L. Sumoza Matos}
+ \title{Certified global annihilation barriers in an infinite XY lattice}
+-\author{Rodolfo Leonardo Sumoza Matos}
++\author{Rodolfo Leonardo Sumoza Matos%
++  \thanks{Facultad de Ingenier\'ia, Universidad Austral, Pilar, Argentina.
++    Departamento de Computaci\'on, Universidad de Buenos Aires, CABA, Argentina.
++    Email: \href{mailto:rsumoza@dc.uba.ar}{\nolinkurl{rsumoza@dc.uba.ar}}.
++    ORCID: \url{https://orcid.org/0009-0003-3554-4876}.}}
+ \date{20 October 2026}
+-\hypersetup{pdftitle={Certified global annihilation barriers in an infinite XY lattice},pdfauthor={Rodolfo Leonardo Sumoza Matos},pdfsubject={Draft for author review; global barrier certification and coupling robustness}}
++\hypersetup{pdftitle={Certified global annihilation barriers in an infinite XY lattice},pdfauthor={Rodolfo Leonardo Sumoza Matos},pdfsubject={Global barrier certification and coupling robustness}}
+ \begin{document}
+ \maketitle
+ \begin{abstract}
+-A saddle and a numerical descent do not by themselves establish a globally optimal escape route. We certify the annihilation barrier of a neutral dipole in the exact-cosine XY model on the infinite square lattice. Admissible paths are strongly continuous in the homogeneous energy space and end at any physical uniform phase lift. A finite atlas, together with rigorous control of its infinite-dimensional transverse fibers, separates a local minimum from every endpoint. Exact-saddle caps and a validated upper path identify the barrier with an asymmetric index-one saddle height. In unit-coupling normalization, the barrier lies strictly between 0.00567867 and 0.00570116. We formulate reusable a posteriori tests for signed-bond coercivity, full dual residuals, and complete boundary coverage. An explicit lattice Green projection estimate gives inverse-radius tails for the critical states and the certified path. We also prove quantitative robustness under arbitrary summable coupling perturbations of total norm at most 0.002. The minimum and two distinct index-one saddles persist, while the global barrier remains positive and changes by at most twice the perturbation norm. The continued saddles are not yet identified as perturbed minimax realizers. The result combines a lower bound over the full admissible path class with a matching upper construction, effective exterior estimates, and a uniform perturbation theorem. Frozen sources and a fresh execution record make the computational certificate reproducible.
++A saddle and a numerical descent do not by themselves establish a globally optimal escape route. We certify the annihilation barrier of a neutral dipole at separation twelve in the exact-cosine XY model on the infinite square lattice. Admissible paths are strongly continuous in the homogeneous energy space and end at any physical uniform phase lift. A finite atlas, together with rigorous control of its infinite-dimensional transverse fibers, separates a local minimum from every endpoint. Exact-saddle caps and a validated upper path identify the barrier as the energy difference between an asymmetric index-one saddle and the local minimum. In unit-coupling normalization, the barrier lies strictly between 0.00567867 and 0.00570116. We formulate reusable a posteriori tests for signed-bond coercivity, full dual residuals, and complete boundary coverage. An explicit lattice Green projection estimate gives inverse-radius tails for the critical states and the certified path. We also prove quantitative robustness under arbitrary summable coupling perturbations of total norm at most 0.002. The minimum and two distinct index-one saddles persist, while the global barrier remains positive and changes by at most twice the perturbation norm. The continued saddles are not yet identified as perturbed minimax realizers. The result combines a lower bound over the full admissible path class with a matching upper construction, effective exterior estimates, and a uniform perturbation theorem. Frozen sources and a fresh execution record document the computational certificate.
+ \end{abstract}
+ \begin{keywords}
+ XY lattice, annihilation barrier, computer-assisted proof, index-one saddle, a posteriori verification, lattice Green function
+--- v2/references.tex
++++ v3/references.tex
+@@ -1,4 +1,10 @@
+ \begin{thebibliography}{99}
++\raggedright
++\bibitem{Alicandro2014}
++\textsc{R. Alicandro, L. De Luca, A. Garroni, and M. Ponsiglione},
++\emph{Metastability and dynamics of discrete topological singularities in two dimensions: A $\Gamma$-convergence approach}, Arch. Ration. Mech. Anal., 214 (2014), pp.~269--330,
++\href{https://doi.org/10.1007/s00205-014-0757-6}{doi:10.1007/s00205-014-0757-6}.
++
+ \bibitem{Ayala2026}
+ \textsc{M. Ayala, R. Choksi, and B. Wirth},
+ \emph{Computer-assisted proofs for geometry optimization: From crystallization to carbon nanotubes}, Multiscale Model. Simul., 24 (2026), pp.~1399--1425,
+@@ -8,6 +14,11 @@
+ \textsc{N. Berglund, G. S. Medvedev, and G. Simpson},
+ \emph{Metastability in the stochastic nearest-neighbor Kuramoto model of coupled phase oscillators}, Nonlinearity, 38 (2025), 095031,
+ \href{https://doi.org/10.1088/1361-6544/ae05aa}{doi:10.1088/1361-6544/ae05aa}.
++
++\bibitem{Braun2022}
++\textsc{J. Braun, T. Hudson, and C. Ortner},
++\emph{Asymptotic expansion of the elastic far-field of a crystalline defect}, Arch. Ration. Mech. Anal., 245 (2022), pp.~1437--1490,
++\href{https://doi.org/10.1007/s00205-022-01810-3}{doi:10.1007/s00205-022-01810-3}.
+ 
+ \bibitem{Braun2025}
+ \textsc{J. Braun, C. Ortner, Y. Wang, and L. Zhang},
+@@ -21,7 +32,7 @@
+ 
+ \bibitem{Chen2020}
+ \textsc{W. Chen, D. Wang, J. Liu, Y. Chen, S. Z. Khong, T. Ba\c{s}ar, K. H. Johansson, and L. Qiu},
+-\emph{On spectral properties of signed Laplacians with connections to eventual positivity}, IEEE Trans. Automat. Control, 66, pp.~2177--2190 (published online 2020),
++\emph{On spectral properties of signed Laplacians with connections to eventual positivity}, IEEE Trans. Automat. Control, 66 (2021), pp.~2177--2190,
+ \href{https://doi.org/10.1109/TAC.2020.3008300}{doi:10.1109/TAC.2020.3008300}.
+ 
+ \bibitem{Dlotko2018}
+@@ -36,7 +47,7 @@
+ 
+ \bibitem{Garroni2025}
+ \textsc{A. Garroni, M. Petrache, and E. Spadaro},
+-\emph{Clearing-out of dipoles for minimisers of 2-dimensional discrete energies with topological singularities}, Math. Models Methods Appl. Sci., 35 (2025),
++\emph{Clearing-out of dipoles for minimizers of 2-dimensional discrete energies with topological singularities}, Math. Models Methods Appl. Sci., 35 (2025), pp.~1385--1419,
+ \href{https://doi.org/10.1142/S0218202525500204}{doi:10.1142/S0218202525500204}.
+ 
+ \bibitem{Hudson2017}
+@@ -59,6 +70,11 @@
+ \emph{Certification and the potential energy landscape}, J. Chem. Phys., 140 (2014), 224114,
+ \href{https://doi.org/10.1063/1.4881638}{doi:10.1063/1.4881638}.
+ 
++\bibitem{Ortner2009}
++\textsc{C. Ortner},
++\emph{A posteriori existence in numerical computations}, SIAM J. Numer. Anal., 47 (2009), pp.~2550--2577,
++\href{https://doi.org/10.1137/060668183}{doi:10.1137/060668183}.
++
+ \bibitem{Wei2026}
+ \textsc{X. Wei, J. Braun, Y. Wang, and L. Zhang},
+ \emph{Higher-order boundary conditions for atomistic dislocation simulations}, SIAM J. Sci. Comput., 48 (2026), pp.~A2934--A2958,
+--- v2/sections/certificate.tex
++++ v3/sections/certificate.tex
+@@ -8,7 +8,10 @@
+ $F=\nabla_\X\E$, $H_\theta=DF(\theta)$, and
+ $\Lambda=1/\sqrt2$ is the Hessian Lipschitz constant from
+ \cref{lem:basic}. The weaker bound $\Lambda=1$ may instead be used
+-consistently in a numerical certificate.
++in an individual numerical estimate when its sufficient inequalities still
++hold. In particular, the correction estimates below allow that coarser
++choice; the displayed cap parameters use the sharp bound, or its rational
++upper bound $71/100$.
+ Unmarked norms and pairings are those of $\X$, with induced operator
+ norms; finite coordinate vectors carry their Euclidean norm.
+ 
+@@ -128,7 +131,8 @@
+  \qquad \Lambda\rho<\gamma,
+ \end{equation}
+ there is a unique critical point $\theta_*$ in
+-$\overline B_\X(\widehat\theta,\rho)$. It is a strict minimum in the
++$\overline B_\X(\widehat\theta,\rho)
++ =\{u:\nrm{u-\widehat\theta}_\X\le\rho\}$. It is a strict minimum in the
+ first case and has Morse index one in the second. Its Hessian inverse
+ has norm at most $(\gamma-\Lambda\rho)^{-1}$.
+ \end{lemma}
+@@ -146,9 +150,12 @@
+ assumption on the off-diagonal block is needed. In the minimum case
+ the inverse bound is immediate. The map
+ $h\mapsto-H_{\widehat\theta}^{-1}(F(\widehat\theta)+\mathcal N(h))$
+-is a self-map and contraction on the radius-$\rho$ ball by
++is a self-map and contraction on the closed radius-$\rho$ ball by
+ $\nrm{\mathcal N(h)}\le\Lambda\nrm{h}^2/2$ and
+ $\operatorname{Lip}(\mathcal N)\le\Lambda\rho$.
++This closed ball is complete. If the first inequality in
++\eqref{eq:cert-newton-radius} is strict, the fixed point is also in the
++open ball.
+ The same diagonal signs persist throughout that ball, proving the
+ index and inverse bounds at the exact critical point.
+ \end{proof}
+@@ -350,6 +357,9 @@
+  \nrm{y_i-y_j}+\min(R_i,r_i^+)<R_j.
+ \end{equation}
+ The stronger full-ball test replaces the minimum by $R_i$.
++To prove that a point is internal to $D_0$, the coordinate cell must also
++lie in $A_0$. Chart overlap alone cannot make a point on the outer
++coordinate boundary internal to $D_0$.
+ \item A new exact-plane face passes by
+ \cref{lem:cert-fiber}, uniformly over its intersection with the closed
+ chart, coordinate region, and other cuts. Computations may overcover
+@@ -385,6 +395,26 @@
+ coverage. In particular the outer coordinate circle is checked as a
+ continuum. The ledger does not assert that a failed test exhibits an
+ actual lower-energy escape.
++
++To make retention by the exact saddle cuts explicit, write
++\[
++ H_{\rm cl}=\bigcap_j\{\ell_j\le0\},\qquad
++ H_{\rm op}=\bigcap_j\{\ell_j<0\},\qquad D=D_0\cap H_{\rm op}.
++\]
++For each closed old-wall cell $C_\alpha$, the retained set is
++$C_\alpha\cap H_{\rm cl}$. The set-level obligation is
++\[
++ \theta\in C_\alpha\cap H_{\rm cl},\quad\E(\theta)<h
++       \quad\Longrightarrow\quad\theta\in D_0.
++\]
++An energy bound proves this implication vacuously; a full-fiber overlap
++witness proves it by strict inclusion in $D_0$. A cell may be discarded
++by cuts after verifying $C_\alpha\cap H_{\rm cl}=\varnothing$.
++Strict positivity of one cut throughout the cell is sufficient but not
++necessary: a rigorous joint infeasibility test may also establish this.
++Equality at a cut is retained whenever all other closed inequalities
++hold. Exclusion from $H_{\rm op}$ alone does not justify discarding a
++tangency or an old-wall/new-plane intersection.
+ 
+ Membership and target exclusion are additional finite tests. The entire
+ minimum enclosure must lie strictly inside a chart, the coordinate
+@@ -486,7 +516,10 @@
+ \eqref{eq:cert-radial-test}, the direct full-fiber bound,
+ \eqref{eq:cert-overlap-test}, or \eqref{eq:cert-cone-test} at level $h$.
+ Cells removed by another cut need not pass an energy test; their removal
+-must itself be verified on the complete cell.
++must itself be verified on the complete closed cell relative to
++$H_{\rm cl}$. Each retained point of energy below $h$ must be certified
++strictly internal to $D_0$ by a valid coverage witness. All intersections,
++edges, corners, and tangencies are included.
+ \item Every new face
+ \[
+  \{\theta\in\overline D_0:\ell_j(\theta)=0,
+@@ -511,11 +544,18 @@
+ The earlier tests establish exact critical points, the full-space
+ positive complements, and the exact cap inequalities. For a finite
+ union, $\partial(\bigcup_i U_i)\subset\bigcup_i\partial U_i$.
+-After intersecting with $a^{-1}(A_0)$ and the saddle halfspaces, every
+-boundary point belongs to a retained old wall or a new plane face,
+-including their intersections. On a coordinate wall the overlap test
++After intersecting with $a^{-1}(A_0)$ and the saddle halfspaces,
++\[
++ \partial D\subset
++ (\partial D_0\cap H_{\rm cl})\ \cup\
++ \bigcup_j(D_0\cap H_{\rm cl}\cap\{\ell_j=0\}).
++\]
++Indeed, every boundary point lies in $\overline D_0\cap H_{\rm cl}$;
++if it is in $D_0$ and every cut is strict, it is an interior point of
++$D$, a contradiction. Thus every boundary point belongs to a retained
++old wall or a new plane face, including their intersections. On a coordinate wall the overlap test
+ places every hypothetical point below $h$ strictly inside another
+-chart, so it cannot belong to this boundary. All other ledger witnesses
++chart and inside $a^{-1}(A_0)$, so it cannot belong to this boundary. All other ledger witnesses
+ give energy at least $h$. Hence $\E\ge h$ throughout $\partial D$.
+ The domain is open, contains $m$, and excludes every endpoint in $\K$.
+ Every admissible path has a first exit and crosses $\partial D$;
+--- v2/sections/discussion.tex
++++ v3/sections/discussion.tex
+@@ -6,7 +6,7 @@
+ 
+ For the perturbation family in \cref{eq:intro-perturbation}, the conclusion is stronger than persistence of an isolated finite-box root: it includes the global barrier estimate and tails in the same infinite-dimensional class. It is also weaker than a parameter-uniform identification of a transition saddle. The continued saddles are genuine index-one states, but \cref{thm:robustness} does not exclude a different route becoming cheaper under perturbation. To identify a change of mechanism, one must certify the competing upper paths and every relevant part of a common separating boundary over a parameter interval, and then prove the crossing of their exact critical heights. Two overlapping interval enclosures do not prove such a crossing.
+ 
+-The most direct quantitative improvement is a sharper far-field source estimate. The cubic bound $\nrm{D\theta-\sin D\theta}_1\le\nrm\theta_\X^3/6$ uses a deliberately loose global energy-norm bound. Verified core sums and cancellation or multipolar information could reduce the tail constant without changing the path-space theorem. Existing higher-order defect expansions \cite{Braun2025,Wei2026} suggest the right analytic tools; compatibility with an indefinite saddle and the exact global boundary remains an obligation, rather than a consequence of a stable-minimum approximation theorem.
++The most direct quantitative improvement is a sharper far-field source estimate. The cubic bound $\nrm{D\theta-\sin D\theta}_1\le\nrm\theta_\X^3/6$ uses a deliberately loose global energy-norm bound. Verified core sums and cancellation or multipolar information could reduce the tail constant without changing the path-space theorem. Existing far-field expansions and higher-order boundary conditions \cite{Braun2022,Braun2025,Wei2026} suggest the right analytic tools; compatibility with an indefinite saddle and the exact global boundary remains an obligation, rather than a consequence of a stable-minimum approximation theorem.
+ 
+ The localization estimate has the form $C_E/R$, so an error allocation
+ $\varepsilon/4$ requires $R\ge4C_E/\varepsilon$. The current
+--- v2/sections/instance.tex
++++ v3/sections/instance.tex
+@@ -45,6 +45,21 @@
+ \end{tabular}
+ \end{table}
+ 
++The cap parameters in \cref{tab:margins} use a different, sharper
++Lipschitz bound than the conservative correction deductions.
++With $\tau=71/100$ one has $2\tau^2=5041/5000>1$, hence
++$\Lambda=1/\sqrt2<\tau$. Consequently the safe cap values give the
++entirely rational margin
++\[
++ k_c\ge\frac1{50}
++       -\frac{71}{100}\frac{33}{1200}
++       =\frac{19}{40000}>0.
++\]
++The cap checker enforces $R_c<3\sqrt2\mu$, consistently with this
++choice. Using $\Lambda=1$ in this cap calculation with only
++$\mu=1/25$ would not give a positive coefficient; its separate use
++for Newton correction bounds does not require that substitution.
++
+ The indefinite Hessian test controls its complete complement and the mutual interactions of the deficient bonds. Its negative direction need not be an eigenvector. The complement estimate together with a negative Rayleigh direction gives invertibility and index one by the reflected-coercivity argument in \cref{sec:certificate}; the exact-state uncertainty is then subtracted. This distinction matters when extending finite signed-Laplacian tests to an infinite exterior.
+ 
+ The atlas uses a rank-two subspace $Q\R^2$, with orthogonal complement $Y$. For each coordinate cell, the lower bound on the entire transverse fiber is evaluated, not just at its center. A face whose lower bound is too low must be covered strictly by another chart, over the whole closed cell and its entire permitted low-energy transverse ball. The final cutting planes pass through $s_\pm$. On those planes the exact saddle energy cancels algebraically, permitting the boundary threshold to equal $h$ without requiring an interval comparison with a positive margin at the saddle itself.
+@@ -67,4 +82,14 @@
+ 
+ The verifier combines exact rational bookkeeping with outward floating-point enclosures and analytic tail estimates. Candidate search, proposal optimization, and basis generation are outside the supervisor; the fixed proposals must pass its checks. The default supervisor does not execute every historical attack script, the separate secondary boundary implementation, or the separate heteroclinic extension. We therefore base \cref{thm:instance} on the global variational certificate, not on an unreported fresh heteroclinic calculation.
+ 
++The supported reproduction target is little-endian IEEE binary64 input
++with round-to-nearest arithmetic and a \texttt{long double} significand
++of exactly 64 bits. The companion environment preflight checks this
++target before a new global run. The frozen extension prints its consumed
++interval endpoints with an additional outward step and 30 decimal digits;
++the significance of that padding is tied to this arithmetic format.
++The source guard allowing at least 64 bits is not a validation of all wider
++formats. In particular, portability to a 113-bit significand requires a
++separate serialization analysis or a revised exact-output interface.
++
+ Reproduction with the same software tests that the distributed inputs and source produce the asserted output. It does not independently validate the underlying interval implementation or formalize the analytic reductions. The proof in \cref{sec:certificate}, the full frozen sources, and the supplementary command and integrity record expose those dependencies for examination. The new rational checkers for \cref{sec:green,sec:robustness} verify their arithmetic implications; they do not rerun this global supervisor or replace the analytic proofs.
+--- v2/sections/introduction.tex
++++ v3/sections/introduction.tex
+@@ -30,11 +30,15 @@
+ 
+ Certification of critical points of cosine energy landscapes is established. Mehta, Hauenstein, and Wales \cite{Mehta2014} used algebraic certification for finite XY systems with periodic or antiperiodic boundaries. More recently, Ayala, Choksi, and Wirth \cite{Ayala2026} validated finite atomistic configurations and transition-state candidates. These results show why neither an XY critical point certificate nor a validated finite-dimensional saddle should be presented as the new conclusion here.
+ 
+-For lattice defects, Hudson and Ortner \cite{Hudson2015} obtained strongly stable multi-dislocation configurations from an isolated-core stability hypothesis and sufficient separation. Our aim is different: we verify a particular core and a global escape barrier at a fixed separation. Hudson \cite{Hudson2017} derived asymptotic energy barriers in a finite-domain, piecewise-quadratic dislocation model with a specified single-hop path class. Garroni, Petrache, and Spadaro \cite{Garroni2025} proved clearing-out results for global minimizers of discrete energies with topological singularities. Global minimization and pinned local metastability ask different questions; a clearing-out theorem does not supply a continuous path with a prescribed ceiling from a given metastable state.
++Metastability and depinning for square-lattice systems with periodic interactions, including XY models, were studied variationally by Alicandro, De Luca, Garroni, and Ponsiglione \cite{Alicandro2014}. They established metastable configurations and derived vortex dynamics through minimizing movements and continuum-limit arguments. Here the lattice spacing and the vortex separation are fixed, and the quantity to be certified is the global communication height from a specified metastable state over all strong energy-space escape paths.
++
++For lattice defects, Hudson and Ortner \cite{Hudson2015} obtained strongly stable multi-dislocation configurations from an isolated-core stability hypothesis and sufficient separation. We verify a particular dipole equilibrium and a global escape barrier at a fixed separation. Hudson \cite{Hudson2017} derived asymptotic energy barriers in a finite-domain, piecewise-quadratic dislocation model with a specified single-hop path class. Garroni, Petrache, and Spadaro \cite{Garroni2025} proved clearing-out results for global minimizers of discrete energies with topological singularities. Global minimization and pinned local metastability ask different questions; a clearing-out theorem does not supply a continuous path with a prescribed ceiling from a given metastable state.
+ 
+ Validated transition paths also have direct precedents. Breden and Kuehn \cite{Breden2019} rigorously validated saddle connections in a stochastic transition-path setting. Liu, Chen, and Ortner \cite{Liu2024} developed stability theory for minimum energy paths in Hilbert spaces under explicit nondegeneracy hypotheses. Berglund, Medvedev, and Simpson \cite{Berglund2025} analyzed metastability and relevant transition barriers in the finite one-dimensional nearest-neighbor Kuramoto model, also a cosine system. These works preclude a general claim of priority for a saddle-height formula, for infinite-dimensional path theory, or for rigorous transition geometry. Our lower bound instead comes from a complete separating boundary in the energy space of a two-dimensional infinite lattice. It does not assume that a previously selected path is a minimum energy path.
+ 
+-Several ingredients of the certificate also have established analogues. Signed Laplacian positivity and inertia can be expressed through Schur complements and effective resistances \cite{Chen2020}. Cubical sublevel computations and their verification are treated by D\l{}otko and Wanner \cite{Dlotko2018}. Far-field regularity and boundary approximation for atomistic defects were developed by Ehrlacher, Ortner, and Shapeev \cite{Ehrlacher2016}; higher-order multipolar boundary conditions have since been obtained by Braun, Ortner, Wang, and Zhang \cite{Braun2025} and by Wei, Braun, Wang, and Zhang \cite{Wei2026}. In particular, abstract decay theory is not introduced here. We need explicit constants and matching bond conventions that can enter the present certificate, including an indefinite saddle and an entire upper path.
++Several ingredients of the certificate also have established analogues. A posteriori existence arguments based on computable residuals and stability bounds have a substantial history; see Ortner \cite{Ortner2009} for an inverse-function framework for nonmonotone problems. Signed Laplacian positivity and inertia can be expressed through Schur complements and effective resistances \cite{Chen2020}. Cubical sublevel computations and their verification are treated by D\l{}otko and Wanner \cite{Dlotko2018}.
++
++Far-field estimates and boundary approximations were developed by Ehrlacher, Ortner, and Shapeev \cite{Ehrlacher2016}. Braun, Hudson, and Ortner \cite{Braun2022} obtained systematic far-field expansions using continuum correctors and discrete multipoles; higher-order boundary conditions were subsequently developed by Braun, Ortner, Wang, and Zhang \cite{Braun2025} and by Wei, Braun, Wang, and Zhang \cite{Wei2026}. For the present certificate we require explicit constants in matching bond conventions for the critical states and for an entire upper path.
+ 
+ The contribution is therefore a specific conjunction: the exact cosine interaction on the infinite square lattice; unrestricted strong energy-space escape paths; a matched global lower and upper barrier bound; checkable hypotheses exposing the infinite-dimensional reduction; and a quantitative perturbation theorem with effective tails in the same coupling class. We do not infer from this comparison that earlier methods are incapable of adaptation, nor assert universal bibliographic priority.
+ 
+--- v2/sections/model.tex
++++ v3/sections/model.tex
+@@ -1,12 +1,25 @@
+ \section{Energy space, lifts, and normalization}\label{sec:model}
+ 
+-Let $V=(\Z+\tfrac12)^2$ and orient each nearest-neighbor bond in a positive coordinate direction; $\mathcal E$ contains each undirected bond exactly once. Write $D_eu=u(y)-u(x)$ for $e=(x,y)$ and set
++Let $V=(\Z+\tfrac12)^2$ and orient each nearest-neighbor bond in a positive coordinate direction; $\mathcal E$ contains each undirected bond exactly once. Write $D_eu=u(y)-u(x)$ for $e=(x,y)$. Define the closed gradient subspace first:
++\[
++ \mathcal G=\overline{\{D\varphi:\varphi\in C_c(V;\R)\}}^{\,\ell^2(\mathcal E)}.
++\]
++The homogeneous energy space and its energy are
+ \begin{equation}\label{eq:energy-space}
+  \inner uv_\X=\sum_e D_euD_ev,\qquad
+- \X=\overline{C_c(V)}^{\nrm{D\cdot}_2}/\R,
++ \X=\{u:V\to\R:Du\in\mathcal G\}/\R,
+  \qquad\E(u)=\sum_e(1-\cos D_eu).
+ \end{equation}
+-The quotient records that constants do not change a phase field. Equivalently $D$ identifies $\X$ isometrically with the closed subspace of $\ell^2(\mathcal E)$ obtained by completing compactly supported gradients. Elements have vertex representatives modulo constants, since differences along each finite path are continuous functionals in the energy norm. The energy is finite, nonnegative, and at most $\nrm u_\X^2/2$.
++The quotient identifies vertex representatives differing by a constant.
++The map $D:\X\to\mathcal G$ is an isometric isomorphism: each
++$g\in\mathcal G$ has zero oriented sum around every finite cycle, since
++finite-cycle sums are continuous on $\ell^2(\mathcal E)$ and vanish on
++compact gradients. Integrating $g$ along finite lattice paths therefore
++reconstructs a vertex representative, unique modulo a constant.
++Thus $\X$ is a Hilbert space, equivalently the homogeneous completion of
++compactly supported vertex fields represented modulo constants. Finite-path
++vertex differences are continuous in its norm. The energy is finite,
++nonnegative, and at most $\nrm u_\X^2/2$.
+ 
+ The physically uniform configurations and admissible barriers are
+ \begin{align}
+--- v2/supplement/INDEX.html
++++ v3/supplement/INDEX.html
+@@ -6,10 +6,10 @@
+ <p>Prepared 20 October 2026 for <em>SIAM Journal on Applied Dynamical
+ Systems</em>. Article: global certification of an annihilation mechanism
+ on the infinite square XY lattice, reusable a posteriori conditions, and
+-quantitative coupling robustness. Final author and article metadata are
+-to be completed in the manuscript and submission form.</p>
++quantitative coupling robustness. Author: Rodolfo Leonardo Sumoza Matos.
++Title: Certified global annihilation barriers in an infinite XY lattice.</p>
+ <ol>
+-<li><p><a href="SIADS_XY_Manuscript_and_Checkers_v2_2026-10-20.zip">SIADS_XY_Manuscript_and_Checkers_v2_2026-10-20.zip</a></p>
++<li><p><a href="SIADS_XY_Manuscript_and_Checkers_v3_2026-10-20.zip">SIADS_XY_Manuscript_and_Checkers_v3_2026-10-20.zip</a></p>
+ <p><strong>Description:</strong> Frozen manuscript and supplementary
+ sources and reproducible conceptual-figure code/vector assets; exact-rational coupling-robustness and Green-tail budget
+ checkers and their JSON outputs; fresh reproduction summaries, logs,
+--- v2/supplement/INDEX.txt
++++ v3/supplement/INDEX.txt
+@@ -3,10 +3,10 @@
+ 
+ Article: global certification of an annihilation mechanism on the infinite
+ square XY lattice, reusable a posteriori conditions, and quantitative
+-coupling robustness. Final author and article metadata are to be completed
+-in the manuscript and submission form.
++coupling robustness. Author: Rodolfo Leonardo Sumoza Matos.
++Title: Certified global annihilation barriers in an infinite XY lattice.
+ 
+-S1. SIADS_XY_Manuscript_and_Checkers_v2_2026-10-20.zip
++S1. SIADS_XY_Manuscript_and_Checkers_v3_2026-10-20.zip
+ Description: frozen manuscript sources, supplementary sources, reproducible conceptual-figure code and vector assets, analytic
+ arithmetic checkers for coupling robustness and Green-tail budgets, their
+ JSON outputs, and the fresh reproduction summaries/logs and instructions.
+--- v2/supplement/Supplementary_Reproducibility.tex
++++ v3/supplement/Supplementary_Reproducibility.tex
+@@ -274,6 +274,60 @@
+ deductions are not an independent implementation of the original global
+ certificate and are not external peer review.
+ 
++\subsection*{Targeted source checks in the revised snapshot}
++The additional inspection recorded under
++\code{verification_notes/current_targeted} has a narrower scope than the
++historical fresh global run. The optimality archive matched all $593$
++members in its file manifest, and the original manuscript archive matched
++all $48$ entries in its manifest. The subsidiary robustness and Green
++arithmetic outputs were regenerated and matched their archived values.
++Hash tampering and a missing saddle record were rejected by the subsidiary
++robustness checker; these are not tests of every failure mode of the global
++supervisor.
++
++The exact-arithmetic boundary and membership programs were also rerun
++using the archived local-oracle outputs: $109$ charts and $2208$
++coordinate-face evaluations left no unresolved pieces. The resulting
++status is explicitly conditional. The minimum radial and circle energy
++margins above the supplied comparison level were respectively greater
++than $6.79\,10^{-6}$ and $9.61\,10^{-7}$; the largest accepted
++fiber-minimizer distance was less than $0.163746<0.165$.
++This replay checks the geometric assembly, not the construction of its
++local-oracle, residual, or exterior inputs from the antecedent raw arrays
++unavailable during this additional inspection. The two antecedent archives are still required for a new
++full-chain execution.
++
++The inspected C++ backend uses its own trigonometric and inverse-tangent
++series with explicit remainder bounds. A finite set of $1166$ diagnostic
++comparisons against separately evaluated high-precision formulas found
++no discrepancies; such tests do not prove an interval contract for all
++inputs. The consumed endpoints of the four extension modules use an
++additional outward step before 30-digit decimal serialization. The
++supported target is therefore restricted here to a 64-bit
++\code{long double} significand, binary64 little-endian input, and
++round-to-nearest. The new \code{verify_supported_environment.py} checks
++that target; it does not execute or validate the global certificate.
++Wider arithmetic formats are not justified by a guard that merely accepts
++at least 64 significand bits.
++
++Two general implementation limitations remain documented in the source
++inspection report. An injected NaN is not rejected by the internal
++congruence helper, although nonfinite raw input is rejected and no such
++intermediate was shown for the frozen data. The historical standalone
++\code{run()} decimal output also lacks a general outward-serialization
++guarantee; the four inspected extension modules rename that main and do
++not invoke it. These observations do not establish a counterexample to
++the fixed certificate, and must not be used as evidence that its
++antecedent implementations have been audited. The immutable originals
++were not altered. Hardening a frozen engine would require updating its
++pins and repeating every dependent verification.
++
++The revised Green-budget checker replaces Python assertions by explicit
++checks that remain active under \code{python -O}; normal and optimized
++runs agree, and nonpositive tolerances are rejected. The cap arithmetic
++also has the transparent rational lower margin $k_c\ge19/40000$, given
++the certified transverse floor $1/25$ and radius $33/200$.
++
+ \paragraph{Reusable a posteriori conditions.}
+ To apply the method to another configuration, supply finite-energy candidate
+ representations with certified full-space residuals, branch and exterior

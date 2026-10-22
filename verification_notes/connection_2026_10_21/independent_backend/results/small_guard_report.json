@@ -1,0 +1,26 @@
+{
+  "status": "CONNECTION_SMALL_GUARD_PASS",
+  "programs": [
+    {
+      "program": "barrier",
+      "returncode": 0
+    },
+    {
+      "program": "leg_return",
+      "returncode": 0
+    },
+    {
+      "program": "leg_annihilation",
+      "returncode": 0
+    },
+    {
+      "program": "full_annihilation",
+      "returncode": 0
+    },
+    {
+      "program": "join_points",
+      "returncode": 0
+    }
+  ],
+  "duration_seconds": 200.3482162952423
+}

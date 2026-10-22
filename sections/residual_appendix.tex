@@ -1,0 +1,101 @@
+% New analytic audit, 21 October 2026. Insert after the existing Appendices A--C.
+% Uses the article's macros \X and \nrm. No new theorem counter is introduced.
+\section{The full dual residual of the neutral reference}
+\label{app:reflected-residual}
+
+This calculation justifies the exterior residual formula used in the
+fixed critical-state certificate. In centered coordinates
+$(\xi,y)=(x_1-6,x_2)$, set $a=L/2=6$ and
+\[
+ \varphi(\xi,y)=\arg(\xi+a+\mathrm i y)
+                  -\arg(\xi-a+\mathrm i y),\qquad L=12.
+\]
+Use the real branch tending to zero away from the finite cut
+$[-a,a]\times\{0\}$. Its gradient is square summable; compact cutoffs
+converge in the energy norm since $\varphi=O(L/r)$ and
+$D\varphi=O(L/r^2)$ outside that cut. Thus $\varphi\in\X$.
+Each unoriented bond is counted once, with
+$D_eu=u(e^+)-u(e^-)$, and $D^*$ denotes the vertex-distribution adjoint.
+Write $f_\theta=D^*\sin(D\theta)$.
+
+Let $S>a+2$ be an integer and define the symmetric vertex square
+\[
+ B_S=\{v\in(\mathbb Z+1/2)^2:\nrm{v}_\infty\le S-3/2\},
+ \qquad b=2S-2,\qquad \chi=\frac{S}{S-a-2}.
+\]
+Here the square is in the centered coordinates. Suppose $h$ is compact
+and every bond on which $D_eh\ne0$ has \emph{both} endpoints in $B_S$.
+Set $f_B=\mathbf1_{B_S}f_{\varphi+h}$, interpreted as a load on the
+full lattice. Then $f_B$ has algebraically zero mean. Indeed,
+$j_e=\sin D_e(\varphi+h)-\sin D_e\varphi$ is a compact flux whose
+nonzero bonds and both endpoints lie in $B_S$, so
+$\sum_{B_S}D^*j=0$ by endpoint cancellation. The pure-reference phase is
+complex-conjugated by $(\xi,y)\mapsto(\xi,-y)$; its vertex force is
+therefore odd under this reflection. Pairing the vertices of $B_S$
+gives $\sum_{B_S}f_\varphi=0$. No oddness assumption on $h$ is needed.
+An interval sum containing zero would not replace this argument.
+
+Let $L_N$ and $D_N$ count only bonds interior to $B_S$. For any finite
+proposal $u$, the Neumann comparison and
+$\lambda_1(L_N)=4\sin^2(\pi/(2b))\ge4/b^2$ give
+\begin{equation}
+ \nrm{f_B}_{\X^*}
+ \le \nrm{D_Nu}_2+\frac b2\nrm{f_B-L_Nu}_2.
+ \label{eq:finite-residual-energy}
+\end{equation}
+To see this, solve $L_Nu_*=f_B$ with the same mean as $u$, and use
+$\nrm{f_B}_{\X^*}\le\nrm{D_Nu_*}_2$ and
+$\nrm{D_N(u_*-u)}_2\le\lambda_1(L_N)^{-1/2}
+\nrm{f_B-L_Nu}_2$. No normalization of the mean of $u$ is required.
+
+The complementary load obeys the explicit bound
+\begin{equation}
+ \nrm{f_{\varphi+h}-f_B}_{\X^*}
+ \le \frac{64\sqrt3}{5}\frac{L\chi^5}{(S-1)^{5/2}}
+      +\frac{32\sqrt3}{9}\frac{L^3\chi^7}{(S-1)^{9/2}}.
+ \label{eq:reflected-residual-tail}
+\end{equation}
+Here is a derivation including the cancellation needed for the second
+term. In a differentiation region at distance at least $d$ from the cut,
+subtracting the complex derivatives of the two argument fields gives
+\[
+ |\partial_i^r\varphi|\le r!L/d^{r+1}\quad(r\ge1),
+ \qquad \Delta\varphi=0.
+\]
+For $p_i=\varphi(v+e_i)-\varphi(v)$ and
+$m_i=\varphi(v)-\varphi(v-e_i)$, the central Taylor remainder of order
+four and harmonicity yield $|L_\infty\varphi(v)|\le4L/d^5$.
+Also $|p_i|,|m_i|\le L/d^2$ and $|p_i-m_i|\le2L/d^3$.
+Since $g(t)=\sin t-t$ has $|g'(t)|\le t^2/2$,
+\[
+ |g(p_i)-g(m_i)|\le L^3/d^7,\qquad
+ |f_\varphi(v)|\le4L/d^5+2L^3/d^7.
+\]
+The two opposite bonds are combined before taking absolute values.
+
+Exterior shells have $\nrm{v}_\infty=k-1/2$, $k\ge S$, and at most
+$8k$ vertices. The unit segments used above lie at distance at least
+$k-a-3/2\ge k-a-2$ from the cut, while
+$(k-a-2)^{-r}\le\chi^r k^{-r}$. Pair each exterior vertex with $y>0$
+with its reflected vertex $Rv$. The load $\delta_v-\delta_{Rv}$ has
+$\X^*$ norm at most $\sqrt{2|y|}\le\sqrt{3k}$, by Cauchy--Schwarz
+along the vertical lattice path. This path may enter $B_S$; only its
+endpoints specify the exterior load. Since $h$ changes no exterior
+vertex force, the triangle inequality gives
+\begin{align*}
+ \nrm{f_{\varphi+h}-f_B}_{\X^*}
+ &\le32\sqrt3 L\chi^5\sum_{k\ge S}k^{-7/2}
+       +16\sqrt3 L^3\chi^7\sum_{k\ge S}k^{-11/2}.
+\end{align*}
+Integrating these positive decreasing terms from $S-1$ proves
+\eqref{eq:reflected-residual-tail}. The convergent majorant justifies
+the load series in $\X^*$; equality with the exterior vertex force is
+first checked on compact tests and then extended by density.
+
+In the checker the correction array has even side $n$, its boundary
+is zero, the phase box has side $n+4$, and the force box has side
+$b=n+2$. Its halo includes every changed flux bond and both endpoints,
+and all four neighbours of every force-box vertex are present.
+Thus $S=b/2+1$ and $\chi=S/(S-8)$ agree exactly with the implemented
+formula. Adding \eqref{eq:finite-residual-energy} and
+\eqref{eq:reflected-residual-tail} bounds the full dual residual.

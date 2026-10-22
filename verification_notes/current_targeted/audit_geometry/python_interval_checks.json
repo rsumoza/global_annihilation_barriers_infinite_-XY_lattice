@@ -1,0 +1,8 @@
+{
+  "scope": "Finite adversarial exact rational enclosure checks, not a formal proof or C++ audit",
+  "seed": 20261020,
+  "random_interval_trials": 4000,
+  "random_polynomial_trials": 500,
+  "total_checked_enclosures_or_sqrt_relations": 32968,
+  "status": "PASS"
+}

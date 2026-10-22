@@ -1,0 +1,617 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./main.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty)
+(/usr/share/texmf/tex/latex/lm/lmodern.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+No file main.aux.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(/usr/share/texmf/tex/latex/lm/t1lmss.fd)
+(/usr/share/texmf/tex/latex/lm/ot1lmr.fd)
+(/usr/share/texmf/tex/latex/lm/omllmm.fd)
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd)
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texmf/tex/latex/lm/ts1lmr.fd)
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd) (./sections/introduction.tex
+
+LaTeX Warning: Reference `sec:model' on page 1 undefined on input line 5.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/shar
+e/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ma
+thsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}]
+
+LaTeX Warning: Reference `eq:barrier' on page 1 undefined on input line 14.
+
+
+LaTeX Warning: Reference `thm:certificate' on page 1 undefined on input line 16
+.
+
+
+LaTeX Warning: Reference `thm:green' on page 1 undefined on input line 18.
+
+
+LaTeX Warning: Reference `thm:robustness' on page 1 undefined on input line 18.
+
+
+
+LaTeX Warning: Citation `Mehta2014' on page 2 undefined on input line 31.
+
+
+LaTeX Warning: Citation `Ayala2026' on page 2 undefined on input line 31.
+
+
+LaTeX Warning: Citation `Alicandro2014' on page 2 undefined on input line 33.
+
+
+LaTeX Warning: Citation `Hudson2015' on page 2 undefined on input line 35.
+
+
+LaTeX Warning: Citation `Hudson2017' on page 2 undefined on input line 35.
+
+
+LaTeX Warning: Citation `Garroni2025' on page 2 undefined on input line 35.
+
+[2{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}]
+
+LaTeX Warning: Citation `Breden2019' on page 3 undefined on input line 37.
+
+
+LaTeX Warning: Citation `Liu2024' on page 3 undefined on input line 37.
+
+
+LaTeX Warning: Citation `Berglund2025' on page 3 undefined on input line 37.
+
+
+LaTeX Warning: Citation `Ortner2009' on page 3 undefined on input line 39.
+
+
+LaTeX Warning: Citation `Chen2020' on page 3 undefined on input line 39.
+
+
+LaTeX Warning: Citation `Dlotko2018' on page 3 undefined on input line 39.
+
+
+LaTeX Warning: Citation `Ehrlacher2016' on page 3 undefined on input line 41.
+
+
+LaTeX Warning: Citation `Braun2022' on page 3 undefined on input line 41.
+
+
+LaTeX Warning: Citation `Braun2025' on page 3 undefined on input line 41.
+
+
+LaTeX Warning: Citation `Wei2026' on page 3 undefined on input line 41.
+
+
+LaTeX Warning: Reference `sec:model' on page 1 undefined on input line 49.
+
+
+LaTeX Warning: Reference `sec:certificate' on page 1 undefined on input line 49
+.
+
+
+LaTeX Warning: Reference `sec:instance' on page 1 undefined on input line 49.
+
+
+LaTeX Warning: Reference `sec:robustness' on page 1 undefined on input line 49.
+
+
+
+LaTeX Warning: Reference `sec:green' on page 1 undefined on input line 49.
+
+
+LaTeX Warning: Reference `sec:discussion' on page 1 undefined on input line 49.
+
+
+) (./sections/model.tex [3]
+
+LaTeX Warning: Reference `eq:barrier' on page 1 undefined on input line 33.
+
+
+LaTeX Warning: Reference `sec:green' on page 1 undefined on input line 59.
+
+[4]
+
+LaTeX Warning: Reference `eq:remainders' on page 1 undefined on input line 67.
+
+
+LaTeX Warning: Reference `sec:instance' on page 1 undefined on input line 72.
+
+
+LaTeX Warning: Citation `Yoon2000' on page 5 undefined on input line 112.
+
+[5]
+
+LaTeX Warning: Reference `eq:barrier' on page 6 undefined on input line 122.
+
+
+LaTeX Warning: Reference `cor:flow' on page 1 undefined on input line 125.
+
+) (./sections/certificate.tex
+
+LaTeX Warning: Reference `lem:basic' on page 1 undefined on input line 10.
+
+[6]
+
+LaTeX Warning: Reference `app:reflected-residual' on page 7 undefined on input 
+line 68.
+
+
+LaTeX Warning: Reference `lem:cert-neumann' on page 1 undefined on input line 7
+3.
+
+
+LaTeX Warning: Reference `lem:cert-neumann' on page 1 undefined on input line 9
+7.
+
+
+LaTeX Warning: Reference `eq:cert-deficits' on page 7 undefined on input line 1
+00.
+
+
+LaTeX Warning: Citation `Chen2020' on page 7 undefined on input line 109.
+
+
+LaTeX Warning: Reference `prop:cert-gram' on page 1 undefined on input line 109
+.
+
+
+LaTeX Warning: Reference `eq:cert-deficits' on page 7 undefined on input line 1
+12.
+
+[7]
+
+LaTeX Warning: Reference `eq:cert-newton-radius' on page 8 undefined on input l
+ine 164.
+
+
+LaTeX Warning: Reference `prop:cert-gram' on page 1 undefined on input line 171
+.
+
+
+LaTeX Warning: Citation `Mehta2014' on page 8 undefined on input line 174.
+
+
+LaTeX Warning: Citation `Hudson2015' on page 8 undefined on input line 176.
+
+[8]
+
+LaTeX Warning: Reference `eq:cert-cap-energy' on page 9 undefined on input line
+ 229.
+
+
+LaTeX Warning: Reference `eq:cert-adjoint-offset' on page 9 undefined on input 
+line 229.
+
+
+LaTeX Warning: Reference `lem:cert-cap' on page 1 undefined on input line 275.
+
+
+LaTeX Warning: Reference `eq:cert-cap-lifting' on page 9 undefined on input lin
+e 294.
+
+
+LaTeX Warning: Reference `eq:cert-cap-energy' on page 9 undefined on input line
+ 295.
+
+
+LaTeX Warning: Reference `eq:cert-cap-lifting' on page 9 undefined on input lin
+e 300.
+
+[9]
+
+LaTeX Warning: Reference `fig:certificate-geometry' on page 1 undefined on inpu
+t line 335.
+
+[10 <./figures/certificate_geometry.pdf>]
+
+LaTeX Warning: Reference `lem:cert-fiber' on page 1 undefined on input line 371
+.
+
+
+LaTeX Warning: Reference `eq:cert-adjoint-offset' on page 11 undefined on input
+ line 373.
+
+[11]
+
+LaTeX Warning: Reference `eq:cert-vacuum-exclusion' on page 12 undefined on inp
+ut line 436.
+
+
+LaTeX Warning: Citation `Breden2019' on page 12 undefined on input line 484.
+
+
+LaTeX Warning: Reference `lem:cert-newton' on page 1 undefined on input line 48
+7.
+
+
+LaTeX Warning: Reference `eq:cert-hermite-test' on page 12 undefined on input l
+ine 488.
+
+[12]
+
+LaTeX Warning: Reference `lem:cert-cap' on page 1 undefined on input line 513.
+
+
+LaTeX Warning: Reference `eq:cert-radial-test' on page 13 undefined on input li
+ne 523.
+
+
+LaTeX Warning: Reference `eq:cert-overlap-test' on page 13 undefined on input l
+ine 524.
+
+
+LaTeX Warning: Reference `eq:cert-cone-test' on page 13 undefined on input line
+ 524.
+
+
+LaTeX Warning: Reference `eq:cert-cap-lifting' on page 13 undefined on input li
+ne 535.
+
+
+LaTeX Warning: Reference `lem:cert-fiber' on page 1 undefined on input line 536
+.
+
+[13]
+
+LaTeX Warning: Reference `thm:certificate' on page 1 undefined on input line 58
+7.
+
+) (./sections/instance.tex
+
+LaTeX Warning: Reference `thm:certificate' on page 1 undefined on input line 3.
+
+
+
+LaTeX Warning: Reference `eq:energy-space' on page 1 undefined on input line 6.
+
+
+
+LaTeX Warning: Reference `eq:intro-barrier' on page 1 undefined on input line 1
+5.
+
+
+LaTeX Warning: Reference `eq:barrier' on page 1 undefined on input line 15.
+
+
+LaTeX Warning: Reference `thm:certificate' on page 1 undefined on input line 19
+.
+
+[14]
+
+LaTeX Warning: Reference `eq:separator-instance' on page 1 undefined on input l
+ine 21.
+
+
+LaTeX Warning: Reference `thm:certificate' on page 1 undefined on input line 21
+.
+
+
+LaTeX Warning: Reference `eq:intro-barrier' on page 1 undefined on input line 2
+1.
+
+
+LaTeX Warning: Reference `tab:margins' on page 1 undefined on input line 48.
+
+
+LaTeX Warning: Reference `sec:certificate' on page 1 undefined on input line 63
+.
+
+[15]
+
+LaTeX Warning: Reference `sec:green' on page 1 undefined on input line 67.
+
+
+LaTeX Warning: Reference `thm:instance' on page 1 undefined on input line 83.
+
+[16]
+
+LaTeX Warning: Reference `sec:certificate' on page 1 undefined on input line 10
+3.
+
+
+LaTeX Warning: Reference `sec:robustness' on page 1 undefined on input line 103
+.
+
+
+LaTeX Warning: Reference `sec:green' on page 1 undefined on input line 103.
+
+) (./sections/green.tex
+
+LaTeX Warning: Citation `Ehrlacher2016' on page 17 undefined on input line 7.
+
+
+LaTeX Warning: Citation `Braun2025' on page 17 undefined on input line 10.
+
+
+LaTeX Warning: Citation `Wei2026' on page 17 undefined on input line 10.
+
+(/usr/share/texmf/tex/latex/lm/ot1lmss.fd)
+
+LaTeX Warning: Reference `app:green-kernel' on page 17 undefined on input line 
+54.
+
+
+LaTeX Warning: Reference `eq:green-kernel' on page 17 undefined on input line 5
+5.
+
+
+LaTeX Warning: Reference `eq:green-column' on page 17 undefined on input line 6
+4.
+
+
+LaTeX Warning: Reference `eq:edge-evaluation' on page 17 undefined on input lin
+e 69.
+
+[17]
+
+LaTeX Warning: Citation `BraunHudson2026' on page 18 undefined on input line 13
+6.
+
+
+LaTeX Warning: Reference `eq:green-representation' on page 18 undefined on inpu
+t line 137.
+
+
+LaTeX Warning: Reference `eq:green-column' on page 18 undefined on input line 1
+49.
+
+[18]
+
+LaTeX Warning: Reference `eq:green-A' on page 19 undefined on input line 169.
+
+
+LaTeX Warning: Reference `eq:green-tail' on page 19 undefined on input line 170
+.
+
+
+LaTeX Warning: Reference `thm:green' on page 19 undefined on input line 205.
+
+
+LaTeX Warning: Reference `app:green-annulus' on page 19 undefined on input line
+ 212.
+
+
+LaTeX Warning: Reference `app:green-inputs' on page 19 undefined on input line 
+243.
+
+
+LaTeX Warning: Reference `thm:green' on page 19 undefined on input line 245.
+
+[19]
+
+LaTeX Warning: Reference `eq:barrier' on page 20 undefined on input line 254.
+
+
+LaTeX Warning: Reference `app:green-inputs' on page 20 undefined on input line 
+280.
+
+
+LaTeX Warning: Reference `eq:green-robust-data' on page 20 undefined on input l
+ine 328.
+
+[20]) (./sections/robustness.tex [21]
+
+LaTeX Warning: Reference `eq:coupling-derivatives' on page 22 undefined on inpu
+t line 67.
+
+
+LaTeX Warning: Reference `eq:coupling-hessian' on page 22 undefined on input li
+ne 76.
+
+[22]
+
+LaTeX Warning: Reference `eq:robust-seed-gap' on page 23 undefined on input lin
+e 150.
+
+
+LaTeX Warning: Reference `lem:coupling-bounds' on page 23 undefined on input li
+ne 151.
+
+
+LaTeX Warning: Reference `eq:robust-seed-gap' on page 23 undefined on input lin
+e 172.
+
+
+LaTeX Warning: Reference `eq:robust-operator-perturbation' on page 23 undefined
+ on input line 175.
+
+
+LaTeX Warning: Reference `eq:robust-seed-global' on page 23 undefined on input 
+line 212.
+
+[23]
+
+LaTeX Warning: Reference `eq:robust-seed-global' on page 24 undefined on input 
+line 236.
+
+
+LaTeX Warning: Reference `eq:robust-endpoint-energies' on page 24 undefined on 
+input line 237.
+
+
+LaTeX Warning: Reference `eq:robust-endpoint-energies' on page 24 undefined on 
+input line 239.
+
+
+LaTeX Warning: Reference `eq:robust-barrier' on page 24 undefined on input line
+ 241.
+
+
+LaTeX Warning: Reference `eq:robust-barrier-numeric' on page 24 undefined on in
+put line 241.
+
+
+LaTeX Warning: Reference `thm:robustness' on page 24 undefined on input line 24
+6.
+
+
+LaTeX Warning: Reference `eq:coupling-hessian' on page 24 undefined on input li
+ne 264.
+
+
+LaTeX Warning: Reference `eq:robust-exponential-stability' on page 24 undefined
+ on input line 282.
+
+
+LaTeX Warning: Reference `sec:green' on page 24 undefined on input line 288.
+
+
+LaTeX Warning: Reference `thm:green' on page 24 undefined on input line 288.
+
+[24]
+
+LaTeX Warning: Reference `cor:flow' on page 25 undefined on input line 320.
+
+) (./sections/discussion.tex
+
+LaTeX Warning: Reference `thm:instance' on page 1 undefined on input line 5.
+
+
+LaTeX Warning: Reference `eq:intro-perturbation' on page 1 undefined on input l
+ine 7.
+
+
+LaTeX Warning: Reference `thm:robustness' on page 1 undefined on input line 7.
+
+
+LaTeX Warning: Citation `Braun2022' on page 25 undefined on input line 9.
+
+
+LaTeX Warning: Citation `Braun2025' on page 25 undefined on input line 9.
+
+
+LaTeX Warning: Citation `Wei2026' on page 25 undefined on input line 9.
+
+[25]) (./sections/green_appendix.tex
+
+LaTeX Warning: Reference `lem:green-kernel' on page 26 undefined on input line 
+4.
+
+[26] [27]
+
+LaTeX Warning: Reference `eq:green-annular-poincare' on page 28 undefined on in
+put line 122.
+
+
+LaTeX Warning: Reference `sec:green' on page 1 undefined on input line 127.
+
+
+LaTeX Warning: Reference `lem:green-projection' on page 1 undefined on input li
+ne 144.
+
+[28]
+
+LaTeX Warning: Reference `sec:green' on page 1 undefined on input line 188.
+
+) (./sections/residual_appendix.tex [29]
+
+LaTeX Warning: Reference `eq:reflected-residual-tail' on page 30 undefined on i
+nput line 91.
+
+
+LaTeX Warning: Reference `eq:finite-residual-energy' on page 30 undefined on in
+put line 100.
+
+
+LaTeX Warning: Reference `eq:reflected-residual-tail' on page 30 undefined on i
+nput line 101.
+
+) (./references.tex [30] [31]) [32] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx9.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/tex
+mf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri1
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/font
+s/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/sh
+are/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmtt8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (32 pages, 697817 bytes).
+Transcript written on main.log.

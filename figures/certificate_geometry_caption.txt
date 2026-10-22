@@ -1,0 +1,46 @@
+Suggested caption (English LaTeX):
+
+Conceptual geometry of the a posteriori certificate; the drawing is not
+the numerical atlas or a computed orbit. (a) Overlapping coordinate
+domains and the two exact cutting planes, whose reaction-coordinate
+sections pass through the exact saddles $s_\pm$. The short thick blue
+segments depict sections of the local caps. A coordinate face covered
+strictly by another chart is internal; a retained old wall requires an
+energy lower bound. The orange line sketches the projection of a
+matching upper path through $s_+$ toward $\mathcal K$. Transverse fibers
+are suppressed in this panel. (b) One coordinate direction and one
+illustrative direction in $Y$. At a coordinate face $a_*$, the entire
+possible low-sublevel fiber ball of radius
+$\bar r_i=\min(R_i,r_i^+)$ must lie strictly inside the neighboring
+chart's transverse ball, with the whole coordinate cell inside $A_j$.
+The displayed norm inequality proves that inclusion in the full Hilbert
+space $Y$; nonempty overlap in a drawn slice would not suffice.
+
+Suggested alt text:
+
+Two conceptual panels explain the separating atlas. The left panel shows
+overlapping coordinate rectangles, a shaded separating region containing
+the dipolar minimum, and two exact cut lines through the saddles. A
+covered coordinate face lies inside a neighbor, while retained outer
+walls require energy bounds. An illustrative upper path crosses at one
+saddle. The right panel shows a coordinate face and an orange allowed
+low-energy fiber interval strictly inside a blue neighboring transverse
+ball. The interval only represents a slice; a Hilbert-norm inequality
+certifies inclusion of the complete infinite-dimensional fiber ball.
+The figure contains no numerical certificate coordinates.
+
+Mathematical caveats:
+
+1. Only a conceptual rank-two reaction-coordinate projection is shown in
+   panel (a), with all Y fibers omitted. Shapes and proportions are not
+   the 109-chart data and are not energy contours.
+2. Exact planes have normals r_j in ran Q, so their equation is constant
+   along each Y fiber. The cap proof applies in the full exact plane;
+   the short thick segments are only planar sections of those caps.
+3. The orange curve is a schematic variational upper path, not a
+   heteroclinic orbit or a plotted computed path.
+4. The test in panel (b) covers the full permitted sublevel ball, not
+   necessarily the entire chart ball of radius R_i. The coordinate
+   cell and all its boundary points must also be strictly inside A_j.
+5. The norm inequality, rather than its two-dimensional visualization,
+   certifies the required infinite-dimensional inclusion.

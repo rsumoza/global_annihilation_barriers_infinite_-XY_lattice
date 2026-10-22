@@ -1,0 +1,14 @@
+[
+  {
+    "modified_field": "long_double_significand_bits",
+    "value": 113,
+    "rejected": true,
+    "message": "Unsupported reproduction environment: long_double_significand_bits=113; expected 64"
+  },
+  {
+    "modified_field": "round_to_nearest",
+    "value": 0,
+    "rejected": true,
+    "message": "Unsupported reproduction environment: round_to_nearest=0; expected 1"
+  }
+]

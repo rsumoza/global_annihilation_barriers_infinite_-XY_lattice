@@ -1,0 +1,211 @@
+AUDITORÍA ANALÍTICA INDEPENDIENTE DE LA CONEXIÓN
+21 de octubre de 2026
+
+Resultado y alcance
+
+No se identificó una brecha material en las reducciones analíticas examinadas:
+coercividad en el complemento infinito, inversa de la silla, corrección de
+Newton, cota dual del residual con exterior, empalmes a la silla exacta,
+cobertura temporal de los caminos y contracción terminal al vacío físico.
+La media nula del residual finito y los coeficientes de su cola exterior
+se han justificado aquí por argumentos algebraicos y estimaciones explícitas.
+
+Esta conclusión es condicional a las inclusiones intervalares y a los datos
+cuya aceptación corresponde a los verificadores. No es una segunda evaluación
+intervalar del candidato de lado 4096, ni una afirmación de que el supervisor fresco
+haya terminado: ésa es una tarea separada del coordinador. Los originales se
+leyeron sin modificarlos. La identificación óptima requiere además el
+separador y las tapas exactas de la extensión, fuera del alcance de este
+informe de conexión.
+
+Fuentes contrastadas
+
+- distribution/stage2/saddle/certify.cpp y su engine.cpp.
+- distribution/connections/certify_path.cpp y certify_join_points.cpp.
+- distribution/postprocess_global.py y stage2/math/postprocess_certificate.py.
+- proof/global_stage3_math/global_connections.tex y endpoint_notes.tex.
+- distribution/stage2/proof/saddle_validation.tex.
+- verify_global.py para el sentido de las concatenaciones.
+- Las secciones certificate, instance y robustness de la versión4 del manuscrito.
+
+1. Signos, normalización y complemento infinito
+
+Se cuentan una vez los enlaces no orientados y se usa D_eu=u(head)-u(tail).
+La fuerza de vértices D*sin(Dtheta) tiene aporte -sin(Dtheta) en tail y
++sin(Dtheta) en head, tal como la acumula el código. El objeto F del teorema
+de Newton es su representante de Riesz en X, no el vector de fuerzas con
+norma l2 de vértices. La distinción es esencial en la red infinita.
+
+Si q0 es el modo compacto, G=||Dq0||2^2>0 y q=q0/sqrt(G) son definiciones
+exactas. No se usa la normalización aproximada de un eigensolver. Los
+valores de borde cero de q0 incluyen todos sus productos de Dirichlet.
+El Gram de trazas sobre qperp es exactamente R_infinito-dd^T/G. La
+comparación Neumann es R_infinito <= R_N en orden de formas, y conserva
+su dirección al restar el mismo proyector exacto. Por tanto la matriz
+finita validada en el programa implica positividad en TODO qperp de X.
+No requiere positividad de cada enlace ni restringe las perturbaciones
+a la simetría de un candidato.
+
+La lista de enlaces deficientes se recompone recorriendo todas las aristas
+de la caja ampliada, se compara con la propuesta y se exige que quede en
+el Gram de lado 64. El exterior que queda fuera de ese recorrido tiene h=0 y un
+incremento analítico acotado; la guarda trigonométrica prueba allí el mismo
+suelo positivo a0. Así no se sustituye un Hessiano de caja por el infinito.
+
+2. Inversa indefinida sin una condición falsa sobre el bloque cruzado
+
+Con v=tq+y y Jv=-tq+y, la autoadjunción da exactamente
+
+ <Hv,Jv> = -t^2 <Hq,q> + <Hy,y> >= min(a,m)||v||X^2.
+
+Los términos cruzados se cancelan antes de estimarlos. Lax--Milgram para
+JH da la inversa de H con norma <=1/min(a,m). El complemento positivo y
+el Schur escalar negativo dan índice exactamente uno. No se necesita ni
+se ha usado ||P_YHq||^2<am. La brecha es del operador de Riesz en X; no es
+una supuesta brecha positiva del laplaciano en l2 de vértices.
+
+Si delta+rho^2/2<=min(a,m)rho y rho<min(a,m), Newton congelado es una
+contracción de la bola CERRADA completa. El índice y la inversa persisten
+porque las dos cotas diagonales pierden como máximo rho, usando Lambda=1.
+El supuesto q negativo no se presenta como un autovector exacto.
+
+3. Media nula, interfaz y residual exterior
+
+residual_mean.txt contiene la derivación detallada, y
+residual_tail_lemma.tex una formulación compacta incorporable al suplemento.
+
+El array h es cero en su borde y se extiende por cero. La fuerza se evalúa
+en una caja B de lado b=n+2 usando una caja de fases de lado n+4. Cada
+vértice de B tiene sus cuatro vecinos presentes. El cambio de flujo
+sin(D(phi+h))-sin(Dphi) es compacto y ambos extremos de cualquier enlace
+no nulo están dentro de B. Su divergencia suma exactamente cero. La fuerza
+del dipolo puro es impar por reflexión y->-y y también suma cero en B.
+Esto prueba la media nula aun para la silla asimétrica: no se deduce del
+diagnóstico de imparidad de h ni de un intervalo que sólo contenga cero.
+
+La parte finita está acotada por
+
+ ||D_Nu||2 + (b/2)||F_B-L_Nu||2.
+
+No se impone media a la propuesta u. La constante b/2 procede de la brecha
+Neumann >=4/b^2 y se aplica después de probar la media de F_B.
+
+Para L=12,a=6,S=b/2+1 y chi=S/(S-a-2), la parte exterior es a lo sumo
+
+ (64sqrt(3)/5) L chi^5/(S-1)^(5/2)
+ +(32sqrt(3)/9) L^3 chi^7/(S-1)^(9/2).
+
+Se obtiene conservando la cancelación de los dos enlaces opuestos en
+sin(t)-t: |g(p)-g(m)|<=sup|g'| |p-m| da O(L^3/r^7), frente a una estimación
+cúbica separada que sólo daría O(r^-6). La armonicidad cancela el término
+lineal de segundo orden y deja O(L/r^5). Las fuerzas de vértices reflejados
+se representan por caminos verticales; sus normas duales y las sumas de
+capas reproducen EXACTAMENTE los coeficientes y potencias del código.
+S>a+2 y los halos son suficientes. El campo dipolar neutro pertenece al
+cierre de gradientes compactos y tiene energía finita; una corrección
+compacta y después una corrección en X conservan estas propiedades.
+
+4. Energía de la silla y empalme de Hermite
+
+La cota simétrica del error de energía en la silla es necesaria: no se
+conoce el signo de E(s)-E(s_hat). El programa utiliza correctamente
+
+ epsilon_s <= min(rho^2/2, delta*rho/2 + rho^3/12).
+
+El coeficiente 1/12 se obtiene restando el Hessiano en el punto medio en
+la identidad trapezoidal con derivada final cero. No debe sustituirse por
+una estimación de mínimo que presuponga Hessiano positivo.
+
+Para un nodo explícito c, r>=||c-s||X y g(t)=E(s+t(c-s)), la estacionariedad
+da g'(0)=0. El resto de Hermite tiene signo t^2(t-1), de modo que
+
+ g(t) <= E(s)+t^2(E(c)-E(s)) + r^3 t^2(1-t)/6.
+
+Si E(c)+r^3/6<E(s), todo el segmento salvo s está estrictamente por debajo
+de E(s). Éste es el signo y coeficiente del código; evita un coste constante
+positivo junto a s. El radio calculado incluye ||c-s_hat|| más rho. El
+comparador de puntos suma la diferencia COMPLETA de h de lado 4096, h de lado 2048 y z de lado 256,
+extendida por cero, incluidos sus enlaces de interfaz.
+
+El q firmado y la desigualdad R(|p|-rho)>S(dist+rho), |p|-rho>S,
+aseguran que cada rayo llega a la cara longitudinal de signo correspondiente
+antes de tocar una pared lateral. En la caja S=1e-5,R=1e-3, la convexidad
+transversal y la concavidad reducida justifican las dos componentes locales
+del subnivel estricto. No se afirma que sigan distintas fuera de la caja.
+
+5. Caminos completos y extremos físicamente uniformes
+
+Para z compacto, el incremento exacto de energía es
+
+ sum_e [cos(Dphi_ref)*(1-cos Dz)+sin(Dphi_ref)*sin Dz].
+
+El signo del término seno es positivo. El borde cero de todos los nodos
+incluye todo enlace con Dz o con D(z1-z0) no nulo. Los enlaces que salen
+de la caja no cambian. El Hessiano global >=-I da para CADA segmento
+
+ max E((1-t)u+tv) <= max(E(u),E(v)) + ||v-u||X^2/8.
+
+Así se controlan todos los tiempos, no sólo una malla de nodos. Una
+variable máxima inicializada a cero sólo sobreestima cuando una pierna
+entera tiene energías relativas negativas; no es un falso éxito.
+
+La pierna de retorno comienza exactamente en la referencia por bytes cero,
+y su otro extremo alimenta el comparador de empalme. La pierna terminal
+alimenta su primer extremo al mismo comparador. El puente de la referencia
+al mínimo exacto queda en la bola de Hessiano positivo (rho_m<c_m), de modo
+que su energía no supera E(ref), estrictamente inferior a E(s). Las
+identidades concretas de bytes son obligaciones del supervisor, no se
+infieren de igualdad aproximada de estados o de cargas.
+
+Al final, los senos/cosenos y la rama real determinan un entero por enlace;
+la identidad de fase hace que ese número sea matemáticamente entero, y su
+intervalo lo aísla. Se integra y se verifican TODOS los enlaces de la caja
+y el borde cero del entero. El corte crudo del dipolo sólo ocupa el segmento
+entre vórtices, dentro de la caja. Fuera, el incremento crudo está acotado
+por 12/(N/2-8)^2+2Hfar<pi, incluida la interfaz y las plaquetas omitidas.
+Por tanto no hay giros exteriores pendientes. El entero compacto se
+extiende por cero y eta=u-2pi*n tiene todos sus incrementos en (-pi,pi).
+El camino 2pi*n+(1-t)eta es continuo en X y cada energía de enlace decrece.
+
+Los datos fijos verifican incluso n=0, aunque el argumento general sólo
+necesita llegar a algún levantamiento uniforme de K. La ruta literal
+full_annihilation adicional es un control suplementario; la altura exacta
+E(s) procede de las dos piernas y los empalmes de Hermite, no de exigir que
+esa otra ruta literal pase por el punto crítico implícito.
+
+6. Contraste racional separado
+
+check_scalar_implications.py vuelve a calcular con Fraction, sin importar
+los checkers originales, las consecuencias numéricas de los outputs locales.
+El resultado sobre los outputs archivados es explícitamente CONDICIONAL.
+Los valores exactos y hashes están en scalar_implications_archived.json.
+Como orientación decimal, no como sustituto de sus racionales:
+
+ - margen de invariancia Newton: aproximadamente 6.82e-13;
+ - brecha inversa de la silla exacta: mayor que 0.057100699;
+ - exceso lateral de la caja: aproximadamente 1.901e-8;
+ - márgenes Hermite: aproximadamente 1.12927e-4 y 8.06003e-5;
+ - márgenes de las piernas bajo la silla: aproximadamente 4.23214e-5 y 4.82742e-5.
+
+La cota superior recalculada usando la brecha del mínimo deducida de sus
+propios c,rho,delta es aproximadamente 0.0057011579173, menor que 0.00570116.
+El original usa una cota de error del mínimo ligeramente más holgada; su
+conclusión también queda estrictamente dentro del decimal anunciado.
+
+7. Qué permite y qué no permite concluir
+
+Con las premisas intervalares auténticas y las identidades de datos, esta
+cadena construye un camino continuo m->K con altura exactamente E(s)-E(m)
+y dos empalmes a lados locales opuestos de la silla. Esa es una afirmación
+variacional. Ni una órbita heteroclínica, ni una tasa estocástica, ni el
+flujo local en vértices se deducen de ella. Tampoco excluye por sí sola un
+camino global más barato: para eso se necesitan separación y optimalidad.
+
+La revisión no valida una familia arbitraria de potenciales, separaciones
+o configuraciones XY, y no decide prioridad bibliográfica. Los contraejemplos
+genéricos de NaN y serialización del backend requieren la revisión numérica
+paralela; no se declaran resueltos por estas demostraciones analíticas.
+
+Comando para contrastar una salida fresca cuando esté completa:
+ python3 check_scalar_implications.py --results /ruta/fresh_connection \
+   --output scalar_implications_fresh.json

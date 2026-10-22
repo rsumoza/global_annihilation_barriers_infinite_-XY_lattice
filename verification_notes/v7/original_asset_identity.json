@@ -1,0 +1,23 @@
+[
+  {
+    "item": "S2",
+    "status": "PASS",
+    "path": "/workspace/scratch/67c0f31502e4/release_assets/XY_Separacion_Global_Reproducible_2026-10-19.zip",
+    "bytes": 228006035,
+    "sha256": "47eaf4886bc10b7bbb7ef259c44bfef9134bf3402920594ca6e20cd87235cedc"
+  },
+  {
+    "item": "S3",
+    "status": "PASS",
+    "path": "/workspace/scratch/67c0f31502e4/release_assets/XY_Conexion_Global_Reproducible_2026-10-19.zip",
+    "bytes": 441730856,
+    "sha256": "3a4163d8b24c21f95acbdf502ceaed46e967180c21abb363d3436ae5e2afb042"
+  },
+  {
+    "item": "S4",
+    "status": "PASS",
+    "path": "/workspace/scratch/67c0f31502e4/release_assets/XY_Optimalidad_Extension_Reproducible_2026-10-19.zip",
+    "bytes": 59642630,
+    "sha256": "42034c997678fa511ff261667ccb18edceee6d6bb05e543ddb6604f82958615d"
+  }
+]

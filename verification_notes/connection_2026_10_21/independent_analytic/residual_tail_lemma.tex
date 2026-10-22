@@ -1,0 +1,104 @@
+% New independent analytic audit, 21 October 2026.
+% Self-contained insertion; adapt labels/macros only when integrating.
+\subsection{A reflected-force estimate for the neutral reference}
+
+The following argument verifies the exterior residual formula used by the
+critical-point checker. Work on $(\mathbb Z+1/2)^2$, center the neutral
+reference between the two defects, and set
+\[
+ \varphi(x,y)=\arg(x+a+\mathrm i y)-\arg(x-a+\mathrm i y),\qquad L=2a.
+\]
+Use the real branch tending to zero outside the finite cut
+$[-a,a]\times\{0\}$. The phase field is globally unambiguous for the cosine
+interaction. Let $f_\theta=D^*\sin(D\theta)$ denote its vertex force.
+For an integer $S>a+2$, put
+\[
+ B_S=\{v:\|v\|_\infty\le S-3/2\},\qquad
+ \chi=\frac{S}{S-a-2}.
+\]
+Suppose $h$ is compact and every bond where $D_eh\ne0$ has both endpoints
+in $B_S$. Write $f_B=\mathbf1_{B_S}f_{\varphi+h}$.
+
+\begin{lemma}[Finite mean and explicit residual tail]
+The finite load $f_B$ has exactly zero mean, and
+\[
+ \|f_{\varphi+h}-f_B\|_{\mathcal X^*}
+ \le \frac{64\sqrt3}{5}\frac{L\chi^5}{(S-1)^{5/2}}
+      +\frac{32\sqrt3}{9}\frac{L^3\chi^7}{(S-1)^{9/2}}.
+\]
+If $b=2S-2$ is the side of $B_S$ and $u$ is any finite proposal, then
+\[
+ \|f_B\|_{\mathcal X^*}
+ \le\|D_Nu\|_2+\frac b2\|f_B-L_Nu\|_2,
+\]
+where $L_N$ and $D_N$ count only bonds internal to $B_S$. No normalization
+of the mean of $u$ is required.
+\end{lemma}
+
+\begin{proof}
+Set $j_e=\sin D_e(\varphi+h)-\sin D_e\varphi$. Its support is finite,
+and both endpoints of every nonzero flux bond lie in $B_S$. Thus
+$\sum_{B_S}D^*j=0$ by exact endpoint cancellation. The pure-reference force
+is odd under $R(x,y)=(x,-y)$, since its phase is conjugated by that
+reflection. The symmetric square $B_S$ therefore has
+$\sum_{B_S}f_\varphi=0$, proving the assertion for $f_B$. This argument
+does not require $h$ to be odd and does not replace algebraic mean zero
+by an interval test containing zero.
+
+Let $u_*$ solve $L_Nu_*=f_B$ with the same mean as $u$. The finite Neumann
+comparison and $\lambda_1(L_N)=4\sin^2(\pi/(2b))\ge4/b^2$ give
+\[
+ \|f_B\|_{\mathcal X^*}
+ \le\|D_Nu_*\|_2
+ \le\|D_Nu\|_2+\lambda_1(L_N)^{-1/2}\|f_B-L_Nu\|_2,
+\]
+which proves the finite bound.
+
+For the exterior estimate, subtracting the complex derivatives of the two
+argument fields, or integrating them over the segment of length $L$,
+gives
+\[
+ |\partial_i^r\varphi(z)|\le r! L/d^{r+1},\qquad r\ge1,
+\]
+whenever the differentiation region stays at distance at least $d$ from
+the cut. Also $\Delta\varphi=0$ there. At a vertex $v$, put
+$p_i=\varphi(v+e_i)-\varphi(v)$ and
+$m_i=\varphi(v)-\varphi(v-e_i)$. Fourth-order Taylor estimates imply
+\[
+ |L_\infty\varphi(v)|\le4L/d^5.
+\]
+For $g(t)=\sin t-t$, the bound $|g'(t)|\le t^2/2$, together with
+$|p_i|,|m_i|\le L/d^2$ and $|p_i-m_i|\le2L/d^3$, yields
+\[
+ |g(p_i)-g(m_i)|\le L^3/d^7,
+ \qquad |f_\varphi(v)|\le4L/d^5+2L^3/d^7.
+\]
+The opposite-bond difference is retained before taking absolute values.
+
+The exterior shells satisfy $\|v\|_\infty=k-1/2$ with $k\ge S$; each
+has at most $8k$ vertices. The segments involved in the unit differences
+have distance at least $k-a-3/2\ge k-a-2$ from the cut, and
+$(k-a-2)^{-r}\le\chi^r k^{-r}$. Pair each exterior vertex with $y>0$
+with $Rv$. The load $\delta_v-\delta_{Rv}$ has dual norm at most
+$\sqrt{2|y|}\le\sqrt{3k}$, by integration along the vertical lattice
+path between its endpoints. That path is allowed to enter $B_S$.
+Since $h$ changes no exterior force, Minkowski's inequality gives
+\begin{align*}
+ \|f_{\varphi+h}-f_B\|_{\mathcal X^*}
+ &\le32\sqrt3 L\chi^5\sum_{k\ge S}k^{-7/2}
+       +16\sqrt3 L^3\chi^7\sum_{k\ge S}k^{-11/2}\\
+ &\le\frac{64\sqrt3}{5}\frac{L\chi^5}{(S-1)^{5/2}}
+       +\frac{32\sqrt3}{9}\frac{L^3\chi^7}{(S-1)^{9/2}}.
+\end{align*}
+The convergent bound also justifies the exterior load series in
+$\mathcal X^*$; its equality with the vertex force is first checked on
+compact tests and then extended by density. Bounding the number of upper
+half-shell vertices by $8k$ only overestimates their number.
+\end{proof}
+
+In the checker, $m=n+4$, $b=n+2$, $S=b/2+1$ and $a=6$.
+The zero boundary of the embedded $n\times n$ correction leaves enough
+halo vertices that every changed flux bond and both endpoints lie inside
+$B_S$. The force accumulation includes the four neighbors of each
+vertex of $B_S$; it does not discard its core--exterior interface fluxes.
+Thus $\chi=S/(S-8)$ is exactly the ratio used in the implemented tail.

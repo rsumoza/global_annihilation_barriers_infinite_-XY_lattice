@@ -1,0 +1,406 @@
+--- v5/main.tex
++++ v6/main.tex
+@@ -81,11 +81,11 @@
+     Email: \href{mailto:rsumoza@dc.uba.ar}{\nolinkurl{rsumoza@dc.uba.ar}}.
+     ORCID: \url{https://orcid.org/0009-0003-3554-4876}.}}
+ \date{21 October 2026}
+-\hypersetup{pdftitle={Certified global annihilation barriers in an infinite XY lattice},pdfauthor={Rodolfo Leonardo Sumoza Matos},pdfsubject={Global barrier certification and coupling robustness}}
++\hypersetup{pdftitle={Certified global annihilation barriers in an infinite XY lattice},pdfauthor={Rodolfo Leonardo Sumoza Matos},pdfsubject={Global barrier certification, effective local input class, and coupling robustness}}
+ \begin{document}
+ \maketitle
+ \begin{abstract}
+-A saddle and a numerical descent do not by themselves establish a globally optimal escape route. We certify the annihilation barrier of a neutral dipole at separation twelve in the exact-cosine XY model on the infinite square lattice. Admissible paths are strongly continuous in the homogeneous energy space and end at any physical uniform phase lift. A finite atlas, together with rigorous control of its infinite-dimensional transverse fibers, separates a local minimum from every endpoint. Exact-saddle caps and a validated upper path identify the barrier as the energy difference between an asymmetric index-one saddle and the local minimum. In unit-coupling normalization, the barrier lies strictly between 0.00567867 and 0.00570116. We formulate reusable a posteriori tests for signed-bond coercivity, full dual residuals, and complete boundary coverage. An explicit lattice Green projection estimate gives inverse-radius tails for the critical states and the certified path. We also prove quantitative robustness under arbitrary summable coupling perturbations of total norm at most 0.002. The minimum and two distinct index-one saddles persist, while the global barrier remains positive and changes by at most twice the perturbation norm. The continued saddles are not yet identified as perturbed minimax realizers. The result combines a lower bound over the full admissible path class with a matching upper construction, effective exterior estimates, and a uniform perturbation theorem. Frozen sources and a fresh execution record document the computational certificate.
++A numerical saddle does not establish a globally optimal escape route. We certify the annihilation barrier of a neutral dipole at separation twelve in the exact-cosine XY model on the infinite square lattice. Admissible paths are strongly continuous in the homogeneous energy space and end at any physical uniform phase lift. A finite atlas with rigorous control of infinite-dimensional transverse fibers separates a local minimum from every endpoint. Exact-saddle caps and a validated upper path identify the barrier with an asymmetric index-one saddle height relative to the minimum. In unit-coupling normalization, the barrier lies strictly between 0.00567867 and 0.00570116. Reusable a posteriori tests cover signed-bond coercivity, full dual residuals, and complete boundary coverage. An explicit lattice Green estimate controls critical-state and path tails. Subcritical connections then reuse the global certificate on an infinite class of noncompact initial perturbations with prescribed block tails. We prove termination of barrier enclosures at any requested precision on this class, without claiming a general search implementation. Under summable coupling perturbations of total norm at most 0.002, the minimum and two index-one saddles persist and the global barrier remains positive; the continued saddles are not identified as perturbed minimax realizers. Frozen sources and a fresh execution record document the fixed global certificate. Completeness for arbitrary XY configurations remains open.
+ \end{abstract}
+ \begin{keywords}
+ XY lattice, annihilation barrier, computer-assisted proof, index-one saddle, a posteriori verification, lattice Green function
+@@ -99,6 +99,7 @@
+ \input{sections/certificate}
+ \input{sections/instance}
+ \input{sections/green}
++\input{sections/local_class}
+ \input{sections/robustness}
+ \input{sections/discussion}
+ \appendix\input{sections/green_appendix}
+--- v5/sections/introduction.tex
++++ v6/sections/introduction.tex
+@@ -15,7 +15,17 @@
+ 
+ The geometric argument becomes reusable through \cref{thm:certificate}. Its hypotheses are a finite collection of rigorous inequalities, together with analytic formulas controlling the exterior. The conditions cover full dual residuals, signed-bond coercivity, saddle index, exact cutting planes, transverse fibers, all chart faces and seams, and endpoint attachment of the upper path. A certificate that fails one test is inconclusive; it does not prove instability or absence of a lower route. The verification format permits adaptation to another instance without asserting that the search for a successful certificate always terminates.
+ 
+-Two analytic extensions complement this fixed example. First, \cref{thm:green} gives an explicit Fourier estimate for the orthogonal projection onto lattice gradients. Combined with the stationary equation, it yields an inverse-radius energy tail. Its constants also control the already validated upper path. Second, \cref{thm:robustness} treats the infinite-dimensional family of interactions
++Three analytic extensions complement this fixed example. First, \cref{thm:green} gives an explicit Fourier estimate for the orthogonal projection onto lattice gradients. Combined with the stationary equation, it yields an inverse-radius energy tail. Its constants also control the already validated upper path. Second, \cref{thm:local-class,thm:class-termination} reuse the fixed
++communication height for an explicit infinite class of initial fields.
++The class is generated by compact rational blocks with a geometric
++norm budget and a prescribed spatial support sequence. It allows
++noncompact perturbations without imposing symmetry. A subcritical
++connection to $m_0$ transfers the full path-space certificate, and a
++constructive energy enclosure terminates for every rational accuracy.
++This is a consequence of the existing global certificate, rather than a
++search for all mechanisms. The general refinement procedure is proved;
++the new code checks its constants and representative finite prefixes.
++Third, \cref{thm:robustness} treats the infinite-dimensional family of interactions
+ \begin{equation}\label{eq:intro-perturbation}
+  E_b(\theta)=\sum_e(1+b_e)(1-\cos D_e\theta),\qquad
+  b\in\ell^1(\mathcal E),\quad\nrm b_1\le 1/500.
+@@ -40,10 +50,10 @@
+ 
+ Far-field estimates and boundary approximations were developed by Ehrlacher, Ortner, and Shapeev \cite{Ehrlacher2016}. Braun, Hudson, and Ortner \cite{Braun2022} obtained systematic far-field expansions using continuum correctors and discrete multipoles; higher-order boundary conditions were subsequently developed by Braun, Ortner, Wang, and Zhang \cite{Braun2025} and by Wei, Braun, Wang, and Zhang \cite{Wei2026}. For the present certificate we require explicit constants in matching bond conventions for the critical states and for an entire upper path.
+ 
+-The contribution is therefore a specific conjunction: the exact cosine interaction on the infinite square lattice; unrestricted strong energy-space escape paths; a matched global lower and upper barrier bound; checkable hypotheses exposing the infinite-dimensional reduction; and a quantitative perturbation theorem with effective tails in the same coupling class. We do not infer from this comparison that earlier methods are incapable of adaptation, nor assert universal bibliographic priority.
++The contribution is therefore a specific conjunction: the exact cosine interaction on the infinite square lattice; unrestricted strong energy-space escape paths; a matched global lower and upper barrier bound; checkable hypotheses exposing the infinite-dimensional reduction; a terminating reuse procedure on a specified infinite input class; and a quantitative perturbation theorem with effective tails in the same coupling class. We do not infer from this comparison that earlier methods are incapable of adaptation, nor assert universal bibliographic priority.
+ 
+ \subsection{Verification record and organization}
+ 
+ The numerical theorem uses frozen proposals and rigorous verification, with the three source archives indexed in the supplementary record. A fresh execution of the standard supervisor reproduced every phase it invokes, without using cached validated outputs as mathematical premises. This is a reproduction of the same verification software, supported by analytic review; it is not an independent interval implementation or a proof-assistant formalization. The reproducibility record distinguishes these levels of evidence.
+ 
+-\Cref{sec:model} fixes the topology and normalization. \Cref{sec:certificate} gives the reusable a posteriori theorem, and \cref{sec:instance} records its verified instance. \Cref{sec:green,sec:robustness} prove the effective-tail and robustness extensions. \Cref{sec:discussion} discusses algorithmic scope and the next certification problem.
++\Cref{sec:model} fixes the topology and normalization. \Cref{sec:certificate} gives the reusable a posteriori theorem, and \cref{sec:instance} records its verified instance. \Cref{sec:green,sec:local-class,sec:robustness} prove the effective-tail, terminating local-class, and coupling-robustness extensions. \Cref{sec:discussion} discusses algorithmic scope and the next certification problem.
+--- v5/sections/local_class.tex
++++ v6/sections/local_class.tex
+@@ -0,0 +1,228 @@
++\section{A terminating certificate on an explicit infinite input class}
++\label{sec:local-class}
++
++The global theorem can be reused without searching for a new separator
++when an input is connected to $m_0$ below its certified communication
++height. This section specifies an infinite class with a quantitative
++tail and a terminating enclosure procedure. It concerns the homogeneous
++interaction $b=0$. It neither identifies the continued saddles in a
++perturbed interaction as minimax realizers nor supplies a complete search
++for arbitrary configurations.
++
++Define the absolute communication height
++\[
++ c(u)=\inf_{\gamma(0)=u,\ \gamma(1)\in\K}
++                  \max_{0\le t\le1}\E(\gamma(t))
++      =\E(u)+B_0(u),
++\]
++with the path class of \cref{eq:barrier}. All norms below are in $\X$.
++
++\begin{lemma}[Subcritical connection]\label{lem:subcritical}
++Suppose $c(m)=h$, $\E(m)<h$, and a continuous path from $m$ to $u$
++has maximum energy $a<h$. Then $c(u)=h$.
++\end{lemma}
++\begin{proof}
++Concatenation with an arbitrarily near-optimal path from $m$ gives
++$c(u)\le\max(a,h)=h$. If $c(u)<h$, a path from $u$ to $\K$ with
++maximum strictly below $h$ exists by the definition of the infimum.
++Prepending the given connection would contradict $c(m)=h$.
++No compactness or attainment assertion for a new minimax is used.
++\end{proof}
++
++\begin{theorem}[Reuse on a full energy ball]\label{thm:local-class}
++Let $m_0,s_+,h$ be the exact states and height in
++\cref{thm:instance}, and put $r=1/20$. For every
++$u\in\overline B_\X(m_0,r)$,
++\begin{equation}\label{eq:class-height}
++ c(u)=h,\qquad B_0(u)=h-\E(u),\qquad
++ 0.00442867<B_0(u)<0.00570116.
++\end{equation}
++These inputs have the same two plaquette charges as $m_0$ and no
++additional charges. They need not themselves be stationary.
++For the specified flow \eqref{eq:flow} with $b=0$, the ball is invariant
++and
++\begin{equation}\label{eq:class-flow}
++ \nrm{u(t)-m_0}\le
++ e^{-43t/2000}\nrm{u(0)-m_0}.
++\end{equation}
++\end{theorem}
++\begin{proof}
++Stationarity and $H\preceq I$ give, for $v=u-m_0$ and $0\le t\le1$,
++\[
++ \E(m_0+tv)\le\E(m_0)+\tfrac12t^2\nrm v^2
++ \le\E(m_0)+\frac1{800}<h.
++\]
++The last strict inequality uses $h-\E(m_0)>0.00567867$.
++\Cref{lem:subcritical} proves the height identity. The exact minimum
++has coercivity greater than $57/1000$. With $\tau=71/100>\Lambda$,
++throughout the ball
++\begin{equation}\label{eq:class-mu}
++ H(u)\succeq\left(\frac{57}{1000}-\tau r\right)I
++            =\frac{43}{2000}I.
++\end{equation}
++Thus $\E(u)\ge\E(m_0)$, proving both barrier bounds since
++$0.00567867-1/800=0.00442867$. The global principal-branch margin
++at $m_0$ exceeds $1.1$, while every bond changes by at most
++$r/\sqrt2<1.1$. Charges are therefore preserved along the segment.
++The gradient is globally Lipschitz. Pairing the evolution with $u-m_0$
++and integrating \eqref{eq:class-mu} along a segment proves invariance
++of the ball and \eqref{eq:class-flow}.
++\end{proof}
++
++\subsection{Inputs with a tail imposed by their construction}
++
++Use the integer vertex boxes $\Lambda_R$ and projections $\Pi_R$ of
++\cref{sec:green}. Set $R_0=4098$, $R_n=2^nR_0$, and
++$w_n=r2^{-(n+1)}$. An input program supplies a compact rational field
++$q_n$ supported in $\Lambda_{R_n}$ for every requested integer $n\ge0$.
++Define
++\begin{equation}\label{eq:class-blocks}
++ v_n=\frac{w_n}{\max\{1,\nrm{q_n}^2\}}q_n,\qquad
++ v=\sum_{n=0}^{\infty}v_n,\qquad u=m_0+v.
++\end{equation}
++The norm squared is an exact rational full-lattice bond sum, including
++all bonds crossing the support boundary. The program is required to
++return a finite array for every requested $n$; no decision of totality
++for arbitrary programs is asserted. Call the resulting class
++$\mathcal C_{\rm loc}$. It permits arbitrary rational block shapes
++and signs, without symmetry assumptions.
++
++\begin{proposition}[Certified localization]\label{prop:class-tail}
++Every input \eqref{eq:class-blocks} belongs to the ball in
++\cref{thm:local-class}. Its partial sums $p_N=\sum_{n=0}^Nv_n$ satisfy
++\begin{equation}\label{eq:class-tail}
++ \supp p_N\subset\Lambda_{R_N},\qquad
++ \nrm{v-p_N}\le r2^{-(N+1)}=\frac{rR_0}{2R_N}.
++\end{equation}
++In particular, with $C_*=2.72\times10^{13}$,
++\begin{equation}\label{eq:class-projection}
++ \nrm{(I-\Pi_{2R_N})u}\le
++ \frac{C_*+rR_0/2}{R_N}.
++\end{equation}
++\end{proposition}
++\begin{proof}
++For $t\ge0$, $t/\max(1,t^2)\le1$. Hence $\nrm{v_n}\le w_n$;
++the geometric series gives $\nrm v\le r$ and
++\eqref{eq:class-tail}. Since $p_N\in\X_{2R_N}$, best approximation
++gives the same bound for $(I-\Pi_{2R_N})v$. The critical-state bound
++\eqref{eq:green-robust-tail}, applied with $b=0$ on its sequence
++$R_N=4098\,2^N$, gives the remaining term in
++\eqref{eq:class-projection}.
++\end{proof}
++
++The class has infinitely many independently variable spatial components.
++For example, choose $q_n=a_n\delta_{(R_n,0)}$ with rational
++$|a_n|\le1/2$. Then $\nrm{q_n}^2=4a_n^2\le1$, the normalization denominator
++is one, and nonzero infinitely many $a_n$ give a
++noncompact perturbation. The tail bounds are consequences of the input
++format, rather than conclusions guessed from finite exterior samples.
++Only the energy ball is proved invariant under the flow; preservation
++of this particular block representation or its spatial tail rate is
++not needed here and is not asserted.
++
++\subsection{Effective critical states and finite energy enclosures}
++
++A name for $x\in\X$ returns compact rational $x_\delta$ with
++$\nrm{x-x_\delta}\le\delta$ for every positive rational $\delta$.
++The analytic reference and its exterior estimates in the frozen data
++provide such names for the candidate states. Finite energy-orthogonal
++projections are finite Dirichlet systems; their coefficients and the
++reference's arctangent values can be enclosed to any rational precision.
++Their projection tails tend to zero. Compact dyadic corrections preserve
++this property.
++
++For completeness, the nonlinear correction does not require an infinite
++inverse as an algorithmic primitive. Write $a_e^\sharp$ for the Riesz
++representative of bond evaluation. For every compact rational field $p$,
++\begin{equation}\label{eq:class-riesz}
++ \nrm{a_e^\sharp-p}^2
++       =\frac12-2D_ep+\nrm{Dp}_2^2.
++\end{equation}
++Dirichlet projections of $a_e^\sharp$ on increasing boxes are rational
++and converge in $\X$, by density. Formula \eqref{eq:class-riesz}
++is an exact stopping test for their error. If
++$\nrm{x-x_\delta}\le\delta$, then
++$\nrm{F(x)-F(x_\delta)}\le\delta$. The force at the compact field
++$x_\delta$ is a finite sum of these Riesz vectors with computable sine
++coefficients. For compact $z$, $H(x)z$ similarly uses only the finitely
++many bonds on which $D_ez\ne0$, with computable cosine coefficients.
++General effective vectors follow by $\nrm{H(x)}\le1$ and density.
++Thus $F$ and the Hessian action are effective in the same norm.
++
++Let $A=H(\widehat\theta)$ for either frozen minimum or saddle candidate.
++The audited bounds imply $\nrm A\le1$ and
++$\nrm{A^{-1}}\le1/\gamma$ with $\gamma=69/1000$. Spectral calculus gives
++\begin{equation}\label{eq:class-inverse}
++ A^{-1}f=\sum_{k=0}^{M}A(I-A^2)^kf+\mathcal R_Mf,\qquad
++ \nrm{\mathcal R_Mf}\le
++ \frac{(1-\gamma^2)^{M+1}}{\gamma}\nrm f.
++\end{equation}
++Indeed, $A$ is self-adjoint and its spectrum has modulus between
++$\gamma$ and one; summing the scalar geometric identity proves the
++formula also at an index-one candidate. Its finite polynomials can be
++computed with the preceding oracles, and the remainder tends to zero.
++
++The frozen Newton map $T(z)=z-A^{-1}F(\widehat\theta+z)$ is a
++contraction on its original certified correction ball. Its self-map
++property uses the original constants in
++\cref{lem:cert-newton}; substituting a weaker common constant into that
++self-map test is unnecessary. Since both correction radii are less than
++$1/50$, \eqref{eq:basic-bounds} and the displayed common inverse bound
++give contraction factor less than $1/4$. Exact iterates from zero
++therefore have distance at most $4^{-j}/50$ from the correction.
++Computing a finite composition to any prescribed additional error is
++effective by \eqref{eq:class-inverse}. Thus the exact states $m_0,s_+$
++have effective names. This is a constructive proof of computability,
++not an assertion that the original finite-precision supervisor already
++implements arbitrary-precision refinement.
++
++\begin{theorem}[Termination on $\mathcal C_{\rm loc}$]
++\label{thm:class-termination}
++Given an input program of \eqref{eq:class-blocks} and a positive rational
++$\varepsilon$, there is a procedure using finitely many input blocks,
++finite linear systems, rational operations, and rigorously enclosed
++trigonometric evaluations which returns rational $L,U$ such that
++\begin{equation}\label{eq:class-enclosure}
++ L\le B_0(u)\le U,\qquad U-L<\varepsilon.
++\end{equation}
++It uses the fixed global certificate once and does not search for a new
++minimax saddle. No uniform practical complexity bound is asserted.
++\end{theorem}
++\begin{proof}
++The preceding construction gives compact rational names for $s_+$
++and, using \eqref{eq:class-tail}, for $u=m_0+v$.
++Both critical states have norm at most $M_*=6008$ by the existing
++common Green data. Thus $\nrm u\le M_*+r$.
++For an approximation $x_\delta$ to an exact field $x$, Taylor expansion
++at $x$ and $\nrm{F(x)}\le\nrm x$ give
++\[
++ |\E(x_\delta)-\E(x)|\le\nrm x\,\delta+\tfrac12\delta^2.
++\]
++Choose
++\[
++ \delta=\min\left\{1,
++ \frac{\varepsilon}{8(2M_*+r+1)}\right\}.
++\]
++Compute the two names to this accuracy and enclose each finite bond
++energy sum with radius at most $\varepsilon/16$, using rational Taylor
++remainders for cosine. The error in the difference of the exact and
++compact energies is at most
++$(2M_*+r)\delta+\delta^2\le\varepsilon/8$.
++Adding the two finite-sum errors gives a rational interval of radius
++at most $\varepsilon/4$. Its width is at most
++$\varepsilon/2<\varepsilon$. By \cref{thm:local-class} it encloses
++$\E(s_+)-\E(u)=B_0(u)$. Each requested accuracy entails finitely many
++blocks and oracle operations, and each refinement loop has a proven
++vanishing error. This proves termination.
++\end{proof}
++
++The compact-name tolerance can be divided between the name of $m_0$
++and the block tail; there is no need to materialize the very large
++projection radius in \eqref{eq:class-projection}. The latter is a
++separate spatial localization guarantee. The supplementary rational
++checker verifies the constants, representative finite block prefixes,
++and error budgets. The general critical-name and arbitrary-input
++enclosure procedure above is proved, but is not advertised as an
++executed general software interface. The substantive global certificate
++remains \cref{thm:instance}; subcritical concatenation is its elementary
++reuse principle, not an independent claim of a new universal method.
+--- v5/sections/discussion.tex
++++ v6/sections/discussion.tex
+@@ -2,7 +2,22 @@
+ 
+ The a posteriori theorem separates a finite verification task from the search for suitable input data. A successful certificate proves a statement about every admissible escape path in an infinite space. It need not enumerate those paths, classify all critical points, or make the separator invariant under a dynamics. Its reusable content is the collection of explicit inequalities and the requirement that their boundary ledger cover the full continuum.
+ 
+-This does not give a practical algorithm for arbitrary XY configurations. An infinite input must come with an effective representation and tail bounds; finite samples cannot certify arbitrary unseen exterior data. Even for compact inputs in the certified local class, a complete cubical search on a large truncation has exponential dimension dependence. The inverse-radius estimate improves the rigorous localization rate substantially, but its current norm majorants still yield impractical truncation sizes. The global barrier in \cref{thm:instance} was obtained from the tailored atlas and analytic exterior, not from materializing those enormous boxes.
++\Cref{thm:class-termination} gives a terminating enclosure procedure on
++$\mathcal C_{\rm loc}$ by reusing one certified communication height.
++It does not search for a new saddle or certify arbitrary input states.
++Its input format supplies effective tails and a subcritical connection.
++The fixed global chain and the new rational arithmetic checks are
++executed; the arbitrary-precision critical-name interface used in the
++constructive theorem has not been implemented as a general program.
++
++A complete algorithm for all effectively represented finite-energy XY
++configurations remains an open problem. In particular, this paper does
++not prove that every strict lower level admits a finite separator
++recognized by its verifier. Such completeness, or a different effective
++global localization theorem, would be required to justify universal
++termination. Local spectral reduction alone does not provide it.
++
++This does not give a practical search algorithm for arbitrary XY configurations. An infinite input must come with an effective representation and tail bounds; finite samples cannot certify arbitrary unseen exterior data. Even for compact inputs in the certified local class, a complete cubical search on a large truncation has exponential dimension dependence. The inverse-radius estimate improves the rigorous localization rate substantially, but its current norm majorants still yield impractical truncation sizes. The global barrier in \cref{thm:instance} was obtained from the tailored atlas and analytic exterior, not from materializing those enormous boxes.
+ 
+ For the perturbation family in \cref{eq:intro-perturbation}, the conclusion is stronger than persistence of an isolated finite-box root: it includes the global barrier estimate and tails in the same infinite-dimensional class. It is also weaker than a parameter-uniform identification of a transition saddle. The continued saddles are genuine index-one states, but \cref{thm:robustness} does not exclude a different route becoming cheaper under perturbation. To identify a change of mechanism, one must certify the competing upper paths and every relevant part of a common separating boundary over a parameter interval, and then prove the crossing of their exact critical heights. Two overlapping interval enclosures do not prove such a crossing.
+ 
+@@ -36,15 +51,17 @@
+ estimates are obtained.
+ 
+ \subsection*{Data and software availability}
+-The supplementary material prepared for submission contains the analytic
+-and reproduction record, manuscript and figure sources, arithmetic
+-checkers, and the three frozen global-verification archives named in its
+-index. The index and manifests identify the exact source snapshots and
+-verification records by SHA-256. The three original archives are necessary
+-to reproduce the global chain; the smaller manuscript-source archive
+-alone is insufficient. A separate permanent public deposit has not yet
+-been made. Its verified version-specific identifier can be added when
+-that deposit exists.
++The supplementary index identifies the exact source snapshots and
++verification records by SHA-256. The three original global-verification
++archives are necessary to reproduce the chain; the smaller manuscript
++and checker snapshot alone is insufficient. A versioned public GitHub
++release is being prepared, with source files in Git and the large frozen
++archives as release assets. Publication of that release and insertion
++of its actual URL, tag, and commit identifier remain pending in this
++draft; no public deposit or DOI is asserted. The supplement and index
++are prepared for the initial submission. External access is not assumed
++to waive SIAM's requirement to provide materials for review; any portal
++restriction must be resolved through an accepted submission route.
+ 
+ \subsection*{Declarations}
+ OpenAI ChatGPT/Codex tools were used substantively in mathematical exploration and proof drafting, code development and execution, literature retrieval and comparison, adversarial checking, and manuscript preparation. The conceptual geometric figure is generated by explicit Python code; it is not a numerical output of the certificate. These automated checks and drafting assistance do not constitute independent external peer review or proof-assistant verification. The authors assume responsibility for all content.
+--- v5/supplement/Supplementary_Reproducibility.tex
++++ v6/supplement/Supplementary_Reproducibility.tex
+@@ -22,9 +22,10 @@
+ 
+ \section{Purpose and mathematical scope}
+ 
+-Revision 5 adds the new complete execution and connection audit in
+-Section 7. Earlier records are explicitly dated. The frozen scientific
+-sources and numerical barrier are unchanged.
++Revision 6 retains the complete execution and connection audit in
++Section 7 and documents the restricted infinite input class in Section 5.
++Earlier records are explicitly dated. The frozen scientific sources and
++fixed-instance numerical barrier are unchanged.
+ 
+ This record links the inputs, executions and arithmetic checks to the
+ analytic reductions in the manuscript and the stated arithmetic assumptions.
+@@ -319,7 +320,7 @@
+ pins and repeating every dependent verification.
+ 
+ The revised Green-budget checker replaces Python assertions by explicit
+-checks that remain active under \code{python -O}; normal and optimized
++checks that remain active under \mbox{\texttt{python -O}}; normal and optimized
+ runs agree, and nonpositive tolerances are rejected. The cap arithmetic
+ also has the transparent rational lower margin $k_c\ge19/40000$, given
+ the certified transverse floor $1/25$ and radius $33/200$.
+@@ -347,13 +348,31 @@
+ 
+ \paragraph{Supplement inventory and availability.}
+ The accompanying \code{INDEX.txt} and \code{INDEX.html} describe five items:
+-S1, the manuscript and new checker snapshot; S2--S4, the three frozen
+-source archives identified above; and S5, this readable record. All three
+-frozen archives must accompany the submission because S1 alone cannot
+-reproduce the global chain. No public repository URL or persistent project
+-DOI is asserted. Distribution through the submitted supplementary snapshot
+-is the availability mechanism prepared here; any later public deposit must
+-be an actual, versioned deposit with its own verified identifier.
++S1, the manuscript and checker snapshot; S2--S4, the three frozen source
++archives identified above; and S5, this readable record. The initial
++submission package includes the index and this PDF. The planned GitHub
++distribution places the sources and checks in Git and the large archives
++in a tagged release, preserving their exact bytes and hashes. The actual
++repository URL, release tag, and commit are not yet supplied in this
++draft. S1 alone cannot reproduce the global chain. A repository link is
++not claimed to replace any material required for editorial review; if
++the portal rejects the original archives, an accepted alternative
++transfer or split-file route must be recorded before the submission is
++completed. No public deposit or DOI is asserted here.
++
++\paragraph{New infinite input class.}
++The manuscript's section on a terminating local input class proves
++reuse of the audited communication height for block-generated fields
++within energy distance $1/20$ of the certified minimum. The inputs can
++have infinitely many nonzero spatial blocks. The norm normalization,
++geometric tail, subcritical connection and energy-enclosure budgets are
++explicit. The script \code{checks/verify_infinite_class.py} checks these
++rational implications and representative finite prefixes, including
++bonds crossing their supports. It does not decide totality of an
++arbitrary input program, execute arbitrary-precision critical-state
++oracles, or discover a new global separator. Its report and negative
++controls accompany S1. Universal termination for arbitrary XY
++configurations remains open.
+ 
+ \paragraph{Source format.}
+ This companion uses the SIADS-permitted fallback: $10$-point type,

@@ -1,0 +1,76 @@
+INDEPENDENT MATHEMATICAL CHECK OF THE EDITORIAL REVISION
+20 October 2026
+Scope: revised sections/model.tex, sections/discussion.tex, and the
+pointwise oscillation argument in sections/robustness.tex.
+Original/current manuscript sources were not edited in this check.
+
+VERDICT: PASS. No new mathematical defect or altered theorem meaning was
+found in the inspected changes. No new numerical input or constant is
+needed for these explanatory additions.
+
+1. Rayleigh potential and signs
+R(v)=1/2 sum_e|D_ev|^2 is a continuous coercive strictly convex quadratic
+on X modulo constants. For fixed u, DE_b(u) is a bounded linear functional.
+The unique minimizer of R(v)+DE_b(u)[v] satisfies
+<v,w>_X=-DE_b(u)[w], hence v=-grad_X E_b(u), with the printed minus sign.
+The weak form is equivalent to D*D dotu=-D*(J sin Du), where D* is used
+distributionally; it does not assert an l2 vertex Laplacian inverse.
+Testing with dotu gives dE_b/dt=-||dotu||_X^2, with no missing factor2.
+
+2. Current-conservation interpretation
+For an oriented incidence convention consistent with D, current
+i=D dotu+J sin(Du) and Kirchhoff law D*i=0 give exactly the printed weak
+equation. Reversing every bond convention changes both relevant current
+signs and leaves the equation unchanged. With fixed boundary phases,
+velocity test functions vanish at grounded vertices; the boundary-edge
+terms are retained. Equal shunt conductances justify the unweighted
+Dirichlet metric; J modifies the supercurrent strengths, not that metric.
+The revised paragraph properly limits this realization to overdamped,
+zero-drive/noise finite arrays and defines the infinite model weakly.
+Fluctuating twists are explicitly excluded. This matches the previously
+checked Yoon2000 Eq13 without importing Eq14–15's extra variables.
+
+3. Barrier versus dynamics
+The revision fixes both energy and admissible strong-X path class before
+saying that changing mobility leaves the variational barrier unchanged.
+It makes no assertion of invariance under changing the infinite-dimensional
+topology. No heteroclinic, thermal rate, or thermodynamic BKT conclusion is
+newly claimed. The existing global barrier and local flow theorems retain
+their original scopes.
+
+4. Multipole identity and convergence
+The Green section already proves q in ell1 and gives a bounded kernel P.
+Therefore M_j^(q)=sum_y q_j(y) exists absolutely, and for fixed x every
+printed sum in
+ (Pq)_i(x)=sum_j P_ij(x) M_j^(q)
+           +sum_{j,y}[P_ij(x-y)-P_ij(x)]q_j(y)
+converges absolutely (the kernel difference is bounded). Adding/subtracting
+P_ij(x) inside the convolution proves the identity exactly. No source
+moment assumption is needed just for this identity. The discussion
+correctly requires quantitative differences/moments/tails before claiming
+an improved remainder and does not claim such an improvement here.
+The caution that zero total vortex charge does not by itself imply the
+needed nonlinear-source moment cancellations is sound.
+
+5. Complexity and proposed sharpening
+For error C_E/R<=epsilon/4 the sufficient radius is R>=4C_E/epsilon.
+C_E approximately1.60e17 is consistent with the displayed earlier rational
+constant. Radius dependence is linear in inverse error; selecting dyadic
+radii only rounds upward by at most2. A complete cubical covering has a
+separate exponential dependence on the retained dimension, which scales
+like R^2 on the square lattice. The revision correctly separates these
+two costs and does not promise an implemented/materalisable improvement.
+Averaging phase representatives need not preserve charges or a certified
+energy ceiling, so the stated no-multiphase-shortcut caveat is justified.
+
+6. Pointwise perturbation enclosures
+For every bond and every phase field,
+ 2min(b_e,0)<=b_e(1-cos D_eu)<=2max(b_e,0).
+Both end series are absolutely summable for b in ell1. Summing is valid
+without independent bond-angle choices. W_- and W_+ are enclosing bounds,
+not asserted attainable extrema. The exact enclosing interval width is
+2||b||1, hence the previously proved global barrier perturbation constant
+and all numerical robustness bounds are unchanged.
+
+No arithmetic or theorem rerun beyond the parent's existing verification
+is implied by this editorial proof check. No author files were modified.

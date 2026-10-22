@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETED",
+  "command": [
+    "python3",
+    "verify_optimality.py",
+    "--separator-package",
+    "../xy_global_separator",
+    "--connection-package",
+    "../xy_global_connection",
+    "--output",
+    "results_fresh",
+    "--workers",
+    "2"
+  ],
+  "cwd": "/workspace/scratch/67c0f31502e4/scientific_audit_2026_10_20/full_reproduction/antecedents/xy_optimality_extension",
+  "started_utc": "2026-10-20T11:16:33.720428+00:00",
+  "validated_cached_options": false,
+  "supervisor_pid": 6,
+  "returncode": 0,
+  "elapsed_seconds": 763.3642072677612,
+  "ended_utc": "2026-10-20T11:29:17.084643+00:00",
+  "child_peak_rss_kib": 1874192,
+  "certificate_status": "FRESH_OPTIMAL_ANNIHILATION_BARRIER_PASS",
+  "certificate_path": "/workspace/scratch/67c0f31502e4/scientific_audit_2026_10_20/full_reproduction/antecedents/xy_optimality_extension/results_fresh/certificate.json"
+}

@@ -1,0 +1,170 @@
+INDEX OF SUPPLEMENTARY MATERIALS AND REPRODUCTION INSTRUCTIONS
+Prepared 22 October 2026 for SIAM Journal on Applied Dynamical Systems.
+
+Title: Certified global annihilation barriers in an infinite XY lattice.
+Author: Rodolfo Leonardo Sumoza Matos.
+Repository: https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice
+Clone URL: https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice.git
+Planned tag: siads-v7-2026-10-22
+Planned frozen Release: https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice/releases/tag/siads-v7-2026-10-22
+
+STATUS AND SCOPE
+The repository address was supplied by the author. Release publication,
+the resolved source commit and remote asset downloads are not yet verified.
+All Release/asset URLs below are configured destinations until publication.
+No public DOI or actual journal submission is asserted.
+The fixed certificate treats a dipole at separation 12 on the infinite
+square exact-cosine XY lattice, with all admissible strong-energy paths.
+Its barrier satisfies 0.00567867 < B_ann < 0.00570116. The explicit infinite
+input class reuses that communication height and includes noncompact
+block-generated perturbations with a controlled tail. Arbitrary XY
+configuration completeness remains open. The general refinement interface
+is proved constructively but is not implemented as a general program.
+
+INVENTORY (DESCRIPTION AND SCIENTIFIC JUSTIFICATION)
+
+S1. SIADS_XY_Repository_v7_2026-10-22.zip
+Type: ZIP; LaTeX/PDF, Python, JSON, text, figure sources, logs and SHA-256 files.
+Contents: this small source tree, the article and companion, checkers,
+complete archived fresh-execution record, independent rational diagnostics,
+and dated audit reports. Also available as the tagged Git tree.
+Justification: exposes proofs, numerical assumptions and the verification
+interface. S1 alone is insufficient for the global replay.
+Planned asset: https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice/releases/download/siads-v7-2026-10-22/SIADS_XY_Repository_v7_2026-10-22.zip
+Identity: the separately supplied SOURCE_SNAPSHOT.sha256 records this ZIP's
+SHA-256 and byte count. It is external to the ZIP to avoid self-reference.
+
+S2. XY_Separacion_Global_Reproducible_2026-10-19.zip
+Type: ZIP.
+Contents: Original separator sources, fixed proposals and 109-chart checking inputs.
+Bytes: 228006035
+SHA-256: 47eaf4886bc10b7bbb7ef259c44bfef9134bf3402920594ca6e20cd87235cedc
+Justification: Required to reconstruct the complete global separating boundary in the infinite energy space.
+Planned asset: https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice/releases/download/siads-v7-2026-10-22/XY_Separacion_Global_Reproducible_2026-10-19.zip
+Upload the unchanged original bytes; do not recompress.
+
+S3. XY_Conexion_Global_Reproducible_2026-10-19.zip
+Type: ZIP.
+Contents: Original connection sources, critical-state arrays, upper paths and exterior checking inputs.
+Bytes: 441730856
+SHA-256: 3a4163d8b24c21f95acbdf502ceaed46e967180c21abb363d3436ae5e2afb042
+Justification: Required for the full-space critical points, upper connection and tail estimates.
+Planned asset: https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice/releases/download/siads-v7-2026-10-22/XY_Conexion_Global_Reproducible_2026-10-19.zip
+Upload the unchanged original bytes; do not recompress.
+
+S4. XY_Optimalidad_Extension_Reproducible_2026-10-19.zip
+Type: ZIP.
+Contents: Original exact-cap extension supervisor, sources and frozen proposals.
+Bytes: 59642630
+SHA-256: 42034c997678fa511ff261667ccb18edceee6d6bb05e543ddb6604f82958615d
+Justification: Required to combine separator and connection into the matched global minimax certificate.
+Planned asset: https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice/releases/download/siads-v7-2026-10-22/XY_Optimalidad_Extension_Reproducible_2026-10-19.zip
+Upload the unchanged original bytes; do not recompress.
+
+S5. Supplementary_Reproducibility.pdf
+Type: PDF, generated from supplement/Supplementary_Reproducibility.tex in S1.
+Contents: readable replay, arithmetic, analytic and trust-boundary record;
+distinguishes frozen PASS records, replay with the same interval engine,
+additional rational checks and unimplemented general interfaces.
+Justification: enables examination of the certificate and limitations
+without first running the complete computation.
+Location: supplement/Supplementary_Reproducibility.pdf in S1 and as a separate
+initial journal-submission attachment.
+
+The matching SIAM-template HTML index is supplement/SMindex.html (also
+provided separately with the journal-submission files).
+
+REQUIRED ENVIRONMENT
+Python 3 with its standard library suffices for the rational checks.
+Full replay additionally requires g++ and the environment accepted by
+checks/verify_supported_environment.py: reviewed x86_64 Linux, 64-bit
+long-double significand, little-endian binary64 and round-to-nearest.
+Install a normal supported C++ build toolchain. Do not force acceptance of
+a failed environment preflight or compile with unsafe arithmetic options.
+The optional figure script uses NumPy and Matplotlib. Article compilation
+uses pdflatex and the standard TeX Live packages listed in README.txt.
+
+STEP 1. OBTAIN THE FROZEN SOURCE SNAPSHOT
+After publication, either unpack S1 or clone and check out the exact tag:
+  git clone https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice.git xy-siads
+  cd xy-siads
+  git checkout --detach siads-v7-2026-10-22
+  git rev-parse HEAD
+Record the full commit SHA with your results. GitHub's automatic source-code
+ZIP contains this tree but does not contain the large Release assets.
+Validate the S1 ZIP using the separately supplied SOURCE_SNAPSHOT.sha256.
+Inside the extracted GitHub_Repository/ directory (or tagged Git checkout):
+  sha256sum -c MANIFEST.sha256
+
+STEP 2. OBTAIN AND VERIFY S2-S4
+From the S1 source root:
+  python3 checks/download_release_assets.py --assets-dir ../release_assets
+  python3 checks/verify_release_assets.py --assets-dir ../release_assets
+For manual downloads, use the exact filenames above and the same verifier.
+A failure is an integrity or availability error, not a mathematical result.
+The historical five S3_Conexion volumes are only an alternative transport:
+checks/reconstruct_connection.py reconstructs the original S3 bytes. All five
+parts are needed. Do not substitute one volume for the full S3 archive.
+
+STEP 3. RUN THE SMALL CHECKS
+  python3 checks/verify_supported_environment.py --output /tmp/xy-environment.json
+  python3 checks/verify_robustness_constants.py
+  python3 checks/verify_green_tail_budget.py
+  python3 checks/verify_infinite_class.py --self-test --output /tmp/xy-infinite-class.json
+Expected: successful exit and PASS reports. The last checker exercises four
+finite-prefix examples and rejects eight deliberate changes. It does not
+compute arbitrary nontrivial fibers or execute the general refinement proof.
+
+STEP 4. EXTRACT THE THREE ORIGINALS INTO A NEW WORK DIRECTORY
+From the S1 source root, create a new sibling directory with ample free space:
+  mkdir ../xy_replay_work
+  unzip ../release_assets/XY_Separacion_Global_Reproducible_2026-10-19.zip -d ../xy_replay_work
+  unzip ../release_assets/XY_Conexion_Global_Reproducible_2026-10-19.zip -d ../xy_replay_work
+  unzip ../release_assets/XY_Optimalidad_Extension_Reproducible_2026-10-19.zip -d ../xy_replay_work
+The extracted roots must be siblings named xy_global_separator,
+xy_global_connection and xy_optimality_extension. Use a fresh directory,
+not the archived proof_record tree. The compressed originals total 729379521
+bytes; extraction and new outputs require additional disk space.
+
+STEP 5. REPLAY THE COMPLETE CERTIFICATE
+  cd ../xy_replay_work/xy_optimality_extension
+  python3 verify_optimality.py --separator-package ../xy_global_separator --connection-package ../xy_global_connection --output results_fresh --workers 2
+Use a previously absent output directory and no options that reuse validated
+results. Frozen candidate arrays are inputs; previous validated outputs must
+not become premises. Expected final status:
+  FRESH_OPTIMAL_ANNIHILATION_BARRIER_PASS
+The archived 21 October 2026 replay took 737.33 seconds and checked 548
+output hashes on its documented machine. This is an observation, not a
+runtime guarantee. Inspect all phase statuses and skipped-check fields;
+compare the certified bounds and mathematical conclusions. Build metadata
+or formatting can legitimately differ between environments.
+
+STEP 6. COMPARE RECORDS AND INTERPRET THE RESULT
+The archived full replay is in proof_record/ in S1; dated supplementary
+diagnostics are in verification_notes/. Keep new outputs separate.
+verify_robustness_constants.py accepts --certificate-root to examine a new
+certificate tree; consult its --help for that interface. The optional binary
+path audit is documented in README.txt. Compilation commands for the article
+and companion are also in README.md/README.txt.
+
+TRUST BOUNDARY
+Replay uses the original interval implementation. It is not a formally
+verified proof or a second independent interval engine. A generic NaN
+rejection weakness and historical export issues remain documented; protected
+fixed-input diagnostics and exact rational comparisons accompany the record.
+No mathematical discrepancy was detected in the targeted audit. The new
+infinite-class check verifies exact constants and finite prefixes; the
+general arbitrary-precision refinement construction is a theorem in the
+article and has no general implemented user interface in this snapshot.
+
+INITIAL JOURNAL DELIVERY
+Submit the manuscript PDF, cover letter PDF, this index, the SIAM-template
+HTML index and S5. S1-S4 are necessary frozen materials and must be available
+from the initial submission through a route accepted by the journal.
+The official SIADS guide currently states no general supplement size limit
+apart from huge files such as virtual machines. If the submission portal
+rejects an archive, arrange an accepted transfer/split-file route with the
+editorial office. A GitHub link is not presumed to waive required submission.
+Retain the Release URL, tag, resolved source commit and all SHA-256 values
+in the submission record. Do not claim a DOI, publication or completed
+submission before it exists.

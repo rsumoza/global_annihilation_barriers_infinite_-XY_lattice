@@ -1,0 +1,191 @@
+\section{Details of the explicit lattice Green bound}
+\label{app:green-kernel}
+
+We justify the Fourier calculation in Lemma~\ref{lem:green-kernel} with
+the canonical bond-anchor convention.  Orthogonality of a field
+$f\in\mathcal H$ to $Dv$ for every compact $v$ is equivalent, after
+Fourier transform, to
+$\sum_i\overline{d_i}\widehat f_i=0$ almost everywhere: trigonometric
+polynomials are dense and the $d_i$ are bounded.  Thus $D(\X)$ is the
+pointwise span of $d=(d_1,d_2)$, apart from the irrelevant frequency zero,
+and the projection symbol is
+\[
+ m_{ij}(k)=\frac{d_i(k)\overline{d_j(k)}}{\Lambda(k)},\qquad
+ \Lambda(k)=4-2\cos k_1-2\cos k_2.
+\]
+This argument does not require an $\ell^2$ vertex potential for each
+finite-energy gradient.  In particular, $\nrm{\mathsf P}_{\mathcal H\to
+\mathcal H}=1$ and every scalar symbol is bounded by one.
+
+Let $z=(n_1,n_2)$ and first assume
+$r=|n_2|=\nrm{z}_\infty\ge1$.  For $t=k_1\ne0$, set
+\[
+ s=|\sin(t/2)|,\quad
+ \alpha=2\operatorname{arsinh}s,\quad
+ g_n(t)=\frac{e^{-\alpha|n|}}{2\sinh\alpha}.
+\]
+Since $\cosh\alpha=2-\cos t$, the Poisson kernel identity gives
+\begin{equation}
+ \frac1{2\pi}\int_{-\pi}^{\pi}
+ \frac{e^{\mathrm i n y}}{4-2\cos t-2\cos y}\,dy=g_n(t).
+ \label{eq:green-partial}
+\end{equation}
+It follows by expanding
+$(\cosh\alpha-\cos y)^{-1}$ as a geometric Fourier series; all series
+converge absolutely for this fixed $t\ne0$.
+
+The partially integrated diagonal entries are
+$4s^2g_{n_2}$ and $\delta_{n_2,0}-4s^2g_{n_2}$.  Since $n_2\ne0$,
+their magnitudes are at most
+\[
+ 4s^2g_{n_2}
+ =\frac{s}{\sqrt{1+s^2}}e^{-\alpha r}
+ \le s e^{-\alpha r}.
+\]
+For the $12$ entry, the partial coefficient is
+$d_1[g_{n_2-1}-g_{n_2}]$; for the $21$ entry it is
+$\overline{d_1}[g_{n_2+1}-g_{n_2}]$, up to the choice of Fourier sign.
+For both shifts, including $r=1$,
+\begin{equation}
+ |g_{n_2\pm1}-g_{n_2}|
+ \le\frac{e^\alpha-1}{2\sinh\alpha}e^{-\alpha r}
+ =\frac{e^\alpha}{e^\alpha+1}e^{-\alpha r}
+ \le e^{-\alpha r}.
+ \label{eq:green-shift-bound}
+\end{equation}
+As $|d_1|=2s$, the two mixed entries have partial magnitude at most
+$2s e^{-\alpha r}$.  Thus no unit shift of the anchor distance remains
+unaccounted for.
+
+For $0\le t\le\pi$,
+$s\le t/2$, $s\ge t/\pi$, and
+$\operatorname{arsinh}s\ge s/\sqrt2$.
+The last inequality follows by integrating
+$(1+s^2)^{-1/2}\ge1/\sqrt2$ on $[0,s]\subset[0,1]$.
+Consequently
+\[
+ \frac1{2\pi}\int_{-\pi}^{\pi}s e^{-\alpha r}\,dt
+ \le\frac1{2\pi}\int_0^\infty
+      t e^{-\sqrt2 rt/\pi}\,dt
+ =\frac{\pi}{4r^2}.
+\]
+This gives $|\mathsf P_{ij}(z)|\le\pi/(2r^2)<2/r^2$.
+If $|n_1|=\nrm{z}_\infty\ge1$, exchange the axes and their orientation
+labels.  At $z=0$ use the integral of the bounded scalar symbol.
+The multiplier entries are bounded on a finite measure torus, so Fubini
+applies directly.  The exceptional value $t=0$ has measure zero, and the
+partial bounds above are integrable.  There is no appeal to an
+uncontrolled logarithmically divergent vertex Green function.
+
+\section{An annular Poincar\'e constant for the cutoff}
+\label{app:green-annulus}
+
+For $R\ge1$ integer and
+$\mathcal A_R=\{x:R\le\nrm{x}_\infty\le2R\}$, we prove
+\begin{equation}
+ \sum_{\mathcal A_R}|u-\overline u_{\mathcal A_R}|^2
+ \le\frac{225}{4}R^2\sum_{e\subset\mathcal A_R}|D_eu|^2.
+ \label{eq:green-annular-poincare}
+\end{equation}
+For $n$ values on an interval, the variance identity and Cauchy--Schwarz
+give
+\[
+ \sum_i|u_i-\overline u|^2
+ =\frac1n\sum_{i<j}|u_i-u_j|^2
+ \le\sum_{k=1}^{n-1}\frac{k(n-k)}2|u_{k+1}-u_k|^2
+ \le\frac{n^2}{8}\sum_k|D u_k|^2.
+\]
+Decomposing the variance of an $n_1\times n_2$ rectangle into row
+variances and the variance of row means, followed by Jensen's inequality,
+gives the constant $\max(n_1^2,n_2^2)/8$ for its full edge energy.
+
+Cover the annulus by its four top, right, bottom, and left strips, each
+with $(4R+1)(R+1)=N$ vertices.  Adjacent strips have an overlap of
+$J=(R+1)^2$ vertices.  Write $m_i$ for their means and
+$V_i=\sum_{S_i}|u-m_i|^2$.  Averaging over an overlap yields
+$|m_i-m_j|^2\le2(V_i+V_j)/J$.  If $c$ is the mean of the four $m_i$,
+the four-cycle inequality gives
+\[
+ \sum_i|m_i-c|^2\le\frac12\sum_{i\sim j}|m_i-m_j|^2
+ \le\frac2J\sum_i V_i.
+\]
+Hence
+\[
+ \sum_{\mathcal A_R}|u-c|^2
+ \le\sum_iV_i+N\sum_i|m_i-c|^2
+ \le(1+2N/J)\sum_iV_i\le9\sum_iV_i.
+\]
+Each edge belongs to at most two strips and $(4R+1)^2\le25R^2$.
+The rectangular estimate bounds the last expression by
+$9\cdot2\cdot25R^2/8$ times the annular edge energy.  Replacing $c$
+by the annular mean can only decrease the variance, proving
+\eqref{eq:green-annular-poincare}.
+
+\section{Explicit dipolar and payload norm bounds}\label{app:green-inputs}
+
+Let $L=12$ and let $\phi_{12}$ be the real reference in
+\cref{sec:green}. For an index radius $r\ge16$, the distance to every
+interpolated pole is at least $r-8\ge r/2$. Integrating the derivative
+of the argument with respect to pole position, and then along a unit
+bond, gives
+\[
+ |\phi_{12}(x)|\le2L/r,\qquad
+ |D_e\phi_{12}|\le4L/r^2
+ \quad\text{if }\min(\nrm{x}_\infty,\nrm{y}_\infty)=r.
+\]
+These integrations take place away from the pole segment, so they do not
+introduce branch jumps. There are at most $16r+4\le20r$ bonds with
+minimum endpoint radius $r$. Therefore, for integer $R\ge16$,
+\[
+ \sum_{\min(\nrm{x}_\infty,\nrm{y}_\infty)\ge R}
+ |D_e\phi_{12}|^2
+ \le320L^2\sum_{r\ge R}r^{-3}\le480L^2/R^2.
+\]
+For the cutoff $\zeta_R$ used in \cref{lem:green-projection}, the
+annulus has $12R(R+1)\le24R^2$ vertices. Thus direct use of its product
+identity gives
+\[
+ \nrm{(1-\zeta_R)\phi_{12}}_\X^2
+ \le2(480L^2/R^2)+\frac4{R^2}
+           \sum_{\mathcal A_R}|\phi_{12}|^2
+ \le1344L^2/R^2.
+\]
+Since $\sqrt{1344}<40$, best approximation proves
+$\nrm{(I-\Pi_{2R})\phi_{12}}_\X\le40L/R=480/R$.
+
+For completeness, a coarse global bound is
+\[
+ \nrm{\phi_{12}}_\X^2
+ \le4\cdot33^2(4\pi)^2+480\cdot12^2/16^2<10^6.
+\]
+Here the first term overcounts every bond touching $\Lambda_{16}$;
+each difference of the two real arguments is at most $4\pi$ in
+magnitude. For a compact correction on an $n\times n$ vertex array,
+\[
+ \nrm{h}_\X\le\sqrt8\nrm h_{\ell^2}\le3n\max|h|.
+\]
+Exact binary-payload inspection, including finiteness, zero boundary
+values, and manifest hashes, gives
+\begin{align*}
+ \max|h_m|&=\frac{99633080638867}{562949953421312}<.177,\\
+ \max|h_s|&=\frac{1834512834580789}{4503599627370496}<.4074,\\
+ \max_j\max|z_j|&=\frac{6674417597839975}{2251799813685248}<3.
+\end{align*}
+The minimum and saddle arrays have side $2048$ and $4096$, respectively;
+the stored path displacements $z_j$ have side $256$ and are added to the
+minimum candidate. Hence
+\begin{align*}
+ \nrm{m_0}_\X&<1000+3(2048)(.177)+.017422<6007,\\
+ \nrm{s_+}_\X&<1000+3(4096)(.4074)+.012825<6007,\\
+ \max_j\nrm{\phi_{12}+h_m+z_j}_\X
+   &<1000+3(2048)(.177)+3(256)(3)<6007.
+\end{align*}
+Reflection preserves the energy norm. Linearity and the convexity of the
+norm cover all segments, the two exact attachments, and the final
+contraction to zero. The original two candidates coincide with
+$\phi_{12}$ beyond minimum-endpoint radius $4096$, where its increments
+are smaller than $10^{-6}$. Adding the certified correction radii gives
+the common bound $.018$ used in \cref{sec:green}.
+The supplied payload checker reproduces the array bounds from the two
+frozen archives; the stationary correction radii still depend on the
+separate full-space certificate.

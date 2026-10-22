@@ -1,0 +1,20 @@
+--- original/geometry/certify.cpp
++++ instrumented/geometry/certify.cpp
+@@ -28,9 +28,16 @@
+   }
+   std::array<I,2>g{C[k].g[0]-C[l].g[0],C[k].g[1]-C[l].g[1]};I yp=norm2-sq(g[0])*Gi[0]-I(2)*g[0]*g[1]*Gi[1]-sq(g[1])*Gi[3];need(yp.h>=0,"neighbor Y norm upper");I d=root(I(std::max((R)0,yp.l),yp.h));maxDiff=std::max(maxDiff,d.h);distances.emplace_back(k,l,d);pairs++;
+  }
++ std::ofstream ee("geometry_exact.hex");ee<<std::hexfloat;
++ for(int k=0;k<4;k++)ee<<"G "<<k<<" "<<G[k].l<<" "<<G[k].h<<"\n";
++ for(int k=0;k<4;k++)ee<<"Gi "<<k<<" "<<Gi[k].l<<" "<<Gi[k].h<<"\n";
++ ee<<"MAX neighbor "<<maxDiff<<"\nMAX Y "<<maxY<<"\nMAX coord "<<maxCoordinateError<<"\n";
++ for(int k=0;k<count;k++){auto&c=C[k];for(int a=0;a<2;a++)ee<<"A "<<k<<" "<<a<<" "<<c.a[a].l<<" "<<c.a[a].h<<"\n";ee<<"Y2 "<<k<<" "<<c.ynorm2.l<<" "<<c.ynorm2.h<<"\n";}
++ for(auto[i,j,d]:distances)ee<<"D "<<i<<" "<<j<<" "<<d.l<<" "<<d.h<<"\n";
++ ee.close();need((bool)ee,"exact geometry sidecar output");
+  std::cout<<std::setprecision(30)<<"{\"status\":\"ATLAS_PROJECTION_AND_NEIGHBOR_GEOMETRY_PASS\",\"n\":"<<n<<",\"count\":"<<count<<",\"G\":[";
+  for(int k=0;k<4;k++){if(k)std::cout<<",";interval_out(G[k]);}std::cout<<"],\"Gi\":[";for(int k=0;k<4;k++){if(k)std::cout<<",";interval_out(Gi[k]);}
+  std::cout<<"],\"maximum_neighbor_Y_distance_upper\":\""<<up(maxDiff)<<"\",\"maximum_center_Y_norm_upper\":\""<<up(maxY)<<"\",\"maximum_nominal_coordinate_error_upper\":\""<<up(maxCoordinateError)<<"\",\"neighbor_pairs\":"<<pairs<<",\"centers\":[";
+  for(int k=0;k<count;k++){if(k)std::cout<<",";auto&c=C[k];std::cout<<"{\"id\":"<<c.id<<",\"grid\":["<<c.gi<<","<<c.gj<<"],\"file\":\""<<c.name<<"\",\"a\":[";interval_out(c.a[0]);std::cout<<",";interval_out(c.a[1]);std::cout<<"],\"Y_norm_squared\":";interval_out(c.ynorm2);std::cout<<"}";}
+- std::cout<<"],\"neighbors\":[";for(size_t k=0;k<distances.size();k++){if(k)std::cout<<",";auto[i,j,d]=distances[k];std::cout<<"{\"i\":"<<i<<",\"j\":"<<j<<",\"distance\":";interval_out(d);std::cout<<"}";}std::cout<<"]}\n";return 0;
++ std::cout<<"],\"neighbors\":[";for(size_t k=0;k<distances.size();k++){if(k)std::cout<<",";auto[i,j,d]=distances[k];std::cout<<"{\"i\":"<<i<<",\"j\":"<<j<<",\"distance\":";interval_out(d);std::cout<<"}";}std::cout<<"]}\n";report_guards();return 0;
+ }catch(const std::exception&e){std::cerr<<"REJECT: "<<e.what()<<"\n";return 2;}}

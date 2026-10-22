@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "certificate_status": "FRESH_OPTIMAL_ANNIHILATION_BARRIER_PASS",
+  "exact_command": "python3 verify_optimality.py --separator-package ../xy_global_separator --connection-package ../xy_global_connection --output results_fresh --workers 2",
+  "command": [
+    "python3",
+    "verify_optimality.py",
+    "--separator-package",
+    "../xy_global_separator",
+    "--connection-package",
+    "../xy_global_connection",
+    "--output",
+    "results_fresh",
+    "--workers",
+    "2"
+  ],
+  "cwd": "/workspace/scratch/67c0f31502e4/scientific_audit_2026_10_20/full_reproduction/antecedents/xy_optimality_extension",
+  "started_utc": "2026-10-20T11:16:33.720428+00:00",
+  "ended_utc": "2026-10-20T11:29:17.084643+00:00",
+  "elapsed_seconds": 763.3642072677612,
+  "supervisor_duration_seconds": 763.2473106384277,
+  "child_peak_rss_kib": 1874192,
+  "archives": [
+    {
+      "archive": "XY_Separacion_Global_Reproducible_2026-10-19.zip",
+      "bytes": 228006035,
+      "sha256": "47eaf4886bc10b7bbb7ef259c44bfef9134bf3402920594ca6e20cd87235cedc"
+    },
+    {
+      "archive": "XY_Conexion_Global_Reproducible_2026-10-19.zip",
+      "bytes": 441730856,
+      "sha256": "3a4163d8b24c21f95acbdf502ceaed46e967180c21abb363d3436ae5e2afb042"
+    },
+    {
+      "archive": "XY_Optimalidad_Extension_Reproducible_2026-10-19.zip",
+      "bytes": 59642630,
+      "sha256": "42034c997678fa511ff261667ccb18edceee6d6bb05e543ddb6604f82958615d"
+    }
+  ],
+  "environment": {
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "compiler_version": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "byteorder": "little",
+    "flags": [
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-frounding-math"
+    ]
+  },
+  "fresh_phase_certificates": [
+    {
+      "certificate": "fresh_separator/certificate.json",
+      "status": "FRESH_GLOBAL_SEPARATOR_PASS",
+      "duration_seconds": 182.7415578365326
+    },
+    {
+      "certificate": "fresh_connection/prerequisites/certificate.json",
+      "status": "INTEGRAL_MINIMUM_SADDLE_SUBLEVEL_PASS",
+      "duration_seconds": 406.0652837753296
+    },
+    {
+      "certificate": "fresh_connection/certificate.json",
+      "status": "FRESH_GLOBAL_VARIATIONAL_SADDLE_CONNECTION_PASS",
+      "duration_seconds": 490.9231173992157
+    }
+  ],
+  "fresh_extension_stages": [
+    "both reflected projected normals and exterior tails",
+    "distances from both saddles to all 109 chart centers",
+    "both adjoint equations at size 1024 against Neumann size 2048",
+    "five additional enlarged charts: 42,43,44,53,55",
+    "exact-saddle caps",
+    "all retained boundary walls and both entire exact cutting planes",
+    "minimum membership and exclusion of every physical uniform lift",
+    "rational identity and strict barrier bracket"
+  ],
+  "checks_skipped_within_default_supervisor": [],
+  "not_in_default_supervisor_scope": [
+    "candidate-search and numerical proposal generation",
+    "historical adversarial/attack scripts outside the supervisor",
+    "separate secondary boundary-check implementation",
+    "separate heteroclinic extension"
+  ],
+  "cached_results_options_used": false,
+  "archived_results_used_as_mathematical_premises": false,
+  "fixed_proposals_reused": true,
+  "fresh_output_hashes_checked": 548,
+  "original_members_unmodified_verified": true,
+  "independent_implementation": false,
+  "analytic_reductions_formalized_in_proof_assistant": false,
+  "external_peer_review": false,
+  "scope": "One neutral dipole of separation 12 on the infinite square lattice; full homogeneous energy space modulo constants; every physical uniform lift",
+  "identity": "B_ann = E(exact asymmetric index-one saddle)-E(exact dipolar minimum)",
+  "reported_strict_bracket": [
+    ".00567867",
+    ".00570116"
+  ],
+  "heteroclinic_orbit_proved": false,
+  "universal_XY_metastability_proved": false,
+  "certificate_path": "/workspace/scratch/67c0f31502e4/scientific_audit_2026_10_20/full_reproduction/antecedents/xy_optimality_extension/results_fresh/certificate.json",
+  "certificate_sha256": "2bcb4121d588ecef7a2f8e8ad9036321d1286bf90d39d4aaa7d9713d45a5d763",
+  "stdout_log": "/workspace/scratch/67c0f31502e4/scientific_audit_2026_10_20/full_reproduction/supervisor.stdout.log",
+  "stderr_log": "/workspace/scratch/67c0f31502e4/scientific_audit_2026_10_20/full_reproduction/supervisor.stderr.log",
+  "integrity_verification": {
+    "status": "PASS",
+    "archive_count": 3,
+    "original_archive_members_checked": 1808,
+    "fresh_output_hashes_checked": 548,
+    "mismatches": [],
+    "duration_seconds": 6.880572557449341
+  },
+  "max_sampled_aggregate_descendant_rss_kib": 2476680,
+  "memory_note": "ru_maxrss is a single-child peak; aggregate descendant RSS was periodically sampled and may miss a larger peak."
+}

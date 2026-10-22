@@ -1,0 +1,6 @@
+{
+  "status": "COMPLETE_FIXED_GUARD_REPLAY_PASS",
+  "scope": "one baseline,109fixedcharts,onecompletegeometry; extra sidecar replays not double counted",
+  "finite_interval_constructions": 9322823485,
+  "finite_dn_up_calls": 11647860412
+}

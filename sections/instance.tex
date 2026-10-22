@@ -1,0 +1,111 @@
+\section{A certified annihilation mechanism at separation twelve}\label{sec:instance}
+
+We now instantiate \cref{thm:certificate}. All intervals in this section are outward enclosures; the displayed decimal bounds are deliberately rounded away from the certified values. The two candidate states are stored as compact dyadic corrections to the same analytic neutral reference. Every binary floating-point input is interpreted as its exact dyadic value, rather than as an unspecified approximation. Exterior reference estimates and the core--exterior interface terms are included in the verification.
+
+\begin{theorem}[Global dipole annihilation barrier]\label{thm:instance}
+In the normalization of \cref{eq:energy-space}, there exist an exact critical state $m_0\in\X$ and two distinct exact critical states $s_\pm\in\X$ with the following properties.
+The state $m_0$ has charge $+1$ at $(0,0)$, charge $-1$ at $(12,0)$, and no other charged plaquettes. It is a strict local minimum. The states $s_\pm$ are asymmetric index-one saddles interchanged by an exact lattice reflection, and $\E(s_+)=\E(s_-)=h$. At all three states the Riesz Hessian is invertible with spectral distance from zero greater than $57/1000$.
+
+There is a bounded open set $\mathcal D\subset\X$ such that
+\begin{equation}\label{eq:separator-instance}
+ m_0\in\mathcal D,\qquad
+ \overline{\mathcal D}\cap\K=\varnothing,\qquad
+ \E(\theta)\ge h\quad(\theta\in\partial\mathcal D).
+\end{equation}
+There is a continuous path $\Gamma_0$ from $m_0$ to $\K$, passing through $s_+$, with $\max_t\E(\Gamma_0(t))=h$. Thus \cref{eq:intro-barrier} holds for all admissible paths of \cref{eq:barrier}, without restrictions on symmetry, extra defects, or transverse perturbations.
+\end{theorem}
+
+\begin{proof}
+The frozen data and freshly evaluated inequalities verify the hypotheses of \cref{thm:certificate}. The verification has three stages. First, full dual residual bounds and signed-bond coercivity certify the minimum and the index-one saddle near their proposals. Reflection produces the second saddle with exactly equal energy; overlapping numerical energy intervals are not used to infer equality. Second, a 109-chart atlas with two reaction coordinates bounds every retained boundary wall and every exact saddle cutting plane. All transverse directions are retained as Hilbert-space fibers. Third, the validated upper construction attaches its polygonal arms to the exact saddle and to an integer phase lift at the endpoint.
+
+The ledger includes all 436 coordinate faces, radial walls, coordinate-domain boundary portions, and the two cap planes. Five enlarged charts close the remaining plane intersections. The projected-normal and adjoint checks use the exact correction uncertainty, so the planes are not centered at the numerical saddle. The minimum-membership and vacuum-exclusion checks establish \cref{eq:separator-instance}. The global conclusion now follows from \cref{thm:certificate}. The rational energy-difference enclosures give the strict bracket in \cref{eq:intro-barrier}. Numerical margins and the executed supervisor are recorded below and in the supplementary record.
+\end{proof}
+
+\subsection{Margins and certificate geometry}
+
+\begin{table}[t]
+\caption{Verified inputs and conservative consequences. Candidate quantities are not substituted for exact-state conclusions. The original execution used the valid coarser Hessian Lipschitz constant $1$ for the correction deductions shown here.}
+\label{tab:margins}
+\centering\small
+\begin{tabular}{@{}L{.57\linewidth}L{.34\linewidth}@{}}\toprule
+Quantity & Bound\\\midrule
+Minimum candidate coercivity & $>0.075672$\\
+Minimum correction radius $\rho_m$ & $<0.01742120$\\
+Exact minimum coercivity & $>0.05825080$\\
+Saddle candidate negative Rayleigh value & $<-0.06992563$\\
+Saddle candidate complementary coercivity & $>0.07195499$\\
+Saddle correction radius $\rho_s$ & $<0.01282494$\\
+Exact saddle inverse-gap lower bound & $>0.05710069$\\
+Common exact-state gap $\sigma$ & $57/1000$\\
+Exact minimum principal-branch margin & $>1.1$\\
+Exact cap transverse coercivity (safe value) & $1/25$\\
+Exact cap radius & $33/200$\\
+Reaction-coordinate disk radius & $6599/10000$\\
+Atlas charts / coordinate faces & $109$ / $436$\\\bottomrule
+\end{tabular}
+\end{table}
+
+The cap parameters in \cref{tab:margins} use a different, sharper
+Lipschitz bound than the conservative correction deductions.
+With $\tau=71/100$ one has $2\tau^2=5041/5000>1$, hence
+$\Lambda=1/\sqrt2<\tau$. Consequently the safe cap values give the
+entirely rational margin
+\[
+ k_c\ge\frac1{50}
+       -\frac{71}{100}\frac{33}{1200}
+       =\frac{19}{40000}>0.
+\]
+The cap checker enforces $R_c<3\sqrt2\mu$, consistently with this
+choice. Using $\Lambda=1$ in this cap calculation with only
+$\mu=1/25$ would not give a positive coefficient; its separate use
+for Newton correction bounds does not require that substitution.
+
+The indefinite Hessian test controls its complete complement and the mutual interactions of the deficient bonds. Its negative direction need not be an eigenvector. The complement estimate together with a negative Rayleigh direction gives invertibility and index one by the reflected-coercivity argument in \cref{sec:certificate}; the exact-state uncertainty is then subtracted. This distinction matters when extending finite signed-Laplacian tests to an infinite exterior.
+
+The atlas uses a rank-two subspace $Q\R^2$, with orthogonal complement $Y$. For each coordinate cell, the lower bound on the entire transverse fiber is evaluated, not just at its center. A face whose lower bound is too low must be covered strictly by another chart, over the whole closed cell and its entire permitted low-energy transverse ball. The final cutting planes pass through $s_\pm$. On those planes the exact saddle energy cancels algebraically, permitting the boundary threshold to equal $h$ without requiring an interval comparison with a positive margin at the saddle itself.
+
+The upper path has only two implicit critical vertices, $m_0$ and $s_+$. Every other vertex except the zero endpoint has the analytic reference plus a compact correction. Interior segments use the quadratic interpolation bound. The two attachments to $s_+$ exploit stationarity at the exact endpoint and a cubic remainder, rather than charging a constant correction error all the way to that endpoint. The terminal contraction is checked after identifying the integer lift on the full lattice. These facts are also the inputs for the path-tail estimate in \cref{sec:green}.
+
+\subsection{Executed verification and trust boundary}
+
+The three frozen archives contain the separator, upper connection, and exact-cap extension. The supplementary index specifies their byte lengths and SHA-256 hashes. They are mathematical inputs with source code, dyadic proposals, and exterior formulas; archived output files are not premises in the fresh run. The command executed in a clean extraction was
+\begin{quote}\small
+\begin{verbatim}
+python3 verify_optimality.py \
+  --separator-package ../xy_global_separator \
+  --connection-package ../xy_global_connection \
+  --output results_fresh --workers 2
+\end{verbatim}
+\end{quote}
+The final status was \texttt{FRESH\_OPTIMAL\_ANNIHILATION\_BARRIER\_PASS}.
+The new run on 21 October 2026 took 737.33 seconds using Python 3.12.14 and g++ 13.3 on x86\_64 Linux. The compilation disabled fast arithmetic transformations and floating-point contraction, and enabled rounding-sensitive compilation. The record includes the precise flags, the final certificate hash, all 548 fresh outputs and their hashes, and the integrity check of all 1,808 original archive members. The preceding execution and its resource observations are retained as dated history.
+
+The verifier combines exact rational bookkeeping with outward floating-point enclosures and analytic tail estimates. Candidate search, proposal optimization, and basis generation are outside the supervisor; the fixed proposals must pass its checks. The default supervisor does not execute every historical attack script, the separate secondary boundary implementation, or the separate heteroclinic extension. We therefore base \cref{thm:instance} on the global variational certificate, not on an unreported fresh heteroclinic calculation.
+
+A further audit on 21 October 2026 rebuilt the standalone separator
+from its unchanged pinned sources: all 109 local charts and all boundary
+checks passed. Its 330 directly comparable scientific outputs agreed
+byte for byte with the archived record. A separately coded exact-dyadic
+Laplacian calculation verified all 715 geometric interval inclusions
+and three scalar maxima. The later complete execution described above
+also rebuilt the connection and optimality assembly from unchanged sources.
+
+Separate instrumented copies check finite ordered interval endpoints and
+the actual decimal exports against exact binary values. These fixed-data
+diagnostics and independent rational geometry checks are documented in
+the supplement. They do not repair the original congruence helper's
+generic failure to reject an injected NaN; no such failure was found
+in the protected fixed-data runs. Appendix~\ref{app:reflected-residual}
+derives the residual's zero mean and explicit exterior constants.
+
+The supported reproduction target is little-endian IEEE binary64 input
+with round-to-nearest arithmetic and a \texttt{long double} significand
+of exactly 64 bits. The companion environment preflight checks this
+target before a new global run. The frozen extension prints its consumed
+interval endpoints with an additional outward step and 30 decimal digits;
+the significance of that padding is tied to this arithmetic format.
+The source guard allowing at least 64 bits is not a validation of all wider
+formats. In particular, portability to a 113-bit significand requires a
+separate serialization analysis or a revised exact-output interface.
+
+Reproduction with the same software tests that the distributed inputs and source produce the asserted output. It does not independently validate the underlying interval implementation or formalize the analytic reductions. The proof in \cref{sec:certificate}, the full frozen sources, and the supplementary command and integrity record expose those dependencies for examination. The new rational checkers for \cref{sec:green,sec:robustness} verify their arithmetic implications; they do not rerun this global supervisor or replace the analytic proofs.

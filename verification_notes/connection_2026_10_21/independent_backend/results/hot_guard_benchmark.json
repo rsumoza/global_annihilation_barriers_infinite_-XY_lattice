@@ -1,0 +1,12 @@
+[
+  {
+    "mode": "saddle",
+    "stdout": "20.999999999997699739323619994 21.0000000000012776082275456346 0.433500967999999986535186735637\n",
+    "stderr": "GUARD_DIAGNOSTIC finite_interval_constructions=2000002 finite_scalar_calls=4000000\n"
+  },
+  {
+    "mode": "saddle_fast",
+    "stdout": "20.999999999997699739323619994 21.0000000000012776082275456346 0.149488895000000010515606163608\n",
+    "stderr": "GUARD_DIAGNOSTIC finite_interval_constructions=2000002 finite_scalar_calls=4000000\n"
+  }
+]

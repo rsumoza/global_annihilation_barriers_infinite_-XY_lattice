@@ -1,0 +1,30 @@
+{
+  "scope": "Finite independent high-precision diagnostic tests; not a proof of the entire interval contract. Inputs are exact binary64 dyadics converted exactly to long double. Decimal comparison at 160 digits is diagnostic, not a certified oracle. Taylor inequalities below use exact fractions.",
+  "cases": 1166,
+  "failures": [],
+  "exact_rational_tail_inequalities": {
+    "cos_small_degree_16": true,
+    "sin_small_degree_17": true,
+    "atan_36_terms": true,
+    "arcsin_principal_remainder_geometric": true
+  },
+  "domain_rejections": {
+    "trig_outside_domain": {
+      "code": 2,
+      "stderr": "REJECT: general trig domain"
+    },
+    "atan_reduction_wide": {
+      "code": 2,
+      "stderr": "REJECT: atan reduction"
+    },
+    "root_negative": {
+      "code": 2,
+      "stderr": "REJECT: sqrt domain"
+    },
+    "nan_input": {
+      "code": 2,
+      "stderr": "REJECT: oracle input"
+    }
+  },
+  "independent_reference": "Python decimal, precision160; independently coded Taylor/half-angle formulas"
+}

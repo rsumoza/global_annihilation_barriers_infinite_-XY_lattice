@@ -1,0 +1,28 @@
+{
+  "status": "SUPPORTED_EXTENDED64_ENVIRONMENT_PASS",
+  "scope": "Environment preflight only; not the global certificate",
+  "global_certificate_reexecuted": false,
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "flags": [
+    "-std=c++17",
+    "-O2",
+    "-DNDEBUG",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-frounding-math"
+  ],
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "probe": {
+    "radix": 2,
+    "double_bytes": 8,
+    "double_significand_bits": 53,
+    "double_max_exponent": 1024,
+    "double_iec559": 1,
+    "long_double_significand_bits": 64,
+    "long_double_max_exponent": 16384,
+    "long_double_bytes": 16,
+    "round_to_nearest": 1,
+    "little_endian": 1
+  },
+  "probe_source_sha256": "2a47ebbb9a53bd03cf6c10cb5921483ab4d97cb54639f7042ec5189bec355ce9"
+}

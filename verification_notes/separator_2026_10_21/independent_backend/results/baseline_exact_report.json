@@ -1,0 +1,32 @@
+{
+  "status": "BASELINE_EXACT_PAD_AND_LITERAL_PASS",
+  "consumed_scalar_count": 4,
+  "checks": [
+    {
+      "name": "delta",
+      "raw_hex": "0x9.8e6d65cd87895ap-13",
+      "absolute_error_exact": "5869910697523/17592186044416000000000000000000000000",
+      "pad_minus_error_exact": "17592180174505302477/17592186044416000000000000000000000000"
+    },
+    {
+      "name": "rho",
+      "raw_hex": "0x8.eb6e3153e54a99p-9",
+      "absolute_error_exact": "201107270689/87960930222080000000000000000000000",
+      "pad_minus_error_exact": "87960729114809311/87960930222080000000000000000000000"
+    },
+    {
+      "name": "c",
+      "raw_hex": "0x9.af9ebe9c8862ddep-7",
+      "absolute_error_exact": "2079847568963/879609302220800000000000000000000000",
+      "pad_minus_error_exact": "879607222373231037/879609302220800000000000000000000000"
+    },
+    {
+      "name": "E_lower",
+      "raw_hex": "0xb.d2199a29edb7fafp+1",
+      "absolute_error_exact": "75568626303/54975581388800000000000000000000",
+      "pad_minus_error_exact": "54900012762497/54975581388800000000000000000000"
+    }
+  ],
+  "compiled_chart_delta_minus_baseline_exact": "5119051624041/9444732965739290427392",
+  "scientific_stdout_identical": true
+}

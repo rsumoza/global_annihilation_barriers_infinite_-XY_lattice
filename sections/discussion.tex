@@ -1,0 +1,72 @@
+\section{Algorithmic scope and further certification}\label{sec:discussion}
+
+The a posteriori theorem separates a finite verification task from the search for suitable input data. A successful certificate proves a statement about every admissible escape path in an infinite space. It need not enumerate those paths, classify all critical points, or make the separator invariant under a dynamics. Its reusable content is the collection of explicit inequalities and the requirement that their boundary ledger cover the full continuum.
+
+\Cref{thm:class-termination} gives a terminating enclosure procedure on
+$\mathcal C_{\rm loc}$ by reusing one certified communication height.
+It does not search for a new saddle or certify arbitrary input states.
+Its input format supplies effective tails and a subcritical connection.
+The fixed global chain and the new rational arithmetic checks are
+executed; the arbitrary-precision critical-name interface used in the
+constructive theorem has not been implemented as a general program.
+
+A complete algorithm for all effectively represented finite-energy XY
+configurations remains an open problem. In particular, this paper does
+not prove that every strict lower level admits a finite separator
+recognized by its verifier. Such completeness, or a different effective
+global localization theorem, would be required to justify universal
+termination. Local spectral reduction alone does not provide it.
+
+This does not give a practical search algorithm for arbitrary XY configurations. An infinite input must come with an effective representation and tail bounds; finite samples cannot certify arbitrary unseen exterior data. Even for compact inputs in the certified local class, a complete cubical search on a large truncation has exponential dimension dependence. The inverse-radius estimate improves the rigorous localization rate substantially, but its current norm majorants still yield impractical truncation sizes. The global barrier in \cref{thm:instance} was obtained from the tailored atlas and analytic exterior, not from materializing those enormous boxes.
+
+For the perturbation family in \cref{eq:intro-perturbation}, the conclusion is stronger than persistence of an isolated finite-box root: it includes the global barrier estimate and tails in the same infinite-dimensional class. It is also weaker than a parameter-uniform identification of a transition saddle. The continued saddles are genuine index-one states, but \cref{thm:robustness} does not exclude a different route becoming cheaper under perturbation. To identify a change of mechanism, one must certify the competing upper paths and every relevant part of a common separating boundary over a parameter interval, and then prove the crossing of their exact critical heights. Two overlapping interval enclosures do not prove such a crossing.
+
+The most direct quantitative improvement is a sharper far-field source estimate. The cubic bound $\nrm{D\theta-\sin D\theta}_1\le\nrm\theta_\X^3/6$ uses a deliberately loose global energy-norm bound. Verified core sums and cancellation or multipolar information could reduce the tail constant without changing the path-space theorem. Existing far-field expansions and higher-order boundary conditions \cite{Braun2022,Braun2025,Wei2026} suggest the right analytic tools; compatibility with an indefinite saddle and the exact global boundary remains an obligation, rather than a consequence of a stable-minimum approximation theorem.
+
+The localization estimate has the form $C_E/R$, so an error allocation
+$\varepsilon/4$ requires $R\ge4C_E/\varepsilon$. The current
+$C_E\simeq1.60\times10^{17}$ explains the enormous radii: their dependence
+on inverse accuracy is linear. Choosing dyadic radii does not make it
+exponential. The separate exponential obstacle is a complete cubical
+covering in the number of retained variables, which is of order $R^2$.
+The first quantitative task is therefore to certify the actual core sum
+of $|q_e|$, $q=D\theta-\sin(D\theta)$, and its exterior remainder,
+replacing the coarse $M^3/6$ majorant. A further route is to extract
+leading lattice multipoles before taking absolute values. For example,
+with $M_j^{(q)}=\sum_yq_j(y)$ the exact identity
+\[
+ (\mathsf Pq)_i(x)=\sum_j\mathsf P_{ij}(x)M_j^{(q)}
+ +\sum_{j,y}\bigl[\mathsf P_{ij}(x-y)-\mathsf P_{ij}(x)\bigr]q_j(y)
+\]
+separates the leading term. Improving the remainder requires explicit
+kernel-difference bounds, controlled source moments and exterior tails,
+and uniform estimates along the complete upper construction. Zero total
+vortex charge does not by itself establish the needed cancellations of
+this nonlinear source. In a perturbed problem these controls must also
+hold in the same admitted coupling class. We have not proved a
+multiphase-averaging shortcut: averaging phase representatives need not
+preserve their charges or the certified energy ceiling. A materializable
+method should retain an analytic exterior and the low-rank atlas, and
+would still require a verified computational budget after these sharper
+estimates are obtained.
+
+\subsection*{Data and software availability}
+The source repository is
+\url{https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice}.
+The supplementary index identifies the three frozen global-verification
+archives by byte count and SHA-256; they are necessary in addition to the
+smaller source and checker snapshot. The planned frozen distribution is
+the tagged release \texttt{siads-v7-2026-10-22} at
+\url{https://github.com/rsumoza/global_annihilation_barriers_infinite_-XY_lattice/releases/tag/siads-v7-2026-10-22},
+with sources in Git and the original archives attached as release assets.
+The repository address has been supplied by the author; publication of
+the tagged release and remote access remain to be verified. No DOI is
+asserted. The tag identifies the source commit once published; its full
+SHA is to be recorded in the release description and submission record.
+The supplement and index accompany the initial submission. Any practical
+portal restriction on the frozen material must be resolved through an
+accepted submission route; external access does not automatically waive
+the journal's review requirements.
+
+\subsection*{Declarations}
+OpenAI ChatGPT/Codex tools were used substantively in mathematical exploration and proof drafting, code development and execution, literature retrieval and comparison, adversarial checking, and manuscript preparation. The conceptual geometric figure is generated by explicit Python code; it is not a numerical output of the certificate. These automated checks and drafting assistance do not constitute independent external peer review or proof-assistant verification. The authors assume responsibility for all content.

@@ -1,0 +1,19 @@
+{
+  "status": "EXACT_GEOMETRY_NEGATIVE_CONTROLS_PASS",
+  "python_optimized": true,
+  "controls": [
+    {
+      "mutation": "excluded_coordinate",
+      "returncode": 1,
+      "pass_output_written": false,
+      "rejection": "RuntimeError: exact value outside interval: a.0.0"
+    },
+    {
+      "mutation": "missing_neighbor",
+      "returncode": 1,
+      "pass_output_written": false,
+      "rejection": "RuntimeError: full neighbor ledger differs"
+    }
+  ],
+  "scope": "Two intentional output mutations, not exhaustive parser fuzzing."
+}

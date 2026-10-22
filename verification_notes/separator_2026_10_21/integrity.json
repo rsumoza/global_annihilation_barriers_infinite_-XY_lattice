@@ -1,0 +1,12 @@
+{
+  "FILES.sha256": {
+    "checked": 1083,
+    "mismatch": [],
+    "manifest_sha256": "5e56fa253603270e181301628bac4602a7f4ba158a277fc84204a32bda548c34"
+  },
+  "distribution/MANIFEST.sha256": {
+    "checked": 564,
+    "mismatch": [],
+    "manifest_sha256": "991c744eab7e812d629662a0c0bc5cbc177e9dd2e9daa67caeefab7a814f941b"
+  }
+}

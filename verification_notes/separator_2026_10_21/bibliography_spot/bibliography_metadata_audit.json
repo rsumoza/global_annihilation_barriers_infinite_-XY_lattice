@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-21",
+  "scope": "Targeted bibliographic metadata audit of17entries; not exhaustive novelty survey or independent verification of mathematical results in each cited paper.",
+  "manuscript_references_sha256": "85e999b79be5995348e5119c711ac667a01445fa3a6b684f028a683179ad28ba",
+  "entries": [
+    {
+      "key": "Alicandro2014",
+      "doi": "10.1007/s00205-014-0757-6",
+      "primary_source": "https://iris.uniroma1.it/handle/11573/540522",
+      "assessment": "Institutional primary record; authors, title,2014,214(1),269–330 agree."
+    },
+    {
+      "key": "Ayala2026",
+      "doi": "10.1137/25M1772824",
+      "primary_source": "https://epubs.siam.org/doi/10.1137/25M1772824",
+      "assessment": "Publisher full metadata: Miguel Ayala,Rustum Choksi,Benedikt Wirth;24(3),1399–1425; online10September2026. Agrees."
+    },
+    {
+      "key": "Berglund2025",
+      "doi": "10.1088/1361-6544/ae05aa",
+      "primary_source": "https://www.idpoisson.fr/berglund/abs_kuramoto.html",
+      "assessment": "Author primary record confirms authors,Nonlinearity38:095031(2025),DOI. Publisher blocked; author/arXiv title uses nearest-neighbor, some journal records nearest-neighbour. No scientific discrepancy."
+    },
+    {
+      "key": "Braun2022",
+      "doi": "10.1007/s00205-022-01810-3",
+      "primary_source": "https://link.springer.com/article/10.1007/s00205-022-01810-3",
+      "assessment": "Publisher metadata confirms Braun,Hudson,Ortner,245,1437–1490(2022); title and DOI agree."
+    },
+    {
+      "key": "Braun2025",
+      "doi": "10.1137/24M165836X",
+      "primary_source": "https://epubs.siam.org/doi/10.1137/24M165836X",
+      "assessment": "Publisher full metadata confirms Braun,Ortner,Wang,Zhang;63(2),520–541; online6March2025. Agrees."
+    },
+    {
+      "key": "Breden2019",
+      "doi": "10.1016/j.matpur.2019.04.012",
+      "primary_source": "https://portal.fis.tum.de/en/publications/rigorous-validation-of-stochastic-transition-paths-2/",
+      "assessment": "Institutional author record confirms Maxime Breden,Christian Kuehn,131,88–129,November2019,DOI. Publisher page blocked403."
+    },
+    {
+      "key": "Chen2020",
+      "doi": "10.1109/TAC.2020.3008300",
+      "primary_source": "https://experts.illinois.edu/en/publications/on-spectral-properties-of-signed-laplacians-with-connections-to-e-2/",
+      "assessment": "Institutional full metadata confirms all8authors,IEEE TAC66(5),2177–2190,May2021; early-online2020. Printed2021 is correct despite internalkeyChen2020."
+    },
+    {
+      "key": "Dlotko2018",
+      "doi": "10.1016/j.camwa.2017.11.027",
+      "primary_source": "https://cronfa-dev.swansea.ac.uk/Record/cronfa39931/Details",
+      "assessment": "Institutional author metadata confirms Pawel Dlotko,Thomas Wanner,75(5),1648–1666,1March2018. Publisher search content confirms title,year,pages,DOI."
+    },
+    {
+      "key": "Ehrlacher2016",
+      "doi": "10.1007/s00205-016-1019-6",
+      "primary_source": "https://link.springer.com/article/10.1007/s00205-016-1019-6",
+      "assessment": "Publisher metadata confirms Ehrlacher,Ortner,Shapeev,222,1217–1268(2016); title and DOI agree."
+    },
+    {
+      "key": "Garroni2025",
+      "doi": "10.1142/S0218202525500204",
+      "primary_source": "https://iris.uniroma1.it/handle/11573/1749030",
+      "assessment": "Institutional primary record confirms Garroni,Petrache,Spadaro,35(6),1385–1419(2025),final title minimizers. Publisher/direct institutional open blocked403; primary search cache and arXiv2408.02136 corroborate."
+    },
+    {
+      "key": "Hudson2017",
+      "doi": "10.1007/s00205-017-1076-5",
+      "primary_source": "https://link.springer.com/article/10.1007/s00205-017-1076-5",
+      "assessment": "Publisher metadata confirms T.Hudson,224,291–352(2017); title and DOI agree."
+    },
+    {
+      "key": "Hudson2015",
+      "doi": "10.1137/140964436",
+      "primary_source": "https://epubs.siam.org/doi/10.1137/140964436",
+      "assessment": "Publisher metadata confirms T.Hudson,C.Ortner,47(1),291–320,online8January2015. Agrees."
+    },
+    {
+      "key": "Liu2024",
+      "doi": "10.1007/s00211-023-01391-7",
+      "primary_source": "https://link.springer.com/article/10.1007/s00211-023-01391-7",
+      "assessment": "Publisher full metadata confirms Xuanyu Liu,Huajie Chen,Christoph Ortner,156,39–70,published9January2024. Agrees."
+    },
+    {
+      "key": "Mehta2014",
+      "doi": "10.1063/1.4881638",
+      "primary_source": "https://arxiv.org/abs/1407.4762",
+      "assessment": "Author-deposited arXiv record confirms Dhagash Mehta,JonathanD.Hauenstein,DavidJ.Wales,JCP140(22),224114(2014),DOI. Agrees."
+    },
+    {
+      "key": "Ortner2009",
+      "doi": "10.1137/060668183",
+      "primary_source": "https://epubs.siam.org/doi/10.1137/060668183",
+      "assessment": "Publisher metadata confirms C.Ortner,47(4),2550–2577(2009),online15July2009. Agrees."
+    },
+    {
+      "key": "Wei2026",
+      "doi": "10.1137/25M1809215",
+      "primary_source": "https://epubs.siam.org/doi/10.1137/25M1809215",
+      "assessment": "Publisher full metadata confirms Xinyi Wei,Julian Braun,Yangshuai Wang,Lei Zhang;48(5),A2934–A2958; online13October2026. Agrees."
+    },
+    {
+      "key": "Yoon2000",
+      "doi": "10.1103/PhysRevB.61.3263",
+      "primary_source": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.61.3263",
+      "assessment": "Publisher full record confirms Mina Yoon,M.Y.Choi,BeomJunKim,PRB61,3263,published1February2000. Agrees."
+    }
+  ],
+  "substantive_metadata_corrections": [],
+  "new_related_preprint": {
+    "title": "On the linearised force balance condition in the analysis of atomistic dislocation models",
+    "authors": [
+      "Julian Braun",
+      "Thomas Hudson"
+    ],
+    "arxiv": "2609.39642v1",
+    "source": "https://arxiv.org/pdf/2609.39642",
+    "submitted": "2026-09-30",
+    "pdf_date": "2026-10-01",
+    "scope": "Addresses missing zero-force-sum verification in far-field regularity for atomistic dislocation predictors; says pure screw case is already covered byBraun–Hudson–Ortner2022 and focuses nonzero edgecomponent.",
+    "implication": "Potential contextual addition for Green/tail discussion. It does not prove a globalXYannihilationbarrier. Do not infer its forcebalance hypothesis solely from decay or import its conclusions to arbitrary predictors."
+  }
+}

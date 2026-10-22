@@ -1,0 +1,17 @@
+{
+  "large_data_headers": [
+    {
+      "path": "stage2/baseline/min.h",
+      "bytes": 33554432,
+      "sha256": "2a969db50023b0697c5f228d4b10325df7ea899bcdfe965fef6d02616f82adf3",
+      "reason": "Unmodified/generated large original data header; recover from indexed original package using diagnostic preparation script."
+    }
+  ],
+  "other_exclusions": [
+    "compiled binaries",
+    "raw inputs",
+    "cache directories",
+    "incomplete FAST saddle output/log"
+  ],
+  "all_completed_diagnostic_result_records_included": true
+}

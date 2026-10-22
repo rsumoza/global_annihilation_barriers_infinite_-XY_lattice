@@ -1,0 +1,166 @@
+AUDITORÍA FOCALIZADA DEL SEPARADOR Y REVISIÓN DEL MANUSCRITO
+Rodolfo Leonardo Sumoza Matos — 21 de octubre de 2026
+
+DICTAMEN
+
+El separador original se reprodujo desde cero y superó la revisión
+focalizada descrita aquí, sin encontrar un contraejemplo para sus datos
+fijos. Su geometría completa cuenta ahora con una comprobación racional
+independiente. Este resultado respalda la cota inferior B_ann > 0.0055
+para el dipolo de separación 12 y el espacio de caminos especificado.
+
+No se ha vuelto a ejecutar en esta etapa la cadena completa de conexión
+y optimalidad. Por tanto este informe no debe citarse como una nueva
+validación independiente de B_ann = E(s_+) - E(m_0), ni como arbitraje
+editorial. El archivo de conexión adjuntado no pudo copiarse y no se leyó.
+
+1. INTEGRIDAD Y REPRODUCCIÓN REAL
+
+Original recibido: XY_Separacion_Global_Reproducible_2026-10-19(1).zip.
+Tamaño: 228006035 bytes.
+SHA-256: 47eaf4886bc10b7bbb7ef259c44bfef9134bf3402920594ca6e20cd87235cedc.
+
+Coinciden los 1083 miembros cubiertos por FILES.sha256 y los 564 miembros
+del manifiesto científico. No se modificó ningún archivo congelado.
+Se ejecutó, con nuevas compilaciones y una salida inicialmente ausente:
+
+ python3 xy_global_separator/verify_separator.py \
+   xy_global_separator/distribution --output fresh_results --workers 2
+
+Estado: FRESH_GLOBAL_SEPARATOR_PASS.
+Duración observada: 180.92391562461853 segundos.
+Entorno: Python 3.12.14, g++ 13.3, Linux x86_64; datos binary64,
+little-endian, redondeo al más cercano y significando long double de
+exactamente 64 bits. El preflight restringido pasó.
+
+Se recalcularon el mínimo infinito, las 109 cartas, las proyecciones y
+distancias, la frontera, la pertenencia del mínimo y la exclusión de
+todos los levantamientos físicamente uniformes. No se usaron los JSON
+archivados como premisas del supervisor. Las 436 caras coordenadas
+originaron 2150 evaluaciones adaptativas de celdas. No quedó ninguna
+celda radial, circular o de cara sin resolver.
+
+Los 330 archivos científicos directamente comparables son idénticos
+byte por byte. Frontera y separación coinciden tras retirar campos de
+rutas, tiempos y hashes derivados que necesariamente cambian al ejecutar.
+Se comprobaron los 454 hashes de salidas frescas. El nuevo certificate.json
+tiene SHA-256 a254d816fe657384846b743145ecf130149cda4b40bbf1cefee6e675921ddfb3.
+El script compare_fresh.py declara exactamente qué campos normaliza.
+
+2. GEOMETRÍA INDEPENDIENTE COMPLETA
+
+El nuevo check_geometry_exact.py no importa el motor C++ ni sus operaciones
+intervalares. Decodifica cada binary64 como racional exacto, usa un común
+denominador 2^92 y calcula los productos de Dirichlet mediante el laplaciano
+de grado cuatro de las extensiones por cero. Verifica explícitamente que
+los bordes sean cero; así quedan incluidos los enlaces de interfaz.
+
+Sobre las salidas archivadas y las nuevas se comprobaron:
+ - 8 entradas de las matrices de Gram e inversa;
+ - 218 coordenadas de los 109 centros;
+ - 109 normas transversales al cuadrado;
+ - 380 distancias entre vecinos;
+ - los tres máximos escalares usados por el certificado.
+
+Las 715 inclusiones y los máximos pasaron. Dos alteraciones deliberadas
+(intervalo de coordenada que excluye su valor y vecino eliminado) fueron
+rechazadas, también con Python -O. Esto acredita esa geometría fija;
+no constituye un segundo cálculo intervalar de las energías o del exterior.
+
+3. AUDITORÍA DEL SUPERVISOR Y DEL PASO DECIMAL
+
+Se comprobaron los pins externos, el libro completo de casos, las identidades
+de centros y modos, los radios binary64 exactos y la reconstrucción de Green.
+La repetición racional condicional de la frontera también coincide con el
+registro original. Los cuatro controles negativos del consumidor del mínimo
+(residual NaN, residual excesivo, radio excesivo y coercividad no positiva)
+fueron rechazados sin producir una salida de éxito.
+
+El main histórico del mínimo imprime 22 cifras sin garantizar por sí solo
+el sentido exterior. La objeción genérica es real, pero su aplicación al
+separador exigía revisar el consumidor. Éste ya suma o resta PAD=10^-18
+a TODOS los cuatro escalares usados. Se obtuvieron sus valores binarios
+exactos en una ejecución instrumentada: las cuatro protecciones son válidas.
+También se verificó directamente la dependencia frente al literal binario
+.001166548L realmente compilado en las cartas. Su margen es aproximadamente
+5.42*10^-10; no se equiparó el literal con el racional decimal.
+
+Los exportadores de cartas y geometría amplían un nextafter antes de emitir
+30 cifras; los radios se preservan como hexadecimales exactos. Se incluye
+una justificación de ese formato para significando de 64 bits. El guard
+histórico que permite >=64 no justifica automáticamente otros formatos.
+Los resultados del contraste exhaustivo con sidecars binarios y de la
+ejecución protegida se registran por separado en independent_backend.
+
+4. CUESTIÓN GENÉRICA DEL BACKEND
+
+El helper positive_by_congruence original puede aceptar una matriz NaN
+inyectada por la semántica de std::min. Eso demuestra una deficiencia de
+rechazo general; no demuestra que los datos congelados la alcancen.
+readraw rechaza entradas no finitas. La auditoría crea copias que además
+comprueban finitud en dn/up, construcción de intervalos y matrices de
+congruencia. Conserva los originales, los diffs y las salidas para comparar.
+
+La ejecución protegida del mínimo pasó más de 1242 millones de controles
+de construcción de intervalos y 1761 millones de controles escalares,
+con salida científica idéntica. El registro completo de cartas y geometría
+se incluye con su alcance y sus recuentos propios; no se sustituye por
+esta cifra del mínimo. El replay protegido completo de las 109 cartas
+más la geometría también terminó sin fallos. El contraste exacto posterior
+validó 9442 registros: 8284 intervalos y 436 escalares de cartas, 715
+intervalos y 3 resúmenes geométricos, y los 4 escalares del mínimo. Todas
+las salidas científicas y coeficientes coinciden byte por byte con el
+run original fresco. Es un contraste de la ejecución fija y de las
+direcciones de exportación, no un motor intervalar independiente ni una
+prueba de robustez para toda entrada posible.
+
+Un endurecimiento oficial del motor debe hacerse como versión nueva,
+con nuevos manifests/pins y repetición de todos los dependientes. No se
+editó un original y luego se presentó como la misma fuente congelada.
+
+5. MANUSCRITO Y BIBLIOGRAFÍA
+
+La versión 4 conserva los resultados científicos y las precisiones de la
+versión 3. Añade el alcance exacto de esta nueva ejecución del separador.
+Se contrastaron las 17 referencias previas con fuentes primarias y se
+añadió Braun y Hudson, arXiv:2609.39642v1 (2026), como contexto sobre la
+condición de fuerza neta nula. Ahora hay 18 referencias, todas citadas.
+La nota bibliográfica identifica las fuentes consultadas y sus límites.
+
+El argumento de Green explicita ahora la cancelación que se utiliza:
+la estacionariedad da D theta = P q; q pertenece a ell1, por lo que
+D*q pertenece a ell1 y su suma es cero al emparejar las contribuciones
+opuestas de cada enlace con convergencia absoluta. Esa condición no se
+deduce sólo de una tasa de decaimiento. No se atribuye al nuevo preprint
+una certificación de la barrera XY ni se reclama prioridad universal.
+
+Los PDF se recompilaron y revisaron visualmente. El registro de compilación
+y referencias distingue sus controles de los del certificado matemático.
+
+6. OBLIGACIÓN PENDIENTE
+
+Se necesita volver a adjuntar:
+ XY_Conexion_Global_Reproducible_2026-10-19(1).zip
+
+Su carga falló; este informe no afirma haberlo leído. Al recuperarlo hay
+que verificar su identidad, revisar sus serializaciones y las finitudes
+de la silla y del camino, justificar la media nula de las cargas de
+Poisson por su construcción (no sólo por contener cero un intervalo),
+ejecutar verify_path_inputs.py sobre sus raw
+y repetir la conexión y el ensamblaje completo de optimalidad desde una
+salida nueva. El intervalo óptimo del artículo sigue sustentado por la
+cadena histórica documentada y sus hipótesis, no por el separador aislado.
+
+CONTENIDO DEL REGISTRO
+
+fresh_results/: salida completa nueva del separador.
+integrity.json, supported_environment.json, fresh_comparison.json.
+independent_geometry/: comprobador racional nuevo, resultados y ataques.
+independent_supervisor/: contratos, identidades y repetición condicional.
+independent_backend/: copias instrumentadas, diffs, fuentes y contrastes.
+bibliography_spot/: contraste de metadatos y referencia adicional.
+SERIALIZATION_LEMMA_ES.txt: justificación del paso decimal y sus límites.
+
+Los arrays originales grandes no se duplican en este registro. Para
+reproducirlo, se requiere el paquete de separación íntegro, con las
+identidades anteriores, junto a los subdirectorios de auditoría.

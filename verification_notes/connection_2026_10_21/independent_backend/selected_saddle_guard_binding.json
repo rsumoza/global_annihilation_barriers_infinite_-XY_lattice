@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETED_SADDLE_GUARD_SELECTED",
+  "variant": "original_eager_message_guard",
+  "source_directory": "stage2/saddle",
+  "program": "stage2/saddle/verify_guarded",
+  "engine_source_sha256": "2c7dc6a0dbf81a84387ce5918182d29b054d6009d4f70a859779ed91bed32365",
+  "certify_source_sha256": "84abf8d43586e455c81ca3c1c8b1b6ac6af7bc058d430135f71bb31fa3dac501",
+  "stdout_sha256": "91622d70e1ff7077b621639d2781a8406d2fb0c1b6c718a92972b2bec40d6e60",
+  "exact_sidecar_sha256": "a7818c22a2ce248891600c022b9a39fcbea85df18b75136b475dfaa024b2746d",
+  "completed_guard_report_sha256": "c3fcbca9ddfe4629ac5cf6d6c3d63925400081703d42730de5bb6f0ea2b3e05c",
+  "incomplete_alternative_stopped_and_excluded": true
+}

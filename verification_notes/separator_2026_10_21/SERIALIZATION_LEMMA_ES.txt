@@ -1,0 +1,52 @@
+INTERFAZ DECIMAL: QUÉ SE HA JUSTIFICADO
+21 de octubre de 2026
+
+1. Extremos de cartas y geometría
+
+Supóngase aritmética binaria con significando de 64 bits, extremos reales
+finitos y salida decimal correctamente redondeada a 30 cifras significativas.
+Sea x un extremo interno, y=nextafter(x,+infinito) finito. Si y no es cero,
+la distancia binaria satisface y-x >= 2^-64 |y|. El error de representar y
+mediante un decimal de 30 cifras es como máximo 5*10^-30 |y|, estrictamente
+menor que esa distancia. Por tanto el decimal emitido sigue siendo mayor
+que x. El caso y=0 es exacto. La misma prueba, con signos invertidos,
+justifica nextafter(x,-infinito) para un extremo inferior. Los subnormales
+no empeoran esta comparación: su separación relativa es mayor.
+
+La conclusión requiere un nextafter adicional ANTES de imprimir. No se
+deduce solamente de que la cadena decimal permita reconstruir el número
+binario. También requiere que no se produzcan infinitos o NaN, y no valida
+el guard genérico que acepta formatos con significando de 113 bits.
+
+Los exportadores de cartas y geometría del separador aplican este paso
+adicional. Los radios se leen, además, de representaciones hexadecimales
+de binary64 exacto. La auditoría instrumentada contrasta por separado los
+extremos internos en hexadecimal con sus decimales exportados, para los
+datos efectivamente ejecutados; véanse sus resultados y alcance.
+
+2. Los cuatro escalares del mínimo
+
+engine.cpp::run imprime a 22 cifras significativas sin una garantía
+general de dirección exterior. Este hecho se mantiene: existe un ejemplo
+binario cuyo decimal impreso queda por debajo de su valor exacto.
+
+Sin embargo, postprocess_separator.py no usa ese decimal como cota exacta
+sin protección. A delta y rho suma PAD=10^-18; de c y de la cota inferior
+de energía resta el mismo PAD, mediante Fraction exacta. Los cuatro
+valores tienen magnitud menor que 100. Una cota conservadora del error de
+impresión es 5*10^-20, menor que PAD. Además, la nueva ejecución obtiene
+sus valores binarios exactos y comprueba directamente estas cuatro
+desigualdades, sin depender sólo de esa estimación general.
+
+El literal compilado .001166548L de las cartas es ligeramente menor que
+el racional .001166548. Se comprueba también la desigualdad frente al
+literal binario real, con margen aproximado de 5.42*10^-10. Así se cierra
+esta dependencia para el mínimo fijo del separador. La misma conclusión
+no se extiende automáticamente a los consumidores del paquete de conexión.
+
+3. Alcance
+
+Esto audita la transferencia de cotas ya calculadas. No demuestra por sí
+solo la validez de las fórmulas exteriores, los polinomios ni la reducción
+variacional global. Esas obligaciones y el entorno de ejecución permanecen
+explícitos. Los originales congelados no se han modificado.

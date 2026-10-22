@@ -1,0 +1,9 @@
+{
+  "status": "COUPLING_ROBUSTNESS_RATIONAL_CHECKS_PASS",
+  "contraction": "371/912",
+  "gap": "541/16000",
+  "displayed_bracket": [
+    "0.00167867",
+    "0.00970116"
+  ]
+}
